@@ -1,0 +1,45 @@
+state={
+	id=625
+	name="STATE_625"
+	manpower = 1138724
+	
+	state_category = rural
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = USA
+		    add_core_of = TIB	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = USA
+		    add_core_of = TIB
+		}
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}			
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	provinces={
+		1224 1311 1340 4269 4373 
+	}
+
+	local_supplies=0.0 
+}

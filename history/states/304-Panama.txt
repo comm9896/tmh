@@ -1,0 +1,68 @@
+
+state={
+	id=304
+	name="STATE_304"
+	manpower = 467459
+	resources={
+		oil=1 # was: 1
+	}
+	
+	state_category = town
+	
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = MEX
+			add_core_of = MEX
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = MEX
+			add_core_of = MEX
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2 
+			air_base = 1
+			7630 = {
+				naval_base = 4
+			}
+			4611 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			7630 5 
+		}
+		victory_points = {
+			4611 1
+		}
+
+	}
+
+	provinces={
+		1633 4611 7630 10482 
+	}
+
+	local_supplies=0.0 
+}

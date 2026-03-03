@@ -1,0 +1,63 @@
+
+state={
+	id=564
+	name="STATE_564" # Ulan Ude
+	manpower = 370893
+	state_category = rural
+	resources={
+		steel=10 
+		chromium=12 
+		tungsten=10 
+		aluminium=4 
+	}
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 2
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 2
+				arms_factory = 4
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}		
+		victory_points = {
+			7835 5 
+		}
+		victory_points = {
+			12644 5 
+		}
+	}
+
+	provinces={
+		1696 1762 1810 4716 4766 4835 4837 7736 7816 7835 10524 10528 10543 10658 12506 12575 12644 13152
+	}
+
+	local_supplies=0.0 
+}

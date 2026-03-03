@@ -1,0 +1,60 @@
+
+state={
+	id=245
+	name="STATE_245" # Millerovo
+	manpower = 761769
+	
+	state_category = rural
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				anti_air_building = 1
+				air_base = 10				
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				anti_air_building = 1	
+				air_base = 10				
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		victory_points = {
+			11476 1		
+		}
+	}
+
+	provinces={
+		449 484 500 509 3478 3519 3540 6544 6566 9488 9565 11459 11476 
+	}
+
+	local_supplies=8.0 
+}

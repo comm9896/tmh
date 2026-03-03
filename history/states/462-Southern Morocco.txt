@@ -1,0 +1,40 @@
+
+state={
+	id=462
+	name="STATE_462"
+	manpower = 1865552
+	
+	state_category = wasteland_1k_Air
+
+	history={
+
+		1936.1.1.12 = {	    		
+			owner = FRA
+			add_core_of = TZN			
+		}	
+		1936.1.1.13 = {	    
+			owner = FRA
+		}		
+		1936.1.1.14 = {
+			owner = FRA		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+		}
+		
+		
+		victory_points = {
+			4108 1 
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 5			
+		}
+	}
+
+	provinces={
+		1102 1152 1207 1989 4022 4108 4154 4933 5046 7203 7908 7958 8046 10107 
+	}
+
+	local_supplies=0.0 
+}

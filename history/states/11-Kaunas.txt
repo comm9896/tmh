@@ -1,0 +1,71 @@
+
+state={
+	id=11
+	name="STATE_11"
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = LIT
+			add_core_of = LIT
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				industrial_complex = 3
+				air_base = 10
+				anti_air_building = 1				
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = LIT
+			add_core_of = LIT
+		}
+        1936.1.1.14 = {	    
+			owner = LIT
+			add_core_of = LIT
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 3
+				arms_factory = 1
+				anti_air_building = 1				
+			}		
+		}
+	
+	
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = {
+			6296 5
+		}
+		victory_points = {
+			9357 1 #Ukmerge
+		}
+
+	}
+
+	provinces={
+		327 6296 6360 9357 9404 
+	}
+
+	local_supplies=10.0 
+	manpower=971940
+	buildings_max_level_factor=1.000
+	state_category=town
+}

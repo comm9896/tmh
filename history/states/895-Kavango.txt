@@ -1,0 +1,38 @@
+
+state={
+	id=895
+	name="STATE_895"
+	manpower = 92400
+	state_category = pastoral
+
+	history={
+		1936.1.1.12 = {	    
+		    owner = SAF
+			add_core_of = SAF
+		}			
+		1936.1.1.13 = {	    
+		    owner = SAF
+			add_core_of = SAF
+		}
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+	}
+
+	provinces={
+		8136 12519 13217 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

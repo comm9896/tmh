@@ -1,0 +1,53 @@
+state = {
+	id = 1026
+	name = "STATE_1026"
+	manpower = 751793 
+	
+	state_category = rural
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = USA
+		    add_core_of = TIB	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = USA
+		    add_core_of = TIB
+		}
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+
+		buildings = {
+
+			infrastructure = 1
+
+		}
+
+		victory_points = {
+			10243 1 # Cagayan de Oro
+		}
+		
+	}
+
+	provinces = {
+		1293 1379 4427 10214 10243 10300 12160 12188 12217 12245 12273 
+	}
+
+	local_supplies = 0.0 
+}

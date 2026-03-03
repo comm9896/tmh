@@ -1,0 +1,81 @@
+DEN_historical_plan = {
+	name = "Denmark's Historical Plan"
+	desc = "Historical behavior for Denmark"
+
+	allowed = {
+		tag = DEN
+	}
+	enable = {
+		is_subject = no
+	}
+	abort = { #Abort if DEN did NOT become a puppet through the 'Declaration of Neutrality' Idea
+		is_subject = yes
+		NOT = { has_country_flag = DEN_is_protectorate_flag	}
+	}
+
+	ai_national_focuses = {
+
+		DEN_declare_neutrality
+		DEN_political_unity
+		
+		DEN_policy_of_disarmament
+		DEN_social_stability
+		DEN_build_motorveje
+		DEN_heavy_market_regulations
+		DEN_welcome_foreign_scientists
+		
+		DEN_import_machinery_and_material
+		DEN_modernize_industrial_machinery
+		DEN_increase_industrial_production
+		DEN_modernize_agricultural_machinery	
+		DEN_agricultural_reinvestments
+		DEN_increase_produce_production
+		DEN_full_employment
+		
+		DEN_kanslergadeforliget
+		DEN_devalue_the_krone		
+		DEN_industrial_investments
+		DEN_public_works
+		DEN_agricultural_subsidies
+		DEN_support_schleswigian_farmers
+		DEN_connect_the_islands
+		DEN_expand_institut_for_teoretisk_fysik
+		DEN_expand_the_industries
+		DEN_support_the_faroes_industries		
+		DEN_aalborg_portland_cement_plant
+		DEN_support_bornholms_industries
+		DEN_reorient_production_lines
+		DEN_danske_stalvalsevaerket
+		DEN_protect_the_faroe_islands
+		DEN_strengthen_military_industries
+		DEN_protect_bornholm
+		
+
+		
+	}
+
+	#Never takes these
+	focus_factors = {
+		DEN_unify_the_right = 0
+		DEN_start_the_rearmament = 0
+		DEN_develop_greenland = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

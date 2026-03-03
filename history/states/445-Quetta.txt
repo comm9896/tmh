@@ -1,0 +1,49 @@
+state={
+	id=445
+	name="STATE_445"
+	manpower = 405100
+	
+	state_category = wasteland
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			air_base = 4			
+		}
+	}
+
+	provinces={
+		4990 7847 7903 10735 10813 
+	}
+
+	local_supplies=0.0 
+}

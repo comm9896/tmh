@@ -1,0 +1,72 @@
+
+state={
+	id=29
+	name="STATE_29"
+	manpower = 2976400
+	
+	state_category = large_city
+	resources={
+		steel=20 
+		aluminium=8
+		coal = 30					
+	}
+
+	history={
+
+		1936.1.1.12 = {
+			owner = FRA
+			add_core_of = FRA
+			add_dynamic_modifier  = {
+				modifier = Sapr_FRA_no_port_modifier
+			}				
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				arms_factory = 3				
+				air_base = 10
+			}		
+		
+		}
+		1936.1.1.13 = {
+			owner = FRA
+			add_core_of = FRA
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = FRA
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+	
+		1941.1.1.14 = {
+		    owner = GER		   
+		
+			buildings = {
+				infrastructure = 4
+				arms_factory = 9	
+				air_base = 10			
+			}
+		}		
+				
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB		
+		}
+
+
+		victory_points = {
+			11483 5
+		}
+		victory_points = {
+			11548 5
+		}
+	}
+
+	provinces={
+		3476 3536 6504 9500 11483 11548 11606 
+	}
+
+	local_supplies=0.0 
+}

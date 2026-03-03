@@ -1,0 +1,58 @@
+state={
+	id=430
+	name="STATE_430"
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}	
+		
+		victory_points = {
+			11929 1 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			11968 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1497 2843 4162 4616 7078 7124 7662 9935 9993 10035 10349 10389 10416 10443 11911 11929 11968 12423 13208
+	} 
+	manpower=31973300
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

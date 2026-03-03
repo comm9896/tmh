@@ -1,0 +1,62 @@
+state = {
+
+	id = 831
+	name = "STATE_831" #Khiva
+
+	history = {
+
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			
+			buildings = {
+				infrastructure = 1
+			}
+			add_extra_state_shared_building_slots = 1
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		victory_points = {
+			12465 1
+		}
+
+		
+	}
+
+	provinces = {
+		 10395 10435 12324 12454 12465
+	}
+	
+	manpower = 258430
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+
+	local_supplies = 0.0 
+}

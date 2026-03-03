@@ -1,0 +1,63 @@
+
+state={
+	id=193
+	name="STATE_193" # Chernihiv
+	manpower = 1373637
+	
+	state_category = city
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				air_base = 10
+				anti_air_building = 1						
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				air_base = 10
+				anti_air_building = 1						
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+	
+		victory_points = {
+			3568 3
+		}
+	}
+
+	provinces={
+		238 489 546 582 3480 3542 3568 3584 6458 6508 6532 6589 9437 9506 9543 11425 11489 11557
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,52 @@
+Vichy_historical_plan = {
+	name = "Vichy_FRA_historical_plan"
+	desc = "historical_plan_for_VIC"
+
+	allowed = {
+		OR = {
+		    original_tag = VIC
+		    original_tag = FRA
+		}	
+	}
+	
+	enable = {
+		AND = {
+		    tag = VIC
+		    VIC = { has_completed_focus = VIC_emergency_powers_to_petain }
+		}
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+		VIC_the_national_revolution
+		VIC_prosecute_the_losers
+		VIC_concessions_to_the_germans
+		VIC_mandatory_work_service
+		VIC_the_national_bureau_of_statistics
+		VIC_rebuild_the_military
+		VIC_modernize_the_airforce
+		VIC_learn_from_the_enemy
+		VIC_hidden_materials
+		VIC_long_term_economic_planning
+		VIC_aid_small_businesses
+		VIC_venerate_the_craftsman
+		VIC_down_with_marianne
+		VIC_up_with_jean_darc
+		VIC_celebrate_motherhood
+		VIC_a_nation_reborn
+		VIC_end_the_occupation
+	}
+	
+	focus_factors = {
+	}
+	research = {
+	}
+
+	ideas = {
+	}
+	weight = {
+	}
+
+}

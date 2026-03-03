@@ -1,0 +1,65 @@
+state={
+	id=726
+	name="STATE_726"
+	manpower=123214
+	state_category = small_island
+
+	history={
+	
+		buildings = {
+			infrastructure = 2 #was: 6
+			industrial_complex = 1
+			air_base = 3
+			4543 = {
+				naval_base = 3
+			}
+			1814 = {
+				naval_base = 2
+			}
+		}
+		
+        1936.1.1.12 = {	    
+		    owner = AST
+			add_core_of = AST
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+		    owner = AST
+		    add_core_of = TIBAST
+		}
+		
+		1941.1.1.14 = {
+		    owner = ENG
+		    add_core_of = ENG
+			
+		
+			buildings = {
+				infrastructure = 2
+				7290 = {
+					naval_base = 1
+				}
+			}	
+		}
+		
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB			
+		}	
+
+		victory_points = {
+			7290 1
+		}
+	}
+	provinces={
+		7290 13080 
+	}
+
+	local_supplies=0.0 
+}

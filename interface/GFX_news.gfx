@@ -1,0 +1,26 @@
+spriteTypes = {
+	
+### o x x
+###   o 
+### o x o
+
+	SpriteType = {
+  		name = "GFX_Vahta_na_reine"
+  		texturefile = "gfx/interface/goals/Vahta_na_reine.dds"
+	}
+
+	SpriteType = {
+  		name = "GFX_Rommel_the_Desert_Fox"
+  		texturefile = "gfx/interface/goals/Rommel_the_Desert_Fox.dds"
+	}
+
+	SpriteType = {
+  		name = "GFX_dunkerk_Evacuation"
+  		texturefile = "gfx/interface/goals/dunkerk_Evacuation.dds"
+	}
+
+	SpriteType = {
+  		name = "GFX_Demiansk"
+  		texturefile = "gfx/interface/goals/Demiansk.dds"
+	}	
+}	

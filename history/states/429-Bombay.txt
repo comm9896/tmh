@@ -1,0 +1,62 @@
+
+state={
+	id=429
+	name="STATE_429" #Bombay
+	manpower = 17355600
+	state_category = town
+	
+	resources={
+		#tungsten=19 # was: 26
+	}
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+	
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+			1349 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			1349 10 
+		}
+
+	}
+
+	provinces={
+		1349 1405 4072 4187 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269 
+	}
+
+	local_supplies=0.0 
+}
+

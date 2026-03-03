@@ -1,0 +1,118 @@
+﻿	
+	
+air_wings = {
+	### 1 USAAF Wing -- Los Angeles
+	378 = {
+
+		
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "B-18"
+		}
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "B-18"			
+		}
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "B-18"			
+		}
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "B-18"			
+		}
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "B-18"			
+		}
+				
+		small_plane_cas_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "A-17"				
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "A-17"					
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "A-17"					
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "A-17"					
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "USA" 
+			amount = 100
+			version_name = "A-17"					
+		}
+		
+
+		small_plane_airframe_1 =  {
+			owner = "USA" 
+			amount = 100
+			version_name = "P-6"					
+		}
+		small_plane_airframe_1 =  {
+			owner = "USA" 
+			amount = 100
+			version_name = "P-6"				
+		}
+		small_plane_airframe_1 =  {
+			owner = "USA" 
+			amount = 100
+			version_name = "P-6"				
+		}
+		small_plane_airframe_1 =  {
+			owner = "USA" 
+			amount = 100
+			version_name = "P-6"				
+		}
+		small_plane_airframe_1 =  {
+			owner = "USA" 
+			amount = 100
+			version_name = "P-6"				
+		}		
+	}
+
+	"USS Ranger" = {
+		cv_small_plane_airframe_1 =  { owner = "USA" 	version_name = "F3F" amount = 10 } 
+		cv_small_plane_airframe_1 =  { owner = "USA" 	version_name = "F3F" amount = 10 } 		
+		cv_small_plane_cas_airframe_1 =  { owner = "USA" 	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 		
+	}
+	"USS Lexington" = {
+		cv_small_plane_airframe_1 =  { owner = "USA" 	version_name = "F3F" amount = 10 } 
+		cv_small_plane_airframe_1 =  { owner = "USA" 	version_name = "F3F" amount = 10 } 		
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+	}
+	"USS Saratoga" = {
+		cv_small_plane_airframe_1 =  { owner = "USA" 	version_name = "F3F" amount = 10 } 
+		cv_small_plane_airframe_1 =  { owner = "USA" 	version_name = "F3F" amount = 10 } 		
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+		cv_small_plane_cas_airframe_1 =  { owner = "USA"	version_name = "SBU Corsair" amount = 10 } 
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+#####################

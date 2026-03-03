@@ -1,0 +1,69 @@
+state = {
+
+	id = 1023
+	name = "STATE_1023"
+
+	manpower = 249800
+
+	resources = {
+		oil = 12 # was: 18
+	}
+	
+	state_category = rural
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+			owner = HOL
+			add_core_of = HOL
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+
+		victory_points = {
+			7387 2 # Brunei Town
+		}
+
+		buildings = {
+
+			infrastructure = 2
+
+			7371 = {
+				naval_base = 1
+			}
+
+			7387 = {
+				naval_base = 1
+			}
+
+		}
+		
+	}
+
+	provinces = {
+		7371 7387 8091 10269 10285 13377 13378 
+	}
+
+	local_supplies = 0.0 
+}

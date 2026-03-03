@@ -1,0 +1,173 @@
+
+SAF_rerol_country = {
+	
+	SAF_rerol_country_ENG = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ENG
+		cosmetic_ideology = democratic		
+		
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		available = {
+			SAF = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SAF_rerol_country_ENG_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = ENG
+			        }
+                    change_tag_from = SAF				
+			    }
+			}
+		}
+	}
+	SAF_rerol_country_AST = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = AST
+		cosmetic_ideology = democratic		
+		
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		available = {
+			SAF = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SAF_rerol_country_AST_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = AST
+			        }
+                    change_tag_from = SAF				
+			    }
+			}
+		}
+	}	
+	
+	SAF_rerol_country_CAN = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = CAN
+		cosmetic_ideology = democratic		
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			SAF = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SAF_rerol_country_CAN_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = CAN
+			        }
+                    change_tag_from = SAF				
+			    }
+			}
+		}
+	}	
+	
+	SAF_rerol_country_USA = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = USA
+		cosmetic_ideology = democratic		
+		
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		available = {
+			SAF = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SAF_rerol_country_USA_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = USA
+			        }
+                    change_tag_from = SAF				
+			    }
+			}
+		}
+	}
+	SAF_rerol_country_SOV = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = SOV
+		cosmetic_ideology = communism		
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			SAF = { is_ai = no }		
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SAF_rerol_country_SOV_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = SOV
+			        }
+                    change_tag_from = SAF				
+			    }
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,46 @@
+
+state={
+	id=349
+	name="STATE_349"
+	manpower = 592821
+	
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = TUR
+			add_core_of = TUR
+		}			
+		1936.1.1.13 = {
+			owner = TUR
+			add_core_of = TUR
+		}	
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1936.1.1.15 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+
+		victory_points = {
+			9777 3 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		3890 3903 3950 6919 6950 6965 9761 9777 
+	}
+
+	local_supplies=0.0 
+}

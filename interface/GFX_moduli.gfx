@@ -1,0 +1,19 @@
+spriteTypes = {
+	
+### o x x
+###   o 
+### o x o
+
+
+
+	SpriteType = {	
+		name = "GFX_Super_heavy_aircraft_carrier_medium"
+		texturefile = "gfx/interface/technologies/early_carrier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_drop_tanks_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_drop_tanks_icon.dds"
+		legacy_lazy_load = no
+	}			
+}

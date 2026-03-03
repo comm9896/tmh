@@ -1,0 +1,237 @@
+
+SOV_power_balance = {
+	initial_value = 0
+	left_side = SOV_We_will_never_surender
+	right_side = SOV_Soon_we_will_liberate_Europe	
+
+	### Neutral status
+	range = {
+		id = SOV_balance_range
+		min = -0.20
+		max = 0.20
+		modifier = {
+			political_power_factor = 0.15
+		
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### Нас катят, но мы не сдадимся
+	side = {
+		id = SOV_We_will_never_surender	
+		icon = GFX_focus_SOV_organization_centralization_discipline
+
+		range = {
+			id = SOV_We_will_never_surender_1
+			min = -0.4
+			max = -0.2
+			modifier = {
+				industry_repair_factor = 0.20
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+				political_power_factor = 0.20	
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1 	
+				modifier_army_sub_unit_infantry_defence_factor = 0.05	
+				modifier_army_sub_unit_cavalry_defence_factor = 0.05					
+			}
+
+			on_activate = {
+				country_event = Sapr_Sov_army_reorganaized.a				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SOV_We_will_never_surender_2
+			min = -0.6
+			max = -0.4
+			modifier = {
+				industry_repair_factor = 0.4
+				industrial_capacity_factory = 0.20
+				industrial_capacity_dockyard = 0.20
+				production_factory_efficiency_gain_factor = 0.1				
+				conversion_cost_civ_to_mil_factor = -0.3
+				political_power_factor = 0.25	
+				
+				resistance_damage_to_garrison_on_our_occupied_states = 0.2			
+				out_of_supply_factor = -0.10	
+				pocket_penalty = -0.05
+				modifier_army_sub_unit_infantry_defence_factor = 0.1	
+				modifier_army_sub_unit_cavalry_defence_factor = 0.1					
+			}
+
+			on_activate = {
+				country_event = Sapr_Sov_counterattack_tactics_1.a
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SOV_We_will_never_surender_3
+			min = -0.8
+			max = -0.6
+			modifier = {
+				industry_repair_factor = 0.60
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				production_factory_efficiency_gain_factor = 0.2
+				
+				conversion_cost_civ_to_mil_factor = -0.5
+				political_power_factor = 0.30
+				
+				
+				resistance_damage_to_garrison_on_our_occupied_states = 0.3 				
+				out_of_supply_factor = -0.20	
+				pocket_penalty = -0.1
+
+				modifier_army_sub_unit_infantry_defence_factor = 0.15
+				modifier_army_sub_unit_cavalry_defence_factor = 0.15				
+			}
+
+			on_activate = {
+				country_event = Sapr_Sov_counterattack_tactics_2.a
+			}	
+			
+			on_deactivate = {
+			
+			}
+		}
+
+		range = {
+			id = SOV_We_will_never_surender_4
+			min = -1
+			max = -0.8
+			modifier = {
+				industry_repair_factor = 0.80
+				industrial_capacity_factory = 0.4
+				industrial_capacity_dockyard = 0.4
+				production_factory_efficiency_gain_factor = 0.3
+				
+				conversion_cost_civ_to_mil_factor = -0.5
+				political_power_factor = 0.35
+				
+				resistance_damage_to_garrison_on_our_occupied_states = 0.4				
+				out_of_supply_factor = -0.30	
+				pocket_penalty = -0.15	
+
+				modifier_army_sub_unit_infantry_defence_factor = 0.2
+				modifier_army_sub_unit_cavalry_defence_factor = 0.2				
+			}
+
+			on_activate = {
+				country_event = Sapr_Sov_counterattack_tactics_3.a
+			}			
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### Победа не загорами
+	side = {
+		id = SOV_Soon_we_will_liberate_Europe
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+
+		range = {
+			id = SOV_Soon_we_will_liberate_Europe_1
+			min = 0.2
+			max = 0.4
+			modifier = {
+
+				industry_repair_factor = 0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				compliance_gain = 0.2	
+				resistance_damage_to_garrison = -0.1					
+				
+				planning_speed = 0.05				
+				experience_loss_factor = 0.05
+				army_org_factor = 0.02
+				
+			}
+		}
+
+		range = {
+			id = SOV_Soon_we_will_liberate_Europe_2
+			min = 0.4
+			max = 0.6
+			modifier = {
+
+				industry_repair_factor = 0.2	
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				compliance_gain = 0.4	
+				resistance_damage_to_garrison = -0.2				
+				
+				planning_speed = 0.1
+				experience_loss_factor = 0.1
+				army_org_factor = 0.04				
+					
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SOV_Soon_we_will_liberate_Europe_3
+
+			min = 0.6
+			max = 0.8
+			modifier = {
+
+				industry_repair_factor = 0.30
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				compliance_gain = 0.6
+				resistance_damage_to_garrison = -0.3	
+				
+				planning_speed = 0.15
+				experience_loss_factor = 0.15				
+				army_org_factor = 0.06				
+			
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SOV_Soon_we_will_liberate_Europe_4
+			min = 0.8
+			max = 1
+			modifier = {
+	
+				industry_repair_factor = 0.40	
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				compliance_gain = 0.8
+				resistance_damage_to_garrison = -0.4	
+				
+				planning_speed = 0.2
+				experience_loss_factor = 0.2					
+				army_org_factor = 0.08				
+
+		
+			}
+		}
+	}
+
+}
+

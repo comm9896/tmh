@@ -1,0 +1,257 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+CHI_jiangnan_shipyard_group_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {	
+		tag = CHI
+		has_dlc = "Waking the Tiger"
+	}
+	available = {
+		owner = { controls_state = 613 }
+	}
+}
+
+CHI_dagu_shipyard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {	
+		tag = MAN
+		has_dlc = "Waking the Tiger"
+	}
+	available = {
+		owner = { controls_state = 608 }
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+CHI_camco_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = CHI
+	}
+}
+CHI_camco_medium_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = CHI
+	}
+	available = {
+		owner = { has_completed_focus = CHI_camco }
+	}
+}
+CHI_camco_fighter_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = CHI
+	}
+	available = {
+		owner = { has_completed_focus = CHI_local_fighter_production }
+	}
+}
+CHI_camco_bomber_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		tag = CHI
+	}
+	available = {
+		owner = { has_completed_focus = CHI_local_bomber_production }
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+CHI_taiyuan_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_1
+	allowed = {	
+		OR = {
+			is_literally_china = yes
+			tag = MAN
+			tag = MEN
+		} 
+		has_dlc = "Waking the Tiger"
+	}
+	available = {
+		owner = { controls_state = 615 }
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_Muckden
+		name = MAN_mio_trait_Muckden_tt
+		icon = GFX_generic_mio_department_icon_artillery_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = MAN_mukden_arsenal
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}	
+		
+}
+CHI_liaoning_arsenal_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_generic_motorized_equipment_manufacturer_1
+	allowed = {	
+		OR = {
+			is_literally_china = yes
+			tag = MAN
+			tag = MEN
+		} 
+		has_dlc = "Waking the Tiger"
+	}
+	available = {
+		owner = { controls_state = 715 }
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_Muckden
+		name = MAN_mio_trait_Muckden_tt
+		icon = GFX_generic_mio_department_icon_motorized_mechanized_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = MAN_mukden_arsenal
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}				
+}
+
+CHI_hanyan_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {	
+		OR = {
+			is_literally_china = yes
+			tag = MAN
+		} 
+	}
+	available = {
+		owner = { controls_state = 620 }
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_Muckden
+		name = MAN_mio_trait_Muckden_tt
+		icon = GFX_generic_mio_department_icon_infantry_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = MAN_mukden_arsenal
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}		
+	
+}
+CHI_mukden_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = {	
+		OR = {
+			is_literally_china = yes
+			tag = MAN
+			tag = MEN
+		} 
+		has_dlc = "Waking the Tiger"
+	}
+	available = {
+		owner = { controls_state = 716 }
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_Muckden
+		name = MAN_mio_trait_Muckden_tt
+		icon = GFX_generic_mio_department_icon_infantry_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = MAN_mukden_arsenal
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+}

@@ -1,0 +1,63 @@
+
+state={
+	id=240
+	name="STATE_240" # Belgorod
+	manpower = 1364537
+	
+	state_category = town
+
+	history={
+
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				anti_air_building = 1						
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 
+				anti_air_building = 1	
+				arms_factory = 5		
+				industrial_complex = 2				
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		victory_points = {
+			9449 1
+		}
+
+
+	}
+
+	provinces={
+		473 534 3492 6432 6481 6517 6577 9424 9449 9489 9518 11439 11500 
+	}
+
+	local_supplies=0.0 
+}

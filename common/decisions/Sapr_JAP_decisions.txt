@@ -1,0 +1,284 @@
+JAP_time_to_war = {
+
+}
+
+
+
+JAP_annex = {
+	
+	JAP_annex_MAN = {
+	
+		icon = generic_army_support
+
+		available = {
+		or = {date > 1938.01.01 has_War_with = chi}
+			
+		    and = {
+			    any_other_country = {
+				    original_tag = MAN
+				    exists = yes
+			    }
+			    MAN = { is_ai = yes }
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = MAN
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		
+			
+			annex_country = { target = MAN transfer_troops = yes}
+			
+			MAN = {
+				transfer_units_fraction= {
+					target = JAP
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+
+
+			
+			MAN = {
+			    every_unit_leader = {
+				    set_nationality = JAP
+			    }
+			}
+			reduce_focus_completion_cost = {
+				focus = {JAP_the_ultimate_tank  }
+				cost = 14
+			}
+			reduce_focus_completion_cost = {
+				focus = {JAP_foreign_tank_modernization_cooperation  JAP_domestic_tank_modernization_program JAP_rethink_armor_doctrine}
+				cost = 7
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 1
+			}
+			MAN = {			
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_invite_japanese_settlers}	
+						}
+					}
+					complete_national_focus = MAN_invite_japanese_settlers					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_expand_the_textile_industry}	
+						}
+					}
+					complete_national_focus = MAN_expand_the_textile_industry					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_collective_farms}	
+						}
+					}
+					complete_national_focus = MAN_collective_farms					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_expand_showa_steel_works}	
+						}
+					}
+					complete_national_focus = MAN_expand_showa_steel_works					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_invite_japanese_investors}	
+						}
+					}
+					complete_national_focus = MAN_invite_japanese_investors					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_mukden_arsenal}	
+						}
+					}
+					complete_national_focus = MAN_mukden_arsenal					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_railway_compani}	
+						}
+					}
+					complete_national_focus = MAN_railway_compani					
+				}	
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_China_railway}	
+						}
+					}
+					complete_national_focus = MAN_China_railway					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_China_railway_2}	
+						}
+					}
+					complete_national_focus = MAN_China_railway_2					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_move_capitals}	
+						}
+					}
+					complete_national_focus = MAN_move_capitals					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_collective_farms}	
+						}
+					}
+					complete_national_focus = MAN_collective_farms					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_China_infr}	
+						}
+					}
+					complete_national_focus = MAN_China_infr					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+								if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_development_of_southern_territories }	
+						}
+					}
+					complete_national_focus = MAN_development_of_southern_territories					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+								if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_development_of_western_territories }	
+						}
+					}
+					complete_national_focus = MAN_development_of_western_territories 					
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+							JAP_add_or_modify_showa_statism = yes
+
+				add_to_variable = { JAP_showa_statism_operative_slot = 1 tooltip = operative_slot_tt }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				JAP_add_or_modify_showa_statism = yes
+
+			add_to_variable = { JAP_showa_statism_political_power_factor = 0.1 tooltip = political_power_factor_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			716 = { 
+			add_core_of = ROOT
+			}
+			610  = { 
+			add_core_of = ROOT
+			}
+			609  = { 
+			add_core_of = ROOT
+			}
+			611  = { 
+			add_core_of = ROOT
+			}
+			612  = { 
+			add_core_of = ROOT
+			}
+			715  = { 
+			add_core_of = ROOT
+			}
+			714  = { 
+			add_core_of = ROOT
+			}
+			761  = { 
+			add_core_of = ROOT
+			}
+			717  = { 
+			add_core_of = ROOT
+			}
+			328  = { 
+			add_core_of = ROOT
+			}
+			328  = { 
+			add_core_of = ROOT
+			}
+			621  = { 
+			add_core_of = ROOT
+			}
+			1043  = { 
+			add_core_of = ROOT
+			}
+		}
+	}
+	
+	
+	JAP_rebalance_MAN = {
+	
+		icon = generic_army_support
+
+		available = {
+		    and = {
+			    any_other_country = {
+				    original_tag = MAN
+				    exists = yes
+			    }
+				MAN = { 
+				     arms_factory > 50
+				}	
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = MAN
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			MAN = {
+                 add_ideas = MAN_rebalance_MAN_idea
+			}		
+		}
+	}
+}

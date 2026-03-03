@@ -1,0 +1,64 @@
+state = {
+	id = 1018
+	name = "STATE_1018" # South Kyushu
+	manpower = 3023000
+
+	state_category = rural
+
+	resources = {
+		chromium = 20
+	}
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+        1936.1.1.15 = {	 	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+
+		buildings = {
+
+			infrastructure = 2
+			dockyard = 1
+			industrial_complex = 1
+			
+		}
+
+		victory_points = {
+			4102 15 # Kagoshima
+		}
+
+		victory_points = {
+			1020 2 # Miyazaki
+		}
+
+	}
+
+	provinces = {
+		1020 1183 4102 4198 7178 11949 12006 12032 
+	}
+	local_supplies = 10.0 
+}

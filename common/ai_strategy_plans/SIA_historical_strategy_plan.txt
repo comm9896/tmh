@@ -1,0 +1,67 @@
+MON_historical_plan = {
+	name = "SIA_historical_plan"
+	desc = "historical_plan_for_SIA"
+
+	allowed = {
+		original_tag = SIA
+	}
+	
+	enable = {
+		tag = SIA
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+        SIA_improve_our_roads
+		SIA_diplomaticadjustment
+		SIA_extraterritorialrightundertreaty
+		SIA_bowringtreatyoffer
+		SIA_freedomfiscalsovereignty
+		SIA_nationalbank
+		SIA_nationalbanknote
+		SIA_mitigation_depression
+		SIA_cement_sector_improvement
+		SIA_state_sponsored_civilian_construction
+	
+		SIA_mechanization_of_agriculture
+		SIA_develop_rubber_extraction
+		SIA_dig_for_tungsten
+		SIA_electrification_effort
+		SIA_ammunitions_production
+		SIA_artillery_factories
+		SIA_establish_military_factories
+		
+		SIA_the_monarchist_cause		
+		SIA_restore_rama_vii
+		SIA_municipalism
+		SIA_supreme_council
+		SIA_a_new_bureaucracy
+		
+		SIA_naval_developement_plan
+		SIA_adopt_new_tactics
+		SIA_increase_the_naval_production
+		SIA_increase_navy_fundings
+		
+		SIA_domesticindustrylaw
+		SIA_economicnationalism
+		SIA_controlofchineseaffairs
+		
+	}
+	
+	focus_factors = {
+	}
+	research = {
+		industry = 33.0
+		infantry_tech = 33.0
+		artillery = 33.0
+		support_tech = 1
+	}
+
+	ideas = {
+	}
+	weight = {
+	}
+
+}

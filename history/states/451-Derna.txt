@@ -1,0 +1,71 @@
+
+state={
+	id=451
+	name="STATE_451"
+	manpower = 45628
+	
+	state_category = wasteland_1k_Air
+	resources = {
+		steel = 8
+		tungsten = 8
+	}
+	
+	
+	history={
+		
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		
+			buildings = {
+				infrastructure = 1
+				air_base = 4
+				1130 = {
+					naval_base = 6
+					naval_supply_hub = 1
+				}
+			}		
+		}	
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {    
+		    owner = TIB
+			add_core_of = TIB	
+			
+			buildings = {
+				infrastructure = 1
+				air_base = 4
+				1130 = {
+					naval_base = 6
+				}
+			}		
+		}	
+		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}	
+
+		victory_points = {
+			1130 5 
+		}
+	}
+
+	provinces={
+		1130 1204 4136 4151 7082 9992 10120 12094 
+	}
+
+	local_supplies=0 
+}

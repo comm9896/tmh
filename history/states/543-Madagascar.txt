@@ -1,0 +1,58 @@
+
+state={
+	id=543
+	name="STATE_543"
+	manpower = 3694611
+	
+	state_category = rural
+	
+	history={
+	
+		1936.1.1.12 = {	    
+			add_core_of = TIB
+			owner = FRA	
+		}
+		1936.1.1.13 = {	    	
+			add_core_of = TIB
+			owner = FRA	
+		}		
+		1936.1.1.14 = {
+			add_core_of = TIB
+			owner = FRA		
+		}		
+		1936.1.1.15 = {
+			owner = USA
+			add_core_of = USA		
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+				
+		
+		victory_points = {
+			5128 1
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			5222 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		2200 5128 5185 5222 8180 8188 8246 10993 11015 12956 
+	}
+
+	local_supplies=0.0 
+}

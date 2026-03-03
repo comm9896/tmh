@@ -1,0 +1,50 @@
+state={
+	id=631
+	name="STATE_631"
+	manpower=2159	
+	state_category = tiny_island
+
+	resources={
+		aluminium=1
+		steel=3
+	}
+	
+	history={
+        1936.1.1.12 = {	    
+		    owner = USA
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = ENG
+		}		
+		1936.1.1.14 = {	    
+			owner = ENG
+			add_core_of = ENG
+		}	
+		1936.1.1.15 = {
+		    owner = USA
+		    add_core_of = TIB	
+		}		
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		
+		buildings = {
+			infrastructure = 2
+			13052 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13052 25
+		 }
+	}
+	
+	provinces={
+		13052 	
+	}
+
+	local_supplies=0.0 
+}

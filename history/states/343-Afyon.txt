@@ -1,0 +1,51 @@
+
+state={
+	id=343
+	name="STATE_343" # Afyon
+	manpower = 1298543
+
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = TUR
+			add_core_of = TUR
+		}			
+		1936.1.1.13 = {
+			owner = TUR
+			add_core_of = TUR
+		}	
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1936.1.1.15 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+
+		victory_points = {
+			10041 1 
+		}
+		victory_points = {
+			9878 5
+		}
+		victory_points = {
+			3856 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		856 981 3856 3983 6877 6945 9878 10041 11796 11831 11907 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,61 @@
+
+state={
+	id=802
+	name="STATE_802"
+
+	history={
+		
+		1936.1.1.12 = {	    
+			owner = YUG			
+			add_core_of = YUG		
+			
+			buildings = {
+				infrastructure = 1
+
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = YUG			
+			add_core_of = YUG		
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}	
+
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+		
+			buildings = {
+				infrastructure = 1
+
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}			
+	
+	
+		victory_points = {
+			6940 3 
+		}
+
+	}
+
+	provinces={
+		6940 9849 9874 9890 
+	}
+	manpower=616000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

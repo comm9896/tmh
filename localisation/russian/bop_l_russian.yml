@@ -1,0 +1,560 @@
+﻿l_russian:
+
+ JAP_theproma_project_sakura1:0 "Начать разработку\n§OСпец проекта Сакуры§!" 
+ JAP_theproma_project_sakura3:0 "Улучшение армии §RЯпонской Империи§!"
+ JAP_theproma_project_sakura2:0 "Начать раскопку Ресурсов"
+ JAP_theproma_project_sakura4:0 "Подготовка плана к §RАзиатской войне§!"
+ JAP_theproma_project_sakura5:0 "Подготовка технологическому прогрессу"
+ JAP_the_manchurian_project1:0 "Развитие промышленности на континенте"
+ JAP_the_war_defens_fort1:0 "Подготовить оборону на побережье Китая"
+ JAP_the_war_defens_fort3:0 "Подготовить оборону в Кореи"
+ JAP_the_war_defens_fort2:0 "Подготовить оборону на побережье южной части Японии"
+
+ JAP_the_china_project8:0 "Борьба с коммунизмом"
+ JAP_the_china_project6:0 "Портновское развитие снабжение"
+ JAP_the_china_project7:0 "Развитие §Gконцентрированной промышленности§!"
+ JAP_the_china_project5:0 "Увеличение инвестиций в Китай"
+ JAP_the_china_project4:0 "Заставить работать на военную промышленность"
+ JAP_the_china_project3:0 "Увеличение рабочей силы"
+ JAP_the_china_project2:0 "Раскопки стали в южной части Китая"
+ JAP_the_china_project1:0 "Разработать концерт в Китае"
+ 
+ JAP_baf_undustrial_china:0 "Отряд 731"
+ JAP_debaf_undustrial_china1:0 "Китай сопротивляется оккупации"
+ JAP_debaf_undustrial_china2:0 "Сопротивление рушится"
+ JAP_debaf_undustrial_china3:0 "Сопротивление подавлена"
+ JAP_debaf_undustrial_china4:0 "Сопротивление уничтожена"
+
+ JAP_the_proma_project:0 "Проект по развитию территорий"
+
+ JAP_special_prodjects_arms_tt:0 "§GБудут открыты решение в спец проекте сакуры по улучшению армии§!"
+ JAP_special_prodjects_undustrial_tt:0 "§GБудут открыты решение в спец проекте сакуры по Добычи важных ресурсов§!"
+ JAP_special_prodjects_war_tt:0 "§RНачнется крупно масштабной приготовление к Азиатской войне§!"
+ JAP_special_prodjects_researh_tt:0 "§GОткроется спец проект по улчшению науки§!"
+
+ JAP_special_prodjects_idustrial:0 "Спец проект Промышленная индустриализация"
+ JAP_special_prodjects_idustrial1:0 "Начать спец проект по созданию военной промышленной индустриализации"
+ JAP_special_prodjects_idustrial2:0 "Начать спец проект по синтаксическим ресурсом"
+ JAP_special_prodjects_has:0 "Принять решение о спец проекте по улучшение промышленности"
+ JAP_special_prodjects_idustrial3:0 "Развить семена сакуры"
+ JAP_special_prodjects_idustrial_has:0 "§RСпец проект активный§!"
+ JAP_special_prodjects2_has:0 "Продолжить спец проект Сакуры" 
+ JAP_special_prodjects2_tt:0 "§OПродолжить спец проект Сакуры"
+ JAP_special_prodjects_idustrial4:0 "Империя Делает технологический Прорыв"
+
+ JAP_special_prodjects_Arms:0 "Начать подготовку по Улчшению армии"
+ JAP_special_prodjects_Arms1:0 "Улучшение Армии Японской Империи"
+ JAP_special_prodjects_Arms2:0 "Улучшение Армии Японской Империи"
+ JAP_special_prodjects_Arms3:0 "Улучшение Армии Японской Империи"
+
+ JAP_Baf_undebaf_Arms1:0 "Армия Японии"
+ JAP_Baf_undebaf_Arms2:0 "Армия Японии"
+ JAP_Baf_undebaf_Arms3:0 "Армия Японии"
+ JAP_Baf_undebaf_Arms4:0 "Армия Японии"
+
+ JAP_special_prodjects_war_azzia:0 "Подготовка к войне"
+
+
+
+
+ JAP_special_prodjects_idustrial3_desc:0 "Будут получены ещё больше спец проектов"
+ 
+ 
+ JAP_special_prodjects_tt:0 "§OБудут открыты решение по специальным проектам"
+
+ 
+  jap_imperial_undustrial.1.t:0 "Ты здесь чтобы выбрать какой путь пойдет развитие промышленности для Японской империи"
+  jap_imperial_undustrial.1.d:0 "Выбор Промышленности"
+  jap_imperial_undustrial.a:0 "Развить Китай"
+  jap_imperial_undustrial.b:0 "Развить Японское Азиатское побережье"
+
+
+ imp_decision_cost_medium_high_MR1: "£GFX_imperial [?ROOT.imperial_mr_medium_amount]"
+ imp_decision_cost_medium_high_MR1_blocked: "£GFX_imperial §R[?ROOT.imperial_mr_medium_amount]§!"
+
+  imp_decision_cost_mr_low_amount_MR: "£GFX_imperial [?ROOT.imperial_mr_lowen_amount]" 
+  imp_decision_cost_mr_low_amount_MR_blocked: "£GFX_imperial §R[?ROOT.imperial_mr_lowen_amount]§!"
+ 
+ JAP_oil2:0 "Продолжить развитие нефти"
+ JAP_oil3:0 "Закончить развитие нефти"
+  JAP_oil:0 "Начать развитие нефти Для Японской Империи"
+ 
+
+ JAP_balanc_imperial:0 "Баланс сил в Империи"
+
+ default_left_side:0 "Военные министры"
+ 
+ default_right_side:0 "Император"
+ 
+ right_side_range:0 "Малое влияние Императора"
+ right_side1_range:0 "Средние влияние Императора"
+ right_side2_range:0 "Высокое влияние Императора"
+ right_side3_range:0 "Абсолютное влияние Императора"
+
+ left_side_range:0 "Военные министры получают влияние"
+ left_side1_range:0 "Военные министры получают всё больше влияния"
+ left_side2_range:0 "Влияние уходит от Императора"
+ left_side3_range:0 "Влияние Императора исчезла"
+
+ imperial_tt:0 "Будет получено Благо Императора £imperial!"
+
+
+ Imperial_neither:0 "Имперский нейтралитет"
+
+
+ JAP_special_prodjects_categories:0 "§RСпец проекты сакуры£GFX_industry_texticon"
+
+
+
+
+ JAP_special_prodjects_idustrial:0 "Спец проект Промышленная индустриализация"
+ JAP_special_prodjects_idustrial1:0 "Начать спец проект по созданию военной промышленной индустриализации"
+ JAP_special_prodjects_idustrial2:0 "Начать спец проект по синтаксическим ресурсом"
+ JAP_special_prodjects_has:0 "Принять решение о спец проекте по улучшение промышленности"
+ JAP_special_prodjects_idustrial3:0 "Развить семена сакуры"
+ JAP_special_prodjects_idustrial_has:0 "§RСпец проект активный§!"
+ JAP_special_prodjects2_has:0 "Продолжить спец проект Сакуры" 
+ JAP_special_prodjects2_tt:0 "§OПродолжить спец проект Сакуры"
+ JAP_special_prodjects_idustrial4:0 "Империя стала великой"
+
+ JAP_special_prodjects_idustrial3_desc:0 "Будут получены ещё больше спец проектов"
+ 
+ 
+ JAP_special_prodjects_tt:0 "§OБудут открыты решение по специальным проектам"
+
+ JAP_Victory_or_death_desc:0 "§RСюда приходят задание от Императора которые вы обязуетесь выполнять отказ от выполнения приводят к последствиям"
+ JAP_Victory_or_death:0 "Задание от Императора"
+
+ JAP_Imperial_mission1:0 "Император приказал Покорить заселенное побережье"
+ JAP_Imperial_mission2:0 "Император приказал Покорить центральные зоны"
+ JAP_Imperial_mission3:0 "Император приказал Покорить внутренние зоны"
+ JAP_Imperial_mission4:0 "Император приказал Покорить северные зоны"
+ JAP_Imperial_mission5:0 "Император приказал Покорить ресурсные зоны"
+ 
+ 
+ JAP_debaf_mission1:0 "Проваленое задание Императора"
+
+ JAP_yamato2_tt:0 "Будет добавлены два супер линкора в производственную линию §Yкласса «Ямато»§!, завершёнными на 75% и 50%."
+
+ jap_imperial_xiroxito1:0 "Дать абсолютную власть Императору"
+ jap_imperial_xiroxito2:0 "Дать абсолютную власть Императору над промышленностью"
+ jap_imperial_xiroxito3:0 "Дать абсолютную власть Императору над производством"
+ jap_imperial_xiroxito4:0 "Дать абсолютную власть Императору над производством"
+
+ JAP_non_factor:0 "Просто так"
+
+
+
+
+ JAP_organization_flot1:0 "Приказ императора"
+ JAP_organization_flot2:0 "Приказ императора"
+ JAP_organization_flot3:0 "Приказ императора"
+ JAP_organization_flot4:0 "Приказ императора"
+ JAP_organization_flot5:0 "Приказ императора"
+ 
+
+ JAP_heavy_focus:0 "Инвестиции в Линкоры"
+
+ JAP_cruiser6:0 "Увеличение денежных средств в корабле строение"
+
+ JAP_debaf_army:0 "Копирование исследований"
+
+  JAP_special_prodjects_undustrial_vasars:0 "§RЖди Ивента арбузер или гандон хз§!"
+ 
+  JAPAN_is_joint_focus_member_TT: "Является частью альянса §Y«[JAPAN_get_alliance_name]»§!"
+
+  JAPAN_get_alliance_name: "Азиатская Сфера Сопроцветание"
+
+  USA_focus_complit1_tt: "В настоящее время: [?USA_focus_complit1:days|Y0]"
+  USA_focus_complit2_tt: "В настоящее время: [?USA_focus_complit2:days|Y0]"
+
+  USA_focus_complit1: "Фокус §Y$USA_agricultural_adjustment_act$§! выполнен"
+  USA_focus_complit2: "Фокус §Y$USA_fair_labour_standards_act$§! выполнен"
+
+
+
+   jap_debaf_china.1.t:0 "Китайцы не хотят сдаваться"
+   jap_debaf_china.1.d:0 "Китайцы не хотят сдаваться"
+
+   jap_debaf_china.a:0 "Надо их наказать"
+   
+   
+   jap_imperial_miss1.1.d:0 "Пришел приказ императора" 
+   jap_imperial_miss1.1.t:0 "Пришел срочный приказ от Императора по устранение повстанческих движений по важных побережных зон Китая для этого используйте все необходимые средства после удачного выполнение Император щедро вознаградит нас."
+   jap_imperial_miss1.a:0 "Принять приказ" 
+   jap_imperial_miss1.b:0 "Отклонить"
+
+
+   jap_imperial_miss2.1.d:0 "Пришел приказ императора" 
+   jap_imperial_miss2.1.t:0 "Пришел срочный приказ от Императора по устранение повстанческих движений важно крупно промышленных зон в центральном Китая для этого используйте все необходимые средства после удачного выполнение Император щедро вознаградит нас." 
+   jap_imperial_miss2.a:0 "Принять приказ" 
+   jap_imperial_miss2.b:0 "Отклонить"
+
+   jap_imperial_miss3.1.d:0 "Пришел приказ императора" 
+   jap_imperial_miss3.1.t:0 "Пришел срочный приказ от Императора по устранение повстанческих движений во внутреней части Китая для этого используйте все необходимые средства после удачного выполнение Император щедро вознаградит нас." 
+   jap_imperial_miss3.a:0 "Принять приказ" 
+   jap_imperial_miss3.b:0 "Отклонить"
+
+   jap_imperial_miss4.1.d:0 "Пришел приказ императора" 
+   jap_imperial_miss4.1.t:0 "Пришел срочный приказ от Императора по устранение повстанческих движений на северной части Китая для этого используйте все необходимые средства после удачного выполнение Император щедро вознаградит нас." 
+   jap_imperial_miss4.a:0 "Принять приказ" 
+   jap_imperial_miss4.b:0 "Отклонить"
+
+   jap_imperial_miss5.1.d:0 "Пришел приказ императора" 
+   jap_imperial_miss5.1.t:0 "Пришел срочный приказ от Императора по устранение повстанческих движений на ресусрных зонах южной части китая без этих ресурсов Империи будет плохо не в коем случае не потеряйте их для этого используйте все необходимые средства после удачного выполнение Император щедро вознаградит нас." 
+   jap_imperial_miss5.a:0 "Принять приказ" 
+   jap_imperial_miss5.b:0 "Отклонить"
+  
+
+  JAP_submarine_focus:0 "Заставить работать над подлодками"
+  
+  JAP_flot_carrier7:0 "Превосходство морской авиации"
+
+  JAP_carrier_focus:0 "Превосходство морской авиации Японии"
+
+  JAP_Escort_Focus:0 "Увеличение бюджета в авианосном соединении"
+
+  JAP_cruiser5:0 "Приготовить флот к обороне Японской империи"
+
+  JAP_naval_submarina_focus:0 "Начать проект по созданию дешевых подлодок"
+
+  JAP_ocupant:0 "Партизанские отряды Китая"
+
+  TNP1:0 "Ничтожное покорение" 
+  TNP2:0 "Низкое покорение"
+  TNP3:0 "Средние покорение" 
+  TNP4:0 "Высокое покорение"
+  TNP5:0 "Покорены покорение"
+
+ 
+  
+  
+
+
+  JAP_matome_ugaki_1:0 "Специалист по уничтожению конвоев"
+
+  JAP_matome_ugaki:0 "$matome_ugaki$"
+
+  JAP_torpedo_cruisers:0 "Специалист по уничтожению конвоев"
+
+
+  JAP_long_lance2:0 "Доктрина спец подлодок"
+
+  JAP_long_lance1:0 "Массовая доктрина подлодок"
+
+  JAP_long_lance7:0 "Увеличить дальность малых подлодок"
+
+  JAP_long_lance4:0 "Усиление под лодочного соединение"
+
+  JAP_long_lance3:0 "Мясные подлодки"
+
+  JAP_flot_carrier2:0 "Увеличение инвестиций в зеро"
+
+  JAP_flot_carrier4:0 "Начать производство императорских авианосцев"
+  
+  JAP_long_lance6:0 "Доктрина сверх маленьких подлодок"
+
+  jap_minister_balanc:0 "Усилить Власть военных министров"
+
+  jap_imperial_balanc:0 "Усилить Власть Императора"
+
+  jap_imperial_balanc2:0 "Избавится от военных министров"
+
+  jap_minister_balanc2:0 "Созвать больше министров"
+
+  JAP_alliance_with_Siam:0 "Спец операция Подчинение"
+
+  JAP_army_expansion:0 "Императорская гвардия"
+
+  JAP_army_spec1:0 "Японские Группы специальных операций"
+
+  JAP_army_militarizm1:0 "Японский милитаризм"
+
+  JAP_supremacy_of_technology1:0 "Новая армия дзайбацу"
+
+  JAP_cruiser2:0 "Впустить производство Ямато крейсера"
+
+  JAP_flot_carrier5:0 "Ускорить производство для Авианосцев"
+
+  JAP_heavy_focus:0 "Инвестиции в Линкоры"
+
+ JAP_cruiser6:0 "Увеличение денежных средств в корабле строение"
+
+ JAP_debaf_army:0 "Копирование исследований"
+
+ USA_second_moscow_trial_flag: "Фокус §Y$USA_agricultural_adjustment_act$§! выполнен" 
+ USA_last_purge_focus_days_military_tt: "В настоящее время: [?USA_second_moscow_trial_flag:days|Y0]"
+ USA_second_moscow_trial_flag1: "Фокус §Y$USA_fair_labour_standards_act$§! выполнен" 
+ USA_last_purge_focus_days_military1_tt: "В настоящее время: [?USA_second_moscow_trial_flag1:days|Y0]"
+ 
+ USA_Pentagon_building:0 "Улучшение штатов"
+ 
+ USA_dicisipn_building_tt:0 "Открывает решения: §YУлучшение штатов§!"
+
+ USA_Acro_prom:0 "Улучшение [From.GetName]"
+ USA_Acro_prom1:0 "Улучшение $STATE_357$"
+ USA_Acro_prom2:0 "Улучшение $STATE_358$"
+ USA_Acro_prom3:0 "Улучшение $STATE_359$"
+ USA_Acro_prom4:0 "Улучшение $STATE_360$"
+ USA_Acro_prom5:0 "Улучшение $STATE_361$"
+ USA_Acro_prom6:0 "Улучшение $STATE_362$"
+ USA_Acro_prom7:0 "Улучшение $STATE_363$"
+ USA_Acro_prom8:0 "Улучшение $STATE_364$"
+ USA_Acro_prom9:0 "Улучшение $STATE_365$"
+ USA_Acro_prom10:0 "Улучшение $STATE_366$"
+ USA_Acro_prom11:0 "Улучшение $STATE_367$"
+ USA_Acro_prom12:0 "Улучшение $STATE_368$"
+ USA_Acro_prom13:0 "Улучшение $STATE_369$"
+ USA_Acro_prom14:0 "Улучшение $STATE_816$"
+ USA_Acro_prom15:0 "Улучшение $STATE_261$"
+ USA_Acro_prom16:0 "Улучшение $STATE_396$"
+ USA_Acro_prom17:0 "Улучшение $STATE_393$"
+ USA_Acro_prom18:0 "Улучшение $STATE_394$"
+ USA_Acro_prom19:0 "Улучшение $STATE_395$"
+ USA_Acro_prom20:0 "Улучшение $STATE_373$"
+ USA_Acro_prom21:0 "Улучшение $STATE_372$"
+ USA_Acro_prom22:0 "Улучшение $STATE_370$"
+ USA_Acro_prom23:0 "Улучшение $STATE_371$"
+ USA_Acro_prom24:0 "Улучшение $STATE_375$"
+ USA_Acro_prom25:0 "Улучшение $STATE_374$"
+ USA_Acro_prom26:0 "Улучшение $STATE_383$"
+ USA_Acro_prom27:0 "Улучшение $STATE_392$"
+ USA_Acro_prom28:0 "Улучшение $STATE_384$"
+ USA_Acro_prom29:0 "Улучшение $STATE_390$"
+ USA_Acro_prom30:0 "Улучшение $STATE_389$"
+ USA_Acro_prom31:0 "Улучшение $STATE_388$"
+ USA_Acro_prom32:0 "Улучшение $STATE_381$"
+ USA_Acro_prom33:0 "Улучшение $STATE_382$"
+ USA_Acro_prom34:0 "Улучшение $STATE_376$"
+ USA_Acro_prom35:0 "Улучшение $STATE_377$"
+ USA_Acro_prom36:0 "Улучшение $STATE_380$"
+ USA_Acro_prom37:0 "Улучшение $STATE_387$"
+ USA_Acro_prom38:0 "Улучшение $STATE_386$"
+ USA_Acro_prom39:0 "Улучшение $STATE_385$"
+ USA_Acro_prom40:0 "Улучшение $STATE_379$"
+ USA_Acro_prom41:0 "Улучшение $STATE_378$"
+ USA_Acro_prom42:0 "Улучшение $STATE_391$"
+ 
+ USA_selixoz_offensive:0 "Достаток каучука"
+ USA_production_speed_synthetic_refinery_factor_tt:0 "$modifier_production_speed_synthetic_refinery_factor$: $RIGHT|+=%1$"
+ USA_civilian_offensive:0 "Аграрная проблема"
+ USA_civilian_offensive_info:0 "§Y$USA_selixoz_offensive$§! изменится на:"
+ 
+ 
+ USA_nova_kurs:0 "Американская экономика"
+ USA_nova_kurs_desc:0 "Все бафы с изоляции перенесены в нац дух Новый курс"
+ 
+ USA_nova_kurs_tt:0 "Все бонусы от экономики перенесены в нац дух "Новый курс"""
+ USA_nova_kurs_flag:0 "Все бонусы от экономики перенесены в нац дух "Новый курс"""
+ 
+ USA_plan_civilian_dynamic_modifier:0 "Новый Курс"
+ USA_plan_civilian_dynamic_modifier_info:0 "§Y$USA_plan_civilian_dynamic_modifier$§! изменится на:"
+ 
+ USA_stability_factor_tt:0 "$MODIFIER_STABILITY_FACTOR$: $RIGHT|+=%1$"
+ USA_consumer_goods_expected_value_tt:0 "$MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$: $RIGHT|Y=%1$"
+ USA_production_speed_infrastructure_factor_tt:0 "$modifier_production_speed_infrastructure_factor$: $RIGHT|+=%1$"
+ USA_political_power_cost_tt:0 "$MODIFIER_POLITICAL_POWER_COST$: $RIGHT| -=%1$"
+ USA_fyp_consumer_goods_factor_tt:0 "$MODIFIER_CONSUMER_GOODS_FACTOR$: $RIGHT|Y=%1$"
+ USA_conscription_factor_tt:0 "$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: $RIGHT|+=%1$"
+ USA_mobilization_speed_factor_tt:0 "$MODIFIER_MOBILIZATION_SPEED$: $RIGHT|+=%1$"
+ USA_fyp_local_resources_factor_tt:0 "$MODIFIER_LOCAL_RESOURCES_FACTOR$: $RIGHT|+=%1$"
+ USA_fyp_production_speed_industrial_complex_factor_tt:0 "$modifier_production_speed_industrial_complex_factor$: $RIGHT|+=%1$"
+ USA_join_faction_tension_tt:0 "$USA_join_faction_tension$: $RIGHT|+=%1$"
+ USA_production_speed_arms_factory_factor_tt:0 "$modifier_production_speed_arms_factory_factor$: $RIGHT|+=%1$"
+ USA_production_speed_dockyard_factor_tt:0 "$modifier_production_speed_dockyard_factor$: $RIGHT|+=%1$"
+ USA_conversion_cost_civ_to_mil_factor_tt:0 "$MODIFIER_CONVERSION_COST_CIV_TO_MIL_FACTOR$: $RIGHT| -=%1$"
+ USA_production_speed_infrastructure_factor_tt:0 "$modifier_production_speed_infrastructure_factor$: $RIGHT|+=%1$"
+ USA_industrial_capacity_factory_tt:0 "$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: $RIGHT|+=%1$"
+ USA_production_factory_max_efficiency_factor_tt:0 "$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY$: $RIGHT|+=%1$"
+ USA_production_factory_start_efficiency_factor_tt:0 "$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: $RIGHT|+=%1$"
+ USA_production_factory_efficiency_gain_factor_tt:0 "$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: $RIGHT|+=%1$"
+ USA_industrial_capacity_dockyard_tt:0 "$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: $RIGHT|+=%1$"
+ USA_conversion_cost_mil_to_civ_factor_tt:0 "$MODIFIER_CONVERSION_COST_MIL_TO_CIV_FACTOR$: $RIGHT|-=%1$"
+ USA_production_speed_energy_infrastructure_factor_tt:0 "$MODIFIER_PRODUCTION_SPEED_ENERGY_INFRASTRUCTURE_FACTOR$: $RIGHT|+=%1$"
+ USA_global_building_slots_factor_factor_tt:0 "$MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR$: $RIGHT|+=%1$"
+
+
+ USA_production_speed_energy_infrastructure_factor_tt: "Скорость строительства §Yусиленной энергосети§!"
+ MODIFIER_PRODUCTION_SPEED_ENERGY_INFRASTRUCTURE_FACTOR: "Скорость строительства §Yусиленной энергосети§!"
+ MODIFIER_PRODUCTION_SPEED_ENERGY_INFRASTRUCTURE_FACTOR_DESC: "Изменяет скорость строительства §Yусиленной энергосети§!"
+
+
+ USA_conversion_cost_mil_to_civ_factor:0 "Скорость конверсии военного завода в фабрику"
+ USA_consumer_goods_expected_value:0 "Ожидаемое количество заводов, перепрофилированных на товары народного потребления"
+ USA_fyp_consumer_goods_factor:0 "Фактор фабрик, производящих товары народнова потребления"
+ USA_fyp_production_speed_industrial_complex_factor:0 "Скорость строительства §Yфабрик§!"
+ USA_fyp_local_resources_factor:0 "Эффективность увелечения ресурсов"
+ USA_industrial_capacity_factory:0 "Объем заводского производства"
+ USA_political_power_cost:0 "Ежедневаня стоимость политической власти"
+ USA_conscription_factor:0 "Фактор Военнобязоности населения"
+ USA_mobilization_speed_factor:0 "Скорость мобилизации"
+ USA_join_faction_tension:0 "Уровень напряжение для вступления в альянс"
+ USA_production_speed_arms_factory_factor:0 "Скорость строительства §YВоенных заводов§!"
+ USA_production_speed_dockyard_factor:0 "Скорость строительства §YВерфей§!"
+ USA_conversion_cost_civ_to_mil_factor:0 "Скорость конверсии фабрик в военный заводо"
+ USA_production_speed_infrastructure_factor:0 "Скорость строительства §YИнфраструктуры§!"
+ USA_production_speed_energy_infrastructure_factor:0 "Скорость строительства §YУсиленной энергосети§!"
+ USA_stability_factor:0 "Стабильность"
+ USA_global_building_slots_factor_factor:0 "Макс. количество зданий"
+ USA_voen_prom_offensive:0 "Улучшение восточного побережье"
+ USA_voen_prom_naval_offensive:0 "Улучшение западного побережье"
+ USA_plan_1:0 "§GПри изучение этого фокуса будет в будущем даваться баф на верфи и флот для фокуса:§! §Y$USA_stroika3$§!"
+ USA_plan_2:0 "§GПри изучение этого фокуса будет в будущем даваться баф на Военки и объёмы для фокуса:§! §Y$USA_stroika3$§!"
+ USA_plan_3:0 "При взятии фокуса §Y$USA_stroika10$§! Будут выданы бонусы на верфи и флот \nПри взятии фокуса §Y$USA_stroika9$§! будут выданы бонусы на Военки и объёмы"
+ 
+ USA_production_factory_max_efficiency_factor:0 "Макс. эффективность производства"
+ USA_production_factory_start_efficiency_factor:0 "Базовая эффективность производства"
+ USA_production_factory_efficiency_gain_factor:0 "Рост эффективности производства"
+ USA_industrial_capacity_dockyard:0 "Производительность верфи"
+ 
+ USA_stroika2:0 "Исполнительные приказы"
+ USA_stroika8:0 "Использовать все средства"
+ USA_stroika7:0 "Подготовить планы промышленной и защитной мобилизации"
+ 
+ USA_stroika3:0 "Наступает буря лучше к ней подготовится"
+ USA_stroika4:0 "Объединение бюро судов"
+ USA_stroika5:0 "Закон об электрификации сельских районов"
+ USA_stroika6:0 "Закон о реорганизации"
+ 
+ USA_stroika10:0 "Развитие западной части Америки"
+ USA_stroika9:0 "Развитие восточной части Америки"
+ 
+ USA_stroika11:0 "Продолжить Развитие западной части Америки"
+ USA_stroika12:0 "Продолжить Развитие восточной части Америки"
+ 
+ USA_stroika_ARM1:0 "Закон о сохранении почв и приусадебном землепользовании"
+ 
+ USA_Politica_undusria1:0 "Создать совет по военным ресурсам"
+ USA_Politica_undusria2:0 "Нота США Японии" 
+ USA_Politica_undusria3:0 "Нота Халла"
+ USA_Politica_undusria4:0 "Военно-морской консультационный совет"
+ USA_Politica_undusria8:0 "Второй закон Винсона"
+ 
+  
+USA_Expansion_of_the_import_substitution_program:0 "Расширить программу импортозамещения каучука"
+USA_Expansion_of_the_import_substitution_program_desc:0 "Удар Японии по Индокитаю ставит поставки стратегически важной для нас резины из юго-восточной Азии под угрозу. Нам нужно немедленно преступить к строительству заводов по производству синтетического каучука, ибо без него мы рискуем остаться без современного ВПК."
+
+USA_Expand_rubber_production_around_Oklahoma:0 "Расширить производство каучука в округе Оклахома"
+USA_Expand_rubber_production_around_Oklahoma_desc:0 "Текущего уровня производства каучука не достаточно для удовлетворения спроса нашей военной промышленности. Представители компании Стандарт Оил готовы оказать нам поддержку в столь трудный час и наладить производство каучука в округе Оклахома. Это позволит нам не только обеспечить себя резиной, но и еще создать дополнительные рабочие места."
+
+USA_synthetic_rubber:0 "Модернизация производства каучука"
+USA_synthetic_rubber_desc:0 "Помимо наших промышленников, проблемой импортозамещения каучука занимаются и наши научные институты. Ряд их наработок позволяет значительно повысить производительность наших нефтеперерабатывающих заводов без существенных капиталовложений. Осталось только лишь интегрировать их на существующих предприятиях."
+
+ USA_Politica_undusria5:0 "Начать разработку резины"
+ USA_Politica_undusria6:0 "Выделить больше средства"
+ USA_Politica_undusria7:0 "Увеличить объём резины"
+ 
+ 
+ USA_stroika_ARM2:0 "Второй закон о военных полномочиях"
+ USA_stroika_ARM3:0 "Рационирование"
+ USA_stroika_ARM4:0 "Первый закон о военных полномочиях"
+ USA_stroika_ARM5:0 "Национальный закон о чрезвычайном военном судоходстве"
+ USA_stroika_ARM6:0 "Национальный закон о чрезвычайном военном положении"
+ 
+ USA_lend_lease_converse_military:0 "Увеличить военную помощь союзникам"
+ USA_subsidizing_military_production:0 "Увеличить субсидирование военной промышленности"
+ USA_financing_the_constructionindustry:0 "Увеличить финансирование строительной индустрии"
+
+ USA_noman_flag:0 "§YСША§!"
+
+
+
+ Alais_pact:0 "Резиновая независимость"
+ Alais_pact2:0 "Каучуковый прорыв"
+ Alais_pact3:0 "Синтетическая революция"
+ Alais_pact4:0 "Эластичная экономика"
+ Alais_pact5:0 "Шины для победы"
+ Alais_pact6:0 "Резиновый щит"
+ Alais_pact7:0 "Путь каучука"
+ Alais_pact8:0 "Бумеранг поставок"
+ Alais_pact9:0 "Колесо войны"
+ 
+ Axi_africa_company_defens:0 "Несокрушимая стена Пустынного Лиса"
+ Axi_africa_company_defens2:0 "Крепость Тобрук"
+ Axi_africa_company_defens3:0 "Конвои Дуче"
+ Axi_africa_company_defens4:0 "Мины фюрера"
+ Axi_africa_company_defens5:0 "Синтетическая пустыня"
+ Axi_africa_company_defens6:0 "Последний шанс Африканского корпуса"
+ Axi_africa_company_defens7:0 "Кровь войны"
+ 
+ 
+ Axi_africa_company_attak:0 "Суэц в огне"
+ Axi_africa_company_attak2:0 "Стальные караваны Роммеля"
+ Axi_africa_company_attak3:0 "Колониальный разгром"
+ Axi_africa_company_attak4:0 "Черная кровь"
+ Axi_africa_company_attak5:0 "Итальянский кулак"
+ Axi_africa_company_attak6:0 "Война в небесах"
+ Axi_africa_company_attak7:0 "Восстание ислама"
+ 
+ Axi_africa_company:0 "Подготовка к Северо-Африканской кампанией"
+ Axi_africa_company2:0 "Исход Северо-Африканской кампанией"
+ 
+ 
+ 
+ 
+ 
+ Africa_company_industry_add_tt:0 "Будет добавлена идея §Y$Africa_company_industry_dynamic_modifier$§!"
+ 
+ Africa_company_industry:0 "Подготовка к Африке"
+ GER_Africa_offensive:0 "Северо-Африканская Наступательная кампания"
+ ITA_Africa_offensive:0 "Северо-Африканская Оборонительная стратегия"
+ Africa_axi_defens_offensive:0 "Забили болт на Африку"
+ ITA_Africa_resurset_offensive:0 "Раскопка ресурсов"
+ Africa_axi_zamen_defens_offensive:0 "Забили болт на Африку"
+ 
+ 
+ Africa_company_industry_dynamic_modifier:0 "Северо-Африканская кампания"
+ Africa_company_industry_dynamic_modifier_info:0 "§Y$Africa_company_industry_dynamic_modifier$§! изменится на:"
+ 
+ Africa_acclimatization_hot_climate_gain_factor_tt:0 "$MODIFIER_ACCLIMATIZATION_HOT_CLIMATE_GAIN_FACTOR$: $RIGHT|+=%1$"
+ Africa_SUPPLY_NODE_RANGE_tt:0 "$MODIFIER_SUPPLY_NODE_RANGE$: $RIGHT| +=%1$"
+ Africa_HEAT_ATTRITION_tt:0 "$MODIFIER_HEAT_ATTRITION$: $RIGHT| -=%1$" 
+ Africa_SUPPLY_CONSUMPTION_FACTOR_tt:0 "$MODIFIER_SUPPLY_CONSUMPTION_FACTOR$: $RIGHT| -=%1$"
+ Africa_FUEL_GAIN_FACTOR_tt:0 "$MODIFIER_FUEL_GAIN_FACTOR$: $RIGHT|+=%1$"
+ Africa_INDUSTRIAL_CAPACITY_FACTOR_tt:0 "$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: $RIGHT|+=%1$"
+ Africa_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR_tt:0 "$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: $RIGHT|+=%1$"
+ Africa_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR_tt:0 "$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: $RIGHT|+=%1$"
+ Africa_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR_tt:0 "$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: $RIGHT|+=%1$"
+ Africa_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR_tt:0 "$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$: $RIGHT|+=%1$"
+ Africa_LOCAL_RESOURCES_FACTOR_tt:0 "$MODIFIER_LOCAL_RESOURCES_FACTOR$: $RIGHT|+=%1$"
+ Africa_production_speed_fuel_silo_factor_tt:0 "$modifier_production_speed_fuel_silo_factor$: $RIGHT|+=%1$"
+ Africa_synth_resources_tt:0 "$synth_resources_research$: $RIGHT|+=%1$"
+ 
+ 
+ ITA_evacuation2_tt:0 "§YДля Италии будут активированы решения на эвакуацию нефти§!"
+ 
+ Axi_africa_company_attak_TT:0 "§RНачнётся операция Северо-Африканская Наступательная кампания§!"
+ Axi_africa_company_defens_TT:0 "§GНачнётся Северо-Африканская Оборонительная стратегия§!"
+ Axi_africa_company_defens_bolt_TT:0 "§YЗабиваем на африку§!"
+ 
+ 
+ Africa_Event_company_zamen.a:0 "Понятно"
+ Africa_Event_company_JAP.a:0 "Понятно"
+ Africa_Event_company_GER.a:0 "Понятно"
+ Africa_Event_company_GER.1.d:0 "Хватити с нас африки мы поедим домой"
+ Africa_Event_company_JAP.1.d:0 "Хватити с нас африки мы поедим домой"
+ Africa_Event_company_zamen.1.d:0 "Разбираем часть укреплений на ресурсы"
+ Africa_Event_company_zamen.1.t:0 "Разбираем часть укреплений на ресурсы"
+ Africa_Event_company_JAP.1.t:0 "Хватити с нас африки мы поедим домой"
+ Africa_Event_company_GER.1.t:0 "Хватити с нас африки мы поедим домой"
+ 
+ 
+ ITA_evacuation:0 "Вывоз нефти"
+ ITA_evacuation2:0 "Привоз нефти"
+ 
+ 
+ 
+ 
+ Sia_Restoration_policy:0 "Возродим политику Сиамской Империи"
+ Sia_Military_public:0 "Военная общественность"
+ Sia_Civil_community:0 "Гражданская общественность"
+ Sia_prepare_for_military_policy:0 "Подготовится к Военной политики"
+ Sia_Improving_civil_policy:0 "Улучшение гражданской политики"
+ 
+ FRA_fabriki:0 "Запрет на стройку в мейне"
+ SOV_sibir:0 "Сибирские дивизии"
+ JAP_voina_sov:0 "Война с СССР"
+ 
+   
+   
+   

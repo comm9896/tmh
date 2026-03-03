@@ -1,0 +1,46 @@
+state={
+	id=800
+	name="STATE_800" #Van
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = TUR
+			add_core_of = TUR
+		}			
+		1936.1.1.13 = {
+			owner = TUR
+			add_core_of = TUR
+		}	
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1936.1.1.15 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+		victory_points = {
+			6935 5 
+		}
+		victory_points = {
+			12376 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		652 4583 6935 7470 11880 12376 13121 
+	}
+	manpower = 365490
+	state_category = rural
+
+	local_supplies=0.0 
+}

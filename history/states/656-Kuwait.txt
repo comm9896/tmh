@@ -1,0 +1,46 @@
+state={
+	id=656
+	name="STATE_656"
+	manpower = 80000
+	
+	state_category = rural_1k_Air
+	
+	history={
+
+	   1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+			add_core_of = IRQ
+		}			
+	   1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = TIB
+			add_core_of = IRQ			
+		}
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+			add_core_of = IRQ			
+		}					
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+			add_core_of = IRQ			
+		}		
+		victory_points = {
+			8085 1 
+		}
+		buildings = {
+			infrastructure = 2
+			8085 = {
+				naval_base = 4
+			}
+		}
+
+	}
+	provinces={
+		8085 13366 13367
+	}
+
+	local_supplies=0.0 
+}

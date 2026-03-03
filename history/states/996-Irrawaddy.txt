@@ -1,0 +1,19 @@
+state = {
+	id = 996
+	name = "STATE_996"
+	
+	state_category = rural
+	manpower = 1662669
+	
+	history = {
+		owner = BRA
+		add_core_of = BRA
+	}
+
+	provinces = {
+		12379
+	}
+	local_supplies = 0.000
+	buildings_max_level_factor = 1.000
+
+}

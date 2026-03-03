@@ -1,0 +1,41 @@
+state = {
+	id = 838 # Illubabor-Kaffa
+	name = "STATE_838"
+	manpower = 600000
+	resources = {
+		rubber = 16
+	}
+	
+	state_category = wasteland_1k_Air
+
+	history = {
+		
+		1936.1.1.12 = {	    
+			owner = ETH
+			add_core_of = ETH
+		}			
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}			
+
+		
+		buildings = {
+			infrastructure = 1
+		}
+		# Gambeila
+		victory_points = { 
+			13244 2 
+		}
+		# Jiren (add VPs to this if creating the Jimma Sultanate)
+		victory_points = { 
+			7912 1  
+		}
+	}
+
+	provinces = {
+ 		7912 13244 13245
+ 	}
+
+	local_supplies = 0.0 
+}

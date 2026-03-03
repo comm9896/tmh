@@ -1,0 +1,521 @@
+armored_spearhead = { #танковый прорыв
+    track = armor
+    name = SUBDOCTRINE_ARMORED_SPEARHEAD
+    description = SUBDOCTRINE_ARMORED_SPEARHEAD_DESC
+    icon = GFX_doctrine_armored_spearhead_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+    visible = {
+        has_dlc = "La Resistance"
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            original_tag = GER
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_breakthrough
+
+    rewards = {
+        force_concentration = {
+        #1
+            category_tanks= {
+                max_organisation = 2
+            }
+            armored_car = {
+                max_organisation = 2
+            }			
+        }
+        armored_breakthrough_exploits = {
+        #2
+            category_tanks = {
+                breakthrough = 0.2
+            }
+            armored_car = {
+                breakthrough = 0.2
+            }			
+        }
+        local_reserves = {
+        #3
+            category_tanks= {
+                max_organisation = 1
+            }
+            armored_car = {
+                max_organisation = 1
+            }	
+        }
+        tactical_reconnaissance = {
+        #4
+            category_tanks = {
+                breakthrough = 0.2
+            }
+            armored_car = {
+                breakthrough = 0.2
+            }
+        }
+        assault_detachments = {
+        #5
+            category_tanks= {
+                max_organisation = 1
+                breakthrough = 0.2				
+            }
+            armored_car = {
+                max_organisation = 1
+                breakthrough = 0.2				
+            }
+        }
+    }
+}
+
+armored_infantry_support = { #поддержка механизированной пехоты
+    track = armor
+    name = SUBDOCTRINE_ARMORED_INFANTRY_SUPPORT
+    description = SUBDOCTRINE_ARMORED_INFANTRY_SUPPORT_DESC
+    icon = GFX_doctrine_armored_infantry_support_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+               original_tag = ENG
+               original_tag = FRA
+            }
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_blitz
+
+
+    #TODO jack look if you can make a script effect for production bonuses
+
+    rewards = {
+        mobile_reserves = {
+        #1
+            category_tanks = {
+                breakthrough = 0.1
+                soft_attack = 0.1
+            }
+        }
+        armored_cohorts = {
+        #2
+            category_tanks = {
+				max_organisation = 7
+				hard_attack = 0.1
+            }		
+        }
+        maintenance_routines = {
+        #3
+            armored_maintenance = {
+                battalion_mult = {
+                    category = category_all_armor
+                    max_strength = 0.2
+                    add = yes
+                }
+            }
+        }
+        fuel_rationing = {
+        #4
+            category_all_armor = {
+                supply_consumption = -0.1
+            }
+        }
+        mobile_armored_strongpoints = {
+        #5
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+    }
+}
+
+streamlined_deployment = {  #налаженное развертывание
+    track = armor
+    name = SUBDOCTRINE_STREAMLINED_DEPLOYMENT
+    description = SUBDOCTRINE_STREAMLINED_DEPLOYMENT_DESC
+    icon = GFX_doctrine_streamlined_deployment_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+        ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+                original_tag = SOV 
+                original_tag = CHI 
+                original_tag = PRC 
+            }
+        }
+
+    }
+
+    category_all_armor = {
+        soft_attack = 0.1
+        breakthrough = 0.1
+    }
+
+
+    rewards = {
+        flexible_armored_battalions = {
+
+            light_tank_recon = {
+                battalion_mult = {
+                    category = category_all_armor
+                    max_organisation = 2
+                    add = yes
+                }
+            }
+
+        }
+        mechanized_wave = {
+            category_all_armor = {
+                default_morale = 0.2
+            }
+        }
+        tank_desant = {
+            armored_signal = {
+                battalion_mult = {
+                    category = category_light_infantry
+                    maximum_speed = 0.05
+                }
+            }
+            light_tank_recon = {
+                battalion_mult = {
+                    category = category_light_infantry
+                    maximum_speed = 0.05
+                }
+            }
+        }
+        full_front_deployment = {
+            category_all_armor = {
+                reliability = 0.05
+                supply_consumption = -0.02
+            }
+
+        }
+        continuous_offensives = {
+            category_all_armor = {
+                default_morale = 0.2
+                max_organisation = 2
+            }
+        }
+    }
+
+
+}
+
+mobile_defense = {  #подвижная оборона
+    track = armor
+    name = SUBDOCTRINE_MOBILE_DEFENSE
+    description = SUBDOCTRINE_MOBILE_DEFENSE_DESC
+    icon = GFX_doctrine_mobile_defense_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        not = {
+			has_doctrine = grand_battleplan	
+		}
+    }
+
+        ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            original_tag = USA
+        }
+
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+
+    }
+
+
+
+    rewards = {
+
+        mechanized_offensive = {
+            category_all_armor = {
+                defense = 0.1
+                default_morale = 0.1
+            }        
+		}
+        advance_under_fire = {
+			
+			max_dig_in_factor = -0.50 	
+			dig_in_speed_factor = 0.50 	
+        }
+        attached_support = {
+            assault_engineer = {
+                max_organisation = 10
+				
+            }
+            armored_engineer = {
+                max_organisation = 10
+            }
+            armored_signal = {
+                max_organisation = 10
+            }
+			
+			
+            category_all_armor = {
+                defense = 0.1
+                soft_attack = 0.05
+                hard_attack = 0.05				
+            }
+
+        }
+        combined_anti_armor = {			
+			dig_in_speed_factor = 0.50 	
+        }
+        tank_on_tank_engagement = {
+            category_all_armor = {
+                breakthrough = 0.1
+                default_morale = 0.1
+            }			
+        }    
+    }
+}
+
+armored_cavalry = {  #бронетанковая кавалерия
+    track = armor
+    name = SUBDOCTRINE_ARMORED_CAVALRY
+    description = SUBDOCTRINE_ARMORED_CAVALRY_DESC
+    icon = GFX_doctrine_armored_cavalry_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+    visible = {
+       AND = {
+            has_dlc = "No Compromise, No Surrender"
+            has_dlc = "La Resistance"
+        }
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+                original_tag = ITA 
+                original_tag = JAP 
+            }
+        }
+
+    }
+
+
+    # EFFECTS
+    rewards = {
+        cruiser_tanks = {
+			category_tanks = {
+				max_organisation = 4
+				default_morale = 0.1
+			}
+        }
+        quick_response_force = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        speed_as_armour = {
+            armored_car = {
+                default_morale = 0.1
+                max_organisation = 7
+            }
+            category_tanks = {
+                default_morale = 0.1
+                max_organisation = 3
+				soft_attack = 0.05
+				hard_attack = 0.05
+            }
+        }
+        fighting_reconnaissance = {
+            armored_car = {
+                default_morale = 0.1
+            }
+            category_tanks= {
+				default_morale = 0.1
+            }			
+        }
+        sustained_deployments = {
+            armored_car = {
+                max_organisation = 3
+                breakthrough = 0.1
+            }
+            category_tanks= {
+                max_organisation = 3
+                breakthrough = 0.1
+            }
+        }
+    }
+}
+
+
+tank_destroyer_force = {
+     track = armor
+    name = SUBDOCTRINE_TANK_DESTROYER_FORCE
+    description = SUBDOCTRINE_TANK_DESTROYER_FORCE_DESC
+    icon = GFX_doctrine_tank_destroyer_force_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    visible = {
+        has_dlc = "No Compromise, No Surrender"
+    }
+
+    ai_will_do = {
+
+        base = 0
+
+    }  
+
+
+    rewards = {
+
+        mobile_anti_tank = {
+			light_tank_destroyer_brigade = {
+				hard_attack = 0.05
+				soft_attack = 0.05
+			}
+			medium_tank_destroyer_brigade = {
+				hard_attack = 0.05
+				soft_attack = 0.05
+			}
+			heavy_tank_destroyer_brigade = {
+				hard_attack = 0.05
+				soft_attack = 0.05
+			}
+			super_heavy_tank_destroyer_brigade = {
+				hard_attack = 0.05
+				soft_attack = 0.05
+			}
+			modern_tank_destroyer_brigade = {
+				hard_attack = 0.05
+				soft_attack = 0.05
+			}
+        }
+        committed_operational_units = {
+			light_tank_destroyer_brigade = {
+				defense = 0.15
+			}
+			medium_tank_destroyer_brigade = {
+				defense = 0.15
+			}
+			heavy_tank_destroyer_brigade = {
+				defense = 0.15
+			}
+			super_heavy_tank_destroyer_brigade = {
+				defense = 0.15
+			}
+			modern_tank_destroyer_brigade = {
+				defense = 0.15
+			}
+        }
+        redeployment_priority = {
+			light_tank_destroyer_brigade = {
+				default_morale = 0.1
+			}
+			medium_tank_destroyer_brigade = {
+				default_morale = 0.1
+			}
+			heavy_tank_destroyer_brigade = {
+				default_morale = 0.1
+			}
+			super_heavy_tank_destroyer_brigade = {
+				default_morale = 0.1
+			}
+			modern_tank_destroyer_brigade = {
+				default_morale = 0.1
+			}
+        }
+
+        independent_counterattacks = {
+			light_tank_destroyer_brigade = {
+				breakthrough = 0.1
+			}
+			medium_tank_destroyer_brigade = {
+				breakthrough = 0.1
+			}
+			heavy_tank_destroyer_brigade = {
+				breakthrough = 0.1
+			}
+			super_heavy_tank_destroyer_brigade = {
+				breakthrough = 0.1
+			}
+			modern_tank_destroyer_brigade = {
+				breakthrough = 0.1
+			}		
+        }
+
+        selfsufficient_battalion = {
+			light_tank_destroyer_brigade = {
+				hard_attack = 0.1
+				soft_attack = 0.1
+			}
+			medium_tank_destroyer_brigade = {
+				hard_attack = 0.1
+				soft_attack = 0.1
+			}
+			heavy_tank_destroyer_brigade = {
+				hard_attack = 0.1
+				soft_attack = 0.1
+			}
+			super_heavy_tank_destroyer_brigade = {
+				hard_attack = 0.1
+				soft_attack = 0.1
+			}
+			modern_tank_destroyer_brigade = {
+				hard_attack = 0.1
+				soft_attack = 0.1
+			}
+        }
+
+
+
+    }
+}

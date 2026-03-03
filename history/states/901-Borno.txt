@@ -1,0 +1,35 @@
+state={
+	id=901
+	name="STATE_901"
+	manpower = 166240
+	state_category = pastoral
+
+	history={
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TZN				
+		}
+		1936.1.1.12 = {	    
+		    owner = ENG
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+				
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}  
+
+	provinces={
+		4997 5028 8109 10820 
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

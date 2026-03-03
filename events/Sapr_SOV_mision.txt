@@ -1,0 +1,842 @@
+
+add_namespace = Sapr_SOV_winter_41
+
+country_event = {
+	id = Sapr_SOV_winter_41.1
+	title = Sapr_SOV_winter_41.1.b
+	desc = Sapr_SOV_winter_41.1.c
+	picture = GFX_report_event_german_troops
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {			
+		date > 1941.12.01
+		not = {
+			GER = {
+				has_country_flag = Sapr_duelmiy_mode
+			}
+		}
+	}	
+
+	immediate = {	
+		every_state = {
+			limit = {
+				or = {
+					is_core_of = SOV
+					is_core_of = FIN					
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_winter_41
+				days = 90				
+			}				
+		}
+		hidden_effect = {
+			set_global_flag = Sapr_winter_41_news
+		}
+	}		
+}
+
+add_namespace = SOV_Siege_of_Sevastopol
+
+#скрытый эвент, срабатывает Если ОСЬ подзодит в плотную к Сталинграду
+country_event = {
+	id = SOV_Siege_of_Sevastopol.a
+	title = SOV_Siege_of_Sevastopol.1.b
+	desc = SOV_Siege_of_Sevastopol.1.c
+	picture = GFX_report_event_soviet_tanks_snow
+
+
+	fire_only_once = yes
+
+	trigger = {
+  		AND = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+			not = {
+				has_completed_focus = SOV_the_glory_of_the_red_army
+			}	
+			SOV = {
+				casualties_k > 3000
+			}			
+			OR = {
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {196}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {196}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {196}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {196}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {196}
+							count > 0
+						}
+					}
+					
+					GER = {
+						num_divisions_in_states = {
+							states = {137}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {137}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {137}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {137}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {137}
+							count > 0
+						}
+					}					
+				}	
+			}			
+			AND = {
+				137 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+			}
+		}	
+
+	}
+
+	option = {
+	    name = SOV_Siege_of_Sevastopol.1.d
+
+		add_manpower = -380000
+
+		137 = {
+						
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 6
+				prioritize_location = 705						
+			}
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 6
+				prioritize_location = 6704						
+			}	
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 6
+				prioritize_location = 9677						
+			}				
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 4
+				prioritize_location = 9680						
+			}				
+		}
+		
+		activate_mission = SOV_Sapr_protect_Sevastopol		
+		set_country_flag = SOV_Sapr_protect_Sevastopol_misson
+		
+	}
+}
+
+
+
+
+add_namespace = SOV_Siege_of_Moscow
+
+#скрытый эвент, срабатывает Если ОСЬ подзодит в плотную к Сталинграду
+country_event = {
+	id = SOV_Siege_of_Moscow.a
+	title = SOV_Siege_of_Moscow.1.b
+	desc = SOV_Siege_of_Moscow.1.c
+	picture = GFX_report_event_soviet_tanks_snow
+
+	
+	mean_time_to_happen = { days = 5 }
+
+	fire_only_once = yes
+
+	trigger = {
+  		AND = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+			not = {
+				has_completed_focus = SOV_the_glory_of_the_red_army
+			}
+			SOV = {
+				casualties_k > 3000
+			}				
+			OR = {
+				AND = {
+					205 = {
+						controller = {
+							OR ={
+								tag = GER
+								is_in_faction_with = GER
+							}
+						}				
+					}
+					242 = {
+						controller = {
+							OR ={
+								tag = GER
+								is_in_faction_with = GER
+							}
+						}				
+					}				
+				}
+				AND = {
+					246 = {
+						controller = {
+							OR ={
+								tag = GER
+								is_in_faction_with = GER
+							}
+						}				
+					}
+					242 = {
+						controller = {
+							OR ={
+								tag = GER
+								is_in_faction_with = GER
+							}
+						}				
+					}				
+				}				
+				223 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				258 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				257 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }				
+			}
+			AND = {
+				
+				219 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+				247 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+				254 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+			}
+		}	
+
+	}
+
+	option = {
+	    name = SOV_Siege_of_Moscow.1.d
+		
+		add_manpower = -600000
+		
+		219 = {
+			
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 20
+			}			
+			
+		}
+		247 = {
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 12
+			}
+			
+		}
+		254 = {
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 20
+			}
+		}
+	}
+}
+
+
+
+add_namespace = SOV_Siege_of_Leningrad
+
+#скрытый эвент, срабатывает Если ОСЬ подзодит в плотную к ленинграду
+country_event = {
+	id = SOV_Siege_of_Leningrad.a
+	title = SOV_Siege_of_Leningrad.1.b
+	desc = SOV_Siege_of_Leningrad.1.c
+	picture = GFX_report_event_soviet_tanks_snow
+
+	
+	mean_time_to_happen = { days = 5 }
+
+	fire_only_once = yes
+
+	trigger = {
+  		AND = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+			not = {
+				has_completed_focus = SOV_the_glory_of_the_red_army
+			}
+			SOV = {
+				casualties_k > 3000
+			}				
+			OR = {
+				813 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {813}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {813}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {813}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {813}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {813}
+							count > 0
+						}
+					}	
+				}			
+								
+				209 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {209}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {209}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {209}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {209}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {209}
+							count > 0
+						}
+					}	
+				}
+				
+				263 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {263}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {263}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {263}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {263}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {263}
+							count > 0
+						}
+					}	
+				}
+				
+				264 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {264}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {264}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {264}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {264}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {264}
+							count > 0
+						}
+					}	
+				}					
+				
+				FIN = {
+					divisions_in_border_state = {
+						size > 1
+						state = 146
+						border_state = 195
+					}
+				}	
+			}
+			AND = {
+				
+				195 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+				208 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+				244 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+			}			
+			
+		}	
+
+	}
+
+	option = {
+	    name = SOV_Siege_of_Leningrad.1.d
+		
+		add_manpower = -520000		
+		
+		195 = {
+			
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 20
+			}
+			
+		}
+		208 = {
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 12
+			}
+			
+		}
+		244 = {
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 12
+			}			
+		}
+		
+		activate_mission = SOV_Sapr_protect_Leningrad
+		set_country_flag = SOV_Sapr_protect_Leningrad_misson
+	}
+}
+
+add_namespace = SOV_Siege_of_Stalingrad
+
+#скрытый эвент, срабатывает Если ОСЬ подзодит в плотную к Сталинграду
+country_event = {
+	id = SOV_Siege_of_Stalingrad.a
+	title = SOV_Siege_of_Stalingrad.1.b
+	desc = SOV_Siege_of_Stalingrad.1.c
+	picture = GFX_report_event_soviet_tanks_snow
+
+	
+	mean_time_to_happen = { days = 5 }
+
+	fire_only_once = yes
+
+	trigger = {
+  		AND = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+			not = {
+				has_completed_focus = SOV_the_glory_of_the_red_army
+			}	
+			SOV = {
+				casualties_k > 3000
+			}				
+			OR = {
+				245 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {245}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {245}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {245}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {245}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {245}
+							count > 0
+						}
+					}	
+				}				
+				
+				
+				238 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {238}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {238}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {238}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {238}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {238}
+							count > 0
+						}
+					}				
+				}
+				235 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {235}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {235}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {235}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {235}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {235}
+							count > 0
+						}
+					}				
+				}				
+				260 = {
+				    controller = {
+				        OR ={
+					        tag = GER
+				            is_in_faction_with = GER
+				        }
+				    }				
+			    }
+				OR = {
+					GER = {
+						num_divisions_in_states = {
+							states = {260}
+							count > 0
+						}
+					}
+					ITA = {
+						num_divisions_in_states = {
+							states = {260}
+							count > 0
+						}
+					}
+					BUL = {
+						num_divisions_in_states = {
+							states = {260}
+							count > 0
+						}
+					}
+					HUN = {
+						num_divisions_in_states = {
+							states = {260}
+							count > 0
+						}
+					}	
+					ROM = {
+						num_divisions_in_states = {
+							states = {260}
+							count > 0
+						}
+					}				
+				}					
+			}
+			AND = {
+				
+				217 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+				265 = {
+				    controller = {
+				        OR ={
+					        tag = SOV
+				            is_in_faction_with = SOV
+				        }
+				    }				
+			    }
+			}
+		}	
+
+	}
+
+	option = {
+	    name = SOV_Siege_of_Stalingrad.1.d
+		
+		add_manpower = -600000		
+		
+		217 = {
+			
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 20
+			}				
+		}
+		265 = {
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 12
+			}
+			
+		}
+		1052 = {
+			create_unit = {
+				division = "name = \"Народное ополченеие\" division_template = \"Народное ополченеие\" start_experience_factor = 0.1" 
+				owner = SOV
+				count = 20
+			}
+		}
+			
+		
+	}
+}
+

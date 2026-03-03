@@ -1,0 +1,90 @@
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 322600
+	
+	state_category = small_island
+	
+	resources={
+		chromium=7 # was: 10
+	}
+
+	history={
+
+		1936.1.1.12 = {	    
+			owner = GRE			
+			add_core_of = GRE
+		
+			buildings = {
+				infrastructure = 1
+				dockyard = 1
+				8435 = {
+					naval_base = 1
+				}
+				6550 = {
+					naval_base = 1
+				}
+			}		
+		}	
+		1936.1.1.13 = {	    
+			owner = GRE			
+			add_core_of = GRE
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}
+
+	
+		1941.1.1.1 = {	    
+			owner = ITA			
+			add_core_of = YUG
+			remove_core_of = SOV
+			remove_core_of = GER				
+		
+
+			buildings = {
+				infrastructure = 1
+				dockyard = 1
+				8435 = {
+					naval_base = 1
+				}
+				6550 = {
+					naval_base = 1
+				}
+			}
+
+		}	
+		1941.1.1.2 = {	    
+			owner = ITA			
+			add_core_of = YUG
+		}		
+		1941.1.1.3 = {
+			owner = ITA			
+			add_core_of = YUG
+		}
+		1941.1.1.4 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}		
+
+		victory_points = {
+			6550 1
+		}
+		victory_points = {
+			8435 1
+		}
+
+	}
+
+	provinces={
+		3401 6550 8435 
+	}
+
+	local_supplies=9.0 
+}

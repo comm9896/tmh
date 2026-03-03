@@ -1,0 +1,67 @@
+state={
+	id=92
+	name="STATE_92"
+
+	resources={
+		coal = 8					
+	}
+	
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = POL	
+			owner = POL
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				air_base = 1
+
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL		
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+
+		
+		1941.1.1.14 = {
+		    owner = GER		   
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				arms_factory = 2		
+			}
+		}		
+				
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+		victory_points = {
+			11399 1 
+		}
+
+	}
+
+	provinces={
+		3521 3559 6484 6580 9452 9521 9544 11399 11466 
+	}
+	manpower=2464600
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=9.0 
+}

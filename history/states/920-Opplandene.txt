@@ -1,0 +1,52 @@
+state = {
+	id = 920
+	name = "STATE_920"
+	manpower = 211532 # 1410219
+	state_category = rural
+	resources = {
+		aluminium = 5.000
+		coal = 16							
+	}
+	history = {
+
+		1936.1.1.12 = {	    
+			owner = NOR
+			add_core_of = NOR
+			
+			buildings = {
+				infrastructure = 2
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = NOR
+			add_core_of = NOR
+		}		
+		1936.1.1.14 = {
+			owner = NOR
+			add_core_of = NOR	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER					
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}
+		
+		victory_points = {
+			3136 1
+		}
+	}
+	
+	provinces = {
+		10 27 111 133 179 3021 3105 3136 6042 6114 6136 6160 9032 9135 9157 9227 11028 11037 11113 11135 11206 144
+	}
+
+	local_supplies = 0.000
+}

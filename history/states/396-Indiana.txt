@@ -1,0 +1,57 @@
+
+state={
+	id=396
+	name="STATE_396"
+	manpower = 3238501
+	state_category = megalopolis
+
+	resources={
+		coal = 34					
+	}
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = USA
+			add_core_of = USA
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = USA
+			add_core_of = USA
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 12
+		}
+
+		victory_points = {
+			1595 5 
+		}
+
+	}
+
+	provinces={
+		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 
+	}
+
+	local_supplies=0.0 
+}

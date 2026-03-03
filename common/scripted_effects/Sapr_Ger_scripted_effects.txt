@@ -1,0 +1,816 @@
+
+
+
+GER_increase_law_on_economics_cost_effect = {
+	multiply_variable = { GER_law_on_economics_cost = GER_law_on_economics_cost_increase }
+	set_variable = { GER_law_on_economics_cost = GER_law_on_economics_cost } #
+	set_variable = { GER_law_on_economics_cost_increase = GER_law_on_economics_cost_increase } #		
+}
+
+
+GER_recruitment_of_waffen_ss_collaborators_cost_effect = {
+	multiply_variable = { GER_recruitment_of_waffen_ss_collaborators_cost = GER_law_on_economics_cost_increase }
+	set_variable = { GER_recruitment_of_waffen_ss_collaborators_cost = GER_recruitment_of_waffen_ss_collaborators_cost } #
+	set_variable = { GER_recruitment_of_waffen_ss_collaborators_cost_increase = GER_recruitment_of_waffen_ss_collaborators_cost_increase } #
+
+}
+
+
+
+GER_Increase_the_coin_bonus_for_Africa = {
+	#Не менять порядок свама идей, иначе все ломается
+	
+	GER = {	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_3 							
+			}
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_4
+		}	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_2 							
+			}
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_3
+		}		
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_1 							
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+			add_ideas = Sapr_coin_for_africa_2
+		}			
+		if = {
+			limit = { 
+				and = {
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}				
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}
+			add_ideas = Sapr_coin_for_africa_1
+		}	
+	}
+	
+	ITA = {	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_4						
+			}
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_5
+		}		
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_3 							
+			}
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_4
+		}	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_2 							
+			}
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_3
+		}		
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_1 							
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+			add_ideas = Sapr_coin_for_africa_2
+		}			
+		if = {
+			limit = { 
+				and = {
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}				
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}
+			add_ideas = Sapr_coin_for_africa_1
+		}	
+	}
+
+	BUL = {	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_4							
+			}
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_5
+		}			
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_3 							
+			}
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_4
+		}	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_2 							
+			}
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_3
+		}		
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_1 							
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+			add_ideas = Sapr_coin_for_africa_2
+		}			
+		if = {
+			limit = { 
+				and = {
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}				
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}
+			add_ideas = Sapr_coin_for_africa_1
+		}	
+	}
+	ROM = {	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_4 							
+			}
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_5
+		}			
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_3 							
+			}
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_4
+		}	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_2 							
+			}
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_3
+		}		
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_1 							
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+			add_ideas = Sapr_coin_for_africa_2
+		}			
+		if = {
+			limit = { 
+				and = {
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}				
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5											
+					}						
+				}			
+			}
+			add_ideas = Sapr_coin_for_africa_1
+		}	
+	}
+	HUN = {	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_4 							
+			}
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_5
+		}			
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_3 							
+			}
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_4
+		}	
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_2 							
+			}
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_3
+		}		
+		if = {
+			limit = { 
+				has_idea = Sapr_coin_for_africa_1 							
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+			add_ideas = Sapr_coin_for_africa_2
+		}			
+		if = {
+			limit = { 
+				and = {
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}				
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}					
+				}			
+			}
+			add_ideas = Sapr_coin_for_africa_1
+		}	
+	}	
+}
+
+
+GER_Reduce_the_coin_bonus_for_Africa = {
+	GER = {	
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_1 					
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_2 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_1
+		}		
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_3					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_2
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_4 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_3
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_5					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_5
+			add_ideas = Sapr_coin_for_africa_4
+		}		
+	}
+	
+	ITA = {	
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_1 					
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}					
+				}			
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_2 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_1
+		}		
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_3					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_2
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_4 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_3
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_5 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_4											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_5
+			add_ideas = Sapr_coin_for_africa_4
+		}		
+	}	
+	
+	BUL = {	
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_1 					
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_2 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_1
+		}		
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_3					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_2
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_4 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_3
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_5 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_4											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_5
+			add_ideas = Sapr_coin_for_africa_4
+		}		
+	}	
+	
+	ROM = {	
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_1 					
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_2 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_1
+		}		
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_3					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_2
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_4 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_3
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_5					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}						
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_5
+			add_ideas = Sapr_coin_for_africa_4
+		}		
+	}
+
+	HUN = {	
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_1 					
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}					
+				}			
+			}
+			remove_ideas = Sapr_coin_for_africa_1
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_2 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_3 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}					
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_2
+			add_ideas = Sapr_coin_for_africa_1
+		}		
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_3					
+					not = {
+						has_idea = Sapr_coin_for_africa_1 											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}					
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_3
+			add_ideas = Sapr_coin_for_africa_2
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_4 					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_5 											
+					}					
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_4
+			add_ideas = Sapr_coin_for_africa_3
+		}
+		if = {
+			limit = { 
+				and = {
+					has_idea = Sapr_coin_for_africa_5					
+					not = {
+						has_idea = Sapr_coin_for_africa_1											
+					}		
+					not = {
+						has_idea = Sapr_coin_for_africa_2 											
+					}	
+					not = {
+						has_idea = Sapr_coin_for_africa_3											
+					}
+					not = {
+						has_idea = Sapr_coin_for_africa_4 											
+					}					
+				}			
+			}		
+			remove_ideas = Sapr_coin_for_africa_5
+			add_ideas = Sapr_coin_for_africa_4
+		}		
+	}	
+}

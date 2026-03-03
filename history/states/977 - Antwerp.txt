@@ -1,0 +1,70 @@
+state = {
+	id = 977
+	name = "STATE_977" # Antwerpen
+	manpower = 1800000
+
+	resources={
+		coal = 8					
+	}
+	
+	state_category = metropolis
+
+	history = {
+
+		1936.1.1.12 = {
+			owner = BEL
+			add_core_of = BEL
+		
+
+			buildings = {
+				infrastructure = 3
+				arms_factory = 2
+				industrial_complex = 3
+				air_base = 1
+				6598 = {
+					naval_base = 8
+				}
+			}		
+		}
+		1936.1.1.13 = {
+			owner = BEL
+			add_core_of = BEL
+		}	
+		1936.1.1.14 = {
+			owner = BEL
+			add_core_of = BEL
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+
+
+		1941.1.1.14 = {
+		    owner = GER		    
+
+			buildings = {
+				infrastructure = 3
+				arms_factory = 7
+				industrial_complex = 7
+				air_base = 1
+				6598 = {
+					naval_base = 8
+				}
+			}						
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+	
+	
+	}
+	
+	provinces = {
+		6598 9574 13068 11419
+	}
+
+	local_supplies = 0.0 
+}

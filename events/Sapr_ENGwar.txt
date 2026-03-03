@@ -1,0 +1,720 @@
+
+
+add_namespace = victory_in_north_africa
+
+#скрытый эвент, срабатывает когда герма захватывает северную африку 
+
+country_event = {
+	id = victory_in_north_africa.a
+	title = victory_in_north_africa.1.b
+	desc = victory_in_north_africa.1.f	
+	picture = GFX_report_event_saf_soldiers_3
+
+	
+	trigger = {
+        
+		tag = ENG
+		 
+ 		AND = { #конрртроль северной африки
+		    ENG = { has_war_with = GER }			
+		
+			663 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+					}
+				}	
+			}		
+			451 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+					}
+				}	
+			}
+			449 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+					}
+				}	
+			}
+			662 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+					}
+				}	
+			}
+			448 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+					}
+				}	
+			}
+			661 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+					}
+				}	
+			}
+			458 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+						TAG = VIC						
+					}
+				}	
+			}
+			460 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+						TAG = VIC						
+					}
+				}	
+			}
+			513 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+						TAG = VIC						
+					}
+				}	
+			}
+			459 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+						TAG = VIC						
+					}
+				}	
+			}
+			461 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+						TAG = VIC						
+					}
+				}	
+			}	
+			462 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG
+						TAG = VIC						
+					}
+				}	
+			}
+			452 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG					
+					}
+				}	
+			}
+			447 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG					
+					}
+				}	
+			}
+			907 = { 
+			    CONTROLLER = {
+				    or = {
+					    is_in_faction_with = ENG 
+						TAG = ENG					
+					}
+				}	
+			}			
+		}
+	}
+
+	mean_time_to_happen = { days = 8 }
+
+	fire_only_once = yes
+
+	option = {
+	   
+	    name = victory_in_north_africa.1.d		
+		
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+		
+		if = {
+		    limit = {
+			    country_exists = VIC
+	
+			    not = {
+			        VIC ={ has_war_with = ENG }
+			    }
+			}
+		    country_event = { id = victory_in_north_africa1.a days = 30 }	   
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = LBA
+			}
+			
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = ITA
+			}		
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = GER
+			}	
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = HUN
+			}	
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = BUL
+			}	
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = ROM
+			}
+			remove_dynamic_modifier = { 
+				modifier = unplanned_offensive 
+				days = 35
+			}						
+		}
+
+		set_global_flag = Allied_victory_in_Africa_flag
+				
+		hidden_effect = { 
+			ITA = {
+				country_event = { 
+					id = ITA_Loss_of_north_africa.a days = 10 
+				}
+			}
+			
+			if = { #Буст Япы если говноеды на ОСИ
+				limit = {
+					date < 1941.5.1
+				}
+				JAP = {	
+					country_event = { 
+						id = Sapr_Axis_lost_in_Africa.a days = 10 
+					}
+				}
+				MAN = {	
+					country_event = { 
+						id = Sapr_Axis_lost_in_Africa.a days = 10 
+					}
+				}
+				SIA = {	
+					country_event = { 
+						id = Sapr_Axis_lost_in_Africa.a days = 10 
+					}
+				}				
+			}
+		}
+	}
+}
+
+add_namespace = victory_in_north_africa1
+
+#скрытый эвент, срабатывает после завхата северной африки
+country_event = {
+	id = victory_in_north_africa1.a
+	title = victory_in_north_africa1.1.b
+	desc = victory_in_north_africa1.1.c
+	picture = GFX_report_event_saf_soldiers
+
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+	    name = victory_in_north_africa1.1.d
+		
+		custom_effect_tooltip = victory_in_north_africa1_tt
+		
+		set_global_flag = Allied_victory_in_Africa_with_VIC_flag
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = FRA
+					
+					is_in_faction_with = ENG
+				}
+				FRA = {
+					transfer_state = 458						
+					transfer_state = 665	
+					transfer_state = 460
+					transfer_state = 513
+					transfer_state = 459
+					transfer_state = 461
+					transfer_state = 462	
+					transfer_state = 557
+					transfer_state = 272
+					transfer_state = 780
+					transfer_state = 298
+					transfer_state = 778	
+					transfer_state = 776
+					transfer_state = 777
+					transfer_state = 773
+					transfer_state = 539
+					transfer_state = 772
+					transfer_state = 779
+					transfer_state = 556
+					transfer_state = 899
+					transfer_state = 898
+					transfer_state = 781
+					transfer_state = 774
+					transfer_state = 660	
+					
+					
+					
+					458 = { set_compliance = 100 }
+					665 = { set_compliance = 100 }
+					460 = { set_compliance = 100 }
+					513 = { set_compliance = 100 }					
+					459 = { set_compliance = 100 }
+					461 = { set_compliance = 100 }
+					462 = { set_compliance = 100 }
+					557 = { set_compliance = 100 }					
+					272 = { set_compliance = 100 }
+					780 = { set_compliance = 100 }
+					298 = { set_compliance = 100 }
+					778 = { set_compliance = 100 }
+					776 = { set_compliance = 100 }
+					777 = { set_compliance = 100 }
+					773 = { set_compliance = 100 }
+					539 = { set_compliance = 100 }
+					772 = { set_compliance = 100 }
+					779 = { set_compliance = 100 }
+					556 = { set_compliance = 100 }
+					899 = { set_compliance = 100 }
+					898 = { set_compliance = 100 }
+					781 = { set_compliance = 100 }
+					774 = { set_compliance = 100 }
+					660 = { set_compliance = 100 }					
+				}
+				
+			}
+			if = {
+				limit = {
+					country_exists = ENG
+					16 =  {
+						is_core_of = ENG
+					}
+				}
+				ENG = {
+					transfer_state = 458						
+					transfer_state = 665	
+					transfer_state = 460
+					transfer_state = 513
+					transfer_state = 459
+					transfer_state = 461
+					transfer_state = 462	
+					transfer_state = 557
+					transfer_state = 272
+					transfer_state = 780
+					transfer_state = 298
+					transfer_state = 778	
+					transfer_state = 776
+					transfer_state = 777
+					transfer_state = 773
+					transfer_state = 539
+					transfer_state = 772
+					transfer_state = 779
+					transfer_state = 556
+					transfer_state = 899
+					transfer_state = 898
+					transfer_state = 781
+					transfer_state = 774
+					transfer_state = 660
+					
+					
+					458 = { set_compliance = 100 }
+					665 = { set_compliance = 100 }
+					460 = { set_compliance = 100 }
+					513 = { set_compliance = 100 }					
+					459 = { set_compliance = 100 }
+					461 = { set_compliance = 100 }
+					462 = { set_compliance = 100 }
+					557 = { set_compliance = 100 }					
+					272 = { set_compliance = 100 }
+					780 = { set_compliance = 100 }
+					298 = { set_compliance = 100 }
+					778 = { set_compliance = 100 }
+					776 = { set_compliance = 100 }
+					777 = { set_compliance = 100 }
+					773 = { set_compliance = 100 }
+					539 = { set_compliance = 100 }
+					772 = { set_compliance = 100 }
+					779 = { set_compliance = 100 }
+					556 = { set_compliance = 100 }
+					899 = { set_compliance = 100 }
+					898 = { set_compliance = 100 }
+					781 = { set_compliance = 100 }
+					774 = { set_compliance = 100 }
+					660 = { set_compliance = 100 }						
+				}	
+			}
+			
+		    GER = {
+				annex_country = { target = VIC } 
+			    
+				31 = { set_compliance = 50 }
+			    25 = { set_compliance = 50 }
+			    33 = { set_compliance = 50 }
+			    26 = { set_compliance = 50 }
+			    22 = { set_compliance = 50 }	
+				20 = { set_compliance = 50 }					
+			}			
+			ITA = {
+				transfer_state = 32
+			    transfer_state = 21
+			    transfer_state = 851
+				
+			    32 = { set_compliance = 50 }
+			    21 = { set_compliance = 50 }
+			    851 = { set_compliance = 50 }	
+		    }
+			
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = Allied_victory_in_Africa_with_VIC.1 }
+		}
+      
+		hidden_effect = {
+		
+			division_template = {
+				name = "Африканская полиция"
+				priority = 1
+				division_names_group = ENG_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }					
+			    	infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }					
+				}
+				
+				support = {
+		            engineer = { x = 0 y = 0 } 
+		            artillery  = { x = 0 y = 1 }  
+		            anti_air = { x = 0 y = 2 } 
+		            recon  = { x = 0 y = 3 }
+		            anti_tank  = { x = 0 y = 4 }	
+				}
+			}
+			
+			add_manpower = -350000			
+			
+			665 = {
+			    create_unit = {
+				    division = "name = \"Африканская полиция\" division_template = \"Африканская полиция\" start_experience_factor = 0.3" 
+				    owner = ENG
+					count = 6
+				}				
+			}
+			458 = {
+			    create_unit = {
+				    division = "name = \"Африканская полиция\" division_template = \"Африканская полиция\" start_experience_factor = 0.3" 
+				    owner = ENG
+					count = 6					
+				}				
+			}
+			459 = {
+			    create_unit = {
+				    division = "name = \"Африканская полиция\" division_template = \"Африканская полиция\" start_experience_factor = 0.3" 
+				    owner = ENG
+					count = 6
+				}				
+			}			
+			460 = {
+			    create_unit = {
+				    division = "name = \"Африканская полиция\" division_template = \"Африканская полиция\" start_experience_factor = 0.3" 
+				    owner = ENG
+					count = 6
+				}				
+			}
+			461 = {
+			    create_unit = {
+				    division = "name = \"Африканская полиция\" division_template = \"Африканская полиция\" start_experience_factor = 0.3" 
+				    owner = ENG
+					count = 6					
+				}				
+			}			
+		}
+	}
+}
+
+
+add_namespace = ENG_Sapr_Allies_lost_Africa
+
+#скрытый тригер эвент, срабатывает Союзники теряют район суэца
+country_event = {
+	id = ENG_Sapr_Allies_lost_Africa.a
+	title = ENG_Sapr_Allies_lost_Africa.1.b
+	desc = ENG_Sapr_Allies_lost_Africa.1.c
+	picture = GFX_report_event_british_inspect_troops
+
+	hidden = yes
+	trigger = {	
+ 		AND = { #Район суэцца
+			date <1942.1.1
+			
+			452 = {
+				controller = {
+				    OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }
+				}
+			}			
+			447 = {
+				controller = {
+				    OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }
+				}
+			}
+			907 = {
+				controller = {
+				    OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }
+				}
+			}
+			OR = {
+				456 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				457 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				1057 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				883 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}				
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+
+	option = {
+	   name = ENG_Sapr_Allies_lost_Africa.1.d
+			
+		1057 = {	
+			add_dynamic_modifier = {
+				modifier = unplanned_offensive			
+			}
+		}
+		883 = {	
+			add_dynamic_modifier = {
+				modifier = unplanned_offensive			
+			}
+		}	
+		1056 = {	
+			add_dynamic_modifier = {
+				modifier = unplanned_offensive			
+			}
+		}	
+		551 = {	
+			add_dynamic_modifier = {
+				modifier = unplanned_offensive			
+			}
+		}
+		
+		ENG = {
+			country_event = { 
+				id = Sapr_Allies_lost_Africa.a
+			}				
+		}		
+		CAN = {
+			country_event = { 
+				id = Sapr_Allies_lost_Africa.a
+			}				
+		}
+		AST = {
+			country_event = { 
+				id = Sapr_Allies_lost_Africa.a
+			}				
+		}
+		SAF = {
+			country_event = { 
+				id = Sapr_Allies_lost_Africa.a
+			}				
+		}
+		RAJ = {
+			country_event = { 
+				id = Sapr_Allies_lost_Africa.a
+			}				
+		}		
+	}
+}
+
+add_namespace = Sapr_Allies_lost_Africa
+
+#скрытый эвент, срабатывает Союзники теряют район суэца
+country_event = {
+	id = Sapr_Allies_lost_Africa.a
+	title = Sapr_Allies_lost_Africa.1.b
+	desc = Sapr_Allies_lost_Africa.1.c
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes
+
+
+	option = {
+	    name = Sapr_Allies_lost_Africa.1.d
+		
+		add_ideas = Sapr_Alias_suck_in_norce_africa
+
+		if = {
+			limit = {
+				tag = ENG
+			}
+			ENG = {
+				add_manpower = -860000		
+			}				
+			if = {
+				limit = {
+					1056 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}						
+				}
+				1056 = {	
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 12
+						allow_spawning_on_enemy_provs  = yes
+					}
+				}			
+			}
+			if = {
+				limit = {
+					1057 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}						
+				}
+				1057 = {	
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 6
+						prioritize_location = 4138						
+						allow_spawning_on_enemy_provs  = yes
+					}
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 6
+						prioritize_location = 8105						
+						allow_spawning_on_enemy_provs  = yes
+					}	
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 6
+						prioritize_location = 10745						
+						allow_spawning_on_enemy_provs  = yes
+					}					
+				}
+			}
+			if = {
+				limit = {
+					883 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}						
+				}
+				883 = {	
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 6
+						prioritize_location = 10902						
+						allow_spawning_on_enemy_provs  = yes
+					}
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 6
+						prioritize_location = 1977						
+						allow_spawning_on_enemy_provs  = yes
+					}	
+					create_unit = {
+						division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.1" 
+						owner = ENG
+						count = 6
+						prioritize_location = 12725						
+						allow_spawning_on_enemy_provs  = yes
+					}					
+				}
+			}	
+		}	
+	}
+}

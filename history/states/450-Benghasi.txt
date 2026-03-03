@@ -1,0 +1,68 @@
+
+state={
+	id=450
+	name="STATE_450"
+	manpower = 82535
+	
+	state_category = wasteland_1k_Air
+	resources = {
+		oil = 11
+	}
+	history={
+
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		
+			buildings = {
+				infrastructure = 2
+				air_base = 1
+				11954 = {
+					naval_base = 1
+				}
+			}
+		
+		}	
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}		
+		
+		1941.1.1.14 = {    
+			owner = TIB
+			add_core_of = TIB		
+			
+			buildings = {
+				infrastructure = 2
+				air_base = 1
+				11954 = {
+					naval_base = 1
+				}
+			}	
+		}	
+		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}	
+
+		victory_points = {
+			11954 3 
+		}
+	}
+
+	provinces={
+		1127 4120 10123 11954 
+	}
+
+	local_supplies=0.0 
+}

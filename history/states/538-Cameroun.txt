@@ -1,0 +1,45 @@
+
+state={
+	id=538
+	name="STATE_538"
+	resources={
+		rubber=8.000
+		steel = 9.000		
+	}
+	state_category = pastoral
+	manpower = 1693974
+
+	history={
+		
+	   1936.1.1.12 = {	    
+		    owner = FRA
+			add_core_of = COG
+		}	
+	   1936.1.1.13 = {	    
+		    owner = FRA
+			add_core_of = COG
+		}			
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		988 7219 7931 8048 10071 10883 10951 12741 12824 
+	}
+	
+	buildings_max_level_factor=1.000
+	
+	local_supplies=1.000
+}

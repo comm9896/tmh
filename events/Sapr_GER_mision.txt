@@ -1,0 +1,1404 @@
+
+add_namespace = GER_choosing_a_build_for_scenario_41
+  
+#выбор билда на герме на сценарий 41 года
+country_event = {
+	id = GER_choosing_a_build_for_scenario_41.1
+	title = GER_choosing_a_build_for_scenario_41.1.b
+	desc = GER_choosing_a_build_for_scenario_41.1.c
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+	   
+		name = GER_choosing_a_build_for_scenario_41.1.d
+		
+		complete_national_focus = GER_adopt_new_panzer_doctrine
+		complete_national_focus = GER_panzergrenadier	
+		
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_2
+			amount = 10000
+		}	
+		add_equipment_to_stockpile = {
+			type = small_plane_cas_airframe_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 500
+		}	
+		add_equipment_to_stockpile = {
+			type = cv_small_plane_cas_airframe_1
+			amount = 600
+		}	
+		
+		
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 200000
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 10000
+		}
+		
+		
+		
+		add_equipment_to_stockpile = {
+			type = mech_chassis
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis
+			amount = 2000
+		}		
+		add_equipment_to_stockpile = {
+			type = medium_tank_chassis
+			amount = 5500
+		}	
+		add_equipment_to_stockpile = {
+			type = light_tank_aa_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = medium_tank_destroyer_chassis_2
+			amount = 5500
+		}
+		add_equipment_to_stockpile = {
+			type = heavy_tank_destroyer_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = armored_car_chassis
+			amount = 500
+		}			
+		add_equipment_to_stockpile = {
+			type = medium_tank_flame_chassis_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = armored_support_vehicle_1
+			amount = 1000
+		}		
+		add_equipment_to_stockpile = {
+			type = helicopter_equipment_1
+			amount = 1000
+		}		
+		
+		add_equipment_to_stockpile = {
+			type = medium_plane_scout_plane_airframe_2
+			amount = 100
+		}	
+		add_equipment_to_stockpile = {
+			type = transport_plane_equipment_2
+			amount = 400
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = large_plane_airframe_2
+			amount = 300
+		}	
+				
+		division_template = {
+			name = "Танки"
+
+			division_names_group = GER_Arm_01
+
+			regiments = {
+				medium_armor = { x = 0 y = 0 }
+				medium_armor = { x = 0 y = 1 }
+				medium_armor = { x = 0 y = 2 }
+				medium_armor = { x = 0 y = 3 }
+				medium_armor = { x = 0 y = 4 }
+				
+				medium_tank_destroyer_brigade = { x = 1 y = 0 }
+				medium_tank_destroyer_brigade = { x = 1 y = 1 }
+				medium_tank_destroyer_brigade = { x = 1 y = 2 }
+				medium_tank_destroyer_brigade = { x = 1 y = 3 }
+				medium_tank_destroyer_brigade = { x = 1 y = 4 }		
+
+				medium_armor = { x = 2 y = 0 }
+				heavy_tank_destroyer_brigade = { x = 2 y = 1 }
+				light_sp_anti_air_brigade = { x = 2 y = 2 }					
+				
+				mechanized = { x = 3 y = 0 }
+				mechanized = { x = 3 y = 1 }
+				mechanized = { x = 3 y = 2 }
+				mechanized = { x = 3 y = 3 }
+
+				mechanized = { x = 4 y = 0 }
+				mechanized = { x = 4 y = 1 }
+				mechanized = { x = 4 y = 2 }
+				mechanized = { x = 4 y = 3 }
+				
+
+			}
+			support = {
+				armored_engineer = { x = 0 y = 0 } 
+				medium_flame_tank  = { x = 0 y = 1 }  
+				armored_signal = { x = 0 y = 2 } 
+				armored_car_recon  = { x = 0 y = 3 }
+				armored_maintenance  = { x = 0 y = 4 }
+				
+				motorized_military_police = { x = 1 y = 0 } 
+				helicopter_field_hospital  = { x = 1 y = 1 }  
+				helicopter_transport = { x = 1 y = 2 } 
+				helicopter_brigade  = { x = 1 y = 3 }
+			}			
+			
+		}		
+	}	
+	
+	option = {
+	   
+		name = GER_choosing_a_build_for_scenario_41.1.e
+		
+		complete_national_focus = GER_adopt_new_panzer_doctrine
+		complete_national_focus = GER_panzergrenadier	
+		
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_2
+			amount = 10000
+		}	
+		add_equipment_to_stockpile = {
+			type = small_plane_cas_airframe_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 500
+		}	
+		add_equipment_to_stockpile = {
+			type = cv_small_plane_cas_airframe_1
+			amount = 600
+		}	
+		
+		
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 200000
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 10000
+		}
+		
+		
+		
+		add_equipment_to_stockpile = {
+			type = mech_chassis
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis
+			amount = 2000
+		}		
+		add_equipment_to_stockpile = {
+			type = medium_tank_chassis
+			amount = 11000
+		}	
+		add_equipment_to_stockpile = {
+			type = light_tank_aa_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = heavy_tank_destroyer_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = armored_car_chassis
+			amount = 500
+		}			
+		add_equipment_to_stockpile = {
+			type = medium_tank_flame_chassis_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = armored_support_vehicle_1
+			amount = 1000
+		}		
+		add_equipment_to_stockpile = {
+			type = helicopter_equipment_1
+			amount = 1000
+		}		
+		
+		add_equipment_to_stockpile = {
+			type = medium_plane_scout_plane_airframe_2
+			amount = 100
+		}	
+		add_equipment_to_stockpile = {
+			type = transport_plane_equipment_2
+			amount = 400
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = large_plane_airframe_2
+			amount = 300
+		}	
+				
+		division_template = {
+			name = "Танки"
+
+			division_names_group = GER_Arm_01
+
+			regiments = {
+				medium_armor = { x = 0 y = 0 }
+				medium_armor = { x = 0 y = 1 }
+				medium_armor = { x = 0 y = 2 }
+				medium_armor = { x = 0 y = 3 }
+				medium_armor = { x = 0 y = 4 }
+				
+				medium_armor = { x = 1 y = 0 }
+				medium_armor = { x = 1 y = 1 }
+				medium_armor = { x = 1 y = 2 }
+				medium_armor = { x = 1 y = 3 }
+				medium_armor = { x = 1 y = 4 }		
+
+				medium_armor = { x = 2 y = 0 }
+				heavy_tank_destroyer_brigade = { x = 2 y = 1 }
+				light_sp_anti_air_brigade = { x = 2 y = 2 }					
+				
+				mechanized = { x = 3 y = 0 }
+				mechanized = { x = 3 y = 1 }
+				mechanized = { x = 3 y = 2 }
+				mechanized = { x = 3 y = 3 }
+
+				mechanized = { x = 4 y = 0 }
+				mechanized = { x = 4 y = 1 }
+				mechanized = { x = 4 y = 2 }
+				mechanized = { x = 4 y = 3 }
+				
+
+			}
+			support = {
+				armored_engineer = { x = 0 y = 0 } 
+				medium_flame_tank  = { x = 0 y = 1 }  
+				armored_signal = { x = 0 y = 2 } 
+				armored_car_recon  = { x = 0 y = 3 }
+				armored_maintenance  = { x = 0 y = 4 }
+				
+				motorized_military_police = { x = 1 y = 0 } 
+				helicopter_field_hospital  = { x = 1 y = 1 }  
+				helicopter_transport = { x = 1 y = 2 } 
+				helicopter_brigade  = { x = 1 y = 3 }
+			}			
+		}				
+	}
+
+	option = {
+	   
+		name = GER_choosing_a_build_for_scenario_41.1.f
+		
+		complete_national_focus = GER_adopt_new_panzer_doctrine
+		complete_national_focus = GER_panzergrenadier	
+		
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_2
+			amount = 10000
+		}	
+		add_equipment_to_stockpile = {
+			type = small_plane_cas_airframe_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 500
+		}	
+		add_equipment_to_stockpile = {
+			type = cv_small_plane_cas_airframe_1
+			amount = 600
+		}	
+		
+		
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 200000
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 10000
+		}
+		
+		
+		
+		add_equipment_to_stockpile = {
+			type = mech_chassis
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis
+			amount = 2000
+		}		
+		add_equipment_to_stockpile = {
+			type = heavy_tank_chassis
+			amount = 5000
+		}	
+		add_equipment_to_stockpile = {
+			type = light_tank_aa_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = heavy_tank_destroyer_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = armored_car_chassis
+			amount = 500
+		}			
+		add_equipment_to_stockpile = {
+			type = medium_tank_flame_chassis_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = armored_support_vehicle_1
+			amount = 1000
+		}		
+		add_equipment_to_stockpile = {
+			type = helicopter_equipment_1
+			amount = 1000
+		}		
+		
+		add_equipment_to_stockpile = {
+			type = medium_plane_scout_plane_airframe_2
+			amount = 100
+		}	
+		add_equipment_to_stockpile = {
+			type = transport_plane_equipment_2
+			amount = 400
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = large_plane_airframe_2
+			amount = 300
+		}	
+				
+		division_template = {
+			name = "Танки"
+
+			division_names_group = GER_Arm_01
+
+			regiments = {
+				heavy_armor = { x = 0 y = 0 }
+				heavy_armor = { x = 0 y = 1 }
+				heavy_armor = { x = 0 y = 2 }
+				heavy_armor = { x = 0 y = 3 }
+				heavy_armor = { x = 0 y = 4 }
+				
+				heavy_armor = { x = 1 y = 0 }
+				heavy_armor = { x = 1 y = 1 }
+				heavy_armor = { x = 1 y = 2 }
+				heavy_armor = { x = 1 y = 3 }
+				heavy_armor = { x = 1 y = 4 }		
+
+				heavy_armor = { x = 2 y = 0 }
+				heavy_tank_destroyer_brigade = { x = 2 y = 1 }
+				light_sp_anti_air_brigade = { x = 2 y = 2 }					
+				
+				mechanized = { x = 3 y = 0 }
+				mechanized = { x = 3 y = 1 }
+				mechanized = { x = 3 y = 2 }
+				mechanized = { x = 3 y = 3 }
+
+				mechanized = { x = 4 y = 0 }
+				mechanized = { x = 4 y = 1 }
+				mechanized = { x = 4 y = 2 }
+				mechanized = { x = 4 y = 3 }
+				
+
+			}
+			support = {
+				armored_engineer = { x = 0 y = 0 } 
+				medium_flame_tank  = { x = 0 y = 1 }  
+				armored_signal = { x = 0 y = 2 } 
+				armored_car_recon  = { x = 0 y = 3 }
+				armored_maintenance  = { x = 0 y = 4 }
+				
+				motorized_military_police = { x = 1 y = 0 } 
+				helicopter_field_hospital  = { x = 1 y = 1 }  
+				helicopter_transport = { x = 1 y = 2 } 
+				helicopter_brigade  = { x = 1 y = 3 }
+			}			
+			
+		}	
+	}
+	
+	option = {
+	   
+		name = GER_choosing_a_build_for_scenario_41.1.g
+		
+		complete_national_focus = GER_the_prussian_legacy
+		complete_national_focus = GER_lessons_of_the_great_war	
+		
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_2
+			amount = 10000
+		}	
+		add_equipment_to_stockpile = {
+			type = small_plane_cas_airframe_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 10000
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 500
+		}	
+		add_equipment_to_stockpile = {
+			type = cv_small_plane_cas_airframe_1
+			amount = 600
+		}	
+		
+		
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 20000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 20000
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 500000
+		}	
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 20000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 20000
+		}
+		
+		
+		add_equipment_to_stockpile = {
+			type = medium_tank_chassis
+			amount = 7000
+		}					
+		add_equipment_to_stockpile = {
+			type = light_tank_aa_chassis_2
+			amount = 1100
+		}
+		add_equipment_to_stockpile = {
+			type = heavy_tank_destroyer_chassis_2
+			amount = 2000
+		}
+		add_equipment_to_stockpile = {
+			type = armored_car_chassis
+			amount = 500
+		}			
+		add_equipment_to_stockpile = {
+			type = medium_tank_flame_chassis_2
+			amount = 1000
+		}	
+		add_equipment_to_stockpile = {
+			type = armored_support_vehicle_1
+			amount = 1000
+		}		
+		add_equipment_to_stockpile = {
+			type = helicopter_equipment_1
+			amount = 1000
+		}					
+		
+		add_equipment_to_stockpile = {
+			type = medium_plane_scout_plane_airframe_2
+			amount = 100
+		}	
+		add_equipment_to_stockpile = {
+			type = transport_plane_equipment_2
+			amount = 400
+		}	
+		
+		add_equipment_to_stockpile = {
+			type = large_plane_airframe_2
+			amount = 300
+		}	
+				
+		division_template = {
+			name = "Рейнджеры"
+
+			division_names_group = GER_Arm_01
+
+			regiments = {
+				ranger_battalion = { x = 0 y = 0 }
+				ranger_battalion = { x = 0 y = 1 }
+				ranger_battalion = { x = 0 y = 2 }
+				ranger_battalion = { x = 0 y = 3 }
+				ranger_battalion = { x = 0 y = 4 }
+				
+				ranger_battalion = { x = 1 y = 0 }
+				ranger_battalion = { x = 1 y = 1 }
+				ranger_battalion = { x = 1 y = 2 }
+				ranger_battalion = { x = 1 y = 3 }
+				ranger_battalion = { x = 1 y = 4 }
+							
+				ranger_battalion = { x = 2 y = 0 }
+				ranger_battalion = { x = 2 y = 1 }
+				
+		
+				anti_tank_brigade = { x = 3 y = 0 }
+				anti_tank_brigade = { x = 3 y = 1 }	
+				anti_tank_brigade = { x = 3 y = 2 }	
+				anti_tank_brigade = { x = 3 y = 3 }	
+				anti_tank_brigade = { x = 3 y = 4 }		
+				
+				medium_armor = { x = 4 y = 0 }
+				medium_armor = { x = 4 y = 1 }	
+				medium_armor = { x = 4 y = 2 }			
+				heavy_tank_destroyer_brigade = { x = 4 y = 3 }			
+
+			}
+			support = {
+				armored_engineer = { x = 0 y = 0 } 
+				medium_flame_tank  = { x = 0 y = 1 }  
+				armored_signal = { x = 0 y = 2 } 
+				armored_car_recon  = { x = 0 y = 3 }
+				armored_maintenance  = { x = 0 y = 4 }
+				
+				motorized_military_police = { x = 1 y = 0 } 
+				helicopter_field_hospital  = { x = 1 y = 1 }  
+				helicopter_transport = { x = 1 y = 2 } 
+				helicopter_brigade  = { x = 1 y = 3 }	
+				anti_air = { x = 1 y = 4 } 
+			}			
+			
+		}			
+	}	
+}
+
+ 
+add_namespace = GER_todt_is_dead_in_plane_crash
+  
+#скрытый пре эвент срабатывает зимой 42 года.
+country_event = {
+	id = GER_todt_is_dead_in_plane_crash.1
+	title = GER_todt_is_dead_in_plane_crash.1.b
+	desc = GER_todt_is_dead_in_plane_crash.1.c
+	picture = GFX_report_event_ITA_air_crash
+
+	fire_only_once = yes
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}		
+		and = {
+		    tag = GER
+			date > 1942.02.08	
+		}	
+	}
+
+	option = {
+	   
+		name = GER_todt_is_dead_in_plane_crash.1.d
+		
+		set_country_flag = GER_todt_is_dead
+		if = { # TODT REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_1 = 1 }
+			}
+			GER_remove_todt_effects = yes
+		}		
+	}	
+}
+
+  
+add_namespace = Ger_Fuhrers_order_to_start_building_fortifications_event
+ 
+#скрытый пре эвент срабатывает при начале войны в африке
+country_event = {
+	id = Ger_Fuhrers_order_to_start_building_fortifications_event.1
+	title = Ger_Fuhrers_order_to_start_building_fortifications_event.1.b
+	desc = Ger_Fuhrers_order_to_start_building_fortifications_event.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}		
+		and = {
+		    tag = GER
+			GER = { has_war_with = SOV }
+			126 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}				
+			}
+			date > 1941.01.01	
+		}	
+	}
+
+	option = {
+	   
+		name = Ger_Fuhrers_order_to_start_building_fortifications_event.1.d
+		
+		set_country_flag = Ger_Fuhrers_order_to_start_building_fortifications_misson
+		activate_mission = Ger_Fuhrers_order_to_start_building_fortifications	
+	}	
+}
+
+
+
+ 
+add_namespace = Sapr_Fortress_Demyansk
+
+#скрытый пре эвент срабатывает при блокаде ленинграда и захвате Демянска
+country_event = {
+	id = Sapr_Fortress_Demyansk.1
+	title = Sapr_Fortress_Demyansk.1.b
+	desc = Sapr_Fortress_Demyansk.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}		
+		and = {
+		    tag = GER
+			GER = { has_war_with = SOV }
+			208 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			209 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			263 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			1047 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			195 = {
+				controller = {
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV
+					}
+				}
+			}
+			264 = {
+				controller = {
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV
+					}
+				}
+			}			
+		}	
+	}
+
+	option = {
+	   
+		name = Sapr_Fortress_Demyansk.1.d
+		
+		set_state_controller = 1047			
+		add_manpower = -100000
+		set_global_flag = Sapr_Fortress_Demyansk_news_flag		
+		set_country_flag = Ger_Fuhrers_order_to_hold_Demyansk_misson
+		activate_mission = Ger_Fuhrers_order_to_hold_Demyansk
+		
+		1047 = {
+			add_dynamic_modifier = {
+				modifier = Sapr_SOV_defense_Demyansk
+				scope = SOV
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_SOV_defense_Demyansk
+				scope = MON
+			}			
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = GER
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = ITA
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = ROM
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = HUN
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = BUL
+			}				
+			create_unit = {
+				division = "name = \"дивизия СС «Тотенкопф» \" division_template = \"Егерская пехота\" start_experience_factor = 0.9" 
+				owner = GER
+				count = 4
+				allow_spawning_on_enemy_provs  = yes					
+			}
+		}	
+	}	
+}
+
+
+add_namespace = Sapr_Fortress_Demyansk
+
+#Падение крепости Демянск
+country_event = {
+	id = Sapr_Fortress_Demyansk.2
+	title = Sapr_Fortress_Demyansk.2.b
+	desc = Sapr_Fortress_Demyansk.2.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}
+		has_country_flag = Ger_Fuhrers_order_to_hold_Demyansk_misson		
+		and = {
+		    tag = GER
+			GER = { has_war_with = SOV }
+			1047 = {
+				controller = {
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV
+					}
+				}
+			}			
+		}	
+	}
+
+	option = {
+	   
+		name = Sapr_Fortress_Demyansk.2.d
+		
+		1047 = {
+			remove_dynamic_modifier = {
+				modifier = Sapr_SOV_defense_Demyansk
+				scope = SOV
+			}
+			remove_dynamic_modifier = {
+				modifier = Sapr_SOV_defense_Demyansk
+				scope = MON
+			}			
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = GER
+			}	
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = ITA
+			}	
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = ROM
+			}	
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = HUN
+			}
+			remove_dynamic_modifier = {
+				modifier = Sapr_GER_defense_Demyansk
+				scope = BUL
+			}				
+		}
+	}	
+}
+
+
+add_namespace = Sapr_Vahta_na_reine
+
+#скрытый пре эвент срабатывает при подходе совка к центру германии
+country_event = {
+	id = Sapr_Vahta_na_reine.1
+	title = Sapr_Vahta_na_reine.1.b
+	desc = Sapr_Vahta_na_reine.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+	   
+		name = Sapr_Vahta_na_reine.1.d
+		
+		hidden_effect = {
+			set_global_flag = Sapr_vahta_na_Reine_flag_flag
+		}
+			
+	}	
+	
+}
+
+add_namespace = Sapr_Mobilization_in_Zigfrid_line
+
+#скрытый пре эвент срабатывает при подходе совка к центру германии
+country_event = {
+	id = Sapr_Mobilization_in_Zigfrid_line.1
+	title = Sapr_Mobilization_in_Zigfrid_line.1.b
+	desc = Sapr_Mobilization_in_Zigfrid_line.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}		
+		and = {
+		    tag = GER
+			has_war = yes
+			GER = { has_war_with = SOV }
+			or = {
+				and = {
+					7 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}
+					36 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}
+					35 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}
+					16 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}					
+				}	
+				and = {
+					6 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}
+					34 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}
+					16 = {
+						controller = {
+							OR ={
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+					}					
+				}
+				16 = {
+					controller = {
+						OR ={
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+				}				
+				18 = {
+					controller = {
+						OR ={
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+				}
+				17 = {
+					controller = {
+						OR ={
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+				}				
+			}					
+		}	
+	}
+
+	option = {
+	   
+		name = Sapr_Mobilization_in_Zigfrid_line.1.d
+
+		activate_mission = GER_Sapr_operation_Vahta_na_Reine
+		set_country_flag = GER_Sapr_operation_Vahta_na_Reine_start
+		
+		add_manpower = -660000
+
+		
+		56 = {
+
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11360
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11264
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 9281
+			}			
+		}	
+		57 = {
+
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11346
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 6622
+			}			
+		}	
+		51 = {
+
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3512
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3444
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 9522
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3547
+			}			
+		}	
+		42 = {
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11470
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11435
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 9575
+			}		
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11531
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 563
+			}		
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3558
+			}			
+		}	
+		50 = {
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3530
+			}
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 6542
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 6712
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 1
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11640
+			}			
+		}	
+	}	
+	
+}
+
+
+add_namespace = Sapr_Fuhrers_order_to_hold_Courland
+
+#скрытый пре эвент срабатывает при подходе совка к Курляндии
+country_event = {
+	id = Sapr_Fuhrers_order_to_hold_Courland.1
+	title = Sapr_Fuhrers_order_to_hold_Courland.1.b
+	desc = Sapr_Fuhrers_order_to_hold_Courland.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}		
+		and = {
+		    tag = GER
+			has_war = yes
+			and = {
+				date > 1942.06.01
+				190 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				809 = {
+					controller = {
+						OR ={
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+				}
+				815 = {
+					controller = {
+						OR ={
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+				}				
+			}	
+		}	
+	}
+	
+	option = {
+	    name = Sapr_Fuhrers_order_to_hold_Courland.1.d
+		
+		GER = {
+			add_manpower = -220000
+		}		
+		
+		set_state_controller = 190 					
+		190 = {						
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 8
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 6322
+				
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 8
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3194				
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 8
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11246				
+			}	
+			create_unit = {
+				division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.6" 
+				owner = GER
+				count = 8
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 9262				
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = GER
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = HUN
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = BUL
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = ROM
+			}			
+			add_dynamic_modifier = {
+				modifier = Sapr_GER_defense_livia
+				scope = ITA
+			}			
+		}		
+		set_country_flag = Ger_Courland_general
+		activate_mission = Ger_Fuhrers_order_to_hold_Courland
+		set_country_flag = Ger_Fuhrers_order_to_hold_Courland_misson		
+	}
+	
+}
+
+
+add_namespace = Sapr_Fuhrers_order_to_Courland_corridor
+
+#скрытый пре эвент срабатывает после выполнения квета на курляндию
+
+
+country_event = {
+	id = Sapr_Fuhrers_order_to_Courland_corridor.1
+	title = Sapr_Fuhrers_order_to_Courland_corridor.1.b
+	desc = Sapr_Fuhrers_order_to_Courland_corridor.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = Sapr_Fuhrers_order_to_Courland_corridor.1.d	
+		activate_mission = Ger_Fuehrer_directive_land_corridor_to_Courland			
+		set_country_flag = Ger_Fuehrer_directive_land_corridor_to_Courland_misson
+	}
+	
+}
+
+add_namespace = Sapr_event_Fuhrers_order_to_hold_Courland_sucsess
+
+country_event = {
+	id = Sapr_event_Fuhrers_order_to_hold_Courland_sucsess.1
+	title = Sapr_event_Fuhrers_order_to_hold_Courland_sucsess.1.b
+	desc = Sapr_event_Fuhrers_order_to_hold_Courland_sucsess.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		not = {
+			has_country_flag = Sapr_duelmiy_mode
+		}		
+		and = {
+		    tag = GER
+			has_war = yes
+			GER = {
+				has_country_flag =  Sapr_Fuhrers_order_to_hold_Courland_sucsess
+				not = {
+				has_country_flag =  Ger_Fuehrer_directive_land_corridor_to_Courland_lose
+				}
+			}
+			and = {
+				190 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				189 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				188 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				763 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				5 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}				
+			}	
+		}	
+	}
+	
+	option = {
+	    name = Sapr_event_Fuhrers_order_to_hold_Courland_sucsess.1.d
+		add_state_core = 189
+		189 = {
+			add_dynamic_modifier = { modifier = Sapr_ger_Courland_forests scope = SOV }
+		}
+		GER = {
+			set_country_flag = Sapr_Fuhrers_order_to_hold_Courland_sucsess1
+		}			
+
+	}
+	
+}

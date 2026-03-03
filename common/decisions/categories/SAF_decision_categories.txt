@@ -1,0 +1,12 @@
+################
+##### SAF ######
+################
+
+SAF_rerol_country = {
+	
+	icon = generic_army_support
+
+	allowed = {
+		original_tag = SAF
+	}
+}

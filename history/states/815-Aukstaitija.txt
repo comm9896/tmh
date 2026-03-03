@@ -1,0 +1,57 @@
+
+state={
+	id=815
+	name="STATE_815"
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = LIT
+			add_core_of = LIT
+			buildings = {
+				infrastructure = 2
+			}		
+		
+		}			
+		1936.1.1.13 = {
+			owner = LIT
+			add_core_of = LIT
+		}
+        1936.1.1.14 = {	    
+			owner = LIT
+			add_core_of = LIT
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+		victory_points = {
+			6229 1 #Panevezys
+		}
+
+	}
+
+	provinces={
+		530 6229 6376 9246 9374 9438 11226 11498 
+	}
+	manpower=161450
+	buildings_max_level_factor=1.000
+	state_category=town
+}

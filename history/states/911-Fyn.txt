@@ -1,0 +1,63 @@
+state = {
+	id = 911
+	name = "STATE_911"
+	manpower = 497073
+	state_category = town
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = DEN
+			add_core_of = DEN
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				dockyard = 1
+				3325 = {
+					naval_base = 3
+				}
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = DEN
+			add_core_of = DEN
+		}
+        1936.1.1.14 = {	    
+			owner = DEN
+			add_core_of = DEN
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+			
+		1941.1.1.14 = {
+		    owner = GER					
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				dockyard = 1
+				fuel_silo = 3					
+				3325 = {
+					naval_base = 3
+				}
+			}		
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}	
+		
+		victory_points = {
+			3325 5 
+		}
+	}
+	provinces = {
+		3325 3374 13260
+	}
+	
+	local_supplies = 0.000
+}

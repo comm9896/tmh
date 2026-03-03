@@ -1,0 +1,68 @@
+
+state={
+	id=12
+	name="STATE_12"
+	manpower = 408500
+	resources={
+		steel=1 # was: 2
+	}
+	
+	state_category = rural
+	
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = LAT
+			add_core_of = LAT
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				air_base = 3
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = LAT
+			add_core_of = LAT
+		}
+        1936.1.1.14 = {	    
+			owner = LAT
+			add_core_of = LAT
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 4 #was: 5
+				arms_factory = 2
+				industrial_complex = 4
+				air_base = 3
+				
+			}	
+			add_extra_state_shared_building_slots = 2			
+		}	
+
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+
+		victory_points = {
+			10493 1 #Valmiera
+		}
+	}
+
+	provinces={
+		3388 9317 9501 10493 11302
+	}
+
+	local_supplies=0.0 
+}

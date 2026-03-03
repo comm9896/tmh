@@ -1,0 +1,19 @@
+SIA_un_annex = {
+	
+	icon = eng_move_to_secure_the_dominions
+
+	allowed = {
+		original_tag = SIA
+	}
+}
+
+
+SIA_rerol_country = {
+	
+	icon = generic_army_support
+
+	allowed = {
+		original_tag = SIA
+	}
+}
+

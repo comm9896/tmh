@@ -1,0 +1,62 @@
+state={
+	id=96
+	name="STATE_96"
+	manpower = 726000
+	
+	state_category = rural
+	
+	history={
+		
+		1936.1.1.12 = {	    
+			add_core_of = POL
+			add_core_of = BLR			
+			owner = POL
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL
+			add_core_of = BLR			
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL
+			add_core_of = BLR			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+			
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+			}		
+		}			
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = {
+			406 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		233 277 358 406 6340 9341 11391 
+	}
+
+	local_supplies=0.0 
+}

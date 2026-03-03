@@ -1,0 +1,64 @@
+
+state = {
+	id = 581
+	name = "STATE_581"
+	manpower = 48831
+	
+	state_category = town
+
+	
+	resources = {
+		chromium = 40 # was: 44
+		aluminium = 27 # was: 30
+	}
+
+	history = {
+		
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			
+			buildings = {
+				infrastructure = 1
+				anti_air_building = 1						
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+			
+			buildings = {
+				infrastructure = 5
+				anti_air_building = 1						
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+		owner = SOV
+
+	}
+
+	provinces = {
+		10551 10677 11098 12393 12502 
+	}
+
+	local_supplies = 0.0 
+}

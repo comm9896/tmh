@@ -1,0 +1,48 @@
+state={
+	id=708
+	name="STATE_708"
+	manpower = 126703
+
+	state_category = small_island
+
+	history={
+		1936.1.1.12 = {	    
+			add_core_of = TIB
+			owner = FRA	
+		}
+		1936.1.1.13 = {	    
+			add_core_of = TIB
+			owner = FRA	
+		}		
+		1936.1.1.14 = {	
+			add_core_of = TIB
+			owner = FRA		
+		}		
+		1936.1.1.15 = {
+			owner = USA
+			add_core_of = USA	
+			
+		}
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}			
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+				
+		buildings = {
+			infrastructure = 2
+			13072 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13072 
+	}
+
+	local_supplies=0.0 
+}

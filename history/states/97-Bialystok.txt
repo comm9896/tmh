@@ -1,0 +1,68 @@
+state={
+	id=97
+	name="STATE_97"
+
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = POL	
+			owner = POL
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				air_base = 3
+
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL		
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+			
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+
+		victory_points = {
+			11301 3
+		}
+		victory_points = {
+			3393 3
+		}
+		victory_points = {
+			3254 1
+		}
+
+	}
+
+	provinces={
+		290 347 400 3254 11247 11274 11301 11329 11357 
+	}
+	manpower=1157200
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=5.0 
+}

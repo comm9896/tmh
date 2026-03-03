@@ -1,0 +1,66 @@
+state={
+	id=93
+	name="STATE_93"
+
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = POL
+			add_core_of = UKR			
+			owner = POL
+		
+			buildings = {
+				infrastructure = 3
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL
+			add_core_of = UKR			
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL
+			add_core_of = UKR			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				industrial_complex = 1
+			}			
+		}			
+			
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+	
+		victory_points = {
+			6557 1
+		}
+		victory_points = {
+			422 3
+		}
+
+
+	}
+
+	provinces={
+		422 474 513 572 3412 6435 6520 6557 11441 11543 
+	}
+	manpower=1985600
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

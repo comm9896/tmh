@@ -1,0 +1,200 @@
+air_subdoctrine_long_range_escort = {
+    track = medium_aircraft
+    name = SUBDOCTRINE_LONG_RANGE_ESCORT
+    description = SUBDOCTRINE_LONG_RANGE_ESCORT_DESC
+    icon = GFX_doctrine_air_offense_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 50
+            original_tag = USA  
+        }
+        modifier = {
+            factor = 0
+            is_major = no 
+        }
+    }
+
+    # EFFECTS
+
+    rewards = {
+		efficient_fly_routes = {
+			category_heavy_fighter = {
+				air_range = 0.05
+			}
+			category_tac_bomber = {
+				air_range = 0.05
+			}
+			category_scout_plane = {
+				air_range = 0.05
+			}			
+		}
+        mutual_air_cover = {
+			category_heavy_fighter = {
+				air_range = 0.05
+			}
+			category_tac_bomber = {
+				air_range = 0.05
+			}
+			category_scout_plane = {
+				air_range = 0.05
+			}					
+		}
+		training_instructors = {
+			air_training_xp_gain_factor = 0.1
+			category_heavy_fighter = {
+				air_range = 0.05
+			}
+			category_tac_bomber = {
+				air_range = 0.05
+			}
+			category_scout_plane = {
+				air_range = 0.05
+			}			
+		}
+		fighter_baiting = {
+			category_heavy_fighter = {
+				air_range = 0.05
+			}
+			category_tac_bomber = {
+				air_range = 0.05
+				air_bombing = 0.05
+				air_ground_attack = 0.05
+				naval_strike_attack = 0.05
+			}
+			category_scout_plane = {
+				air_range = 0.05
+			}
+		}
+		far_reaching_airforce = {
+			air_fuel_consumption_factor = -0.05		
+		}
+    }
+}
+
+air_subdoctrine_operational_air_support = {
+    track = medium_aircraft
+    name = SUBDOCTRINE_OPERATIONAL_AIR_SUPPORT
+    description = SUBDOCTRINE_OPERATIONAL_AIR_SUPPORT_DESC
+    icon = GFX_doctrine_ground_support_integration_medium
+
+    xp_cost = 100
+    xp_type = air
+
+	available = { 
+		has_doctrine = new_operational_integrity
+	}
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 50
+            OR = {
+            	original_tag = ENG  
+            	original_tag = FRA
+            }
+        }
+        modifier = {
+            factor = 2
+            is_major = no 
+        }
+    }
+
+
+    rewards = {
+		efficient_support_crews = {
+			category_tac_bomber = {
+				air_agility = 0.05
+				air_defence = 0.05
+			}
+		}
+        ground_interdictions = {	
+			category_tac_bomber = {
+				air_ground_attack = 0.1
+				air_bombing = 0.10
+			}			
+		}
+		operational_airforce_presence = {
+			category_tac_bomber = {
+				air_ground_attack = 0.1
+				air_bombing = 0.10
+				naval_strike_attack = 0.10
+			}		
+		}
+		heavy_fighter_support = {
+			category_tac_bomber = {
+				air_bombing = 0.10
+				naval_strike_attack = 0.10
+			}		
+		}
+		tactical_bomber_preservation = {
+			category_tac_bomber = {
+				air_agility = 0.05
+				air_defence = 0.05
+			}			
+		}
+    }
+}
+
+air_subdoctrine_aerial_reconnaissance = {
+    track = medium_aircraft
+    name = SUBDOCTRINE_AERIAL_RECONNAISSANCE
+    description = SUBDOCTRINE_AERIAL_RECONNAISSANCE_DESC
+    icon = GFX_doctrine_infiltration_bombing_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    visible = {
+    	has_dlc = "La Resistance"
+    }
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = { base = 0 }
+
+    # EFFECTS
+	category_scout_plane = {
+		air_agility = 0.1
+	}
+
+    rewards = {
+		extended_reconnaissance_radius = {
+			category_scout_plane = {
+				air_range = 0.2
+			}
+		}
+        improved_observation_procedures = {
+			intel_from_combat_factor = 0.1
+			army_intel_factor = 0.1
+		}
+		naval_recon = {
+			navy_intel_factor = 0.1
+			category_scout_plane = {
+				air_defence = 0.1
+			}			
+		}
+		distant_aerial_observation = {
+			airforce_intel_factor = 0.1
+			air_mission_xp_gain_factor = 0.05
+		}
+		well_coordinated_strikes = {
+			civilian_intel_factor = 0.1
+			category_scout_plane = {
+				air_range = 0.1
+			}			
+		}
+    }
+}

@@ -1,0 +1,40 @@
+﻿###########################
+# Hungarian Events
+###########################
+
+add_namespace = DOD_hungary
+
+country_event = {
+	id = DOD_hungary.40
+	title = DOD_hungary.40.t
+	desc = DOD_hungary.40.desc
+	picture = GFX_report_event_generic_rally_3
+	
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = DOD_hungary.40.b
+		ai_chance = {
+			factor = 50
+		}
+		HUN = { country_event = { id = DOD_hungary.42 } }
+	}
+}
+
+#Romania/France fold
+country_event = {
+	id = DOD_hungary.42
+	title = DOD_hungary.42.t
+	desc = DOD_hungary.42.desc
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+
+	option = { #Excellent!
+		name = DOD_hungary.42.a
+		
+		HUN_remove_trianon_effect = yes
+		news_event = { id = news.298 days = 1 }
+	}
+	
+}

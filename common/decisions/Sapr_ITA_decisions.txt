@@ -1,0 +1,40 @@
+
+ITA_time_to_war = {
+
+	ITA_time_to_make_great_Italy = {
+
+		icon = generic_tank		
+		
+		available = {
+			hidden_trigger = { always = no }		
+		}
+		
+		fire_only_once = yes
+		days_mission_timeout = 1612
+		
+        activation = {
+			not = {
+				ITA = { has_war_with = ENG }
+			}
+		}
+		visible = {
+			not = {
+				ITA = { has_war_with = ENG }
+			}
+		}
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+			declare_war_on = { target = ENG    type = take_state_focus }	
+			declare_war_on = { target = CAN    type = take_state_focus }
+			declare_war_on = { target = SAF    type = take_state_focus }	
+			declare_war_on = { target = AST    type = take_state_focus }	
+			declare_war_on = { target = RAJ    type = take_state_focus }	
+			declare_war_on = { target = NZL    type = take_state_focus }	
+			declare_war_on = { target = FRA    type = take_state_focus }				
+		}
+	}	
+}

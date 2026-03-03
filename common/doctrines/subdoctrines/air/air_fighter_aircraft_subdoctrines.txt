@@ -1,0 +1,58 @@
+
+air_subdoctrine_dogfighting_mastery = {
+track = fighter_aircraft
+    name = SUBDOCTRINE_DOGFIGHTING_MASTERY
+    description = SUBDOCTRINE_DOGFIGHTING_MASTERY_DESC
+    icon = GFX_doctrine_air_skirmish_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            	original_tag = ENG 
+            	original_tag = FRA 
+            	original_tag = SOV 
+            	original_tag = ITA 
+            }
+        }
+    }
+
+    # EFFECTS
+    air_ace_generation_chance_factor = 0.1
+
+    rewards = {
+		pilot_quality_focus = {
+			air_mission_xp_gain_factor = 0.1
+			air_training_xp_gain_factor = 0.1
+		}
+		force_rotation = {
+			air_interception_detect_factor = 0.2
+			air_intercept_efficiency = 0.2
+		}
+		fighter_command_system = {
+			category_fighter = {
+				air_agility = 0.1
+			}
+			category_heavy_fighter = {
+				air_agility = 0.10
+			}			
+		}
+        combat_routines = {
+			air_superiority_efficiency = 0.20
+			air_superiority_detect_factor = 0.2
+		}
+		improved_support_integration = {
+			air_accidents_factor = -0.1
+			air_manpower_requirement_factor = -0.2
+		}
+    }	
+}

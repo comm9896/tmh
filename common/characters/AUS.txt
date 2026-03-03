@@ -1,0 +1,91 @@
+characters={
+	AUS_kurt_schuschnigg={
+		name=AUS_kurt_schuschnigg
+		portraits={
+			civilian={
+				large=GFX_portrait_AUS_kurt_schuschnigg
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	AUS_arthur_seyss_inquart = {
+		instance = {
+			allowed = {
+				has_dlc = "Gotterdammerung"
+			}
+
+			name = AUS_arthur_seyss-inquart
+			portraits = {
+				civilian = {
+					large = "GFX_portrait_AUS_arthur_seyss_inquart"
+					small = "GFX_portrait_AUS_arthur_seyss_inquart_small"
+				}
+			}
+			country_leader = {
+				ideology = nazism
+				expire = "1965.1.1.1"
+				id = -1
+				traits = { nazi_sympathizer }
+			}
+			advisor = {
+				slot = political_advisor
+				idea_token = AUS_arthur_seyss-inquart
+				allowed = {
+					original_tag = AUS
+				}
+				traits = {
+					prince_of_terror 
+				}
+				available = {
+					NOT = {
+						has_war_with = GER
+					}
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}
+		}
+
+		instance = {
+
+			allowed = {
+				NOT = {
+					has_dlc = "Gotterdammerung"
+				}
+			}
+
+			name = AUS_arthur_seyss-inquart
+			portraits = {
+				civilian = {
+					large = GFX_portrait_AUS_arthur_seyss-inquart
+					small = GFX_portrait_AUS_arthur_seyss-inquart_small
+				}
+			}
+			country_leader = {
+				ideology = nazism
+				expire = "1965.1.1.1"
+				id = -1
+			}
+			advisor = {
+				slot = political_advisor
+				idea_token = AUS_arthur_seyss-inquart
+				allowed = {
+					original_tag = AUS
+				}
+				traits = {
+					prince_of_terror 
+				}
+
+				ai_will_do = {
+					base = 0
+				}
+			}
+		}
+	}	
+}

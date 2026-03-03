@@ -1,0 +1,68 @@
+state={
+	id=766
+	name="STATE_766"
+	manpower = 566600
+	
+	state_category = rural
+	
+	history= {
+		
+		1936.1.1.12 = {	    
+			add_core_of = ROM
+			add_core_of = UKR			
+			owner = ROM
+
+			buildings = {
+				infrastructure = 2
+				dockyard = 1
+				6727 = {
+					naval_base = 3
+				}
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = ROM
+			add_core_of = UKR				
+			owner = ROM
+		}		
+		1936.1.1.14 = {
+			add_core_of = ROM	
+			add_core_of = UKR				
+			owner = ROM			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+	
+			buildings = {
+				infrastructure = 2
+				dockyard = 1
+				6727 = {
+					naval_base = 3
+				}
+			}	
+		}
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+				
+		victory_points = {
+			6727 1
+		}
+
+	}
+	provinces=
+	{
+3701 3704 6727 6743	}
+
+	local_supplies=0.0 
+}

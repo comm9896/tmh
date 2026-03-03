@@ -1,0 +1,42 @@
+AUS_historical_plan = {
+	name = "AUS_historical_plan"
+	desc = "historical_plan_for_AUS"
+
+	allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		tag = AUS
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		construction_effort_3
+		infrastructure_effort_2
+		production_effort
+		production_effort_2
+		production_effort_3
+	}
+	
+	focus_factors = {
+	}
+	research = {
+		industry = 33.0
+		infantry_tech = 33.0
+		artillery = 33.0
+		support_tech = 1
+	}
+
+	ideas = {
+	}
+	weight = {
+	}
+
+}

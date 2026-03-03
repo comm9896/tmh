@@ -1,0 +1,8487 @@
+on_actions = {
+
+	on_monthly_SOV = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					check_variable = { Sapr_SOV_suck > 1000}					
+				}
+				if = {
+					limit = {
+						date < 1942.01.01		
+					}
+					SOV = {				
+						SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+					}					
+				}					
+				if = {
+					limit = {
+						date > 1942.01.01
+						date < 1943.01.01						
+					}
+					SOV = {				
+						SOV_Soon_we_will_liberate_Europe_increase_effect_3 = yes
+					}					
+				}
+				if = {
+					limit = {
+						date > 1943.01.01
+					}
+					SOV = {				
+						SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+					}					
+				}					
+            }
+        }	
+	}
+
+
+	# Сось захватывает Киев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 202
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+            }
+        }
+    }	
+	# Совок камбекает Киев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {  
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 202
+					}
+                }
+				SOV = {
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+            }
+        }
+    }		
+	
+	
+	# Сось захватывает Днепропетровск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 226
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Днепропетровск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 226
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+
+	# Сось захватывает Запорожье	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 200
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Запорожье
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 200
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+
+	
+	# Сось захватывает Одессу	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 192
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Одессу
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 192
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }		
+		
+	
+	# Сось захватывает Минск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 206
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Минск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 206
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	# Сось захватывает Каунос	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 11
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Каунос
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 11
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }
+
+	# Сось захватывает Вильнюс	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 784
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Вильнюс
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 784
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Бобруйск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 204
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+  # Совок камбекает Бобруйск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 204
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Бобруйск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 204
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Бобруйск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 204
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }
+
+	# Сось захватывает Витебск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 207
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Витебск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 207
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }
+	
+	# Сось захватывает Смоленск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 242
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Смоленск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 242
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }
+	
+	
+	# Сось захватывает Сталино	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 227
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Сталино
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 227
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Ворошиловград	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 228
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ворошиловград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 228
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Ростов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 218
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ростов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 218
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	
+	# Сось захватывает Ростов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 137
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ростов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 137
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+		
+	
+	
+	# Сось захватывает Харьков	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 221
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Харьков
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 221
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+
+	# Сось захватывает Курск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 220
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Курск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 220
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+	# Сось захватывает Орел	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 222
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Орел
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 222
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+
+	# Сось захватывает Брянск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 224
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Брянск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 224
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+
+	# Сось захватывает Рига	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 808
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Рига
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 808
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Дауговпилс	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 810
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Дауговпилс
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 810
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	# Сось захватывает Шауляй	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 189
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Шауляй
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 189
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Полтава	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 259
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Полтава
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 259
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Сось захватывает Полтава	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 241
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Полтава
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 241
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }		
+		
+	
+	
+	# Сось захватывает Сумы	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 225
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Сумы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 225
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+
+
+	# Сось захватывает Псков	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 209
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Псков
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 209
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+		
+	# Сось захватывает Великие луки	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 210
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Великие луки	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 210
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+	# Сось захватывает Тарту	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 191
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Тарту
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 191
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }					
+
+	# Сось захватывает Таллин	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 812
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Таллин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 812
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+		
+
+	# Сось захватывает Нарва	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 813
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Нарва
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 813
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Ораниенбаум	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 208
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ораниенбаум
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 208
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	
+	# Сось захватывает Ленинград	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+						tag = FIN					
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 195
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}			
+			}
+        }
+    }	
+	# Совок камбекает Ленинград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 195
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }		
+	
+	# Сось захватывает Волхов	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+						tag = FIN					
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 244
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Волхов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 244
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	# Сось захватывает Тихвин	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+						tag = FIN					
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 264
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Тихвин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 264
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	# Сось захватывает Новгород	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 263
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ленинград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 263
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }			
+	
+	
+	# Сось захватывает Демянск	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 1047
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Демянск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 1047
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }				
+	
+	
+	# Сось захватывает Ржев	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 246
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ржев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 246
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Калуга	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 205
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Калуга
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 205
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Тула	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 223
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Тула
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 223
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+		
+	# Сось захватывает Москва	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 219
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}				
+			}
+        }
+    }	
+	# Совок камбекает Москва
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 219
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Москва	
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 219
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Москва
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 219
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }		
+
+	# Сось захватывает Воронеж
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 260
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Воронеж
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 260
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Томбов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 257
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Томбов
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 257
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Сось захватывает Пенза
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 255
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Пенза
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 255
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+
+
+	# Сось захватывает Большенабатовский
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 1053
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Большенабатовский
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 1053
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+
+	# Сось захватывает Колач
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 1052
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Колач
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 1052
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+
+	# Сось захватывает Котельникова
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 238
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Котельникова
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 238
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	# Сось захватывает Сталинград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 217
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}				
+				
+			}
+        }
+    }	
+	# Совок камбекает Сталинград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 217
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+	# Сось захватывает Красная слобода
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 1051
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Красная слобода
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 1051
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }
+
+
+	# Сось захватывает Краснодар
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 234
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Краснодар
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 234
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+		
+	# Сось захватывает Ставрополь
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 235
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ставраполь
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 235
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Сухими
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 826
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Сухими
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 826
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Ереван
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 230
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ереван
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 230
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }		
+	
+	# Сось захватывает Баку
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 229
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Баку
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 229
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+	# Сось захватывает Махачкалу
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 232
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Махачкалу
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 232
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Орджаникидзе
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 828
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Орджаникидзе
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 828
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }
+
+
+	# Сось захватывает Грозный
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 821
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_1 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Грозный
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 821
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_1 = yes
+				}
+			}
+        }
+    }
+	
+
+	# Сось захватывает Астрахань
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 236
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Астрахань
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 236
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Ярославль
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 248
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Ярославль
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 248
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+		
+	
+	# Сось захватывает Иванова
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 253
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Иванова
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 253
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Сось захватывает Горький
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 252
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Горький
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 252
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Казань
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 249
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Казань
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 249
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }
+
+	
+	# Сось захватывает Куйбышев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 251
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Куйбышев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 251
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Сось захватывает Гурьев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 406
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Гурьев
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 406
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+	
+	
+	# Сось захватывает Петрозаводск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+						tag = FIN			
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 216
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Петрозаводск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+						    tag = FIN							
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 216
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Сось захватывает Мурманск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+					    tag = FIN						
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+					}
+					FROM.FROM = {
+						state = 213
+					}
+					
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# Совок камбекает Мурманск
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN								
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 213
+					}
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	
+	# Совок захватывает Хельсинки
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 111
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Хельсинки
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV						
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN								
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 111
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+		
+	
+	
+	# Совок захватывает Тампэрэ
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 927
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Тампэрэ
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV							
+						}
+					}
+					FROM.FROM = {
+						state = 927
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+			
+	
+	
+	# Совок захватывает Турку
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 926
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Турку
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV							
+						}
+					}
+					FROM.FROM = {
+						state = 926
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+		
+
+	
+	# Совок захватывает Куопио
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 150
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Куопио
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV							
+						}
+					}
+					FROM.FROM = {
+						state = 150
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Финмарк
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG							
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 925
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Финмарк
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 925
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Нарвик
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG							
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN								
+							is_in_faction_with = GER									
+						}
+					}
+					FROM.FROM = {
+						state = 144
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# ОСЬ камбекает Нарвик
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG							
+						}
+					}
+					FROM.FROM = {
+						state = 144
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Совок захватывает Торнхэйм
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG			
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN								
+							is_in_faction_with = GER						
+						}
+					}
+					FROM.FROM = {
+						state = 143
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Торнхэйм
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER				
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG							
+						}
+					}
+					FROM.FROM = {
+						state = 144
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Осло
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 110
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Осло
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 110
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+
+
+
+
+
+	# Совок захватывает Кенигсберг
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 763
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Кенигсберг
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 763
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }		
+	
+
+
+	# Совок захватывает Данциг
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 85
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Данциг
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 85
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }		
+
+	# Совок захватывает Готенхафен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 807
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Готенхафен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 807
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }		
+	
+		
+	
+	# Совок захватывает Варшаву
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 10
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Варшаву
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 10
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	
+	# Совок захватывает Лодзь
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 87
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Лодзь
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 87
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Сэдльце
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 1054
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Сэдльце
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 1054
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+
+	
+	# Совок захватывает Люблин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 92
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Люблин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 92
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Совок захватывает Краков
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 88
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Краков
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 88
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+		
+	# Совок захватывает Бухарест
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 46
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Бухарест
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 46
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+		
+	# Совок захватывает Яссы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 79
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Яссы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 79
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Совок захватывает Яссы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 79
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Яссы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 79
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+		
+	
+	# Совок захватывает Констанцы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 971
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Констанцы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 971
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Констанцы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 971
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Констанцы
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 971
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }			
+	
+	# Совок захватывает Варна
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 211
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Варна
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 211
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Совок захватывает Плевна
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 801
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Плевна
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 801
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	# Совок захватывает Софию
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 48
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Софию
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 48
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Пловдив
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 212
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Пловдив
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 212
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Совок захватывает Фесолоники
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 731
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Фесолоники
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 731
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Совок захватывает Скопье
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 106
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Скопье
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 106
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Клуж
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 76
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Клуж
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 76
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }
+	
+	
+	# Совок захватывает Будапешт
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 43
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Будапешт
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 43
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Совок захватывает Белград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 107
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Белград
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 107
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2 = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Тимишоара
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 82
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Тимишоара
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 82
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+		
+	# Совок захватывает Братислава
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 70
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Братислава
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 70
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }		
+	
+	
+		
+	# Совок захватывает Вена
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 4
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Вена
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 4
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+
+		
+	# Совок захватывает Бэрн
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 75
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Бэрн
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 75
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+		
+	# Совок захватывает Прага
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 9
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Прага
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 9
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+		
+	# Совок захватывает Познань
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 86
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Познань
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 86
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+	
+		
+	# Совок захватывает Гливице
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 67
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Гливице
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 67
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+	
+		
+	# Совок захватывает Бреслау
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 67
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Бреслау
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 67
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+
+
+
+
+	# Совок захватывает Дрезден
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 65
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Дрезден
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 65
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }
+
+
+	# Совок захватывает Берлин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 64
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Берлин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 64
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+
+	# Совок захватывает Штеттнин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 63
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Штеттнин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 63
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Росток
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 61
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Росток
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 61
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Совок захватывает Гамбург
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 61
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Гамбург
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 61
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+
+	# Совок захватывает Гановер
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 59
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Гановер
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 59
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+
+	# Совок захватывает Вильгельмсхафен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 56
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Вильгельмсхафен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 56
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+
+	# Совок захватывает Франкфурд
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 55
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Франкфурд
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 55
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+
+	# Совок захватывает Нюрнберг
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 54
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Нюрнберг
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 54
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+
+	# Совок захватывает Мюнхен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 52
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Мюнхен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 52
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }			
+	
+	# Совок захватывает Штутгард
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 50
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Штутгард
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 50
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Сарбрюхен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 42
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Сарбрюхен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 42
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Сарбрюхен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 42
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Сарбрюхен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 42
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }
+
+	
+	# Совок захватывает Эссен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 51
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Эссен
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 51
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Амстердам
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 7
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Амстердам
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 7
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }
+
+	
+	# Совок захватывает Бреда
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 35
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Бреда
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 35
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }
+
+	
+	# Совок захватывает Брюсель
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 6
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Брюсель
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 6
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }
+			
+	
+	# Совок захватывает Мец
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 28
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Мец
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 28
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Совок захватывает Париж
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 16
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Париж
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 16
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+	
+	# Совок захватывает Брест
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 14
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Брест
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 14
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+		
+	
+	# Совок захватывает Орлеан
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 14
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Орлеан
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 14
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+	
+		
+	
+	# Совок захватывает Шербур
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 15
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Шербур
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 15
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Кале
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 29
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Кале
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 29
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+	
+	
+	
+	# Совок захватывает Таронто
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 849
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Таронто
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 117
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+
+
+	
+	# Совок захватывает Неаполь
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 117
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Неаполь
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 117
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+
+
+	
+	# Совок захватывает Рим
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 2
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Рим
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 2
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+
+
+	
+	# Совок захватывает Флоренция
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 162
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Флоренция
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 162
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+
+	
+	# Совок захватывает Балонья
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 161
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Балонья
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 161
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }		
+
+	
+	# Совок захватывает Венеция
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 160
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Венеция
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 160
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+	
+	# Совок захватывает Турин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 158
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_5 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Турин
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 158
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_5  = yes
+				}
+			}
+        }
+    }	
+	
+	# Совок захватывает Загреб
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 109
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Загреб
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 109
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }		
+	
+	# Совок захватывает Триест
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+						tag = SOV
+						is_in_faction_with = SOV	
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							tag = FIN						
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 736
+					}
+					
+                }
+				SOV = {				
+					SOV_Soon_we_will_liberate_Europe_increase_effect_2 = yes
+				}
+			}
+        }
+    }	
+	# ОСЬ камбекает Триест
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}				
+					OR ={
+						tag = GER
+						tag = FIN								
+						is_in_faction_with = GER					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV	
+							tag = ENG
+							is_in_faction_with = ENG								
+						}
+					}
+					FROM.FROM = {
+						state = 736
+					}
+                }
+				SOV = {				
+					SOV_We_will_never_surender_increase_effect_2  = yes
+				}
+			}
+        }
+    }	
+	
+	
+	# Совок теряет терку где небылыло могилизировано ополчение
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {   
+					GER = {
+						has_completed_focus = GER_anti_comintern_pact
+					}
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }	
+					
+					FROM = { 
+						OR ={					    
+							tag = SOV
+							is_in_faction_with = SOV
+						}
+						is_core_of = SOV					
+					}
+					FROM.FROM = {
+						not = {
+							has_state_flag = Sapr_SOV_factory_worker_militias_raised_flag
+						}	
+					}
+                }
+				FROM.FROM  = {
+					set_state_flag = Sapr_SOV_factory_worker_militias_raised_flag
+				}
+			}
+        }
+    }	
+}

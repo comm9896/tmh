@@ -1,0 +1,14 @@
+################
+##### TIB ######
+################
+
+
+TIB_industry_DELETE  = {
+	icon = generic_industry
+	allowed = {
+		original_tag = TIB
+	}
+	visible = {
+		date < 1941.06.01
+	}
+}

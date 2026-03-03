@@ -1,0 +1,61 @@
+
+state={
+	id=77
+	name="STATE_77"
+	manpower = 378000
+	
+	state_category = rural
+
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = ROM		
+			owner = ROM
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+			}
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = ROM		
+			owner = ROM
+		}		
+		1936.1.1.14 = {
+			add_core_of = ROM		
+			owner = ROM			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = ROM
+		    add_core_of = ROM
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				industrial_complex = 2	
+			}					
+		}
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+			
+
+		victory_points = {
+			11597 1
+		}
+
+	}
+
+	provinces={
+		9614 11597 
+	}
+
+	local_supplies=1.0 
+}

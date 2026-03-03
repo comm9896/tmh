@@ -1,0 +1,59 @@
+
+state={
+	id=205
+	name="STATE_205" # Kaluga
+	manpower = 1121004
+	
+	state_category = town
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			
+			buildings = {
+				infrastructure = 3 #was: 5
+				anti_air_building = 1				
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				anti_air_building = 1	
+				arms_factory = 2				
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		victory_points = {
+			382 4
+		}
+	}
+
+	provinces={
+		246 274 352 382 3263 3308 3345 3377 6252 6365 9261 9301 11235 11284 11300 11369 
+	}
+
+	local_supplies=10.0 
+}

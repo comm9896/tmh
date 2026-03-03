@@ -1,0 +1,47 @@
+state={
+	id=792
+	name="STATE_792"
+	resources={
+		steel=8.000
+	}
+
+	history={
+
+		1936.1.1.12 = {	    
+			owner = POR
+			add_core_of = POR
+		}
+		1936.1.1.13 = {	    
+			owner = POR
+			add_core_of = POR
+		}		
+		1936.1.1.14 = {
+			owner = POR
+			add_core_of = POR	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+			owner = POR
+			add_core_of = POR		
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+	}
+
+	provinces={
+		740 3735 6756 13233 
+	}
+	manpower=928094
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

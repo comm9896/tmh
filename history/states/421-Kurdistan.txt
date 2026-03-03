@@ -1,0 +1,39 @@
+
+state={
+	id=421
+	name="STATE_421"
+	manpower = 780278
+	
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = PER
+			add_core_of = PER
+		}			
+		1936.1.1.13 = {
+			owner = PER
+			add_core_of = PER
+		}	
+		1936.1.1.14 = {
+			owner = PER
+			add_core_of = PER
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		829 5050 10774 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,49 @@
+state={
+	id=749
+	name="STATE_749"
+	provinces={
+		1125 1153 1171 4105 4173 7007 7104 10044 11937 12019 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	history={
+        1936.1.1.12 = {	    
+		    owner = CHI
+		    add_core_of = CHI	
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.15 = {	    
+		    owner = CHI
+		    add_core_of = CHI	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}	
+				
+		buildings = {
+			infrastructure = 2
+			air_base = 4		
+		}
+		victory_points = {
+			12019 1
+		}
+	}
+
+	local_supplies=0.0 
+}

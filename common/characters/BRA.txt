@@ -1,0 +1,16 @@
+characters={
+	BRA_Bobby_Kotick = {
+		name = BRA_Bobby_Kotick
+		portraits={
+			civilian={
+				large=GFX_portrait_Bobby_Kotick 
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

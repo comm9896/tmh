@@ -1,0 +1,111 @@
+HOL_historical_plan = {
+	name = "Netherlands historical plan"
+	desc = "Historical behavior for Netherlands"
+
+	allowed = {
+		original_tag = HOL
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = HOL_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_HISTORICAL
+			has_game_rule = {
+				rule = HOL_ai_behavior 
+				option = DEMOCRATIC_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		AND = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = HOL_ai_behavior 
+				option = DEFAULT
+			}
+		}
+		ENG = { has_completed_focus = ENG_a_change_in_course }
+		
+	}
+
+	ai_national_focuses = {
+        HOL_form_new_government #Новое провительство
+
+		HOL_obtain_foreign_colonial_investments  #инвестиции в колонии
+		HOL_the_western_possessions  #дальнейшее развитие инфры
+		HOL_the_crown_jewel_colony #жемчужина среди колоний
+		HOL_java  #ява
+		HOL_sumatra #суматра
+		HOL_borneo_and_the_grote_oost #борнео
+		HOL_curtail_colonial_autonomy #ограниченая автономия	
+		
+		HOL_gateway_to_europe #Путь в европпу
+		HOL_cave_to_the_british #На стороне ВБ
+		HOL_abandon_the_gold_standard #отказ от золотого стандарта
+		HOL_continue_the_public_works #дальнейшее развитие инфры
+		HOL_finish_the_noordoostpolder #завершение нордстолдера
+		HOL_the_maastunnel  #мааский тонель
+		HOL_expand_the_artillerieinrichtingen  #дюжноафриканская артилерия
+		HOL_philips_focus  #филипс
+		HOL_expand_RD_facilities  #ячейка		
+		HOL_overturn_military_budget_cuts # военный бюджет
+		HOL_appoint_new_supreme_commander # новый командующий
+		HOL_unity_through_democracy # единство и демократия	
+		HOL_continue_the_war_in_batavia #продолжение войны в батавии	
+		HOL_a_western_capital #западные ресурсы
+		HOL_expand_the_colonial_army #колониальная армия
+		HOL_the_east_indies_war_machine #западная столица
+		HOL_expand_curacao_oil_refineries #нефть кюрюсао
+		HOL_open_second_paranam_bauxite_mine #алюм 
+		HOL_reinforce_java #укрепление Явы
+		HOL_the_foundations_of_defense #основы обороны
+		HOL_replace_the_defeatist_government # слабое правительство			
+		HOL_colonial_shipbuilding #колониальные верфи
+		HOL_domestic_innovation #отечественная разработка
+		HOL_make_use_of_our_riches #добыча ресурсов
+		HOL_de_vaarplicht #флотская служба		
+		HOL_prepare_for_our_return #подготовка к комбеку
+		
+		HOL_the_singapore_conferences
+		HOL_allied_technological_developments
+		HOL_ship_a_day_sinking_quotas
+		HOL_american_west_indies_protectorate
+		HOL_request_allied_favors
+		HOL_combined_chiefs_of_staff_representation
+		HOL_the_fourth_ally
+		HOL_zandery_military_airport
+	}
+	
+	traits = {
+		captain_of_industry = 100
+		war_industrialist = 100
+		genial_anti_revolutionary = 100
+	}
+	research = {
+		industry = 20.0
+		infantry_tech = 20.0
+		artillery = 40.0
+		support_tech = 20
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+	
+
+
+}

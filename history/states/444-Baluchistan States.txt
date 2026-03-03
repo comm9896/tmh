@@ -1,0 +1,53 @@
+state={
+	id=444
+	name="STATE_444"
+	manpower = 463500
+	
+	state_category = wasteland
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}	
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}
+		victory_points = {
+			3456 3 
+		}			
+		buildings = {
+			infrastructure = 1
+			3456 = {
+				naval_base = 4
+			}				
+		}
+	}
+
+	provinces={
+		1179 3456 5043 7917 10108 12761 12774 
+	}
+
+	local_supplies=0.0 
+}

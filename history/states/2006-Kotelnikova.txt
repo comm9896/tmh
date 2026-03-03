@@ -1,0 +1,60 @@
+state={
+	id=1052
+	name="STATE_1052"
+
+	history={
+
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+				
+			buildings = {
+				infrastructure = 2
+				anti_air_building = 1					
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 2
+				anti_air_building = 1					
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		
+		victory_points = {
+			9474 1
+		}
+	}
+
+	provinces={
+		3461 3475 3487 6503 9442 9459 9474 11447
+	}
+	manpower=52200
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

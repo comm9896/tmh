@@ -1,0 +1,52 @@
+state = {
+	id = 912
+	name = "STATE_912"
+
+	manpower = 418058
+	state_category = rural
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = DEN
+			add_core_of = DEN
+
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = DEN
+			add_core_of = DEN
+		}
+        1936.1.1.14 = {	    
+			owner = DEN
+			add_core_of = DEN
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER					
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}		
+		
+		victory_points = {
+			13258 1 
+		}
+	}
+
+
+	provinces={
+		332 11251 13258
+	}
+	
+	local_supplies=0.000
+}

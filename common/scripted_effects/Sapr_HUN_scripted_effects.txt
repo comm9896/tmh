@@ -1,0 +1,25 @@
+
+
+Sapr_HUN_mavag_designer = {
+	if = {
+		limit = {
+			has_idea =  HUN_mavag
+		}
+		swap_ideas = {
+			remove_idea = HUN_mavag
+			add_idea = HUN_mavag_improved
+		}
+	}	
+}
+
+Sapr_orion_designer = {
+	if = {
+		limit = {
+			has_idea =  HUN_orion
+		}
+		swap_ideas = {
+			remove_idea = HUN_orion
+			add_idea = HUN_orion_improved
+		}
+	}	
+}

@@ -1,0 +1,48 @@
+state={
+	id=727
+	name="STATE_727"
+	manpower=5367
+	state_category = small_island
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = USA
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+		    owner = USA
+		    add_core_of = TIB	
+		}
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		buildings = {
+			infrastructure = 1
+			13048 = {
+				naval_base = 1
+			}
+			13049 = {
+				naval_base = 1
+			}
+			13053 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13048 13049 13053 
+	}
+
+	local_supplies=0.0 
+}

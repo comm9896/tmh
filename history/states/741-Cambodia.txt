@@ -1,0 +1,53 @@
+state={
+	id=741
+	name="STATE_741"
+	history = {
+        1936.1.1.12 = {	    
+		    owner = FRA
+		    add_core_of = VIN	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+			owner = VIN
+		    add_core_of = VIN
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = JAP
+		    add_core_of = JAP
+		    add_core_of = RAJ			
+		}	
+		victory_points = {
+			7376 1
+		}
+		buildings = {
+			air_base = 6
+			infrastructure = 1
+			7432 = {
+				naval_base = 1
+			}
+
+		}
+	}
+	provinces={
+		1324 1353 1620 4251 4302 4330 4359 4596 4639 5236 7319 7376 7404 7432 7645 10134 10177 10204 10289 10317 10467 12167 12191 12260 12288 12447 12460 12475 
+	}
+	manpower=5245000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

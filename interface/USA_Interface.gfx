@@ -1,0 +1,40 @@
+spriteTypes = {
+    SpriteType = { # Пентагон 
+	    name = "Pentagon_sg_bg" 
+	    texturefile = "gfx/gui/USA/Pentagon.dds"	 
+	}
+     SpriteType = { 
+	    name = "GFX_No_Pentagon1_sg_bg"
+	    texturefile = "gfx/gui/USA/No_Pentagon1.dds"	
+	}
+     SpriteType = { 
+	    name = "GFX_No_Pentagon2_sg_bg"
+	    texturefile = "gfx/gui/USA/No_Pentagon2.dds"	
+	}
+     SpriteType = { 
+	    name = "GFX_No_Pentagon3_sg_bg"
+	    texturefile = "gfx/gui/USA/No_Pentagon3.dds"	 
+	}
+     SpriteType = { 
+	    name = "GFX_No_Pentagon4_sg_bg"
+	    texturefile = "gfx/gui/USA/No_Pentagon4.dds"	
+	}
+
+
+     SpriteType = { 
+	    name = "GFX_Yes_Pentagon1_sg_bg"
+	    texturefile = "gfx/gui/USA/Yes_Pentagon2.dds"	
+	}
+     SpriteType = { 
+	    name = "GFX_Yes_Pentagon2_sg_bg"
+	    texturefile = "gfx/gui/USA/Yes_Pentagon2.dds"	
+	}
+     SpriteType = {
+	    name = "GFX_Yes_Pentagon3_sg_bg"
+	    texturefile = "gfx/gui/USA/Yes_Pentagon3.dds"	
+	}
+     SpriteType = { 
+	    name = "GFX_Yes_Pentagon4_sg_bg"
+	    texturefile = "gfx/gui/USA/Yes_Pentagon4.dds"	
+	}
+ }

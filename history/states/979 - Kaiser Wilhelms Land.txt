@@ -1,0 +1,83 @@
+state = {
+	id = 979
+	name = "STATE_979"
+
+	manpower = 359000
+	state_category = "rural"
+
+	resources={
+		steel=8.000
+		chromium=4.000
+		aluminium = 2
+	}
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = AST
+			add_core_of = AST
+
+			buildings = {
+				infrastructure = 2
+				air_base = 1
+
+				12240 = {
+					naval_base = 1
+				}
+
+				12154 = {
+					naval_base = 1
+				}
+
+				12237 = {
+					naval_base = 2
+				}
+			}		
+		
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+		    owner = AST
+			add_core_of = AST
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+
+
+		victory_points = {
+			12240 1 # Wewak
+		}
+
+		victory_points = {
+			12154 2 # Madang
+		}
+
+		victory_points = {
+			12237 3 # Lae
+		}
+
+	}
+
+	provinces = {
+		4418 12237 10251 7365 12193 5135 12154 12428 11018 7614 4393 1389 12240 12400 10423
+	}
+
+	
+	buildings_max_level_factor = 1
+	local_supplies = 0.0 
+}

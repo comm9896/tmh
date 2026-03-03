@@ -1,0 +1,54 @@
+
+state = {
+	id = 878
+	name = "STATE_878" # Khatangsky
+	manpower = 15974
+	
+	impassable = yes	
+	
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 1
+			}			
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}		
+	}
+
+	provinces = {
+		2900 4812 9224 11122 12687 13065
+	}
+
+	local_supplies = 0.0 
+}

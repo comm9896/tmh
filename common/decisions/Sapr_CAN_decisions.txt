@@ -1,0 +1,214 @@
+CAN_annex = {
+	
+	CAN_annex_NZL = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = NZL
+				exists = yes
+			}
+			has_completed_focus = CAN_canada_wheat_board
+			NZL = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = NZL
+				}
+			}
+		}
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = NZL transfer_troops = yes}
+			
+			NZL = {
+				transfer_units_fraction= {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = NZL }
+				add_core_of = ROOT
+			}
+			NZL = {
+			    every_unit_leader = {
+				set_nationality = CAN
+			    }
+			}
+		}
+	}
+	
+	CAN_annex_AST = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = AST
+				exists = yes
+			}
+			AST = { is_ai = yes }
+			has_completed_focus = CAN_canada_wheat_board			
+		}
+
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = AST
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = AST transfer_troops = yes}
+			
+			AST = {
+				transfer_units_fraction= {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = AST }
+				add_core_of = ROOT
+			}
+			AST = {
+			    every_unit_leader = {
+				set_nationality = CAN
+			    }
+			}
+			add_research_slot = 1
+			
+			AST = {
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_south_australian_housing_trust}	
+					    }
+				    }
+				    complete_national_focus = AST_south_australian_housing_trust					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_expand_lithgow_small_arms_factory}	
+					    }
+				    }
+				    complete_national_focus = AST_expand_lithgow_small_arms_factory					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_expand_the_northern_railway}	
+					    }
+				    }
+				    complete_national_focus = AST_expand_the_northern_railway					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_Australian_Circular_Railway}	
+					    }
+				    }
+				    complete_national_focus = AST_Australian_Circular_Railway					
+			    }					
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_Northern_infrastructure_development}	
+					    }
+				    }
+				    complete_national_focus = AST_Northern_infrastructure_development					
+			    }	
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_Western_infrastructure_development}	
+					    }
+				    }
+				    complete_national_focus = AST_Western_infrastructure_development					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_department_of_supply_and_development}	
+					    }
+				    }
+				    complete_national_focus = AST_department_of_supply_and_development					
+			    }
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_allied_works_council}	
+					    }
+				    }
+				    complete_national_focus = AST_allied_works_council					
+			    }
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_rationing_and_recycling}	
+					    }
+				    }
+				    complete_national_focus = AST_rationing_and_recycling					
+			    }
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_cockatoo_island_shipyards}	
+					    }
+				    }
+				    complete_national_focus = AST_cockatoo_island_shipyards					
+		        }	
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_kangaroo_point_shipyards}	
+					    }
+				    }
+				    complete_national_focus = AST_kangaroo_point_shipyards					
+			    }
+			}	
+		}
+	}	
+	
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=642
+	name="STATE_642"
+	manpower=24
+	
+	state_category = pastoral
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = BRA
+			add_core_of = BRA
+		}			
+		1936.1.1.13 = {
+			owner = BRA
+			add_core_of = BRA
+		}	
+		1936.1.1.14 = {
+			owner = BRA
+			add_core_of = BRA
+		}	
+		1936.1.1.15 = {
+		    owner = BRA
+		    add_core_of = BRA	
+		}
+		1945.1.1.10 = {
+		    owner = BRA
+		    add_core_of = BRA
+		}	
+				
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		11009 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=1057
+	name = "STATE_1057"
+	manpower = 321003
+
+	history={
+	   1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = SUD
+		}	
+	   1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = SUD
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 1
+			air_base = 4
+		}
+		
+		
+
+	}
+
+	provinces={
+		4138 4963 8105 10745 12836 
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=wasteland_1k_Air
+	local_supplies=0.000
+}

@@ -1,0 +1,50 @@
+state={
+	id=311
+	name="STATE_311"
+	manpower = 51000
+	
+	state_category = pastoral
+	history={
+		
+
+        1936.1.1.12 = {	    
+		    owner = MEX
+			add_core_of = MEX
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = MEX
+			add_core_of = MEX
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}	
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		
+		victory_points = {
+			2077 1 
+		}
+		buildings = {
+			infrastructure = 2
+			2077 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces= { 2077 }
+
+	local_supplies=0.0 
+}

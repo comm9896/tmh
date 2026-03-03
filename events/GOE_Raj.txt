@@ -1,0 +1,36 @@
+###########################
+# RAJ GOE events Events
+###########################
+
+add_namespace = GOE_RAJ
+
+
+
+
+#Retire Freeman-Freeman
+country_event = {
+	id = GOE_RAJ.29
+	title = GOE_RAJ.29.t	
+	desc = GOE_RAJ.29.desc	
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = GOE_RAJ.29.a #no
+		ai_chance = {
+			base = 3
+		}
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character =  RAJ_lord_linlithgow # optional if inside character scope
+			promote_leader = yes
+			country_leader={
+				ideology=centrism
+				expire="1965.1.1.1"
+				id=-1
+				traits = {
+					aloof_authority
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,75 @@
+
+state = {
+	id = 99
+	name = "STATE_99"
+	manpower = 1254177
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = DEN
+			add_core_of = DEN
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				dockyard = 1
+				air_base = 2
+				394 = {
+					naval_base = 2
+				}
+				399 = {
+					naval_base = 2
+				}
+				6364 = {
+					naval_base = 1
+				}
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = DEN
+			add_core_of = DEN
+		}
+        1936.1.1.14 = {	    
+			owner = DEN
+			add_core_of = DEN
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER					
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}		
+				
+		victory_points = {
+			6235 2 
+		}
+		victory_points = {
+			6364 3 
+		}
+		victory_points = {
+			3277 1 
+		}
+		victory_points = {
+			399 2
+		}
+		victory_points = {
+			3206 1
+		}
+	}
+
+	provinces={
+		316 394 399 3206 3277 3341 6235 6364 13259 13262 13263
+	}
+	
+	
+	local_supplies = 0.000
+}

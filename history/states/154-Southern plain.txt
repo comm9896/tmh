@@ -1,0 +1,69 @@
+state = {
+	id = 154
+	name = "STATE_154"
+	manpower = 2155383 #was 2735383
+
+	state_category = city
+
+	history = {
+
+		1936.1.1.12 = {	    
+			add_core_of = HUN		
+			owner = HUN
+			buildings = {
+				infrastructure = 3 #was: 6
+				industrial_complex = 3
+				arms_factory = 1
+				air_base = 2
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = HUN			
+			owner = HUN
+		}		
+		1936.1.1.14 = {
+			add_core_of = HUN				
+			owner = HUN			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}	
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		1941.1.1.14 = {
+		    owner = ROM
+		    add_core_of = ROM
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 5
+				industrial_complex = 8
+				synthetic_refinery = 3					
+			}	
+			add_extra_state_shared_building_slots = 6				
+		}
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+			
+
+		victory_points = {
+			11659 1 
+		}
+		
+	}
+
+	provinces = {
+		679 699 730 3730 6735 9656 9706 11644 11646 11659 
+	}
+
+	local_supplies = 12.0 
+}

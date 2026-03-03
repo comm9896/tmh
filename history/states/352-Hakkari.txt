@@ -1,0 +1,52 @@
+
+state={
+	id=352
+	name="STATE_352" # Van
+	manpower = 262095
+
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = TUR
+			add_core_of = TUR
+		}			
+		1936.1.1.13 = {
+			owner = TUR
+			add_core_of = TUR
+		}	
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1936.1.1.15 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+		victory_points = {
+			12476 1 
+		}
+		victory_points = {
+			7530 1 
+		}
+		victory_points = {
+			10497 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		864 1463 7530 10497 11739 12318 12476
+	}
+
+	local_supplies=0.0 
+}
+

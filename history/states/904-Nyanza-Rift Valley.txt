@@ -1,0 +1,39 @@
+state={
+	id=904
+	name="STATE_904"
+	manpower = 678400
+	state_category = pastoral
+
+	history={
+		
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = KEN
+		}	
+		1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = KEN
+		}			
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}			
+		
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		5160 10860 11145 
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

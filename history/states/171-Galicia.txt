@@ -1,0 +1,44 @@
+
+state={
+	id=171
+	name="STATE_171"
+	manpower = 2295085
+	
+	state_category = city
+
+	history={
+		1936.1.1.12 = {	    
+			owner = POR
+			add_core_of = POR
+		}
+		1936.1.1.13 = {	    
+			owner = POR
+			add_core_of = POR
+		}		
+		1936.1.1.14 = {
+			owner = POR
+			add_core_of = POR	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+			owner = POR
+			add_core_of = POR		
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+	}
+
+	provinces={
+		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 
+	}
+
+	local_supplies=0.0 
+}

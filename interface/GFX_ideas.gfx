@@ -1,0 +1,41 @@
+spriteTypes = {
+	
+### o x x
+###   o 
+### o x o
+	
+	spriteType = {
+		name = "GFX_support_from_the_ss"
+		texturefile = "gfx/interface/goals/support_from_the_ss.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_showa_steel_works"
+		texturefile = "gfx/interface/goals/MAN_showa_steel_works.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_decision_category_casino"
+		texturefile = "gfx/interface/decision_category_casino.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_casino"
+		texturefile = "gfx/interface/decision_casino.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_azino_777"
+		texturefile = "gfx/interface/azino_777.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_Rezident"
+		texturefile = "gfx/interface/Rezident.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_modifiers_GER_gorod_krepost_taktick_icon"
+		textureFile = "gfx/interface/modifiers_flooded_icon.dds"
+	}	
+}

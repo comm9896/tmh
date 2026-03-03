@@ -1,0 +1,34 @@
+state={
+	id=857
+	name="STATE_857"
+	provinces={
+		4968 5058 10892 10923 12749 
+	}
+	history = {
+
+		1936.1.1.12 = {
+			owner = SAU
+			add_core_of = SAU
+		}		
+		1936.1.1.13 = {
+			owner = SAU
+			add_core_of = SAU
+		}
+		1936.1.1.14 = {
+			owner = SAU
+			add_core_of = SAU
+		}			
+		1936.1.1.15 = {
+			owner = SAU
+			add_core_of = SAU
+		}	
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+	}
+	manpower=5000
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

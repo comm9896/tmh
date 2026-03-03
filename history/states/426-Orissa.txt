@@ -1,0 +1,55 @@
+
+state={
+	id=426
+	name="STATE_426" # Orissa
+	manpower = 14520100
+	
+	state_category = rural
+	
+	resources={
+		steel=25 
+		chromium=20 
+		aluminium=1 
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		1059 1101 1538 4104 4237 4513 7090 7372 7428 9946 10001 10060 10088 10116 10255 10428 11924 11978 12063 12462
+	}
+
+	local_supplies=0.0 
+}

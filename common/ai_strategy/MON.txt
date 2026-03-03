@@ -1,0 +1,142 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# send_volunteers_desire
+
+
+MON_the_soviet_threat = {
+
+	allowed = {
+		original_tag = MON
+	}
+	
+	enable = {
+		original_tag = MON
+		is_historical_focus_on = yes
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER	
+		value = 200
+	}	
+	
+}
+
+MON_you_should_be_prepared_for_war = {
+
+	allowed = {
+		original_tag = MON
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}
+
+MON_antagonize_GER = {
+	
+	allowed = {
+		original_tag = MON
+	}	
+	enable = {
+		tag = MON
+		is_historical_focus_on = yes
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 15
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER	
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = SOV
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "TIB"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "AFG"
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "JAP"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "MAN"
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TIB"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "AFG"
+		value = -1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "JAP"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "MAN"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = "TIB"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = "AFG"
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "JAP"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = "MAN"
+		value = -1000
+	}		
+}
+
+

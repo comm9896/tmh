@@ -1,0 +1,79 @@
+
+state={
+	id=19
+	name="STATE_19"
+	resources={
+		steel=25.000
+		aluminium=11.000
+	}
+
+	history={
+		
+		1936.1.1.12 = {
+			owner = FRA
+			add_core_of = FRA
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				dockyard = 1
+				air_base = 3
+				9737 = {
+					naval_base = 3
+					coastal_bunker = 1
+
+				}
+
+			}
+			add_dynamic_modifier  = {
+				modifier = Sapr_FRA_no_port_modifier
+			}				
+		}
+		1936.1.1.13 = {
+			owner = FRA
+			add_core_of = FRA
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = FRA
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER		    
+
+			buildings = {
+				infrastructure = 3
+				dockyard = 1
+				6657 = {
+					naval_base = 3
+				}
+				fuel_silo = 3					
+			}	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+		
+		
+		victory_points = {
+			9737 20 
+		}
+
+	}
+
+	provinces={
+		6621 6762 6777 9737 11565 
+	}
+	manpower=1140400
+	buildings_max_level_factor=1.000
+	state_category = enclave
+
+	local_supplies=0.0 
+}

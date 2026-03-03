@@ -1,0 +1,53 @@
+state={
+	id=738
+	name="STATE_738"
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = INS
+			add_core_of = INS
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+			owner = HOL
+			add_core_of = HOL
+		}
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}			
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+				
+		buildings = {
+			infrastructure = 1
+
+			4579 = {
+				naval_base = 1
+
+			}
+
+
+		}
+
+	}
+
+	provinces={
+		4579 
+	}
+	manpower=36146
+	buildings_max_level_factor=1	
+	state_category="small_island"
+
+	local_supplies=0.0 
+}

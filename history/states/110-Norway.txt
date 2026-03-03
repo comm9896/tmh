@@ -1,0 +1,66 @@
+
+state = {
+	id = 110
+	name = "STATE_110"
+	manpower = 1057185
+	
+	state_category = large_town
+	
+	resources = {
+
+	}
+
+	history = {
+
+		1936.1.1.12 = {	    
+			owner = NOR
+			add_core_of = NOR		
+					
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				industrial_complex = 2
+				dockyard = 1
+				air_base = 4
+				6115 = {
+					naval_base = 6
+					coastal_bunker = 3
+				}
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = NOR
+			add_core_of = NOR				
+		}		
+		1936.1.1.14 = {
+			owner = NOR
+			add_core_of = NOR		
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER					
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}
+		
+		victory_points = {
+			6115 13 
+		}
+		victory_points = {
+			11151 2
+		}
+	}
+
+	provinces={
+		14 3007 3171 6115 9103 11078 11151 11184  
+	}
+
+	local_supplies=0.0 
+}

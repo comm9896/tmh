@@ -1,0 +1,42 @@
+state={
+	id=545
+	
+	state_category = pastoral
+	
+	name="STATE_545"
+
+	history={
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TZN
+		}			
+		1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = TZN
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			10929 1 
+		}
+	}
+
+	provinces={
+		1874 2151 2216 4851 7842 10929
+	}
+	manpower=1171336
+	buildings_max_level_factor=1.000
+
+	local_supplies=3.0 
+}

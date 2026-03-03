@@ -1,0 +1,863 @@
+
+joint_focus = {
+	id = Axi_africa_company    
+	icon = GFX_focus_GER_mittelafrika
+
+	x = 0
+	y = 0
+
+
+	
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+		FRA = {
+			has_capitulated = yes
+		}
+    }
+
+    cancel_if_invalid = yes 
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+
+	completion_reward_joint_originator = {
+		set_variable = { Africa_acclimatization_hot_climate_gain_factor = 0 }
+		set_variable = { Africa_SUPPLY_NODE_RANGE = 0 }
+		set_variable = { Africa_HEAT_ATTRITION = 0 }
+		set_variable = { Africa_SUPPLY_CONSUMPTION_FACTOR = 0 }
+		set_variable = { Africa_FUEL_GAIN_FACTOR = 0 }
+		set_variable = { Africa_INDUSTRIAL_CAPACITY_FACTOR = 0 }
+		set_variable = { Africa_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0 }
+		set_variable = { Africa_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR = 0 }
+		set_variable = { Africa_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 0 }
+		set_variable = { Africa_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = 0 }
+		set_variable = { Africa_LOCAL_RESOURCES_FACTOR = 0 }
+		set_variable = { Africa_production_speed_fuel_silo_factor = 0 }
+		set_variable = { Africa_synth_resources = 0 }
+		add_tech_bonus ={
+			name = GER_all_terrain_military_motorcycle
+			uses = 1
+			bonus = 1.0
+			category = radar_tech
+		}
+		ITA = {
+			add_timed_idea = {
+				idea = Africa_company_industry
+				days = 120
+			}
+		}
+	}
+
+	completion_reward = {
+
+		custom_effect_tooltip = Africa_company_industry_add_tt
+
+		hidden_effect = {
+			add_dynamic_modifier = { modifier = Africa_company_industry_dynamic_modifier }			
+		}
+	}
+            
+	
+}
+
+joint_focus = {
+	id = Axi_africa_company2 
+	icon = GFX_focus_generic_africa_liberation
+	prerequisite = { focus = Axi_africa_company_defens7  focus = Axi_africa_company_attak7  }
+	relative_position_id = Axi_africa_company
+
+	x = 0
+	y = 7
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = { 
+	#	OR = {
+	#		OR = {
+	#			OR = {
+	#				ITA = {
+	#					controls_state = 452
+	#					controls_state = 1017
+	#					controls_state = 447
+	#					controls_state = 907
+	#				}
+	#				any_allied_country = {
+	#					controls_state = 452
+	#					controls_state = 1017
+	#					controls_state = 447
+	#					controls_state = 907
+	#				}
+	#			}
+	#			OR = {
+	#				ITA = {
+	#					controls_state = 291
+	#					controls_state = 1011
+	#					controls_state = 675
+	#				}
+	#				any_allied_country = {
+	#					controls_state = 291
+	#					controls_state = 1011
+	#					controls_state = 675
+	#				} 
+	#			}
+	#			OR = {
+	#				ITA = {
+	#					controls_state = 456
+	#					controls_state = 457
+	#				}
+	#				any_allied_country = {
+	#					controls_state = 456
+	#					controls_state = 457
+	#				}
+	#			}
+	#		} 
+	#		OR = {
+	#			OR = {
+	#
+	#				ITA = {
+	#					controls_state = 663
+	#					controls_state = 451
+	#					controls_state = 450
+	#					controls_state = 662
+	#					controls_state = 449
+	#				}
+	#
+	#				any_allied_country = {
+	#					controls_state = 663
+	#					controls_state = 451
+	#					controls_state = 450
+	#					controls_state = 662
+	#					controls_state = 449
+	#				}
+	#			}
+	#			OR = {
+	#				ITA = {
+	#					controls_state = 448
+	#					controls_state = 661
+	#					controls_state = 665
+	#					controls_state = 458
+	#				}
+	#
+	#				any_allied_country = {
+	#					controls_state = 448
+	#					controls_state = 661
+	#					controls_state = 665
+	#					controls_state = 458
+	#				}
+	#			}
+	#		}
+	#	}
+
+	}
+
+    cancel_if_invalid = yes 
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {  
+
+		AXI_africa_iashot_company_focus = yes
+
+		AXI_africa_iashot_company_focus2 = yes
+	}
+	
+}
+
+
+
+
+
+joint_focus = {
+	id = Axi_africa_company_defens
+	icon = GFX_goal_generic_construct_military
+	prerequisite = { focus = Axi_africa_company }
+	mutually_exclusive = { focus = Axi_africa_company_attak }
+	relative_position_id = Axi_africa_company
+
+	x = -2
+	y = 1
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = { 
+		factor = 0
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = Axi_africa_company_defens_bolt_TT 
+        Axi_africa_company_defens_bolt = yes
+	}
+}
+
+joint_focus = {
+	id = Axi_africa_company_defens2
+	icon = GFX_focus_FIN_increase_military_budget
+	prerequisite = { focus = Axi_africa_company_defens }
+	relative_position_id = Axi_africa_company_defens
+
+	x = -2
+	y = 1
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_acclimatization_hot_climate_gain_factor = 0.3 tooltip = Africa_acclimatization_hot_climate_gain_factor_tt }
+			add_to_variable = { Africa_HEAT_ATTRITION = -0.1 tooltip = Africa_HEAT_ATTRITION_tt }
+            
+	}
+}
+joint_focus = {
+	id = Axi_africa_company_defens3
+	icon = GFX_focus_GER_factories_for_resources
+	prerequisite = { focus = Axi_africa_company_defens }
+	relative_position_id = Axi_africa_company_defens
+
+	x = 0
+	y = 1
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward_joint_originator = {
+            custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+			add_to_variable = { Africa_LOCAL_RESOURCES_FACTOR = 0.05 tooltip = Africa_LOCAL_RESOURCES_FACTOR_tt }
+
+			448 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+		 			 scope = ITA
+
+			}
+		}
+		661 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+	 	 			scope = ITA
+
+			}
+		}
+		662 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+		 			 scope = ITA
+
+			}
+		}
+		449 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+		 			 scope = ITA
+
+			}
+		}
+		663 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+	 	 			scope = ITA
+
+			}
+		}
+		450 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+		 			 scope = ITA
+
+			}
+		}
+		451 = {
+			add_dynamic_modifier = { 
+				modifier = ITA_Africa_resurset_offensive
+		 			 scope = ITA
+
+			}
+		}
+	}
+
+}
+joint_focus = {
+	id = Axi_africa_company_defens4
+	icon = GFX_focus_ITA_by_blood_alone
+	prerequisite = { focus = Axi_africa_company_defens2 focus = Axi_africa_company_defens3 }
+	relative_position_id = Axi_africa_company_defens
+
+	x = -1
+	y = 2
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward_joint_originator = {
+        add_tech_bonus ={
+			name = GER_all_terrain_military_motorcycle
+			uses = 1
+			bonus = 1.0
+			category = engineers_tech
+		}
+	}
+
+	completion_reward = {
+        add_tech_bonus ={
+			name = GER_all_terrain_military_motorcycle
+			uses = 1
+			bonus = 1.0
+			category = engineers_tech
+		}
+	}
+}
+
+joint_focus = {
+	id = Axi_africa_company_defens5
+	icon = GFX_focus_RAJ_a_private_military
+	prerequisite = { focus = Axi_africa_company_defens4}
+	relative_position_id = Axi_africa_company_defens
+
+	x = -2
+	y = 3
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+        custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_synth_resources = 0.10 tooltip = Africa_synth_resources_tt }
+	}
+
+	completion_reward_joint_originator = {
+        custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_synth_resources = 0.10 tooltip = Africa_synth_resources_tt }
+	}
+}
+joint_focus = {
+	id = Axi_africa_company_defens6
+	icon = GFX_focus_AUS_raid_military_storages
+	prerequisite = { focus = Axi_africa_company_defens4}
+	relative_position_id = Axi_africa_company_defens
+
+	x = 0
+	y = 3
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+        custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_production_speed_fuel_silo_factor = 0.10 tooltip = Africa_production_speed_fuel_silo_factor_tt }
+	}
+
+	completion_reward_joint_originator = {
+        custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_production_speed_fuel_silo_factor = 0.15 tooltip = Africa_production_speed_fuel_silo_factor_tt }
+	}
+
+}
+ 
+joint_focus = {
+	id = Axi_africa_company_defens7
+	icon = GFX_focus_PER_donate_oil_fields
+	prerequisite = { focus = Axi_africa_company_defens6 focus = Axi_africa_company_defens5 }
+	relative_position_id = Axi_africa_company_defens
+
+	x = -1
+	y = 5
+
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+		GER = {has_war_with = SOV}
+		OR = {
+			ITA = {
+				controls_state = 448
+				controls_state = 661
+			}
+						
+			ITA = {
+				controls_state = 449
+				controls_state = 662
+			}
+
+			ITA = {
+				controls_state = 663
+				controls_state = 450
+				controls_state = 451
+			}			
+		}	
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = { 
+		custom_effect_tooltip = ITA_evacuation2_tt 
+            
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##########################
+#Разделение древа фокусов#
+##########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joint_focus = {
+	id = Axi_africa_company_attak
+	icon = GFX_focus_attack_britain
+	prerequisite = { focus = Axi_africa_company }
+	mutually_exclusive = { focus = Axi_africa_company_defens }
+	relative_position_id = Axi_africa_company
+
+	x = 3
+	y = 1
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = { 
+		custom_effect_tooltip = Axi_africa_company_attak_TT 
+		Axi_africa_company_attak = yes
+	}
+}
+joint_focus = {
+	id = Axi_africa_company_attak2
+	icon = GFX_focus_generic_road_investment
+	prerequisite = { focus = Axi_africa_company_attak }
+	relative_position_id = Axi_africa_company_attak
+
+	x = -2
+	y = 1
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_SUPPLY_NODE_RANGE = 0.15 tooltip = Africa_SUPPLY_NODE_RANGE_tt }
+			add_to_variable = { Africa_SUPPLY_CONSUMPTION_FACTOR = -0.05 tooltip = Africa_SUPPLY_CONSUMPTION_FACTOR_tt }
+            
+	}
+}
+joint_focus = {
+	id = Axi_africa_company_attak3
+	icon = GFX_focus_URG_colorados
+	prerequisite = { focus = Axi_africa_company_attak }
+	relative_position_id = Axi_africa_company_attak
+
+	x = 2
+	y = 1
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		    custom_effect_tooltip =Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_acclimatization_hot_climate_gain_factor = 0.3 tooltip = Africa_acclimatization_hot_climate_gain_factor_tt }
+			add_to_variable = { Africa_HEAT_ATTRITION = -0.1 tooltip = Africa_HEAT_ATTRITION_tt }
+	}
+}
+joint_focus = { 
+	id = Axi_africa_company_attak4
+	icon = GFX_focus_generic_german_trade
+	prerequisite = { focus = Axi_africa_company_attak3   }
+	prerequisite = { focus = Axi_africa_company_attak2   }
+	relative_position_id = Axi_africa_company_attak
+
+	x = 0
+	y = 2
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+		ITA = { controls_state = 447 } 
+		any_allied_country = {
+			controls_state = 447
+			#controls_province = 4076
+		}
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+            custom_effect_tooltip = Africa_company_industry_dynamic_modifier_info
+            add_to_variable = { Africa_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 0.1 tooltip = Africa_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR_tt }
+
+			
+	}
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = Africa_company_industry_dynamic_modifier_info
+		add_to_variable = { Africa_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR = 0.1 tooltip = Africa_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR_tt }
+	}
+}
+joint_focus = {
+	id = Axi_africa_company_attak5
+	icon = GFX_focus_CONGO_copper_cartridges
+	prerequisite = { focus = Axi_africa_company_attak3  }
+	relative_position_id = Axi_africa_company_attak
+
+	x = 2
+	y = 3
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+		ITA = { controls_state = 907 } 
+		any_allied_country = {
+			controls_state = 907
+			#controls_province = 7011
+		}
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = { 
+		factor = 0
+	}
+
+	completion_reward = {
+        custom_effect_tooltip = Africa_company_industry_dynamic_modifier_info
+        add_to_variable = { Africa_INDUSTRIAL_CAPACITY_FACTOR = 0.1 tooltip = Africa_INDUSTRIAL_CAPACITY_FACTOR_tt }	
+	}
+
+	completion_reward_joint_originator = {
+		custom_effect_tooltip = Africa_company_industry_dynamic_modifier_info
+		add_to_variable = { Africa_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR = 0.05 tooltip = Africa_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR_tt }
+	}
+	
+}
+joint_focus = {
+	id = Axi_africa_company_attak6
+	icon = GFX_focus_PER_increase_oil_sales
+	prerequisite = { focus = Axi_africa_company_attak2   }
+	relative_position_id = Axi_africa_company_attak
+
+	x = -2
+	y = 3
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+		ITA = {
+			controls_state = 291
+			controls_state = 1011
+			controls_state = 675
+			controls_state = 656
+		} 
+		any_allied_country = {
+			controls_state = 291
+			controls_state = 1011
+			controls_state = 675
+			controls_state = 656
+		}
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+        custom_effect_tooltip = Africa_company_industry_dynamic_modifier_info
+		add_to_variable = { Africa_FUEL_GAIN_FACTOR = 0.2 tooltip = Africa_FUEL_GAIN_FACTOR_tt }   
+	}
+	completion_reward_joint_originator = {
+		add_tech_bonus ={
+			name = GER_all_terrain_military_motorcycle
+			uses = 1
+			bonus = 1.0
+			category = synth_resources
+		}
+		random_core_state = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+			}
+	}
+}
+joint_focus = { 
+	id = Axi_africa_company_attak7
+	icon = GFX_focus_generic_infiltration
+	prerequisite = { focus = Axi_africa_company_attak6 focus = Axi_africa_company_attak5   }
+	prerequisite = { focus = Axi_africa_company_attak4  }
+	relative_position_id = Axi_africa_company_attak
+
+	x = 0
+	y = 5
+
+	cost = 5
+
+	text_icon = axi_focus_style
+
+	available = {
+		ITA = {
+			controls_state = 456
+			controls_state = 457
+		} 
+		any_allied_country = {
+			controls_state = 456
+			controls_state = 457
+		}
+    }
+
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+	bypass = {
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = Axi_africa_company_defens_TT 
+		Axi_ITA_africa_company_defens = yes     
+	}
+}

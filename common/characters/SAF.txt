@@ -1,0 +1,707 @@
+characters={
+	SAF_j_b_m_hertzog={
+		name=SAF_j_b_m_hertzog
+		portraits={
+			civilian={
+				large="GFX_SAF_james_hertzog"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SAF_d_f_malan={
+		name=SAF_d_f_malan
+		portraits={
+			civilian={
+				large="GFX_SAF_daniel_malan"
+			}
+			army={
+				small=GFX_portrait_SAF_d_f_malan_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_d_f_malan
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+		
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SAF_moses_kotane={
+		name=SAF_moses_kotane
+		portraits={
+			civilian={
+				large="GFX_SAF_moses_kotane"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SAF_pixley_ka_isaka_seme={
+		name=SAF_pixley_ka_isaka_seme
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_pixley_ka_isaka_seme
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SAF_jan_smuts = {
+		name=SAF_jan_smuts
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_jan_smuts
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	SAF_george_edwin_brink={
+		name=SAF_george_edwin_brink
+		portraits={
+			army={
+				large="GFX_SAF_george_edwin_brink"
+				small=GFX_portrait_SAF_george_edwin_brink_small
+			}
+		}
+		corps_commander = {
+			traits={ fortress_buster expert_improviser panzer_expert trickster panzer_leader desert_fox hill_fighter trait_engineer adaptable }
+			skill=6
+			attack_skill=7
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=10
+			legacy_id=-1
+		}
+	}
+
+	SAF_vasya={
+		name=SAF_vasya
+		portraits={
+			army={
+				large="GFX_Portrait_Africa_Generic_land_2"
+				small=GFX_portrait_SAF_george_edwin_brink_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable }
+			skill=6			
+			attack_skill=5
+			defense_skill=9
+			planning_skill=5
+			logistics_skill=9
+			legacy_id=-1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = vasya
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}			
+	}
+
+	ENG_jackie_smyth ={
+		name=ENG_jackie_smyth
+		portraits={
+			army={
+				large=GFX_portrait_ENG_jackie_smyth
+				small=GFX_portrait_ENG_jackie_smyth_small
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader combined_arms_expert cavalry_expert commando camouflage_expert trickster guerilla_fighter desert_fox ranger adaptable }
+			skill=6
+			attack_skill=6
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=9
+			legacy_id=0
+		}
+		advisor = {
+			slot = high_command
+			idea_token = jackie_smyth
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_CombinedArms_2 
+			}
+			cost = 100
+			ai_will_do = {
+				base = 8
+			}
+		}			
+	}
+
+	ENG_thomas_jacomb_hutton ={
+		name=ENG_thomas_jacomb_hutton
+		portraits={
+			army={
+				large=GFX_portrait_ENG_thomas_jacomb_hutton
+				small=GFX_portrait_ENG_thomas_jacomb_hutton_small
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist aggressive_assaulter organizer logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader}
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id=0
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = thomas_jacomb_hutton
+			allowed = {
+				original_tag = SAF
+			}
+			available = {
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+		
+	}
+
+	ENG_arthur_percival ={
+		name=ENG_arthur_percival
+		portraits={
+			army={
+				large=GFX_portrait_ENG_arthur_percival
+				small=GFX_portrait_ENG_arthur_percival_small
+			}
+		}
+		field_marshal={
+			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=8
+			legacy_id=0
+		}
+		advisor={
+			slot = high_command
+			idea_token = arthur_percival
+			ledger = army
+			allowed = {
+				original_tag = AST
+			}
+			cost = 100.000
+			
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}			
+	}
+	
+	ENG_henry_pownall={
+		name=ENG_henry_pownall
+		portraits={
+			army={
+				large=GFX_portrait_ENG_henry_pownall
+				small=GFX_portrait_ENG_henry_pownall_small
+			}
+		}
+		field_marshal={
+			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=8
+			legacy_id=0
+		}
+	}
+
+	ENG_merton_beckwithsmith ={
+		name=ENG_merton_beckwithsmith
+		portraits={
+			army={
+				large=GFX_portrait_ENG_merton_beckwithsmith
+				small=GFX_portrait_ENG_merton_beckwithsmith_small
+			}
+		}
+		corps_commander = {
+			traits={ infantry_leader infantry_expert  fortress_buster trickster expert_improviser ranger urban_assault_specialist trait_engineer adaptable  }
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id=0
+		}
+		advisor={
+			slot = high_command
+			idea_token = merton_beckwithsmith
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}			
+	}
+
+
+	SAF_guy_hallifax={
+		name=SAF_guy_hallifax
+		portraits={
+			army={
+				large="GFX_SAF_guy_halifax"
+				small=GFX_portrait_SAF_guy_hallifax_small
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer superior_tactician seawolf lancer loading_drill_master torpedo_expert blockade_runner concealment_expert}
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+	### THEORISTS ###
+
+	SAF_j_f_van_rensburg={
+		name=SAF_j_f_van_rensburg
+		portraits={
+			army={
+				small="GFX_idea_SAF_j_f_van_rensburg" #small="GFX_idea_generic_army_europe_2"
+			}
+			civilian={
+				small="GFX_idea_SAF_j_f_van_rensburg" #small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SAF_j_f_van_rensburg
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				military_theorist
+			}
+		}
+
+		
+	}
+
+	SAF_s_p_le_roux={
+		name=SAF_s_p_le_roux
+		portraits={
+			army={
+				small="GFX_idea_SAF_s_p_le_roux" #small="GFX_idea_generic_air_europe_1"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SAF_s_p_le_roux
+			ledger = air
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}		
+	}
+
+
+	### ARMY CHIEFS ###
+
+	SAF_james_mitchell_baker={
+		name=SAF_james_mitchell_baker
+		portraits={
+			army={
+				small="GFX_idea_SAF_james_mitchell_baker" #small="GFX_idea_generic_army_europe_3"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SAF_james_mitchell_baker
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	SAF_leonard_beyers={
+		name=SAF_leonard_beyers
+		portraits={
+			army={
+				small="GFX_idea_SAF_leonard_beyers" #small="GFX_idea_generic_army_europe_4"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SAF_leonard_beyers
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	### NAVY CHIEFS ###
+
+	SAF_pierre_oliver_knoll={
+		name=SAF_pierre_oliver_knoll
+		portraits={
+			army={
+				small="GFX_idea_SAF_pierre_oliver_knoll" #small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SAF_pierre_oliver_knoll
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	SAF_cornelis_van_zuigenbrogge={
+		name=SAF_cornelis_van_zuigenbrogge
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SAF_cornelis_van_zuigenbrogge
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	SAF_adolf_malan={
+		name=SAF_adolf_malan
+		portraits={
+			army={
+				small="GFX_idea_SAF_adolf_malan" #small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor={	
+			slot = air_chief
+			idea_token = SAF_adolf_malan
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	SAF_pierre_van_ryneveld={
+		name=SAF_pierre_van_ryneveld
+		portraits={
+			army={
+				small="GFX_idea_SAF_pierre_van_ryneveld" #small="GFX_idea_generic_air_europe_2"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = SAF_pierre_van_ryneveld
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	### MILITARY HIGH COMMAND ###
+
+	SAF_robert_palmer={
+		name=SAF_robert_palmer
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SAF_robert_palmer
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	SAF_c_de_weenburg_du_toit={
+		name=SAF_c_de_weenburg_du_toit
+		portraits={
+			army={
+				small="GFX_idea_SAF_c_de_weenburg_du_toit" #small="GFX_idea_generic_army_europe_5"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = SAF_c_de_weenburg_du_toit
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	SAF_marinus_van_osterkamp={
+		name=SAF_marinus_van_osterkamp
+		portraits={
+			army={
+				small="GFX_idea_SAF_marinus_van_osterkamp" #small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = SAF_marinus_van_osterkamp
+			ledger = navy
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				air_naval_strike_2
+				air_close_air_support_2
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	SAF_jeannot_de_la_tourier={
+		name=SAF_jeannot_de_la_tourier
+		portraits={
+			army={
+				small="GFX_idea_SAF_jeannot_de_la_tourier" #small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SAF_jeannot_de_la_tourier
+			ledger = navy
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+
+	### POLITICAL ADVISORS ###
+
+	# Malan up there
+
+	# Van Rensburg up there
+
+	SAF_sir_patrick_duncan={
+		name=SAF_sir_patrick_duncan
+		portraits={
+			army={
+				small="GFX_idea_SAF_sir_patrick_duncan" #small="GFX_idea_generic_democratic_reformer_western_european_2d"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_sir_patrick_duncan
+			allowed = {
+				original_tag = SAF
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = SAF_support_the_policy_of_appeasement 
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
+
+	SAF_nicolaas_havenga={
+		name=SAF_nicolaas_havenga
+		portraits={
+			army={
+				small="GFX_idea_SAF_nicolaas_havenga" #small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_nicolaas_havenga
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				captain_of_industry 
+			}
+		}		
+	}
+
+	SAF_e_g_jansen={
+		name=SAF_e_g_jansen
+		portraits={
+			army={
+				small="GFX_idea_SAF_e_g_jansen" #small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_e_g_jansen
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+	
+
+	#Illusive Gentleman auto-generated
+}

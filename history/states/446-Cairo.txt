@@ -1,0 +1,30 @@
+
+state={
+	id=446
+	name="STATE_446" # Suez
+	manpower = 60821
+	state_category = wasteland
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = BRA
+			add_core_of = BRA		
+		}				
+		
+		
+		buildings = {
+			infrastructure = 3
+		}
+
+		
+
+	}
+
+	provinces={
+		13304 
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

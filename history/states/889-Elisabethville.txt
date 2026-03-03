@@ -1,0 +1,43 @@
+state = {
+	id = 889
+	name = "STATE_889"
+	manpower = 708190
+	state_category = rural
+
+	resources={
+		tungsten = 9.000
+		steel = 9.000
+	}
+
+	history = {
+
+	   1936.1.1.12 = {	    
+		    owner = FRA
+			add_core_of = COG
+		}			
+	   1936.1.1.13 = {	    
+		    owner = FRA
+			add_core_of = COG
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+	
+	provinces = {
+		191 1516 1817 1968 4515 12795 12907 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

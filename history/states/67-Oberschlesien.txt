@@ -1,0 +1,72 @@
+
+state={
+	id=67
+	name="STATE_67"
+	manpower = 1402591
+	resources={
+		steel=19 # was: 60
+		aluminium=6 # was: 20
+		coal = 25						
+	}
+	
+	state_category = city
+
+	history={
+		
+		1936.1.1.12 = {
+			owner = GER
+			add_core_of = GER
+		
+
+			buildings = {
+				infrastructure = 3
+			}		
+		}
+		1936.1.1.13 = {
+			owner = GER
+			add_core_of = GER
+		}	
+		1936.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+
+		
+			buildings = {
+				infrastructure = 5
+				arms_factory = 12
+			}
+			add_extra_state_shared_building_slots = 2				
+		}
+			
+			
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+		
+		victory_points = {
+			11467 5
+		}
+		victory_points = {
+			9511 3
+		}
+
+	}
+
+	provinces={
+		479 6512 9457 9511 11467 
+	}
+
+	local_supplies=20.0 
+}

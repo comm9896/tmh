@@ -1,0 +1,66 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+
+		1936.1.1.12 = {	    
+			owner = YUG			
+			add_core_of = YUG		
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 3
+				industrial_complex = 4
+				air_base = 5
+
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = YUG			
+			add_core_of = YUG		
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}	
+		
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 3
+				industrial_complex = 4
+				air_base = 5
+
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		victory_points = {
+			11586 15 
+		}
+
+	}
+
+	provinces={
+		797 3609 3956 3984 6634 9599 11583 11586 
+	}
+	manpower=1279121
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=4.0 
+}

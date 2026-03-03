@@ -1,0 +1,415 @@
+ROM_annex = {
+	
+	ROM_annex_HUN = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = HUN
+				exists = yes
+			}
+			has_completed_focus = ROM_force_abdication
+			HUN = { is_ai = yes }
+			is_in_faction_with = GER
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = HUN
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+
+			HUN = {
+				transfer_units_fraction= {
+					target = ROM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = HUN }
+				add_core_of = ROOT
+			}
+			hidden_effect = {
+			    ROM = {
+				    add_state_core = 70
+			        add_state_core = 71
+			        add_state_core = 72
+			        add_state_core = 73
+			        add_state_core = 76
+			        add_state_core = 83
+			        add_state_core = 84
+			        add_state_core = 664
+			        add_state_core = 45
+			        add_state_core = 764
+				}
+				transfer_state = 45
+				transfer_state = 764				
+			}
+			HUN = {
+			    every_unit_leader = {
+				set_nationality = ROOT
+			    }
+			}		
+			if = {
+				limit = {
+					not = {
+						has_country_flag = Sapr_ROM_research_slot
+					}
+
+				}
+				add_research_slot = 1
+				set_country_flag = Sapr_ROM_research_slot				
+			}			
+			
+			
+
+			HUN = {
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_renew_the_shipping_industry}	
+						}
+					}
+					HUN = {					
+						complete_national_focus = wuw_HUN_renew_the_shipping_industry					
+					}
+				}
+				if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_hungarian_autarky}	
+						}
+					}
+					HUN = {						
+						complete_national_focus = wuw_HUN_hungarian_autarky					
+					}
+				}
+				if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_tap_newfound_oil_deposits}	
+						}
+					}
+					HUN = {						
+						complete_national_focus = wuw_HUN_tap_newfound_oil_deposits					
+					}
+				}				
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_establish_the_mavag_army_division}	
+						}
+					}
+					HUN = {					   
+						complete_national_focus = wuw_HUN_establish_the_mavag_army_division					
+					}
+				}				
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_establish_the_mavag_army_division}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_establish_the_mavag_army_division					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_expand_the_aluminum_industry}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_expand_the_aluminum_industry					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_manred_weiss_steel_and_metal_works}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_manred_weiss_steel_and_metal_works					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_expand_the_lignite_industry}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_expand_the_lignite_industry					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_joint_aluminum_mining_company}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_joint_aluminum_mining_company					
+					}
+				}		
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_magyar_allamvasutak}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_magyar_allamvasutak					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    HUN = {has_completed_focus = wuw_HUN_enlarge_the_ganz_danubius_division}	
+						}
+					}
+					HUN = {					    
+						complete_national_focus = wuw_HUN_enlarge_the_ganz_danubius_division					
+					}
+				}	
+		
+			}
+			annex_country = { target = HUN 	transfer_troops = yes }			
+		}
+	}
+
+	ROM_annex_BUL = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = BUL
+				exists = yes
+			}
+			has_completed_focus = ROM_force_abdication
+			BUL = { is_ai = yes }
+			is_in_faction_with = GER
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = BUL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			
+			BUL = {
+				transfer_units_fraction= {
+					target = ROM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = BUL }
+				add_core_of = ROOT
+			}
+			BUL = {
+			    every_unit_leader = {
+				set_nationality = ROOT
+			    }
+			}
+            #modify_timed_idea = {
+            #    idea = ROM_king_carol_emptied_accounts
+            #    days = -180
+			#}	
+
+			if = {
+				limit = {
+					not = {
+						has_country_flag = Sapr_ROM_research_slot
+					}
+
+				}
+				add_research_slot = 1
+				set_country_flag = Sapr_ROM_research_slot				
+			}		
+
+
+			BUL = {
+			    ROM = {
+			        add_state_core = 803
+			        add_state_core = 106
+			        add_state_core = 184
+			        add_state_core = 731
+					
+					if = {
+						Limit = {
+							has_country_flag = Sapr_only_erope
+							BUL = {
+								is_ai = yes
+							}
+						}					
+						transfer_state = 803
+						transfer_state = 106
+						transfer_state = 184
+						transfer_state = 731	
+					}
+				}			
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_acquire_modern_tools}	
+						}
+					}
+					BUL = {
+						complete_national_focus = BUL_acquire_modern_tools					
+					}
+				}			
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_improve_the_road_system}	
+						}
+					}
+					BUL = {					
+						complete_national_focus = BUL_improve_the_road_system					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_national_railway_lines}	
+						}
+					}
+					BUL = {					
+						complete_national_focus = BUL_national_railway_lines					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_steel_plant_in_pernik}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_steel_plant_in_pernik					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_georgi_benkovski_aircraft_repair_facilities}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_georgi_benkovski_aircraft_repair_facilities					
+					}
+				}						
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_expand_varna_naval_base}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_expand_varna_naval_base					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_develop_burgas_shipyards}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_develop_burgas_shipyards					
+					}
+				}			
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_increase_industry_investments}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_increase_industry_investments					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_foreign_aircraft_designers}	
+						}
+					}
+					BUL = {					
+						complete_national_focus = BUL_foreign_aircraft_designers					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_kaproni_bulgarski}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_kaproni_bulgarski					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_darzhavna_voenna_fabrika}	
+						}
+					}
+					BUL = {				   
+						complete_national_focus = BUL_darzhavna_voenna_fabrika					
+					}
+				}					
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_found_dvf_sopot}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_found_dvf_sopot					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_invigorate_national_industry}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_invigorate_national_industry					
+					}
+				}				
+
+            }
+			annex_country = { target = BUL 	transfer_troops = yes }			
+		}
+	}
+}

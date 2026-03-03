@@ -1,0 +1,66 @@
+
+state={
+	id=109
+	name="STATE_109" # Croatia
+	manpower = 2224400
+	
+	state_category = large_town
+
+	history={
+
+		1936.1.1.12 = {	    
+			owner = YUG			
+			add_core_of = YUG		
+	
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 3
+			}	
+		}
+		1936.1.1.13 = {	    
+			owner = YUG			
+			add_core_of = YUG		
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}	
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+		
+			buildings = {
+				infrastructure = 3
+			}	
+		}	
+		
+		1945.1.1.10 = {
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 3
+			}			
+		}	
+				
+		
+		victory_points = {
+			11581 3 
+		}
+
+	}
+
+	provinces={
+		624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594
+	}
+
+	local_supplies=0.0 
+}

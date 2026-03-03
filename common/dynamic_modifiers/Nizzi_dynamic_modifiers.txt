@@ -1,0 +1,95 @@
+
+Barb_offe = {
+	icon = GFX_focus_BRA_acquire_german_tanks
+	enable = { always = yes } 
+	
+	
+
+
+	army_attack_factor = 0.25
+    breakthrough_factor = 0.15
+    army_defence_factor = 0.05
+	
+	ground_attack_factor = 0.1
+	local_org_regain = 0.05
+
+	
+}
+Blau_offe = {
+	icon = GFX_focus_BRA_acquire_german_tanks
+	enable = { always = yes } 
+	
+
+
+	army_attack_factor = 0.15
+    breakthrough_factor = 0.1
+    army_defence_factor = 0.1
+
+	ground_attack_factor = 0.05
+	local_org_regain = 0.05
+
+}
+Cit_offe = {
+	icon = GFX_focus_BRA_acquire_german_tanks
+	enable = { always = yes } 
+
+
+	army_attack_factor = 0.1
+    breakthrough_factor = 0.1
+	army_defence_factor = 0.2
+	ground_attack_factor = 0.05
+	local_org_regain = 0.05
+	max_dig_in_factor = 0.15
+
+}
+
+
+Uran_offe = {
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+	enable = { always = yes } 
+	
+	
+
+
+	army_attack_factor = 0.05
+    breakthrough_factor = 0.05
+    army_defence_factor = 0.2
+	local_org_regain = 0.1
+	cas_damage_reduction = 0.1
+	max_dig_in_factor = 0.3
+
+	
+}
+Kut_offe = {
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+	enable = { always = yes } 
+	
+
+
+	army_attack_factor = 0.1
+    breakthrough_factor = 0.1
+    army_defence_factor = 0.1
+	local_org_regain = 0.05
+	cas_damage_reduction = 0.1
+	max_dig_in_factor = 0.15
+
+
+
+
+}
+Bag_offe = {
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+	enable = { always = yes } 
+
+
+	army_attack_factor = 0.15
+    breakthrough_factor = 0.15
+	ground_attack_factor = 0.1
+	local_org_regain = 0.05
+
+
+}
+
+
+
+

@@ -1,0 +1,55 @@
+state = {
+	id = 1022
+	name = "STATE_1022"
+
+	manpower = 8600
+
+	impassable = yes 
+	force_link_ownership_to = 334 # Kalimantan
+
+	resources = {
+	}
+	
+	state_category = rural
+
+	history = {
+        1936.1.1.12 = {	    
+		    owner = INS
+			add_core_of = INS
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+			owner = HOL
+			add_core_of = HOL
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+
+		buildings = {
+			infrastructure = 0
+		}
+
+	}
+
+	provinces = {
+		1230 2047 2170 2184 2222 4335 5176 5226 7424 8221 
+	}
+
+	local_supplies = 0.0 
+}

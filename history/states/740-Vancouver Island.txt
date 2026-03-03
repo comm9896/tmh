@@ -1,0 +1,32 @@
+
+state={
+	id=740
+	name="STATE_740"
+	manpower = 259612
+	
+	state_category = rural
+
+	history={
+
+		1936.1.1.12 = {	    
+			owner = CAN
+			add_core_of = CAN
+		}			
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		7259 1214 12259 12272 1420 
+	}
+	
+
+	local_supplies=0.0 
+}

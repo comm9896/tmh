@@ -1,0 +1,74 @@
+
+state = {
+	id = 37
+	name = "STATE_37"
+	manpower = 1491222
+	state_category = large_city
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = DEN
+			add_core_of = DEN
+			
+			buildings = {
+				infrastructure = 3
+				arms_factory = 2
+				industrial_complex = 3
+				dockyard = 2
+				air_base = 6
+				6287 = {
+					naval_base = 8
+
+				}
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = DEN
+			add_core_of = DEN
+		}
+        1936.1.1.14 = {	    
+			owner = DEN
+			add_core_of = DEN
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+	
+		
+		1941.1.1.14 = {
+		    owner = GER	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 2
+				industrial_complex = 3
+				dockyard = 2
+				air_base = 6
+				fuel_silo = 3					
+				6287 = {
+					naval_base = 8
+
+				}
+			}			
+		}
+
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}	
+		victory_points = {
+			6287 20 
+		}
+		victory_points = {
+			6393 2 
+		}
+	}
+
+	provinces={
+		3260 3305 6287 6393 13261
+	}
+	
+	
+	local_supplies=15.000
+}

@@ -1,0 +1,50 @@
+
+state={
+	id=290
+	name="STATE_290"
+	manpower = 744000
+	
+	
+	state_category = rural
+	
+	resources={
+		steel=23 # was: 20 . Changed to 23 (from 15) due to Portugal Setup
+	}
+
+	history={
+
+		1936.1.1.12 = {	    
+			owner = POR
+			add_core_of = POR
+		}
+		1936.1.1.13 = {	    
+			owner = POR
+			add_core_of = POR
+		}		
+		1936.1.1.14 = {
+			owner = POR
+			add_core_of = POR	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+			owner = POR
+			add_core_of = POR		
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+	}
+
+	provinces = {
+		4199 7215 9945 10113 12087 12100 
+	}
+
+	local_supplies = 0.0 
+}

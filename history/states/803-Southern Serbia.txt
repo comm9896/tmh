@@ -1,0 +1,69 @@
+
+state={
+	id=803
+	name="STATE_803"
+
+	history={
+	
+		1936.1.1.12 = {	    
+			owner = YUG			
+			add_core_of = YUG
+			add_claim_by = BUL			
+		
+			buildings = {
+				infrastructure = 2
+
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = YUG			
+			add_core_of = YUG
+			add_claim_by = BUL			
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}	
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		1941.1.1.14 = {
+		    owner = ROM
+		    add_core_of = ROM
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1	
+			}					
+		}
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+				
+		victory_points = {
+			11857 1 
+		}
+
+
+	}
+
+	provinces={
+		11832 11857 11868 
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

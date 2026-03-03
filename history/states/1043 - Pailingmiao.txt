@@ -1,0 +1,60 @@
+state = {
+	id = 1043
+	name = "STATE_1043"
+	manpower = 3500
+	state_category = pastoral
+
+	resources = {
+		coal = 1 #initial distribution
+	}
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = CHI
+		    add_core_of = CHI
+		    add_core_of = MAN			
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB	
+		}		
+		1936.1.1.15 = {
+		    owner = CHI
+		    add_core_of = CHI
+		    add_core_of = MAN	
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			12331 1 # Pailingmiao
+		}
+
+	}
+
+	provinces = {
+		7048 12331 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0
+}

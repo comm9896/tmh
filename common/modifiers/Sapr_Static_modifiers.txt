@@ -1,0 +1,57 @@
+GER_gorod_krepost_taktick = { # on Region
+	
+	army_defence_factor = 0.6		
+	breakthrough_factor = -0.20	
+	
+	army_org_regain = 0.5
+	
+	cas_damage_reduction = 0.50
+	air_cas_present_factor = -0.50
+	air_cas_efficiency = -0.50
+	
+
+}
+
+
+JAP_Strong_army_1 = { 
+	power_balance_weekly = 0.005
+}
+
+JAP_Strong_army_2 = {
+	power_balance_weekly = 0.005
+}
+
+JAP_Strong_army_3 = {
+	power_balance_weekly = 0.005
+}
+
+JAP_Strong_army_4 = {
+	power_balance_weekly = 0.005
+}
+
+JAP_Strong_army_5 = {
+	power_balance_weekly = 0.005
+}
+
+JAP_Strong_balance = { 
+}
+
+JAP_Strong_fleet_1 = { 
+	power_balance_weekly = -0.005
+}
+
+JAP_Strong_fleet_2 = {
+	power_balance_weekly = -0.005
+}
+
+JAP_Strong_fleet_3 = {
+	power_balance_weekly = -0.005
+}
+
+JAP_Strong_fleet_4 = {
+	power_balance_weekly = -0.005
+}
+
+JAP_Strong_fleet_5 = {
+	power_balance_weekly = -0.005
+}

@@ -1,0 +1,47 @@
+state={
+	id=269
+	name="STATE_269"
+	manpower = 344700
+	
+	state_category = enclave
+	
+	history= {
+		
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = SOM
+		}			
+	   1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = SOM
+		}
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+		}							
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}		
+
+	
+		victory_points = { 
+			10833 1
+		}
+		victory_points = { 
+			5068 1
+		}
+
+		buildings = {
+			infrastructure = 2
+			10833 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		1905 5068 8094 10777 10833 10921 12759 12814
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,48 @@
+state={
+	id=790
+	name="STATE_790"
+
+	resources={
+		coal = 8					
+	}
+
+	history={
+		1936.1.1.12 = {	    
+			owner = POR
+			add_core_of = POR
+		}
+		1936.1.1.13 = {	    
+			owner = POR
+			add_core_of = POR
+		}		
+		1936.1.1.14 = {
+			owner = POR
+			add_core_of = POR	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+			owner = POR
+			add_core_of = POR		
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+
+	}
+
+	provinces={
+		738 3729 3744 6749 9703 9719 11688 11707 13218 
+	}
+	manpower=1197252
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=0.0 
+}

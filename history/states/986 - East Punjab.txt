@@ -1,0 +1,56 @@
+
+state={
+	id=986
+	name="STATE_986" #
+	manpower = 16959758 
+	
+	state_category = town
+	
+	resources={
+
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10729 3
+		}
+
+	}
+
+	provinces={
+		1129 2002 2076 3989 7106 10729 12708 12868 
+	}
+
+	local_supplies=0.0 
+}

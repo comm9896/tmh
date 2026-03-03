@@ -1,0 +1,80 @@
+state={
+	id=74
+	name="STATE_74"
+	manpower = 820000
+	
+	state_category = rural
+	
+	resources={
+		coal = 12					
+	}
+	
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = CZE		
+			owner = CZE
+			
+			buildings = {
+				infrastructure = 4
+				arms_factory = 1
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = CZE			
+			owner = CZE
+		}		
+		1936.1.1.14 = {
+			add_core_of = CZE				
+			owner = CZE				
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+
+		
+			buildings = {
+				
+				infrastructure = 4
+				arms_factory = 3
+				
+				anti_air_building = 1
+				6485 = {
+					bunker = 3
+				}
+				421 = {
+					bunker = 3
+				}
+				3414 = {
+					bunker = 3
+				}
+				3583 = {
+					bunker = 3
+				}
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		
+		victory_points = {
+			3583 5
+		}
+
+
+	}
+	provinces= {
+		421 3414 3583 6485
+ 	}
+
+	local_supplies=2.0 
+}

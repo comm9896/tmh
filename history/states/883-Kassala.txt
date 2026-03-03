@@ -1,0 +1,44 @@
+state = {
+	id = 883
+	name = "STATE_883"
+	manpower = 511402
+	state_category = wasteland_1k_Air
+
+	history = {
+
+	   1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = SUD
+		}		
+	   1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = SUD
+		}			
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		victory_points = {
+			12725 1 
+		}
+		buildings = {
+			infrastructure = 1
+			12725 = {
+				naval_base = 3
+			}
+			air_base = 4		
+		}
+	}
+
+	provinces = {
+		1977 10902 12725 7989 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

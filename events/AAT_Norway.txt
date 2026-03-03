@@ -1,0 +1,1101 @@
+
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     ********************////////**********************************************				
+##     ********************////////**********************************************				
+##     //////////////////////////////////////////////////////////////////////////				       
+##     //////////////////////////////////////////////////////////////////////////					
+##     //////////////////////////////////////////////////////////////////////////				
+##     ********************////////**********************************************				
+##     ********************////////**********************************************				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				
+##     -----------------***////////***-------------------------------------------				              
+
+
+add_namespace = AAT_norway
+add_namespace = AAT_norway_allied
+add_namespace = AAT_norway_news
+add_namespace = AAT_norway_rikstanken
+add_namespace = AAT_norway_fascist
+add_namespace = AAT_norway_communist
+add_namespace = AAT_norway_monarchist
+
+#country_event = {
+#	id = BBA_switzerland.1
+#	title = BBA_switzerland.1.t
+#	desc = BBA_switzerland.1.desc
+#	picture = 
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		hidden_effect = {
+#		}
+#	}
+#
+#	option = {
+#		name = BBA_switzerland.1.a
+#		ai_chance = {
+#			base = 10
+#		}
+#		trigger = {
+#		}
+#	}
+#	option = {
+#		name = BBA_switzerland.1.b
+#		ai_chance = {
+#			base = 10
+#		}
+#		trigger = {
+#		}
+#     }
+#}
+
+country_event = { # Fascists Ransack Trotsky's residence 
+	id = AAT_norway.1
+	title = AAT_norway.1.t
+	desc = AAT_norway.1.desc
+	picture = GFX_report_event_NOR_quisling_rally 
+
+	is_triggered_only = no
+
+	fire_only_once = yes 
+
+	trigger = {
+		original_tag = NOR 
+		date > 1936.7.05
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = { # Historical Option - Send Trotsky to the Farm 
+		name = AAT_norway.1.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 10 
+
+			}
+		}
+		trigger = {
+		}
+		country_event = {
+			id = AAT_norway.2
+			days = 5
+		}
+
+	}
+
+}
+
+country_event = { # Trotsky Sent to farm 
+	id = AAT_norway.2
+	title = AAT_norway.2.t
+	desc = AAT_norway.2.desc
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	}
+
+	option = { # He better behave
+		name = AAT_norway.2.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		set_country_flag = NOR_trotsky_sent_to_the_farm
+		country_event = {
+			id = AAT_norway.6
+			days = 108 #This is the actual number of days he spent at that farm 
+		}
+	}
+}
+
+
+country_event = { # Trotsky Sent to Mexico, crackdown on fascists 
+	id = AAT_norway.3
+	title = AAT_norway.3.t
+	desc = AAT_norway.3.desc
+	picture = GFX_report_event_NOR_storting
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	}
+
+	option = {
+		name = AAT_norway.3.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		MEX = {
+			country_event = {
+				id = mexico.17
+				days = 12
+			}
+		}
+		add_stability = -0.1
+		remove_ideas = { NOR_anti_communist_sentiment_ns } 
+	}
+}
+
+country_event = { # The Fate of Trotsky 
+	id = AAT_norway.6
+	title = AAT_norway.6.t
+	desc = AAT_norway.6.desc
+	picture = GFX_report_event_NOR_trotsky_couple
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	}
+
+	option = { # Historical - Exile Trotsky to Mexico 
+		name = AAT_norway.6.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		country_event = {
+			id = AAT_norway.7
+			days = 10
+		}
+		MEX = {
+			country_event = {
+				id = mexico.17
+				days = 10 
+			}
+		}
+	}
+}
+
+country_event = { # Trotsky Arrives in Mexico 
+	id = AAT_norway.7
+	title = AAT_norway.7.t
+	desc = AAT_norway.7.desc	
+
+	picture = GFX_report_event_NOR_trotsky_frida
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	} 
+
+	option = {
+		name = AAT_norway.7.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		if = {
+			limit = { has_country_flag = NOR_trotsky_sent_to_the_farm }
+			clr_country_flag = NOR_trotsky_sent_to_the_farm
+		}
+		clr_global_flag = NOR_trotsky_in_norway
+		set_global_flag = AAT_trotsky_in_mexico
+	}
+}
+
+
+country_event = { #  Nygaardsvold Government Continues
+	id = AAT_norway.9
+	title = AAT_norway.9.t
+	desc = AAT_norway.9.desc	
+	picture = GFX_report_event_NOR_nygaardsvold_cabinet
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	} 
+
+	option = {
+		name = AAT_norway.9.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		add_stability = 0.05 
+		add_war_support = -0.05
+	}
+}
+
+country_event = { # Resurgent Labor Movement  
+	id = AAT_norway.11
+	title = AAT_norway.11.t
+	desc = AAT_norway.11.desc	
+	picture = GFX_report_event_communist_leader
+
+	is_triggered_only = yes
+
+	option = {
+		name = AAT_norway.11.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { # Quisling's Historical Coup event 
+	id = AAT_norway.13
+	title = AAT_norway.13.t
+	desc = AAT_norway.13.desc	
+	picture = GFX_report_event_NOR_quisling_speech
+
+	is_triggered_only = yes
+
+	
+	option = { # Switch to Fascism
+		name = AAT_norway.13.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		set_country_flag = NOR_switched_to_fasc_hist
+		NOR_start_fascist_civil_war = yes 
+		custom_effect_tooltip = NOR_switch_to_fascist_TT # Warning about that Oslo City Shuffle
+		
+		country_event = { id =rerol_NOR.a }	
+		ENG = {
+			add_to_faction = NOR
+		}
+	}
+
+}
+
+country_event = { # Asking Germany if they want Quisling or not 
+	id = AAT_norway.14
+	title = AAT_norway.14.t
+	desc = AAT_norway.14.desc
+	picture = GFX_report_event_NOR_quisling_meeting	
+
+
+	is_triggered_only = yes
+
+	option = { 
+		name = AAT_norway.14.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_civil_war = no 
+				}
+			}	
+			NOR = {
+				country_event = {
+					id = AAT_norway.13
+					hours = 2
+				}
+			}
+		}
+	}
+	
+}
+
+country_event = { # Delayed Coup 	
+	id = AAT_norway.15
+	title = AAT_norway.15.t
+	desc = AAT_norway.15.desc
+	picture = GFX_report_event_NOR_Nasjonal_samling_rally	
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Switch to Fascism
+		name = AAT_norway.15.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		set_country_flag = NOR_switched_to_fasc_hist
+		NOR_start_fascist_civil_war = yes 
+		custom_effect_tooltip = NOR_switch_to_fascist_TT # Warning about the Oslo City Shuffle
+	}
+	
+	option = {
+		name = AAT_norway.15.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0 
+				is_historical_focus_on = yes 
+			}
+		}
+		trigger = {
+		}
+		custom_effect_tooltip = NOR_stay_democratic_TT
+	}
+}
+
+
+country_event = { # Giving player the prepare exile things
+	id = AAT_norway.16
+	title = AAT_norway.16.t
+	desc = AAT_norway.16.desc	
+	picture = GFX_report_event_NOR_norway_exile_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = AAT_norway.16.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		if = {
+			limit = {
+				has_variable = NOR_exiled_convoys
+			}
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = NOR_exiled_convoys
+			}
+		}
+		if = {
+			limit = {
+				has_variable = NOR_exiled_pp
+			}
+			add_political_power = NOR_exiled_pp
+		}
+		if = {
+			limit = {
+				has_variable = NOR_exiled_legitimacy
+			}
+			add_legitimacy = NOR_exiled_legitimacy
+		}
+		if = {
+			limit = {
+				has_variable = NOR_exiled_manpower
+			}
+			add_manpower = NOR_exiled_manpower 
+		}
+	}
+}
+
+
+country_event = { #  The Queen dies. - Historical
+	id = AAT_norway.20
+	title = AAT_norway.20.t
+	desc = AAT_norway.20.desc	
+
+	picture = GFX_report_event_NOR_queen_maud_funeral
+
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = NOR_the_norwegian_queen_is_dead 
+		}
+	} 
+
+	option = { # Oh no
+		name = AAT_norway_monarchist.2.a # On Purpose
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = { # Fake event to trigger Civil war when Germany Attacks
+	id = AAT_norway.199
+	hidden = yes 	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			NOR_start_fascist_civil_war = yes
+		}
+	}
+}
+
+
+
+################################################################################################
+################################################################################################
+################################################################################################
+
+##    ## ######## ##      ##  ######     ######## ##     ## ######## ##    ## ########  ######  
+###   ## ##       ##  ##  ## ##    ##    ##       ##     ## ##       ###   ##    ##    ##    ## 
+####  ## ##       ##  ##  ## ##          ##       ##     ## ##       ####  ##    ##    ##       
+## ## ## ######   ##  ##  ##  ######     ######   ##     ## ######   ## ## ##    ##     ######  
+##  #### ##       ##  ##  ##       ##    ##        ##   ##  ##       ##  ####    ##          ## 
+##   ### ##       ##  ##  ## ##    ##    ##         ## ##   ##       ##   ###    ##    ##    ## 
+##    ## ########  ###  ###   ######     ########    ###    ######## ##    ##    ##     ######  
+
+################################################################################################
+################################################################################################
+################################################################################################
+
+news_event = { # Trotsky Lands in Mexico 
+	id = AAT_norway_news.1
+	title = AAT_norway.7.t  # On Purpose
+	desc = AAT_norway_news.1.desc
+	picture = GFX_news_event_NOR_trotsky_frida 
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = AAT_norway_news.1.sov
+		trigger = {
+			has_country_leader_ideology = stalinism
+		}
+	}
+
+	option = {
+		name = AAT_norway_news.1.a 
+		trigger = {
+			NOT = {
+				has_country_leader_ideology = stalinism
+			}
+		}
+	}
+}
+
+news_event = { # Queen Maud Dies 
+	id = AAT_norway_news.2
+	title = AAT_norway_news.2.t
+	desc = AAT_norway_news.2.desc
+	picture = GFX_news_event_NOR_queen_maud_funeral 
+
+	is_triggered_only = yes
+
+	option = { # Non Commie Option
+		name = AAT_norway_news.2.a 
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+
+	option = { # Commie option
+		name = AAT_norway_news.2.b
+		trigger = {
+			has_government = communism
+		}
+	}
+}
+
+
+news_event = { # King Haakon Dies 
+	id = AAT_norway_news.3
+	title = AAT_norway_news.3.t
+	desc = AAT_norway_news.3.desc
+	picture = GFX_news_event_NOR_queen_maud_funeral 
+
+	is_triggered_only = yes
+	option = { # Non Commie Option
+		name = AAT_norway_news.2.a # On Purpose 
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+
+	option = { # Commie option
+		name = AAT_norway_news.2.b # On Purpose 
+		trigger = {
+			has_government = communism
+		}
+	}
+}
+
+
+news_event = {
+	id = AAT_norway_news.99
+	title = AAT_norway_news.99.t
+	desc = AAT_norway_news.99.desc
+	picture =  GFX_news_event_ast_navy
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = AAT_norway_news.99.a
+		trigger = {
+		}
+	}
+}
+
+
+#######################################################################################
+#######################################################################################
+#######################################################################################
+
+########  #### ##    ##  ######  ########    ###    ##    ## ##    ## ######## ##    ## 
+##     ##  ##  ##   ##  ##    ##    ##      ## ##   ###   ## ##   ##  ##       ###   ## 
+##     ##  ##  ##  ##   ##          ##     ##   ##  ####  ## ##  ##   ##       ####  ## 
+########   ##  #####     ######     ##    ##     ## ## ## ## #####    ######   ## ## ## 
+##   ##    ##  ##  ##         ##    ##    ######### ##  #### ##  ##   ##       ##  #### 
+##    ##   ##  ##   ##  ##    ##    ##    ##     ## ##   ### ##   ##  ##       ##   ### 
+##     ## #### ##    ##  ######     ##    ##     ## ##    ## ##    ## ######## ##    ## 
+
+#######################################################################################
+#######################################################################################
+#######################################################################################
+
+country_event = { # We need a tank 
+	id = AAT_norway_rikstanken.1
+	title = AAT_norway_rikstanken.1.t
+	desc = AAT_norway_rikstanken.1.desc
+	picture = GFX_report_event_military_planning 
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clear_variable = NOR_nordic_tank_seller
+			clear_variable = NOR_communist_tank_seller
+			clear_variable = NOR_fascist_tank_seller 
+			if = { # Finding the most appropriate Tank Seller
+				limit = {
+					SWE = {
+						exists = yes 
+						NOT = { has_war_with = ROOT }
+						#has_any_tanks = yes 
+						has_any_tank_tech = yes				
+					}
+				}
+				set_variable = { NOR_nordic_tank_seller = SWE }
+			}
+			else_if = {
+				limit = {
+					FIN = {
+						exists = yes 
+						NOT = { has_war_with = ROOT }
+						#has_any_tanks = yes
+						has_any_tank_tech = yes				
+					}
+				}
+				set_variable = { NOR_nordic_tank_seller = FIN }
+			}
+			else_if = {
+				limit = {
+					DEN = {
+						exists = yes
+						NOT = { has_war_with = ROOT }
+						#has_any_tanks = yes
+						has_any_tank_tech = yes				
+					}
+				}
+				set_variable = { NOR_nordic_tank_seller = DEN }
+			}
+			else_if = { # Extremely unlikely it will get to this but technically possible 
+				limit = {
+					ICE = {
+						exists = yes
+						NOT = { has_war_with = ROOT }
+						#has_any_tanks = yes
+						has_any_tank_tech = yes				
+					}
+				}
+				set_variable = { NOR_nordic_tank_seller = ICE }
+			}
+			find_biggest_communist = yes 
+			find_biggest_fascist = yes 
+			if = {
+				limit = {
+					var:GLOBAL.platonic_big_communist = {
+						NOT = { has_war_with = ROOT }
+						#has_any_tanks = yes
+						has_any_tank_tech = yes		
+					}
+				}
+				set_variable = { NOR_communist_tank_seller = var:GLOBAL.platonic_big_communist }
+			}
+			if = {
+				limit = {
+					var:GLOBAL.platonic_big_fascist = {
+						NOT = { has_war_with = ROOT }
+						#has_any_tanks = yes
+						has_any_tank_tech = yes	
+					}
+				}
+				set_variable = { NOR_fascist_tank_seller = var:GLOBAL.platonic_big_fascist }
+			}
+		}
+	}
+
+	option = { # Buy Swedish Tacks (Or from any other Nordic that has tanks)
+		name = AAT_norway_rikstanken.1.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+			has_variable = NOR_nordic_tank_seller
+		}
+		clear_variable = NOR_fascist_tank_seller
+		clear_variable = NOR_communist_tank_seller
+		country_event = {
+			id = AAT_norway_rikstanken.2
+			days = 3
+			random_days = 5 
+		}
+	}
+}
+
+country_event = { # How many? 
+	id = AAT_norway_rikstanken.2
+	title = AAT_norway_rikstanken.2.t
+	desc = {
+		text = AAT_norway_rikstanken.2.desc_NORDIC
+		trigger = {
+			has_variable = NOR_nordic_tank_seller
+		} 
+	}
+	desc = {
+		text = AAT_norway_rikstanken.2.desc_SOV
+		trigger = {
+			has_variable = NOR_communist_tank_seller
+		}
+	}
+	desc = {
+		text = AAT_norway_rikstanken.2.desc_GER
+		trigger = {
+			has_variable = NOR_fascist_tank_seller
+		}
+	}
+	picture = GFX_report_event_military_planning 
+
+	trigger = {
+		hidden_trigger = { NOR_tank_seller_still_exists = yes } 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # Just one tank please 
+		name = AAT_norway_rikstanken.2.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = { # Just for Nordics
+			has_variable = NOR_nordic_tank_seller
+		}
+		set_country_flag = NOR_buying_a_single_tank
+		var:NOR_nordic_tank_seller = {
+			country_event = {
+				id = AAT_norway_rikstanken.3
+				days = 2
+				random_days = 4 
+			}
+		}
+	}
+}
+
+country_event = { # Norway wants ONE tank  
+	id = AAT_norway_rikstanken.3
+	title = AAT_norway_rikstanken.3.t
+	desc = AAT_norway_rikstanken.3.desc
+
+	picture = GFX_report_event_tank_factory
+
+	trigger = {
+		hidden_trigger = { NOR_tank_seller_still_exists = yes } 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # Uh, yeah I guess? 
+		name = AAT_norway_rikstanken.3.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes 
+			}
+		}
+		trigger = { 
+			#has_any_tanks = yes 
+		}
+		add_political_power = 50
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			if = {
+				limit = {
+					has_equipment = {
+						light_tank_chassis_1 > 0
+					}
+				}
+				add_equipment_to_stockpile = { 
+					type = light_tank_chassis_1 
+					amount = -1 
+				}
+			}
+			else_if = {
+				limit = {
+					has_equipment = {
+						light_tank_chassis_0 > 0
+					}
+				}
+				add_equipment_to_stockpile = { 
+					type = light_tank_chassis_0 
+					amount = -1 
+				}
+			}
+			else_if = {
+				limit = {
+					has_equipment = {
+						light_tank_chassis_2 > 0
+					}
+				}
+				add_equipment_to_stockpile = { 
+					type = light_tank_chassis_2 
+					amount = -1 
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_equipment = {
+						light_tank_equipment_1 > 0
+					}
+				}
+				add_equipment_to_stockpile = { 
+					type = light_tank_equipment_1 
+					amount = -1 
+				}
+			}
+			else_if = {
+				limit = {
+					has_equipment = {
+						gw_tank_equipment > 0
+					}
+				}
+				add_equipment_to_stockpile = { 
+					type = gw_tank_equipment 
+					amount = -1 
+				}
+			}
+			else_if = {
+				limit = {
+					has_equipment = {
+						light_tank_equipment_2 > 0
+					}
+				}
+				add_equipment_to_stockpile = { 
+					type = light_tank_equipment_2 
+					amount = -1 
+				}
+			}
+		}
+		FROM = {
+			effect_tooltip = {
+				NOR_rikstanken_creation_effect = yes 
+			}
+			country_event = {
+				id = AAT_norway_rikstanken.7
+				days = 1
+				random_days = 2 
+			}
+		}
+	}
+}
+
+
+country_event = { # Nordic Accepted sale of the single Rikstanken   
+	id = AAT_norway_rikstanken.7
+	title = AAT_norway_rikstanken.7.t
+	desc = AAT_norway_rikstanken.7.desc
+	picture = GFX_report_event_NOR_rikstanken
+
+	trigger = {
+		hidden_trigger = { NOR_tank_seller_still_exists = yes } 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # Yay
+		name = AAT_norway_rikstanken.7.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {  
+		}
+		NOR_rikstanken_creation_effect = yes 
+	}
+}
+
+country_event = { # Let's dissect the tank, maybe we can learn something   
+	id = AAT_norway_rikstanken.11
+	title = AAT_norway_rikstanken.11.t
+	desc = AAT_norway_rikstanken.11.desc
+
+	picture = GFX_report_event_NOR_rikstanken
+
+	trigger = { 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # Let's take a look
+		name = AAT_norway_rikstanken.11.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {  
+		}
+		add_political_power = -150
+		add_tech_bonus = {
+			name = AAT_rikstanken_program_tech_bonus
+			bonus = 0.5
+			uses = 4
+		}
+	}
+
+	option = { # Not worth the effort
+		name = AAT_norway_rikstanken.11.b
+		ai_chance = {
+			base = 10
+		}
+		trigger = {  
+		}		
+	}
+}
+
+country_event = { # We were rejected
+	id = AAT_norway_rikstanken.12
+	title = AAT_norway_rikstanken.12.t
+	desc = AAT_norway_rikstanken.12.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		hidden_trigger = { } 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # Oh no
+		name = AAT_norway_rikstanken.12.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {  
+		}
+	}
+}
+
+#######################################################################################
+#######################################################################################
+#######################################################################################
+
+				   ###    ##       ##       #### ######## ########  
+				  ## ##   ##       ##        ##  ##       ##     ## 
+				 ##   ##  ##       ##        ##  ##       ##     ## 
+				##     ## ##       ##        ##  ######   ##     ## 
+				######### ##       ##        ##  ##       ##     ## 
+				##     ## ##       ##        ##  ##       ##     ## 
+				##     ## ######## ######## #### ######## ########  
+
+#######################################################################################
+#######################################################################################
+#######################################################################################
+
+
+country_event = { # Laake's Replacement
+	id = AAT_norway_allied.4
+	title = AAT_norway_allied.4.t
+	desc = AAT_norway_allied.4.desc
+
+	picture = GFX_report_event_military_planning
+
+	trigger = { 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # Carl Gustav Fleischer
+		name = AAT_norway_allied.4.a
+		ai_chance = {
+			base = 10
+
+		}
+		trigger = {  
+		}
+		retire_character = NOR_kristian_laake
+		activate_advisor = NOR_carl_gustav_fleischer
+
+	}
+
+	option = { # Wilhelm Von Tangen Hansteen
+		name = AAT_norway_allied.4.b
+		ai_chance = {
+			base = 10
+
+		}
+		trigger = {  
+		}
+		retire_character = NOR_kristian_laake
+		retire_character = NOR_carl_gustav_fleischer
+		activate_advisor = NOR_wilhelm_von_tangen_hansteen
+	}
+
+	option = { # Otto Ruge
+		name = AAT_norway_allied.4.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 30 
+				NOR_is_historical_ai = yes 
+			}
+		}
+		trigger = {  
+		}
+		retire_character = NOR_kristian_laake
+		activate_advisor = NOR_otto_ruge
+
+	}
+}
+
+#######################################################################################
+#######################################################################################
+#######################################################################################
+
+
+			########    ###     ######   ######  ####  ######  ######## 
+			##         ## ##   ##    ## ##    ##  ##  ##    ##    ##    
+			##        ##   ##  ##       ##        ##  ##          ##    
+			######   ##     ##  ######  ##        ##   ######     ##    
+			##       #########       ## ##        ##        ##    ##    
+			##       ##     ## ##    ## ##    ##  ##  ##    ##    ##    
+			##       ##     ##  ######   ######  ####  ######     ##    
+
+
+#######################################################################################
+#######################################################################################
+#######################################################################################
+
+country_event = { # Event to invite Fascist to invade Norway 
+	id = AAT_norway_fascist.1
+	title = AAT_norway_fascist.1.t
+	desc = AAT_norway_fascist.1.desc
+	
+	picture = GFX_report_event_NOR_quisling_meeting
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	}
+
+	option = { # Don't mind if I do 
+		name = AAT_norway_fascist.1.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		create_wargoal = {
+			target = FROM 
+			type = annex_everything 
+		}
+		add_command_power = 15
+	}
+}
+
+
+country_event = { # They Accepted
+	id = AAT_norway_fascist.3
+	title = AAT_norway_fascist.3.t
+	desc = AAT_norway_fascist.3.desc
+
+	picture = GFX_report_event_NOR_quisling_troops
+
+	trigger = {
+		hidden_trigger = { } 
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {}
+	}
+
+	option = { # It's all coming together 
+		name = AAT_norway_fascist.3.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {  
+		}
+		FROM = {
+			event_option_tooltip = AAT_norway_fascist.1.a
+		}
+		set_country_flag = NOR_fascist_bully_accepted_invasion_invitation		 
+	}
+}

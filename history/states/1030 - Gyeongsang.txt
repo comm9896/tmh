@@ -1,0 +1,65 @@
+state = {
+
+	id = 1030
+	name = "STATE_1030"
+	manpower = 4761368
+	
+	state_category = town
+
+	resources = {
+	}
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = JAP
+			add_core_of = KOR
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+        1936.1.1.15 = {	   
+		    owner = JAP
+			add_core_of = KOR
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}	
+
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			4056 = {
+				naval_base = 4
+			}
+		}
+
+		victory_points = {
+			4056 5 # Pusan/Busan
+		}
+
+		victory_points = {
+			12089 1 # Taikyū
+		}
+
+	}
+
+	provinces = {
+		1054 1081 4056 4086 7121 10085 12060 12089 
+	}
+
+	local_supplies = 0.0 
+}

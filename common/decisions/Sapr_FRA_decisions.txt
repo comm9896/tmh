@@ -1,0 +1,909 @@
+FRA_Additional_tasks = {
+
+
+	FRA_Rescue_the_Belgian_General = {
+
+		icon = generic_construction		
+		
+		available = {
+			FRA = {
+				has_country_flag = Sapr_Dunker_encirclement_flag
+			}
+			or = {
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 16
+				}
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 15
+				}
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 14
+				}	
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 27
+				}			
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 20
+				}			
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 18
+				}
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 127
+				}
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 126
+				}		
+				divisions_in_state = {
+					type = flame
+					size > 0
+					state = 123
+				}
+
+			}	
+		}
+
+		fire_only_once = yes		
+
+		visible = {
+		    and = {
+			    has_war = yes
+			    has_capitulated = no
+				has_country_flag = Sapr_Dunker_encirclement_flag
+				
+			}
+
+		}
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+		days_mission_timeout = 210
+		
+		complete_effect = {
+						
+			country_event = Sapr_Successful_rescue_of_the_Belgian_general.2
+
+			
+		}
+	}
+	
+	FRA_Evacuation_from_Paris = {
+
+		icon = generic_construction		
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		days_mission_timeout = 21
+		fire_only_once = yes		
+        activation = {			
+		}
+		
+		visible = {
+		    and = {
+			    has_war = yes
+			    has_capitulated = no
+				16 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}
+				24 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}				
+				30 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}				
+			}	
+		}
+
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 16 
+			}	
+			highlight_state_targets = { 
+				state = 30 
+			}
+			highlight_state_targets = { 
+				state = 24 
+			}			
+			highlight_provinces = {
+				11506
+			}
+		}
+
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+			add_stability = 0.1
+			677 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}				
+			}	
+			680 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}				
+			}			
+		}
+	}
+	FRA_Sapr_Evacuation_from_Dunkerk = {
+
+		icon = generic_construction		
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		days_mission_timeout = 21
+		fire_only_once = yes		
+       
+		activation = {
+		    and = {
+			    has_war = yes
+			    has_capitulated = no
+				has_country_flag = Sapr_Dunker_encirclement_flag
+				1055 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}			
+			}	
+		}
+		visible = {
+		    and = {
+			    has_war = yes
+			    has_capitulated = no	
+				has_country_flag = Sapr_Dunker_encirclement_flag				
+			}	
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 1055 }
+			highlight_provinces = {
+				575
+			}
+		}
+				
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+	
+		
+		
+	
+		timeout_effect = {
+			1055 = {
+				add_building_construction = {
+					type = naval_base
+					level = 8
+					province = 575
+					instant_build = yes
+				}
+			}			
+		}
+	}	
+		
+	FRA_Sapr_Evacuation_from_Brest = {
+
+		icon = generic_construction		
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		days_mission_timeout = 21
+		fire_only_once = yes		
+        activation = {			
+		}
+		visible = {
+		    and = {
+			    has_war = yes
+			    has_capitulated = no
+				14 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}			
+			}	
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 14 }
+			highlight_provinces = {
+				3758
+			}
+		}
+				
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+
+			554 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}				
+			}	
+			680 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}					
+			}	
+			677 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}					
+			}				
+		}
+	}	
+	
+	FRA_mobilization_of_troops_in_Vichy = {
+
+		icon = generic_construction		
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		days_mission_timeout = 40
+		fire_only_once = yes
+		
+		
+        activation = {			
+		}
+		visible = {
+		    and = {
+			    has_war = yes
+			    has_capitulated = no
+				27 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}
+				20 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}
+				26 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}	
+				}				
+			}	
+		}
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 27 
+			}	
+			highlight_state_targets = { 
+				state = 20 
+			}
+			highlight_state_targets = { 
+				state = 26 
+			}			
+			highlight_provinces = {
+				3594
+			}
+		}
+		
+		is_good = no
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+			26 = {
+				create_unit = {
+					division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+					owner = FRA
+					count = 24	
+					allow_spawning_on_enemy_provs  = yes
+				}
+				create_unit = {
+					division = "name = \"Мотострелки\" division_template = \"Мотострелки\" start_experience_factor = 0.6" 
+					owner = FRA
+					count = 8	
+					allow_spawning_on_enemy_provs  = yes
+				}	
+			}	
+		}
+	}
+	
+}
+
+FRA_industry_evacuation = {
+	
+	industry_evacuation = {
+
+		icon = generic_construction		
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		days_mission_timeout = 10	
+		
+        activation = {
+		    and = {
+			    #has_country_flag = { FRA_industry_evacuation_flag }			
+			    has_war = yes
+			    has_capitulated = no
+				date < 1941.06.01
+			}		
+		}
+		visible = {
+		    and = {
+			    #has_country_flag = { FRA_industry_evacuation_flag }
+			    has_war = yes
+			    has_capitulated = no
+				hidden_trigger = {
+				    date < 1941.06.01
+				}
+			}	
+		}
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+			IF = { #военки
+			    limit = {
+				    OR = {
+				        16 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        29 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        785 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						} 
+				        18 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        28 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						} 
+				        17 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        27 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        15 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        30 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        24 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  						
+				        27 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+ 				        20 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+ 				        32 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        735 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						} 
+				        26 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        851 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        21 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						} 
+				        22 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        31 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						} 
+				        806 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}  
+				        19 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        23 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        25 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        33 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        30 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+ 				        14 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}
+				        16 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            arms_factory > 0
+							}
+						}     						
+					}	
+				}
+	
+				
+			    random_owned_controlled_state = {
+				    limit = {
+				        is_on_continent = europe
+					    arms_factory > 0
+				    }
+
+			        remove_building = {
+				        type = arms_factory
+				        level = 1
+			        }
+			    }
+                random_owned_controlled_state = {
+				    limit = {
+				        is_on_continent = Africa
+				    }
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = arms_factory
+				        level = 1
+				    }
+			    }					
+			}
+			IF = { # Гражданские фабрики
+			    limit = {
+				    OR = {
+				        16 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        29 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        785 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						} 
+				        18 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        28 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						} 
+				        17 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        27 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        15 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        30 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        24 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  						
+				        27 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+ 				        20 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+ 				        32 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        735 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						} 
+				        26 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        851 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        21 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						} 
+				        22 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        31 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						} 
+				        806 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}  
+				        19 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        23 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        25 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        33 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        30 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+ 				        14 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}
+				        16 = {
+						    AND = {
+						        controller = { tag = FRA }
+					            industrial_complex > 0
+							}
+						}     						
+					}	
+				}
+	
+			    random_owned_controlled_state = {
+				    limit = {
+				        is_on_continent = europe
+					    industrial_complex > 0
+				    }
+
+			        remove_building = {
+				        type = industrial_complex
+				        level = 1
+			        }
+			    }
+                random_owned_controlled_state = {
+				    limit = {
+				        is_on_continent = Africa
+				    }
+			        add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				    }
+			    }	
+				
+				
+			}
+            activate_mission = industry_evacuation		
+		}
+	}	
+}
+
+
+FRA_rerol_country = {
+	
+	FRA_rerol_country_ENG = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ENG
+		cosmetic_ideology = democratic		
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			FRA = { is_ai = no }
+			has_capitulated = yes
+			
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = FRA_rerol_country_ENG_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = ENG
+			        }
+                    change_tag_from = FRA				
+			    }
+			}
+		}
+	}
+	FRA_rerol_country_USA = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = USA
+		cosmetic_ideology = democratic		
+		
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		available = {
+			FRA = { is_ai = no }
+			has_capitulated = yes
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = FRA_rerol_country_USA_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = USA
+			        }
+                    change_tag_from = FRA				
+			    }
+			}
+		}
+	}
+	FRA_rerol_country_SOV = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = SOV
+		cosmetic_ideology = communism		
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			FRA = { is_ai = no }
+			has_capitulated = yes
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = FRA_rerol_country_SOV_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = SOV
+			        }
+                    change_tag_from = FRA				
+			    }
+			}
+		}
+	}
+	
+}

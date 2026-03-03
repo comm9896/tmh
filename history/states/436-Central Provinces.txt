@@ -1,0 +1,55 @@
+
+state={
+	id=436
+	name="STATE_436" # Central provinces, was Jabalpur
+	manpower = 14123100
+	
+	state_category = rural
+	
+	resources={
+		chromium=4 # was: 6
+		coal = 8						
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+				
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+		
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		1510 4953 7497 7574 8120 10401 10801 12375 12480 12854 
+	}
+
+	local_supplies=0.0
+}

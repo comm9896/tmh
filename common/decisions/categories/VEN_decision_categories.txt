@@ -1,0 +1,26 @@
+################
+##### VEN ######
+################
+
+VEN_abc_islands = {
+	
+	icon = saf_anti_colonialist_crusade
+
+	allowed = {
+		original_tag = VEN
+		has_dlc = "Man the Guns"
+	}
+
+	visible = {
+		HOL = { owns_state = 695 }
+	}
+}
+
+VEN_rerol_country = {
+	
+	icon = generic_army_support
+
+	allowed = {
+		original_tag = VEN
+	}
+}

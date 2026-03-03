@@ -1,0 +1,67 @@
+
+state={
+	id=209
+	name="STATE_209" # Pskov
+	manpower = 639587
+	
+	state_category = town
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 6
+				air_base = 4
+				anti_air_building = 1					
+				11202 = {
+					naval_base = 2
+				}
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 6
+				air_base = 4
+				anti_air_building = 1					
+				11202 = {
+					naval_base = 2
+				}
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = {
+			11202 5
+		}
+	}
+
+	provinces={
+		95 415 3053 3310 6324 9120 9319 9408 11097 11202 11304 11392 
+	}
+
+	local_supplies=0.0 
+}

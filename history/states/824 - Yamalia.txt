@@ -1,0 +1,55 @@
+
+state = {
+	id = 824
+	name = "STATE_824" # Yamalia
+	manpower = 21974
+
+	impassable = yes
+	
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 1
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	}
+
+	provinces = {
+		96 1729 1757 3415 4761 7809 10536 10564 12517 12545 
+	}
+
+	local_supplies = 0.0 
+}

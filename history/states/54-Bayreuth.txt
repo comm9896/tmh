@@ -1,0 +1,70 @@
+
+state={
+	id=54
+	name="STATE_54"
+	manpower = 2508159
+
+	state_category = city
+
+	resources={
+		coal = 8					
+	}
+
+	history={
+
+		1936.1.1.12 = {
+			owner = GER
+			add_core_of = GER
+		
+
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 2
+			}		
+		}
+		1936.1.1.13 = {
+			owner = GER
+			add_core_of = GER
+		}	
+		1936.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER
+		    add_core_of = GER
+		
+			set_demilitarized_zone = no
+			
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 3
+				arms_factory = 4
+				synthetic_refinery = 3
+				anti_air_building = 1
+				
+			}		
+		}
+				
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+		victory_points = {
+			11544 10 
+		}
+	}
+
+	provinces={
+		561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116 
+	}
+
+	local_supplies=0.0 
+}

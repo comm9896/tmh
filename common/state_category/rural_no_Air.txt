@@ -1,0 +1,11 @@
+state_categories={
+	rural_no_Air = {
+		local_building_slots = 2
+		
+		buildings_max_level = {
+			air_base = 0
+		}		
+		color = { 240 160 0 }
+
+	}
+}

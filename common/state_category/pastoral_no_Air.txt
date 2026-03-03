@@ -1,0 +1,10 @@
+state_categories={
+	pastoral_no_Air = {
+		local_building_slots = 1
+		buildings_max_level = {
+			air_base = 0
+		}	
+		color = { 160 160 0 }
+
+	}
+}

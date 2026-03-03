@@ -1,0 +1,61 @@
+
+state = {
+	id = 397
+	name = "STATE_397"
+	manpower = 137203
+	
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+	impassable = yes
+	
+	history = {
+	
+	1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}			
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+		
+		
+		victory_points = {
+			108 1 
+		}
+
+	}
+
+	provinces = {
+		6 99 108 186 1295 1307 3000 3155 4298 6121 6202 7318 7330 7712 7898 9145 9225 10579 11179 11200 11203 12558 
+	}
+
+	local_supplies = 0.0 
+}

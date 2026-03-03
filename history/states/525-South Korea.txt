@@ -1,0 +1,55 @@
+state= {
+	id=525
+	name="STATE_525"
+	manpower = 14284105
+	
+	state_category = town
+	
+	history= {
+        1936.1.1.12 = {	    
+		    owner = JAP
+			add_core_of = KOR
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}			
+        1936.1.1.15 = {	    
+		    owner = JAP
+			add_core_of = KOR
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+				
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			dockyard = 1
+			7221 = { dam = 1 }			
+		}
+		victory_points = {
+			7125 3 
+		}
+		strategic_province_location = {
+			dam = 7221
+		}
+	}
+	provinces={
+		1100 7125 7221 10036 
+	}
+
+	local_supplies=0.0 
+}

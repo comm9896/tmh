@@ -1,0 +1,482 @@
+ideas = {
+
+###############################
+###############################
+#### WUW NATIONAL SPIRITS #####
+###############################
+###############################
+
+	country = {
+
+
+	}
+
+	# MILITARY
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		renault_bel = {
+			picture = renault
+
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = {
+				has_completed_focus = BEL_fonderie_royale_de_canons_liege
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+				# Renault FT
+			}
+		}
+
+		renault_bel_no_wuw = {
+			picture = renault
+
+			
+			allowed = {
+				original_tag = BEL
+				NOT = { has_dlc = "Gotterdammerung" }
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+			
+			modifier = {
+				# Renault FT
+			}
+		}
+
+		vickers_armstrong_bel = {
+			picture = generic_tank_manufacturer_2
+		
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+
+			available = {
+				has_completed_focus = BEL_fonderie_royale_de_canons_liege
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+
+		vickers_armstrong_bel_no_wuw = {
+			picture = generic_tank_manufacturer_2
+		
+			
+			allowed = {
+				original_tag = BEL
+				NOT = { has_dlc = "Gotterdammerung" }
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+
+		BEL_kirov = {
+			name = kirov
+
+			picture = kirov
+
+			allowed = {
+				original_tag = BEL
+			}
+
+			visible = {
+				has_completed_focus = BEL_invite_soviet_tank_makers
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			traits = { heavy_tank_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		BEL_daimler_benz = {
+			name = GER_daimler_benz
+
+			picture = GER_daimler_benz
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			visible = {
+				has_completed_focus = BEL_invite_german_tank_organization
+			}
+
+			cost = 150
+
+			research_bonus = {
+				armor = 0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = {
+	
+		designer = yes
+		
+		renard = {
+			picture = BEL_renard_organization
+
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = {
+				OR = {
+					has_completed_focus = BEL_renard_constructions_aeronautiques
+					has_completed_focus = BEL_stampe_et_vertrongen
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# Tipsy B, firefly, fairey fox
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		renard_no_wuw = {
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = BEL
+				NOT = { has_dlc = "Gotterdammerung" }
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { multi_role_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# Tipsy B, firefly, fairey fox
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		avions_fairey = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = BEL
+				NOT = { has_dlc = "Gotterdammerung"}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# Tipsy B, firefly, fairey fox
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		cockerill_shipyards = { 
+			picture = BEL_cockerill_shipyards_organization
+
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+						
+			traits = { naval_manufacturer }
+		}
+
+		cockerill_shipyards_no_wuw = { 
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = BEL
+				NOT = { has_dlc = "Gotterdammerung" }
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+						
+			traits = { naval_manufacturer }
+		}
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		fn_herstal = {
+			
+			picture = BEL_fn_herstal_organization
+
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = {
+				has_completed_focus = BEL_fn_herstal
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		fabrique_nationale = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			
+			allowed = {
+				original_tag = BEL
+				NOT = { has_dlc = "Gotterdammerung" }
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	
+		fonderie_royale_de_canons_liege = {
+			
+			picture = BEL_fonderie_royale_de_canons_liege
+
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+			available = {
+				has_completed_focus = BEL_fonderie_royale_de_canons_liege
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			
+			traits = { artillery_manufacturer }
+		}
+
+		minerva_imperia_motorized = {
+			
+			picture = BEL_minerva_imperia_motorized_organization
+
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = {
+				has_completed_focus = BEL_minerva_imperia
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+
+	}
+
+####################
+####################
+#### WUW IDEAS #####
+####################
+#################### 
+
+# Industrial Design Companies
+
+	industrial_concern = {
+
+		BEL_cockerill_industrial = {
+
+			picture = BEL_cockerill_industrial
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			visible = {
+				NOT = { has_completed_focus = BEL_cockerill }
+			}
+
+			cost = 150
+		
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { steelworks_and_machining_trait } 
+		}
+
+		BEL_cockerill_industrial_improved = {
+			name = BEL_cockerill_industrial
+			picture = BEL_cockerill_industrial
+
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"				
+			}
+
+			visible = {
+				has_completed_focus = BEL_cockerill
+			}
+
+			cost = 75
+			
+			research_bonus = {
+				industry = 0.10
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.05				
+			}
+
+			traits = { steelworks_and_machining_trait } 
+		}
+
+
+		BEL_societe_generale_de_belgique_industrial = {
+
+			picture = BEL_societe_generale_de_belgique
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = { 
+				has_completed_focus = CONGO_societe_generale_de_belgique
+			}
+
+			cost = 150
+	
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+
+			traits = { banking_magnate_trait } 
+		}
+
+		BEL_distrigaz = {
+
+			picture = BEL_distrigaz
+			
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			cost = 150
+	
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			traits = { energy_company_trait } 
+			
+		}
+
+	}
+	
+} 
+

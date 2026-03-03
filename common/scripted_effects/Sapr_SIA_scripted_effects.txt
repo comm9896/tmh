@@ -1,0 +1,25 @@
+
+
+Sapr_SIA_TECL_improved_designer = {
+	if = {
+		limit = {
+			has_idea =  SIA_TECL
+		}
+		swap_ideas = {
+			remove_idea = SIA_TECL
+			add_idea = SIA_TECL_improved
+		}
+	}	
+}
+
+Sapr_siam_cement_designer = {
+	if = {
+		limit = {
+			has_idea =  siam_cement
+		}
+		swap_ideas = {
+			remove_idea = siam_cement
+			add_idea = SAF_siam_cement_improved
+		}
+	}	
+}

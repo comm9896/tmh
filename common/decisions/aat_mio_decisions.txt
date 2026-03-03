@@ -1,0 +1,583 @@
+foreign_mio_decisions_category = {
+	# German MIOs
+	# Tanks
+
+	
+	invite_GER_blohm_und_voss_organization = {
+
+		icon = generic_naval
+
+		cost = 50
+
+		fire_only_once = yes
+
+		targets = { GER }
+
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+		}
+
+		visible = {
+			GER = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+				#is_in_faction_with = GER
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_blohm_und_voss_mio_flag }
+			
+			mio:GER_blohm_und_voss_organization = {
+				add_mio_size = 3
+			}	
+			
+			### Bulgaria specific
+			if = {
+				limit = {
+					original_tag = BUL 
+					NOT = { has_country_flag = contract_with_german_navy_designer_flag }
+				}
+				set_country_flag = contract_with_german_navy_designer_flag
+			}
+			184 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}				
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				GER = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				GER = { is_in_faction_with = ROOT }
+			}
+		}
+	}	
+	
+	invite_GER_henschel_organization = {
+
+		icon = generic_tank
+
+		cost = 50
+
+		fire_only_once = yes
+		
+		targets = { GER }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
+			}
+		}
+
+		visible = {
+			GER = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+				#is_in_faction_with = GER
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_henschel_mio_flag }
+
+			mio:GER_henschel_organization = {
+				add_mio_size = 3
+			}
+
+			801 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				GER = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				GER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	# planes
+	invite_GER_heinkel_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes
+
+		targets = { GER }
+
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+		}
+
+		visible = {
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+				#is_in_faction_with = GER
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_heinkel_mio_flag }
+			
+			
+			mio:GER_heinkel_organization = {
+				add_mio_size = 3
+			}
+			
+			### Bulgaria specific
+			801 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				GER = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				GER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+
+	# materiel
+	invite_GER_opel_organization = {
+
+		icon = generic_motorized
+
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { GER }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				} 
+			}
+		}
+
+		visible = {
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+				#is_in_faction_with = GER
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_opel_mio_flag }
+			
+			mio:GER_opel_organization = {
+				add_mio_size = 3
+			}
+			
+			801 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				GER = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				GER = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+
+	# Italian MIOs 
+	# Tanks
+	invite_ITA_fiat_organization = {
+
+		icon = generic_tank
+
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { ITA }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+		}
+
+		visible = {
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+
+				#is_in_faction_with = ITA
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_fiat_mio_flag }
+			
+			mio:ITA_fiat_organization = {
+				add_mio_size = 3
+			}			
+
+			801 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				ITA = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				ITA = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	# Ships 
+	invite_ITA_crda_organization = {
+
+		icon = generic_naval
+	
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { ITA }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+		}
+
+		visible = {
+			ITA = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = BUL }
+				OR = {
+					has_completed_focus = BUL_contract_foreign_companies
+					has_completed_focus = BUL_a_black_sea_fleet
+				}
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_crda_mio_flag }
+			
+			mio:ITA_crda_organization = {
+				add_mio_size = 3
+			}			
+			
+			184 = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				ITA = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				ITA = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	# Materiel
+	invite_ITA_lancia_organization = {
+
+		icon = generic_motorized
+
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { ITA }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+		}
+
+		visible = {
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+				OR = {
+					is_subject = no
+					is_subject_of = ITA
+				}
+				#is_in_faction_with = ITA
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_lancia_mio_flag }
+		
+			mio:ITA_lancia_organization = {
+				add_mio_size = 3
+			}	
+			
+			### Bulgaria specific
+			801 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				ITA = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				ITA = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+
+	invite_fiat_aviazione_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes
+
+		targets = { ITA }
+
+		allowed = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+			}
+		}
+
+		visible = {
+			IF = {
+				limit = { original_tag = BUL }
+				has_completed_focus = BUL_contract_foreign_companies
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			IF = {
+				limit = { original_tag = BUL }
+				#is_in_faction_with = GER
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_fiat_aviazione_mio_flag }
+		
+			mio:ITA_fiat_aviazione_organization = {
+				add_mio_size = 3
+			}	
+			
+			801 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				GER = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				GER = { is_in_faction_with = ROOT }
+			}
+		}	
+	}
+}
+
+
+# generic_naval
+# generic_air

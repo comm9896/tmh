@@ -1,0 +1,50 @@
+state={
+	id=457
+	name="STATE_457" # Arabian Desert
+	manpower = 2194
+	
+	state_category = wasteland
+	
+	history = {
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = EGY
+		}
+        1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = EGY
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB				
+		}
+        1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		1945.1.1.10 = {	    
+		    owner = ENG
+			add_core_of = ITA
+			add_core_of = ENG			
+		}			
+				
+		
+		buildings = {
+			infrastructure = 1
+			9957 = {
+				naval_base = 1
+
+			}		
+		}
+
+		victory_points = {
+			12002 1
+		}
+
+	}
+	provinces={
+		1080 4068 4910 5069 7156 9957 12002 12889 
+	}
+
+	local_supplies=0.0 
+}

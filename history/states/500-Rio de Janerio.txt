@@ -1,0 +1,43 @@
+
+state={
+	id=500
+	name="STATE_500"
+	manpower = 6665500
+	
+	state_category = large_city
+
+	resources={
+		rubber=50 # was: 30
+		oil=40 # was: 18	
+		tungsten=100
+		steel=200	
+		aluminium = 100 
+		chromium = 50
+		coal = 200						
+	}
+
+	history={
+		owner = BRA
+		add_core_of = BRA
+		buildings = {
+			infrastructure = 3
+			air_base = 7
+
+			10980 = {
+				naval_base = 7
+                landmark_cristo_redentor = {
+                    level = 1
+                }
+			}			
+		}
+		victory_points = {
+			10980 10
+		}
+	}
+
+	provinces={
+		5172 8190 10980 12996 
+	}
+
+	local_supplies=0.0 
+}

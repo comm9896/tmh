@@ -1,0 +1,51 @@
+
+MAN_replace_mukden_arsenal_designer = {
+	every_military_industrial_organization = {
+		limit = {
+			OR = {
+				is_military_industrial_organization = CHI_taiyuan_arsenal_organization	
+				is_military_industrial_organization = CHI_liaoning_arsenal_organization
+				is_military_industrial_organization = CHI_hanyan_arsenal_organization
+				is_military_industrial_organization = CHI_mukden_arsenal_organization
+			}
+		}
+		complete_mio_trait = GER_mio_trait_CZE
+	}
+
+	if = {
+		limit = {
+			has_idea =  CHI_mukden_arsenal
+		}
+		swap_ideas = {
+			remove_idea = CHI_mukden_arsenal
+			add_idea = CHI_mukden_arsenal_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea =  CHI_hanyan_arsenal
+		}
+		swap_ideas = {
+			remove_idea = CHI_hanyan_arsenal
+			add_idea = CHI_hanyan_arsenal_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea =  CHI_taiyuan_arsenal
+		}
+		swap_ideas = {
+			remove_idea = CHI_taiyuan_arsenal
+			add_idea = CHI_taiyuan_arsenal_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea =  CHI_taiyuan_arsenal
+		}
+		swap_ideas = {
+			remove_idea = CHI_taiyuan_arsenal
+			add_idea = CHI_taiyuan_arsenal_improved
+		}
+	}	
+}

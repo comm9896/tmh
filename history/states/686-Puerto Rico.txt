@@ -1,0 +1,53 @@
+state={
+	id=686
+	name="STATE_686"
+	manpower = 1543913
+	
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = USA	
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = USA
+		}
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}			
+		1945.1.1.10 = {
+		    owner = BRA
+			add_core_of = BRA
+		}	
+		
+		victory_points = {
+			1440 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+			1440 = {
+				naval_base = 3
+
+			}
+		}
+	}
+
+	provinces={
+		1440 4155 
+	}
+
+	local_supplies=0.0 
+}

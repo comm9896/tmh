@@ -1,0 +1,63 @@
+
+state={
+	id=25
+	name="STATE_25"
+	manpower = 1343700
+
+	resources={
+		coal = 2
+	}
+	
+	state_category = large_town
+	history={
+
+		1936.1.1.12 = {
+			owner = FRA
+			add_core_of = FRA
+		
+		
+			buildings = {
+				infrastructure = 3
+			}		
+		}
+		1936.1.1.13 = {
+			owner = FRA
+			add_core_of = FRA
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = FRA
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+
+
+		1941.1.1.14 = {
+		    owner = TUR
+		    add_core_of = TUR
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 10
+			}
+			add_extra_state_shared_building_slots = 5				
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+
+		victory_points = {
+			620 10
+		}
+	}
+
+	provinces={
+		620 625 755 3598 3771 6618 6775 6792 9717 9734 9751 11718 11720 
+	}
+
+	local_supplies=0.0 
+}

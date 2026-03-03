@@ -1,0 +1,170 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CHI_INFLATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+### search_filters = {FOCUS_FILTER_TFV_AUTONOMY}
+### search_filters = {FOCUS_FILTER_MEX_CHURCH_AUTHORITY}
+### search_filters = {FOCUS_FILTER_MEX_CAUDILLO_REBELLION}
+
+focus_tree = {
+	id = mexico_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEX
+			has_dlc = "Man the Guns"
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 70 y = 1100 }
+
+	
+	focus = {
+		id = MEX_focus_national_bank
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 9
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = MEX
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = MEX_focus_agricultural_credit_bank
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = MEX_focus_national_bank }
+		x = 0
+		y = 1
+		relative_position_id = MEX_focus_national_bank
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 10
+				has_government = communism
+			}
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			277 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}				
+				
+			}
+			477 = {
+				add_extra_state_shared_building_slots = 8				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}					
+			}
+			482 = {
+				add_extra_state_shared_building_slots = 8				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}				
+			}
+			317 = {
+				add_extra_state_shared_building_slots = 8				
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}				
+			}
+			480 = {
+				add_extra_state_shared_building_slots = 8			
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}				
+			}			
+		}
+	}
+	
+}

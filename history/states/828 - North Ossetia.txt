@@ -1,0 +1,59 @@
+state = {
+	id = 828
+	name = "STATE_828"
+	resources = {
+		chromium = 8 # was: 18 before split off from Caucasus mountains (233)
+	}
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			buildings = {
+				infrastructure = 2
+				anti_air_building = 1						
+			}	
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+			buildings = {
+				infrastructure = 2
+				anti_air_building = 1	
+				arms_factory = 4					
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}		
+
+		victory_points = {
+			9628 3
+		}
+	}
+
+	provinces = {
+	  9628 9647 11609 
+	}
+	manpower = 387990
+	buildings_max_level_factor = 1.000
+	state_category = rural
+
+	local_supplies = 0.0 
+}

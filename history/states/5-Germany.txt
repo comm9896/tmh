@@ -1,0 +1,59 @@
+
+state={
+	id=5
+	name="STATE_5"
+	manpower = 1238108
+	state_category = town
+
+	history={
+	
+
+		1936.1.1.12 = {
+			owner = GER
+			add_core_of = GER
+	
+			buildings = {
+				infrastructure = 3
+			}		
+		}
+		1936.1.1.13 = {
+			owner = GER
+			add_core_of = GER
+		}	
+		1936.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+		    owner = GER
+		    add_core_of = GER
+
+			buildings = {
+				infrastructure = 3
+			}				
+		}
+
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+		victory_points = {
+			6375 3
+		}
+
+	}
+
+	provinces={
+		266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 
+	}
+
+	local_supplies=12.0 
+}

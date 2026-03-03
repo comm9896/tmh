@@ -1,0 +1,90 @@
+state = {
+	id = 114
+	name = "STATE_114"
+	manpower = 991921
+	
+	resources = {
+		coal = 16
+	}
+
+	state_category = town
+	
+	history = {
+
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 0
+				industrial_complex = 1
+				air_base = 5
+				11773 = {
+					naval_base = 3
+				}
+				6891 = {
+					naval_base = 5
+				}
+			}		
+		}		
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+		}				
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}
+		
+
+		1941.1.1.1 = {	    
+			owner = ITA			
+			add_core_of = ITA		
+				
+			buildings = {
+				infrastructure = 3
+				arms_factory = 0
+				industrial_complex = 1
+				air_base = 5
+				11773 = {
+					naval_base = 3
+				}
+				6891 = {
+					naval_base = 5
+				}
+			}
+		}	
+		1941.1.1.2 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+		}		
+		1941.1.1.3 = {
+			owner = ITA			
+			add_core_of = ITA	
+		}
+		1941.1.1.4 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		
+		
+		victory_points = {
+			11773 3 
+		}
+		victory_points = {
+			9772 2 
+		}
+
+	}
+	
+	provinces = {
+		902 6891 9772 9863 11755 11773 11824 11874 	
+	}
+
+	local_supplies = 0.0 
+}

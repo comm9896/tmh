@@ -1,0 +1,38 @@
+state = { # Jan Mayen
+	id = 914
+	name = "STATE_914"
+	manpower = 10
+	state_category = tiny_island
+	history = {
+ 
+	1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = ENG
+		}			
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = ENG
+		}
+        1936.1.1.14 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			13272 = {
+				naval_base = 1
+			}
+		}	
+	}
+
+
+	provinces = {
+		13272
+	}
+	
+	local_supplies=0.000
+}

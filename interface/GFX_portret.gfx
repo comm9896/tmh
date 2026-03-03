@@ -1,0 +1,16 @@
+spriteTypes = {
+	
+### o x x
+###   o 
+### o x o
+	
+	SpriteType = { 
+		name = "GFX_portrait_Bobby_Kotick"
+		texturefile = "gfx/leaders/Bobby_Kotick.dds"
+	}
+	SpriteType = { 
+		name = "GFX_portrait_ITA_arturo_riccardi"
+		texturefile = "gfx/leaders/Admiraal_Arturo_Riccardi.dds"
+	}	
+
+}

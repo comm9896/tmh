@@ -1,0 +1,58 @@
+
+state={
+	id=40
+	name="STATE_40" # Barnaul
+	manpower = 2107451
+	
+	state_category = large_town
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV	
+		
+			buildings = {
+				infrastructure = 2
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 1
+				arms_factory = 8				
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+			
+
+		victory_points = {
+			1794 11
+		}
+	}
+
+	provinces={
+		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613 
+	}
+
+	local_supplies=5.0 
+}

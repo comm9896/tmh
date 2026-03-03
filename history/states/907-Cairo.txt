@@ -1,0 +1,71 @@
+state={
+	id=907
+	name="STATE_907"
+	manpower = 6454865
+	state_category = town_1k_Air
+	
+	resources = {
+		steel = 8
+		tungsten = 8	
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = EGY
+		}	
+        1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = EGY
+		}			
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB				
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		1945.1.1.10 = {	    
+		    owner = ENG
+			add_core_of = ITA
+			add_core_of = ENG			
+		}			
+			
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 5
+			12049 = {
+				naval_base = 2
+
+			}			
+
+		}
+		victory_points = {
+			7011 20 
+		}
+		
+		victory_points = {
+			3996 5 
+		}
+		
+		victory_points = {
+			1068 3 
+		}
+		victory_points = {
+			12049 5 
+		}
+		
+		victory_points = {
+			4073 3 
+		}
+	}
+	provinces={
+		4073 4143 7011 7188 10005 10126 12004 12049
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,68 @@
+
+state={
+	id=249
+	name="STATE_249"
+	manpower = 2761291
+	
+	state_category = town
+	resources={
+		steel=25 # was: 40
+	}
+
+	history={
+	
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			
+			buildings = {
+				infrastructure = 3 #was: 6
+				arms_factory = 1
+				anti_air_building = 2		
+				air_base = 10				
+			}			
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}		
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+			
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 4
+				arms_factory = 3
+				anti_air_building = 2	
+				air_base = 10				
+			}			
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		victory_points = {
+			6338 5
+		}
+
+	}
+
+	provinces={
+		228 260 292 355 372 403 404 3214 3251 3328 3348 3365 6308 6323 6338 6352 6368 9336 9354 9385 9401 9514 10301 11243 11292 11339 11389 11496 
+	}
+
+	local_supplies=0.0 
+}

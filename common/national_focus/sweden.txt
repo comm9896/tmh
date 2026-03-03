@@ -1,0 +1,58 @@
+focus_tree = {
+	id = sweden_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SWE
+			has_dlc = "Arms Against Tyranny"
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	continuous_focus_position = { x = 20 y = 1000 }  
+	initial_show_position = {
+		x = 37
+		y = 0
+	}
+
+
+	############################
+	#####    Test focuses      #	
+	############################
+
+	focus = {
+		id = SWE_defense_act
+		icon = GFX_focus_SWE_defense_act
+		x = 3
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10		
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+
+		completion_reward = {
+		}
+	}	
+
+}

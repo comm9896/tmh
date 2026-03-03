@@ -1,0 +1,66 @@
+
+faction_goal_the_atomic_race = {
+	name = the_atomic_race_goal_name
+	description = the_atomic_race_goal_desc
+	group = FOCUS_FILTER_RESEARCH
+	category = long_term
+	visible = {
+		date > 1940.1.1
+	}
+	completed = {
+		custom_override_tooltip = {
+			tooltip = the_atomic_race_complete_trigger
+			has_variable = global.first_country_sp_nuclear_bomb
+			var:global.first_country_sp_nuclear_bomb = {
+				OR = {
+					is_in_faction_with = ROOT
+					tag = ROOT
+				}
+			}
+		}
+	}
+	cancel = {
+		custom_override_tooltip = {
+			tooltip = the_atomic_race_complete_trigger_fail
+			has_variable = global.first_country_sp_nuclear_bomb
+			NOT = {
+				var:global.first_country_sp_nuclear_bomb = {
+					is_in_faction_with = ROOT
+				}
+			}
+			NOT = {
+				var:global.first_country_sp_nuclear_bomb = {
+					tag = ROOT
+				}
+			}
+		}
+	}
+	complete_effect = {	
+		add_faction_power_projection = 1000
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members 
+					limit = {
+						faction_influence_rank < 4
+					}
+				}
+				
+				name = INFLUENCE_TOP_THREE
+			}
+			add_faction_initiative = 1
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.25
+			} 
+		}
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			is_major = yes
+		}
+	}
+}

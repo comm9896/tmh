@@ -1,0 +1,557 @@
+on_actions = {
+	
+	# FROM is the faction Leader, ROOT is the country leaving the faction 
+	on_leave_faction = {
+
+
+		effect = { # Removing Joint Focus Tree modifiers 
+			IF = {
+				limit = {
+					ROOT = {
+						HABSBURG_is_a_habsburg_viable_nation = yes
+						NOT = {
+							tag = global.AH_originator_country
+						}
+						OR = {
+							is_subject = no
+							AND = {
+								is_subject = yes
+								NOT = {
+									is_subject_of = global.AH_originator_country
+								}
+							}
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = AUS
+							original_tag = HUN
+						}
+						tag = global.AH_originator_country
+					}
+				}
+				IF = {
+					limit = {
+						ROOT = {
+							has_dynamic_modifier = {
+								modifier = HABSBURG_army_modifier
+							}	
+						}
+					}
+					ROOT = {
+						remove_dynamic_modifier = {
+							modifier = HABSBURG_army_modifier
+						}
+					}
+				}
+				IF = {
+					limit = {
+						ROOT = {
+							has_dynamic_modifier = {
+								modifier = HABSBURG_cavalry_modifier
+							}	
+						}
+					}
+					ROOT = {
+						remove_dynamic_modifier = {
+							modifier = HABSBURG_cavalry_modifier
+						}
+					}
+				}
+				IF = {
+					limit = {
+						ROOT = {
+							has_dynamic_modifier = {
+								modifier = HABSBURG_economy_dynamic_modifier
+							}	
+						}
+					}
+					ROOT = {
+						remove_dynamic_modifier = {
+							modifier = HABSBURG_economy_dynamic_modifier
+						}
+					}
+				}
+				IF = {
+					limit = {
+						ROOT = {
+							has_dynamic_modifier = {
+								modifier = HABSBURG_joint_industry_modifier
+							}	
+						}
+					}
+					ROOT = {
+						remove_dynamic_modifier = {
+							modifier = HABSBURG_joint_industry_modifier
+						}
+					}
+				}
+				IF = {
+					limit = {
+						has_global_flag = {
+							flag = AH_joint_tech_sharing_group_activated_flag
+						}
+					}
+					ROOT = {
+						remove_from_tech_sharing_group = HABSBURG_tech_sharing_group
+					}
+				}
+			}
+			#German Autarky Trade Influence Stuff
+			if = {
+				limit = {
+					OR = {
+						FROM = { 
+							has_opinion_modifier = GER_autarky_trade_opinion
+						}
+						ROOT = { #In case Germany isn't faction leader any more
+							has_opinion_modifier = GER_autarky_trade_opinion
+						}
+					}
+				}
+				if = { #If Germany is faction leader, remove German trade Influence
+					limit = {
+						FROM = { 
+							has_opinion_modifier = GER_autarky_trade_opinion
+						}
+					}
+					ROOT = { #Remove trade opinion
+						remove_opinion_modifier = {
+							target = FROM
+							modifier = GER_autarky_trade_opinion
+						}
+					}
+				}
+				if = { #If Germany is NOT faction leader any more; remove German trade influence
+					limit = {
+						ROOT = { 
+							has_opinion_modifier = GER_autarky_trade_opinion
+						}
+					}
+					FROM = { #Remove trade opinion
+						remove_opinion_modifier = {
+							target = ROOT
+							modifier = GER_autarky_trade_opinion
+						}
+					}
+				}
+				if = { #If Germany is faction leader; remove faction leader trade influence
+					limit = {
+						ROOT = { 
+							has_opinion_modifier = GER_german_trade_opinion
+						}
+					}
+					FROM = { #Remove trade opinion
+						remove_opinion_modifier = {
+							target = ROOT
+							modifier = GER_german_trade_opinion
+						}
+					}
+				}
+				if = { #If Germany is NOT faction leader any more; remove faction leader trade influence
+					limit = {
+						FROM = { 
+							has_opinion_modifier = GER_german_trade_opinion
+						}
+					}
+					ROOT = { #Remove trade opinion
+						remove_opinion_modifier = {
+							target = FROM
+							modifier = GER_german_trade_opinion
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
+	on_join_faction = { 
+
+
+		effect = { # Adding the correct stuff for faction joiners for the AH joint focus tree
+			IF = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = AUS
+							original_tag = HUN
+						}
+						tag = global.AH_originator_country
+					}
+					ROOT = {
+						HABSBURG_is_a_habsburg_viable_nation = yes
+					}
+				}
+
+				IF = {
+					limit = {
+						has_global_flag = {
+							flag = AH_joint_tech_sharing_group_activated_flag
+						}
+						ROOT = {
+							NOT = {
+								is_in_tech_sharing_group = HABSBURG_tech_sharing_group
+							}
+						}
+					}
+					ROOT = {
+						add_to_tech_sharing_group = HABSBURG_tech_sharing_group
+					}
+				}
+
+				IF = {
+					limit = {
+						has_global_flag = {
+							flag = AH_joint_economy_spirit_activated_flag
+						}
+						ROOT = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = HABSBURG_economy_dynamic_modifier
+								}
+							}
+						}
+					}
+					ROOT = {
+						add_dynamic_modifier = { modifier = HABSBURG_economy_dynamic_modifier }
+					}
+				}
+
+				IF = {
+					limit = {
+						has_global_flag = {
+							flag = AH_joint_industry_spirit_activated_flag
+						}
+						ROOT = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = HABSBURG_joint_industry_modifier
+								}
+							}
+						}
+					}
+					ROOT = {
+						add_dynamic_modifier = { modifier = HABSBURG_joint_industry_modifier }
+					}
+				}
+
+				IF = {
+					limit = {
+						has_global_flag = {
+							flag = AH_joint_army_spirit_activated_flag
+						}
+						ROOT = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = HABSBURG_army_modifier
+								}
+							}
+						}
+					}
+					ROOT = {
+						add_dynamic_modifier = { modifier = HABSBURG_army_modifier }
+					}
+				}
+
+				IF = {
+					limit = {
+						has_global_flag = {
+							flag = AH_joint_cavalry_spirit_activated_flag
+						}
+						ROOT = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = HABSBURG_cavalry_modifier
+								}
+							}
+						}
+					}
+					ROOT = {
+						add_dynamic_modifier = { modifier = HABSBURG_cavalry_modifier }
+					}
+				}
+			}
+
+			#German Autarky Trade Influence Stuff
+			if = {
+				limit = {
+					FROM = { 
+						original_tag = GER
+						is_faction_leader = yes
+						has_completed_focus = GER_autarky_efforts
+					}
+				}
+				if = { #This is a fail safe to not boost trade relations to ridiculous levels 
+					limit = {
+						ROOT = {
+							NOT = { has_opinion_modifier = GER_german_trade_opinion }
+						}
+					}
+					FROM = { #Increase trade opinion, making it more likely that they trade and receive resources from Germany
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = GER_german_trade_opinion
+						}
+					}
+				}
+				if = {  #This is a fail safe to not boost trade relations to ridiculous levels 
+					limit = {
+						FROM = {
+							NOT = { has_opinion_modifier = GER_autarky_trade_opinion }
+						}
+					}
+					ROOT = { #Increase trade opinion, making it more likely that Germany trade and receive resources from ROOT
+						add_opinion_modifier = {
+							target = FROM
+							modifier = GER_autarky_trade_opinion
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = { 
+						original_tag = GER
+						has_completed_focus = GER_autarky_efforts
+					}
+				}
+				if = { #This is a fail safe to not boost trade relations to ridiculous levels 
+					limit = {
+						FROM = {
+							NOT = { has_opinion_modifier = GER_german_trade_opinion }
+						}
+					}
+					ROOT = { #Increase trade opinion, making it more likely that they trade and receive resources from Germany
+						add_opinion_modifier = {
+							target = FROM
+							modifier = GER_german_trade_opinion
+						}
+					}
+				}
+				if = { #This is a fail safe to not boost trade relations to ridiculous levels 
+					limit = {
+						ROOT = {
+							NOT = { has_opinion_modifier = GER_autarky_trade_opinion }
+						}
+					}
+					FROM = { #Increase trade opinion, making it more likely that Germany trade and receive resources from ROOT
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = GER_autarky_trade_opinion
+						}
+					}
+				}
+			}
+		}
+
+		effect = { # Adding the correct stuff for puppets for German Mitteleuropa stuff
+
+
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						original_tag = BEL
+						has_completed_focus = BEL_interpreters
+					}
+				}
+				ROOT = {
+					add_ideas = BEL_interpreters_ns
+				}
+			}
+		}
+
+	}
+
+	
+	# ROOT Tag FROM Project
+	# Triggered when a project is completed
+	on_project_completion = {
+		effect = { #achievement check
+			IF = { 
+				limit = {
+					ROOT = { original_tag = BEL }
+				}
+				add_to_variable = { BEL.special_projects_completed = 1 }
+			}
+		}
+	}
+
+
+
+	on_join_allies = { # ROOT is the country which joined, FROM is the country whose war was joined
+
+		# Hungary joins their allies' war, thus Pal Teleki "resigns"
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = HUN
+					}
+					FROM = {
+						has_offensive_war = yes 
+					}
+					NOT = {
+						has_global_flag = HUN_entered_an_offensive_war_flag	
+					}
+				}
+				set_global_flag = HUN_entered_an_offensive_war_flag
+			}
+		}
+
+	}
+
+	on_call_allies = { # ROOT is the country which called, FROM is the country that joined
+
+		# Hungary joins their allies' war, thus Pal Teleki "resigns"
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						has_offensive_war = yes 
+					}
+					FROM = {
+						original_tag = HUN
+					}
+					NOT = {
+						has_global_flag = HUN_entered_an_offensive_war_flag	
+					}
+				}
+				set_global_flag = HUN_entered_an_offensive_war_flag
+			}
+		}
+
+	}
+
+	on_declare_war = {
+
+		# Hungary declares an offensive war, thus Pal Teleki "resigns"
+	    effect = {
+	        IF = {
+	            limit = {
+	            	ROOT = {
+	            		original_tag = HUN
+	            	}
+	               	NOT = {
+	               		has_global_flag = HUN_entered_an_offensive_war_flag	
+	               	}
+	            }
+	            set_global_flag = HUN_entered_an_offensive_war_flag
+	        }
+	    }
+
+	    # Adds the Eastern Bulwark effects to Germany when entering war with the Soviets after having completed said focus
+	    effect = {
+	    	IF = { 
+	    		limit = {
+	    			OR = {
+	    				AND = {
+	    					tag = GER
+	    					FROM = { tag = SOV }
+	    				}
+	    				AND = {
+	    					tag = SOV
+	    					FROM = { tag = GER }
+	    				}
+	    				NOT = {
+	    					has_global_flag = GER_eastern_bulwark_already_triggered_flag
+	    				}
+	    			}
+	    			GER = { has_completed_focus = GER_build_the_eastern_bulwark }
+	    		}
+	    		hidden_effect = {
+	    			GER = { 
+	    				add_timed_idea = { idea = GER_the_eastern_bulwark_ns days = 360 }
+	    			}
+	    			set_global_flag = GER_eastern_bulwark_already_triggered_flag
+	    		}
+	    	}
+	    }
+
+
+	}
+
+	on_startup = {
+		effect = {
+			# European States Array
+			every_country = {
+				limit = {
+					capital_scope = { is_on_continent = europe }
+				}
+				add_to_array = { 
+					array = GER.GER_european_targets_array 
+					value = THIS
+				}
+			}  
+		}
+
+		# Creates the Colonial Template Divisions for Belgium
+		effect = {
+			IF = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				295 = {
+					create_unit = {
+					    division = "name = \"1. Groupes de Force Publique du Congo Belge\" division_template = \"Force Publique\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+					    owner = BEL
+					    prioritize_location = 5117 # Leopoldville
+					}
+					create_unit = {
+					    division = "name = \"2. Groupes de Force Publique du Congo Belge\" division_template = \"Force Publique\" start_experience_factor = 0.1 start_equipment_factor = 0.4"
+					    owner = BEL
+					    prioritize_location = 10968 # Fort de Shinakasa
+					}
+				}
+			}
+			
+		}
+
+		effect = {
+			IF = {
+				limit = { has_dlc = "Gotterdammerung" }
+				random_list = {
+					999 = {
+						BEL = { set_country_flag = BEL_serious_waffle_flag }
+					}
+					1 = {
+						BEL = { set_country_flag = BEL_wunder_waffle_flag }
+					}
+				}
+			}
+			
+		}
+
+		effect = {
+			IF = {
+				limit = { has_dlc = "Gotterdammerung" }
+				set_variable = { global.deployed_manpower_ratio_needed_for_anschluss = 24 }
+				set_variable = { global.deployed_manpower_ratio_needed_for_anschluss_incrementor = 1 } #if this is changed, please update loc AUS_anschluss_ratio_lowered and AUS_anschluss_ratio_raised
+
+				set_variable = { global.low_anschluss_risk = global.deployed_manpower_ratio_needed_for_anschluss }
+
+				set_variable = { global.medium_anschluss_risk = global.deployed_manpower_ratio_needed_for_anschluss }
+
+				set_variable = { global.high_anschluss_risk = global.deployed_manpower_ratio_needed_for_anschluss }
+
+				multiply_variable = {
+					var = global.low_anschluss_risk
+					value = 0.5
+				}
+
+				multiply_variable = {
+					var = global.medium_anschluss_risk
+					value = 0.75
+				}
+
+				multiply_variable = {
+					var = global.high_anschluss_risk
+					value = 0.90
+				}
+			}
+		}
+	}
+}

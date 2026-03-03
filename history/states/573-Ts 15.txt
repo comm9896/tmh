@@ -1,0 +1,65 @@
+
+state={
+	id=573
+	name="STATE_573" # Zlatoust
+	manpower = 556677
+	
+	state_category = pastoral
+	resources={
+		chromium=23 # was: 32
+	}
+
+	history={
+		
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+
+			buildings = {
+				infrastructure = 2
+				anti_air_building = 2					
+			}		
+		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB	
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 2	
+				anti_air_building = 2					
+			}			
+		}			
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+	
+		victory_points = {
+			10329 1
+		}
+
+	}
+
+	provinces={
+		237 278 361 3280 4758 7320 10136 10329 11223 11307 
+	}
+
+	local_supplies=7.0 
+}

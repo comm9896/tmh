@@ -1,0 +1,45 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		12029 
+	}
+	manpower = 234379
+	
+	state_category = enclave
+
+	history= {
+
+		1936.1.1.12 = {	    	
+			owner = FRA
+			add_core_of = TIB	
+		}	
+		1936.1.1.13 = {	    
+			owner = FRA
+			add_core_of = TIB	
+		}			
+		1936.1.1.14 = {	
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}		
+		1945.1.1.10 = {	    
+		    owner = ENG
+			add_core_of = ITA
+			add_core_of = ENG			
+		}			
+		
+		
+		victory_points = {
+			12029 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=0.0 
+}

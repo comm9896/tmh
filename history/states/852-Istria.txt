@@ -1,0 +1,69 @@
+
+state = {
+	id = 852
+	name = "STATE_852" # Dalmatia #TODO_Manu: VP name (Fiume) should change to Rijeka under YUG control. Maybe state name too (State name changed from Carniola to Istria after merging with Pola (Istria))
+	manpower = 125850 # Fiume had 75000 before merging rest of Istria # Dalmatia had 1431700 before Fiume split
+
+	state_category = town 
+
+
+	history = {
+
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+			add_core_of = YUG	
+		
+			buildings = {
+				infrastructure = 3
+				dockyard = 1
+				11564 = {
+					naval_base = 2
+				}
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+			add_core_of = YUG		
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}	
+
+
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+		
+			buildings = {
+				infrastructure = 3
+				dockyard = 1
+				11564 = {
+					naval_base = 2
+				}
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+			
+		
+		victory_points = { #Fiume (Rijeka)
+			11564 1 
+		}
+	}
+
+	provinces = {
+		11564 11735
+	}
+
+	local_supplies = 0.0 
+}

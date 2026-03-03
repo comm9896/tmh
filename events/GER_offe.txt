@@ -1,0 +1,193 @@
+add_namespace = Barb_offe_starts
+
+news_event = {
+	id = Barb_offe_starts.1
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {			
+		and ={
+			date > 1941.06.11
+			date < 1941.10.01
+
+		}
+		
+	}	
+	
+
+	immediate = {	
+		
+		for_each_scope_loop = {
+				array = global.GER_region_for_barb
+				
+				add_dynamic_modifier = {
+					modifier = Barb_offe
+					scope = GER
+					days = 135
+				}	
+				add_dynamic_modifier = {
+					modifier = Barb_offe
+					scope = ROM
+					days = 135
+				}	
+						
+			}		
+		
+	}		
+}
+
+
+
+
+add_namespace = Blau_offe_starts
+
+country_event = {
+	id = Blau_offe_starts.1
+	
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {			
+		and ={
+			date > 1942.03.0
+			date < 1942.10.01
+
+		}
+		
+	}	
+	
+
+	immediate = {	
+		
+		for_each_scope_loop = {
+				array = global.GER_region_for_blau
+				
+				add_dynamic_modifier = {
+					modifier = Blau_offe
+					scope = GER
+					days = 135
+				}	
+				add_dynamic_modifier = {
+					modifier = Blau_offe
+					scope = ROM
+					days = 135
+				}	
+					
+			}	
+		for_each_scope_loop = {
+			array = global.SOV_region_for_uran
+				
+			add_dynamic_modifier = {
+				modifier = Uran_offe
+				scope = SOV
+				days = 135
+			}	
+					
+					
+		}	
+	}		
+}
+
+
+
+
+
+
+add_namespace = Cit_offe_starts
+
+country_event = {
+	
+	id = Cit_offe_starts.1
+	
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {			
+		and ={
+			date > 1943.02.15
+			date < 1943.10.01
+
+		}
+		
+	}	
+	
+
+	immediate = {	
+		
+		for_each_scope_loop = {
+				array = global.GER_region_for_cit
+				
+				add_dynamic_modifier = {
+					modifier = Cit_offe
+					scope = GER
+					days = 135
+				}	
+				add_dynamic_modifier = {
+					modifier = Cit_offe
+					scope = ROM
+					days = 135
+				}
+				
+					
+			}	
+			
+		for_each_scope_loop = {
+				array = global.SOV_region_for_kut
+				
+				add_dynamic_modifier = {
+					modifier = Kut_offe
+					scope = SOV
+					days = 135
+				}	
+				
+				
+					
+			}	
+					
+				
+			
+	}		
+}
+
+
+add_namespace = Bag_offe_starts
+
+country_event = {
+	id = Bag_offe_starts.1
+	
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {			
+		and ={
+			date > 1944.02.15
+			date < 1944.10.01
+
+		}
+		
+	}	
+	
+
+	immediate = {	
+		
+		for_each_scope_loop = {
+				array = global.SOV_region_for_bag
+				
+				add_dynamic_modifier = {
+					modifier = Bag_offe
+					scope = SOV
+					days = 135
+				}	
+				
+				
+					
+			}	
+					
+				
+			
+	}		
+}

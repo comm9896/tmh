@@ -1,0 +1,41 @@
+state={
+
+	id=1059
+	name="STATE_1059"
+	manpower=21372
+	
+	state_category = enclave
+	history={
+
+		1936.1.1.12 = {	    
+		    owner = ENG
+		}
+		1936.1.1.13 = {	    
+		    owner = ENG
+		}					
+		1936.1.1.14 = {
+			owner = FRA
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}					
+		
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+
+			13228 = {
+				naval_base = 5
+				coastal_bunker = 2
+				naval_supply_hub = 1
+			}			
+		}
+
+	}
+	provinces={
+		13228
+	}
+
+	local_supplies=12.0 
+}

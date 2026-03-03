@@ -1,0 +1,201 @@
+Japans_resource_security_has_been_achieved = {
+	custom_trigger_tooltip = {
+		tooltip = Japans_resource_security_has_been_achieved_tt
+		
+		# Сингапур
+		336 = { 
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		1021 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}		
+		
+		# Индия		
+		430 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		423 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		439 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		444 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		987 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}		
+		440 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}		
+		
+		672 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}				
+		333 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		334 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		335 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		
+		#Австралия
+		517 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		285 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		521 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		522 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		870 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		871 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}		
+		
+		
+		#НЗ
+		723 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		284 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		
+		#Попуа
+		669 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		979 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		523 = {
+			controller = {
+				OR ={
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}			
+	}		
+}

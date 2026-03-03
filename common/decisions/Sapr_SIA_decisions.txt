@@ -1,0 +1,166 @@
+SIA_un_annex = {
+
+	SIA_annex_indochina = {
+	
+		icon = category_intervention_in_spain
+
+		available = {
+			286 = { is_controlled_by = JAP }
+		}
+		
+		visible = {
+		
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = JAP
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = -1
+		
+		complete_effect = {
+			every_state = {
+
+				SIA = { transfer_state = 286 }
+				SIA = { transfer_state = 670 }
+				SIA = { transfer_state = 671 }
+				SIA = { transfer_state = 741 }
+
+				SIA = { add_state_core = 286 }
+				SIA = { add_state_core = 670 }
+				SIA = { add_state_core = 671 }
+				SIA = { add_state_core = 741 }
+			}	
+		}
+	}
+}
+
+
+SIA_rerol_country = {
+	
+	SIA_rerol_country_GER = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = GER
+		cosmetic_ideology = fascism		
+		
+        visible = {
+		    not = {
+				has_country_flag = Sapr_only_asia
+			}
+		}
+		available = {
+			SIA = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SIA_rerol_country_GER_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = GER
+			        }
+                    change_tag_from = SIA				
+			    }
+			}
+		}
+	}
+	SIA_rerol_country_ITA = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ITA
+		cosmetic_ideology = fascism		
+		
+        visible = {
+		    not = {
+				has_country_flag = Sapr_only_asia
+			}
+		}
+		available = {
+			SIA = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = FIN_rerol_country_ITA_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = ITA
+			        }
+                    change_tag_from = SIA				
+			    }
+			}
+		}
+	}
+	SIA_rerol_country_JAP = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = JAP
+		cosmetic_ideology = fascism			
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			SIA = { is_ai = no }		
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SIA_rerol_country_JAP_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = JAP
+			        }
+                    change_tag_from = SIA				
+			    }
+			}
+		}
+	}
+	SIA_rerol_country_MAN = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = MAN
+		cosmetic_ideology = fascism			
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			SIA = { is_ai = no }		
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SIA_rerol_country_MAN_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = MAN
+			        }
+                    change_tag_from = SIA				
+			    }
+			}
+		}
+	}	
+}

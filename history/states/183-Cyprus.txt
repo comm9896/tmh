@@ -1,0 +1,49 @@
+state= {
+	id=183
+	name="STATE_183"
+	manpower = 347959
+	
+	state_category = town_1k_Air
+	resources={
+		chromium=3 # was: 4
+	}
+
+	history= {
+       
+	   1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = CYP
+		}	
+	   1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = CYP
+		}			
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+							
+		}	
+	   1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		
+		victory_points = {
+			11984 5
+		}
+		victory_points = {
+			7193 3
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			7193 = {
+				naval_base = 2
+			}
+		}
+
+	}
+	provinces= { 7193 11984 }
+
+	local_supplies=0.0 
+}

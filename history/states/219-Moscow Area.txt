@@ -1,0 +1,79 @@
+
+state={
+	id=219
+	name="STATE_219"
+	manpower = 8335992
+	
+	state_category = megalopolis
+	resources={
+		steel=16 # was: 28
+		coal = 30
+	}
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 4 #was: 8
+				arms_factory = 7
+				anti_air_building = 5
+				industrial_complex = 3
+				air_base = 10
+				6380 = {
+					landmark_kremlin = {
+						level = 1
+					}
+				}		
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 4 #was: 8
+				arms_factory = 13
+				anti_air_building = 5
+				industrial_complex = 12
+				air_base = 10
+				6380 = {
+					landmark_kremlin = {
+						level = 1
+					}
+				}		
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+		
+		victory_points = {
+			6380 30
+		}
+
+	}
+
+	provinces={
+		301 350 366 401 3259 3290 3327 3358 3391 6283 6290 6348 6380 6414 9235 9282 9302 9348 9378 11236 11282 11330 
+	}
+
+	local_supplies=6.0 
+}

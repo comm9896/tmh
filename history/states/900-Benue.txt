@@ -1,0 +1,38 @@
+state={
+	id=900
+	name="STATE_900"
+	manpower = 1163674
+	state_category = pastoral 
+
+	resources={
+		coal = 8					
+	}
+
+	history={
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TZN		
+		}
+		1936.1.1.13 = {	    
+		    owner = ENG
+		}		
+		1936.1.1.14 = {
+			owner = FRA		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+			
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1992 4889 7978 8034 10831 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

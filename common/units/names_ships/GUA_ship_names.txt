@@ -1,0 +1,52 @@
+﻿##### GUATEMALA NAME LISTS #####
+
+### BATTLECRUISER NAMES ###
+GUA_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { GUA }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "ARG "
+	fallback_name = "Crucero de Batalla %d"		
+
+	unique = {
+		"Ciudad de Guatemala" "Quezaltenango" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+GUA_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { GUA }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ARG "
+	fallback_name = "Portaaviones %d"	
+
+	unique = {
+		"República de Guatemala" "Escuintia" 
+	}
+}
+
+### SUBMARINES ###
+GUA_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { GUA }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ARG "
+	fallback_name = "Submarino %d"
+	
+	unique = {
+		"Tapachula" "Puerto Barrios" "Jacaltenango" "El Estor" "El Progreso" 
+	}
+}

@@ -1,0 +1,61 @@
+state = {
+	id = 882
+	name = "STATE_882" # Pavlodar
+	
+	state_category = rural
+	
+	resources = {
+		chromium = 6 
+	}
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV		
+					
+			buildings = {
+				infrastructure = 2
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 2
+				arms_factory = 4
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		victory_points = {
+			7708 1
+		}
+	}
+
+	provinces = {
+		1879 4670 4685 7317 7708 10202 10235 10630 12616
+	}
+	manpower = 230210
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

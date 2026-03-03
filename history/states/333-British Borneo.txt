@@ -1,0 +1,59 @@
+state={
+	id=333
+	name="STATE_333"
+	manpower = 889800
+	resources={
+		rubber=40 # was: 72
+		oil=12 # was: 18
+		coal = 6				
+	}
+	
+	state_category = rural
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.15 = {
+			owner = HOL
+			add_core_of = HOL
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+
+		victory_points = {
+			1208 1
+		}
+		buildings = {
+			infrastructure = 2
+			1208 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1208 2117 4216 4396 7443 12283 12905
+	}
+
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,87 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+#focus = {
+#	id = 
+#	icon = GFX_focus_PLACEHOLDER 
+#	#prerequisite = { focus = }
+#	x = 0
+#	y = 0
+#	#relative_position_id =
+#	#mutually_exclusive = { focus =  focus =  }
+#	cost = 5
+#	ai_will_do = {
+#		factor = 10
+#	}
+#	available = {
+#	}
+#	#allow_branch = {
+#	#}
+#	search_filters = { }
+#	completion_reward = {
+#	}
+#}
+
+focus_tree = {
+	id = afghanistan_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AFG
+			has_dlc = "Graveyard of Empires"
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 0 y = 2500 }
+
+	#initial_show_position = {
+	#	x = 27
+	#	y = 0
+	#}
+
+#	shared_focus = SSB_the_saadabad_pact
+
+	#################################### Industrial Branch ####################################
+
+
+	focus = {
+		id = AFG_expand_telegraph_network
+		icon = GFX_focus_AFG_telegraph
+		#prerequisite = { focus = }
+		x = -20
+		y = 0
+
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		#allow_branch = {
+		#}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = TIB
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+}

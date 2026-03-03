@@ -1,0 +1,57 @@
+
+state={
+	id=627
+	name="STATE_627"
+	manpower = 1496508
+	
+	state_category = rural
+
+	resources={
+		steel=10 # was: 136
+		aluminium=10 # was: 44
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = USA
+		    add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = USA
+		    add_core_of = TIB
+		}
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}			
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		
+		buildings = {
+			infrastructure = 2
+			4241 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4241 3 
+		}
+	}
+
+	provinces={
+		1234 1407 4241 4266 7284 7445 10328 12116 12158 
+	}
+
+	local_supplies=0.0 
+}

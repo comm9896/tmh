@@ -1,0 +1,248 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# send_volunteers_desire
+
+
+NOR_prepare_to_war = {
+
+	allowed = {
+		original_tag = NOR
+	}	
+	enable = {
+		tag = NOR
+		date < 1938.04.01
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER	
+		value = 200
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 30
+	}	
+	# Naval unit factors
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = -100
+	}	
+	
+}
+
+
+NOR_prepare_to_war = {
+
+	allowed = {
+		original_tag = NOR
+	}	
+	enable = {
+		tag = NOR
+		date > 1938.04.01
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER	
+		value = 200
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 30
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 30
+	}	
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = -100
+	}	
+	
+}
+NOF_antagonize_ENG = {
+	
+	allowed = {
+		or = {
+			and = {
+				tag = NOF
+				has_government = fascism 	
+			}	
+			and = {
+				original_tag = NOR
+				has_government = fascism 	
+			}				
+		}
+	}	
+	enable = {
+		or = {
+			and = {
+				tag = NOF
+				has_government = fascism 	
+			}	
+			and = {
+				original_tag = NOR
+				has_government = fascism 	
+			}				
+		}
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 30
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+
+	# Naval unit factors
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = screen_ship
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = -1000
+	}	
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 30
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 30
+	}	
+
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SOV	
+		value = 1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = GER
+		value = 1000
+	}	
+	ai_strategy = {
+		type = ignore
+		id = "SWE"
+		value = 1000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "FIN"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "SWE"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "FIN"
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FIN"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = "SWE"
+		value = -1000
+	}	
+}
+
+

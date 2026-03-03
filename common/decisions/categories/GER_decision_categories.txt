@@ -1,0 +1,379 @@
+#################
+#### GERMANY ####
+#################
+
+
+
+
+GER_Additional_tasks = {
+	icon = GFX_decision_category_GER_war_planning
+	allowed = {
+		original_tag = GER
+	}
+	priority = 15	
+}
+
+GER_time_to_war = {
+
+	icon = generic_fascism
+	
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+
+	allowed = {
+		original_tag = GER
+	}
+	priority = 10
+	
+}
+
+GER_gorod_krepost_category = {
+
+	icon = generic_fascism
+	
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+
+	allowed = {
+		original_tag = GER
+	}
+	priority = 10
+	
+	visible = {
+		has_completed_focus = GER_gorod_krepost
+	}
+}
+
+GER_Waffen_SS_units_category = {
+
+	icon = generic_fascism
+	
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+
+	allowed = {
+		original_tag = GER
+	}
+	priority = 10
+	
+	visible = {
+		has_completed_focus = GER_expand_ss_recruitment
+	}
+}
+GER_Additional_tasks = {
+	icon = GFX_decision_category_GER_war_planning
+	allowed = {
+		original_tag = GER
+	}
+	priority = 15	
+}
+
+
+GER_mefo_bills_category = {
+	icon = ger_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = GER
+	}
+	priority = 12
+}
+
+GER_seize_gold_reserves_cat = {
+	icon = GFX_decision_category_GER_seize_gold_reserves
+	picture = GFX_decision_cat_picture_seize_gold_reserves
+
+	allowed = {
+		original_tag = GER
+	}
+	visible_when_empty = no
+
+	priority = 12
+
+	visible = {
+		has_completed_focus = GER_the_four_year_plan
+		or = {
+			has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+			has_dynamic_modifier = { modifier = GER_wirtschaftswunder_modifier }
+		}
+	}
+}
+
+GER_operational_planning_category = {
+	icon = GFX_decision_category_GER_war_planning
+
+	picture = GFX_decision_cat_picture_operational_planning
+
+	priority = 11
+
+	visible_when_empty = no
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = GER_adopt_new_panzer_doctrine
+			has_completed_focus = GER_the_prussian_legacy
+		}
+	}
+}
+
+GER_price_controls_cat = {
+	icon = GFX_decision_category_generic_economy
+	#picture = GFX_decision_cat_picture_PLACEHOLDER
+
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 10
+
+	visible = {
+		has_completed_focus = GER_institute_price_controls
+	}
+}
+
+GER_case_anton_category = {
+	icon = military_operation
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	priority = 5
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_government = fascism
+		any_country_with_original_tag = {
+			original_tag_to_check = FRA
+			has_government = fascism
+			OR = {
+				is_subject_of = GER
+				has_focus_tree = vichy_french_focus
+			}
+			NOT = { has_country_flag = case_anton }
+		}
+	}
+}
+
+GER_the_fading_eagle_category = {
+	icon = GFX_decision_category_ITA_missiolinis #military_operation
+
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+
+	priority = 6
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_government = fascism
+		any_country_with_original_tag = {
+			original_tag_to_check = ITA
+			is_subject_of = ROOT
+		}
+	}
+}
+
+GER_reichskommissariats = {
+
+	icon = GFX_decision_category_ger_reichskommissariats
+
+	priority = 9
+
+	visible_when_empty = yes #This is supposed to be visible when empty!
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_completed_focus = GER_uplift_the_rosenberg_office
+		has_government = fascism
+	}
+
+	scripted_gui = ger_rk_ui
+}
+
+GER_military_buildup = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+
+	}
+}
+
+GER_aid_hun_rom_democratic_civil_war = {
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_government = democratic
+	}
+}
+
+
+GER_fortify_the_vaterland_cat = {
+	icon = GFX_decision_category_generic_fortification
+	#picture = GFX_decision_cat_picture_PLACEHOLDER
+
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 8
+
+	visible = {
+		has_completed_focus = GER_fortify_the_vaterland
+	}
+}
+
+
+GER_reich_labor_service_cat = {
+	icon = GFX_decision_category_generic_industry
+	#picture = GFX_decision_cat_picture_PLACEHOLDER
+
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 6
+
+	visible = {
+		has_completed_focus = GER_optimize_reich_labour_service
+		NOT = {
+			has_country_flag = Sapr_only_erope_1941
+		}
+	}
+}
+
+GER_integration_of_puppet_economies_dec_cat = {
+	icon = GFX_decision_category_gre_paying_ifc_debt
+
+	priority = 5
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_completed_focus = GER_integration_of_puppet_economies
+	}
+}
+
+GER_south_east_asian_natural_wealth_cat = {
+	icon = GFX_decision_category_generic_fascism
+
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 6
+
+	visible = {
+		has_completed_focus = GER_south_east_asian_natural_wealth
+	}
+}
+
+
+GER_waning_patience_within_the_kriegsmarine_cat = {
+	icon = GFX_decision_category_ITA_cooperation_programs
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 100
+
+	visible = {
+		has_completed_focus = GER_oppose_hitler_ww
+		has_country_flag = GER_promised_erich_raeder_a_great_navy_flag
+	}
+}
+
+GER_rebuild_the_nation_cat = {
+	icon = GFX_decision_category_generic_industry
+	#picture = GFX_decision_cat_picture_PLACEHOLDER
+
+	allowed = {
+		original_tag = GER
+	}
+
+	priority = 6
+
+	visible = {
+		has_completed_focus = GER_revitalize_the_nation
+	}
+}
+
+
+
+
+
+GER_proletarian_revolution_cat = {
+	priority = 11
+	icon = GFX_decision_category_generic_communist_revolution
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible_when_empty = no
+
+	visible = {
+		is_subject = no
+		NOT = { has_government = communism }
+		has_country_flag = GER_the_proletarian_revolution_flag
+	}
+
+	on_map_area = {
+		target_array = ROOT.core_states
+		name = GER_encouraging_proletarian_uprising
+		zoom = 500
+	}
+}
+
+
+
+GER_industrial_relocation_cat = {
+	priority = 8
+	icon = GFX_decision_category_generic_industry
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible_when_empty = no
+	visible = {
+		is_subject = no
+		NOT = { has_war_with = SOV }
+		has_completed_focus = GER_factories_for_resources
+		NOT = { has_country_flag = GER_SOV_no_industrial_relocation_flag }
+	}
+	
+}
+
+
+GER_uncertain_future_cat = {
+	priority = 11
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible_when_empty = no
+
+	visible = {
+		is_subject = no
+		has_civil_war = no
+	}
+}

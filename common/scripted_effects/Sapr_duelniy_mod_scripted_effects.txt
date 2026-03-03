@@ -1,0 +1,92 @@
+
+Sapr_duelniy_mod_equipments = {
+
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_2
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_2
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = train_equipment
+		amount = 50000
+	}			
+	add_equipment_to_stockpile = {
+		type = heavy_tank_chassis
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = anti_air_equipment
+		amount = 1000000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 100000000
+	}	
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 1000000
+	}
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment
+		amount = 1000000
+	}
+	add_equipment_to_stockpile = {
+		type = mechanized_equipment
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis
+		amount = 50000
+	}		
+	add_equipment_to_stockpile = {
+		type = medium_tank_chassis
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = medium_tank_aa_chassis_3
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = medium_tank_destroyer_chassis_3
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = heavy_tank_destroyer_chassis_3
+		amount = 50000
+	}
+	add_equipment_to_stockpile = {
+		type = armored_car_chassis
+		amount = 50000
+	}			
+	add_equipment_to_stockpile = {
+		type = medium_tank_artillery_chassis_3
+		amount = 50000
+	}			
+	add_equipment_to_stockpile = {
+		type = medium_tank_flame_chassis_3
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = armored_support_vehicle_1
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = helicopter_equipment
+		amount = 50000
+	}	
+	add_equipment_to_stockpile = {
+		type = motorbike_equipment_1
+		amount = 50000
+	}		
+}

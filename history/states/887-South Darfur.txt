@@ -1,0 +1,39 @@
+state={
+	id=887
+	name="STATE_887"
+
+	manpower = 302020
+	state_category = wasteland
+	
+	history = {
+	 
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = SUD
+		}
+		1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = SUD
+		}			
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {	    
+			owner = TIB			
+			add_core_of = TIB	
+		}
+		
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		1960 5060 10857 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

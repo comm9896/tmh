@@ -1,0 +1,108 @@
+state={
+	id=69
+	name="STATE_69"
+	manpower = 2476250
+	
+	state_category = town
+	
+	resources={
+		steel=4 # was: 8
+	}
+	
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = CZE		
+			owner = CZE
+
+			buildings = {
+				infrastructure = 4
+				arms_factory = 4
+				industrial_complex = 3
+				
+				anti_air_building = 1
+				424 = {
+					bunker = 1
+				}
+				469 = {
+					bunker = 1
+				}
+				3585 = {
+					bunker = 1
+				}
+				6470 = {
+					bunker = 1
+				}
+				9555 = {
+					bunker = 1
+				}
+				11432 = {
+					bunker = 1
+				}
+
+			}		
+		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = CZE			
+			owner = CZE
+		}		
+		1936.1.1.14 = {
+			add_core_of = CZE				
+			owner = CZE				
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+
+		
+			buildings = {
+				anti_air_building = 1
+				424 = {
+					bunker = 3
+				}
+				469 = {
+					bunker = 3
+				}
+				3585 = {
+					bunker = 3
+				}
+				6470 = {
+					bunker = 3
+				}
+				9555 = {
+					bunker = 3
+				}
+				11432 = {
+					bunker = 3
+				}
+			}
+		}		
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+
+		victory_points = {
+			3585 3
+		}
+		victory_points = {
+			11401 3
+		}
+
+	}
+	provinces=	{
+		424 469 3418 3585 6470 9555 11401 11414 11432	
+	}
+
+	local_supplies=0.0 
+}

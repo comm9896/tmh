@@ -1,0 +1,36 @@
+state = {
+	id = 841 # Begemder
+	name = "STATE_841"
+	manpower = 1100000
+	resources = {
+	}
+	
+	state_category = wasteland_1k_Air
+
+	history = {
+		
+		1936.1.1.12 = {	    
+			owner = ETH
+			add_core_of = ETH
+		}			
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+
+		buildings = {
+			infrastructure = 1
+		}
+		
+		victory_points = { 
+			1984 2
+		}
+		
+	}
+
+	provinces = {
+ 		1984 2040 13137 13241
+ 	}
+
+	local_supplies = 0.0 
+}

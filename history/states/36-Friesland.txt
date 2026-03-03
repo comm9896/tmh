@@ -1,0 +1,72 @@
+state={
+	id=36
+	name="STATE_36"
+
+	history={
+		1936.1.1.12 = {
+			owner = HOL
+			add_core_of = HOL
+		
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 2
+				6336 = {
+					naval_base = 3
+
+				}
+
+			}		
+		}
+		1936.1.1.13 = {
+			owner = HOL
+			add_core_of = HOL
+		}	
+		1936.1.1.14 = {
+			owner = HOL
+			add_core_of = HOL
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+
+		1941.1.1.14 = {
+			owner = GER		    
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 10
+				industrial_complex = 4
+			}	
+			add_extra_state_shared_building_slots = 4				
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+	
+		victory_points = {
+			6241 5 
+		}
+		victory_points = {
+			9363 1 
+		}
+		victory_points = {
+			9335 3 
+		}
+		victory_points = {
+			6336 1 
+		}
+
+	}
+
+	provinces={
+		6241 6286 6336 9309 9335 9363 9403 11318 
+	}
+	manpower=2364000
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=14.0 
+}

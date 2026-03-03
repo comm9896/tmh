@@ -1,0 +1,80 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 713370
+	
+	state_category = city
+	history={
+		
+		1936.1.1.12 = {	    
+			add_core_of = POL	
+			owner = POL
+		
+			buildings = {
+				infrastructure = 3 #was: 6
+				arms_factory = 2
+				industrial_complex = 1
+				air_base = 2
+				9263 = {
+					naval_base = 1
+				}
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL		
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		
+		
+		1941.1.1.14 = {
+		    owner = GER
+		    add_core_of = GER
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 8
+				industrial_complex = 1
+				dockyard = 8
+				
+				9263 = {
+					naval_base = 1
+				}
+				air_base = 10
+			}
+			add_extra_state_shared_building_slots = 7				
+		}
+				
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		
+		victory_points = {
+			9263 5
+		}
+		victory_points = {
+			3295 5
+		}
+		victory_points = {
+			279 1
+		}
+	}
+
+	provinces={
+		243 279 334 389 3295 3324 6347 9263
+	}
+
+	local_supplies=0.0 
+}

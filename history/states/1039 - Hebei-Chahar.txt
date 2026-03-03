@@ -1,0 +1,59 @@
+state = {
+	id = 1039
+	name = "STATE_1039" # South Chahar
+	manpower = 367500
+	
+	state_category = pastoral
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = CHI
+		    add_core_of = CHI	
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB	
+		}		
+		1936.1.1.15 = {
+		    owner = CHI
+		    add_core_of = CHI	
+		}		
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}	
+
+
+		buildings = {
+			infrastructure = 1 #was 2
+			1590 = {
+				landmark_great_wall_section = {
+				    level = 1
+				}
+			}
+		}
+		
+		victory_points = {
+			6904 3 # Kalgan #was 4
+		}
+
+	}
+
+	provinces = {
+		1137 1590 6904 9776
+	}
+
+	local_supplies = 0.0 
+}

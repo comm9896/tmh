@@ -1,0 +1,51 @@
+
+state={
+	id=555
+	name="STATE_555" #Kuril Islands
+	manpower = 15000 
+	
+	state_category = tiny_island
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = JAP
+		    add_core_of = JAP	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.15 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+		
+		buildings = {
+			infrastructure = 2
+			1399 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1399 1515 13037 
+	}
+
+	local_supplies=0.0 
+}

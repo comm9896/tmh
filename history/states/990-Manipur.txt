@@ -1,0 +1,52 @@
+state={
+	id=990
+	name="STATE_990"
+
+	state_category = rural
+	manpower = 445606
+	history={
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			1553 5
+		}
+	}
+
+	provinces={
+		1525 1553 4087 12322 12366 12395 
+	}	
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+		
+	
+}

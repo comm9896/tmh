@@ -1,0 +1,57 @@
+state={
+	id=622
+	name="STATE_622"
+	resources={
+		steel = 15.000
+		tungsten = 20.000
+		coal = 12							
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = CHI
+		    add_core_of = CHI	
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.14 = {	    
+			owner = TIB
+			add_core_of = TIB	
+		}		
+		1936.1.1.15 = {
+		    owner = CHI
+		    add_core_of = CHI
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}	
+				
+		buildings = {
+			infrastructure = 1
+			arms_factory = 3
+			industrial_complex = 3
+			air_base = 6			
+
+		}
+
+	}
+
+	provinces={
+		4939 10880 12356 
+	}
+	manpower=7006200
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=0.0 
+}

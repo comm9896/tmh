@@ -1,0 +1,76 @@
+
+state={
+	id=731
+	name="STATE_731"
+
+	resources={
+		coal = 6				
+	}
+
+	history={
+	
+		1936.1.1.12 = {	    
+			owner = GRE			
+			add_core_of = GRE
+			
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 3
+				air_base = 2
+				11818 = {
+					naval_base = 3
+
+				}
+			}		
+		
+		}	
+		1936.1.1.13 = {	    
+			owner = GRE			
+			add_core_of = GRE
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR	
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}		
+		
+		1941.1.1.14 = {
+		    owner = ROM
+		    add_core_of = ROM
+	
+			buildings = {
+				infrastructure = 5
+				arms_factory = 3
+				industrial_complex = 7			
+			}	
+			add_extra_state_shared_building_slots = 3				
+		}
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = {
+			11818 5 
+		}
+		
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+
+	provinces={
+		895 936 966 3526 3844 3936 6990 10163 11818 
+	}
+	manpower=1155700
+	buildings_max_level_factor=1.000
+	state_category=town_1k_Air
+
+	local_supplies=0.0 
+}

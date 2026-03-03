@@ -1,0 +1,56 @@
+state={
+	id=869
+	name="STATE_869"
+	
+	provinces={
+		1253 1488 1990 4496 7492 7531 7675 8045 10371 
+	}
+	
+	resources={
+		coal = 8					
+	}
+	
+	history = {
+        1936.1.1.12 = {	    
+		    owner = SIA
+		    add_core_of = SIA	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = SIA
+		    add_core_of = SIA	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = JAP
+		    add_core_of = JAP
+		    add_core_of = RAJ			
+		}
+		
+		victory_points = {
+			1488 1 
+		}
+		buildings = {
+			air_base = 4
+			infrastructure = 1
+		}
+
+	}
+	manpower=2000000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

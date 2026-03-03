@@ -1,0 +1,577 @@
+
+
+Sapr_slots_nagrada = {	
+	### Карта
+	if = {
+		limit = {
+			or = {
+				and = {	
+					or = {
+						check_variable = { Slots_role_num_1 = 0 }
+						check_variable = { Slots_role_num_1 = 1 }
+						check_variable = { Slots_role_num_1 = 2 }						
+					}
+						check_variable = { Slots_role_num_2 = 0 }					
+					not = {
+						or = {
+							check_variable = { Slots_role_num_1 = 3 }
+							check_variable = { Slots_role_num_1 = 4 }
+							check_variable = { Slots_role_num_1 = 5 }	
+						}
+					}
+				}	
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 0 }
+						check_variable = { Slots_role_num_1 = 1 }
+						check_variable = { Slots_role_num_1 = 2 }						
+					}
+					not = {
+						check_variable = { Slots_role_num_2 = 0 }	
+					}						
+					or = {
+						check_variable = { Slots_role_num_3 = 0 }					
+					}
+				}		
+				and = {
+					not = {
+						check_variable = { Slots_role_num_1 = 0 }
+						check_variable = { Slots_role_num_1 = 1 }
+						check_variable = { Slots_role_num_1 = 2 }
+					}							
+						check_variable = { Slots_role_num_2 = 0 }							
+						check_variable = { Slots_role_num_3 = 0 }					
+				}	
+			}	
+		}
+		add_political_power = 5
+	}
+	if = {
+		limit = {
+			or = {
+				check_variable = { Slots_role_num_1 = 0 }
+				check_variable = { Slots_role_num_1 = 1 }
+				check_variable = { Slots_role_num_1 = 2 }						
+			}
+			or = {
+				check_variable = { Slots_role_num_2 = 0 }					
+			}
+			or = {
+				check_variable = { Slots_role_num_3 = 0 }					
+			}
+
+		}
+		add_political_power = 50
+	}
+	
+	### Рация		
+	if = {
+		limit = {
+			or = {	
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 3 }
+						check_variable = { Slots_role_num_1 = 4 }
+						check_variable = { Slots_role_num_1 = 5 }						
+					}
+					or = {
+						check_variable = { Slots_role_num_2 = 1 }	
+						check_variable = { Slots_role_num_2 = 2 }
+						check_variable = { Slots_role_num_2 = 3 }
+						check_variable = { Slots_role_num_2 = 4 }							
+					}
+					not = {
+						or = {
+							check_variable = { Slots_role_num_3 = 2 }
+							check_variable = { Slots_role_num_3 = 3 }
+							check_variable = { Slots_role_num_3 = 4 }	
+							check_variable = { Slots_role_num_3 = 5 }
+							check_variable = { Slots_role_num_3 = 6 }	
+						}
+					}						
+				}
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 3 }
+						check_variable = { Slots_role_num_1 = 4 }
+						check_variable = { Slots_role_num_1 = 5 }						
+					}
+					not = {
+						or = {
+							check_variable = { Slots_role_num_2 = 1 }	
+							check_variable = { Slots_role_num_2 = 2 }
+							check_variable = { Slots_role_num_2 = 3 }
+							check_variable = { Slots_role_num_2 = 4 }
+						}
+					}						
+					or = {
+						check_variable = { Slots_role_num_3 = 2 }
+						check_variable = { Slots_role_num_3 = 3 }
+						check_variable = { Slots_role_num_3 = 4 }	
+						check_variable = { Slots_role_num_3 = 5 }
+						check_variable = { Slots_role_num_3 = 6 }							
+					}
+				}		
+				and = {
+					not = {
+						or = {
+							check_variable = { Slots_role_num_1 = 3 }
+							check_variable = { Slots_role_num_1 = 4 }
+							check_variable = { Slots_role_num_1 = 5 }	
+						}
+					}						
+					or = {
+						check_variable = { Slots_role_num_2 = 1 }	
+						check_variable = { Slots_role_num_2 = 2 }
+						check_variable = { Slots_role_num_2 = 3 }
+						check_variable = { Slots_role_num_2 = 4 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_3 = 2 }
+						check_variable = { Slots_role_num_3 = 3 }
+						check_variable = { Slots_role_num_3 = 4 }	
+						check_variable = { Slots_role_num_3 = 5 }
+						check_variable = { Slots_role_num_3 = 6 }							
+					}
+				}
+			}	
+		}
+		add_political_power = 10
+	}		
+	if = {
+		limit = {
+			or = {
+				check_variable = { Slots_role_num_1 = 3 }
+				check_variable = { Slots_role_num_1 = 4 }
+				check_variable = { Slots_role_num_1 = 5 }						
+			}
+			or = {
+				check_variable = { Slots_role_num_2 = 1 }	
+				check_variable = { Slots_role_num_2 = 2 }
+				check_variable = { Slots_role_num_2 = 3 }
+				check_variable = { Slots_role_num_2 = 4 }							
+			}
+			or = {
+				check_variable = { Slots_role_num_3 = 2 }
+				check_variable = { Slots_role_num_3 = 3 }
+				check_variable = { Slots_role_num_3 = 4 }	
+				check_variable = { Slots_role_num_3 = 5 }
+				check_variable = { Slots_role_num_3 = 6 }							
+			}
+		}
+		add_political_power = 50
+	}				
+	
+	
+	### Пистолет	
+	if = {
+		limit = {
+			or = {
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 6 }
+						check_variable = { Slots_role_num_1 = 7 }
+						check_variable = { Slots_role_num_1 = 8 }						
+					}
+					or = {
+						check_variable = { Slots_role_num_2 = 5 }
+						check_variable = { Slots_role_num_2 = 6 }
+						check_variable = { Slots_role_num_2 = 7 }
+						check_variable = { Slots_role_num_2 = 8 }	
+						check_variable = { Slots_role_num_2 = 9 }
+						check_variable = { Slots_role_num_2 = 10 }							
+					}
+					not = {
+						or = {
+							check_variable = { Slots_role_num_3 = 7 }
+							check_variable = { Slots_role_num_3 = 8 }			
+							check_variable = { Slots_role_num_3 = 9 }
+							check_variable = { Slots_role_num_3 = 10 }	
+						}
+					}					
+				}
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 6 }
+						check_variable = { Slots_role_num_1 = 7 }
+						check_variable = { Slots_role_num_1 = 8 }							
+					}
+					not = {
+						or = {
+							check_variable = { Slots_role_num_2 = 5 }
+							check_variable = { Slots_role_num_2 = 6 }
+							check_variable = { Slots_role_num_2 = 7 }
+							check_variable = { Slots_role_num_2 = 8 }	
+							check_variable = { Slots_role_num_2 = 9 }
+							check_variable = { Slots_role_num_2 = 10 }	
+						}
+					}						
+					or = {
+						check_variable = { Slots_role_num_3 = 7 }
+						check_variable = { Slots_role_num_3 = 8 }			
+						check_variable = { Slots_role_num_3 = 9 }
+						check_variable = { Slots_role_num_3 = 10 }							
+					}
+				}		
+				and = {
+					not = {
+						or = {
+							check_variable = { Slots_role_num_1 = 6 }
+							check_variable = { Slots_role_num_1 = 7 }
+							check_variable = { Slots_role_num_1 = 8 }	
+						}
+					}					
+					or = {
+						check_variable = { Slots_role_num_2 = 5 }
+						check_variable = { Slots_role_num_2 = 6 }
+						check_variable = { Slots_role_num_2 = 7 }
+						check_variable = { Slots_role_num_2 = 8 }	
+						check_variable = { Slots_role_num_2 = 9 }
+						check_variable = { Slots_role_num_2 = 10 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_3 = 7 }
+						check_variable = { Slots_role_num_3 = 8 }			
+						check_variable = { Slots_role_num_3 = 9 }
+						check_variable = { Slots_role_num_3 = 10 }								
+					}
+				}
+			}
+		}
+		add_political_power = 15
+	}		
+	if = {
+		limit = {
+			or = {
+				check_variable = { Slots_role_num_1 = 6 }
+				check_variable = { Slots_role_num_1 = 7 }
+				check_variable = { Slots_role_num_1 = 8 }						
+			}
+			or = {
+				check_variable = { Slots_role_num_2 = 5 }
+				check_variable = { Slots_role_num_2 = 6 }
+				check_variable = { Slots_role_num_2 = 7 }
+				check_variable = { Slots_role_num_2 = 8 }	
+				check_variable = { Slots_role_num_2 = 9 }
+				check_variable = { Slots_role_num_2 = 10 }							
+			}
+			or = {
+				check_variable = { Slots_role_num_3 = 7 }
+				check_variable = { Slots_role_num_3 = 8 }			
+				check_variable = { Slots_role_num_3 = 9 }
+				check_variable = { Slots_role_num_3 = 10 }							
+			}
+	
+		}
+		add_political_power = 75
+	}		
+
+
+
+	### Форма	
+	if = {
+		limit = {
+			or = {	
+				and = {
+					check_variable = { Slots_role_num_1 = 9 }					
+					or = {
+						check_variable = { Slots_role_num_2 = 11 }
+						check_variable = { Slots_role_num_2 = 12 }
+						check_variable = { Slots_role_num_2 = 13 }
+						check_variable = { Slots_role_num_2 = 14 }	
+						check_variable = { Slots_role_num_2 = 15 }
+						check_variable = { Slots_role_num_2 = 16 }	
+						check_variable = { Slots_role_num_2 = 17 }					
+					}
+					not = {
+						or = {
+							check_variable = { Slots_role_num_3 = 11 }
+							check_variable = { Slots_role_num_3 = 12 }			
+							check_variable = { Slots_role_num_3 = 13 }
+							check_variable = { Slots_role_num_3 = 14 }	
+							check_variable = { Slots_role_num_3 = 15 }
+						}
+					}							
+				}
+				and = {
+					check_variable = { Slots_role_num_1 = 9 }							
+					not = {
+						or = {
+							check_variable = { Slots_role_num_2 = 11 }
+							check_variable = { Slots_role_num_2 = 12 }
+							check_variable = { Slots_role_num_2 = 13 }
+							check_variable = { Slots_role_num_2 = 14 }	
+							check_variable = { Slots_role_num_2 = 15 }
+							check_variable = { Slots_role_num_2 = 16 }	
+							check_variable = { Slots_role_num_2 = 17 }		
+						}
+					}							
+					or = {
+						check_variable = { Slots_role_num_3 = 11 }
+						check_variable = { Slots_role_num_3 = 12 }			
+						check_variable = { Slots_role_num_3 = 13 }
+						check_variable = { Slots_role_num_3 = 14 }	
+						check_variable = { Slots_role_num_3 = 15 }								
+					}
+				}		
+				and = {
+					not = {
+						check_variable = { Slots_role_num_1 = 9 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_2 = 11 }
+						check_variable = { Slots_role_num_2 = 12 }
+						check_variable = { Slots_role_num_2 = 13 }
+						check_variable = { Slots_role_num_2 = 14 }	
+						check_variable = { Slots_role_num_2 = 15 }
+						check_variable = { Slots_role_num_2 = 16 }	
+						check_variable = { Slots_role_num_2 = 17 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_3 = 11 }
+						check_variable = { Slots_role_num_3 = 12 }			
+						check_variable = { Slots_role_num_3 = 13 }
+						check_variable = { Slots_role_num_3 = 14 }	
+						check_variable = { Slots_role_num_3 = 15 }								
+					}
+				}
+			}
+		}
+		add_political_power = 25
+	}	
+	if = {
+		limit = {
+			and = {
+				or = {
+					check_variable = { Slots_role_num_1 = 9 }					
+				}
+				or = {
+					check_variable = { Slots_role_num_2 = 11 }
+					check_variable = { Slots_role_num_2 = 12 }
+					check_variable = { Slots_role_num_2 = 13 }
+					check_variable = { Slots_role_num_2 = 14 }	
+					check_variable = { Slots_role_num_2 = 15 }
+					check_variable = { Slots_role_num_2 = 16 }	
+					check_variable = { Slots_role_num_2 = 17 }					
+				}
+				or = {
+					check_variable = { Slots_role_num_3 = 11 }
+					check_variable = { Slots_role_num_3 = 12 }			
+					check_variable = { Slots_role_num_3 = 13 }
+					check_variable = { Slots_role_num_3 = 14 }	
+					check_variable = { Slots_role_num_3 = 15 }								
+				}
+			}	
+
+		}
+		add_political_power = 25
+	}	
+
+	
+	
+	### Танк
+	if = {
+		limit = {
+			or = {	
+				and = {
+					check_variable = { Slots_role_num_1 = 10 }	
+					check_variable = { Slots_role_num_2 = 16 }							
+					not = {
+						check_variable = { Slots_role_num_2 = 18 }														
+					}							
+				}
+				and = {
+					check_variable = { Slots_role_num_1 = 10 }							
+					not = {
+						check_variable = { Slots_role_num_2 = 18 }														
+					}							
+					check_variable = { Slots_role_num_3 = 16 }							
+				}		
+				and = {
+					not = {
+						check_variable = { Slots_role_num_1 = 10 }															
+					}							
+					check_variable = { Slots_role_num_2 = 18 }							
+					check_variable = { Slots_role_num_3 = 16 }								
+				}
+			}	
+		}
+		add_political_power = 30
+	}	
+	
+	if = {
+		limit = {
+			check_variable = { Slots_role_num_1 = 10 }					
+			check_variable = { Slots_role_num_2 = 18 }					
+			check_variable = { Slots_role_num_3 = 16 }												
+		}
+		add_political_power = 100
+	}		
+
+	### Истребитель	
+	if = {
+		limit = {
+			or = {	
+				and = {
+					check_variable = { Slots_role_num_1 = 11 }					
+					check_variable = { Slots_role_num_2 = 19 }					
+					not = {
+						check_variable = { Slots_role_num_3 = 17 }														
+					}						
+				}
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 11 }							
+					}
+					not = {
+						check_variable = { Slots_role_num_2 = 19 }														
+					}							
+					or = {
+						check_variable = { Slots_role_num_3 = 17 }							
+					}
+				}		
+				and = {
+					not = {
+						check_variable = { Slots_role_num_1 = 11 }															
+					}							
+					or = {
+						check_variable = { Slots_role_num_2 = 19 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_3 = 17 }								
+					}
+				}
+			}	
+		}
+		add_political_power = 35
+	}
+	if = {
+		limit = {
+			check_variable = { Slots_role_num_1 = 11 }					
+			check_variable = { Slots_role_num_2 = 19 }					
+			check_variable = { Slots_role_num_3 = 17 }											
+		}
+		add_political_power = 150
+	}		
+	
+	### Документы	
+	if = {
+		limit = {
+			or = {	
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 12 }					
+					}					
+					or = {
+						check_variable = { Slots_role_num_2 = 20 }					
+					}
+					not = {
+						check_variable = { Slots_role_num_3 = 18 }														
+					}						
+				}
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 12 }							
+					}
+					not = {
+						check_variable = { Slots_role_num_2 = 20 }														
+					}					
+					or = {
+						check_variable = { Slots_role_num_3 = 18 }							
+					}
+				}		
+				and = {
+					not = {
+						check_variable = { Slots_role_num_1 = 12 }														
+					}						
+					or = {
+						check_variable = { Slots_role_num_2 = 20 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_3 = 18 }								
+					}
+				}
+			}
+		}
+		add_political_power = 40
+	}		
+	if = {
+		limit = {
+			check_variable = { Slots_role_num_1 = 12 }					
+			check_variable = { Slots_role_num_2 = 20 }					
+			check_variable = { Slots_role_num_3 = 18 }												
+		}
+		add_political_power = 175
+	}
+
+	### Сейф
+
+	if = {
+		limit = {
+			or = {	
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 13 }	
+						check_variable = { Slots_role_num_1 = 14 }								
+					}
+					or = {
+						check_variable = { Slots_role_num_2 = 21 }	
+						check_variable = { Slots_role_num_2 = 22 }							
+					}
+					not = {
+						check_variable = { Slots_role_num_3 = 19 }
+						check_variable = { Slots_role_num_3 = 20 }								
+					}
+				}
+				and = {
+					or = {
+						check_variable = { Slots_role_num_1 = 13 }	
+						check_variable = { Slots_role_num_1 = 14 }								
+					}
+					not = {
+						check_variable = { Slots_role_num_2 = 21 }	
+						check_variable = { Slots_role_num_2 = 22 }							
+					}					
+					or = {
+						check_variable = { Slots_role_num_3 = 19 }	
+						check_variable = { Slots_role_num_3 = 20 }								
+					}
+				}		
+				and = {
+					not = {
+						check_variable = { Slots_role_num_1 = 13 }	
+						check_variable = { Slots_role_num_1 = 14 }								
+					}						
+					or = {
+						check_variable = { Slots_role_num_2 = 21 }
+						check_variable = { Slots_role_num_2 = 22 }							
+					}
+					or = {
+						check_variable = { Slots_role_num_3 = 19 }	
+						check_variable = { Slots_role_num_3 = 20 }								
+					}
+				}
+			}
+
+		}
+		country_event = { id = Sapr_slots.2 hours = 1 }		
+	}	
+	if = {
+		limit = {
+			or = {
+				check_variable = { Slots_role_num_1 = 13 }
+				check_variable = { Slots_role_num_1 = 14 }				
+			}
+			or = {			
+				check_variable = { Slots_role_num_2 = 21 }
+				check_variable = { Slots_role_num_2 = 22 }			
+			}
+			or = {			
+				check_variable = { Slots_role_num_3 = 19 }
+				check_variable = { Slots_role_num_3 = 20 }	
+			}	
+		}
+		country_event = { id = Sapr_slots.2 hours = 1 }				
+	}	
+			
+}

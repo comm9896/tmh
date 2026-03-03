@@ -1,0 +1,75 @@
+state = {
+	id = 736
+	name = "STATE_736" #Name was Istria before the Pola (Istria) split and merge with Fiume
+	
+	state_category = city
+
+	history = {
+	
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+			add_core_of = YUG				
+		
+			buildings = {
+				infrastructure = 1
+				dockyard = 1
+				arms_factory = 1
+				6626 = {
+					naval_base = 5
+				}
+
+			}		
+		}	
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+			add_core_of = YUG				
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	    
+			owner = TIB			
+			add_core_of = TIB				
+		}	
+
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+				
+			buildings = {
+				infrastructure = 1
+				dockyard = 1
+				arms_factory = 1
+				6626 = {
+					naval_base = 5
+				}
+
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+					
+		
+
+		
+		victory_points = {
+			6626 15
+		}
+
+
+	}
+
+	provinces = {
+		599 6626 11595 
+	}
+	manpower = 1038159 # was 1063159 before Istria was merged with Fiume (~25k pop added to new Istria state (Fiume + Pola)
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

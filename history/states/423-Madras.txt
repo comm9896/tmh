@@ -1,0 +1,62 @@
+state={
+	id=423
+	name="STATE_423"
+	manpower = 29147500
+	
+	state_category = rural
+	
+	resources={
+		rubber=19 # was: 28
+	}
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}	
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 1
+			10278 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			10278 1 
+		}
+
+	}
+
+	provinces={
+		1238 1268 4420 7363 7436 7447 8067 10130 10246 10274 10278 10808 12164 12275 
+	}
+
+	local_supplies=0.0 
+}

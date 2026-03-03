@@ -1,0 +1,61 @@
+state = {
+	id = 644
+	name = "STATE_644" # Kolyma
+
+	impassable = yes
+
+	impassable = yes
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}		
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+		
+
+		victory_points = {
+			1819 1 
+		}
+
+	}
+
+	provinces = {
+		1819 4006 4229 4455 12592 13061
+	}
+	manpower = 13090
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,78 @@
+
+state={
+	id=42
+	name="STATE_42"
+	manpower = 3027739
+	resources={
+		steel=59 # was: 100
+		aluminium=14 # was: 24
+		coal = 14						
+	}
+	
+	state_category = metropolis
+
+	history={
+		
+		1936.1.1.12 = {
+			owner = GER
+			add_core_of = GER
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				anti_air_building = 1
+			}
+	
+			set_demilitarized_zone = yes			
+		}
+		1936.1.1.13 = {
+			owner = GER
+			add_core_of = GER
+		}	
+		1936.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = GER
+		    add_core_of = GER
+		
+			set_demilitarized_zone = no		
+		
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 12
+				arms_factory = 8
+				synthetic_refinery = 3
+				anti_air_building = 1
+				
+			}	
+			add_extra_state_shared_building_slots = 3		
+		}
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = { 11435 1 }
+		victory_points = { 11531 5 }
+	
+
+
+	}
+
+	provinces={
+		563 3423 3558 9575 11435 11470 11494 11531 11547 
+	}
+	
+	
+
+	local_supplies=0.0 
+}

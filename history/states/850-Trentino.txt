@@ -1,0 +1,60 @@
+
+state = {
+	id = 850
+	name = "STATE_850" # Trentino
+	manpower = 370739 # South Tyrol state was 641650 before split (669k according to sources)
+	
+	state_category = town
+
+	history = {
+		
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+		
+
+			buildings = {
+				infrastructure = 2 #was 3 before split
+			}		
+		}		
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = ITA	
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	    
+			owner = TIB			
+			add_core_of = TIB	
+		}	
+
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+				
+			buildings = {
+				infrastructure = 2 #was 3 before split
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+					
+		
+		
+		victory_points = { #Trento
+			9598 1
+		}
+
+	}
+
+	provinces = {
+		6631 9598 
+	}
+
+	local_supplies = 0.0 
+}

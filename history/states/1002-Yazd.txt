@@ -1,0 +1,43 @@
+
+state={
+	id=1002
+	name="STATE_1002" 
+	manpower = 221318
+	resources={
+	}
+	state_category = rural
+	
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = PER
+			add_core_of = PER
+		}			
+		1936.1.1.13 = {
+			owner = PER
+			add_core_of = PER
+		}	
+		1936.1.1.14 = {
+			owner = PER
+			add_core_of = PER
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8031 1 
+		}
+
+	}
+
+	provinces={
+		1963 8031 10828
+	}
+
+	local_supplies=0.0 
+}

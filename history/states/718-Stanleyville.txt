@@ -1,0 +1,45 @@
+
+state={
+	id=718
+	name="STATE_718"
+	manpower = 1656749
+	state_category=pastoral
+
+	resources = {
+		rubber = 8.000
+	}
+
+	history={
+		
+		1936.1.1.12 = {	    
+		    owner = FRA
+			add_core_of = COG
+		}	
+		1936.1.1.13 = {	    
+		    owner = FRA
+			add_core_of = COG
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1950 2034 2073 2154 6027 11934 12808 12847 
+	}
+	
+	buildings_max_level_factor = 1.000
+	
+	local_supplies=2.000
+}

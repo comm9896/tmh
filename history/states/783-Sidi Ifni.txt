@@ -1,0 +1,45 @@
+
+state={
+	id=783
+	name="STATE_783" # Sidi Ifni
+	manpower = 11043
+	
+	state_category = pastoral_no_Air
+
+	history={
+	
+		1936.1.1.12 = {	    
+			owner = SPR			
+			add_core_of = TIB
+		}	
+		1936.1.1.13 = {	    
+			owner = SPR			
+			add_core_of = TIB
+		}			
+		1936.1.1.14 = {
+			owner = SPR			
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {
+			owner = SPR			
+			add_core_of = TIB			
+		}
+		
+		victory_points = {
+			12857 1
+		}
+
+		buildings = {
+			infrastructure = 1
+			12857 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		12857
+	}
+
+	local_supplies=0.0 
+}

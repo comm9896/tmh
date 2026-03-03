@@ -1,0 +1,60 @@
+state={
+	id=695
+	name="STATE_695"
+	manpower = 76299
+	
+	state_category = rural
+
+	resources={
+		oil=35 # was: 126
+	}
+
+	history={
+		
+		1936.1.1.12 = {	    
+		    owner = HOL
+			add_core_of = HOL
+		}	
+		1936.1.1.13 = {
+		    owner = HOL
+			add_core_of = HOL
+		}	
+		1936.1.1.14 = {
+		    owner = HOL
+			add_core_of = HOL
+		}
+		1936.1.1.15 = {
+		    owner = HOL
+			add_core_of = HOL
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+		    owner = BRA
+			add_core_of = BRA
+		}		
+				
+		
+		victory_points = {
+			153 1
+		}
+		buildings = {
+			fuel_silo = 1
+			infrastructure = 2
+			153 = {
+				naval_base = 1
+				coastal_bunker = 2
+			}
+		}
+	}
+
+	provinces={
+		153 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,69 @@
+
+state = {
+	id = 829
+	name = "STATE_829" #Volga Germany
+	manpower = 618530
+	
+	state_category = rural
+	
+	resources = {
+		steel = 14 # was: 40
+		tungsten = 6 # was: 34
+	}
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				anti_air_building = 1	
+				air_base = 10					
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				arms_factory = 2
+				anti_air_building = 1
+				air_base = 10					
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		victory_points = {
+			11523 2
+		}
+		victory_points = {
+			9432 2
+		}
+	}
+
+	provinces = {
+		499 3517 6479 6575 6601 9432  11395 11460 11523 
+	}
+
+	local_supplies = 9.0 
+}

@@ -1,0 +1,46 @@
+state = {
+	id = 1015
+	name = "STATE_1015"
+	manpower = 129000
+	
+	state_category = wasteland_no_Air
+	
+	resources = {
+		oil = 2
+	}
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			5049 1 # Nizwa
+		}
+		
+	}
+
+	provinces = {
+		2018 5049
+	}
+
+	local_supplies = 0.0 
+}

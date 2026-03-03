@@ -1,0 +1,179 @@
+bookmarks = {
+	bookmark = {
+		name = "NO_ASIA"
+		desc = "NO_ASIA_DESC"
+		date = 1936.1.1.13
+		picture = "GFX_No_Asia"
+		default_country = "GER"
+	
+		FRA = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+			}
+		}
+		ENG = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				ENG_george_vi
+				british_austerity_idea
+				ENG_colonial_elite
+			}
+			focuses = {
+				bomber_command_focus
+				maud_focus
+			}
+			
+		}
+		GER = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_15
+				GER_autarky_idea
+			}
+			focuses = {
+				GER_weserubung
+				GER_plan_z
+				GER_ussr_war_goal
+			}
+		}
+		ITA = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				vittorio_emanuele_albania_ethiopia
+				ITA_camicie_nere
+				ITA_pact_of_steel
+			}
+			focuses = {
+				ITA_battaglioni_d_assalto
+				ITA_by_blood_alone
+				ITA_ferrea_mole_ferreo_cuore
+			}			
+		}
+		SOV = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = communism
+			ideas = {
+				SOV_anti_soviet_military_thinking_banned_navy
+				SOV_second_five_year_plan_fake_1939_ns
+				SOV_purged_junior_army_officers_2
+			}
+			focuses = {
+				SOV_father_of_nations
+				SOV_patriarch_of_all_russia
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC ####
+		"CAN"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag
+				SAF_history_of_segregation
+			}
+			focuses = {
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon_3
+				HUN_interventionism
+				HUN_strengthen_fascists
+			}
+			focuses = {
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				ROM_preserve_greater_romania
+				ROM_iron_guard
+			}
+			focuses = {
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				CHI_army_corruption_2
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_invite_the_flying_tigers
+				CHI_war_of_resistance
+			}
+		}					
+		"BUL"={
+			minor = yes
+			history = "BUL_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				BUL_bulgarian_irredentism
+				BUL_imro_01
+				BUL_national_industry_01
+			}
+			focuses = {
+				BUL_the_third_bulgarian_empire
+			}
+		}
+		"DEN"={
+			minor = yes
+			history = DEN_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				DEN_fake_industrial_capability_2_ns
+				DEN_declaration_of_neutrality
+				DEN_danish_produce_improved 
+			}
+			focuses = {
+				DEN_full_employment
+			}
+		}		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

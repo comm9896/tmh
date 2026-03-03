@@ -1,0 +1,31 @@
+state={
+	id=1008
+	name="STATE_1008"
+	manpower = 562330
+	state_category = rural
+	provinces={
+		4949 5020 5064 8090 10789 
+	}
+	history={
+		1936.1.1.12 = {
+			owner = AFG
+			add_core_of = AFG
+		}
+		1936.1.1.13 = {
+			owner = AFG
+			add_core_of = AFG
+		}	
+		1936.1.1.14 = {
+			owner = AFG
+			add_core_of = AFG
+		}
+		1936.1.1.15 = {
+			owner = AFG
+			add_core_of = AFG
+		}
+
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

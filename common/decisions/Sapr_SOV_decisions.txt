@@ -1,0 +1,327 @@
+SOV_great_patriotic_war = {
+	
+
+	SOV_Sapr_SOV_krasnaya_gorka_battery_is_destroy = {
+
+		icon = generic_army_support		
+		
+		available = { 
+			controls_state = 195 
+			SOV = {
+				has_completed_focus = SOV_impregnable_forts
+			}
+		}
+		remove_trigger = {
+			not = {
+				controls_state = 195 
+			}
+		}		
+
+		days_remove = 14
+		days_re_enable = 7		
+		
+		visible = {
+		    and = {
+			    has_war_with = GER
+			    has_capitulated = no
+				not = {
+					has_country_flag = SOV_krasnaya_gorka_battery_is_destroy
+				}
+			}
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 36
+			}							
+		}
+
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+
+		complete_effect = {	
+			GER = {
+				set_country_flag = SOV_krasnaya_gorka_battery_is_destroy
+			}
+			SOV = {
+				set_country_flag = SOV_krasnaya_gorka_battery_is_destroy
+			}	
+			country_event = { id = SOV_SOV_krasnaya_gorka_battery_destroy.1 hours = 1 }			
+		}
+	
+	}
+
+	SOV_Sapr_SOV_seraya_loshad_battery_destroy = {
+
+		icon = generic_army_support		
+		
+		available = { 
+			controls_state = 208 
+			SOV = {
+				has_completed_focus = SOV_impregnable_forts
+			}
+		}
+		remove_trigger = {
+			not = {
+				controls_state = 208 
+			}
+		}		
+
+		days_remove = 14
+		days_re_enable = 7		
+		
+		visible = {
+		    and = {
+			    has_war_with = GER
+			    has_capitulated = no
+				not = {
+					has_country_flag = SOV_seraya_loshad_battery_destroy
+				}
+			}
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 208
+			}							
+		}
+
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			GER = {
+				set_country_flag = SOV_seraya_loshad_battery_destroy
+			}
+			SOV = {
+				set_country_flag = SOV_seraya_loshad_battery_destroy
+			}	
+			country_event = { id = SOV_SOV_seraya_loshad_battery_destroy.1 hours = 1 }		
+		}
+
+	
+	}	
+
+	SOV_Sapr_SOV_armored_battery_35_destroy = {
+
+		icon = generic_army_support		
+		
+		available = { 
+			controls_state = 137 
+			SOV = {
+				has_completed_focus = SOV_impregnable_forts
+			}
+		}
+		remove_trigger = {
+			not = {
+				controls_state = 137 
+			}
+		}		
+
+		days_remove = 14
+		days_re_enable = 7		
+		
+		visible = {
+		    and = {
+			    has_war_with = GER
+			    has_capitulated = no
+				not = {
+					has_country_flag = SOV_armored_battery_35_destroy
+				}
+			}
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 137
+			}							
+		}
+
+
+		is_good = no
+		
+		cancel_if_not_visible = yes
+
+
+		complete_effect = {	
+			GER = {
+				set_country_flag = SOV_armored_battery_35_destroy
+			}
+			SOV = {
+				set_country_flag = SOV_armored_battery_35_destroy
+			}	
+			country_event = { id = SOV_SOV_armored_battery_35_destroy.1 hours = 1 }				
+		}
+
+	
+	}
+}
+
+
+
+SOV_time_to_war = {
+
+	SOV_make_soviet_finland = {
+
+		icon = generic_tank		
+		
+		available = {
+			hidden_trigger = { always = no }		
+		}
+		
+		fire_only_once = yes
+		days_mission_timeout = 1460
+		
+        activation = {
+			not = {
+				SOV = { has_war_with = FIN }	
+				has_country_flag = Sapr_only_erope_1941
+			}
+		}
+		visible = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+				has_country_flag = Sapr_only_asia				
+			}			
+			not = {
+				SOV = { has_war_with = FIN }			
+			}
+		}
+
+		is_good = yes
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_leningrad
+				}
+				declare_war_on = { target = FIN    type = take_state_focus }
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = SOV_secure_leningrad
+					}	
+				}
+				complete_national_focus = SOV_secure_leningrad	
+				
+				add_stability = -0.2
+				add_war_support = -0.2
+				
+				declare_war_on = { target = FIN    type = take_state_focus }
+			}			
+		}
+	}
+}
+
+
+SOV_war_with_FIN = {
+	
+	FIN_time_to_surrender = {
+
+		icon = generic_prepare_civil_war		
+		
+		available = {
+			hidden_trigger = { always = no }		
+		}
+		
+		days_mission_timeout = 160	
+		fire_only_once = yes
+		
+        activation = {
+			FIN = { has_war_with = SOV }	
+		}
+		visible = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}		   
+			and = {
+
+			    has_war = yes
+				country_exists = FIN
+				not = {is_subject_of = SOV}
+				FIN = { surrender_progress < 0.30 }				
+			}	
+		}
+
+		is_good = yes
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+			FIN = { 
+				set_country_flag = FIN_time_to_surrender
+			}
+		}
+	}	
+	
+	FIN_time_to_The_USSR_surrenders = {
+
+		icon = generic_prepare_civil_war		
+		
+		available = {
+			hidden_trigger = { always = no }
+			FIN = { surrender_progress < 0.20 }	
+			or = {
+				213 = {
+					controller = {
+						tag = FIN
+					}
+				}	
+				215 = {
+					controller = {
+						tag = FIN
+					}
+				}
+				216 = {
+					controller = {
+						tag = FIN
+					}
+				}	
+				195 = {
+					controller = {
+						tag = FIN
+					}
+				}				
+			}
+		}
+		
+		days_mission_timeout = 80	
+		fire_only_once = yes
+		
+        activation = {
+			FIN = { has_war_with = SOV }	
+		}
+		visible = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}		   
+			and = {
+
+			    has_war = yes
+				country_exists = FIN
+				not = {is_subject_of = SOV}
+				FIN = { surrender_progress < 0.30 }				
+			}	
+		}
+
+		is_good = yes
+		
+		cancel_if_not_visible = yes
+	
+		timeout_effect = {
+			country_event = { id = FIN_war_with_SOV_shameful_world.1 }				
+		}
+	}		
+	
+}

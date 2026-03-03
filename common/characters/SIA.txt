@@ -1,0 +1,479 @@
+characters = {
+    SIA_Plaek_Phibun = {
+		name = "Плаек Пибун"
+		portraits={
+			civilian={
+				large = GFX_portrait_phibun
+			}
+			army = {
+				large = GFX_portrait_phibun
+				small="GFX_portrait_phibun_small"
+			}
+		}
+		
+		field_marshal={
+			traits={ expert_improviser panzer_expert logistics_wizard thorough_planner politically_connected offensive_doctrine infantry_leader organizer}
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=0
+		}
+		advisor={
+			cost = 150
+			
+			slot = army_chief
+			idea_token = Phahon
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				
+				traits = {
+					army_chief_offensive_2
+				}
+		}
+	}
+	
+	SIA_Phahon={
+		name="Пхахон Пхаюхасена"
+		portraits={
+			civilian={
+				large=GFX_portrait_Phraya_Phahon
+			}
+			army = {
+				large = GFX_portrait_Phraya_Phahon
+				small="GFX_portrait_phahon_small"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		field_marshal={
+			traits={ commando trickster guerilla_fighter bearer_of_artillery career_officer politically_connected infantry_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+		
+		
+	}
+	
+    SIA_Rama_VII = {
+		name = "Рама VII"
+		portraits={
+			civilian={
+				large = GFX_portrait_rama
+			}
+		}
+	}
+	
+	SIA_pridi_bhanomyong={
+		name = "Приди Бханомунг"
+		portraits={
+			civilian={
+				large = GFX_idea_pridi
+			}
+		}
+	}
+		
+	SIA_Peoples_Assembly = {
+		name = "Люди Ассамблеи"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+		}
+	}
+	
+	SIA_Prince_Boworadet = {
+			name = "Принц Боворадет"
+			portraits = {
+				civilian = {
+					large = GFX_portrait_boworadet
+				}
+				army = {
+					large = GFX_portrait_boworadet
+					small="GFX_portrait_bowaradet_small"
+				}
+			}
+			
+			advisor={
+				cost = 150
+				
+				slot = high_command
+				idea_token = Prince_Boworadet
+				ledger = army
+					allowed = {
+						original_tag = SIA
+					}
+					
+					traits = {
+						army_armored_2
+					}
+			}
+		}
+		
+	SIA_Prince_Naris={
+		name= "Принц Нарис"
+		portraits={
+			army={
+				small="GFX_portrait_narisara"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Prince_Naris
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				the_great_craftsman 
+			}
+		}		
+	}
+	
+	SIA_Paribatra_Sukhumbandhu={
+		name= "Парибатра Сукумбанду"
+		portraits={
+			army={
+				small="GFX_portrait_paribatra"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = Paribatra_Sukhumbandhu
+			allowed = {
+				original_tag = SIA
+			}
+			
+			available = {
+				has_completed_focus = Sia_japan2
+			}
+			
+			traits = {
+				war_industrialist 
+			}
+		}		
+	}
+	
+	SIA_Prince_Damrong={
+		name= "Принц Дамронг"
+		portraits={
+			army={
+				small="GFX_portrait_damrong"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Prince_Damrong
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				education_reformer 
+			}
+		}		
+	}
+	
+	## New Advisors (Political)
+	
+	SIA_Khuang_Aphaiwong={
+		name= "Хуан Афаивонг"
+		portraits={
+			army={
+				small="GFX_portrait_khuang"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Khuang_Aphaiwong
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				conservative_democrat 
+			}
+		}		
+	}
+	
+	SIA_Wichit_Whichitwathakan={
+		name= "Вичит Вичитватакан"
+		portraits={
+			army={
+				small="GFX_portrait_whichit"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Wichit_Whichitwathakan
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+                has_completed_focus = Sia_Military_public
+            }
+			traits = {
+				little_goebbels 
+			}
+		}		
+	}
+	
+	SIA_Tua_Lapanukrom={
+		name= "Туа Лапанукром"
+		portraits={
+			army={
+				small="GFX_portrait_tua"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Tua_Lapanukrom
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				minister_of_science 
+			}
+		}		
+	}
+	
+	SIA_Charun_Rattanakul={
+		name= "Чарун Раттанакул"
+		portraits={
+			army={
+				small="GFX_portrait_charun"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Charun_Rattanakul
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				minister_of_transportation 
+			}
+		}		
+	}
+	
+	## Theorists
+	
+	SIA_Chalermkiat_Wattanangkul={
+		name= "Чалермкиат Ваттанангул"
+		portraits={
+			army={
+				small="GFX_portrait_chalermkiat"
+			}
+		}
+		advisor={
+			cost = 100
+			
+			slot = high_command
+			idea_token = Chalermkiat_Wattanangkul
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				
+				traits = {
+					army_commando_2
+				}
+			}	
+	}
+	
+	SIA_Krawin_Thampitak={
+		name= "Кравин Тампитак"
+		portraits={
+			army={
+				small="GFX_portrait_krawin"
+			}
+		}
+		advisor={
+			cost = 100
+			
+			slot = air_chief
+			idea_token = Krawin_Thampitak
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				
+				traits = {
+					air_chief_night_operations_2
+				}
+			}	
+	}
+	
+	SIA_Sindhu_Songkramchai={
+		name= "Синду Сонгкрамчаи"
+		portraits={
+			army={
+				small="GFX_portrait_sindhu"
+			}
+		}
+		advisor={
+			cost = 150
+			
+			slot = theorist
+			idea_token = Sindhu_Songkramchai
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				
+				traits = {
+					submarine_specialist
+				}
+			}	
+	}
+	
+	SIA_Munee_Mahasantana={
+		name= "Муне Махасантана"
+		portraits={
+			army={
+				small="GFX_portrait_munee"
+			}
+		}
+		advisor={
+			cost = 150
+			
+			slot = theorist
+			idea_token = Munee_Mahasantana
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				
+				traits = {
+					victory_through_airpower
+				}
+			}
+			advisor={
+			slot = high_command
+			idea_token = Munee_Mahasantana
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_submarine_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.200
+			}
+		}	
+	}
+	
+	SIA_Thawan_Thamrongnawasawat = {
+		name ="Таван Тамронгнавасават"
+		portraits = {
+			navy = {
+				small = GFX_portrait_thamrong_small
+			}
+			army = {
+				large = GFX_portrait_thamrong
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SIA_thawan_thamrongnawasawat_chief
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer spotter }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+
+	SIA_Sindhu_Kamalanavin_v2 = {
+		name = "Синду Камаланавин"
+		portraits = {
+			army = {
+				small = "GFX_portrait_kamalanavin_small"
+				large = "GFX_portrait_kamalanavin"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_sindhu_kamalanavin_high_command
+			ledger = navy
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { blockade_runner aviation_enthusiast }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+	SIA_Mangkorn_Phromyothi = {
+		name = "Мангкорн Фромиоти"
+		portraits = {
+			army = {
+				small = GFX_portrait_mangkorn_small
+				large = GFX_portrait_mangkorn
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_mangkorn_phromyothi_high_command
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal = {
+			traits = { trickster panzer_expert expert_improviser offensive_doctrine infantry_leader panzer_leader }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+}

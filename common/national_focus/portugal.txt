@@ -1,0 +1,80 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = portuguese_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POR
+			has_dlc = "La Resistance"
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = POR_colonial_assimilation_policy
+		available = {
+			any_owned_state = {
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_military_academy
+		x = 2
+		y = 0
+
+		cost = 1
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = POR
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						or = {
+							has_country_flag = Sapr_only_erope_1941
+							has_country_flag = Sapr_duelmiy_mode						
+						}
+					}
+				}
+				annex_country = { target = SPR }
+				every_state = {
+					limit = {
+						is_core_of = SPR
+					}
+					add_core_of = ROOT
+				
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}				
+			}
+		}
+	}
+
+}

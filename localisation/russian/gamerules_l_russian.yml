@@ -1,0 +1,118 @@
+﻿l_russian:
+ 
+
+### Идеи
+special_game_rules:0 "Без добровольцев"
+special_game_rules_2:0 "Миролюбивая нация"
+special_game_rules_4:0 "Запрет на фарм генералов"
+SOV_volunteer_Spain:0 "Советские добровольцы в Испании"
+Ita_volunteer_Spain:0 "Итальянские добровольцы в Испании"
+Ger_volunteer_Spain:0 "Немецкие добровольцы в Испании"
+Volunteer_Spain_only_erope:0 "Добровольцы в Испании"
+Sapr_base_prodaktion_line:0 "Гибкое производство"
+Sapr_doka_abuzer:0 "Абузер доктрины"
+AXIS_Traide_close:0 "Прогерманская торговая политика"
+Sapr_Alias_no_atache:0 "Без Атташе в Испанию"
+Sapr_Alias_no_atache_desc:0 "Нац дух будет удален после §YАншлюcа§! или начала войны в §YКитае§!."
+Sapr_41_no_fleat:0 "Играем без флота"
+Sapr_Alias_suck_in_norce_africa:0 "Нарушение цепочек поставок"
+Sapr_Alias_suck_in_norce_africa_desc:0 "Только с началом активных боевых действий на востоке мы востановить нашу экономику"
+JAP_no_trade:0 "Торговля с США"
+                    
+Sapr_photo_reconnaisance:0 "Самолет разведчик"
+
+
+pacifist_nation:0 "Миролюбивая нация"
+Sapr_supporting_the_losing_alliance:0 "Мобилизация тыла"
+full_exports:0 "Экспортно ориентированная экономика"
+
+Sapr_you_Shell_not_pass:0 "Незапланированное наступление"
+
+CHI_want_capitulate:0 "Коллобрационистские настроения"
+CHI_time_to_surrender:0 "Прояпонский гос. переворот"
+Sapr_CHI_surrender:0 "Коллабрационисты"
+
+Sapr_firs_sowrld_war_trait:0 "Сторонник статичной войны"
+Sapr_firs_sowrld_war_trait_desc:0 "Офицерские курсы во Франции сильно повлияли на его тактику ведения боевых действий в современной войне. Быстрое возведение неприступной линии обороны и изматывание противника – вот прямой путь к победе!"
+
+Sapr_meat_storm_supporter_trait:0 "Сторонник массированного штурма"
+Sapr_meat_storm_supporter_trait_desc:0 "Офицерские курсы в СССР, помноженные на опыт войны в Китае отложили сильный отпечаток на тактику применения пехотных подразделений на поле боя. Людской ресурс стоит дешевле чем новый танк, так зачем гнаться за массовым производством танков, если обычный солдат, вооруженный штыком и гранатой, способен достичь в наступлении таких же результатов, как и целая танковая дивизия?"
+
+Sapr_Advocate_of_a_quick_war_trait:0 "Сторонник молниеносной войны"
+Sapr_Advocate_of_a_quick_war_trait_desc:0 "Прохождение офицерских курсов в Германии отложили сильный отпечаток на тактику ведения боевых действий в современной войне. Быстрые и молниеносные прорывы на узком участке фронта с последующим уничтожением тылов противника – вот прямой путь к победе!"
+
+
+EQ_MOD_CAT_ship_heavy_bc_armor_weapon_category_TITLE:0 "Броня линейного крейсера"
+EQ_MOD_CAT_ship_heavy_bb_armor_weapon_category_TITLE:0 "Броня линкора"
+
+SAPR_POL_Liberation:0 "Польская Независимость"
+
+TIB_NO_GAME_CONTRY_FOKUS:0 "Развитие инфраструктуры"
+
+Sapr_JAP_Expert_SOV:0 "Легенда Холхенгола"
+
+construction_tech_research:0 "Темпы исследований в строительстве"
+
+peoples_war_march_to_the_mince:0 "Марш на фарш!"
+
+
+Sapr_no_asia:0 "Сценарий без Азии"
+Sapr_only_asia:0 "Сценарий онли Азия"
+Sapr_only_erope:0 "Сценарий онли Европа"
+Sapr_only_erope_1941:0 "Сценарий онли Европа 1941"
+
+SOV_no_fortification_focus:0 "Низкий интерес к строительству укреплений"
+
+BRA_Bobby_Kotick:0 "Бобби Котик"
+
+
+SAPR_doka_abuz.b:0 "Наказание за нарушение правил"
+SAPR_doka_abuz.c:0 "Вы посмели заобузить одну из доктрин. За такое вы будете наказаны."
+SAPR_doka_abuz.d:0 "Больше так не делай!"
+
+drop_tanks_medium:0 "Сбрасываемый топливный бак"
+
+
+Sapr_playing_with_the_fleet_41.1.b:0 "Играем с флотом?"
+Sapr_playing_with_the_fleet_41.1.c:0 "Есть возможность сыграть ОСТ фронт без флота. Однако для этого необходимо что б обе стороны конфликта на это согласились."
+Sapr_playing_with_the_fleet_41.1.d:0 "Флот нон фактор"
+Sapr_playing_with_the_fleet_41.1.e:0 "Мне нужен мой флот!"
+
+Sapr_playing_with_the_fleet_41.2.b:0 "Играем с флотом?"
+Sapr_playing_with_the_fleet_41.2.c:0 "Есть возможность сыграть ОСТ фронт без флота. Однако для этого необходимо что б обе стороны конфликта на это согласились."
+Sapr_playing_with_the_fleet_41.2.d:0 "Флот нон фактор"
+Sapr_playing_with_the_fleet_41.2.e:0 "Мне нужен мой флот!"
+
+startup.institut.1.description:0 "«Выбери какой институт хочешь получить прямо сейчас, от этого выбора в какой-то мере зависит твой дальнейший геймплей.»"
+startup.institut.1.title:0 "Выбирай институт"
+startup.institut.1.a:0 "Воздушный институт"
+startup.institut.1.b:0 "Наземный институт"
+startup.institut.1.c:0 "Морской институт"
+startup.institut.1.d:0 "Ядерный институт"
+ 
+Sapr_auth_shoblon:0 "Автошаблоны"
+
+Sapr_auth_shoblon_divizii_oupen:0 "Открыть окно с шаблонами дивизии"
+Sapr_auth_shoblon_divizii_close:0 "Закрыть окно с шаблонами дивизии"
+
+Sapr_auth_shoblon_36_panzer_oupen:0 "Открыть окно с шаблонами танков 36 года"
+Sapr_auth_shoblon_36_panzer_close:0 "Закрыть окно с шаблонами танков 36 года"
+
+Sapr_auth_shoblon_40_panzer_oupen:0 "Открыть окно с  шаблонами танков 40 года"
+Sapr_auth_shoblon_40_panzer_close:0 "Закрыть окно с шаблонами танков 40 года"
+
+Sapr_auth_shoblon_ST_36:0 "Средний танк 36 года"
+Sapr_auth_shoblon_ST_PT_36:0 "Средняя ПТ-САУ 36 года"
+Sapr_auth_shoblon_TT_PT_36:0 "Тяжелая ПТ-САУ 36 года на §Yщиток§!"
+Sapr_auth_shoblon_LT_ZSU_36:0 "Легкая ЗСУ 36 года"
+Sapr_auth_shoblon_LT_ZSU_38:0 "Легкая ЗСУ 38 года" 
+
+Sapr_auth_shoblon_ST_40:0 "Средний танк 40 года"
+Sapr_auth_shoblon_ST_PT_40:0 "Средняя ПТ-САУ 40 года"
+Sapr_auth_shoblon_TT_PT_40:0 "Тяжелая ПТ-САУ 40 года на §Yщиток§!"
+Sapr_auth_shoblon_mehan_40:0 "Механ 40 года"
+
+Sapr_auth_shoblon_pehota:0 "Пехота"
+Sapr_auth_shoblon_ST_PT_divisia:0 "СТ ПТ танки"
+
+

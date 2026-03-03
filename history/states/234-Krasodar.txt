@@ -1,0 +1,90 @@
+
+state={
+	id=234
+	name="STATE_234"
+	manpower = 2903371
+	
+	state_category = city
+	resources={
+		tungsten=17 # was: 26
+		oil=12 # was: 18
+	}
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				industrial_complex = 1
+				air_base = 10				
+				719 = {
+					naval_base = 3
+					coastal_bunker = 1
+					naval_supply_hub = 1
+				}
+				6783 = {
+					naval_base = 1
+				}					
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 5 #was: 5
+				industrial_complex = 9
+				arms_factory = 5
+				air_base = 10				
+				719 = {
+					naval_base = 3
+					coastal_bunker = 1
+				}
+				6783 = {
+					naval_base = 1
+				}				
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+	
+		
+		victory_points = {
+			3720 1 
+		}
+		victory_points = {
+			719 2
+		}
+		victory_points = {
+			3734 5
+		}
+		victory_points = {
+			6783 1
+		}		
+	}
+
+	provinces={
+		585 717 719 735 750 765 3717 3720 3734 3752 3760 3765 6736 6738 6741 6755 6768 6781 6783 9691 9694 9696 9709 9744 11559 11668 11681 11729  
+	}
+
+	local_supplies=9.0 
+}

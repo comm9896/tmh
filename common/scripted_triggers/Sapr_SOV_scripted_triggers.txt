@@ -1,0 +1,53 @@
+SOV_are_losing_territory_1 = {
+	TAG = SOV
+	SOV = { surrender_progress > 0.05 }	
+	NOT = {has_country_flag = SOV_are_losing_territory_flag_1}
+}
+
+SOV_are_losing_territory_2 = {
+	TAG = SOV	
+	SOV = { surrender_progress > 0.10 }	
+	NOT = {has_country_flag = SOV_are_losing_territory_flag_2}
+}
+
+SOV_are_losing_territory_3 = {
+	TAG = SOV	
+	SOV = { surrender_progress > 0.15 }	
+	NOT = {has_country_flag = SOV_are_losing_territory_flag_3}
+}
+SOV_are_losing_territory_4 = {
+	TAG = SOV	
+	SOV = { surrender_progress > 0.20 }	
+	NOT = {has_country_flag = SOV_are_losing_territory_flag_4}
+}
+SOV_are_losing_territory_5 = {
+	TAG = SOV	
+	SOV = { surrender_progress > 0.25 }	
+	NOT = {has_country_flag = SOV_are_losing_territory_flag_5}
+}
+
+SOV_are_liberates_territory_1 = {
+	TAG = SOV	
+	SOV = { surrender_progress < 0.05 }	
+	has_country_flag = SOV_are_losing_territory_flag_1
+}
+SOV_are_liberates_territory_2 = {
+	TAG = SOV	
+	SOV = { surrender_progress < 0.10 }	
+	has_country_flag = SOV_are_losing_territory_flag_2
+}
+SOV_are_liberates_territory_3 = {
+	TAG = SOV	
+	SOV = { surrender_progress < 0.15 }	
+	has_country_flag = SOV_are_losing_territory_flag_3
+}
+SOV_are_liberates_territory_4 = {
+	TAG = SOV	
+	SOV = { surrender_progress < 0.20 }	
+	has_country_flag = SOV_are_losing_territory_flag_4
+}
+SOV_are_liberates_territory_4 = {
+	TAG = SOV	
+	SOV = { surrender_progress < 0.25 }	
+	has_country_flag = SOV_are_losing_territory_flag_5
+}

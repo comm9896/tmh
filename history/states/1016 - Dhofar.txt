@@ -1,0 +1,46 @@
+state = {
+	id = 1016
+	name = "STATE_1016"
+	manpower = 85000
+	
+	state_category = wasteland_no_Air
+
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+
+		buildings = {
+			infrastructure = 1
+			2103 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			2103 1 # Salalah
+		}
+		
+	}
+
+	provinces = {
+		2059 2103
+	}
+
+	local_supplies = 0.0 
+}

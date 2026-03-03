@@ -1,0 +1,49 @@
+
+state={
+	id=658
+	name="STATE_658"
+	manpower = 170200
+	resources={
+		oil=5 # was: 6
+	}
+	
+	state_category = wasteland_no_Air
+
+
+	history={
+
+	   1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}
+	   1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+		}		
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		victory_points = {
+			7960 1 
+		}
+		buildings = {
+			infrastructure = 1
+			13369 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		2048 7960 8108 10904 13369
+	}
+
+	local_supplies=4.0 
+}

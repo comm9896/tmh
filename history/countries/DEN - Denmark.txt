@@ -1,0 +1,78 @@
+﻿capital = 37
+
+
+oob = "DEN_1936"
+#set_naval_oob = "DEN_1936_naval_mtg"
+set_air_oob = "DEN_1936_air_bba"
+
+# Diplomacy
+IF = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = ICE
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	ELSE = {
+		puppet = ICE
+	}
+}
+
+#### COUNTRY LEADERS ####
+recruit_character = DEN_thorvald_stauning
+
+
+1936.1.1.12 = {	
+	add_ideas = free_trade
+	add_ideas = neutrality_idea
+	add_ideas = isolation
+	
+}
+
+1936.1.1.13 = {
+}
+
+1936.1.1.14 = {
+
+}
+
+1936.1.1.15 = {
+}
+
+1941.1.1.14 = {	
+
+	set_country_flag = Sapr_only_erope_1941
+}
+
+
+
+
+
+set_research_slots = 3
+
+set_stability = 0.9
+set_war_support = 0.1
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+}
+
+set_convoys = 55
+
+
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 7
+}

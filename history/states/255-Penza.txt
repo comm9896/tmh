@@ -1,0 +1,64 @@
+
+state={
+	id=255
+	name="STATE_255"
+	manpower = 2342937
+	
+	
+	state_category = town
+
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+		
+			buildings = {
+				infrastructure = 2
+				anti_air_building = 1	
+				air_base = 10					
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 3 #was: 6
+				arms_factory = 8
+				anti_air_building = 1	
+				air_base = 10					
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		victory_points = {
+			9258 3
+		}
+	}
+
+	provinces={
+		208 257 324 376 380 3221 3266 3317 3360 3371 6248 6291 6329 6343 6353 6382 6391 6409 9258 9276 9286 9324 9344 9380 9409 11240 11262 11269 11309 11335 11364 11393 
+	}
+
+	local_supplies=0.0 
+}

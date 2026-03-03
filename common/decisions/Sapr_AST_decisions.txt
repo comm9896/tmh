@@ -1,0 +1,317 @@
+AST_annex = {
+	
+	AST_annex_NZL = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = NZL
+				exists = yes
+			}
+			has_completed_focus = AST_civil_construction_corps
+			NZL = { is_ai = yes }
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = NZL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = NZL transfer_troops = yes }
+			
+			NZL = {
+				transfer_units_fraction= {
+					target = AST
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			every_state = {
+				limit = { is_core_of = NZL }
+				add_core_of = ROOT
+			}
+			NZL = {
+			    every_unit_leader = {
+					set_nationality = AST
+			    }
+			}
+			add_research_slot = 1
+			NZL = {
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_maori_affairs_act}	
+						}
+					}
+				    complete_national_focus = NZL_maori_affairs_act					
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_amend_the_maori_affairs_act}	
+						}
+					}
+				    complete_national_focus = NZL_amend_the_maori_affairs_act					
+				}
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_expand_devonport_naval_base}	
+						}
+					}
+				    complete_national_focus = NZL_expand_devonport_naval_base					
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_national_roads_board}	
+						}
+					}
+				    complete_national_focus = NZL_national_roads_board					
+				}
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_new_zealand_steel}	
+						}
+					}
+				    complete_national_focus = NZL_new_zealand_steel					
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_bureau_of_industry}	
+						}
+					}
+				    complete_national_focus = NZL_bureau_of_industry					
+				}
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_taranaki_oil}	
+						}
+					}
+				    complete_national_focus = NZL_taranaki_oil					
+				}
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_industrial_conscription}	
+						}
+					}
+				    complete_national_focus = NZL_industrial_conscription					
+				}
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_domestic_arms_industry}	
+						}
+					}
+				    complete_national_focus = NZL_domestic_arms_industry					
+				}
+                if = {
+				    limit = {
+					    not = {
+						    NZL = {has_completed_focus = NZL_think_big}	
+						}
+					}
+				    complete_national_focus = NZL_think_big					
+				}
+			}	
+		}
+	}
+	AST_annex_CAN = {
+	
+		icon = generic_army_support
+
+		available = {
+		    AND = {
+			    any_other_country = {
+				    original_tag = CAN
+				    exists = yes
+			    }
+			    CAN = { is_ai = yes }
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+				}
+			}
+		}
+
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = CAN transfer_troops = yes}
+			
+			CAN = {
+				transfer_units_fraction= {
+					target = AST
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = CAN }
+				add_core_of = ROOT
+			}
+			CAN = {
+			    every_unit_leader = {
+				set_nationality = AST
+			    }
+			}
+			add_research_slot = 1	
+		}
+	}
+
+}
+
+
+AST_rerol_country = {
+	
+	AST_rerol_country_ENG = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ENG
+		cosmetic_ideology = democratic		
+		
+        visible = {
+		    not = {
+				has_country_flag = Sapr_only_asia
+			}
+		}
+		available = {
+			AST = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = AST_rerol_country_ENG_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = ENG
+			        }
+                    change_tag_from = AST				
+			    }
+			}
+		}
+	}
+
+	AST_rerol_country_CAN = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = CAN
+		cosmetic_ideology = democratic		
+		
+        visible = {
+		    not = {
+				has_country_flag = Sapr_only_asia
+			}
+		}
+		available = {
+			AST = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = AST_rerol_country_CAN_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = CAN
+			        }
+                    change_tag_from = AST				
+			    }
+			}
+		}
+	}
+		
+	AST_rerol_country_USA = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = USA
+		cosmetic_ideology = democratic		
+		
+        visible = {
+		    always = yes
+		}
+		available = {
+			AST = { is_ai = no }
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = AST_rerol_country_USA_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = USA
+			        }
+                    change_tag_from = AST				
+			    }
+			}
+		}
+	}
+	AST_rerol_country_SOV = {
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = SOV
+		cosmetic_ideology = communism		
+		
+        visible = {
+		    not = {
+				has_country_flag = Sapr_only_asia
+			}
+		}
+		available = {
+			AST = { is_ai = no }			
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = AST_rerol_country_SOV_tt
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = SOV
+			        }
+                    change_tag_from = AST				
+			    }
+			}
+		}
+	}
+	
+}

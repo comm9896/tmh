@@ -1,0 +1,75 @@
+state={
+	id=86
+	name="STATE_86"
+	manpower = 2106500
+	
+	
+	state_category = city
+	history={
+	
+		1936.1.1.12 = {	    
+			add_core_of = POL		
+			owner = POL
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				11232 = {
+					bunker = 1
+
+				}
+				9532 = {
+					bunker = 1
+
+				}
+				3381 = {
+					bunker = 1
+
+				}
+				air_base = 3
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL		
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL		
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+		    owner = GER		   
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 9		
+			}
+		}		
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		
+		victory_points = {
+			6558 10
+		}
+
+
+	}
+
+	provinces={
+		17 388 3381 3460 3532 6558 9532 11232 11558
+	}
+
+	local_supplies=20.0 
+}

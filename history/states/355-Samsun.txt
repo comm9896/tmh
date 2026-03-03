@@ -1,0 +1,47 @@
+
+state={
+	id=355
+	name="STATE_355"
+	manpower = 1151863
+	state_category = rural
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = TUR
+			add_core_of = TUR
+		}			
+		1936.1.1.13 = {
+			owner = TUR
+			add_core_of = TUR
+		}	
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1936.1.1.15 = {
+			owner = TUR
+			add_core_of = TUR
+		}
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+
+		victory_points = {
+			11881 10
+		}
+		buildings = {
+			infrastructure = 2
+			11881 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		933 960 975 3935 3965 9900 9915 11881 11894 
+	}
+
+	local_supplies=0.0 
+}

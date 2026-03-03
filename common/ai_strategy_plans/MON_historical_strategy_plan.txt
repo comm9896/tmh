@@ -1,0 +1,85 @@
+MON_historical_plan = {
+	name = "MON_historical_plan"
+	desc = "historical_plan_for_MON"
+
+	allowed = {
+		original_tag = MON
+	}
+	
+	enable = {
+		tag = MON
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+		MON_mutual_assistance_pact
+		MON_stalinism_in_mongolia
+		MON_socialist_indoctrination
+		MON_disown_nobles
+		MON_socialist_education
+		MON_agricultural_association
+		
+		MON_native_army
+		
+		MON_learning_construction
+		MON_diversify_economy
+		MON_soviet_aid
+		MON_trans_siberian_railway
+		MON_nationalize_economy
+		MON_mongolian_soviet_companies
+		MON_soviet_prepare_for_war
+		
+		MON_university_mongolia
+		MON_increased_mining
+		MON_trans_mongolian_railway
+		MON_state_farms
+		MON_develop_capital
+		MON_forced_urbanization
+		MON_women_education
+		
+		MON_finish_purges
+		MON_ease_up_on_buddhism
+		MON_consolidate_the_state
+		SOV_annex_tannu_tuva
+		
+		MON_switch_to_conveyor_production
+		
+		MON_red_army_cooperation
+		MON_red_army_schools
+		MON_red_army_schools_professionalism
+		
+		MON_utilise_camels
+		MON_japanese_border_clashes
+		MON_purchase_weapons
+		MON_implement_demids_ideas
+		
+		MON_new_officers
+		MON_cavalry_traditions
+		MON_supply_soviet_war_effort
+		
+		MON_soviet_trucks
+		MON_research_tanks
+		MON_communist_tank_brigade
+		MON_modern_military
+		
+		
+		
+	}
+	
+	focus_factors = {
+	}
+	research = {
+		industry = 30.0
+		infantry_tech = 20.0
+		artillery = 30.0
+		support_tech = 20.0
+	}
+
+	ideas = {
+	}
+	weight = {
+	}
+
+}

@@ -1,0 +1,452 @@
+
+Sapr_SOV_young_builders_of_communism_level_up = {
+
+	if = {
+		limit = { has_idea = SOV_young_builders_of_communism_4 }
+		swap_ideas = {
+			remove_idea = SOV_young_builders_of_communism_4
+			add_idea = SOV_young_builders_of_communism_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_young_builders_of_communism_3 }
+		swap_ideas = {
+			remove_idea = SOV_young_builders_of_communism_3
+			add_idea = SOV_young_builders_of_communism_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_young_builders_of_communism_2 }
+		swap_ideas = {
+			remove_idea = SOV_young_builders_of_communism_2
+			add_idea = SOV_young_builders_of_communism_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_young_builders_of_communism_1 }
+		swap_ideas = {
+			remove_idea = SOV_young_builders_of_communism_1
+			add_idea = SOV_young_builders_of_communism_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = SOV_young_builders_of_communism_1 } }
+		add_ideas = SOV_young_builders_of_communism_1
+	}
+}
+
+Sapr_SOV_Leningraf_designer = {
+	if = {
+		limit = {
+			has_idea =  leningrad_polytechnical_institute_improved
+		}
+		swap_ideas = {
+			remove_idea = leningrad_polytechnical_institute_improved
+			add_idea = leningrad_polytechnical_institute_improved_2
+		}
+	}	
+}
+
+Sapr_SOV_stalingrad_designer = {
+	if = {
+		limit = {
+			has_idea =  stalingrad_tractor_factory_improved
+		}
+		swap_ideas = {
+			remove_idea = stalingrad_tractor_factory_improved
+			add_idea = stalingrad_tractor_factory_improved_2
+		}
+	}	
+}
+
+SOV_expand_the_red_fleet_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_expand_the_red_fleet
+			has_completed_focus = SOV_expand_the_red_fleet
+		}
+		deactivate_shine_on_focus = SOV_expand_the_red_fleet
+		clr_country_flag = SOV_expand_the_red_fleet_in_progress_flag
+	}
+}
+
+SOV_pc_of_the_ussr_navy_in_progress_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_pc_of_the_ussr_navy
+			has_completed_focus = SOV_pc_of_the_ussr_navy
+		}
+		deactivate_shine_on_focus = SOV_pc_of_the_ussr_navy
+		clr_country_flag = SOV_pc_of_the_ussr_navy_in_progress_flag
+	}
+}
+
+SOV_reinforce_western_naval_bases_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_reinforce_western_naval_bases
+			has_completed_focus = SOV_reinforce_western_naval_bases
+		}
+		deactivate_shine_on_focus = SOV_reinforce_western_naval_bases
+		clr_country_flag = SOV_reinforce_western_naval_bases_in_progress_flag
+	}
+}
+
+SOV_reinforce_northern_naval_bases_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_reinforce_northern_naval_bases
+			has_completed_focus = SOV_reinforce_northern_naval_bases
+		}
+		deactivate_shine_on_focus = SOV_reinforce_northern_naval_bases
+		clr_country_flag = SOV_reinforce_northern_naval_bases_in_progress_flag
+	}
+}
+
+SOV_reinforce_southern_naval_bases_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_reinforce_southern_naval_bases
+			has_completed_focus = SOV_reinforce_southern_naval_bases
+		}
+		deactivate_shine_on_focus = SOV_reinforce_southern_naval_bases
+		clr_country_flag = SOV_reinforce_southern_naval_bases_in_progress_flag
+	}
+}
+
+SOV_reinforce_eastern_naval_bases_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_reinforce_eastern_naval_bases
+			has_completed_focus = SOV_reinforce_eastern_naval_bases
+		}
+		deactivate_shine_on_focus = SOV_reinforce_eastern_naval_bases
+		clr_country_flag = SOV_reinforce_eastern_naval_bases_in_progress_flag
+	}
+}
+
+SOV_expand_shipbuilding_plants_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_expand_shipbuilding_plants
+			has_completed_focus = SOV_expand_shipbuilding_plants
+		}
+		deactivate_shine_on_focus = SOV_expand_shipbuilding_plants
+		clr_country_flag =  SOV_expand_shipbuilding_plants_in_progress_flag
+	}
+}
+
+SOV_merge_naval_plants_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_merge_naval_plants
+			has_completed_focus = SOV_merge_naval_plants
+		}
+		deactivate_shine_on_focus = SOV_merge_naval_plants
+		clr_country_flag = SOV_merge_naval_plants_in_progress_flag
+	}
+}
+
+SOV_development_of_the_northern_fleet_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_development_of_the_northern_fleet
+			has_completed_focus = SOV_development_of_the_northern_fleet
+		}
+		deactivate_shine_on_focus = SOV_development_of_the_northern_fleet
+		clr_country_flag =  SOV_development_of_the_northern_fleet_in_progress_flag
+	}
+}
+
+SOV_development_of_shipbuilding_technologies_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_development_of_shipbuilding_technologies
+			has_completed_focus = SOV_development_of_shipbuilding_technologies
+		}
+		deactivate_shine_on_focus = SOV_development_of_shipbuilding_technologies
+		clr_country_flag = SOV_development_of_shipbuilding_technologies_in_progress_flag
+	}
+}
+
+SOV_use_the_experience_of_foreign_specialists_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_use_the_experience_of_foreign_specialists
+			has_completed_focus = SOV_use_the_experience_of_foreign_specialists
+		}
+		deactivate_shine_on_focus = SOV_use_the_experience_of_foreign_specialists
+		clr_country_flag = SOV_use_the_experience_of_foreign_specialists_in_progress_flag
+	}
+}
+
+SOV_surface_warfare_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_surface_warfare
+			has_completed_focus = SOV_surface_warfare
+		}
+		deactivate_shine_on_focus = SOV_surface_warfare
+		clr_country_flag = SOV_surface_warfare_in_progress_flag
+	}
+}
+
+SOV_offensive_maritime_strategy_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_offensive_maritime_strategy
+			has_completed_focus = SOV_offensive_maritime_strategy
+		}
+		deactivate_shine_on_focus = SOV_offensive_maritime_strategy
+		clr_country_flag =  SOV_offensive_maritime_strategy_in_progress_flag
+	}
+}
+SOV_an_oceangoing_navy_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_an_oceangoing_navy
+			has_completed_focus = SOV_an_oceangoing_navy
+		}
+		deactivate_shine_on_focus = SOV_an_oceangoing_navy
+		clr_country_flag =  SOV_an_oceangoing_navy_in_progress_flag
+	}
+}
+
+SOV_modern_destroyers_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_modern_destroyers
+			has_completed_focus = SOV_modern_destroyers
+		}
+		deactivate_shine_on_focus = SOV_modern_destroyers
+		clr_country_flag = SOV_modern_destroyers_in_progress_flag
+	}
+}
+
+SOV_expand_the_morskaya_aviatsiya_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_expand_the_morskaya_aviatsiya
+			has_completed_focus = SOV_expand_the_morskaya_aviatsiya
+		}
+		deactivate_shine_on_focus = SOV_expand_the_morskaya_aviatsiya
+		clr_country_flag =  SOV_expand_the_morskaya_aviatsiya_in_progress_flag
+	}
+}
+
+SOV_naval_infantry_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_naval_infantry
+			has_completed_focus = SOV_naval_infantry
+		}
+		deactivate_shine_on_focus = SOV_naval_infantry
+		clr_country_flag =  SOV_naval_infantry_in_progress_flag
+	}
+}
+
+SOV_submarine_warfare_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_submarine_warfare
+			has_completed_focus = SOV_submarine_warfare
+		}
+		deactivate_shine_on_focus = SOV_submarine_warfare
+		clr_country_flag = SOV_submarine_warfare_in_progress_flag
+	}
+}
+
+SOV_long_range_raiders_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_long_range_raiders
+			has_completed_focus = SOV_long_range_raiders
+		}
+		deactivate_shine_on_focus = SOV_long_range_raiders
+		clr_country_flag =  SOV_long_range_raiders_in_progress_flag
+	}
+}
+SOV_Lessons_of_submarine_warfare_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_Lessons_of_submarine_warfare
+			has_completed_focus = SOV_Lessons_of_submarine_warfare
+		}
+		deactivate_shine_on_focus = SOV_Lessons_of_submarine_warfare
+		clr_country_flag =  SOV_Lessons_of_submarine_warfare_in_progress_flag
+	}
+}
+
+SOV_advanced_maneuvers_shine_effect = {
+	if = { 
+		limit = {
+			has_shine_effect_on_focus = SOV_advanced_maneuvers
+			has_completed_focus = SOV_advanced_maneuvers
+		}
+		deactivate_shine_on_focus = SOV_advanced_maneuvers
+		clr_country_flag =  SOV_advanced_maneuvers_in_progress_flag
+	}
+}
+
+
+Sapr_Sov_inner_circle_set_1 = {
+	set_country_flag = {
+		flag = GER_inner_circle_cd_flag
+		days = 175
+		value = 1
+	}
+}
+
+
+SOV_We_will_never_surender_increase_effect_1 = {
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = 1
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck < 1100}
+		}
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = -0.01
+		}
+	}	
+}
+
+SOV_We_will_never_surender_increase_effect_2 = {
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = 2
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck < 1100}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = -0.02
+		}
+	}	
+}
+SOV_We_will_never_surender_increase_effect_5 = {
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = 5
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck < 1100}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = -0.05
+		}
+	}	
+}
+
+
+
+SOV_Soon_we_will_liberate_Europe_increase_effect_1 = {	
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = -1
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck > 900}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = 0.01
+		}
+	}	
+}
+
+SOV_Soon_we_will_liberate_Europe_increase_effect_2 = {	
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = -2
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck > 900}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = 0.02
+		}
+	}	
+}
+
+SOV_Soon_we_will_liberate_Europe_increase_effect_3 = {	
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = -3
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck > 900}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = 0.03
+		}
+	}	
+}
+
+SOV_Soon_we_will_liberate_Europe_increase_effect_4 = {	
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = -4
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck > 900}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = 0.04
+		}
+	}	
+}
+
+SOV_Soon_we_will_liberate_Europe_increase_effect_5 = {	
+	SOV = {
+		add_to_variable = {
+			var = Sapr_SOV_suck
+			value = -5
+		}	
+	}
+	
+	if = {
+		limit = {
+			check_variable = { Sapr_SOV_suck > 900}
+		}	
+		add_power_balance_value = {
+			id = SOV_power_balance
+			value = 0.05
+		}
+	}	
+}

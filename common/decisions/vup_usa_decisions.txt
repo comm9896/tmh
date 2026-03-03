@@ -1,0 +1,765 @@
+USA_annex = { 
+	USA_homeland_defense = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			any_core_state = {
+				NOT = {
+					is_controlled_by = USA
+				}
+			}
+			has_civil_war = no
+
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.9
+				}
+				set_war_support = 0.9
+			}
+			if = {
+				limit = {
+					has_idea = great_depression
+				}
+				remove_ideas = great_depression
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = extensive_conscription
+							has_idea = scraping_the_barrel
+							has_idea = service_by_requirement
+							has_idea = all_adults_serve
+						}
+					}
+				}
+				add_ideas = extensive_conscription
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = civilian_economy
+						has_idea = low_economic_mobilisation
+					}
+				}
+				add_ideas = war_economy
+			}
+			add_ideas = USA_homeland_defense
+		}
+	}
+	USA_join_the_war = {
+	 	available = { 
+			OR = {
+				has_war_with = JAP
+				any_country = { 
+				is_in_faction_with = GER 
+			OR = { 
+				controls_state = 331 
+				controls_state = 332
+				controls_state = 730
+				controls_state = 696 
+				controls_state = 695
+				controls_state = 689
+				controls_state = 311
+				controls_state = 690
+				controls_state = 693
+				controls_state = 464
+				controls_state = 860
+				controls_state = 863
+				controls_state = 468
+				controls_state = 465
+				controls_state = 694 
+				controls_state = 308 
+				controls_state = 692 
+				controls_state = 691 
+				controls_state = 687 
+				controls_state = 309 
+				controls_state = 310 
+				controls_state = 127
+				controls_state = 123 
+				controls_state = 130 
+				controls_state = 132
+				controls_state = 131
+				controls_state = 121
+				controls_state = 133
+				controls_state = 122
+			}
+			}
+			}
+		}
+				allowed = {	original_tag = USA }
+				fire_only_once = yes
+				cost = 0	
+				complete_effect = { 
+					hidden_effect = {
+						ENG = {
+							add_to_faction = USA
+							add_to_faction = MEX
+						}
+						set_rule = { can_join_factions = yes }	
+						MEX = {
+						set_rule = { can_join_factions = yes }
+						}
+					}
+					
+					add_to_war = { targeted_alliance = ENG	enemy = GER	}
+					MEX = {
+						add_to_war = { 
+							targeted_alliance = ENG	enemy = GER
+						}
+						add_to_war = { 
+							targeted_alliance = ENG	enemy = JAP
+						}
+					}
+				}
+			}
+	
+	GER_plan = {
+	
+		icon = eng_preparing_the_second_front
+
+		available = {
+		    has_war = yes
+			date > 1942.06.01
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = GER
+				}
+			}
+		}
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+			14 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			23 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			30 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			806 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			19 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			15 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			785 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			29 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			}
+			custom_effect_tooltip = USA_days_d_1	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = USA_days_d
+		}
+	}
+	ITA_plan = {
+	
+		icon = ITA_italia_irredenta_achieved
+
+		available = {
+		    has_war = yes
+			date > 1941.05.01
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = ITA
+				}
+			}
+		}
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+			115 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			156 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			117 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			849 = {
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = ENG
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = CAN
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = FRA
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = SAF
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = RAJ
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = AST
+					days = 90
+				}
+				add_dynamic_modifier = {
+					modifier = USA_days_d_and_haski
+					scope = USA
+					days = 90
+				}
+			}
+			}	
+		custom_effect_tooltip = USA_days_d_2	
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = USA_days_d
+		}
+	}
+	
+	USA_execute_war_plan_silver = {
+		icon = generic_operation
+		available = {
+			has_war_with = ITA
+			has_completed_focus = USA_war_plan_silver
+		}
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+
+	USA_execute_war_plan_orange = {
+		icon = generic_operation
+		available = {
+			has_war_with = JAP
+			has_completed_focus = USA_war_plan_orange
+		}
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		targeted_modifier = {
+			tag = MAN
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		targeted_modifier = {
+			tag = SIA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+	USA_execute_war_plan_black = {
+		icon = generic_operation
+		available = {
+			has_war_with = GER
+			has_completed_focus = USA_war_plan_black
+		}
+		visible = {
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+}
+USA_Pentagon_building = { 
+	USA_Acro_prom = { 
+	
+		icon = GFX_decision_generic_consumer_goods
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = FROM     
+			}
+		}
+
+		visible = {	FROM = { is_fully_controlled_by = USA has_dynamic_modifier = { modifier = USA_civilian_offensive }}}
+		available = {
+			 	FROM = {
+				and = {
+					infrastructure > 4
+					energy_infrastructure > 0
+				}
+			}
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		state_target = yes
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = USA
+				has_dynamic_modifier = { modifier = USA_civilian_offensive }
+			}
+		}
+		cost = 5 
+		days_remove = 45
+
+		remove_Effect = {
+			custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info
+			add_to_variable = { USA_stability_factor = 0.01 tooltip = USA_stability_factor_tt }
+			
+			add_to_variable = { USA_industrial_capacity_factory = 0.01 tooltip = USA_industrial_capacity_factory_tt }
+			add_to_variable = { USA_production_speed_arms_factory_factor = 0.005 tooltip = USA_production_speed_arms_factory_factor_tt }
+			add_to_variable = { USA_production_speed_dockyard_factor = 0.005 tooltip = USA_production_speed_dockyard_factor_tt }
+			add_to_variable = { USA_global_building_slots_factor_factor = 0.01 tooltip = USA_global_building_slots_factor_factor_tt}
+			FROM = {
+				remove_dynamic_modifier = { modifier = USA_civilian_offensive }
+			}
+		}
+        
+	}
+
+}
+
+	
+

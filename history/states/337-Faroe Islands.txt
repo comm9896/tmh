@@ -1,0 +1,37 @@
+state={
+	id=337
+	name="STATE_337"
+	manpower = 25900
+	
+	state_category = small_island
+	
+	history={
+		1936.1.1.12 = {	    
+			owner = DEN
+			add_core_of = DEN
+		
+		}	
+		1936.1.1.13 = {
+			owner = DEN
+			add_core_of = DEN
+		}		
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 2
+			13003 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces= { 13003 }
+
+	local_supplies=0.0 
+}

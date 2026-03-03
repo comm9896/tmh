@@ -1,0 +1,74 @@
+
+state={
+	id=528
+	name="STATE_528" # Kyushu
+	manpower = 9069000
+	state_category = large_city
+	resources={
+		chromium=52 # was: 88
+		coal = 15						
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+        1936.1.1.15 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+				
+		buildings = {
+			infrastructure = 4 #was: 7
+			air_base = 3
+			dockyard = 4
+			arms_factory = 1
+			industrial_complex = 2
+			9950 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			1025 10 
+		}
+
+		victory_points = {
+			9950 30
+		}
+		1939.1.1 = {
+			buildings = {
+				dockyard = 4
+				industrial_complex = 3
+			}
+		}
+
+	}
+
+	provinces={
+		1025 1158 4027 4164 7110 9950 10011 10020 10092 11925 
+	}
+
+	local_supplies=10.0 
+}

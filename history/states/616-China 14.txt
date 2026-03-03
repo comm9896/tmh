@@ -1,0 +1,53 @@
+state={
+	id=616
+	name="STATE_616"
+
+	resources={
+		coal = 8					
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = CHI
+		    add_core_of = CHI	
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.15 = {	    
+		    owner = CHI
+		    add_core_of = CHI	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}	
+				
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+		}
+
+	}
+
+	provinces={
+		3742 5031 7511 8055 8081 8127 10724 12750
+	}
+	manpower=2077600
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,669 @@
+ideas = {
+
+	country = {
+		
+
+		AST_ASIS = {
+			
+			removal_cost = -1
+
+			picture = generic_spy_intel
+				
+			allowed = {
+				original_tag = AST
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				operative_slot = 1
+				intelligence_agency_defense = 1
+			}
+		}
+		
+		AST_modern_fleet = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		
+		AST_modern_submarine = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+		}
+		
+		AST_standard_gauge_railway = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		AST_great_depression_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_expected_value = 0.20
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				stability_factor = -0.10
+			}
+		}
+
+		AST_great_depression_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		AST_great_depression_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+
+		AST_all_in = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_all_in
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		AST_invest_in_victory = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.07
+				industrial_capacity_dockyard = 0.07
+				stability_factor = 0.05
+			}
+		}
+
+		AST_invest_in_victory_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				stability_factor = 0.10
+			}
+		}
+
+		AST_australian_womens_army_service = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription_factor = 0.15
+				conscription = 0.02				
+			}
+		}
+
+		AST_australian_womens_army_service_2 = {
+			name = AST_australian_womens_army_service
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.01
+			}
+		}
+
+		AST_australian_womens_army_service_3 = {
+			name = AST_australian_womens_army_service
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription_factor = 0.25
+				conscription = 0.03
+			}
+		}
+
+
+		AST_naval_auxiliary_patrol = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_naval_auxiliary_patrol
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.5
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		AST_australian_arms_production = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				conversion_cost_civ_to_mil_factor= -0.2
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}			
+				anti_tank_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}	
+				anti_air_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}	
+				support_equipment_1 = {
+					build_cost_ic = -0.15
+					instant = yes
+				}					
+			}
+			
+		}
+
+
+		AST_volunteer_defence_corps = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				drift_defence_factor = 0.25
+				foreign_subversive_activites = -0.50
+				surrender_limit = 0.5
+			}
+		}
+
+		AST_citizen_military_forces = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			modifier = {
+				weekly_manpower = 500
+				drift_defence_factor = 0.25
+				foreign_subversive_activites = -0.50
+				special_forces_cap = 0.1
+				surrender_limit = 0.5				
+			}
+		}
+		AST_central_bureau_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				decryption_factor = 0.15
+			}
+			
+		}
+		AST_classify_aliens = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_classify_aliens
+
+			modifier = {
+				drift_defence_factor = 0.25
+				foreign_subversive_activites = -0.25
+				stability_factor = 0.05
+				weekly_manpower = 1000	
+				democratic_drift = 0.05
+				fascism_drift = -0.02
+				communism_drift = -0.02		
+				neutrality_drift = -0.02
+				conscription = 0.02
+			}
+		}
+
+		AST_empire_air_training_scheme = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				cv_small_plane_airframe = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				small_plane_cas_airframe = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				cv_small_plane_cas_airframe = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					air_range = 0.1
+					naval_strike_attack = 0.05
+					instant = yes
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					air_range = 0.1
+					naval_strike_attack = 0.05
+					instant = yes
+				}
+				medium_plane_airframe = {
+					air_range = 0.1
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					air_range = 0.1
+					air_attack = 0.05
+					instant = yes
+				}
+				large_plane_airframe = {
+					air_range = 0.1
+					air_bombing = 0.05
+					instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					air_range = 0.1
+					instant = yes
+				}
+				transport_plane_equipment = {
+					air_range = 0.1
+					instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					air_range = 0.1
+					build_cost_ic = -0.1
+					instant = yes		
+				}				
+			}
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+			}
+		}
+
+
+		AST_direct_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			rule = {
+				can_send_volunteers = yes
+			}
+
+			modifier = {
+            weekly_manpower = 150
+			}
+		}
+	}
+
+	industrial_concern = {
+
+		bhp_steel = {
+
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_TAG = AST
+				has_dlc = "Together for Victory"
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = AST_bhp_steel_tt
+					hidden_trigger = {
+						always = yes	
+					}
+				}
+			}
+			visible = {
+				not = {
+					has_completed_focus = AST_CSIR
+				}
+			}	
+
+			research_bonus = {
+				industry = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+			}
+		}
+
+		bhp_steel_improved = {
+
+			name = bhp_steel
+			picture = bhp_steel
+
+			
+			visible = {
+				has_completed_focus = AST_CSIR
+			}	
+			
+			allowed = {
+				original_TAG = AST
+				has_dlc = "Together for Victory"
+			}
+
+
+
+			research_bonus = {
+				industry = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		
+		AST_Queensland_Rail = {
+
+			picture = generic_industrial_concern_3
+
+			allowed = {
+				original_TAG = AST
+			}
+			
+			available = {
+				has_completed_focus = AST_Australian_Circular_Railway
+			}
+			cost = 75
+			research_bonus = {
+				train_tech = 0.15
+			}
+			
+			traits = { railway_company }
+
+		}			
+
+	}
+
+
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		lysaghts_works = {
+
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = AST
+				has_dlc = "Together for Victory"
+			}
+
+
+
+			research_bonus = {
+				support_tech = 0.10
+			}
+
+			traits = { support_equipment_manufacturer }
+
+
+		}
+
+		lithgow_saf = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+
+			allowed = {
+				original_TAG = AST
+				has_dlc = "Together for Victory"
+			}
+
+
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+		}
+
+	}
+}

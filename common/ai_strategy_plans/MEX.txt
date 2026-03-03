@@ -1,0 +1,40 @@
+mexico_historical = {
+	name = "Mexican Secular Republic"
+	desc = "The trend towards moderate secularism and the rule of law will be strengthened in Mexico, with the country aligning itself towards America."
+
+	allowed = {
+		original_tag = MEX
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = MEX_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = MEX_AI_SECULAR_REPUBLIC 
+			has_game_rule = {
+				rule = MEX_ai_behavior
+				option = SECULAR_REPUBLIC
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = USA
+			has_government = fascism
+			has_government = communism
+		}
+	}
+
+	ai_national_focuses = {
+		MEX_focus_national_bank
+		MEX_focus_agricultural_credit_bank
+
+	}
+	ideas = {
+	}
+}

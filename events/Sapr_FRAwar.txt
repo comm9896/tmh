@@ -1,0 +1,797 @@
+
+add_namespace = Sapr_FRA_army_posle_capa
+
+country_event = {
+	id = Sapr_FRA_army_posle_capa.1
+	title = Sapr_FRA_army_posle_capa.1.b
+	desc = Sapr_FRA_army_posle_capa.1.c
+	picture = GFX_report_event_degaulle_inspect_troops	
+
+	fire_only_once = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+	    name = Sapr_FRA_army_posle_capa.1.e		
+		
+		if = {
+			limit = {
+				not = {
+					has_tech = basic_medium_tank_chassis
+				}				
+			}
+			set_technology = { basic_medium_tank_chassis = 1 }	
+		}
+		create_equipment_variant = {
+			name = "AMC 35"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = wet_ammo_storage
+				
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				medium_tank_nsb_armor_upgrade = 9
+			}
+			icon = "GFX_FRA_basic_medium_tank_medium"		
+			design_team = mio:FRA_renault_organization			
+		}		
+		create_equipment_variant = {
+			name = "W15 TCC"
+			type = medium_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_cannon_2
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = secondary_turret_small_cannon
+				special_type_slot_2 = secondary_turret_small_cannon		
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				medium_tank_nsb_armor_upgrade = 9
+			}
+			icon = "GFX_FRA_basic_medium_td_medium"		
+			design_team = mio:FRA_renault_organization			
+		}	
+	
+		create_equipment_variant = {
+			name = "ЗСУ"
+			type = light_tank_aa_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_anti_air_cannon
+				turret_type_slot = tank_light_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = extra_ammo_storage
+				
+			}
+			upgrades = {  
+				tank_nsb_engine_upgrade = 9
+				light_tank_nsb_armor_upgrade = 4
+			}
+			icon = "GFX_FRA_improved_light_tank_medium"		
+			design_team = mio:FRA_renault_organization				
+		}
+		
+		if = {
+			limit = {
+				not = {
+					has_tech = mechanised_infantry
+				}				
+			}
+			set_technology = { mechanised_infantry = 1 }	
+		}
+			
+		division_template = {
+			name = "Танки"
+			division_names_group = FRA_Arm_01
+			
+			regiments = {
+				medium_armor = { x = 0 y = 0 }
+				medium_armor = { x = 0 y = 1 }
+				medium_armor = { x = 0 y = 2 }
+				medium_armor = { x = 0 y = 3 }
+				medium_armor = { x = 0 y = 4 }
+				
+				medium_tank_destroyer_brigade = { x = 1 y = 0 }
+				medium_tank_destroyer_brigade = { x = 1 y = 1 }
+				medium_tank_destroyer_brigade = { x = 1 y = 2 }
+				medium_tank_destroyer_brigade = { x = 1 y = 3 }
+				medium_tank_destroyer_brigade = { x = 1 y = 4 }		
+
+				medium_tank_destroyer_brigade = { x = 2 y = 0 }
+				medium_tank_destroyer_brigade = { x = 2 y = 1 }
+				light_sp_anti_air_brigade = { x = 2 y = 2 }					
+				
+				mechanized = { x = 3 y = 0 }
+				mechanized = { x = 3 y = 1 }
+				mechanized = { x = 3 y = 2 }
+				mechanized = { x = 3 y = 3 }
+
+				mechanized = { x = 4 y = 0 }
+				mechanized = { x = 4 y = 1 }
+				mechanized = { x = 4 y = 2 }
+				mechanized = { x = 4 y = 3 }
+				
+
+			}
+			support = {
+				engineer = { x = 0 y = 0 } 
+				mot_recon  = { x = 0 y = 1 }	
+				field_hospital = { x = 0 y = 2 } 
+				logistics_company = { x = 0 y = 3 } 
+				signal_company = { x = 0 y = 4 }		
+			}			
+			
+		}		
+		
+		
+		130 = {
+			create_unit = {
+				division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 24	
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}
+		132 = {
+			create_unit = {
+				division = "name = \"Танки\" division_template = \"Танки\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 4	
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}	
+		553 = {
+			create_unit = {
+				division = "name = \"Танки\" division_template = \"Танки\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 4
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}				
+		677 = {
+			create_unit = {
+				division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 12
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}	
+		set_division_template_lock = {
+			division_template = "Пехотинцы"
+			is_locked = no
+		}			
+		if = {
+			limit = {
+				date > 1940.03.01
+			}
+			677 = {
+				create_unit = {
+					division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+					owner = FRA
+					count = 12
+					allow_spawning_on_enemy_provs  = yes
+				}	
+			}				
+		}
+		if = {
+			limit = {
+				date > 1940.06.01
+			}
+			677 = {
+				create_unit = {
+					division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+					owner = FRA
+					count = 12
+					allow_spawning_on_enemy_provs  = yes
+				}	
+			}				
+		}
+
+		set_division_template_lock = {
+			division_template = "Пехотинцы"
+			is_locked = no
+		}		
+	}	
+}
+
+
+add_namespace = Sapr_Vichi_FRA_Focus
+
+#Дадим Виши ветку фокусов Франции
+
+country_event = {
+	id = Sapr_Vichi_FRA_Focus.2
+	title = Sapr_Vichi_FRA_Focus.2.b
+	desc = Sapr_Vichi_FRA_Focus.2.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+	hidden = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+	    name = Sapr_Vichi_FRA_Focus.2.d		
+		
+		load_focus_tree = french_focus		
+	}	
+}
+
+
+
+add_namespace = Sapr_FRA_anex
+
+country_event = {
+	id = Sapr_FRA_anex.1
+	title = Sapr_FRA_anex.1.b
+	desc = Sapr_FRA_anex.1.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+	hidden = yes
+	fire_only_once = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+	    name = Sapr_FRA_anex.1.d		
+		
+		every_controlled_state = {
+			limit = {
+				is_core_of = TIB
+			}
+			set_compliance = 100
+		}		
+	}	
+}
+
+
+#add_namespace = Sapr_Dunker_encirclement1
+
+#скрытый пре эвент срабатывает при падении дюнкерка и при этом удержании лесов амьеном и реймсом. 
+
+
+country_event = {
+	id = Sapr_Dunker_encirclement1.1
+	title = Sapr_Dunker_encirclement1.1.b
+	desc = Sapr_Dunker_encirclement1.1.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 21 }
+	
+	trigger = {
+		and = {
+		    tag = FRA
+			has_war = yes
+			FRA = {
+				has_capitulated = no
+			}	
+			785 = {
+				controller = {
+					OR ={
+						tag = FRA
+						is_in_faction_with = FRA
+					}
+				}
+			}
+			18 = {
+				controller = {
+					OR ={
+						tag = FRA
+						is_in_faction_with = FRA
+					}
+				}
+			}
+			29 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			34 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			6 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}		
+			1055 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}					
+		}	
+	}	
+	
+	
+	option = {
+	    name = Sapr_Dunker_encirclement1.1.d					
+		1055 = {
+			teleport_armies = {
+				to_state = 51
+			}		
+		}
+		FRA = {
+			country_event = Sapr_Dunker_encirclement.2
+		}	
+		hidden_effect = {
+			set_global_flag = Sapr_dunkerk_evacuation_news_flag
+		}
+		
+		
+	}	
+}
+	
+		
+#Дюнкеркские окруженцы
+#add_namespace = Sapr_Dunker_encirclement
+
+country_event = {
+	id = Sapr_Dunker_encirclement.2
+	title = Sapr_Dunker_encirclement.2.b
+	desc = Sapr_Dunker_encirclement.2.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+
+	#fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+	    name = Sapr_Dunker_encirclement.2.d
+		29 = {
+
+			create_unit = {
+				division = "name = \"Механизированная дивизия SS\" division_template = \"Механизированная дивизия SS\" start_experience_factor = 0.1" 
+				owner = GER
+				count = 4
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11548			
+			}
+			create_unit = {
+				division = "name = \"Механизированная дивизия SS\" division_template = \"Механизированная дивизия SS\" start_experience_factor = 0.1" 
+				owner = GER
+				count = 4
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 3536			
+			}	
+			create_unit = {
+				division = "name = \"Механизированная дивизия SS\" division_template = \"Механизированная дивизия SS\" start_experience_factor = 0.1" 
+				owner = GER
+				count = 4
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 11483			
+			}			
+		}
+		6 = {
+
+			create_unit = {
+				division = "name = \"Механизированная дивизия SS\" division_template = \"Механизированная дивизия SS\" start_experience_factor = 0.1" 
+				owner = GER
+				count = 2
+				allow_spawning_on_enemy_provs  = yes
+				prioritize_location = 6446			
+			}
+		}		
+		set_state_controller = 1055				
+		1055 = {
+			create_unit = {
+				division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.8" 
+				owner = ENG
+				count = 48	
+				allow_spawning_on_enemy_provs  = yes
+			}
+			create_unit = {
+				division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.8" 
+				owner = BEL
+				count = 2	
+				allow_spawning_on_enemy_provs  = yes
+			}			
+			create_unit = {
+				division = "name = \"М.К.Л. Кейратса\" division_template = \"Важная шишка\" start_experience_factor = 0.8" 
+				owner = ENG
+				count = 1
+				id = 230
+				allow_spawning_on_enemy_provs  = yes
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_dunkerk
+				days = 30
+				scope = GER
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_dunkerk
+				days = 30
+				scope = BUL
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_dunkerk
+				days = 30
+				scope = ROM
+			}	
+			add_dynamic_modifier = {
+				modifier = Sapr_dunkerk
+				days = 30
+				scope = HUN
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_dunkerk
+				days = 30
+				scope = ITA
+			}
+			
+		}	
+		GER = {
+			add_equipment_to_stockpile = {
+				type = heavy_tank_destroyer_chassis
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = mech_chassis
+				amount = 1000
+			}	
+		}		
+		set_country_flag = Sapr_Dunker_encirclement_flag
+		activate_mission = FRA_Rescue_the_Belgian_General
+		activate_mission = FRA_Sapr_Evacuation_from_Dunkerk
+	}	
+}
+
+add_namespace = Sapr_Successful_rescue_of_the_Belgian_general
+
+country_event = {
+	id = Sapr_Successful_rescue_of_the_Belgian_general.2
+	title = Sapr_Successful_rescue_of_the_Belgian_general.2.b
+	desc = Sapr_Successful_rescue_of_the_Belgian_general.2.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = Sapr_Successful_rescue_of_the_Belgian_general.2.d
+		
+		clr_country_flag = Sapr_Dunker_encirclement_flag
+		set_country_flag = Sapr_Dunker_encirclement_is_alive_flag
+
+		BEL_mcl_keyaerts = {
+			set_nationality = FRA
+		}
+		ENG = {
+			delete_unit = {
+				id = 230
+			}	
+		}		
+		army_experience = 150		
+	}	
+}
+
+add_namespace = Sapr_failure_rescue_of_the_Belgian_general
+
+country_event = {
+	id = Sapr_failure_rescue_of_the_Belgian_general.2
+	title = Sapr_failure_rescue_of_the_Belgian_general.2.b
+	desc = Sapr_failure_rescue_of_the_Belgian_general.2.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+	fire_only_once = yes
+
+	trigger = {
+		and = {	
+			tag = FRA
+			FRA = {
+				has_country_flag = Sapr_Dunker_encirclement_flag
+			}
+			not = {
+				has_country_flag = Sapr_Dunker_encirclement_is_alive_flag
+			}
+			has_capitulated = yes
+			16 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+	    name = Sapr_failure_rescue_of_the_Belgian_general.2.d
+		
+		clr_country_flag = Sapr_Dunker_encirclement_flag
+		set_country_flag = BEL_mcl_keyaerts_dead
+		delete_unit = {
+			id = 230
+		}			
+	}	
+	
+}
+
+
+add_namespace = Sapr_save_the_people_of_Paris
+
+#скрытый пре эвент срабатывает при приблежении противника к парижу. 
+
+
+country_event = {
+	id = Sapr_save_the_people_of_Paris.2
+	title = Sapr_save_the_people_of_Paris.2.b
+	desc = Sapr_save_the_people_of_Paris.2.c
+	picture = GFX_report_event_degaulle_inspect_troops
+
+
+	fire_only_once = yes
+
+	trigger = {
+		and = {
+		    tag = FRA
+			has_war = yes
+			FRA = {
+				has_capitulated = no
+			}
+			OR = {
+				785 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				18 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				27 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				24 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+			}	
+		}	
+	}
+
+	
+	option = {
+	    name = Sapr_save_the_people_of_Paris.2.d
+		
+		activate_mission = FRA_Evacuation_from_Paris	
+	}	
+}
+
+
+add_namespace = Sapr_Reorganization_of_defense_in_eastern_France
+
+#скрытый пре эвент срабатывает при приблежении противника к парижу. 
+
+country_event = {
+	id = Sapr_Reorganization_of_defense_in_eastern_France.2
+	title = Sapr_Reorganization_of_defense_in_eastern_France.2.b
+	desc = Sapr_Reorganization_of_defense_in_eastern_France.2.c
+	picture = GFX_report_event_degaulle_inspect_troops
+
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 14 }
+	fire_only_once = yes
+
+	
+	trigger = {
+		and = {
+		    tag = FRA
+			has_war = yes
+			FRA = {
+				has_capitulated = no
+			}
+			AND = {
+				17 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				28 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				18 = {
+					controller = {
+						OR ={
+							tag = FRA
+							is_in_faction_with = FRA
+						}
+					}
+				}
+			}	
+		}	
+	}
+	
+	
+	
+	option = {
+	    name = Sapr_Reorganization_of_defense_in_eastern_France.2.d
+		
+		activate_mission = FRA_mobilization_of_troops_in_Vichy	
+	}	
+}
+
+
+
+
+add_namespace = Sapr_Evacuation_from_Brest
+
+#скрытый пре эвент срабатывает при приблежении противника к парижу. 
+
+
+add_namespace = Sapr_Evacuation_from_Brest
+
+#скрытый эвент, срабатывает после капа Франции. 
+country_event = {
+	id = Sapr_Evacuation_from_Brest.2
+	title = Sapr_Evacuation_from_Brest.2.b
+	desc = Sapr_Evacuation_from_Brest.2.c
+	picture = GFX_report_event_degaulle_inspect_troops
+
+
+
+	mean_time_to_happen = { days = 2 }
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 14 }
+	fire_only_once = yes
+	
+	trigger = {
+		and = {
+		    tag = FRA
+			has_war = yes
+			FRA = {
+				has_capitulated = no
+			}
+			OR = {
+				15 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				16 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}				
+				24 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				23 = {
+					controller = {
+						OR ={
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+			}	
+		}	
+	}	
+	
+
+	option = {
+	    name = Sapr_Evacuation_from_Brest.2.d
+		
+		activate_mission = FRA_Sapr_Evacuation_from_Brest		
+	}
+}
+
+
+add_namespace = FRA_war_in_europe
+
+#скрытый эвент, срабатывает когда герма захватывает часть Польши
+country_event = {
+	id = FRA_war_in_europe.a
+	title = FRA_war_in_europe.1.b
+	desc = FRA_war_in_europe.1.c
+	picture = GFX_report_event_SOV_purge_administration
+
+	trigger = {
+		and = {
+		    tag = FRA
+			has_war = yes
+			date < 1941.06.01
+		}	
+	}
+
+	mean_time_to_happen = { days = 8 }
+
+	fire_only_once = yes
+
+	option = {
+        name = FRA_war_in_europe.1.d	     
+		custom_effect_tooltip = FRA_war_in_europe_tt
+		activate_mission = industry_evacuation
+		
+		
+	    hidden_effect = {	
+			every_controlled_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = FRA_low_interest_in_investment }
+				}
+				remove_dynamic_modifier = { modifier = FRA_low_interest_in_investment }
+			}				
+		}	
+	}
+}

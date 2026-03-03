@@ -1,0 +1,55 @@
+state={
+	id=728
+	name="STATE_728"
+	manpower = 200000
+	
+	state_category = enclave
+
+	resources={
+		coal = 8					
+	}
+	
+	history={
+        1936.1.1.12 = {	    
+		    owner = FRA
+		    add_core_of = CHI	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = CHI
+		    add_core_of = CHI
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = JAP
+		    add_core_of = JAP
+		    add_core_of = RAJ			
+		}
+		
+		buildings = {
+			infrastructure = 2
+			11981 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		11981 
+	}
+
+	local_supplies=0.0 
+}

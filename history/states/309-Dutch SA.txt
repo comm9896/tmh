@@ -1,0 +1,63 @@
+
+state={
+	id=309
+	name="STATE_309"
+	manpower = 152000
+
+	resources={
+		aluminium=60 # was: 104
+	}	
+	
+	state_category = rural
+
+	history={
+
+		1936.1.1.12 = {
+			add_core_of = BRA			
+			add_core_of = HOL
+			owner = ENG
+		}
+		1936.1.1.13 = {
+			add_core_of = BRA				
+			add_core_of = HOL
+			owner = ENG
+		}		
+		1936.1.1.14 = {
+			add_core_of = BRA				
+			add_core_of = HOL
+			owner = ENG
+		}	
+		1936.1.1.15 = {
+			add_core_of = BRA				
+			add_core_of = HOL
+			owner = ENG
+		}	
+		1941.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB							
+		}			
+		1945.1.1.10 = {
+		    owner = BRA
+			add_core_of = BRA
+		}
+		
+		victory_points = {
+			10906 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			12828 = {
+				naval_base = 1
+			}
+		}
+		
+		
+	}
+
+	provinces={
+		1928 10906 12828 
+	}
+
+	local_supplies=0.0 
+}

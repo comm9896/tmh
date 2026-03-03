@@ -1,0 +1,68 @@
+
+state={
+	id=529
+	name="STATE_529" # Chugoku
+	manpower = 5341000
+	state_category = large_city
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		
+			buildings = {
+				infrastructure = 4 
+				air_base = 3
+				dockyard = 2
+				arms_factory = 2
+				industrial_complex = 2
+				1092 = {
+					naval_base = 10
+					naval_headquarters = {
+						level = 1
+					} 		
+				}
+				9968 = { dam = 1 }
+			
+			
+			}		
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+        1936.1.1.15 = {	 	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+				
+		
+		victory_points = {
+			1092 30
+		}
+	strategic_province_location = {
+			dam = 9968
+		}
+	}
+
+	provinces={
+		1092 4197 7212 9968 10052 11946 11985 
+	}
+
+	local_supplies=0.0 
+}

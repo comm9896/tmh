@@ -1,0 +1,69 @@
+
+state = {
+	id = 569
+	name = "STATE_569" # Khakassia
+	manpower = 1567322
+	
+	state_category = town
+
+	resources={
+		coal = 32				
+	}
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV		
+					
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 2
+			}
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 2
+				arms_factory = 4
+				industrial_complex = 4
+				synthetic_refinery = 2
+			}	
+			add_extra_state_shared_building_slots = 1		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+		victory_points = {
+			7757 5
+		}
+		victory_points = {
+			7822 5
+		}
+		victory_points = {
+			10580 5
+		}
+	}
+
+	provinces = {
+		1369 1685 1702 1816 4665 4789 4793 7757 7822 7886 10580 10649 12631 
+	}
+
+	local_supplies = 0.0 
+}

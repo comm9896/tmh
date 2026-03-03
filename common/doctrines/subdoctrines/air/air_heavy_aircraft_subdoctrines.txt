@@ -1,0 +1,171 @@
+
+air_subdoctrine_carpet_bombing = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_CARPET_BOMBING
+    description = SUBDOCTRINE_CARPET_BOMBING_DESC
+    icon = GFX_doctrine_mass_destruction_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+            	original_tag = JAP 
+            	original_tag = FRA 
+            }
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no 
+        }
+    }
+
+    # EFFECTS
+	category_strat_bomber = {
+		air_bombing = 0.2
+	}
+
+    rewards = {
+		veteran_bomber_crews = {
+			air_mission_xp_gain_factor = 0.05
+		}
+        breaking_the_spirit = {
+			army_bonus_air_superiority_factor = 0.05
+		}
+		destruction_campaigns = {
+			air_strategic_bomber_bombing_factor = 0.1
+		}
+		coordinated_air_operations = {
+			air_strategic_bomber_defence_factor = 0.1		
+		}
+		defensive_formation = {
+
+			category_strat_bomber = {
+				air_bombing = 0.1
+			}
+		}
+    }
+}
+
+air_subdoctrine_flying_fortresses = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_FLYING_FORTRESSES
+    description = SUBDOCTRINE_FLYING_FORTRESSES_DESC
+    icon = GFX_doctrine_flying_fortress_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    available = {
+       has_doctrine = new_strategic_destruction
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 25
+            original_tag = USA  
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no 
+        }
+    }
+
+    # EFFECTS
+	category_strat_bomber = {
+		air_defence = 0.1
+	}
+
+    rewards = {
+		high_level_bombing = {
+			air_strategic_bomber_defence_factor = 0.2
+		}
+        experienced_gunners = {
+			category_strat_bomber = {
+				air_attack = 0.1
+			}
+		}
+		pilot_rescue_missions = {
+			category_strat_bomber = {
+				air_attack = 0.1
+			}
+		}
+		extensive_training = {
+			air_training_xp_gain_factor = 0.1
+			category_strat_bomber = {
+				air_attack = 0.1
+			}
+		}
+		safety_landing_procedures = {
+			category_strat_bomber = {
+				air_defence = 0.1
+			}
+			
+		}
+    }
+}
+
+air_subdoctrine_open_ocean_air_patrol = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_OPEN_OCEAN_AIR_PATROL
+    description = SUBDOCTRINE_OPEN_OCEAN_AIR_PATROL_DESC
+    icon = GFX_doctrine_force_rotation_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    visible = {
+    	has_dlc = "By Blood Alone"
+    }
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = { base = 0 }
+
+    # EFFECTS
+	category_maritime_patrol_bomber = {
+		air_range = 0.15
+	}
+
+    rewards = {
+		harbor_raids = {
+			port_strike = 0.2
+		}
+        aerial_minesweeping = {
+			category_maritime_patrol_bomber = {
+				air_agility = 0.05
+				air_defence = 0.05
+			}
+			category_maritime_patrol_bomber = {
+				naval_strike_targetting = 0.1
+			}			
+		}
+		self_reliance = {
+			category_maritime_patrol_bomber = {
+				air_agility = 0.05
+				air_attack = 0.1
+			}
+		}
+		night_patrols = {
+			category_maritime_patrol_bomber = {
+				naval_strike_attack = 0.1
+			}
+		}
+		naval_destruction = {
+			air_nav_efficiency = 0.1			
+			naval_strike_targetting_factor = 0.1
+		}
+    }
+}

@@ -1,0 +1,70 @@
+
+state={
+	id=197
+	name="STATE_197"
+	manpower = 896311
+	
+	state_category = rural
+
+	history={
+		
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				dockyard = 1
+				11683 ={
+					naval_base = 1
+				}				
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}			
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+
+			buildings = {
+				infrastructure = 3 #was: 5
+				dockyard = 1
+				11683 ={
+					naval_base = 1
+				}				
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = {
+			11683 3
+		}
+	}
+
+	provinces={
+		409 574 3403 3755 6597 9573 11546 11683 
+	}
+
+	local_supplies=5.0 
+}

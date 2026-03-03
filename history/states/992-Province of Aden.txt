@@ -1,0 +1,57 @@
+state = {
+	id = 992
+	name = "STATE_992"
+	
+	state_category = rural_1k_Air
+	manpower = 80516
+	
+
+	history = {
+
+		1936.1.1.12 = {
+			owner = RAJ
+			add_core_of = RAJ
+		}		
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+			owner = RAJ
+			add_core_of = RAJ
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+
+		buildings = {
+			infrastructure = 2
+			5074 = {
+				naval_base = 3
+
+			}			
+		}
+
+		victory_points = {
+			5074 1 
+		}
+
+	}
+
+	provinces = {
+		5074 13374
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

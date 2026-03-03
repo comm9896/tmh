@@ -1,0 +1,56 @@
+
+state={
+	id=439
+	name="STATE_439"
+	manpower = 31136800
+	
+	state_category = city
+	
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}	
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}	
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 4
+		}
+		victory_points = {
+			2086 15 
+		}
+
+	}
+
+	provinces={
+		1898 2032 2086 5002 5157 10021 11955 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,20 @@
+﻿l_russian: 
+
+
+### Финляндия, смена страны
+FIN_rerol_country:0 "Смена игровой страны"
+
+FIN_rerol_country_GER:0 "Пересесть на Германию"
+FIN_rerol_country_GER_tt:0 "Вы пересядете на §YГерманию§!."
+
+FIN_rerol_country_ITA:0 "Пересесть на Италию"
+FIN_rerol_country_ITA_tt:0 "Вы пересядете на §YИталию§!."
+
+FIN_rerol_country_JAP:0 "Пересесть на Японию"
+FIN_rerol_country_JAP_tt:0 "Вы пересядете на §YЯпонию§!."
+
+FIN_Finnish_independence:0 "Финская независимая республика"
+FIN_Lauri_Malmberg:0 " Лаури Мальмберг"
+
+### Идеи
+FIN_bust_AI:0 "Финская стоикость"	

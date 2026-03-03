@@ -1,0 +1,70 @@
+
+state={
+	id=208
+	name="STATE_208" # Luga
+	manpower = 341819
+	
+	state_category = rural
+
+	history={
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+	
+			buildings = {
+				infrastructure = 3 #was: 5
+				air_base = 3
+				anti_air_building = 1					
+				9097 ={
+					naval_base = 1
+				}			
+			}			
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+
+			buildings = {
+				infrastructure = 3 #was: 5
+				air_base = 3
+				arms_factory = 1	
+				anti_air_building = 1					
+				9097 ={
+					naval_base = 1
+				}			
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+		
+		victory_points = {
+			9098 1
+		}
+		victory_points = {
+			9097 2
+		}		
+	}
+
+	provinces={
+		104 126 181 3120 6139 6197 9097 9098 11032 11080 11139 11186 
+	}
+
+	local_supplies=0.0 
+}

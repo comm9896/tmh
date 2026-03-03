@@ -1,0 +1,343 @@
+
+shared_focus = {
+	id = SMB_army
+	#icon = GFX_goal_panzerwaffe
+
+	dynamic = yes
+
+	icon = {
+		trigger = {
+			original_tag = CHL
+		}
+		value = GFX_focus_CHL_ejercito_de_chile
+	}
+	icon = {
+		trigger = {
+			original_tag = ARG
+		}
+		value = GFX_focus_ARG_army
+	}
+	icon = {
+		trigger = {
+			original_tag = BRA
+		}
+		value = GFX_focus_BRA_army
+	}
+	icon = {
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHL
+					original_tag = ARG
+					original_tag = BRA
+				}
+			}
+		}
+		value = GFX_goal_panzerwaffe
+	} 
+
+	x = 0
+	y = 0
+	offset = {
+		x = 26
+		y = 0
+		trigger = {
+			tag = BRA
+		}
+	}
+	offset = {
+		x = 48
+		y = 0
+		trigger = {
+			tag = ARG 
+		}
+	}
+
+	offset = {
+		x = 74
+		y = 0
+		trigger = {
+			tag = CHL
+		}
+	}
+
+	offset = {
+		x = 56
+		y = 0
+		trigger = {
+			tag = PAR
+		}
+	}
+
+	offset = {
+		x = 51
+		y = 0
+		trigger = {
+			tag = URG
+		}
+	}
+
+	offset = {
+		x = -29
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			tag = CHL
+			has_completed_focus = CHL_look_to_tradition
+		}	
+	}
+
+	offset = {
+		x = -15
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			tag = CHL
+			has_completed_focus = CHL_address_the_mapuche_conflict
+		}
+	}
+
+	offset = {
+		x = -38
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CHL_endorse_the_constitution
+		}
+	}
+
+	offset = {
+		x = -42
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CHL_denounce_the_anarchy
+		}
+	}
+
+	offset = {
+		x = -7
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CHL_rule_by_decree
+		}
+	}
+
+	offset = {
+		x = -33
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = BRA_prepare_for_second_intentona
+		}	
+	}
+
+	offset = {
+		x = -15
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = BRA_end_the_state_of_emergency
+		}	
+	}
+
+	offset = {
+			x = -21
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ARG_the_clean_election 
+			}
+		}
+
+		offset = {
+			x = -33
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = ARG_a_call_to_reform 
+			}
+		}
+
+	cost = 5
+
+	available = {
+
+	}
+
+	ai_will_do = {
+			factor = 20
+		}
+
+	bypass = {
+		
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SMB_air_force
+	#icon = GFX_goal_generic_build_airforce
+	relative_position_id = SMB_army
+	#prerequisite = { focus = SMB_army }
+	x = 8
+	y = 0
+
+	dynamic = yes
+
+	offset = {
+		x = 4
+		y = 0
+		trigger = {
+			tag = BRA
+		}
+	}
+
+	icon = {
+		trigger = {
+			original_tag = CHL
+		}
+		value = GFX_focus_CHL_fuerza_aerea_de_chile
+	}
+	icon = {
+		trigger = {
+			original_tag = ARG
+		}
+		value = GFX_focus_ARG_air_force
+	}
+	icon = {
+		trigger = {
+			original_tag = BRA
+		}
+		value = GFX_focus_BRA_air_force
+	}
+	icon = {
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHL
+					original_tag = ARG
+					original_tag = BRA
+				}
+			}
+		}
+		value = GFX_goal_generic_build_airforce
+	}
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 20
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = {
+	id = SMB_navy
+	#icon = GFX_goal_generic_build_navy
+	relative_position_id = SMB_air_force
+	x = 8
+	y = 0
+
+	dynamic = yes
+
+	icon = {
+		trigger = {
+			original_tag = CHL
+		}
+		value = GFX_focus_CHL_armada_de_chile
+	}
+	icon = {
+		trigger = {
+			original_tag = ARG
+		}
+		value = GFX_focus_ARG_navy
+	}
+	icon = {
+		trigger = {
+			original_tag = BRA
+		}
+		value = GFX_focus_BRA_navy
+	}
+	icon = {
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CHL
+					original_tag = ARG
+					original_tag = BRA
+				}
+			}
+		}
+		value = GFX_goal_generic_build_navy
+	}
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 20
+		modifier = {
+			any_controlled_state = {
+				is_coastal = no
+			}
+			factor = 0	
+		}
+	}
+
+	available = {
+		any_owned_state = {
+			is_controlled_by = ROOT
+			is_coastal = yes
+		}
+	}
+
+	bypass = {
+		
+	}
+
+	completion_reward = {
+
+	}
+}

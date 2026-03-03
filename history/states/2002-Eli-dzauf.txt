@@ -1,0 +1,53 @@
+state={
+	id=1048
+	name="STATE_1048"
+	provinces={
+		1060 11951 10785 9977 13386 13387
+	}
+	
+	state_category = wasteland_1k_Air
+	
+	history={
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+
+			buildings = {
+				infrastructure = 1
+			}		
+		}	
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {    
+		    owner = TIB
+			add_core_of = TIB	
+			
+			buildings = {
+				infrastructure = 1
+			}	
+		}	
+		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}	
+
+		
+	}
+	
+	manpower=15080
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

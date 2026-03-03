@@ -1,0 +1,55 @@
+
+state={
+	id=452
+	name="STATE_452"
+	manpower = 52556
+	
+	state_category = wasteland_1k_Air
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = EGY
+		}
+        1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = EGY
+		}		
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		1945.1.1.10 = {	    
+		    owner = ENG
+			add_core_of = ITA
+			add_core_of = ENG			
+		}			
+		
+		
+		buildings = {
+			infrastructure = 2
+		}
+
+		victory_points = {
+			10061 2 # Mersa Matruh
+		}
+
+		victory_points = {
+			9989 1 #Sidi Barrani
+		}
+		victory_points = {
+			12764 1 
+		}		
+	}
+
+	provinces={
+		 5078 7079 7148 9989 10061 11910 11967 12033 12764 12091 13389 13390 13391 13392 13393 13394 13395 13396 13397 13403
+	}
+
+
+	local_supplies=9.0 
+}

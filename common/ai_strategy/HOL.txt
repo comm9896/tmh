@@ -1,0 +1,36 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# send_volunteers_desire
+
+HOL_Degence = {
+	enable = {
+		tag = HOL
+		has_capitulated = yes
+	}
+
+	abort = {
+		has_capitulated = no
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		value = 5000
+	}
+	
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 5000
+		#state = {
+		#    672 335 667 334 673 668 669 738
+		#}
+	}	
+}

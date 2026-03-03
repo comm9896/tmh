@@ -1,0 +1,45 @@
+
+state={
+	id=547
+	name="STATE_547"
+	manpower = 1085440
+	state_category=rural
+
+	history={
+		1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = KEN
+		}			
+		1936.1.1.13 = {	    
+		    owner = ENG
+			add_core_of = KEN
+		}					
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}			
+				
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+		}
+		victory_points = {
+			1939 2 
+		}
+		
+
+	}
+
+	provinces={
+		1939 2066 5079 10962 13135 
+	}
+	buildings_max_level_factor=1.000
+	
+	local_supplies=6.000
+}

@@ -1,0 +1,61 @@
+
+state = {
+	id = 579
+	name = "STATE_579" # Salekhard
+	manpower = 45484
+	
+	impassable = yes	
+	buildings_max_level_factor = 1
+	state_category = "wasteland"
+	
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+
+		victory_points = {
+			1684 1
+		}
+
+	}
+
+	provinces = {
+		1664 1684 3169 4669 7689 7738 8461 9142 13076
+	}
+
+	local_supplies = 0.0 
+}

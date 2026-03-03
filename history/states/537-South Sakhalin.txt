@@ -1,0 +1,59 @@
+state= {
+	id=537
+	name="STATE_537"
+	manpower = 295196
+	resources={
+		oil=15 # was: 4
+		coal = 4						
+	}
+	
+	state_category = rural
+
+	history ={
+
+        1936.1.1.12 = {	    
+		    owner = JAP
+		    add_core_of = JAP	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+        1936.1.1.15 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}	
+				
+		buildings = {
+			infrastructure = 2
+			12446 = {
+				naval_base = 1
+
+			}
+			1322 = {
+				naval_base = 1
+
+			}			
+		}
+		victory_points = {
+			12446 1
+		}
+
+	}
+	provinces= {
+		1322 1820 12446 	
+	}
+
+	local_supplies=0.0 
+}

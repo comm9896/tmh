@@ -1,0 +1,256 @@
+German_historical = {
+	name = "German historical plan"
+	desc = "Essentially historical behaviour for Germany"
+
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					NOT = { has_dlc = "Waking the Tiger" }
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_country_flag = GER_AI_RANDOM_FASCIST
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	ai_national_focuses = {
+
+
+		GER_remilitarize_the_rhineland
+		GER_fuhrerprinzip
+		GER_ascension_of_todt
+		GER_reorganize_the_wehrmacht
+		
+		GER_the_four_year_plan					
+		GER_autarky_efforts
+		GER_institute_price_controls
+		GER_construct_the_reichsautobahn
+		GER_kdf_wagen_factories
+		
+		GER_ascension_of_speer
+		
+		GER_develop_heraeus_facilities		
+		GER_build_the_rur_dam
+		GER_expand_the_reichsautobahn_east
+		GER_expand_the_reichsautobahn_south
+		
+		GER_expanding_the_luftwaffe
+		GER_ascension_of_goring
+		GER_aeronautical_research_institute
+		
+		GER_anschluss
+		GER_demand_sudetenland
+		GER_first_vienna_award
+		GER_fate_of_czechoslovakia
+		GER_treaty_with_the_ussr
+		
+
+		GER_party_chancellor_hess
+		GER_develop_modern_maneuver_warfare
+		GER_adopt_new_panzer_doctrine
+		GER_instill_auftragstaktik
+		GER_panzergrenadier
+		
+		GER_accelerate_the_rearmament_program
+		GER_concentrated_armament_program
+		GER_establish_production_targets
+		GER_coal_liquefaction
+		GER_establish_buna_werke
+		GER_subsidize_hoesch_benzin
+		GER_integrate_war_economies
+		
+		GER_strengthen_the_kriegsmarine
+		GER_trade_interdiction
+		GER_establish_the_reichswerke
+		GER_support_a_coup_in_liechtenstein
+		GER_reassert_eastern_claims
+		GER_molotov_ribbentrop_pact
+		GER_danzig_or_war
+		
+		GER_zentrale_planung
+		GER_create_rustungsstab
+		GER_armament_rationalization
+		GER_operation_weserubung
+		GER_around_maginot
+		GER_uralbomber_program
+		GER_war_with_france
+		GER_form_the_jagdwaffe
+		
+		GER_demands_to_sweden
+		GER_the_swiss_gold
+		GER_reintegrate_luxemburg_and_alsace_lorraine
+		GER_alliance_with_spain
+		
+		GER_anti_comintern_pact
+		GER_war_with_the_ussr
+		
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 10
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 111
+	}
+
+	focus_factors = {
+		GER_remilitarize_the_rhineland = 1.0
+	}
+
+}
+
+GER_minor_allies = { #used to make minor European nations like Axis more
+	name = "Minor German Allies"
+
+	allowed = {
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+			original_tag = VIC
+			original_tag = SER
+			original_tag = SWI
+			original_tag = UKR
+			original_tag = BLR
+			original_tag = UBD
+			original_tag = ALB
+			original_tag = MNT
+			original_tag = GRE
+			original_tag = IRE
+			original_tag = BRI
+			original_tag = OCC
+			original_tag = WLS
+			original_tag = SCO
+			original_tag = ICE
+			original_tag = GRN
+			original_tag = SMI
+			original_tag = KAR
+			original_tag = GEO
+			original_tag = ARM
+			original_tag = CRI
+			original_tag = MLD
+			original_tag = VGE
+		}
+	}
+	enable = {
+		OR = {
+			has_government = fascism
+			fascism > 0.5
+		}
+		is_in_faction = no
+		GER = {
+			has_government = fascism
+		}
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+			original_tag = VIC
+			original_tag = SER
+			original_tag = SWI
+			original_tag = UKR
+			original_tag = BLR
+			original_tag = UBD
+			original_tag = ALB
+			original_tag = MNT
+			original_tag = GRE
+			original_tag = IRE
+			original_tag = BRI
+			original_tag = OCC
+			original_tag = WLS
+			original_tag = SCO
+			original_tag = ICE
+			original_tag = GRN
+			original_tag = SMI
+			original_tag = KAR
+			original_tag = GEO
+			original_tag = ARM
+			original_tag = CRI
+			original_tag = MLD
+			original_tag = VGE
+		}
+	}
+	abort = {
+		GER = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = JAP
+		value = -500
+	}
+}

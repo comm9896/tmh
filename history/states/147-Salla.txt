@@ -1,0 +1,55 @@
+state = {
+	id = 147
+	name = "STATE_147" #SALLA
+	manpower = 4630
+	
+	state_category = enclave
+	
+	history = {	
+
+		1936.1.1.12 = {	    
+			owner = FIN
+			add_core_of = FIN
+			buildings = {
+				infrastructure = 2
+			}		
+		}
+		1936.1.1.13 = {	    
+			owner = FIN
+			add_core_of = FIN
+		}		
+		1936.1.1.14 = {
+			owner = FIN
+			add_core_of = FIN	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 2
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB		
+		}
+
+		
+		victory_points = {
+			197 1
+		}
+	}
+
+	provinces = {
+		197 9158 11085 	
+	}
+
+	local_supplies = 0.0 
+}

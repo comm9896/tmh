@@ -1,0 +1,71 @@
+state = {
+	id = 163
+	name = "STATE_163"
+	manpower = 18000
+	
+	state_category = wasteland_no_Air
+	
+	history = {
+		
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = YUG	
+
+			buildings = {
+				infrastructure = 3 #was: 5
+				3943 = {
+					naval_base = 1
+				}
+			}			
+		}		
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = YUG		
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB			
+		}		
+
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+		
+			
+			buildings = {
+				infrastructure = 3
+				dockyard = 1
+				industrial_complex = 3
+				3924 = {
+					naval_base = 3
+				}
+				6889 = {
+					naval_base = 1
+				}
+			}
+			add_extra_state_shared_building_slots = 4				
+		}	
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+
+
+
+		victory_points = { #Zara/Zadar
+			3943 5 
+		}
+
+	}
+	provinces = {	
+		3943 
+	}
+
+	local_supplies = 0.0 
+}

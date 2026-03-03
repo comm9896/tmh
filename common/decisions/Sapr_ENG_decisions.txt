@@ -1,0 +1,2885 @@
+category_exile_forces = {
+	
+	weapons_for_the_resistance_Poland = {
+
+		icon = generic_ignite_civil_war
+
+		cost = 100
+
+		available = {	
+			has_equipment = { infantry_equipment > 10000 }			
+			86 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			807 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			85 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			98 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			90 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			87 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			92 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			88 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 86 
+				state = 98
+				state = 90
+				state = 87
+				state = 92
+				state = 88	
+				state = 10
+				state = 1054				
+			}
+		}
+		visible = {
+			tag = ENG
+			date > 1940.01.01
+		}
+
+	    cosmetic_tag = POL
+		cosmetic_ideology = democratic	
+
+		days_remove = 700
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}			
+			86 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			87 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			98 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			10 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			90 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			762 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			88 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			92 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 0.01
+		}
+	}	
+	weapons_for_the_resistance_Benilux = {
+
+		icon = generic_ignite_civil_war
+
+		cost = 100
+
+		available = {	
+			has_equipment = { infantry_equipment > 10000 }			
+			36 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			7 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			35 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			977 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			6 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			34 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			980 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			8 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 36 
+				state = 7
+				state = 35
+				state = 977
+				state = 6
+				state = 34	
+				state = 980
+				state = 8				
+			}
+		}
+		visible = {
+			tag = ENG
+			date > 1940.01.01
+		}
+
+	    cosmetic_tag = BEL
+		cosmetic_ideology = democratic	
+
+		days_remove = 700
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -10000
+			}				
+			36 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			7 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			35 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			977 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			6 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			34 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			980 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			8 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}			
+		}
+
+		ai_will_do = {
+			factor = 0.01
+		}
+	}		
+	
+	weapons_for_the_resistance_France = {
+
+		icon = generic_ignite_civil_war
+
+		cost = 150
+
+		available = {	
+			has_equipment = { infantry_equipment > 15000 }
+			
+			1055 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			29 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			785 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			18 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			28 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			17 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			27 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			24 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			16 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			15 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			14 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			30 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			23 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			19 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			806 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}				
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 1055 
+				state = 29
+				state = 785
+				state = 18
+				state = 28
+				state = 17	
+				state = 27
+				state = 24	
+				state = 16	
+				state = 15
+				state = 14
+				state = 30	
+				state = 23	
+				state = 19
+				state = 806				
+			}
+		}
+		visible = {
+			tag = ENG
+			date > 1940.01.01
+		}
+
+	    cosmetic_tag = FRA
+		cosmetic_ideology = democratic	
+
+		days_remove = 700
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -15000
+			}				
+			1055 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			29 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			785 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			18 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			28 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			17 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			27 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			24 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}	
+			16 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}	
+			15 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}	
+			14 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			30 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}	
+			23 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			19 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}
+			806 = {
+				add_resistance_target = {
+					amount = 20
+					days = 700
+				}
+			}			
+		}
+		
+
+		ai_will_do = {
+			factor = 0.01
+		}
+	}		
+}
+
+
+ENG_annex = {
+	
+	ENG_annex_AST = {
+	
+		icon = generic_army_support
+
+		available = {
+	        AND = {
+			    any_other_country = {
+				    original_tag = AST
+				    exists = yes
+			    }
+			    AST = { is_ai = yes }
+				OR = {
+			        GER = {has_completed_focus = GER_anschluss}	
+			        JAP = {has_war_with = CHI}	
+				}
+			}
+		}
+
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = AST
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = AST transfer_troops = yes}
+			
+			AST = {
+				transfer_units_fraction= {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = AST }
+				add_core_of = ROOT
+			}
+			AST = {
+			    every_unit_leader = {
+				set_nationality = ENG
+			    }
+			}	
+			AST = {
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_south_australian_housing_trust}	
+					    }
+				    }
+				    complete_national_focus = AST_south_australian_housing_trust					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_expand_lithgow_small_arms_factory}	
+					    }
+				    }
+				    complete_national_focus = AST_expand_lithgow_small_arms_factory					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_expand_the_northern_railway}	
+					    }
+				    }
+				    complete_national_focus = AST_expand_the_northern_railway					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_Australian_Circular_Railway}	
+					    }
+				    }
+				    complete_national_focus = AST_Australian_Circular_Railway					
+			    }					
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_Northern_infrastructure_development}	
+					    }
+				    }
+				    complete_national_focus = AST_Northern_infrastructure_development					
+			    }	
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_Western_infrastructure_development}	
+					    }
+				    }
+				    complete_national_focus = AST_Western_infrastructure_development					
+			    }
+				if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_department_of_supply_and_development}	
+					    }
+				    }
+				    complete_national_focus = AST_department_of_supply_and_development					
+			    }
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_allied_works_council}	
+					    }
+				    }
+				    complete_national_focus = AST_allied_works_council					
+			    }
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_rationing_and_recycling}	
+					    }
+				    }
+				    complete_national_focus = AST_rationing_and_recycling					
+			    }
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_cockatoo_island_shipyards}	
+					    }
+				    }
+				    complete_national_focus = AST_cockatoo_island_shipyards					
+		        }	
+                if = {
+				    limit = {
+					    not = {
+						    AST = {has_completed_focus = AST_kangaroo_point_shipyards}	
+					    }
+				    }
+				    complete_national_focus = AST_kangaroo_point_shipyards					
+			    }
+			}			
+		}	
+	}
+	
+	ENG_annex_NZL = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = NZL
+				exists = yes
+			}
+			NZL = { is_ai = yes }
+			OR = {
+				GER = {has_completed_focus = GER_anschluss}	
+				JAP = {has_war_with = CHI}	
+			}			
+		}
+
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = NZL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = NZL transfer_troops = yes}
+			
+			NZL = {
+				transfer_units_fraction= {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = NZL }
+				add_core_of = ROOT
+			}
+			NZL = {
+			    every_unit_leader = {
+				set_nationality = ENG
+			    }
+			}
+		}
+	}
+	
+	ENG_annex_SAF = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = SAF
+				exists = yes
+			}
+			SAF = { is_ai = yes }
+			OR = {
+				GER = {has_completed_focus = GER_anschluss}	
+				JAP = {has_war_with = CHI}	
+			}			
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = SAF
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = SAF transfer_troops = yes}
+			set_country_flag = Sapr_SAF_annex
+			if = {
+				limit = {
+					has_country_flag = Sapr_no_asia
+				}
+				add_offsite_building = { type = industrial_complex level = 15 }							
+			}
+			
+			SAF = {
+				transfer_units_fraction= {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = SAF }
+				add_core_of = ROOT
+			}
+			SAF = {
+			    every_unit_leader = {
+				set_nationality = ENG
+			    }
+			}
+		}
+	}	
+	ENG_annex_CAN = {
+	
+		icon = generic_army_support
+
+		available = {
+		    AND = {
+			    any_other_country = {
+				    original_tag = CAN
+				    exists = yes
+			    }
+			    CAN = { is_ai = yes }
+				OR = {
+			        GER = {has_completed_focus = GER_anschluss}	
+			        JAP = {has_war_with = CHI}	
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = CAN transfer_troops = yes}
+			
+			CAN = {
+				transfer_units_fraction= {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = CAN }
+				add_core_of = ROOT
+			}
+			CAN = {
+			    every_unit_leader = {
+				set_nationality = ENG
+			    }
+			}
+			add_research_slot = 1	
+			
+			if = {
+				limit = {
+					has_country_flag = Sapr_no_asia
+				}
+				add_offsite_building = { type = industrial_complex level = 25 }							
+			}			
+			
+		}
+	}
+
+	ENG_annex_RAJ = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = RAJ
+				exists = yes
+			}
+			RAJ = { is_ai = yes }
+			OR = {
+				GER = {has_completed_focus = GER_anschluss}	
+				JAP = {has_war_with = CHI}	
+			}			
+		}
+
+		visible = {
+			not = {
+			    378 = {
+				    CONTROLLER = {
+						tag = TIB
+					}
+				}			
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = RAJ transfer_troops = yes}
+			
+			RAJ = {
+				transfer_units_fraction= {
+					target = ENG
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = RAJ }
+				add_core_of = ROOT
+			}
+			RAJ = {
+			    every_unit_leader = {
+				set_nationality = ENG
+			    }
+			}
+			add_research_slot = 1	
+		}
+	}
+
+	ENG_annex_FRA = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = FRA
+				exists = yes
+				FRA = { has_capitulated = yes }
+			}
+			FRA = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = FRA
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = FRA transfer_troops = yes}
+			
+			#FRA = { # сломано. анексит флот виши.
+			#	transfer_units_fraction= {
+			#		target = ENG
+			#		size = 1
+			#		stockpile_ratio = 1
+			#		army_ratio = 1
+			#		navy_ratio = 1
+			#		air_ratio = 1
+			#	}
+			#}
+			
+			every_state = {
+				limit = { is_core_of = FRA }
+				add_core_of = ROOT
+			}
+			
+			country_event = { id = Sapr_FRA_anex.1 }
+			
+			FRA = {
+			    every_unit_leader = {
+					set_nationality = ENG
+			    }
+			}
+			add_research_slot = 1			
+
+
+			
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = amphibious_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = amphibious_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { amphibious_tank_chassis = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = amphibious_drive
+					}
+					ENG = {
+						not = {
+							has_tech = amphibious_drive
+						}
+					}				
+				}	
+				set_technology = { amphibious_drive = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = advanced_light_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = advanced_light_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { advanced_light_tank_chassis = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = basic_medium_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = basic_medium_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { basic_medium_tank_chassis = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = improved_medium_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = improved_medium_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { improved_medium_tank_chassis = 1 }				
+			}		
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = advanced_medium_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = advanced_medium_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { advanced_medium_tank_chassis = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = basic_heavy_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = basic_heavy_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { basic_heavy_tank_chassis = 1 }				
+			}
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = improved_heavy_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = improved_heavy_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { improved_heavy_tank_chassis = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = advanced_heavy_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = advanced_heavy_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { advanced_heavy_tank_chassis = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = super_heavy_tank_chassis
+					}
+					ENG = {
+						not = {
+							has_tech = super_heavy_tank_chassis
+						}
+					}				
+				}	
+				set_technology = { super_heavy_tank_chassis = 1 }				
+			}		
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = armor_tech_1
+					}
+					ENG = {
+						not = {
+							has_tech = armor_tech_1
+						}
+					}				
+				}	
+				set_technology = { armor_tech_1 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = armor_tech_2
+					}
+					ENG = {
+						not = {
+							has_tech = armor_tech_2
+						}
+					}				
+				}	
+				set_technology = { armor_tech_2 = 1 }				
+			}		
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = armor_tech_3
+					}
+					ENG = {
+						not = {
+							has_tech = armor_tech_3
+						}
+					}				
+				}	
+				set_technology = { armor_tech_3 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = armor_tech_4
+					}
+					ENG = {
+						not = {
+							has_tech = armor_tech_4
+						}
+					}				
+				}	
+				set_technology = { armor_tech_4 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = engine_tech_1
+					}
+					ENG = {
+						not = {
+							has_tech = engine_tech_1
+						}
+					}				
+				}	
+				set_technology = { engine_tech_1 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = engine_tech_2
+					}
+					ENG = {
+						not = {
+							has_tech = engine_tech_2
+						}
+					}				
+				}	
+				set_technology = { engine_tech_2 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = engine_tech_3
+					}
+					ENG = {
+						not = {
+							has_tech = engine_tech_3
+						}
+					}				
+				}	
+				set_technology = { engine_tech_3 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = engine_tech_4
+					}
+					ENG = {
+						not = {
+							has_tech = engine_tech_4
+						}
+					}				
+				}	
+				set_technology = { engine_tech_4 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = artillery1
+					}
+					ENG = {
+						not = {
+							has_tech = artillery1
+						}
+					}				
+				}	
+				set_technology = { artillery1 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = artillery2
+					}
+					ENG = {
+						not = {
+							has_tech = artillery2
+						}
+					}				
+				}	
+				set_technology = { artillery2 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = artillery3
+					}
+					ENG = {
+						not = {
+							has_tech = artillery3
+						}
+					}				
+				}	
+				set_technology = { artillery3 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = artillery4
+					}
+					ENG = {
+						not = {
+							has_tech = artillery4
+						}
+					}				
+				}	
+				set_technology = { artillery4 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = artillery5
+					}
+					ENG = {
+						not = {
+							has_tech = artillery5
+						}
+					}				
+				}	
+				set_technology = { artillery5 = 1 }				
+			}
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = antitank1
+					}
+					ENG = {
+						not = {
+							has_tech = antitank1
+						}
+					}				
+				}	
+				set_technology = { antitank1 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = antitank2
+					}
+					ENG = {
+						not = {
+							has_tech = antitank2
+						}
+					}				
+				}	
+				set_technology = { antitank2 = 1 }				
+			}
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = antitank3
+					}
+					ENG = {
+						not = {
+							has_tech = antitank3
+						}
+					}				
+				}	
+				set_technology = { antitank3 = 1 }				
+			}	
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = antitank4
+					}
+					ENG = {
+						not = {
+							has_tech = antitank4
+						}
+					}				
+				}	
+				set_technology = { antitank4 = 1 }				
+			}
+			if = {
+				limit = { 
+					FRA = {
+						has_tech = antitank5
+					}
+					ENG = {
+						not = {
+							has_tech = antitank5
+						}
+					}				
+				}	
+				set_technology = { antitank5 = 1 }				
+			}			
+		}
+	}
+
+
+	
+}
+
+ENG_overlord = {
+	
+	ENG_attack_brest = {
+	
+		icon = generic_army_support
+
+		fire_only_once = yes
+
+		available = {
+			not = {
+				has_country_flag = Sapr_overlord_operation
+			}
+			127 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			126 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			338 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			123 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			14 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			30 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			23 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}				
+		}
+		
+		highlight_states = {	
+			highlight_state_targets = { 
+				state = 14
+			}	
+			highlight_state_targets = { 
+				state = 30
+			}	
+			highlight_state_targets = { 
+				state = 23
+			}				
+		}
+		
+		visible = {
+		}
+		
+		days_remove = 180
+		
+		complete_effect = {	
+
+			set_country_flag = Sapr_overlord_operation
+			
+			custom_effect_tooltip = ENG_overlord_tt
+		
+			add_manpower = -350000
+			
+			hidden_effect = {					
+				
+			    sound_effect = USA_Airborne_sound		
+				
+				set_state_controller = 14			
+				14 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11508	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3758	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 542	
+					}				
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						#allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3552	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6548	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6572	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9525	
+					}				
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9510	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9495	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6536	
+					}					
+				}
+				
+				set_state_controller = 30		
+				30 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11465	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11616	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 503	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 527	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3523	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3495	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3509	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11463	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9478	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11613	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9867	
+					}					
+					 
+				}
+				set_state_controller = 23			
+				23 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11600	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9631	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3659	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11596	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6657	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 655	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 629	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9597	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11582	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 595	
+					}					
+					
+				}
+			}
+		}
+
+		remove_effect = {
+			clr_country_flag = Sapr_overlord_operation
+		}	
+	}
+	ENG_attack_normandy = {
+	
+		icon = generic_army_support
+
+		fire_only_once = yes
+		
+		available = {
+			not = {
+				has_country_flag = Sapr_overlord_operation
+			}
+			127 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			126 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			338 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			123 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			15 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			785 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			29 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			1055 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}			
+		}
+		
+		highlight_states = {	
+			highlight_state_targets = { 
+				state = 15	
+			}	
+			highlight_state_targets = { 
+				state = 785
+			}	
+			highlight_state_targets = { 
+				state = 29
+			}
+			highlight_state_targets = { 
+				state = 1055
+			}				
+		}
+		visible = {
+		}
+		
+		days_remove = 180
+		
+		complete_effect = {	
+
+			add_manpower = -350000
+			
+			set_country_flag = Sapr_overlord_operation			
+			custom_effect_tooltip = ENG_overlord_tt
+			hidden_effect = {	
+				
+			    sound_effect = USA_Airborne_sound			
+				
+				set_state_controller = 15
+				15 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6449	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9550	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3579	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11535	
+					}			
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 539	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 553	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11521	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6599	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3534	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3549	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9434
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 485	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6569	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9578	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11563	
+					}				
+				}
+				set_state_controller = 785		
+				785 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11420	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6585	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 454	
+					}					
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9561	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3402	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3447	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11549	
+					}					
+				}
+				set_state_controller = 29			
+				29 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9500	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11548
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3536	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3476	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11483	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6504	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11606	
+					}					
+				}		
+				set_state_controller = 1055			
+				1055 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 575	
+					}					
+				}					
+			}	
+		}
+		remove_effect = {
+			clr_country_flag = Sapr_overlord_operation
+		}			
+	}
+	ENG_attack_benelux = {
+	
+		icon = generic_army_support
+
+		fire_only_once = yes
+
+		available = {
+			not = {
+				has_country_flag = Sapr_overlord_operation
+			}
+			127 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			126 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			338 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			123 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			7 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			35 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}	
+			6 = {
+				controller = {
+					OR ={
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+			}			
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		
+		highlight_states = {	
+			highlight_state_targets = { 
+				state = 6	
+			}	
+			highlight_state_targets = { 
+				state = 35
+			}	
+			highlight_state_targets = { 
+				state = 7
+			}				
+		}
+
+		
+		complete_effect = {	
+			
+			set_country_flag = Sapr_overlord_operation			
+			custom_effect_tooltip = ENG_overlord_tt
+			
+			add_manpower = -350000			
+			
+			hidden_effect = {			
+				
+			    sound_effect = USA_Airborne_sound						
+				
+				set_state_controller = 6
+				6 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6446	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6560	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3576	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6598	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 516	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11419	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 13068	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9574	
+					}						
+				}
+				set_state_controller = 35		
+				35 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9431	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3262	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6496	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11456	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6500	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11562	
+					}				
+				}
+				set_state_controller = 7			
+				7 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9498	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3211	
+					}	
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 391	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 68	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3314	
+					}	
+				}
+			}	
+		}
+
+		remove_effect = {
+			clr_country_flag = Sapr_overlord_operation
+		}			
+	}	
+	ENG_attack_southern_italy = {
+	
+		icon = generic_army_support
+
+		fire_only_once = yes
+
+		available = {
+			not = {
+				has_country_flag = Sapr_overlord_operation
+			}
+			1 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			126 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			115 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			156 = {
+				controller = {
+					OR ={
+						tag = ITA
+						is_in_faction_with = ITA
+					}
+				}
+			}
+			117 = {
+				controller = {
+					OR ={
+						tag = ITA
+						is_in_faction_with = ITA
+					}
+				}
+			}
+			849 = {
+				controller = {
+					OR ={
+						tag = ITA
+						is_in_faction_with = ITA
+					}
+				}
+			}				
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		
+		highlight_states = {	
+			highlight_state_targets = { 
+				state = 156	
+			}	
+			highlight_state_targets = { 
+				state = 117
+			}	
+			highlight_state_targets = { 
+				state = 849
+			}				
+		}
+
+		
+		complete_effect = {	
+
+			set_country_flag = Sapr_overlord_operation			
+			custom_effect_tooltip = ENG_overlord_tt
+		
+			add_manpower = -350000
+
+			hidden_effect = {				
+				
+			    sound_effect = USA_Airborne_sound						
+				
+				set_state_controller = 156
+				156 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9990	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 12066	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 12098	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3901	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 10027	
+					}	
+				}
+				set_state_controller = 117		
+				117 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9856	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6972	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3968	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 851
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3958	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 955	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11803	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 819	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9826	
+					}
+				}
+				set_state_controller = 849			
+				849 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6979	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11998	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11837	
+					}		
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9784	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6843	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 883	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6980	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6939	
+					}
+				}
+			}	
+		}
+
+		remove_effect = {
+			clr_country_flag = Sapr_overlord_operation
+		}			
+	}	
+	ENG_attack_center_italy = {
+	
+		icon = generic_army_support
+
+		fire_only_once = yes
+
+		available = {
+			not = {
+				has_country_flag = Sapr_overlord_operation
+			}
+			1 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			126 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}	
+			115 = {
+				controller = {
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG
+					}
+				}
+			}
+			157 = {
+				controller = {
+					OR ={
+						tag = ITA
+						is_in_faction_with = ITA
+					}
+				}
+			}	
+			2 = {
+				controller = {
+					OR ={
+						tag = ITA
+						is_in_faction_with = ITA
+					}
+				}
+			}	
+			162 = {
+				controller = {
+					OR ={
+						tag = ITA
+						is_in_faction_with = ITA
+					}
+				}
+			}				
+		}
+
+		visible = {
+		}
+		
+		days_remove = 180
+		
+		highlight_states = {	
+			highlight_state_targets = { 
+				state = 157	
+			}	
+			highlight_state_targets = { 
+				state = 2
+			}	
+			highlight_state_targets = { 
+				state = 162
+			}				
+		}
+
+		complete_effect = {	
+
+			set_country_flag = Sapr_overlord_operation			
+			custom_effect_tooltip = ENG_overlord_tt
+		
+			add_manpower = -350000		
+			
+			hidden_effect = {				
+				
+				sound_effect = USA_Airborne_sound						
+					
+				set_state_controller = 2
+				2 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 923	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11882	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11846	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9904	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9794	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11751	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6862	
+					}
+				}
+				set_state_controller = 157		
+				157 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3966	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3923	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6831	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 963	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3910	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9838	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11790	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 925	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6926	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 967	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11861	
+					}
+				}
+				set_state_controller = 162			
+				162 = {
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6875	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9750	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 3885	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 9879	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 910	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11833	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6946	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 6973	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 1616	
+					}
+					create_unit = {
+						division = "name = \"Десантники\" division_template = \"Десантники\" start_experience_factor = 0.9" 
+						owner = ENG
+						count = 1		
+						allow_spawning_on_enemy_provs  = yes	
+						prioritize_location = 11889	
+					}
+				}	
+			}	
+		}
+
+		remove_effect = {
+			clr_country_flag = Sapr_overlord_operation
+		}			
+	}		
+}	
+	

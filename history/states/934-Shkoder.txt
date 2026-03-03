@@ -1,0 +1,69 @@
+
+state = {
+	id = 934
+	name = "STATE_934"
+	resources = {
+		aluminium = 1.000
+        chromium = 1.000
+		coal = 6							
+	}
+
+	history = {
+
+		1936.1.1.12 = {	 
+			owner = ALB		
+			add_core_of = ALB
+        
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+			}		
+		}
+		1936.1.1.13 = {	 
+			owner = ALB		
+			add_core_of = ALB
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	 
+			owner = TIB		
+			add_core_of = TIB
+		}			
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		1941.1.1.14 = {    
+			owner = TUR
+			add_core_of = TUR		
+		
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+        victory_points = {
+            9780 3 
+        }
+
+
+	}
+
+	provinces = {
+		3896 9780 11762
+	}
+	manpower = 246933
+	state_category = rural
+	local_supplies = 5.000
+}

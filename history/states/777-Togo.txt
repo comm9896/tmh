@@ -1,0 +1,44 @@
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+
+	   1936.1.1.12 = {	    
+		    owner = FRA
+			add_core_of = TZN		
+		}	
+	   1936.1.1.13 = {	    
+		    owner = FRA				
+		}		
+		1936.1.1.14 = {
+			owner = FRA			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+
+		victory_points = {
+			1951 1
+		}
+		buildings = {
+			infrastructure = 2
+			1951 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1951 12843 13212 
+	}
+	manpower=1101346
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

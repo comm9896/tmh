@@ -1,0 +1,25 @@
+
+state={
+	id=498
+	name="STATE_498"
+	manpower = 7746000
+
+	state_category = city
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3 #was: 5
+		}
+		add_core_of = BRA
+
+
+	}
+
+	provinces={
+		2175 10933 13273
+	}
+	
+
+	local_supplies=0.0 
+}

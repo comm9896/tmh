@@ -1,0 +1,98 @@
+state = {
+	id = 971
+	name = "STATE_971" # Northern Dobruja
+	manpower = 490000
+	resources = {
+	}
+
+	state_category = city
+
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = ROM		
+			owner = ROM
+			buildings = {
+				infrastructure = 2
+				arms_factory = 1
+				657 = {
+					naval_base = 8
+				}
+				687 = {
+					naval_base = 1
+				}
+				dockyard = 1
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = ROM			
+			owner = ROM
+		}		
+		1936.1.1.14 = {
+			add_core_of = ROM				
+			owner = ROM			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}	
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		1941.1.1.14 = {
+		    owner = ROM
+		    add_core_of = ROM
+	
+			buildings = {
+				infrastructure = 5
+				arms_factory = 1
+				industrial_complex = 4	
+				dockyard = 5
+			}					
+		}
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+			
+
+		victory_points = { 
+			657 3 
+		}
+	}
+	
+	history = {
+
+		owner = ROM
+		add_core_of = ROM
+		add_claim_by = BUL
+
+		victory_points = { 
+			657 3 
+		}
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		
+	}
+
+	provinces = {
+		657 687 3076 9635
+	}
+
+	local_supplies = 0.0 
+}

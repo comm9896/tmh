@@ -1,0 +1,363 @@
+
+HUN_annex = {
+	
+	HUN_annex_ROM = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = ROM
+				exists = yes
+			}
+			date > 1938.01.01
+			ROM = { is_ai = yes }
+			is_in_faction_with = GER
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+
+			set_country_flag = HUN_Great_Hungry_Roman
+			
+			ROM = {
+				transfer_units_fraction= {
+					target = HUN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = ROM }
+				add_core_of = ROOT
+			}
+
+			ROM = {
+			    every_unit_leader = {
+				set_nationality = ROOT
+			    }
+			}		
+			if = {
+				limit = {
+					not = {
+						has_country_flag = Sapr_HUN_research_slot
+					}
+
+				}
+				add_research_slot = 1
+				set_country_flag = Sapr_HUN_research_slot				
+			}			
+			
+			
+
+			ROM = {
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_trade_treaty_with_germany}	
+						}
+					}
+					ROM = {
+						complete_national_focus = ROM_trade_treaty_with_germany					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_german_romanian_oil_exploitation_company}	
+						}
+					}
+					ROM = {					
+						complete_national_focus = ROM_german_romanian_oil_exploitation_company					
+					}
+				}			
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_danubian_transport_network}	
+						}
+					}
+					ROM = {					
+						complete_national_focus = ROM_danubian_transport_network					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_malaxa}	
+						}
+					}
+					ROM = {				    
+						complete_national_focus = ROM_malaxa					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_hunedoara_steel_works}	
+						}
+					}
+					ROM = {				    
+						complete_national_focus = ROM_hunedoara_steel_works					
+					}
+				}					
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_invest_in_the_iar}	
+						}
+					}
+					ROM = {				    
+						complete_national_focus = ROM_invest_in_the_iar					
+					}
+				}		
+                if = {
+				    limit = {
+					    not = {
+						    ROM = {has_completed_focus = ROM_expand_the_galati_shipyards}	
+						}
+					}
+					ROM = {					
+						complete_national_focus = ROM_expand_the_galati_shipyards					
+					}
+				}					
+			}
+			annex_country = { target = ROM 	transfer_troops = yes }			
+		}
+	}
+	
+
+	HUN_annex_BUL = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = BUL
+				exists = yes
+			}
+			date > 1938.01.01
+			BUL = { is_ai = yes }
+			is_in_faction_with = GER
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = BUL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			
+			BUL = {
+				transfer_units_fraction= {
+					target = HUN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
+			
+			every_state = {
+				limit = { is_core_of = BUL }
+				add_core_of = ROOT
+			}
+			BUL = {
+			    every_unit_leader = {
+				set_nationality = ROOT
+			    }
+			}
+
+
+			if = {
+				limit = {
+					not = {
+						has_country_flag = Sapr_HUN_research_slot
+					}
+
+				}
+				add_research_slot = 1
+				set_country_flag = Sapr_HUN_research_slot				
+			}		
+
+
+			BUL = {
+			    HUN = {
+			        add_state_core = 803
+			        add_state_core = 106
+			        add_state_core = 184
+			        add_state_core = 731
+					
+					if = {
+						Limit = {
+							has_country_flag = Sapr_only_erope
+							BUL = {
+								is_ai = yes
+							}
+						}					
+						transfer_state = 803
+						transfer_state = 106
+						transfer_state = 184
+						transfer_state = 731	
+					}
+				}			
+              if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_acquire_modern_tools}	
+						}
+					}
+					BUL = {
+						complete_national_focus = BUL_acquire_modern_tools					
+					}
+				}			
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_improve_the_road_system}	
+						}
+					}
+					BUL = {					
+						complete_national_focus = BUL_improve_the_road_system					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_national_railway_lines}	
+						}
+					}
+					BUL = {					
+						complete_national_focus = BUL_national_railway_lines					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_steel_plant_in_pernik}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_steel_plant_in_pernik					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_georgi_benkovski_aircraft_repair_facilities}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_georgi_benkovski_aircraft_repair_facilities					
+					}
+				}						
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_expand_varna_naval_base}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_expand_varna_naval_base					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_develop_burgas_shipyards}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_develop_burgas_shipyards					
+					}
+				}			
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_increase_industry_investments}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_increase_industry_investments					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_foreign_aircraft_designers}	
+						}
+					}
+					BUL = {					
+						complete_national_focus = BUL_foreign_aircraft_designers					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_kaproni_bulgarski}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_kaproni_bulgarski					
+					}
+				}	
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_darzhavna_voenna_fabrika}	
+						}
+					}
+					BUL = {				   
+						complete_national_focus = BUL_darzhavna_voenna_fabrika					
+					}
+				}					
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_found_dvf_sopot}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_found_dvf_sopot					
+					}
+				}
+                if = {
+				    limit = {
+					    not = {
+						    BUL = {has_completed_focus = BUL_invigorate_national_industry}	
+						}
+					}
+					BUL = {				    
+						complete_national_focus = BUL_invigorate_national_industry					
+					}
+				}								
+
+
+
+            }
+			annex_country = { target = BUL 	transfer_troops = yes }			
+		}
+	}
+	
+}

@@ -1,0 +1,64 @@
+state={
+	id=90
+	name="STATE_90" # Kielce
+	manpower = 1835700
+	
+	state_category = town
+	
+	resources={
+		steel=8 # was: 12
+	}
+
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = POL	
+			owner = POL
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL		
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+				
+		1941.1.1.14 = {
+		    owner = GER		   
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 3
+				arms_factory = 4		
+			}
+		}		
+			
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+
+		victory_points = {
+			11430 5
+		}
+		victory_points = {
+			3458 5
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		562 3458 3497 3586 6416 11430 11532 
+	}
+
+	local_supplies=0.0 
+}

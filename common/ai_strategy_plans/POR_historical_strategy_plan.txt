@@ -1,0 +1,37 @@
+POR_historical_plan = {
+	name = "Historical Neutrality"
+	desc = "Under the regime of Salazar, Portugal will strengthen the Estado Novo and will attempt to remain neutral during the World War."
+
+	allowed = {
+		original_tag = POR
+	}
+	enable = {	
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+
+		POR_colonial_assimilation_policy
+	
+	}
+		
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

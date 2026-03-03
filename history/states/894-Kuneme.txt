@@ -1,0 +1,38 @@
+state={
+	id=894
+	name="STATE_894"
+	manpower = 69300
+	state_category = wasteland
+
+	history={
+		1936.1.1.12 = {	    
+		    owner = SAF
+			add_core_of = SAF
+		}			
+		1936.1.1.13 = {	    
+		    owner = SAF
+			add_core_of = SAF
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}		
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+
+	}
+	provinces={
+		10957 10978 12921 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

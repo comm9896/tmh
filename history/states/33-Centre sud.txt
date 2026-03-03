@@ -1,0 +1,62 @@
+
+state={
+	id=33
+	name="STATE_33"
+	manpower = 636400
+	
+	state_category = town
+
+	history={
+		
+		1936.1.1.12 = {
+			owner = FRA
+			add_core_of = FRA
+		
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 3					
+			}		
+		}
+		1936.1.1.13 = {
+			owner = FRA
+			add_core_of = FRA
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = FRA
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}		
+
+
+		1941.1.1.14 = {
+		    owner = TUR
+		    add_core_of = TUR
+	
+			buildings = {
+				infrastructure = 3
+				arms_factory = 8
+			}	
+			add_extra_state_shared_building_slots = 4				
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+		
+		victory_points = {
+			651 1
+		}
+
+	}
+
+	provinces={
+		651 669 3621 3626 3655 6648 6651 9629 11869 
+	}
+
+	local_supplies=0.0 
+}

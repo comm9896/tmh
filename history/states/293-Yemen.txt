@@ -1,0 +1,52 @@
+
+state={
+	id=293
+	name="STATE_293"
+	manpower = 2489500
+	
+	state_category = rural_1k_Air
+	
+	resources={
+		oil= 6 # was: 1
+	}
+	history={
+
+		1936.1.1.12 = {
+			owner = ENG
+			add_core_of = ENG
+		}		
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = ENG
+		}
+		1936.1.1.14 = {
+			owner = ENG
+			add_core_of = ENG
+		}			
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1945.1.1.10 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+
+		buildings = {
+			infrastructure = 2
+			10840 = {
+				naval_base = 1
+			}			
+		}
+		victory_points = {
+			10840 3 
+		}
+
+	}
+
+	provinces={
+		1920 1973 4924 10752 10840
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=414
+	name="STATE_414"
+	manpower = 486013
+	
+	state_category = wasteland
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = PER
+			add_core_of = PER
+		}			
+		1936.1.1.13 = {
+			owner = PER
+			add_core_of = PER
+		}	
+		1936.1.1.14 = {
+			owner = PER
+			add_core_of = PER
+		}
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10913 1 
+		}
+
+	}
+
+	provinces={
+		1986 10913 11249 12809 12895 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,25 @@
+
+
+Sapr_bhp_steel_designer = {
+	if = {
+		limit = {
+			has_idea =  bhp_steel
+		}
+		swap_ideas = {
+			remove_idea = bhp_steel
+			add_idea = bhp_steel_improved
+		}
+	}	
+}
+
+Sapr_AST_general_electric_designer = {
+	if = {
+		limit = {
+			has_idea =  general_electric
+		}
+		swap_ideas = {
+			remove_idea = general_electric
+			add_idea = AST_general_electric_improved
+		}
+	}	
+}

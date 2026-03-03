@@ -1,0 +1,44 @@
+CUB_historical_plan = {
+	name = "CUB_historical_plan"
+	desc = "historical_plan_for_CUB"
+
+	allowed = {
+		original_tag = CUB
+	}
+	
+	enable = {
+		tag = CUB
+	}
+	
+	abort = {
+	}
+
+	ai_national_focuses = {
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		construction_effort_3
+		infrastructure_effort_2
+		production_effort
+		production_effort_2
+		production_effort_3
+		extra_tech_slot	
+		naval_effort
+		liberty_ethos
+		neutrality_focus
+		deterrence
+	}
+	
+	focus_factors = {
+	}
+	research = {
+		industry = 100.0
+	}
+
+	ideas = {
+	}
+	weight = {
+	}
+
+}

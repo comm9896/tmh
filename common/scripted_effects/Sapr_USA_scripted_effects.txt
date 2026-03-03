@@ -1,0 +1,34 @@
+
+
+Sapr_USA_general_motors_designer = {
+	if = {
+		limit = {
+			has_idea =  USA_general_motors
+		}
+		swap_ideas = {
+			remove_idea = USA_general_motors
+			add_idea = USA_general_motors_improved
+		}
+	}	
+	if = {
+		limit = {
+			has_idea =  general_electric
+		}
+		swap_ideas = {
+			remove_idea = general_electric
+			add_idea = general_electric_improved
+		}
+	}		
+}
+
+Sapr_standard_oil_california_designer = {
+	if = {
+		limit = {
+			has_idea =  standard_oil_california
+		}
+		swap_ideas = {
+			remove_idea = standard_oil_california
+			add_idea = standard_oil_california_improved
+		}
+	}	
+}

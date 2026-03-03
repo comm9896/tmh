@@ -1,0 +1,57 @@
+state={
+	id=662
+	name="STATE_662"
+	manpower = 13213
+	
+	state_category = wasteland_1k_Air
+	
+	resources={
+		oil = 11
+	}	
+	
+	history={
+
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}	
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		}		
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	    
+			owner = TIB			
+			add_core_of = TIB	
+		}
+		
+		1941.1.1.14 = {    
+		    owner = TIB
+			add_core_of = TIB	
+			
+			buildings = {
+				infrastructure = 1
+			}	
+		}	
+		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}	
+
+	}
+	
+	provinces={
+		4200 7076 7136 8069 13073 13382 13383 13384 13385
+	}
+
+	local_supplies=0.0 
+}

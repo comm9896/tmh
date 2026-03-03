@@ -1,0 +1,110 @@
+state_is_in_the_Oceania = {
+	custom_trigger_tooltip = {
+		tooltip = state_is_in_the_Oceania_tt
+		OR = {
+			
+			#Филепины	
+			state = 623	
+			state = 624
+			state = 626
+			state = 628
+			state = 625
+			state = 627
+			state = 327
+
+
+			#Ост индия и Борнео
+			state = 333
+			state = 334 			
+			state = 673
+			state = 668
+			state = 669
+			state = 738
+			state = 667
+			state = 721
+			state = 335
+			state = 672
+			state = 336
+			state = 523			
+
+
+			#Острова японии
+			state = 647 
+			state = 684 			
+			state = 646
+			state = 633
+			state = 645
+			state = 648
+			state = 526
+			state = 524
+
+
+			#Острова США и ВБ
+			state = 638
+			state = 632 			
+			state = 631
+			state = 630
+			state = 629
+			state = 727
+			state = 642		
+			state = 725
+			state = 639
+			state = 97
+			state = 737
+			state = 637	
+			state = 711
+			state = 712
+			state = 733
+			state = 422
+			state = 281
+			state = 710
+			state = 713
+			state = 650
+			state = 463			
+			state = 634		
+			state = 643					
+			
+			
+			#Берег китая и индии
+			state = 525 
+			state = 527 			
+			state = 716
+			state = 745
+			state = 610
+			state = 609
+			state = 608		
+			state = 614
+			state = 597
+			state = 743
+			state = 598
+			state = 613	
+			state = 569
+			state = 595
+			state = 593
+			state = 592
+			state = 326
+			state = 594
+			state = 728	
+			state = 591	
+			state = 594	
+			state = 671	
+			state = 286	
+			state = 741	
+			state = 289	
+			state = 724	
+			state = 336
+			state = 1049
+			state = 288
+			state = 430
+			state = 431
+			state = 426
+			state = 424
+			state = 423
+			state = 320
+			state = 425
+			
+			
+			
+		}
+	}
+}

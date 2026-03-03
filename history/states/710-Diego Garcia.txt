@@ -1,0 +1,42 @@
+state={
+	id=710
+	name="STATE_710"
+	manpower=2147	
+	state_category = tiny_island
+	
+	history= {
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+			owner = USA
+			add_core_of = TIB
+		}
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}		
+				
+		buildings = {
+			infrastructure = 2
+			13019 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13019 
+	}
+
+	local_supplies=0.0 
+}

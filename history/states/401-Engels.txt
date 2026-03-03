@@ -1,0 +1,63 @@
+
+state = {
+	id = 401
+	name = "STATE_401" #Balakovo
+	manpower = 309530
+	
+	state_category = rural
+	
+	resources = {
+		steel = 10 # was: 40, then 24 but split
+		tungsten = 10 # was: 34, then 16 but split
+	}
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+					
+			buildings = {
+				infrastructure = 2
+				air_base = 10					
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3
+				arms_factory = 4
+				air_base = 10					
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		victory_points = {
+			6502 2
+		}
+	}
+
+	provinces = {
+		410 452 3490 3551 6339 6430 6473 6502 6574 9337 9447 9473 9577 11321 11421 11458 
+	}
+
+	local_supplies = 7.0 
+}

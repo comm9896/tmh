@@ -1,0 +1,149 @@
+#	Example:
+#
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+###### COUNTRY MODIFIERS
+
+
+#RAJ
+idea_RAJ_independence_movement = { #STATE MODIFIER
+	enable = { is_subject = yes }
+	icon = GFX_idea_RAJ_independence_movement
+	autonomy_gain = RAJ_autonomy_gain_independence_movement
+
+}
+
+idea_RAJ_indian_air_force = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_air_bonus
+	experience_gain_air = RAJ_indian_air_force_xp_gain
+	air_mission_xp_gain_factor = RAJ_indian_air_mission_xp_gain_factor
+	air_training_xp_gain_factor = RAJ_indian_air_training_xp_gain_factor
+	air_accidents_factor = RAJ_indian_air_air_accidents_factor
+	air_cas_present_factor = RAJ_indian_air_air_cas_present_factor
+	air_cas_efficiency = RAJ_indian_air_air_cas_efficiency
+	air_agility_factor = RAJ_indian_air_air_agility_factor
+}
+
+idea_RAJ_royal_indian_navy = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy_bonus
+	experience_gain_navy = RAJ_royal_indian_navy_xp_gain
+}
+
+idea_RAJ_tea_exports = {
+	icon = GFX_idea_stiff_upper_lip
+	autonomy_gain = RAJ_autonomy_gain_tea_exports
+	production_speed_buildings_factor = RAJ_building_speed_tea_exports
+}
+
+idea_RAJ_agrarian_society = {
+	icon = GFX_idea_generic_agrarian_society
+	#experience_gain_army_factor = RAJ_agrarian_society_experience_gain_army_factor
+	conscription_factor = RAJ_agrarian_society_conscription_factor
+	mobilization_laws_cost_factor = RAJ_agrarian_society_mobilization_laws_cost_factor
+	mobilization_speed = RAJ_agrarian_society_mobilization_speed
+}
+
+#Added on states if invaded
+idea_RAJ_resistant_to_occupation = {
+	icon = GFX_modifiers_FIN_weapon_caches
+	compliance_growth = -0.25
+	local_manpower = -0.33
+	remove_trigger = {	
+		CONTROLLER = { is_raj_or_raj_inheritor = yes } 	
+	}
+}
+
+idea_RAJ_sikh_approval = {
+	icon = GFX_modifiers_RAJ_sikh_approval
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.2
+	local_manpower = 0.3
+
+	remove_trigger = {	
+		CONTROLLER = { NOT = { is_raj_or_raj_inheritor = yes } }	
+	}
+}
+
+
+idea_RAJ_sikh_approval_1 = {
+	icon = GFX_idea_generic_manpower_bonus
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.2
+	local_manpower = 0.15
+
+	remove_trigger = {	
+		CONTROLLER = { NOT = { is_raj_or_raj_inheritor = yes } }	
+	}
+}
+
+
+idea_RAJ_sikh_approval_2 = {
+	icon = GFX_idea_generic_manpower_bonus
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.2
+
+	remove_trigger = {	
+		CONTROLLER = { NOT = { is_raj_or_raj_inheritor = yes } }	
+	}
+}
+
+idea_RAJ_indian_railways = {
+	icon = GFX_idea_ARG_invest_in_railways 
+	production_speed_rail_way_factor = RAJ_indian_railway_production_speed_rail_way_factor 
+	production_speed_supply_node_factor = RAJ_indian_railway_production_speed_supply_node_factor
+	production_speed_infrastructure_factor = RAJ_indian_railway_production_speed_infrastructure_factor 
+	industrial_capacity_factory = RAJ_indian_railway_industrial_capacity_factory
+	stability_factor = RAJ_indian_railway_stability_factor
+}
+
+idea_RAJ_funded_by_princely_states = {
+	icon = GFX_idea_generic_improved_industries
+	production_speed_industrial_complex_factor = RAJ_hindu_mahasabha_released
+}
+
+idea_RAJ_mughal_influence = {
+	icon = GFX_idea_raj_marginalized_muslim_community
+	local_building_slots_factor = 0.35 
+	local_manpower = 1.25
+	army_core_defence_factor = 0.15
+}
+
+idea_RAJ_five_year_plan = {
+	icon = GFX_idea_man_five_year_plan_industry
+	stability_factor = RAJ_fyp_stability_factor
+	production_speed_buildings_factor = RAJ_fyp_production_speed_buildings_factor
+	consumer_goods_factor = RAJ_fyp_consumer_goods_factor
+	research_speed_factor = RAJ_fyp_research_speed_factor
+	production_speed_industrial_complex_factor = RAJ_fyp_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = RAJ_fyp_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = RAJ_fyp_production_speed_dockyard_factor
+	production_factory_efficiency_gain_factor = RAJ_fyp_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = RAJ_fyp_production_factory_max_efficiency_factor
+}

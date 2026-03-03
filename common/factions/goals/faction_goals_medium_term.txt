@@ -1,0 +1,418 @@
+#category = short_term medium_term or long_term
+# ROOT is faction leader, FROM is faction member who opens UI and views goals, completed/cancel/complete_effect do not have FROM scopes
+
+
+######################################################################
+
+###  ##   ##  ### ###  ##  #  #      ## ###  ###  ##  ### ### ###  ##  
+#   #  # #  #  #   #  #  # ## #     #   #  # #   #  #  #  #    #  #  # 
+##  #### #     #   #  #  # # ##      #  ###  ##  #     #  ##   #  #    
+#   #  # #  #  #   #  #  # #  #       # #    #   #  #  #  #    #  #  # 
+#   #  #  ##   #  ###  ##  #  #     ##  #    ###  ##  ### #   ###  ##  
+
+######################################################################
+
+
+ ##  #   # ###  ## 
+#  #  # #   #  #   
+####   #    #   #  
+#  #  # #   #    # 
+#  # #   # ### ##  
+
+
+
+faction_goal_high_seas_fleet = {
+	name = high_seas_fleet_goal_name
+	description = high_seas_fleet_goal_desc
+	group = FOCUS_FILTER_NAVY_XP
+	category = medium_term
+	allowed = {
+	}
+	visible = {
+		date > 1950.01.01
+	}
+	completed = {
+		has_war_with_major = yes 
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION
+			}
+			unit = capital_ship
+			size > 19
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_faction_initiative = 1
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members
+					limit = {
+						num_of_naval_factories > 0
+					}
+				}
+				name = ALL_FACTION_MEMBERS
+			}
+			navy_experience = 50
+			add_tech_bonus = {
+				name = high_seas_fleet_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_equipment
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 1 # If they have a bunch of naval factories, go for it
+			num_of_naval_factories > 29
+		}
+	}
+}
+
+
+
+
+###########################################################
+
+ ##  ### #  # ### ###  ###  ##       ##   ##   ##  #    ## 
+#    #   ## # #   #  #  #  #  #     #    #  # #  # #   #   
+# ## ##  # ## ##  ###   #  #        # ## #  # #### #    #  
+#  # #   #  # #   #  #  #  #  #     #  # #  # #  # #     # 
+ ##  ### #  # ### #  # ###  ##       ##   ##  #  # ### ##  
+
+###########################################################
+
+faction_goal_submarine_force = {
+	name = submarine_force_goal_name
+	description = submarine_force_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_NAVY_XP
+	available = {
+
+	}
+	visible = {
+		date > 1950.01.01
+	}	
+	completed = {
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION
+			}
+			unit = submarine
+			size > 99
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators = { 
+					faction_members 
+					limit = {
+						has_navy_size = {
+							size > 24
+							type = submarine
+						}
+					}
+				}
+				name = ALL_FACTION_MEMBERS_WITH_25_SUBMARINES
+			}
+			add_mastery = {
+				amount = 100
+				track = submarines
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_tech_bonus = {
+				name = submarine_force_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1 # Powers with no dockyards should probably not care about navy
+			num_of_naval_factories > 0
+		}
+		modifier = {
+			add = 1 # Powers with a less dockyard capacity should probably try to build subs rather than contest the high seas
+			num_of_naval_factories > 10
+		}
+		modifier = {
+			add = -1 # Powers with more dockyard capacity should probably try to contest the high seas instead of building subs
+			num_of_naval_factories > 25
+		}
+		modifier = {
+			add = -1 # Powers with more dockyard capacity should probably try to contest the high seas instead of building subs
+			num_of_naval_factories > 50
+		}
+	}
+}
+
+faction_goal_convoy_escort_force = {
+	name = convoy_escort_force_goal_name
+	description = convoy_escort_force_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_NAVY_XP
+	available = {
+
+	}
+	visible = {
+		date > 1950.01.01
+	}	
+	completed = {
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION
+			}
+			unit = screen_ship
+			size > 99
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators = { 
+					faction_members 
+					limit = {
+						has_navy_size = {
+							size > 24
+							type = screen_ship
+						}
+					}
+				}
+				name = ALL_FACTION_MEMBERS_WITH_25_SCREENING_SHIPS
+			}
+			add_mastery = {
+				amount = 100
+				track = screens
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			add_tech_bonus = {
+				name = convoy_escort_force_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1 # Powers with no dockyards should probably not care about navy
+			num_of_naval_factories > 0
+		}
+		modifier = {
+			add = 1 # Powers with threatened convoys should care more
+			convoy_threat > 0.2
+		}
+		modifier = {
+			add = 8 # Powers with very threatened convoys should care -a lot-
+			convoy_threat > 0.5
+		}
+	}
+}
+
+### Industry
+
+faction_goal_industrial_expansion = {
+	name = industrial_expansion_goal_name
+	description = industrial_expansion_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = {
+		date > 1950.01.01
+	}
+	completed = {
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION_NAME
+			}
+			buildings = { industrial_complex }
+			size > 149
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_faction_member = {
+			tooltip = AT_LEAST_50_CIVS
+			visible_when_empty = yes 
+			limit = {
+				num_of_civilian_factories > 49
+			}
+			add_tech_bonus = {
+				name = industrial_expansion_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = dispersed_industry_category
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 1 # If already big it's easy to grow
+			is_major = yes
+		}
+		modifier = {
+			add = 1 # If already big it's easy to grow
+			is_major = yes
+		}
+		modifier = {
+			add = 1 # Prioritize more earlier on - more pay-off
+			date < 1938.1.1
+		}
+	}
+}
+
+
+faction_goal_industrial_research = {
+	name = industrial_research_goal_name
+	description = industrial_research_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_RESEARCH
+	visible = {
+		date > 1950.01.01
+	}
+	completed = {
+		ROOT = {
+			has_tech = construction4
+		}
+		all_allied_country = {
+			has_tech = construction4
+		}
+
+		collection_size = {
+				input = {
+					input = game:scope
+					operators =  { 
+						faction_members 
+					}
+				}
+				value > 4
+			}
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_faction_member = {
+			tooltip = INFLUENCE_ABOVE_30_PERCENT
+			visible_when_empty = yes 
+			limit = {
+				faction_influence_ratio > 0.3
+			}
+			add_faction_initiative = 1
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 1 # Prio for smaller factions (Easier to get everyone up then )
+			collection_size = {
+				input = {
+					input = game:scope
+					operators =  { 
+						faction_members 
+					}
+				}
+				value < 5
+			}
+		}
+		modifier = {
+			add = 1 # Prioritize during build up, but not too early
+			date > 1938.1.1
+			date < 1941.1.1
+		}
+	}
+}
+
+### War Waging
+
+faction_goal_aggressive_defense = {
+	name = aggressive_defense_goal_name
+	description = aggressive_defense_goal_desc
+	group = FOCUS_FILTER_WAR_SUPPORT
+	category = medium_term
+	visible = {
+		date > 1950.01.01
+	}
+	completed = {
+		any_allied_country = {
+			has_defensive_war = yes
+		}
+		collection_size = {
+			input = {
+				input = game:scope
+				operators = {
+					faction_members
+					limit = {
+						any_enemy_country = {
+							has_offensive_war_with = ROOT
+							casualties_inflicted_by = {
+							    opponent = PREV
+							    thousands > 250
+							}
+						}
+					}
+				}
+				name = COLLECTION_CASUALTIES_INFLICTED_BY_FACTION_MEMBERS
+			}
+			value > 0
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS_INFLICTED_250K_CASUALTIES
+		every_faction_member = {
+			limit = {
+				any_enemy_country = {
+					has_offensive_war_with = ROOT
+					casualties_inflicted_by = {
+					    opponent = PREV
+					    thousands > 250
+					}
+				}
+			}
+			add_faction_initiative = 1
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			army_experience = 100
+			air_experience = 100
+			navy_experience = 100
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}

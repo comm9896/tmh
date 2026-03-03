@@ -1,0 +1,68 @@
+
+state = {
+	id = 192
+	name = "STATE_192"
+	manpower = 1286238 #1 8th removed due to Balta-Tiraspol
+	
+	state_category = city
+
+	history = {
+		
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				air_base = 6
+				anti_air_building = 1				
+				11670 ={
+					naval_base = 3
+					coastal_bunker = 1
+				}
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = UKR
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+	
+			buildings = {
+				infrastructure = 3 #was: 5
+				air_base = 6
+				anti_air_building = 1				
+				11670 ={
+					naval_base = 3
+					coastal_bunker = 1
+				}
+			}	
+		}
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	}
+
+	provinces = {
+		  3575 3738 9698 9714 11670 11703 
+	}
+
+	local_supplies = 6.0 
+}

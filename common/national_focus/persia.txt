@@ -1,0 +1,100 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
+### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
+
+### COPY PASTE TEMPLATE
+###focus = {
+###		id = TAG_focus_title
+###		icon = GFX_focus_PLACEHOLDER
+###		prerequisite = { focus = TAG_focus_title }
+###		x = 0
+###		y = 0
+###		relative_position_id = TAG_focus_title
+###		cost = 10
+###		mutually_exclusive = { focus = TAG_focus_title }
+###		
+###		available = {
+###
+###		}
+###
+###		bypass = {
+###
+###		}
+###
+###		allow_branch = {
+###
+###		}
+###
+###		ai_will_do = {
+###			factor = 0
+###		}
+###
+###		search_filters = {
+###
+###		}
+###
+###		completion_reward = {
+###
+###		}
+###	}
+
+focus_tree = {
+	id = persian_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PER
+			has_dlc = "Graveyard of Empires"
+		} 
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 200 y = 2400 }
+
+	initial_show_position = {
+		x = 25
+		y = 0
+	}
+
+	#################################
+	###### INDUSTRIAL BRANCH ########
+	#################################
+
+	focus = { #INDUSTRIAL
+		id = PER_modernizing_iran
+		icon = GFX_focus_PER_modernizing_iran
+		x = 50
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = PER
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

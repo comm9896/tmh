@@ -1,0 +1,54 @@
+state = {
+	id = 1020
+	name = "STATE_1020" # San'in
+	manpower = 1111000
+	state_category = rural
+
+	history = { 
+        1936.1.1.12 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}		
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+        1936.1.1.15 = {	 	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+
+		buildings = {
+
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+		victory_points = {
+			10055 1 # Tottori
+		}
+
+	}
+
+	provinces = {
+		1167 1191 7050 7145 10055 
+	}
+
+	local_supplies = 0.0 
+}

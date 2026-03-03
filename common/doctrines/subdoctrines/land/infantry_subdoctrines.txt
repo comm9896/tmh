@@ -1,0 +1,630 @@
+mobile_infantry = { #Доктрина мотопехоты
+    track = infantry
+    name = SUBDOCTRINE_MOBILE_INFANTRY
+    description = SUBDOCTRINE_MOBILE_INFANTRY_DESC
+    icon = GFX_doctrine_mobile_infantry_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+		has_doctrine = new_mobile_warfare
+    }
+
+    ai_will_do = { 
+        base = 1
+        modifier = {
+            factor = 95
+            original_tag = GER
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+    
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_overwhelming_fire
+
+
+    rewards = {
+        cavalry_charge = {
+            category_all_infantry = {
+                max_organisation = 10
+            }
+        }
+        combined_arms_planning = {
+            category_all_infantry = {
+                max_organisation = 10
+            }
+			motorized = {
+				defense = 0.1				
+			}
+			mot_recon = {
+				defense = 0.1				
+			}		
+			mechanized = {
+				defense = 0.1				
+			}
+			amphibious_mechanized = {	
+				defense = 0.1				
+			}				
+        }
+        decisive_operations = {
+			motorized = {
+				max_strength = 2			
+			}
+			mot_recon = {
+				max_strength = 2			
+			}		
+			mechanized = {
+				max_strength = 2			
+			}
+			amphibious_mechanized = {
+				max_strength = 2			
+			}			
+        }
+        delegated_authority = {
+			motorized = {
+				max_organisation = 10			
+			}
+			mot_recon = {
+				max_organisation = 10		
+			}		
+			mechanized = {
+				max_organisation = 10			
+			}
+			amphibious_mechanized = {
+				max_organisation = 10		
+			}
+        }
+        maneuver_warfare = {
+			motorized = {
+				max_organisation = 10
+				soft_attack = 0.2
+				hard_attack = 0.2
+			}
+			
+			mechanized = {
+				max_organisation = 10
+				soft_attack = 0.2
+				hard_attack = 0.2			
+			}
+			amphibious_mechanized  = {
+				max_organisation = 10
+				soft_attack = 0.2
+				hard_attack = 0.2			
+			}
+			mot_recon = {
+				max_organisation = 10
+				soft_attack = 0.2
+				hard_attack = 0.2		
+			}			
+        }
+
+    }
+}
+
+mounted_infantry = { #мобильная пехота
+    track = infantry
+    name = SUBDOCTRINE_MOUNTED_INFANTRY
+    description = SUBDOCTRINE_MOUNTED_INFANTRY_DESC
+    icon = GFX_doctrine_mounted_infantry_medium
+
+    xp_cost = 100
+    xp_type = army
+
+
+    mastery = {
+        categories = {
+            category_cavalry
+            category_all_infantry
+        }
+    }
+    available = {
+        always = yes
+    }
+    visible = {
+        has_dlc = "No Compromise, No Surrender"
+    }
+
+    ai_will_do = { 
+        base = 1
+        modifier = {
+            factor = 0.5
+            is_major = yes
+        }
+    }
+
+    # EFFECTS
+
+    rewards = {
+        dragoon_traditions = {
+            category_all_infantry = {
+                max_organisation = 10
+            }
+			cavalry = {
+				max_organisation = 10
+			}		
+			camelry = {
+				max_organisation = 10
+			}
+			elephantry = {
+				max_organisation = 10
+			}			
+        }
+        mounted_skirmish_groups = {
+            category_all_infantry = {
+                max_organisation = 10
+            }
+			cavalry = {
+				max_organisation = 10
+			}		
+			camelry = {
+				max_organisation = 10
+			}
+			elephantry = {
+				max_organisation = 10
+			}
+        }
+        anti_mechanized_cavalry_groups = {
+			motorized = {
+				max_strength = 2			
+			}
+			mot_recon = {
+				max_strength = 2			
+			}		
+			mechanized = {
+				max_strength = 2			
+			}
+			amphibious_mechanized = {
+				max_strength = 2			
+			} 
+			cavalry = {
+				max_strength = 2	
+			}		
+			camelry = {
+				max_strength = 2	
+			}
+			elephantry = {
+				max_strength = 2	
+			}			
+		}       
+		beasts_of_war = {
+
+			cavalry = {	
+                maximum_speed = 0.2				
+			}		
+			camelry = {
+                maximum_speed = 0.2				
+			}
+			elephantry = {
+                maximum_speed = 0.2				
+			}
+            artillery_brigade = {
+                maximum_speed = 0.2
+            }
+            anti_tank_brigade = {
+                maximum_speed = 0.2
+            }
+            anti_air_brigade = {
+                maximum_speed = 0.2
+            }
+            rocket_artillery_brigade = {
+                maximum_speed = 0.2
+            }
+        }
+        limbered_combat_support = {
+			motorized = {
+				max_organisation = 10
+			}
+			
+			mechanized = {
+				max_organisation = 10			
+			}
+			amphibious_mechanized  = {
+				max_organisation = 10		
+			}
+			mot_recon = {
+				max_organisation = 10		
+			}
+			cavalry = {
+				max_organisation = 10		
+			}		
+			camelry = {
+				max_organisation = 10	
+			}
+			elephantry = {
+				max_organisation = 10		
+			}			
+        }
+
+    }
+}
+
+defensive_postures = { #Оборонительная пеха
+    track = infantry
+    name = SUBDOCTRINE_DEFENSIVE_POSTURES
+    description = SUBDOCTRINE_DEFENSIVE_POSTURES_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+    category_all_infantry = {
+        supply_consumption = -0.05
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            category_all_infantry = {
+                max_organisation = 10
+            }
+        }
+        elastic_operations = {
+            category_all_infantry = {
+                max_organisation = 10
+                defense = 0.10
+            }
+        }
+        developed_trench_networking = {
+            category_all_infantry = {
+                default_morale = 0.1
+            }
+        }
+        field_emplacements = {
+
+			dig_in_speed_factor = 0.20 				
+        }
+        field_construction_training = {
+            category_all_infantry = {
+                max_organisation = 10
+                default_morale = 0.1
+            }       
+		}
+
+    }
+}
+
+large_unit_tactics = {
+    track = infantry
+    name = SUBDOCTRINE_LARGE_UNIT_TACTICS
+    description = SUBDOCTRINE_LARGE_UNIT_TACTICS_DESC
+    icon = GFX_doctrine_human_infantry_offensive_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+                original_tag = SOV
+                original_tag = CHI
+                original_tag = JAP
+            }
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+
+
+    }
+
+    # EFFECTS
+    effect = {
+
+    }
+   
+    #OTHER BASE REWARDS
+    
+    category_all_infantry = {
+        supply_consumption = -0.01
+    }
+
+    rewards = {
+        wide_trench_networks = {
+            dig_in_speed_factor = 0.10
+        }
+        flexible_division_structures = {
+        #2
+           unit_infantry_design_cost_factor = -1
+           infantry = {
+                combat_width = -0.2
+            }
+        }
+        unit_knowledge_sharing = {
+        #3
+            category_all_infantry = {
+                experience_loss_factor = -0.01
+            }
+        }
+        large_front_offensive = {
+        #4
+            category_all_infantry = {
+                max_organisation = 10
+                soft_attack = 0.05
+            }
+            army_morale = 0.2
+            
+        }
+        motorization_initiative = {
+        #5
+           category_all_infantry = {
+                breakthrough = 0.1
+                soft_attack = 0.05
+            }
+            category_vehicle_infantry = {
+                supply_consumption = -0.02
+                reliability = 0.1
+            }
+        }
+
+    }
+}
+
+assault_infantry = { #штурмовая пехота
+    track = infantry
+    name = SUBDOCTRINE_ASSAULT_INFANTRY
+    description = SUBDOCTRINE_ASSAULT_INFANTRY_DESC
+    icon = GFX_doctrine_assault_infantry_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 95
+            original_tag = USA
+        }
+        modifier = {
+            factor = 0.5
+            is_major = no
+        }
+    }
+
+    # EFFECTS
+
+    #OTHER BASE REWARDS
+
+    rewards = {
+        low_echelon_fire_support = {
+			category_all_infantry = { 
+				max_organisation = 10
+			}
+        }
+        organic_battalion_fire_support = {
+			category_light_infantry = {
+				breakthrough = 0.2
+			}
+        }
+
+        integrated_support_batteries = {
+			marine = {
+				breakthrough = 0.2
+				soft_attack = 0.2
+				hard_attack = 0.2
+			}
+			marine_commando = {
+				breakthrough = 0.2
+				soft_attack = 0.2
+				hard_attack = 0.2				
+			}
+			mountaineers = {
+				breakthrough = 0.2
+				soft_attack = 0.2
+				hard_attack = 0.2				
+			}
+			paratrooper = {
+				breakthrough = 0.2
+				soft_attack = 0.2
+				hard_attack = 0.2				
+			}
+			ranger_battalion = {
+				breakthrough = 0.2
+				soft_attack = 0.2
+				hard_attack = 0.2				
+			}
+        }
+        breakthrough_fireteams = {
+        #4
+			category_all_infantry = { 
+				max_organisation = 10
+			}
+
+
+        }
+        assault_detachments = {
+        #5
+			category_light_infantry = {
+				max_strength = 2
+			}
+			cavalry = {
+				max_strength = 2
+			}		
+			camelry = {	
+				max_strength = 2
+			}
+			elephantry = {
+				max_organisation = 5
+			}
+
+        }
+    }
+}
+
+
+peoples_war = { #маршнафарш
+    track = infantry
+    name = SUBDOCTRINE_PEOPLES_WAR
+    description = SUBDOCTRINE_PEOPLES_WAR_DESC
+    icon = GFX_doctrine_peoples_war_medium
+   
+    xp_cost = 50
+    xp_type = army
+
+    available = {
+ NOT = {has_country_flag = USA_noman_flag}    
+    }
+    visible = {
+        has_dlc = "No Compromise, No Surrender"
+    }
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 95
+            original_tag = PRC
+        }
+
+        modifier = {
+            factor = 2
+            is_major = no
+        }
+
+    }
+
+    # EFFECTS
+    enable_tactic = tactic_guerrilla_tactics
+	minimum_training_level = -0.25
+	weekly_casualties_war_support = 0.005
+    category_light_infantry = {  
+	   supply_consumption = -0.05
+	}
+
+    rewards = {
+        revolutionary_base_area = {
+			conscription = 0.01
+            category_light_infantry = {
+                max_organisation = 10
+				defense = -0.05
+				breakthrough = 0.1				
+            }
+
+        }
+        destruction_over_land_gains = {
+			conscription = 0.01          
+			category_light_infantry = {
+                default_morale = 0.1
+				defense = -0.05
+				breakthrough = 0.1
+            }
+        }
+        quick_decision_offensive_warfare = {
+			land_reinforce_rate = 0.02	
+            category_light_infantry = {
+                default_morale = 0.1
+				defense = -0.05
+				breakthrough = 0.1
+            }
+        }
+        people_not_things = {
+			land_reinforce_rate = 0.05	           
+			category_light_infantry = {
+                default_morale = 0.1			
+                max_organisation = 10
+            }
+        }
+		march_to_the_mince = {
+			
+			category_light_infantry = {
+				soft_attack = 0.1
+				defense = -0.05
+				breakthrough = 0.1				
+			}
+			infantry = {
+				combat_width = -0.2
+			}
+		}
+    }
+}
+
+great_war_infantry = { #Пехота великой войны 
+    track = infantry
+    name = SUBDOCTRINE_GREAT_WAR_INFANTRY
+    description = SUBDOCTRINE_GREAT_WAR_INFANTRY_DESC
+    icon = GFX_doctrine_great_war_infantry_medium
+
+    xp_cost = 50
+    xp_type = army
+
+    available = {
+		has_doctrine = grand_battleplan	
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            original_tag = FRA
+        }
+    }
+     # EFFECTS
+    #OTHER BASE REWARDS
+    category_all_infantry = {
+        supply_consumption = -0.05  # :D
+    }
+    production_speed_bunker_factor = 0.25 
+
+    rewards = {
+        improvised_fighting_position = {
+			dig_in_speed_factor = 0.20	            
+
+        }
+        elastic_operations = {
+            category_all_infantry = {
+                max_organisation = 5
+                defense = 0.10
+            }
+        }
+        developed_trench_networking = {
+			category_all_infantry = {
+                max_organisation = 10
+            }			
+        }
+        field_emplacements = {
+			max_dig_in = 5 
+			dig_in_speed_factor = 0.20	
+        }
+        field_construction_training = {          
+			category_all_infantry = {
+                max_organisation = 10
+
+            }       
+		}
+
+    }
+}

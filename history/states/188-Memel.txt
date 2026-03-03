@@ -1,0 +1,67 @@
+state = {
+	id = 188
+	name = "STATE_188"
+	manpower = 150000
+	
+	state_category = rural
+	
+	history = {
+
+        1936.1.1.12 = {	    
+		    owner = LIT
+			add_core_of = LIT
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				industrial_complex = 1
+				3288 = {
+					naval_base = 1
+				}
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = LIT
+			add_core_of = LIT
+		}
+        1936.1.1.14 = {	    
+			owner = LIT
+			add_core_of = LIT
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+			owner = GER
+			add_core_of = GER
+		
+			buildings = {
+				infrastructure = 4 #was: 6
+				industrial_complex = 2
+				3288 = {
+					naval_base = 1
+				}
+			}		
+		}		
+		
+		
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		
+		victory_points = {
+			3288 3
+		}
+
+	}
+
+	provinces = {
+		3288 	
+	}
+	local_supplies = 0.0 
+}

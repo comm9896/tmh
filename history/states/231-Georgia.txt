@@ -1,0 +1,78 @@
+state = {
+	id = 231
+	name = "STATE_231"
+
+	history = {
+		
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				air_base = 3
+				anti_air_building = 2					
+				3653 = {
+					naval_base = 2
+					coastal_bunker = 1
+				}
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+			add_core_of = GEO
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				synthetic_refinery = 1
+				arms_factory = 6					
+				air_base = 3
+				anti_air_building = 2					
+				3653 = {
+					naval_base = 2
+					coastal_bunker = 1
+				}
+			}
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+	
+	
+		victory_points = {
+			1599 2
+		}
+		victory_points = {
+			3653 2
+		}
+
+	}
+
+	provinces = {
+		654 772 1530 1599 3653 3656 3658 4534 4605 6436 6669 6671 9626 9702 12309 
+	}
+	manpower = 2457844
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies = 0.0 
+}

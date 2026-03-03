@@ -1,0 +1,11 @@
+faction_template_government_of_national_defense = {
+	name = PRC_government_of_national_defense
+	manifest = faction_manifest_china_territorial_integrity
+	icon = GFX_faction_icon_generic_communist 
+
+	goals = {
+	}
+
+	default_rules = {
+	}
+}

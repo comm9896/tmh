@@ -1,0 +1,246 @@
+FRA_low_interest_in_investment = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	state_production_speed_buildings_factor= -1.5
+}
+
+SOV_no_fortification_focus = {
+
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	state_production_speed_bunker_factor= -2.0
+}
+
+
+GER_reichskommissariats_modifaer = {
+	enable = { always = yes }
+	icon = GER_public_works_modifier
+	local_building_slots_factor = 0.50
+}
+
+
+GER_german_army_SS = {
+	enable = { always = yes }
+	
+	icon = GFX_focus_generic_fascist_troops
+	
+	non_core_manpower = GER_german_army_SS_non_core_manpower
+	conscription = GER_german_army_SS_conscription
+}
+
+
+JAP_man_resources = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	state_resources_factor = 0.2
+}
+
+Sapr_you_Shell_not_pass = { #STATE MODIFIER что б франция герме лицо не ломала
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = -100
+	army_attack_factor = -100
+}
+
+Sapr_ger_miracle_on_the_Vistula = { 
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.3
+	army_attack_factor = 0.2
+	breakthrough_factor = 0.3
+	cas_damage_reduction = 0.3	
+	
+}
+
+GER_Sapr_operation_Vahta_na_Reine = { 
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.4
+	army_attack_factor = 0.4
+	breakthrough_factor = 0.4
+}
+Sapr_ROM_miracle_on_the_BUG = { 
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.3
+	army_attack_factor = 0.2
+	breakthrough_factor = 0.3
+}
+
+Sapr_defense_Stalingrad = { #STATE MODIFIER Паулюс Будет Жить!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.3
+	army_attack_factor = 0.3
+
+}
+
+Sapr_defense_Moscow = { #STATE MODIFIER Отстоим москву!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.1
+	army_attack_factor = 0.1
+	breakthrough_factor = 0.1
+
+}
+
+Sapr_defense_warshava = { #STATE MODIFIER Отстоим москву!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_attack_factor = -0.40
+	breakthrough_factor = -0.40
+
+}
+
+Sapr_SOV_defense_Demyansk = { #STATE MODIFIER Крепость Демянск!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_attack_factor = -0.30
+	breakthrough_factor = -0.30
+
+}
+
+Sapr_SOV_Demyansk_win = { #STATE MODIFIER Крепость Демянск пала!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_attack_factor = 0.20
+	breakthrough_factor = 0.20
+	army_defence_factor = 0.20
+
+}
+
+Sapr_GER_defense_Demyansk = { #STATE MODIFIER Крепость Демянск!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_attack_factor = 0.20
+	army_defence_factor = 0.20
+
+}
+
+Sapr_GER_defense_livia = { #STATE MODIFIER дефаем ливию
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_attack_factor = 0.20
+	army_defence_factor = 0.20
+
+}
+
+Sapr_FRA_no_port_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+
+	state_production_speed_naval_base_factor = -2.00
+}
+
+Sapr_SOV_Liberation = { #Освободим родину мать!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.2
+	army_attack_factor = 0.2
+	breakthrough_factor = 0.2
+
+}
+
+Sapr_dunkerk = { #STATE MODIFIER что б дюнкерк не падал за 1 день
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_attack_factor = -0.6
+	breakthrough_factor = -0.3
+}
+
+Sapr_winter_41 = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.75
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
+}
+
+
+SOV_agitprop_dynamic_modifier = {
+	enable = { always = yes }
+	
+	icon = GFX_goal_generic_propaganda
+	
+	consumer_goods_factor = SOV_agitprop_consumer_goods_factor
+	research_speed_factor = SOV_agitprop_research_speed_factor
+	industrial_capacity_factory = SOV_agitprop_industrial_capacity_factory
+	industrial_capacity_dockyard = SOV_agitprop_industrial_capacity_dockyard
+	production_speed_buildings_factor = SOV_agitprop_production_speed_buildings_factor	
+	
+	fuel_gain_factor = SOV_agitprop_fuel_gain_factor
+	army_fuel_consumption_factor = SOV_agitprop_army_fuel_consumption_factor
+	air_fuel_consumption_factor = SOV_agitprop_air_fuel_consumption_factor
+	
+	production_speed_supply_node_factor = SOV_agitprop_production_speed_supply_node_factor	
+	production_speed_rail_way_factor = SOV_agitprop_production_speed_rail_way_factor
+	supply_consumption_factor = SOV_agitprop_supply_consumption_factor
+	
+	political_power_factor = SOV_agitprop_political_power_factor
+	command_power_gain_mult = SOV_agitprop_command_power_gain_mult
+	
+	training_time_factor = SOV_agitprop_training_time_factor
+	weekly_manpower = SOV_agitprop_weekly_manpower
+
+	army_morale_factor = SOV_agitprop_army_morale_factor
+	
+	factory_energy_consumption  = SOV_agitprop_factory_energy_consumption
+	local_resources_coal_factor  = SOV_agitprop_local_resources_coal_factor
+}
+
+
+USA_War_time_industry_dynamic_modifier = {
+	enable = { always = yes }
+	
+	icon = GFX_focus_spa_the_spanish_miracle
+	
+	consumer_goods_factor = USA_War_time_industry_consumer_goods_factor
+	global_building_slots_factor = USA_War_time_industry_global_building_slots_factor
+	local_resources_factor = USA_War_time_local_resources_factor
+	
+	political_power_factor = USA_War_time_political_power_factor
+	
+	research_speed_factor = USA_War_time_industry_research_speed_factor
+
+	production_factory_max_efficiency_factor = USA_War_time_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = USA_War_time_production_factory_efficiency_gain_factor
+
+	industrial_capacity_factory = USA_War_time_industry_industrial_capacity_factory
+	industrial_capacity_dockyard = USA_War_time_industry_industrial_capacity_dockyard
+	
+	conversion_cost_civ_to_mil_factor =	USA_War_time_conversion_cost_civ_to_mil_factor
+	
+	production_speed_synthetic_refinery_factor = USA_War_time_production_speed_synthetic_refinery_factor
+	production_speed_dockyard_factor =	USA_War_time_production_speed_dockyard_factor
+	production_speed_arms_factory_factor =	USA_War_time_production_speed_arms_factory_factor
+	
+}

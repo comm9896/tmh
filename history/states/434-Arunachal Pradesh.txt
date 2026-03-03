@@ -1,0 +1,52 @@
+
+state={
+	id=434
+	name="STATE_434"
+	manpower = 200000
+	
+	state_category = wasteland
+	resources={
+		# tungsten=49 # was: 54
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}			
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		1116 1996 7455 10810 12730 
+	}
+
+	local_supplies=3.0 
+}

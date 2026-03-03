@@ -1,0 +1,195 @@
+wolfpacks = {
+    track = submarines
+    name = SUBDOCTRINE_SUBMARINE_WOLFPACKS
+    description = SUBDOCTRINE_SUBMARINE_WOLFPACKS_DESC
+    icon = GFX_doctrine_wolfpacks_medium
+
+    xp_cost = 100
+    xp_type = navy
+
+	available = { has_doctrine = new_convoy_raiding }
+
+    ai_will_do = { 
+        base = 1
+        modifier = {
+            factor = 75
+            original_tag = GER
+        }
+    }
+
+    # EFFECTS
+	naval_retreat_speed_after_initial_combat = 0.15
+	submarine = {
+		max_organisation = 10
+	}
+
+    rewards = {
+		predictive_expertise = {
+			submarine = {
+				naval_torpedo_hit_chance_factor = 0.1
+				surface_detection = 0.30
+				naval_range = 0.1 		
+			}
+		}
+		pack_search_patterns = {
+			submarine = {
+				surface_detection = 0.15
+				convoy_raiding_coordination = 0.20
+			}
+		}
+		improvisation = {
+			submarine = {
+				max_strength = 0.2
+				max_organisation = 10			
+			}
+		}
+        rough_weather_procedure = {
+			submarine = {
+				surface_visibility = -0.1
+				sub_visibility = -0.1				
+			}
+		}
+		wolfpack_coordination = {
+			naval_torpedo_screen_penetration_factor = 0.1	
+			submarine = {
+				surface_detection = 0.15
+				convoy_raiding_coordination = 0.20
+			}
+		}
+    }
+}
+
+submarine_fleet_operations = {
+    track = submarines
+    name = SUBDOCTRINE_SUBMARINE_FLEET_OPERATIONS
+    description = SUBDOCTRINE_SUBMARINE_FLEET_OPERATIONS_DESC
+    icon = GFX_doctrine_submarine_operations_medium
+
+    xp_cost = 100
+    xp_type = navy
+
+    available = {
+        always = yes
+    }
+
+    ai_will_do = { 
+        base = 1
+        modifier = {
+            factor = 25
+            original_tag = USA
+        }
+        modifier = {
+            factor = 25
+            original_tag = FRA
+        }
+        modifier = {
+            factor = 25
+            original_tag = ITA
+        }
+        modifier = {
+            factor = 25
+            original_tag = SOV
+        }
+    }
+
+    # EFFECTS
+	naval_torpedo_screen_penetration_factor = 0.05
+
+    rewards = {
+		long_range_patrol_schedule = {
+			submarine = {
+				surface_detection = 0.30
+				naval_range = 0.1 #TODO: does this work?
+			}
+		}
+		
+		sustained_operations = {
+			submarine = {
+				max_organisation = 15
+				convoy_raiding_coordination = 0.10				
+			}
+		}
+		ambush_tactics = {
+			navy_submarine_attack_factor = 0.10
+            submarine = {
+				surface_visibility = -0.05	
+				sub_visibility = -0.05         
+			}				
+		}
+		diverse_operations = {
+            submarine = {
+				naval_speed = 0.1
+				torpedo_attack = 0.1
+				fuel_consumption = -0.2				
+            }	
+		}
+		predictive_search_patterns = {
+			submarine = {
+				naval_torpedo_hit_chance_factor = 0.05		
+				surface_detection = 0.20
+				convoy_raiding_coordination = 0.20
+			}
+		}
+		
+    }
+}
+
+long_range_submarines = {
+    track = submarines
+    name = SUBDOCTRINE_SUBMARINE_LONG_RANGE_SUBMARINES
+    description = SUBDOCTRINE_SUBMARINE_LONG_RANGE_SUBMARINES_DESC
+    icon = GFX_doctrine_long_range_submarines_medium
+
+    xp_cost = 100
+    xp_type = navy
+
+    available = {
+    }
+    visible = {
+
+    }
+
+    naval_torpedo_hit_chance_factor = 0.05
+
+    rewards = {
+
+        ocean_patrols = {
+            submarine = {
+                max_organisation = 10
+				surface_detection = 0.1	
+				naval_range = 0.1				
+            }
+        }
+        improved_dive_protocols = {
+            submarine = {
+				surface_visibility = -0.05	
+				sub_visibility = -0.05
+				naval_range = 0.1           
+			}			
+			
+        }
+        support_the_surface = {
+            submarine = {
+				naval_speed = 0.1
+				torpedo_attack = 0.05	
+				convoy_raiding_coordination = 0.1
+            }					
+        }
+        stowage_efficiency = {
+			submarine = {
+				naval_range = 0.1				
+				fuel_consumption = -0.2
+			}
+        }
+
+        deep_water_supremacy = {
+			submarine = {
+				naval_range = 0.1
+                torpedo_attack = 0.05
+			}            
+        }   
+
+    }
+
+
+

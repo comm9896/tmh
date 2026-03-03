@@ -1,0 +1,58 @@
+state={
+	id=87
+	name="STATE_87"
+	manpower = 2632000
+	
+	state_category = town
+	history={
+
+		1936.1.1.12 = {	    
+			add_core_of = POL	
+			owner = POL
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+			}		
+		}	
+		1936.1.1.13 = {	    
+			add_core_of = POL		
+			owner = POL
+		}		
+		1936.1.1.14 = {
+			add_core_of = POL			
+			owner = POL		
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		
+		1941.1.1.14 = {
+		    owner = GER		   
+		
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				arms_factory = 1
+			}
+		}		
+				
+		1945.1.1.10 = {
+		    owner = GER
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+	
+		victory_points = {
+			9508 10
+		}
+	}
+
+	provinces={
+		493 584 9439 9508 9546 11428 11515 
+	}
+
+	local_supplies=0.0 
+}

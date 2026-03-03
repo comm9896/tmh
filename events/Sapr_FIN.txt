@@ -1,0 +1,173 @@
+
+add_namespace = FIN_war_with_SOV_1941 #Война с СССР
+
+#скрытый эвент, срабатывает когда китай под АИ и имеет 95 полит власти
+country_event = {
+	id = FIN_war_with_SOV_1941.a
+	title = FIN_war_with_SOV_1941.1.b
+	desc = FIN_war_with_SOV_1941.1.c
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	trigger = {
+		and = {
+		    tag = FIN
+			GER = { has_war_with = SOV }
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+        name = FIN_war_with_SOV_1941.1.d	
+		
+		declare_war_on = { target = SOV    type = take_state_focus }  
+		declare_war_on = { target = MON    type = take_state_focus }  
+		
+	}
+}
+
+
+add_namespace = FIN_war_with_SOV_shameful_world #Позорный мир между совком и фином
+
+#скрытый эвент, срабатывает когда фин контролирует карелию или леник
+country_event = {
+	id = FIN_war_with_SOV_shameful_world.1
+	title = FIN_war_with_SOV_shameful_world.1.b
+	desc = FIN_war_with_SOV_shameful_world.1.c
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+        name = FIN_war_with_SOV_shameful_world.1.d	
+
+		if = {
+			limit = {
+				722 = {
+					is_claimed_by = SOV
+				}
+			}
+			SOV = { remove_state_claim = 722 }
+		}
+		if = {
+			limit = {
+				213 = {
+					controller = {
+						tag = FIN
+					}
+				}					
+			}
+			FIN = {
+				transfer_state = 213	
+			}
+			213 = { set_state_flag = Sapr_sov_suck_winter_40 }
+		}
+		if = {
+			limit = {
+				215 = {
+					controller = {
+						tag = FIN
+					}
+				}					
+			}
+			FIN = {
+				transfer_state = 215
+			}
+			215 = { set_state_flag = Sapr_sov_suck_winter_40 }			
+		}
+		if = {
+			limit = {
+				216 = {
+					controller = {
+						tag = FIN
+					}
+				}					
+			}
+			FIN = {
+				transfer_state = 216	
+			}
+			216 = { set_state_flag = Sapr_sov_suck_winter_40 }			
+		}
+		if = {
+			limit = {
+				195 = {
+					controller = {
+						tag = FIN
+					}
+				}					
+			}
+			FIN = {
+				transfer_state = 195
+				195 = {
+					add_core_of = FIN
+				}
+			}
+			195 = { set_state_flag = Sapr_sov_suck_winter_40 }			
+		}
+		SOV = { 
+			white_peace = {
+				tag = FIN 
+			} 
+		}			
+		country_event = { id = FIN_war_with_SOV_shameful_world.2 }						
+	}
+}
+
+country_event = {
+	id = FIN_war_with_SOV_shameful_world.2
+	title = FIN_war_with_SOV_shameful_world.1.b
+	desc = FIN_war_with_SOV_shameful_world.1.c
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		
+		if = {
+			limit = {
+				213 = { has_state_flag = Sapr_sov_suck_winter_40 }			
+			}
+			FIN = {
+				transfer_state = 213	
+			}
+
+		}
+		if = {
+			limit = {
+				215 = { has_state_flag = Sapr_sov_suck_winter_40 }							
+			}
+			FIN = {
+				transfer_state = 215	
+			}		
+		}
+		if = {
+			limit = {
+				216 = { has_state_flag = Sapr_sov_suck_winter_40 }						
+			}
+			FIN = {
+				transfer_state = 216	
+			}	
+		}
+		if = {
+			limit = {
+				195 = { has_state_flag = Sapr_sov_suck_winter_40 }				
+			}
+			FIN = {
+				transfer_state = 195
+				195 = {
+					add_core_of = FIN
+				}
+			}	
+		}
+	}
+}

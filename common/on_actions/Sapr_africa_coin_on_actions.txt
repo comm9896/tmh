@@ -1,0 +1,307 @@
+on_actions = {
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war_with = ENG
+						not = {
+							has_country_flag = Sapr_coin_for_africa
+						}
+					}
+					
+				}
+				hidden_effect = {
+					
+					GER = {
+						add_ideas = Sapr_coin_for_africa_2
+					}					
+					ITA = {
+						set_country_flag = Sapr_coin_for_africa
+						add_ideas = Sapr_coin_for_africa_2
+					}
+					BUL = {
+						add_ideas = Sapr_coin_for_africa_2
+					}	
+					HUN = {
+						add_ideas = Sapr_coin_for_africa_2
+					}	
+					ROM = {
+						add_ideas = Sapr_coin_for_africa_2
+					}					
+				}
+				GER = {
+					complete_national_focus = GER_establish_the_afrikakorps		
+				}
+				every_state = {
+					limit = {
+						is_core_of = LBA
+					}
+					add_dynamic_modifier = {
+						modifier = Sapr_GER_defense_livia
+						scope = ITA
+					}		
+					add_dynamic_modifier = {
+						modifier = Sapr_GER_defense_livia
+						scope = GER
+					}	
+					add_dynamic_modifier = {
+						modifier = Sapr_GER_defense_livia
+						scope = HUN
+					}	
+					add_dynamic_modifier = {
+						modifier = Sapr_GER_defense_livia
+						scope = BUL
+					}	
+					add_dynamic_modifier = {
+						modifier = Sapr_GER_defense_livia
+						scope = ROM
+					}
+					add_dynamic_modifier = { 
+						modifier = unplanned_offensive 
+						days = 35
+					}						
+				}
+			}
+		}
+	}
+
+	# Сось захватывает Триполи
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+					FROM.FROM = {
+						state = 448
+					}
+					
+                }		
+				GER_Increase_the_coin_bonus_for_Africa = yes			
+            }
+        }
+    }	
+	# Калайсы камбекают Триполи
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {  				
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 448
+					}
+                }
+				GER_Reduce_the_coin_bonus_for_Africa = yes
+            }
+        }
+    }		
+
+	# Сось захватывает Тобрук
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+					FROM.FROM = {
+						state = 451
+					}
+					
+                }			
+				GER_Increase_the_coin_bonus_for_Africa = yes
+            }
+        }
+    }	
+	# Калайсы камбекают Тобрук
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {  				
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 451
+					}
+                }			
+				GER_Reduce_the_coin_bonus_for_Africa = yes
+            }
+        }
+    }		
+	# Сось захватывает Каир
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+					FROM.FROM = {
+						state = 907
+					}
+					
+                }
+				GER_Increase_the_coin_bonus_for_Africa = yes
+            }
+        }
+    }	
+	# Калайсы камбекают Каир
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {  				
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 907
+					}
+                }			
+				GER_Reduce_the_coin_bonus_for_Africa = yes			
+            }
+        }
+    }		
+
+	# Сось захватывает багдад
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+					FROM.FROM = {
+						state = 291
+					}
+					
+                }			
+				GER_Increase_the_coin_bonus_for_Africa = yes	
+            }
+        }
+    }	
+	# Калайсы камбекают Багдад
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {  				
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 291
+					}
+                }			
+				GER_Reduce_the_coin_bonus_for_Africa = yes
+            }
+        }
+    }	
+	# Сось захватывает Касабланку
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { 
+					OR ={
+					    tag = GER
+				        is_in_faction_with = GER
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+					FROM.FROM = {
+						state = 461
+					}
+					
+                }			
+				GER_Increase_the_coin_bonus_for_Africa = yes	
+            }
+        }
+    }	
+	# Калайсы камбекают Касабланку
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {  				
+					OR ={
+						tag = ENG
+						is_in_faction_with = ENG					
+				    }		
+					FROM = { 
+						OR ={					    
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					FROM.FROM = {
+						state = 461
+					}
+                }			
+				GER_Reduce_the_coin_bonus_for_Africa = yes
+            }
+        }
+    }		
+}

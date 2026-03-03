@@ -1,0 +1,53 @@
+state={
+	id=432
+	name="STATE_432"
+	resources={
+		oil=5.000
+		coal = 8					
+	}
+
+	history={
+        1936.1.1.12 = {	    
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+	
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}			
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		997 1075 1581 7179 7634 9991 10090 10514 12010
+	}
+	manpower=8977100
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

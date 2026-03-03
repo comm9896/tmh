@@ -1,0 +1,65 @@
+
+
+Sapr_RAJ_Tata_Steal_designer = {
+	if = {
+		limit = {
+			has_idea =  Tata_Steal
+		}
+		swap_ideas = {
+			remove_idea = Tata_Steal
+			add_idea = Tata_Steal_improved
+		}
+	}	
+}
+
+Sapr_RAJ_Assam_oil_designer = {
+	if = {
+		limit = {
+			has_idea =  Assam_oil
+		}
+		swap_ideas = {
+			remove_idea = Assam_oil
+			add_idea = Assam_oil_improved
+		}
+	}	
+}
+
+Sapr_RAJ_Akashvani_designer = {
+	if = {
+		limit = {
+			has_idea =  Akashvani
+		}
+		swap_ideas = {
+			remove_idea = Akashvani
+			add_idea = Akashvani_improved
+		}
+	}	
+}
+
+Sapr_RAJ_musulmani = {
+	if = {
+		limit = { 
+			has_idea = RAJ_marginalized_muslim_community_angry
+		}
+		swap_ideas = {
+			remove_idea = RAJ_marginalized_muslim_community_angry                   
+			add_idea = RAJ_marginalized_muslim_community 
+		}				
+	}
+	else_if = {
+		limit = {
+			has_idea = RAJ_marginalized_muslim_community
+		}			
+		swap_ideas = {
+			remove_idea = RAJ_marginalized_muslim_community                    
+			add_idea = RAJ_marginalized_muslim_community_happy
+
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = RAJ_marginalized_muslim_community_happy
+		}
+		remove_ideas = RAJ_marginalized_muslim_community_happy 
+	}
+}

@@ -1,0 +1,58 @@
+
+state = {
+	id = 879
+	name = "STATE_879" # Kargopol
+	manpower = 210177
+	
+	state_category = rural
+
+	history = {
+		1936.1.1.12 = {
+			owner = SOV
+			add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}		
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+		}	
+		1936.1.1.14 = {
+			owner = SOV
+			add_core_of = SOV
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 1
+			}	
+		}	
+		
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}
+
+		
+		victory_points = {
+			138 1 
+		}
+
+	}
+
+	provinces = {
+		3 18 26 72 89 127 138 3031 3086 6034 6051 6075 6109 9187 11071 11137 11178
+	}
+
+	local_supplies = 0.0 
+}

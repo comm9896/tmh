@@ -1,0 +1,69 @@
+state = {
+	id = 735
+	name = "STATE_735"
+
+	state_category = town
+
+	history = {
+
+		1936.1.1.12 = {
+			owner = FRA
+			add_core_of = FRA
+		
+			buildings = {
+				infrastructure = 2
+				9909 = {
+					naval_base = 2
+				}		
+			}	
+			add_dynamic_modifier  = {
+				modifier = Sapr_FRA_no_port_modifier
+			}				
+		}
+		1936.1.1.13 = {
+			owner = FRA
+			add_core_of = FRA
+		}	
+		1936.1.1.14 = {
+			owner = FRA
+			add_core_of = FRA
+		}
+		1936.1.1.15 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}
+
+		1941.1.1.14 = {
+		    owner = TUR
+		    add_core_of = TUR
+		
+			buildings = {
+				infrastructure = 2
+				9909 = {
+					naval_base = 2
+				}		
+			}				
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB			
+		}
+				
+		
+		victory_points = {
+			778 5 
+		}
+		victory_points = {
+			9909 15 
+		}
+	}
+
+	provinces = {
+		764 778 3764 3959 6609 6975 9603 9736 9745 9909 11573 
+	}
+	manpower = 907500
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 0.0 
+}

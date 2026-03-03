@@ -1,0 +1,72 @@
+CHI_nationalist_historical_plan = {
+	name = "Nationalist China historical plan"
+	desc = "Essentially historical behavior for Nationalist China"
+
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		#is_historical_focus_on = yes
+		always = yes
+
+	}
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+        CHI_three_principles_of_the_people
+		CHI_nationalism
+		CHI_democracy
+		CHI_executive_yuan
+		CHI_military_affairs_commission	
+		
+		CHI_unified_industrial_planning
+		CHI_expand_the_academica_sinica
+		CHI_financial_policy
+		CHI_price_controls
+		CHI_grain_tax
+		
+		CHI_army_reform			
+		CHI_bureau_of_investigation_and_statistics
+		
+		CHI_foreign_threats
+		CHI_united_front
+		CHI_pick_a_fight_with_japan
+		CHI_war_of_resistance
+		CHI_war_of_national_liberation
+		CHI_war_of_anti_imperialism
+		
+		CHI_invite_foreign_investors 
+		CHI_british_cooperation
+		CHI_burma_road
+		CHI_construction_battalions
+		CHI_fighter_purchases
+		CHI_constitutional_reform
+		CHI_republicanism
+		CHI_inter_party_coordination_council
+		CHI_judicial_yuan
+		CHI_control_yuan
+		CHI_examination_yuan
+	}
+
+	research = {
+		industry = 30.0
+		infantry_tech = 25.0
+		artillery = 25.0
+		support_tech = 20
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

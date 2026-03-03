@@ -1,0 +1,806 @@
+ideas = {
+    
+	hidden_ideas = {
+		Sapr_photo_reconnaisance = { #Hidden Idea
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+			
+			equipment_bonus = {
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = -0.4
+					instant = yes
+				}
+			}		
+
+		}
+	}
+	
+	country = {
+        
+		
+		Sapr_Alias_suck_in_norce_africa = {
+
+	     	picture = generic_local_self_management
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+	      	modifier = {
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+			}
+		
+		}
+		
+		
+		
+        ENG_debuff_on_aviation = { 
+
+	        picture = generic_air_research 
+
+	    	allowed = {
+	     	}
+	    	available = {
+				FRA = { has_capitulated = no }
+    		}	
+			
+	      	modifier = {
+				air_mission_efficiency = -0.3				
+			}
+			
+		}	
+		
+		CHI_no_stonks = {
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+			
+	      	modifier = {
+                production_lack_of_resource_penalty_factor = -1
+				army_fuel_consumption_factor = -1
+				air_fuel_consumption_factor = -1
+				navy_fuel_consumption_factor = -1
+				fuel_gain_factor = 1
+			}
+			
+		}
+
+        MON_no_plane = {
+
+	        picture = generic_air_research 
+
+	    	allowed = {
+	     	}
+			
+	      	modifier = {
+				air_mission_efficiency = -0.6
+				
+			}
+			research_bonus = {
+				air_equipment = -1
+			}			
+		}
+	
+        SAPR_POL_Liberation = {
+
+	        picture = ast_naval_auxiliary_patrol 
+
+	    	allowed = {
+	     	}
+			
+	      	modifier = {
+				surrender_limit = 100
+				army_defence_factor = 0.3
+				army_attack_factor = 0.3
+			}
+			
+		}
+		
+	
+		Sapr_Alias_no_atache = {
+
+	     	picture = generic_army_problems
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+	    	available = {
+				and = {
+					GER = {
+						not = {
+							has_completed_focus = GER_anschluss
+						}
+					}
+					JAP = {
+						has_country_flag = JAP_kwantung_army_went_in_on_china
+					}					
+				}	
+    		}			
+			
+			modifier = {
+				max_command_power = -80
+			}
+        }		
+		AFG_Traide_close = {
+
+	     	picture = generic_flexible_foreign_policy
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 1
+			}			
+			targeted_modifier = {
+				tag = MON
+				extra_trade_to_target_factor = 1
+			}	
+			targeted_modifier = {
+				tag = TAN
+				extra_trade_to_target_factor = 1
+			}			
+        }
+		Sapr_41_no_fleat = {
+
+	     	picture = generic_flexible_foreign_policy
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+
+			modifier = {
+				industrial_capacity_dockyard = -3.0
+				war_support_factor = 0.05 
+			}	
+        }		
+		
+		AXIS_Traide_close = {
+
+	     	picture = generic_flexible_foreign_policy
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+
+			targeted_modifier = {
+				tag = GER
+				extra_trade_to_target_factor = 1
+			}			
+			targeted_modifier = {
+				tag = ITA
+				extra_trade_to_target_factor = 1
+			}	
+			targeted_modifier = {
+				tag = ROM
+				extra_trade_to_target_factor = 1
+			}
+			targeted_modifier = {
+				tag = BUL
+				extra_trade_to_target_factor = 1
+			}	
+			targeted_modifier = {
+				tag = HUN
+				extra_trade_to_target_factor = 1
+			}	
+			
+			targeted_modifier = {
+				tag = ENG
+				extra_trade_to_target_factor = -1
+			}			
+			targeted_modifier = {
+				tag = CAN
+				extra_trade_to_target_factor = -1
+			}	
+			targeted_modifier = {
+				tag = USA
+				extra_trade_to_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = NZL
+				extra_trade_to_target_factor = -1
+			}	
+			targeted_modifier = {
+				tag = AST
+				extra_trade_to_target_factor = -1
+			}		
+			targeted_modifier = {
+				tag = SAF
+				extra_trade_to_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = RAJ
+				extra_trade_to_target_factor = -1
+			}				
+        }
+		
+		AXIS_minor_Traide_close = {
+
+	     	picture = generic_flexible_foreign_policy
+			name = AXIS_Traide_close
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+		
+			targeted_modifier = {
+				tag = ITA
+				extra_trade_to_target_factor = 1
+			}	
+			targeted_modifier = {
+				tag = ROM
+				extra_trade_to_target_factor = 1
+			}
+			targeted_modifier = {
+				tag = BUL
+				extra_trade_to_target_factor = 1
+			}	
+			targeted_modifier = {
+				tag = HUN
+				extra_trade_to_target_factor = 1
+			}	
+			
+			targeted_modifier = {
+				tag = ENG
+				extra_trade_to_target_factor = -1
+			}			
+			targeted_modifier = {
+				tag = CAN
+				extra_trade_to_target_factor = -1
+			}	
+			targeted_modifier = {
+				tag = USA
+				extra_trade_to_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = NZL
+				extra_trade_to_target_factor = -1
+			}	
+			targeted_modifier = {
+				tag = AST
+				extra_trade_to_target_factor = -1
+			}		
+			targeted_modifier = {
+				tag = SAF
+				extra_trade_to_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = RAJ
+				extra_trade_to_target_factor = -1
+			}				
+        }
+		
+		Sapr_duel_mod_idea = {
+
+	        picture = generic_manpower_bonus 
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+		    	land_doctrine_cost_factor = -0.95
+				air_range_factor = 10
+				fuel_gain_factor = 500
+		    }
+			
+		}
+		Sapr_CHI_surrender = {
+
+	        picture = generic_manpower_bonus 
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+				surrender_limit = -100
+				army_defence_factor = -1
+				army_attack_factor = -1
+		    }
+			
+		}
+		Sapr_base_prodaktion_line = {
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+				production_factory_start_efficiency_factor = 0.5			
+		    }
+			
+		}		
+		Sapr_supporting_the_losing_alliance = {
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+				production_factory_efficiency_gain_factor = 0.1			
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+		    }
+			
+			equipment_bonus = {
+				
+				support_equipment_1 = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				train_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}				
+				armor = {
+					instant = yes
+					build_cost_ic = -0.2
+				}			
+			}				
+			
+		}
+        Ger_volunteer_Spain = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+			available = {
+				not = {
+					has_idea = Volunteer_Spain_only_erope 
+				}
+				date < 1939.01.01
+			}
+	      	modifier = {
+		        send_volunteer_size = 5
+		    	air_volunteer_cap = 1
+				weekly_casualties_war_support = 0.1
+				experience_gain_army_unit_factor = -1.0
+				experience_loss_factor = -1.0				
+		    }
+		}
+		
+        SOV_less_XP = {
+
+	        picture = saf_soviet_advisers
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+		        army_core_defence_factor = -0.2
+		    }
+		}		
+		
+        MON_less_XP = {
+			
+			name = SOV_less_XP
+	        picture = saf_soviet_advisers
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+				army_defence_factor = -0.2
+		    }
+		}
+		
+        USA_no_trade = {
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+			
+	      	modifier = {
+                production_lack_of_resource_penalty_factor = -1
+				resource_trade_cost_bonus_per_factory = -100
+				country_resource_chromium = 40 
+				country_resource_rubber = 40				
+		    }
+			
+		}
+        JAP_no_trade = {
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+			
+	      	modifier = {
+                production_lack_of_resource_penalty_factor = -1
+				resource_trade_cost_bonus_per_factory = -100			
+		    }
+			
+		}		
+		
+		
+        USA_ENG_suck = {
+
+	        picture = free_trade 
+
+	    	allowed = {
+	     	}
+			
+	      	modifier = {
+				country_resource_oil = 80 	
+				fuel_gain_factor = 0.40		
+		    }
+			
+		}
+				
+		
+        Ita_volunteer_Spain = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+		        send_volunteer_size = 4
+		    	air_volunteer_cap = 1
+				weekly_casualties_war_support = 0.1
+				experience_gain_army_unit_factor = -1.0
+				experience_loss_factor = -1.0					
+		    }
+		}	
+        SOV_volunteer_Spain = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+			available = {
+				date < 1939.01.01
+			}
+			
+	      	modifier = {
+		        send_volunteer_size = 9
+				weekly_casualties_war_support = 0.1
+		    	air_volunteer_cap = 2	
+				experience_gain_army_unit_factor = -1.0
+				experience_loss_factor = -1.0					
+		    }
+		}
+        Volunteer_Spain_only_erope = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+			
+			available = {
+				date < 1939.01.01
+			}
+			
+	      	modifier = {
+		        send_volunteer_size = 9
+		    	air_volunteer_cap = 2
+				weekly_casualties_war_support = 0.1
+				experience_gain_army_unit_factor = -1.0
+				experience_loss_factor = -1.0					
+		    }
+		}
+		
+        SPD_volunteer_Soviet = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+			available = {
+				date < 1939.01.01
+			}
+	      	modifier = {
+		        send_volunteer_size = 9
+		    	#air_volunteer_cap = -100
+		    }
+		}		
+        special_game_rules = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+		        send_volunteer_size = -1
+		     	lend_lease_tension = 1
+		    	air_volunteer_cap = -100
+		    }
+		}
+		special_game_rules_2 = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+            generate_wargoal_tension = 1
+		    }
+		}
+		special_game_rules_4 = {
+
+	        picture = generic_manpower_bonus
+
+	    	allowed = {
+	     	}
+
+	      	modifier = {
+			    experience_gain_factor = -1
+		    }
+		}
+			
+	    hard_time = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			available = {
+				OR = {
+					126 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}
+					128 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}
+					132 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}					
+					133 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}					
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				production_factory_max_efficiency_factor =0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.2
+				
+			}
+        }
+	
+	    hard_time_no_asia = {
+			
+			name = hard_time
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+			available = {
+				OR = {
+					126 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}
+					128 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}
+					132 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}					
+					133 = {
+						controller = {
+							OR ={
+								tag = GER
+								tag = JAP								
+								is_in_faction_with = GER
+								is_in_faction_with = JAP								
+							}
+						}
+					}					
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.06
+				production_factory_max_efficiency_factor =0.2
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				production_speed_buildings_factor = 0.3
+				global_building_slots_factor = 0.2
+				
+			}
+        }
+	
+	    SOV_hard_time = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				production_speed_buildings_factor = 0.2
+			}
+        }
+	    SOV_hard_time_1 = {
+			
+			name = SOV_hard_time
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+			}
+        }		
+	    FRA_no_Asia = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		        global_building_slots_factor = 0.2
+				special_forces_cap = 0.2
+			}
+        }
+		
+	    ENG_no_Asia = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		        global_building_slots_factor = 0.2
+				conscription = 0.05
+				conversion_cost_civ_to_mil_factor= -0.4				
+				special_forces_cap = 0.2
+			}
+        }		
+	    CAN_no_Asia = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1				
+			
+			modifier = {
+		
+					
+				global_building_slots_factor = 0.4
+				conscription = 0.05
+				conversion_cost_civ_to_mil_factor= -0.4
+				special_forces_cap = 0.2
+				
+			}
+        }
+	    SAF_no_Asia = {
+			picture = generic_goods_red_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+		        global_building_slots_factor = 0.2
+				conscription = 0.05
+				conversion_cost_civ_to_mil_factor= -0.4
+				special_forces_cap = 0.2
+			}
+        }		
+	}
+}

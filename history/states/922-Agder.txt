@@ -1,0 +1,61 @@
+state = {
+	id = 922
+	name = "STATE_922"
+	manpower = 396425
+	state_category = town
+	resources = {
+		aluminium = 5
+	}
+	
+
+	history = {
+
+		1936.1.1.12 = {	    
+			owner = NOR
+			add_core_of = NOR
+
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 1
+				dockyard = 1
+				9296 = {
+					naval_base = 3
+					coastal_bunker = 1
+				}
+			}		
+		
+		}
+		1936.1.1.13 = {	    
+			owner = NOR
+			add_core_of = NOR
+		}		
+		1936.1.1.14 = {
+			owner = NOR
+			add_core_of = NOR	
+		}		
+		1936.1.1.15 = {
+			owner = TIB
+			add_core_of = TIB		
+		}
+		
+		1941.1.1.14 = {
+		    owner = GER					
+		}
+		
+		1945.1.1.10 = {
+		    owner = TIB
+			add_core_of = TIB		
+		}
+				
+		victory_points = {
+			9296 1 
+		}
+	}
+
+	provinces = {
+		3049 3129 6072 9096 9196 9296 11176 11367 11101
+	}
+
+	local_supplies = 0.000
+}

@@ -1,0 +1,51 @@
+state={
+	id=689
+	name="STATE_689"
+	manpower = 1075000
+	
+	state_category = town
+
+	history={
+		
+		1936.1.1.12 = {	    
+			owner = ENG
+			add_core_of = JAM
+		}
+		1936.1.1.13 = {
+			owner = ENG
+			add_core_of = JAM
+		}			
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}		
+		1936.1.1.15 = {
+			owner = HOL
+			add_core_of = JAM
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}		
+		1945.1.1.10 = {
+			owner = BRA
+			add_core_of = BRA
+		}			
+		
+		victory_points = {
+			12304 1 
+		}
+		buildings = {
+			infrastructure = 2
+			12304 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={ 12304 12477 }
+
+	local_supplies=0.0 
+}

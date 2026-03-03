@@ -1,0 +1,62 @@
+state={
+	id=645
+	name="STATE_645"
+	manpower=1018
+	state_category = small_island
+	
+	resources={
+		steel=3
+		aluminium=1
+	}
+	
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = JAP
+		    add_core_of = JAP	
+		}			
+		1936.1.1.13 = {
+		    owner = JAP
+		    add_core_of = JAP	
+		}
+        1936.1.1.14 = {	    
+		    owner = JAP
+		    add_core_of = JAP
+		}
+        1936.1.1.15 = {	    
+		    owner = JAP
+			add_core_of = JAP
+		}
+		1941.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+		1945.1.1.10 = {
+		    owner = TIB
+		    add_core_of = TIB
+		}	
+						
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13025 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			13025 5
+		 }
+		 		 strategic_province_location = {
+		 	defensible_coastline = 13025
+		 }
+		 	 		 strategic_province_location = {
+		 	defensible_coastline = 2093
+		 }
+	}
+	provinces={
+		13025 2093
+	}
+
+	local_supplies=0.0 
+}

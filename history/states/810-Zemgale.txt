@@ -1,0 +1,71 @@
+
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+
+        1936.1.1.12 = {	    
+		    owner = LAT
+			add_core_of = LAT
+			
+			buildings = {
+				infrastructure = 2
+				arms_factory = 1
+				industrial_complex = 1
+				air_base = 3
+				310 = {
+					bunker = 2
+				}
+			}		
+		}			
+		1936.1.1.13 = {
+			owner = LAT
+			add_core_of = LAT
+		}
+        1936.1.1.14 = {	    
+			owner = LAT
+			add_core_of = LAT
+		}			
+		1936.1.1.15 = {
+		    owner = TIB
+			add_core_of = TIB
+		}
+		
+		1941.1.1.14 = {
+		    owner = SOV
+		    add_core_of = SOV
+		
+			buildings = {
+				infrastructure = 3 #was: 5
+				arms_factory = 3
+				industrial_complex = 3
+				air_base = 3
+				310 = {
+					bunker = 2
+				}
+			}		
+		}	
+					
+		1945.1.1.10 = {
+		    owner = SOV
+		    add_core_of = GER
+		    add_core_of = SOV			
+		}	
+		
+		
+		victory_points = {
+			6222 3 #Jelgava
+		}
+		victory_points = {
+			3255 1 #Jekabpils
+		}
+	}
+
+	provinces={
+		222 310 319 341 3298 6459 7482 9275 11222 
+	}
+	manpower=600250
+	buildings_max_level_factor=1.000
+	state_category=town
+}

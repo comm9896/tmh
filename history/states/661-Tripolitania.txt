@@ -1,0 +1,59 @@
+state={
+	id=661
+	name="STATE_661"
+	manpower = 17617
+	
+	state_category = wasteland_no_Air
+
+	resources={
+		coal = 8					
+	}
+	
+	history={
+
+		1936.1.1.12 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		
+			
+			buildings = {
+				infrastructure = 1
+			}
+		
+		}	
+		1936.1.1.13 = {	    
+			owner = ITA			
+			add_core_of = LBA	
+		}			
+		1936.1.1.14 = {
+			owner = TUR
+			add_core_of = TUR			
+		}
+		1936.1.1.15 = {	    
+		    owner = TIB
+			add_core_of = TIB
+		}	
+		
+		1941.1.1.14 = {    
+		    owner = TIB
+			add_core_of = TIB
+			
+			buildings = {
+				infrastructure = 1
+			}
+		}	
+		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}		
+
+	}
+	
+	provinces={
+		1174 4051 4117 4176 7154 7194 10037 10067 11940 12009 
+	}
+
+	local_supplies=0.0 
+}

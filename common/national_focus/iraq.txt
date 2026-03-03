@@ -1,0 +1,74 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = iraq_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			tag = IRQ
+			has_dlc = "Graveyard of Empires"
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1750 }
+
+
+	### INDUSTRY ###
+
+	focus = {
+		id = IRQ_decouple_from_the_pound
+		icon = GFX_focus_IRQ_decouple_from_the_pound
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus = }
+		x = 0
+		y = 0
+		#relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			base = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			every_state = {
+				limit = {
+					is_fully_controlled_by = IRQ
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+
+}

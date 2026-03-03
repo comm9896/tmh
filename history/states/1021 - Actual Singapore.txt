@@ -1,0 +1,71 @@
+state = {
+	id = 1021
+	name = "STATE_1021"
+	manpower = 557745
+	
+	state_category = large_town
+	
+	resources = {
+		steel = 10
+		tungsten =29
+		aluminium = 5
+	}
+
+	history = {
+
+		owner = ENG
+		add_core_of = MAL
+		add_core_of = SNG
+
+		victory_points = {
+			12299 10 # Singapore
+		}
+
+        1936.1.1.12 = {	    
+		    owner = ENG
+			add_core_of = TIB
+		}			
+		1936.1.1.13 = {
+			owner = TIB
+			add_core_of = TIB
+		}	
+		1936.1.1.14 = {
+			owner = TIB
+			add_core_of = TIB
+		}
+		1936.1.1.15 = {
+		    owner = RAJ
+		    add_core_of = RAJ
+		}
+		
+		1941.1.1.14 = {
+		    owner = TIB
+		    add_core_of = TIB	
+										
+		}
+		
+		1945.1.1.10 = {
+		    owner = RAJ
+		    add_core_of = RAJ	
+		    add_core_of = JAP				
+		}	
+		
+		buildings = {
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+				naval_supply_hub = 1
+				naval_headquarters = {
+					level = 1
+				}
+			}
+		}
+		
+	}
+
+	provinces = {
+		12299
+	}
+
+	local_supplies = 0.0 
+}
