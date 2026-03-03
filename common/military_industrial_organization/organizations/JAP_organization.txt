@@ -1681,7 +1681,7 @@ JAP_yokosuka_organization = {
 
 		available = {
 			FROM = {
-				has_completed_focus = JAP_improve_the_type_91_aerial_torpedo
+				has_completed_focus = JAP_yokosuka_naval_air_technical_arsenal
 			}
 		}
 

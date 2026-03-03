@@ -24,8 +24,41 @@ ideas = {
 	}
 	
 	country = {
-        
+
+        USA_LL_to_Soviets_Blocked = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+			}
+		}
+		JAP_nonavyallies = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_zaibatsu
+			modifier = {
+				navy_max_range_factor = 1
+				production_speed_naval_base_factor = 9.99
+				no_supply_grace = 240
+			}
+		}
+		fast_moobilization = {
+			   removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}
+	      	modifier = {
+			mobilization_speed = 1000
+			}
 		
+		
+		
+		}
 		Sapr_Alias_suck_in_norce_africa = {
 
 	     	picture = generic_local_self_management
@@ -452,7 +485,7 @@ ideas = {
 	     	}
 			
 	      	modifier = {
-                production_lack_of_resource_penalty_factor = -1
+				production_lack_of_resource_penalty_factor = -1.1
 				resource_trade_cost_bonus_per_factory = -100			
 		    }
 			

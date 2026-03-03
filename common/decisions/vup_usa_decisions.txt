@@ -1,4 +1,5 @@
 USA_annex = { 
+
 	USA_homeland_defense = {
 
 		icon = generic_prepare_civil_war

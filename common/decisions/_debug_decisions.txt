@@ -1,5 +1,256 @@
 debug_decisions = {
+	add_fast_moobilization = {
+			icon = generic_research
 
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_ideas = fast_moobilization
+		}
+	
+	}
+		remove_fast_moobilization = {
+			icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			remove_ideas = fast_moobilization
+		}
+	
+	}
+	tech_39-40_years = {
+				icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+						
+	#пехотное снаряжение
+	set_technology = { infantry_weapons = 1 }	
+	set_technology = { infantry_weapons1 = 1 }	
+	set_technology = { infantry_weapons2 = 1 }				
+	set_technology = { improved_infantry_weapons = 1 }	
+	set_technology = { improved_infantry_weapons_2 = 1 }	
+
+	set_technology = { paratroopers = 1 }	
+	set_technology = { paratroopers2 = 1 }	
+	
+	set_technology = { marines = 1 }	
+	set_technology = { marines2 = 1 }	
+
+	set_technology = { tech_mountaineers = 1 }	
+	set_technology = { tech_mountaineers2 = 1 }
+
+	set_technology = { rangers_tech = 1 }	
+	set_technology = { rangers_tech2 = 1 }
+
+	set_technology = { support_weapons = 1 }	
+	
+	set_technology = { tech_trucks = 1 }	
+	set_technology = { motorised_infantry = 1 }	
+	set_technology = { motorized_rocket_unit = 1 }
+	set_technology = { armored_car1 = 1 }		
+	set_technology = { mechanised_infantry = 1 }
+
+	set_technology = { photo_reconnaisance = 1 }	
+	
+	#Танки
+	set_technology = { gwtank_chassis = 1 }				
+	set_technology = { basic_light_tank_chassis = 1 }	
+	set_technology = { improved_light_tank_chassis = 1 }				
+	set_technology = { amphibious_tank_chassis = 1 }	
+			
+	set_technology = { advanced_light_tank_chassis = 1 }	
+	set_technology = { basic_medium_tank_chassis = 1 }				
+	set_technology = { improved_medium_tank_chassis = 1 }
+	set_technology = { advanced_light_tank_chassis = 1 }		
+				
+	set_technology = { basic_heavy_tank_chassis = 1 }
+	set_technology = { improved_heavy_tank_chassis = 1 }				
+			
+	set_technology = { armor_tech_1 = 1 }	
+	set_technology = { armor_tech_2 = 1 }	
+	
+	set_technology = { engine_tech_1 = 1 }	
+	set_technology = { engine_tech_2 = 1 }	
+
+	
+	#Доп Роты		
+	set_technology = { tech_support = 1 }				
+	set_technology = { tech_engineers = 1 }	
+	set_technology = { tech_engineers2 = 1 }	
+	
+	set_technology = { tech_recon = 1 }	
+	set_technology = { tech_recon2 = 1 }	
+
+	set_technology = { tech_military_police = 1 }	
+	set_technology = { tech_military_police2 = 1 }	
+
+	set_technology = { tech_maintenance_company = 1 }	
+	set_technology = { tech_maintenance_company2 = 1 }	
+			
+	set_technology = { tech_field_hospital = 1 }	
+	set_technology = { tech_field_hospital2 = 1 }	
+	
+	set_technology = { tech_logistics_company = 1 }	
+	set_technology = { tech_logistics_company2 = 1 }	
+	
+	set_technology = { tech_signal_company = 1 }	
+	set_technology = { tech_signal_company2 = 1 }	
+
+	set_technology = { railway_gun = 1 }	
+
+
+	set_technology = { sp_armored_signal_tech = 1 }	
+	set_technology = { sp_armored_engineer_tech = 1 }
+	set_technology = { sp_armored_maintenance_tech = 1 }
+	set_technology = { sp_helicopter_med_evac_tech = 1 }
+	set_technology = { sp_helicopter_transport_pods_tech = 1 }
+	set_technology = { sp_helicopter_artillery_observers_tech = 1 }
+	
+	#Электрика				
+	set_technology = { electronic_mechanical_engineering = 1 }	
+	set_technology = { radio = 1 }	
+	set_technology = { improved_radio = 1 }		
+	
+	set_technology = { radio_detection = 1 }
+	set_technology = { cavity_magnatron = 1 }
+
+	
+	set_technology = { decimetric_radar = 1 }	
+	set_technology = { improved_decimetric_radar = 1 }	
+	set_technology = { centimetric_radar = 1 }	
+	set_technology = { improved_centimetric_radar = 1 }	
+	set_technology = { advanced_centimetric_radar = 1 }	
+	set_technology = { mechanical_computing = 1 }	
+	set_technology = { computing_machine = 1 }			
+	set_technology = { improved_computing_machine = 1 }			
+
+	
+
+	#Промышленность	
+	set_technology = { basic_machine_tools = 1 }
+	set_technology = { improved_machine_tools = 1 }			
+	set_technology = { advanced_machine_tools = 1 }		
+	set_technology = { assembly_line_production = 1 }			
+		
+	set_technology = { concentrated_industry = 1 }			
+	set_technology = { concentrated_industry2 = 1 }			
+	set_technology = { concentrated_industry3 = 1 }			
+	set_technology = { concentrated_industry4 = 1 }			
+	set_technology = { concentrated_industry5 = 1 }	
+
+	set_technology = { dispersed_industry = 1 }			
+	set_technology = { dispersed_industry2 = 1 }			
+	set_technology = { dispersed_industry3 = 1 }
+	
+	set_technology = { fuel_silos = 1 }					
+		
+	set_technology = { synth_oil_experiments = 1 }					
+
+	set_technology = { rubber_processing = 1 }			
+	set_technology = { improved_rubber_processing = 1 }			
+	set_technology = { advanced_rubber_processing = 1 }	
+
+	set_technology = { construction1 = 1 }			
+	set_technology = { construction2 = 1 }	
+	set_technology = { construction3 = 1 }
+	set_technology = { construction4 = 1 }			
+
+	set_technology = { excavation1 = 1 }			
+	set_technology = { excavation2 = 1 }	
+	set_technology = { excavation3 = 1 }
+	set_technology = { excavation4 = 1 }			
+	
+
+	#Артилерия		
+	set_technology = { gw_artillery = 1 }	
+	set_technology = { interwar_artillery = 1 }	
+	set_technology = { artillery1 = 1 }
+	set_technology = { artillery2 = 1 }			
+	set_technology = { artillery3 = 1 }	
+	set_technology = { artillery4 = 1 }	
+
+	set_technology = { interwar_antiair = 1 }	
+	set_technology = { antiair1 = 1 }	
+	set_technology = { antiair2 = 1 }	
+	set_technology = { antiair3 = 1 }
+	set_technology = { antiair4 = 1 }	
+			
+	set_technology = { interwar_antitank = 1 }				
+	set_technology = { antitank1 = 1 }				
+	set_technology = { antitank2 = 1 }				
+	set_technology = { antitank3 = 1 }				
+	set_technology = { antitank4 = 1 }				
+			
+	set_technology = { rocket_artillery = 1 }				
+	set_technology = { rocket_artillery2 = 1 }				
+	set_technology = { rocket_artillery3 = 1 }	
+
+			
+	#Авиация		
+	set_technology = { iw_small_airframe = 1 }	
+	set_technology = { basic_small_airframe = 1 }	
+	set_technology = { improved_small_airframe = 1 }
+		
+	set_technology = { iw_medium_airframe = 1 }	
+	set_technology = { basic_medium_airframe = 1 }	
+	set_technology = { improved_medium_airframe = 1 }
+
+	set_technology = { iw_large_airframe = 1 }	
+	set_technology = { basic_large_airframe = 1 }	
+	set_technology = { improved_large_airframe = 1 }
+
+	set_technology = { early_bombs = 1 }				
+	set_technology = { heavy_bombs = 1 }				
+	set_technology = { armor_piercing_bombs = 1 }				
+	set_technology = { photo_reconnaisance = 1 }				
+	set_technology = { air_torpedoe_1 = 1 }				
+	set_technology = { air_torpedoe_2 = 1 }				
+	set_technology = { aa_lmg = 1 }				
+	set_technology = { survivability_studies = 1 }				
+	set_technology = { aa_hmg = 1 }				
+	set_technology = { aa_cannon_1 = 1 }	
+	set_technology = { engines_1 = 1 }	
+	set_technology = { engines_2 = 1 }	
+	set_technology = { engines_3 = 1 }	
+			
+	set_technology = { range_improvements = 1 }	
+	set_technology = { aircraft_construction = 1 }
+	set_technology = { bba_improved_transport_plane = 1 }	
+		}
+	}
 	add_efficiency_growth_debug = {
 		icon = generic_research
 

@@ -2043,21 +2043,6 @@ country_event = {
 	option = { 
 		name = SEA_japan_foreign_policy.35.a
 
-		IF = {
-			limit = {
-				NOT = {
-					has_war_with = FROM
-				}
-			}
-			add_war_support = -0.05
-		}
-		ELSE = {
-			add_timed_idea = {
-				idea = JAP_pro_japanese_sentiments_for_usa_idea
-				days = 180
-			}	
-		}
-
 	}
 
 }

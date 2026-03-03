@@ -291,7 +291,7 @@ add_timed_idea = {
 	days = 2557
 }
 
-
+add_timed_idea = { idea = USA_no_trade days = 1460 }
 
 add_ideas = bureau_of_ordnance_spirit
 add_ideas = MTG_naval_treaty_adherent

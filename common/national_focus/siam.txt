@@ -322,7 +322,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
@@ -357,7 +357,7 @@
 		prerequisite = { focus = Sia_prom }
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 
 		available = {
@@ -543,7 +543,7 @@
 		prerequisite = { focus = Sia_prom4 }
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 
 		bypass = {
@@ -596,7 +596,7 @@
 		prerequisite = { focus = Sia_prom1 }
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 
 		available = {
@@ -651,6 +651,9 @@
 		has_full_control_of_state = 724
 		}
 
+		ai_will_do = {
+			factor = 3
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -709,7 +712,7 @@
 		prerequisite = { focus = Sia_prom5}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 
 		available = {
@@ -868,7 +871,7 @@
 		mutually_exclusive = { focus = Sia_prom6 }
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 
 		available = {
@@ -917,7 +920,7 @@
 		prerequisite = {focus = Sia_prom8}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 
 		available = {

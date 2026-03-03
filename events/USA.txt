@@ -160,76 +160,7 @@ country_event = {
 
 
 	option = { 	
-		name = usa.6.a
-		ai_chance = {
-			factor = 75
-			modifier = {
-				OR = {
-					has_game_rule = {
-						rule = USA_ai_behavior
-						option = FASCIST
-					}
-					has_country_flag = USA_AI_RANDOM_FASCIST
-				}
-				has_dlc = "Man the Guns"
-				factor = 0
-			}
-		}		
-		add_ideas = new_deal
-
-
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
-	}
-
-	option = {
-		name = usa.6.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = USA_ai_behavior
-					option = DEFAULT
-				}
-			}
-		}		
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		add_political_power = 120
-		if = {
-			limit = {
-				has_idea = standard_oil_california
-			}
-			add_political_power = 150
-		}
-		if = {
-			limit = {
-				NOT = { has_idea = standard_oil_california }
-			}
-			add_ideas = standard_oil_california
-		}
-		create_country_leader = {
-			name = "Alf Landon"
-			desc = "POLITICS_ALF_LANDON_DESC"
-			picture = GFX_portrait_Alf_Landon
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				staunch_constitutionalist
-			}
-		}
-		country_event = usa.31
+		name = usa.6.a	
 	}
 }
 
@@ -247,59 +178,14 @@ country_event = {
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
-		has_idea = new_deal
 	}
 
 	
 	option = {
 		name = usa.7.a
-		ai_chance = {
-			factor = 75
-		}
 
-
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
-
-	}
-
-	option = {
-		name = usa.7.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}	
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		remove_ideas = new_deal
-		add_ideas = wilkies_new_deal
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
-		add_political_power = 120
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		create_country_leader = {
-			name = "Wendell Wilkie"
-			desc = "POLITICS_WENDELL_WILKIE_DESC"
-			picture = GFX_portrait_Wendell_Wilkie
-			expire = "1965.1.1"
-			ideology = liberalism
-			traits = {
-				
-			}
-		}
-		country_event = usa.31 #weighted towards gain of support
 	}
 }
-
 # Election of 1940: Roosevelt vs Landon (Incumbent)
 country_event = {
 	id = usa.8
@@ -314,38 +200,13 @@ country_event = {
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
-		NOT = { has_idea = new_deal }
 	}
 
 	
 	option = { 
 		name = usa.8.a
-		add_political_power = -40
-
-
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
-
 	}
 
-	option = { 
-		name = usa.8.b
-		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
-		add_ideas = new_deal
-		retire_country_leader = yes
-		add_political_power = 120
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		country_event = usa.31
-	}
 }
 
 # Election of 1944: Roosevelt vs Thomas E. Dewey
@@ -362,54 +223,14 @@ country_event = {
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		has_idea = new_deal
 		has_war = no
 	}
 	
 	option = {
 		name = usa.9.a
-		ai_chance = {
-			factor = 75
-		}
-		add_political_power = 10
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
 	}
 
-	option = {
-		name = usa.9.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}		
-		remove_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		add_political_power = 120
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		create_country_leader = {
-			name = "Thomas E. Dewey"
-			desc = "POLITICS_THOMAS_DEWEY_DESC"
-			picture = GFX_portrait_Thomas_E_Dewey
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				
-			}
-		}
-		country_event = usa.31
-	}
+
 }
 
 # Election of 1944: Roosevelt vs Incumbent
@@ -430,40 +251,10 @@ country_event = {
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		NOT = { has_idea = new_deal }
 	}
 	
 	option = { 
 		name = usa.10.a
-		add_political_power = 10
-
-
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
-
-	}
-
-	option = { 
-		name = usa.10.b
-		add_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		add_political_power = 120
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		if = {
-			limit = { has_idea = wilkies_new_deal }
-			remove_ideas = wilkies_new_deal
-		}
-		retire_country_leader = yes
-		country_event = usa.31
 	}
 }
 
@@ -487,7 +278,6 @@ country_event = {
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		has_idea = new_deal
 		OR = {
 			has_war = no
 			has_country_flag = macarthur_candidate
@@ -496,50 +286,6 @@ country_event = {
 	
 	option = {
 		name = usa.11.a
-		ai_chance = {
-			factor = 25
-		}	
-		add_political_power = 10
-
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.5 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		custom_effect_tooltip = usa_congress_elections_tt_bad
-		country_event = usa.30
-
-	}
-
-	option = {
-		name = usa.11.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		remove_ideas = new_deal
-		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		add_political_power = 120
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		create_country_leader = {
-			name = "Douglas MacArthur"
-			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-			picture = GFX_portrait_Douglas_MacArthur
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				
-			}
-		}
-		country_event = usa.31
-		USA_douglas_macarthur = { remove_unit_leader_role = yes }
 	}
 }
 
@@ -557,7 +303,6 @@ country_event = {
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		has_idea = new_deal
 		has_war = yes
 	}
 	
@@ -582,7 +327,6 @@ country_event = {
 	trigger = {
 		tag = USA
 		date > 1945.3.29
-		has_idea = new_deal
 		has_government = democratic
 	}
 
@@ -621,10 +365,6 @@ country_event = {
 
 	option = {
 		name = usa.30.a
-		clear_variable = sen_loc
-		clear_variable = ror_loc
-		clear_variable = senators_for_reelection
-		clear_variable = representatives_for_reelection
 	}
 
 }
@@ -639,10 +379,6 @@ country_event = {
 
 	option = {
 		name = usa.31.a
-		clear_variable = sen_loc
-		clear_variable = ror_loc
-		clear_variable = senators_for_reelection
-		clear_variable = representatives_for_reelection
 	}
 
 }
