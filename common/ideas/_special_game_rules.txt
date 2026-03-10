@@ -58,8 +58,6 @@ ideas = {
 				no_supply_grace = 240
 			}
 		}
-
-		}
 		Sapr_Alias_suck_in_norce_africa = {
 
 	     	picture = generic_local_self_management
