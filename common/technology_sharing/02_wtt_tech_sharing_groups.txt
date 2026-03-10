@@ -52,9 +52,8 @@ technology_sharing_group = {
 	name = JAP_german_rocketry
 	desc = JAP_german_rocketry_desc
 	picture = GFX_technology_sharing_default
-	research_sharing_per_country_bonus = 0.05
+	research_sharing_per_country_bonus = 0.07
 
-	categories = { rocketry }
 
 	available = {
 		NOT = { has_war_with = GER }

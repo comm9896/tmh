@@ -2720,14 +2720,14 @@
 				}
 				swap_ideas = {
 					remove_idea = general_electric
-					add_idea = general_electric_improved
+					add_idea = AST_general_electric_improved
 				}
 			}
 			else = {
 				effect_tooltip = {
 					swap_ideas = {
 						remove_idea = general_electric
-						add_idea = general_electric_improved
+						add_idea = AST_general_electric_improved
 					}
 				}
 			}	

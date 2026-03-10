@@ -1,5 +1,59 @@
 USA_annex = { 
 
+USA_nonavyallies = {
+
+		icon = GFX_decision_SWE_set_navy_budget
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			JAP = { has_ideas = JAP_nonavyallies }
+					OR = {
+						USA = { num_of_naval_factories > 225 }					
+						AND = {
+							USA = { num_of_naval_factories > 200 }
+							ENG = { num_of_naval_factories > 25 }
+						}					
+						AND = {
+							USA = { num_of_naval_factories > 150 }
+							ENG = { num_of_naval_factories > 50 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 125 }
+							ENG = { num_of_naval_factories > 75 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 100 }
+							ENG = { num_of_naval_factories > 100 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 75 }
+							ENG = { num_of_naval_factories > 125 }
+						}					
+						AND = {
+							USA = { num_of_naval_factories > 50 }
+							ENG = { num_of_naval_factories > 150 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 25 }
+							ENG = { num_of_naval_factories > 175 }
+						}
+						ENG = { num_of_naval_factories > 200 }
+										
+					}
+		}
+		fire_only_once = yes
+		cost = 0
+		visible = {
+		}
+		complete_effect = {
+		JAP = { remove_ideas = JAP_nonavyallies }
+		}
+}
+
+
 	USA_homeland_defense = {
 
 		icon = generic_prepare_civil_war
@@ -9,36 +63,56 @@ USA_annex = {
 		}
 
 		available = {
+		or = {
 			any_core_state = {
+				limit = {is_on_continent = north_america}
 				NOT = {
 					is_controlled_by = USA
 				}
 			}
-			has_civil_war = no
-
+	#	CAN = {
+	#		any_core_state = {
+	#			}
+	#			NOT = {
+	#				is_controlled_by = CAN
+	#			}
+	#		}
 		}
-
-		cost = 50
+	}
 		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
+		cost = 0
 		visible = {
 		}
 
 		complete_effect = {
+					set_war_support = 0.9
+					custom_effect_tooltip = USA_army_dm_info
+					add_to_variable = { USA_army_army_core_attack_factor = 0.2 tooltip = army_core_attack_factor_tt}
+					add_to_variable = { USA_army_army_core_defence_factor = 0.2 tooltip = army_core_attack_factor_tt}
+						every_core_state = {
+							limit = {is_on_continent = north_america}
+								#not = {state = 101}
+				add_dynamic_modifier = { modifier = USA_gorilla_tactics }
+				}
 			if = {
 				limit = {
-					has_war_support < 0.9
+					NOT = {
+						OR = {
+							has_idea = extensive_conscription
+							has_idea = scraping_the_barrel
+							has_idea = service_by_requirement
+							has_idea = all_adults_serve
+						}
+					}
 				}
-				set_war_support = 0.9
+				add_ideas = extensive_conscription
 			}
-			if = {
-				limit = {
-					has_idea = great_depression
-				}
-				remove_ideas = great_depression
+		CAN = {
+						set_war_support = 0.9
+						add_ideas = USA_homeland_defense
+						every_core_state = {
+							limit = {is_on_continent = north_america}
+				add_dynamic_modifier = { modifier = USA_gorilla_tactics }
 			}
 			if = {
 				limit = {
@@ -53,61 +127,28 @@ USA_annex = {
 				}
 				add_ideas = extensive_conscription
 			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-						has_idea = civilian_economy
-						has_idea = low_economic_mobilisation
-					}
-				}
-				add_ideas = war_economy
-			}
-			add_ideas = USA_homeland_defense
 		}
 	}
+}
 	USA_join_the_war = {
 	 	available = { 
 			OR = {
 				has_war_with = JAP
-				any_country = { 
-				is_in_faction_with = GER 
-			OR = { 
-
-				controls_state = 331 
-				controls_state = 332
-				controls_state = 730
-				controls_state = 696 
-				controls_state = 695
-				controls_state = 689
-				controls_state = 311
-				controls_state = 690
-				controls_state = 693
-				controls_state = 464
-				controls_state = 860
-				controls_state = 863
-				controls_state = 468
-				controls_state = 465
-				controls_state = 694 
-				controls_state = 308 
-				controls_state = 692 
-				controls_state = 691 
-				controls_state = 687 
-				controls_state = 309 
-				controls_state = 310 
-				controls_state = 127
-				controls_state = 123 
-				controls_state = 130 
-				controls_state = 132
-				controls_state = 131
-				controls_state = 121
-				controls_state = 133
-				controls_state = 122
-			}
-			}
-			}
-		}
+					ENG = {
+						not = {has_full_control_of_state = 126}
+						not = {has_full_control_of_state = 338}
+						}
+				any_state = { 
+							OR = {
+								is_on_continent = north_america
+								is_on_continent = south_america
+								}
+										is_owned_by = {
+										is_in_faction_with = GER 
+										tag = GER
+										}
+								}
+							}
 				allowed = {	original_tag = USA }
 				fire_only_once = yes
 				cost = 0	
@@ -120,9 +161,12 @@ USA_annex = {
 					}
 					
 					add_to_war = { targeted_alliance = ENG	enemy = GER	}
+			reduce_focus_completion_cost = {
+			  focus = { USA_arsenal_of_democracy USA_stroika3  }
+			  cost = 56
+			  }
 				}
 			}
-	
 	GER_plan = {
 	
 		icon = eng_preparing_the_second_front

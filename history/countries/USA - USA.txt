@@ -23,7 +23,6 @@ set_variable = { USA_stability_factor = -0.42 }
 set_variable = { USA_political_power_cost = 0.9 } 
 set_variable = { USA_fyp_consumer_goods_factor = 0.6 }
 set_variable = { USA_fyp_local_resources_factor = -0.2 }
-set_variable = { USA_conscription_factor = -0.5 }
 set_variable = { USA_join_faction_tension = 0.2 }
 set_variable = { USA_industrial_capacity_factory = -0.7 }
 set_variable = { USA_fyp_production_speed_industrial_complex_factor = -0.40 }
@@ -33,10 +32,12 @@ set_variable = { USA_conversion_cost_civ_to_mil_factor = 1 }
 set_variable = { USA_conversion_cost_mil_to_civ_factor = 0.5 }
 set_variable = { USA_consumer_goods_expected_value = 0.50 }
 set_variable = { USA_consumer_goods_expected_value = 0.50 }
-set_variable = { USA_mobilization_speed_factor = -0.5 }
 set_variable = { USA_global_building_slots_factor_factor = -0.42}
-add_dynamic_modifier = { modifier = USA_selixoz_offensive }
 set_variable = { USA_production_speed_synthetic_refinery_factor = -0.75}
+
+
+#add_dynamic_modifier = { modifier = USA_selixoz_offensive }
+#set_variable = { USA_production_speed_synthetic_refinery_factor = -0.75}
 
 #congress
 set_variable = { var = senators_support value = 48 } 
@@ -54,13 +55,14 @@ USA_recalc_congress_icon_frames = yes
 add_dynamic_modifier = {
 	modifier = USA_army_dm
 }
-
+set_variable = { USA_conscription_factor = -0.5 }
+set_variable = { USA_mobilization_speed_factor = -0.5 }
 set_variable = { USA_army_army_infantry_attack_factor = 0 }
-set_variable = { USA_army_army_morale_factor = 0.05 }
-set_variable = { USA_army_army_defence_factor = -0.05 }
-set_variable = { USA_army_initiative_factor = 0.1 }
-set_variable = { USA_army_army_army_artillery_attack_factor = -0.1 }
-set_variable = { USA_army_supply_consumption_factor = 0.2 }
+set_variable = { USA_army_army_morale_factor = 0 }
+set_variable = { USA_army_army_defence_factor = 0 }
+set_variable = { USA_army_initiative_factor = 0.0 }
+set_variable = { USA_army_army_army_artillery_attack_factor = 0 }
+set_variable = { USA_army_supply_consumption_factor = 0.0 }
 set_variable = { USA_army_acclimatization_cold_climate_gain_factor = 0 }
 set_variable = { USA_army_acclimatization_hot_climate_gain_factor = 0 }
 set_variable = { USA_army_army_core_attack_factor = 0 }
@@ -88,14 +90,14 @@ add_dynamic_modifier = {
 	modifier = USA_navy_dm
 }
 
-set_variable = { USA_navy_naval_torpedo_hit_chance_factor = 0.15 }
-#set_variable = { USA_navy_naval_torpedo_screen_penetration_factor = 0.1 }
-set_variable = { USA_navy_ships_at_battle_start = 0.1 }
-set_variable = { USA_navy_navy_max_range_factor = 0.1 }
-set_variable = { USA_navy_spotting_chance = -0.1 }
-set_variable = { USA_navy_naval_detection = -0.1 }
-set_variable = { USA_navy_naval_accidents_chance = 0.1 }
-set_variable = { USA_navy_convoy_escort_efficiency = -0.15 }
+set_variable = { USA_navy_naval_torpedo_hit_chance_factor = 0 }
+#set_variable = { USA_navy_naval_torpedo_screen_penetration_factor = 0 }
+set_variable = { USA_navy_ships_at_battle_start = 0 }
+set_variable = { USA_navy_navy_max_range_factor = 0 }
+set_variable = { USA_navy_spotting_chance = 0 }
+set_variable = { USA_navy_naval_detection = 0 }
+set_variable = { USA_navy_naval_accidents_chance = 0 }
+set_variable = { USA_navy_convoy_escort_efficiency = 0 }
 set_variable = { USA_navy_naval_coordination = 0 }
 set_variable = { USA_navy_naval_invasion_prep_speed = 0 }
 set_variable = { USA_navy_amphibious_invasion = 0 }
@@ -114,9 +116,9 @@ add_dynamic_modifier = {
 	modifier = USA_air_dm
 }
 
-set_variable = { USA_airforce_air_nav_efficiency = 0.1 }
-set_variable = { USA_airforce_air_wing_xp_loss_when_killed_factor = 0.1 }
-set_variable = { USA_airforce_air_untrained_pilots_penalty_factor = 0.1 }
+set_variable = { USA_airforce_air_nav_efficiency = 0 }
+set_variable = { USA_airforce_air_wing_xp_loss_when_killed_factor = 0 }
+set_variable = { USA_airforce_air_untrained_pilots_penalty_factor = 0 }
 set_variable = { USA_airforce_air_cas_efficiency = 0 }
 set_variable = { USA_airforce_sortie_efficiency = 0 }
 set_variable = { USA_airforce_air_escort_efficiency = 0 }

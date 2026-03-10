@@ -25,6 +25,22 @@ ideas = {
 	
 	country = {
 
+	fast_moobilization = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+	    	allowed = {
+	     	}
+			modifier = {
+			mobilization_speed = 99999
+
+			}
+	}
+
+
         USA_LL_to_Soviets_Blocked = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
@@ -32,17 +48,13 @@ ideas = {
 			}
 		}
 		JAP_nonavyallies = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+
 			removal_cost = -1
-			picture = jap_zaibatsu
+			icon = GFX_focus_generic_naval_invasion_tank
 			modifier = {
 				navy_max_range_factor = 1
 				production_speed_naval_base_factor = 9.99
+				production_speed_naval_supply_hub_factor = 9.99
 				no_supply_grace = 240
 			}
 		}

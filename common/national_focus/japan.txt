@@ -1184,7 +1184,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_new_order_movement }
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1312,7 +1312,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_sea_tripartite_pact }
 
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1341,25 +1341,25 @@ focus_tree = {
         	}
 			add_tech_bonus = {
 				name = JAP_german_rocketry
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = rocketry	
 			}
 			add_tech_bonus = {
 				name = JAP_sea_mil_tech_coop_with_germany
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = armor	
 			}
 			add_tech_bonus = {
 				name = JAP_sea_mil_tech_coop_with_germany
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_mechanized_equipment	
 			}
 			add_tech_bonus = {
 				name = JAP_sea_mil_tech_coop_with_germany
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = air_equipment	
 			}
@@ -1370,15 +1370,25 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			every_country_with_original_tag = {
-				original_tag_to_check = GER
-				limit = {
-					has_government = fascism
-				}
+			JAP = {
 				add_to_tech_sharing_group = JAP_german_rocketry
-				ROOT = { add_to_tech_sharing_group = JAP_german_rocketry }
 			}
-			
+			GER = {
+				add_to_tech_sharing_group = JAP_german_rocketry
+			}
+			ITA = {
+				add_to_tech_sharing_group = JAP_german_rocketry
+			}
+			HUN = {
+				add_to_tech_sharing_group = JAP_german_rocketry
+			}
+			ROM = {
+				add_to_tech_sharing_group = JAP_german_rocketry
+			}
+			BUL = {
+				add_to_tech_sharing_group = JAP_german_rocketry
+			}
+
 		}
 	}
 
@@ -2860,8 +2870,13 @@ focus_tree = {
 						militia = { x = 0 y = 0 }
 						militia = { x = 0 y = 1 }
 						militia = { x = 0 y = 2 }
+						militia = { x = 0 y = 3 }
+						militia = { x = 0 y = 4 }
 						militia = { x = 1 y = 0 }
 						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 1 y = 3 }
+						militia = { x = 1 y = 4 }
 					}
 					support = {
 					}
@@ -4408,14 +4423,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_isolate_oceania
+		id = JAP_operation_e_d_m
 		icon = GFX_focus_JAP_isolate_oceania
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
-		relative_position_id = JAP_strike_the_southern_road
+		relative_position_id = JAP_operation_Z
 
-		prerequisite = { focus = JAP_strike_the_southern_road }
+		prerequisite = { focus = JAP_operation_Z }
 
 		cost = 5
 
@@ -4449,6 +4464,9 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
+						state = 738
+						state = 667
+						state = 668
 						state = 979
 						state = 523
 						state = 737
@@ -4456,6 +4474,24 @@ focus_tree = {
 						state = 669
 						state = 734
 						state = 635
+						state = 1024
+						state = 1023
+						state = 333
+						state = 334
+						state = 672
+						state = 335
+						state = 673
+						state = 626
+						state = 623
+						state = 1027
+						state = 327 
+						state = 624 
+						state = 625
+						state = 628
+						state = 1025
+						state = 1026
+						state = 627
+						state = 336
 					}
 				}
 				add_dynamic_modifier = {
@@ -4469,14 +4505,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_battle_for_australia
+		id = JAP_operation_mo
 		icon = GFX_focus_generic_air_carrier
 
 		x = 0
 		y = 1
-		relative_position_id = JAP_isolate_oceania
+		relative_position_id = JAP_operation_e_d_m
 
-		prerequisite = { focus = JAP_isolate_oceania }
+		prerequisite = { focus = JAP_operation_e_d_m }
 
 		cost = 5
 
@@ -4505,7 +4541,7 @@ focus_tree = {
 		completion_reward = {
 
 			every_state = {
-				limit = { is_core_of = AST }
+				limit = { is_on_continent = australia }
 				add_dynamic_modifier = {
 					modifier = JAP_operation_MO_military_offensive
 					days = 180
@@ -4524,9 +4560,9 @@ focus_tree = {
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
-		relative_position_id = JAP_strike_the_southern_road
+		relative_position_id = JAP_operation_Z
 
-		prerequisite = { focus = JAP_strike_the_southern_road }
+		prerequisite = { focus = JAP_operation_Z }
 
 		cost = 10
 
@@ -5010,7 +5046,7 @@ annex_country = { target = VIN transfer_troops = yes }
 	}
 
 	focus = {
-		id = JAP_strike_the_southern_road
+		id = JAP_operation_Z
 		icon = GFX_focus_jap_strike_south 
 		#mutually_exclusive = { focus = JAP_sea_pressure_siam }
 		x = 0
@@ -5080,31 +5116,6 @@ annex_country = { target = VIN transfer_troops = yes }
 		}
 	}
 
-	focus = {
-
-	id = JAP_operation_Z
-
-
-		x = 0
-		y = 1
-		relative_position_id = JAP_strike_the_southern_road
-
-		prerequisite = { focus = JAP_strike_the_southern_road }
-
-		cost = 5
-
-		available = {
-		always = no
-		}
-
-		bypass = {
-
-		}
-		completion_reward = {
-
-			}
-
-	}
 		focus = {
 
 	id = JAP_operation_A
@@ -5119,7 +5130,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		cost = 5
 
 		available = {
-
+		always = no
 		}
 
 		bypass = {
@@ -5236,9 +5247,9 @@ annex_country = { target = VIN transfer_troops = yes }
 		#mutually_exclusive = { focus = JAP_sea_pressure_siam }
 		x = -4
 		y = 1
-		relative_position_id = JAP_strike_the_southern_road
+		relative_position_id = JAP_operation_Z
 
-		prerequisite = { focus = JAP_strike_the_southern_road }
+		prerequisite = { focus = JAP_operation_Z }
 
 		cost = 1
 
@@ -9935,29 +9946,11 @@ annex_country = { target = VIN transfer_troops = yes }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					NOT = {
-						JAP_army_faction_is_at_least_influential = yes
-					}
-				}
-				custom_effect_tooltip = JAP_develop_lethal_infantry_equipment_tt
-				effect_tooltip = {
+			JAP_add_or_modify_imperial_army = yes
 					add_to_variable = { JAP_army_army_army_artillery_attack_factor = 0.1 tooltip = army_artillery_attack_factor_tt }
 				}
 			}
-			ELSE_IF = {
-				limit = {
-					JAP_army_faction_is_at_least_influential = yes
-				}
-				JAP_add_or_modify_imperial_army = yes
-				add_to_variable = { JAP_army_army_army_artillery_attack_factor = 0.1 tooltip = army_artillery_attack_factor_tt }
-			}
 
-		}
-
-	}
 
 	focus = {
 		id = JAP_expand_the_irago_proving_ground

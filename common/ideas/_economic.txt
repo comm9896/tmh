@@ -1,12 +1,13 @@
-ideas = { 
+ideas = {
 
 	economy = {
-		law = yes 
+		law = yes
 		use_list_view = yes
+	
 
 
 		USA_nova_kurs = {
-			picture = POL_disjointed_industry
+			picture = RAJ_special_economic_zones
 
 
 			allowed = {
@@ -1414,7 +1415,7 @@ if = {
 			}
 			
 			allowed_to_remove = {
-            date > 1950.01.01
+           always = no
 			}
 		}
 
@@ -1442,7 +1443,7 @@ if = {
 			}
 			
 			allowed_to_remove = {
-            date > 1950.01.01
+            always = no
 			}
 		}
 		MAN_The_Closed_Trade_Policy_of_the_East_Asian_Co_Prosperity_Sphere = {
@@ -1469,7 +1470,7 @@ if = {
 			}
 			
 			allowed_to_remove = {
-            date > 1950.01.01
+			always = no
 			}
 		}
 		SOV_The_Closed_Trade = {
@@ -1497,7 +1498,7 @@ if = {
 			}
 			
 			allowed_to_remove = {
-            date > 1950.01.01
+            always = no
 			}
 		}
 		

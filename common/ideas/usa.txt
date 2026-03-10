@@ -1,7 +1,69 @@
 ideas = {
 
-	country = { 
-			combined_bomber_offensive = {
+	hidden_ideas = {
+			air_war_plans_division_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.1 instant = yes
+			}
+			}
+		}
+
+		air_support_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		strategic_bombing_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.1 instant = yes
+			}
+			}
+		}
+					combined_bomber_offensive = {
 			
 			allowed = {
 				always = no
@@ -46,6 +108,182 @@ ideas = {
 					instant = yes			
 				}	
 			}
+		}
+		escort_effort_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+				bureau_of_ships_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			equipment_bonus = {
+
+				mio_cat_eq_all_ships_no_convoys = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		USA_unrestricted_submarine_warfare = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			equipment_bonus = {
+
+				submarine = {
+					surface_detection = 0.1 instant = yes
+					sub_visibility = -0.1 instant = yes
+				}
+			}
+		}
+	
+		liberty_ships_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+			}
+		}
+		fleet_submarine_specialization_mtg = {
+			name = USA_fleet_submarines
+			picture = generic_naval_manufacturer_2
+			removal_cost = -1
+
+			allowed = { always = no }
+
+			modifier = {
+				sp_naval_fleet_submarine_speed_factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_fleet_submarine = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+	}
+	country = { 
+
+		USA_war_powers_act = {
+			picture = generic_reserve_divisions
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defensive_war_stability_factor = 0.2
+				offensive_war_stability_factor = 0.2
+			}
+		}
+		office_of_strategic_services_lar = {
+			name = office_of_strategic_services
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1			
+
+			modifier = {
+				operation_infiltrate_outcome = 0.25
+				boost_resistance_factor = 0.25
+			}
+		}
+
+		USA_black_chamber = {
+
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1			
+
+			modifier = {
+				propaganda_mission_factor = 0.25
+				boost_ideology_mission_factor = 0.25
+			}
+		}
+	CSA_spirit_of_rebellion = {
+			allowed = { always = no	}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			modifier = {			
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_factor = -0.5
+				equipment_capture = 0.125
+				consumer_goods_factor = -0.25	
+				conscription_factor = 0.25
+			}			
 		}
 		usa_delat_cap_cap_jap = {
 
@@ -721,23 +959,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-		USA_war_powers_act = {
-			picture = generic_reserve_divisions
-			allowed = {
-				always = no
-			}
 
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				defensive_war_stability_factor = 0.2
-				offensive_war_stability_factor = 0.2
-			}
-		}
 		USA_army_of_the_united_states = {
 			picture = HUN_secret_rearmament
 			allowed = {
@@ -832,53 +1054,7 @@ ideas = {
 			}
 		}
 	
-		bureau_of_ships_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
 
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-			
-			equipment_bonus = {
-
-				mio_cat_eq_all_ships_no_convoys = {
-					build_cost_ic = -0.05 instant = yes
-				}
-			}
-		}
-
-		USA_unrestricted_submarine_warfare = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-			
-			equipment_bonus = {
-
-				submarine = {
-					surface_detection = 0.1 instant = yes
-					sub_visibility = -0.1 instant = yes
-				}
-			}
-		}
-			
 
 		
 		USA_prepare_intervention = {
@@ -943,43 +1119,6 @@ ideas = {
 			}
 		}
 
-		office_of_strategic_services_lar = {
-			name = office_of_strategic_services
-			picture = office_of_strategic_services
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1			
-
-			modifier = {
-				operation_infiltrate_outcome = 0.25
-				boost_resistance_factor = 0.25
-			}
-		}
-
-		USA_black_chamber = {
-
-			picture = office_of_strategic_services
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1			
-
-			modifier = {
-				propaganda_mission_factor = 0.25
-				boost_ideology_mission_factor = 0.25
-			}
-		}
 
 		USA_manhattan_project_ns = {
 			name = USA_manhattan_project
@@ -1033,111 +1172,8 @@ ideas = {
 			}
 		}
 
-		liberty_ships_focus = {
-			
-			allowed = {
-				always = no
-			}
 
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				amphibious_invasion = 0.10
-			}
-			equipment_bonus = {
-				convoy = {
-					instant = yes
-					build_cost_ic = -0.25
-				}
-			}
-		}
 
-		air_war_plans_division_focus = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-		
-			equipment_bonus = {
-				mio_cat_eq_all_small_plane = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				mio_cat_eq_all_medium_plane = {
-					build_cost_ic = -0.1 instant = yes
-			}
-			}
-		}
-
-		air_support_focus = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-		strategic_bombing_focus = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				mio_cat_eq_all_large_plane = {
-					build_cost_ic = -0.1 instant = yes
-			}
-			}
-		}
-
-		escort_effort_focus = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			equipment_bonus = {
-				ship_hull_light = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
 		home_of_the_free = {
 			
 			allowed = {
@@ -1335,24 +1371,7 @@ ideas = {
 				justify_war_goal_time = -0.35
 			}			
 		}
-		CSA_spirit_of_rebellion = {
-			allowed = { always = no	}
 
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			picture = generic_volunteer_expedition_bonus
-			modifier = {			
-				army_core_attack_factor = 0.25
-				army_core_defence_factor = 0.25
-				training_time_factor = -0.5
-				equipment_capture = 0.125
-				consumer_goods_factor = -0.25	
-				conscription_factor = 0.25
-			}			
-		}
 	
 	}
 
@@ -1798,6 +1817,12 @@ ideas = {
 				}	
 			}
 			
+			visible = {
+				not = {
+					has_completed_focus = USA_rubber_reserve_company
+				}	
+			}
+			
 			research_bonus = {
 				industry = 0.05
 				synth_resources = 0.15
@@ -1806,6 +1831,31 @@ ideas = {
 			traits = { refinery_concern }
 			
 			modifier = {
+			}
+		}
+		
+		standard_oil_california_improved = {
+
+			name = standard_oil_california
+			picture = standard_oil_california			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			visible = {
+				has_completed_focus = USA_rubber_reserve_company
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				synth_resources = 0.3
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.2				
 			}
 		}
 		
@@ -1891,12 +1941,44 @@ ideas = {
 				
 			}
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.2
 			}
 			
 			traits = { electronics_concern }
 			
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				research_speed_factor = 0.2
+			}
+		}			
+		AST_general_electric_improved = {
+			
+
+			name = general_electric
+			picture = general_electric
+			
+			
+			allowed = {
+				original_tag = AST			
+
+			}
+			
+			visible = {
+				AST = {
+					has_completed_focus = AST_fund_australian_defense_research
+				}	
+			}			
+			
+			research_bonus = {
+				electronics = 0.2
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.07
+				line_change_production_efficiency_factor = 0.07
 			}
 		}
 		

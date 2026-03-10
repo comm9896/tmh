@@ -1,55 +1,87 @@
 ﻿l_russian:
 
+JAP_Prince_kitohito_go_out_tt: "НЕ подал в отставку."
+JAP_TRADE_TO_AXIS_JAP: "Торговое соглашение с Германией"
+JAP_TRADE_TO_JAP_AXIS: "Торговое соглашение с Японией"
+JAP_prepare_to_war: "Подготовка к войне"
+
+
 USA_allience_help:0 "Закон о помощи союзникам по антигитлеровской коалиции"
 
-develop_london_aluminium_deposits:0 "Увеличение производства алюминия в Лондоне"
-develop_london_steel_deposits:0 "Увеличение производства стали в Лондоне"
+	develop_london_aluminium_deposits:0 "Увеличение производства алюминия в §YЛондоне§!"
+	develop_london_steel_deposits:0 "Увеличение производства стали в §YЛондоне§!"
 
-develop_AST_aluminium_deposits:0 "Увеличение производства алюминия в Южном Уэльсе"
-develop_AST_steel_deposits:0 "Увеличение производства стали в Южном Уэльсе"
+	develop_AST_aluminium_deposits:0 "Увеличение производства алюминия в §YЮжном Уэльсе§!"
+	develop_AST_steel_deposits:0 "Увеличение производства стали в §YЮжном Уэльсе§!"
 
-develop_SAF_aluminium_deposits:0 "Увеличение производства алюминия в Траансваале"
-develop_SAF_steel_deposits:0 "Увеличение производства стали в Траансваале"
+	develop_SAF_aluminium_deposits:0 "Увеличение производства алюминия в §YТраансваале§!"
+	develop_SAF_steel_deposits:0 "Увеличение производства стали в §YТраансваале§!"
 
-develop_SOV_aluminium_deposits:0 "Увеличение производства алюминия во Владивостоке"
-develop_SOV_steel_deposits:0 "Увеличение производства стали в Владивостоке"
+	develop_SOV_aluminium_deposits:0 "Увеличение производства алюминия во §YВладивостоке§!"
+	develop_SOV_steel_deposits:0 "Увеличение производства стали в §YВладивостоке§!"
 
-develop_CAN_aluminium_deposits:0 "Увеличение производства алюминия в Южном Онтарио"
-develop_CAN_steel_deposits:0 "Увеличение производства стали в Южном Онтарио"
+	develop_CAN_aluminium_deposits:0 "Увеличение производства алюминия в §YЮжном Онтарио§!"
+	develop_CAN_steel_deposits:0 "Увеличение производства стали в §YЮжном Онтарио§!"
 
-USA_CAN_help:0 "Обсудить помощь Канаде"
-USA_SOV_help:0 "Обсудить помощь Советскому Союзу"
-USA_AST_help:0 "Обсудить помощь Австралии"
-USA_SAF_help:0 "Обсудить помощь Южной Африки"
-USA_london_help:0 "Обсудить помощь Великобритании"
+	USA_CAN_help:0 "Обсудить помощь §YКанаде§!"
+	USA_SOV_help:0 "Обсудить помощь §YСоветскому Союзу§!"
+	USA_AST_help:0 "Обсудить помощь §YАвстралии§!"
+	USA_SAF_help:0 "Обсудить помощь §YЮжной Африки§!"
+	USA_london_help:0 "Обсудить помощь §YВеликобритании§!"
 
-CAN_help_tt:0 "Конгресс разрешит помощь Канаде"
-SOV_help_tt:0 "Конгресс разрешит помощь Советскому Союзу"
-AST_help_tt:0 "Конгресс разрешит помощь Австралии"
-SAF_help_tt:0 "Конгресс разрешит помощь Южной Африки"
-london_help_tt:0 "Конгресс разрешит помощь Великобритании"
+	CAN_help_tt:0 "Конгресс разрешит помощь §YКанаде§!"
+	SOV_help_tt:0 "Конгресс разрешит помощь §YСоветскому Союзу§!"
+	AST_help_tt:0 "Конгресс разрешит помощь §YАвстралии§!"
+	SAF_help_tt:0 "Конгресс разрешит помощь §YЮжной Африки§!"
+	london_help_tt:0 "Конгресс разрешит помощь §YВеликобритании§!"
 
-help_disscussion:0 "Идёт обсуждение решения о помощи другой стране"
-help_disscussion_tt:0 "Начнётся обсуждение помощи для другой страны"
-remove_help_disscussion_tt:0 "Можно разрешить помощь для другой страны"
-
-
-USA_stroika_ARM7_desc_tt:0 "Можно начать обсуждение о расширенном ленд-лизе"
-USA_stroika_ARM7_desc:0 " "
-
-london_help:0 " Помощь Великобритании была рассмотрена конгрессом"
-SOV_help:0 " Помощь Советскому Союзу была рассмотрена конгрессом"
-CAN_help:0 " Помощь Канаде была рассмотрена конгрессом"
-SAF_help:0 " Помощь Южной Африки была рассмотрена конгрессом"
-AST_help:0 " Помощь Австралии была рассмотрена конгрессом"
+	help_disscussion:0 "Идёт обсуждение решения о помощи другой стране"
+	help_disscussion_tt:0 "Начнётся обсуждение помощи для другой страны"
+	remove_help_disscussion_tt:0 "Можно разрешить помощь для другой страны"
 
 
+	USA_stroika_ARM7_desc_tt:0 "Конгресс начнёт обсуждение о расширенном ленд-лизе"
+	USA_stroika_ARM7_desc:0 " "
+
+	london_help:0 " Помощь §YВеликобритании§! была рассмотрена конгрессом"
+	SOV_help:0 " Помощь §YСоветскому Союзу§! была рассмотрена конгрессом"
+	CAN_help:0 " Помощь §YКанаде§! была рассмотрена конгрессом"
+	SAF_help:0 " Помощь §YЮжной Африки§! была рассмотрена конгрессом"
+	AST_help:0 " Помощь §YАвстралии§! была рассмотрена конгрессом"
+
+USA_annex:0 "Внешняя политика  "
 
 USA_air_dm_tt:0 " [combined_bomber_offensive_tt] [air_support_focus_tt] \n "
 
 USA_navy_dm_tt:0 " [bureau_of_ships_focus_tt] [liberty_ships_focus_tt] [escort_effort_focus_tt] [fleet_submarine_specialization_mtg_tt] [USA_unrestricted_submarine_warfare_tt] \n"
 
-#strategic_bombing_focus_desc:0 " 1 "
-#combined_bomber_offensive_desc:0 " 2 "
-#combined_bomber_offensive2_desc:0 " 3 "
-#air_support_focus_desc:0 " 4 "
+USA_army_dm:0 "Армия США"
+ USA_army_dm_info:0 "§Y$USA_army_dm$§! изменится на:"
+
+USA_air_dm:0 "Военно-воздушные силы США"
+ USA_air_dm_info:0 "§Y$USA_air_dm$§! изменится на:"
+
+USA_navy_dm:0 "Военно-морские силы США"
+ USA_navy_dm_info:0 "§Y$USA_navy_dm$§! изменится на:"
+
+
+JAP_nonavyallies_decision:0 "Проявить решимость перед слабым врагом"
+	JAP_nonavyallies:0 "Решимость перед слабым врагом"
+USA_nonavyallies:0 "Восстановить баланс"
+
+
+JAP_gorilla_tactics:0 "Партизанские методы"
+USA_gorilla_tactics:0" Городские бои"
+JAP_operation_MO_military_offensive:0 "Операция"
+JAP_operation_Z:0 "Операция "Z" "
+ JAP_operation_Z_desc:0 "Пришло время привести наш план в действие. Мы нанесем удар в южном направлении и установим контроль над богатыми западными колониями. Благодаря быстрой и стремительной атаке мы лишим врага возможности сражаться еще до начала настоящего сражения. Тэннохэйка бандзай!"
+
+JAP_operation_e_d_m:0 "Операции "E D M" "
+ JAP_operation_e_d_m_desc:0 "Наше верховное командование сочло невозможным высадиться и оккупировать [AST.GetNameRuAcc] и [NZL.GetNameRuAcc] и предложило лучшее решение в отношении этих враждебных стран. Мы должны занять менее защищенные острова вокруг них и отрезать их от союзников, чтобы тем самым постепенно лишить их желания воевать с нами."
+
+JAP_operation_mo:0 "Операция МО"
+ JAP_operation_mo_desc:0 "[AST.GetNameDef] в изоляции, теперь пришло время битвы за небеса над континентом. Если мы сумеем взять их под контроль, то, возможно, оккупация Океании перестанет казаться безумием."
+
+
+JAP_modern_escorts_tt:0 "Создаст в производстве 50 почти готовых эсминцев сопровождения"
+

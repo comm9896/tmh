@@ -1502,7 +1502,7 @@ types = {
 		fire_only_once = yes
 
 		visible = {
-			has_completed_focus = JAP_strike_the_southern_road
+			has_completed_focus = JAP_operation_Z
 		}
 
 		show_target = {
@@ -1676,8 +1676,8 @@ types = {
 							}
 						}
 						if = {
-						limit = {not = { has_completed_focus = JAP_strike_the_southern_road }}
-						complete_national_focus = JAP_strike_the_southern_road
+						limit = {not = { has_completed_focus = JAP_operation_Z }}
+						complete_national_focus = JAP_operation_Z
 						}
 					}
 					var:victim_country = {
@@ -1770,8 +1770,8 @@ types = {
 							}	
 						}
 						if = {
-						limit = {not = { has_completed_focus = JAP_strike_the_southern_road }}
-						complete_national_focus = JAP_strike_the_southern_road
+						limit = {not = { has_completed_focus = JAP_operation_Z }}
+						complete_national_focus = JAP_operation_Z
 						}
 					}
 					var:victim_country = {
@@ -1865,8 +1865,8 @@ types = {
 							}	
 						}
 						if = {
-						limit = {not = { has_completed_focus = JAP_strike_the_southern_road }}
-						complete_national_focus = JAP_strike_the_southern_road
+						limit = {not = { has_completed_focus = JAP_operation_Z }}
+						complete_national_focus = JAP_operation_Z
 						}
 					}
 					var:victim_country = {
@@ -1960,8 +1960,8 @@ types = {
 							}
 						}
 						if = {
-						limit = {not = { has_completed_focus = JAP_strike_the_southern_road }}
-						complete_national_focus = JAP_strike_the_southern_road
+						limit = {not = { has_completed_focus = JAP_operation_Z }}
+						complete_national_focus = JAP_operation_Z
 						}
 					}
 					var:victim_country = {

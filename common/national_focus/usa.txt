@@ -25,7 +25,7 @@ focus_tree = {
 	}
 
 	shared_focus = Alais_pact
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 50 y = 1700 }
 	default = no
 #	focus = {
 #		id = USA_
@@ -703,6 +703,7 @@ focus_tree = {
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
 				custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+				add_to_variable = { USA_political_power_cost = -0.1 tooltip = USA_political_power_cost_tt }
 				add_to_variable = { USA_industrial_capacity_factory = 0.1 tooltip = USA_industrial_capacity_factory_tt }
 				add_to_variable = { USA_production_speed_dockyard_factor = 0.3 tooltip = USA_production_speed_dockyard_factor_tt }
 				add_to_variable = { USA_consumer_goods_expected_value = -0.1 tooltip = USA_consumer_goods_expected_value_tt }
@@ -929,7 +930,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 				random_core_state = {
-				limit = {					
+				limit = {	
+						is_coastal = no
 						free_building_slots = {
 						building = industrial_complex
 						size > 4
@@ -944,7 +946,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 					add_extra_state_shared_building_slots = 4
 				}
 				random_core_state = {
-					limit = {					
+					limit = {			
+						is_coastal = no
 						free_building_slots = {
 						building = industrial_complex
 						size > 4
@@ -960,6 +963,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 					}
 				random_core_state = {
 					limit = {					
+						is_coastal = no
 						free_building_slots = {
 						building = industrial_complex
 						size > 4
@@ -974,7 +978,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 					add_extra_state_shared_building_slots = 4
 					}
 				random_core_state = {
-					limit = {					
+					limit = {
+						is_coastal = no
 						free_building_slots = {
 						building = industrial_complex
 						size > 4
@@ -1470,6 +1475,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 
 
 			custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+			add_to_variable = { USA_political_power_cost = -0.1 tooltip = USA_political_power_cost_tt }
 			add_to_variable = { USA_production_speed_dockyard_factor = 0.1 tooltip = USA_production_speed_dockyard_factor_tt }
 			add_to_variable = { USA_industrial_capacity_dockyard = 0.1 tooltip = USA_industrial_capacity_dockyard_tt }
 		}
@@ -1556,6 +1562,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_production_speed_arms_factory_factor = 0.05 tooltip = USA_production_speed_arms_factory_factor_tt }
 			add_to_variable = { USA_industrial_capacity_factory = 0.10 tooltip = USA_industrial_capacity_factory_tt }
 			add_to_variable = { USA_fyp_production_speed_industrial_complex_factor = -0.05 tooltip = USA_fyp_production_speed_industrial_complex_factor_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 
 		}
@@ -1585,6 +1592,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info
 			add_to_variable = { USA_consumer_goods_expected_value = -0.03 tooltip = USA_consumer_goods_expected_value_tt }
 			add_to_variable = { USA_industrial_capacity_factory = 0.1 tooltip = USA_industrial_capacity_factory_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 
 		}
@@ -1616,6 +1624,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_production_speed_dockyard_factor = 0.05 tooltip = USA_production_speed_dockyard_factor_tt }
 			add_to_variable = { USA_industrial_capacity_dockyard = 0.1 tooltip = USA_industrial_capacity_dockyard_tt }
 			add_to_variable = { USA_fyp_production_speed_industrial_complex_factor = -0.05 tooltip = USA_fyp_production_speed_industrial_complex_factor_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 		}
 		
@@ -1645,6 +1654,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_fyp_consumer_goods_factor = 0.1 tooltip = USA_fyp_consumer_goods_factor_tt }
 			add_to_variable = { USA_production_speed_dockyard_factor = 0.10 tooltip = USA_production_speed_dockyard_factor_tt }
 			add_to_variable = { USA_industrial_capacity_dockyard = 0.05 tooltip = USA_industrial_capacity_dockyard_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 		}
 		
@@ -1674,6 +1684,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_fyp_consumer_goods_factor = 0.1 tooltip = USA_fyp_consumer_goods_factor_tt }
 			add_to_variable = { USA_production_speed_arms_factory_factor = 0.05 tooltip = USA_production_speed_arms_factory_factor_tt }
 			add_to_variable = { USA_industrial_capacity_factory = 0.05 tooltip = USA_industrial_capacity_factory_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 		}
 		
@@ -1803,8 +1814,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 	focus = {
 		id = USA_Politica_undusria4
 		icon = GFX_SOV_rebuild_the_far_eastern_fleet_ccp_2d_sov_compatibility
-		x = -2
-		y = 2
+		x = 0
+		y = 1
 		prerequisite = { focus = USA_Politica_undusria3  }
 		relative_position_id = USA_Politica_undusria1
 		cost = 5
@@ -1830,14 +1841,14 @@ add_offsite_building = { type = arms_factory level = 5 }
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = USA_Politica_undusria3 }
+		prerequisite = { focus = USA_the_giant_wakes }
 		available = {
 			JAP = { has_war_with = USA  }
 		}
-		x = 0
+		x = -8
 		y = 1
-		relative_position_id = USA_Politica_undusria3
-		cost = 5
+		relative_position_id = USA_the_giant_wakes
+		cost = 3
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1864,6 +1875,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				limit = {
 					not = { has_country_flag = Sapr_only_asia }
 				}
+				custom_effect_tooltip = USA_civilian_offensive_info 
 			add_to_variable = {
 				var = USA_production_speed_synthetic_refinery_factor
 				value = 0.1
@@ -1906,26 +1918,23 @@ add_offsite_building = { type = arms_factory level = 5 }
 		y = 1
 		
 		relative_position_id = USA_rubber_reserve_company
-		cost = 5
+		cost = 3
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			if = {
-				limit = {
-					not = { has_country_flag = Sapr_only_asia }
-				}
+				custom_effect_tooltip = USA_civilian_offensive_info 
 			add_to_variable = {
 				var = USA_production_speed_synthetic_refinery_factor
 				value = 0.1
-				tooltip = USA_production_speed_synthetic_refinery_factor_tt
-			}				
+				tooltip = USA_production_speed_synthetic_refinery_factor_tt			
 			}
 
 				random_owned_controlled_state = {
 				if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					synthetic_refinery < 1
 					is_core = root
@@ -1938,6 +1947,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 			else_if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					is_core = root
 				}
@@ -1951,6 +1961,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				random_owned_controlled_state = {
 				if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					synthetic_refinery < 1
 					is_core = root
@@ -1963,6 +1974,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 			else_if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					is_core = root
 				}
@@ -1976,6 +1988,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				random_owned_controlled_state = {
 				if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					synthetic_refinery < 1
 					is_core = root
@@ -1988,6 +2001,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 			else_if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					is_core = root
 				}
@@ -2000,7 +2014,6 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 		}
 	}
-	
 	focus = {
 		id = USA_Expand_rubber_production_around_Oklahoma
 		icon = GFX_focus_generic_industry_2
@@ -2011,7 +2024,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		y = 1
 		
 		relative_position_id = USA_Expansion_of_the_import_substitution_program
-		cost = 5
+		cost = 3
 		
 		ai_will_do = {
 			factor = 1
@@ -2020,19 +2033,16 @@ add_offsite_building = { type = arms_factory level = 5 }
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 
-			if = {
-				limit = {
-					not = { has_country_flag = Sapr_only_asia }
-				}
+				custom_effect_tooltip = USA_civilian_offensive_info 
 				add_to_variable = {
 				var = USA_production_speed_synthetic_refinery_factor
 				value = 0.1
-				tooltip = USA_production_speed_synthetic_refinery_factor_tt
-			}				
+				tooltip = USA_production_speed_synthetic_refinery_factor_tt				
 			}
 				random_owned_controlled_state = {
 				if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					synthetic_refinery < 1
 					is_core = root
@@ -2045,6 +2055,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 			else_if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					is_core = root
 				}
@@ -2058,6 +2069,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				random_owned_controlled_state = {
 				if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					synthetic_refinery < 1
 					is_core = root
@@ -2070,6 +2082,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 			else_if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					is_core = root
 				}
@@ -2083,6 +2096,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				random_owned_controlled_state = {
 				if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					synthetic_refinery < 1
 					is_core = root
@@ -2095,6 +2109,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			}
 			else_if = {
 				limit = {
+				is_on_continent = north_america
 					is_fully_controlled_by = ROOT
 					is_core = root
 				}
@@ -2109,7 +2124,6 @@ add_offsite_building = { type = arms_factory level = 5 }
 	}
 }
 	
-	
 	focus = {
 		id = USA_synthetic_rubber
 		icon = GFX_focus_generic_improve_roads
@@ -2117,7 +2131,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		x = 0
 		y = 1
 		relative_position_id = USA_Expand_rubber_production_around_Oklahoma
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 4
 		}
@@ -2134,6 +2148,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				limit = {
 					not = { has_country_flag = Sapr_only_asia }
 				}
+				custom_effect_tooltip = USA_civilian_offensive_info 
 				add_to_variable = {
 				var = USA_production_speed_synthetic_refinery_factor
 				value = 0.1
@@ -2151,8 +2166,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 	focus = {
 		id = USA_Politica_undusria8
 		icon = GFX_focus_generic_refit_civilian_ships
-		x = -2
-		y = 3
+		x = 0
+		y = 2
 		prerequisite = { focus = USA_Politica_undusria4 }
 		relative_position_id = USA_Politica_undusria1
 		cost = 5
@@ -2230,6 +2245,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				set_state_category = megalopolis
 				}
 			custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+			add_to_variable = { USA_political_power_cost = -0.1 tooltip = USA_political_power_cost_tt }
 			add_to_variable = { USA_production_speed_infrastructure_factor = 0.30 tooltip = USA_production_speed_infrastructure_factor_tt }
 			add_to_variable = { USA_energy_infrastructure_factor = 0.30 tooltip = USA_production_speed_energy_infrastructure_factor_tt }
 			add_to_variable = { USA_production_speed_arms_factory_factor = 0.65 tooltip = USA_production_speed_arms_factory_factor_tt }
@@ -2237,8 +2253,9 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_consumer_goods_expected_value = -0.25 tooltip = USA_consumer_goods_expected_value_tt }
 			add_to_variable = { USA_conversion_cost_mil_to_civ_factor = -0.3 tooltip = USA_conversion_cost_mil_to_civ_factor_tt }
 			add_to_variable = { USA_conversion_cost_civ_to_mil_factor = -0.9 tooltip = USA_conversion_cost_civ_to_mil_factor_tt }
-			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 			add_to_variable = { USA_industrial_capacity_factory = 0.1 tooltip = USA_industrial_capacity_factory_tt }
+			custom_effect_tooltip = USA_army_dm_info
+			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 			if = {
 				limit = {
 					or = {
@@ -2278,7 +2295,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		x = -6
 		y = 1
 		relative_position_id = USA_the_giant_wakes
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -2287,7 +2304,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available = {
 		}
 		completion_reward = {
-			custom_trigger_tooltip = {tooltip = USA_stroika_ARM7_desc_tt}
+			custom_effect_tooltip = USA_stroika_ARM7_desc_tt
 		}
 	}
 	focus = {
@@ -2311,6 +2328,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info
 			add_to_variable = { USA_conversion_cost_civ_to_mil_factor = -0.2 tooltip = USA_conversion_cost_civ_to_mil_factor_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_designer
@@ -2366,7 +2384,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 						level = 3
 						instant_build = yes
 					}
-					custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+					custom_effect_tooltip = USA_army_dm_info
 					add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 				}
 			}
@@ -2399,6 +2417,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_production_factory_start_efficiency_factor = 0.1 tooltip = USA_production_factory_start_efficiency_factor_tt }
 			add_to_variable = { USA_industrial_capacity_factory = 0.10 tooltip = USA_industrial_capacity_factory_tt }
 			add_to_variable = { USA_industrial_capacity_dockyard = 0.10 tooltip = USA_industrial_capacity_dockyard_tt }
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 		}
 	}
@@ -2526,7 +2545,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_intervention_in_europe
+			custom_effect_tooltip = USA_army_dm_info
+			add_to_variable = {USA_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_tt }
 		}
 	}
 	focus = {
@@ -2757,11 +2777,12 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 
 		completion_reward = {
+		custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = {USA_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_tt }
 			add_to_variable = {USA_max_command_power = 30 tooltip = max_command_power_tt }
 			navy_experience = 35
 			army_experience = 35
-			air_experience = 35
+			air_experience = 50
 		}
 	}
 	focus = {
@@ -2832,11 +2853,10 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				technology = paratroopers
 				technology = paratroopers2
 				technology = tech_mountaineers
@@ -2948,7 +2968,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 
 		completion_reward = {
 		add_ideas = limited_conscription
-		custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+		custom_effect_tooltip = USA_army_dm_info
 		add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 		}
 	}
@@ -2977,7 +2997,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_conscription_factor = 0.5 tooltip = USA_conscription_factor_tt }
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 		}
@@ -3191,6 +3211,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 
 		completion_reward = {
+		custom_effect_tooltip = USA_army_dm_info
 		add_to_variable = {USA_army_planning_speed = 0.15 tooltip = planning_speed_factor_tt }
 		}
 	}
@@ -3315,14 +3336,6 @@ add_offsite_building = { type = arms_factory level = 5 }
 		prerequisite = { focus = USA_strategic_bombing }
 		available = {
 			has_war = yes
-			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = JAP
-				is_in_faction_with = ITA
-				is_in_faction_with = SOV
-				is_in_faction_with = FRA
-				is_in_faction_with = ENG
-			}
 		}
 		x = 0
 		y = 2
@@ -3575,6 +3588,9 @@ add_offsite_building = { type = arms_factory level = 5 }
 
 		completion_reward = {
 			add_ideas = liberty_ships_focus
+			custom_effect_tooltip = USA_navy_dm_info
+			add_to_variable = { USA_navy_amphibious_invasion = 0.1 tooltip = amphibious_invasion_tt }
+			add_to_variable = { USA_navy_repair_speed_factor = 0.75 tooltip = repair_speed_factor_tt }
 		}
 	}
 
@@ -3620,11 +3636,11 @@ add_offsite_building = { type = arms_factory level = 5 }
 		completion_reward = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
-				value = 0.25
+				value = 0.5
 			}
 			add_tech_bonus = {
 				name = USA_battleship_primacy
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				category = bb_tech
 			}
@@ -3650,11 +3666,11 @@ add_offsite_building = { type = arms_factory level = 5 }
 		completion_reward = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
-				value = 0.25
+				value = 0.5
 			}
 			add_tech_bonus = {
 				name = USA_carrier_primacy
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				category = cv_tech
 			}
@@ -3820,8 +3836,10 @@ add_offsite_building = { type = arms_factory level = 5 }
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+		custom_effect_tooltip = USA_navy_dm_info
 		add_to_variable = { USA_navy_naval_invasion_prep_speed = 0.15 tooltip = naval_invasion_prep_speed_tt }
 		add_to_variable = { USA_navy_amphibious_invasion = 0.15 tooltip = amphibious_invasion_tt }
+		custom_effect_tooltip = USA_army_dm_info
 		add_to_variable = { USA_breakthrough_factor = 0.1 tooltip = breakthrough_factor_tt }
 			add_doctrine_cost_reduction = {
 				name = USA_expand_the_USMC

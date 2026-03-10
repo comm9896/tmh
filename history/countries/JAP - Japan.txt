@@ -336,7 +336,7 @@ set_variable = { JAP_educating_the_peasants_modifier_allies_count = 1 }
 ## Other Variables
 set_variable = { JAP_democratic_state_flipping_cost_cost = 35 }
 set_variable = { JAP_communist_state_infiltrating_cost_cost = 20 }
-set_variable = { JAP_levy_cap_max = 48 }
+set_variable = { JAP_levy_cap_max = 100 }
 set_variable = { JAP_levy_cap_min = 0 }
 set_variable = { JAP_levy_cap = 12 }
 set_variable = { JAP_levy_deployed = 0 }
