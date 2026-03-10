@@ -1,0 +1,78 @@
+
+defined_text = {
+name = air_support_focus_tt
+	text = {
+		trigger = {
+			has_idea = air_war_plans_division_focus
+		}
+		localization_key = idea_desc|air_war_plans_division_focus
+	}
+}
+
+defined_text = {
+name = combined_bomber_offensive_tt
+	text = {
+		trigger = {
+			has_idea = strategic_bombing_focus
+		}
+		localization_key = idea_desc|strategic_bombing_focus
+	}
+	text = {
+		trigger = {
+			has_idea = combined_bomber_offensive
+		}
+		localization_key = idea_desc|combined_bomber_offensive
+	}
+	text = {
+		trigger = {
+			has_idea = combined_bomber_offensive_2
+		}
+		localization_key = idea_desc|combined_bomber_offensive_2
+	}
+
+}
+defined_text = {
+name = bureau_of_ships_focus_tt
+	text = {
+		trigger = {
+			has_idea = bureau_of_ships_focus
+		}
+		localization_key = idea_desc|bureau_of_ships_focus
+	}
+}
+defined_text = {
+name = liberty_ships_focus_tt
+	text = {
+		trigger = {
+			has_idea = liberty_ships_focus
+		}
+		localization_key = idea_desc|liberty_ships_focus
+	}
+}
+defined_text = {
+name = escort_effort_focus_tt
+	text = {
+		trigger = {
+			has_idea = escort_effort_focus
+		}
+		localization_key = idea_desc|escort_effort_focus
+	}
+}
+defined_text = {
+name = fleet_submarine_specialization_mtg_tt
+	text = {
+		trigger = {
+			has_idea = fleet_submarine_specialization_mtg
+		}
+		localization_key = idea_desc|fleet_submarine_specialization_mtg
+	}
+}
+defined_text = {
+name = USA_unrestricted_submarine_warfare_tt
+	text = {
+		trigger = {
+			has_idea = USA_unrestricted_submarine_warfare
+		}
+		localization_key = idea_desc|USA_unrestricted_submarine_warfare
+	}
+}

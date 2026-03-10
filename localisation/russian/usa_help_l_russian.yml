@@ -1,0 +1,55 @@
+﻿l_russian:
+
+USA_allience_help:0 "Закон о помощи союзникам по антигитлеровской коалиции"
+
+develop_london_aluminium_deposits:0 "Увеличение производства алюминия в Лондоне"
+develop_london_steel_deposits:0 "Увеличение производства стали в Лондоне"
+
+develop_AST_aluminium_deposits:0 "Увеличение производства алюминия в Южном Уэльсе"
+develop_AST_steel_deposits:0 "Увеличение производства стали в Южном Уэльсе"
+
+develop_SAF_aluminium_deposits:0 "Увеличение производства алюминия в Траансваале"
+develop_SAF_steel_deposits:0 "Увеличение производства стали в Траансваале"
+
+develop_SOV_aluminium_deposits:0 "Увеличение производства алюминия во Владивостоке"
+develop_SOV_steel_deposits:0 "Увеличение производства стали в Владивостоке"
+
+develop_CAN_aluminium_deposits:0 "Увеличение производства алюминия в Южном Онтарио"
+develop_CAN_steel_deposits:0 "Увеличение производства стали в Южном Онтарио"
+
+USA_CAN_help:0 "Обсудить помощь Канаде"
+USA_SOV_help:0 "Обсудить помощь Советскому Союзу"
+USA_AST_help:0 "Обсудить помощь Австралии"
+USA_SAF_help:0 "Обсудить помощь Южной Африки"
+USA_london_help:0 "Обсудить помощь Великобритании"
+
+CAN_help_tt:0 "Конгресс разрешит помощь Канаде"
+SOV_help_tt:0 "Конгресс разрешит помощь Советскому Союзу"
+AST_help_tt:0 "Конгресс разрешит помощь Австралии"
+SAF_help_tt:0 "Конгресс разрешит помощь Южной Африки"
+london_help_tt:0 "Конгресс разрешит помощь Великобритании"
+
+help_disscussion:0 "Идёт обсуждение решения о помощи другой стране"
+help_disscussion_tt:0 "Начнётся обсуждение помощи для другой страны"
+remove_help_disscussion_tt:0 "Можно разрешить помощь для другой страны"
+
+
+USA_stroika_ARM7_desc_tt:0 "Можно начать обсуждение о расширенном ленд-лизе"
+USA_stroika_ARM7_desc:0 " "
+
+london_help:0 " Помощь Великобритании была рассмотрена конгрессом"
+SOV_help:0 " Помощь Советскому Союзу была рассмотрена конгрессом"
+CAN_help:0 " Помощь Канаде была рассмотрена конгрессом"
+SAF_help:0 " Помощь Южной Африки была рассмотрена конгрессом"
+AST_help:0 " Помощь Австралии была рассмотрена конгрессом"
+
+
+
+USA_air_dm_tt:0 " [combined_bomber_offensive_tt] [air_support_focus_tt] \n "
+
+USA_navy_dm_tt:0 " [bureau_of_ships_focus_tt] [liberty_ships_focus_tt] [escort_effort_focus_tt] [fleet_submarine_specialization_mtg_tt] [USA_unrestricted_submarine_warfare_tt] \n"
+
+#strategic_bombing_focus_desc:0 " 1 "
+#combined_bomber_offensive_desc:0 " 2 "
+#combined_bomber_offensive2_desc:0 " 3 "
+#air_support_focus_desc:0 " 4 "

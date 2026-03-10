@@ -450,7 +450,9 @@ USA_synthetic_rubber_desc:0 "Помимо наших промышленнико�
  USA_stroika_ARM4:0 "Первый закон о военных полномочиях"
  USA_stroika_ARM5:0 "Национальный закон о чрезвычайном военном судоходстве"
  USA_stroika_ARM6:0 "Национальный закон о чрезвычайном военном положении"
- 
+ USA_stroika_ARM7:0 "Национальный закон о расширенном Ленд-Лизе"
+
+
  USA_lend_lease_converse_military:0 "Увеличить военную помощь союзникам"
  USA_subsidizing_military_production:0 "Увеличить субсидирование военной промышленности"
  USA_financing_the_constructionindustry:0 "Увеличить финансирование строительной индустрии"

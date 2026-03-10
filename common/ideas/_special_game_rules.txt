@@ -46,18 +46,7 @@ ideas = {
 				no_supply_grace = 240
 			}
 		}
-		fast_moobilization = {
-			   removal_cost = -1
 
-	    	allowed = {
-     		    always = yes
-    		}
-	      	modifier = {
-			mobilization_speed = 1000
-			}
-		
-		
-		
 		}
 		Sapr_Alias_suck_in_norce_africa = {
 

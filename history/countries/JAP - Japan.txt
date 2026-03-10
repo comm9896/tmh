@@ -533,6 +533,12 @@ IF = {
 # We should start with a lot of convoys
 set_convoys = 1200
 
+# We should start with a lot of trains
+add_equipment_to_stockpile = { 
+	type = train_equipment_1
+			amount = 400
+			producer = JAP
+						}
 
 ### SETUP PUPPETS ###
 

@@ -74,6 +74,7 @@ USA_annex = {
 				any_country = { 
 				is_in_faction_with = GER 
 			OR = { 
+
 				controls_state = 331 
 				controls_state = 332
 				controls_state = 730
@@ -114,23 +115,11 @@ USA_annex = {
 					hidden_effect = {
 						ENG = {
 							add_to_faction = USA
-							add_to_faction = MEX
 						}
 						set_rule = { can_join_factions = yes }	
-						MEX = {
-						set_rule = { can_join_factions = yes }
-						}
 					}
 					
 					add_to_war = { targeted_alliance = ENG	enemy = GER	}
-					MEX = {
-						add_to_war = { 
-							targeted_alliance = ENG	enemy = GER
-						}
-						add_to_war = { 
-							targeted_alliance = ENG	enemy = JAP
-						}
-					}
 				}
 			}
 	

@@ -1782,7 +1782,21 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = standard_oil_california_tt
+					hidden_trigger = {
+						always = yes	
+					}
+				}		
+				
+			}	
+			
+			visible = {
+				not = {
+					has_completed_focus = USA_rubber_reserve_company
+				}	
+			}
 			
 			research_bonus = {
 				industry = 0.05
@@ -1795,15 +1809,87 @@ ideas = {
 			}
 		}
 		
-		general_electric = {
-			
+		standard_oil_california_improved = {
+
+			name = standard_oil_california
+			picture = standard_oil_california			
 			
 			allowed = {
 				original_tag = USA
 			}
 			
-
+			visible = {
+				has_completed_focus = USA_rubber_reserve_company
+			}
 			
+			research_bonus = {
+				industry = 0.15
+				synth_resources = 0.3
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.2				
+			}
+		}
+		
+		general_electric = {
+			
+			
+			allowed = {
+				or = {
+					original_tag = USA
+					original_tag = AST			
+				}	
+			}
+			
+			visible = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					always = yes
+					not = {
+						has_completed_focus = USA_War_time_research_funding
+					}					
+				}
+				if = {
+					limit = {
+						tag = AST
+					}
+					not = {
+						has_completed_focus = AST_fund_australian_defense_research
+					}				
+				}					
+			}	
+			available = {
+				if = {
+					limit = {
+						tag = AST
+					}
+					AST = {
+						custom_trigger_tooltip = {
+							tooltip = AST_general_electric_tt
+							hidden_trigger = {
+								always = yes	
+							}
+						}
+					}
+				}			
+				if = {
+					limit = {
+						tag = USA
+					}
+					custom_trigger_tooltip = {
+						tooltip = USA_general_motors_tt
+						hidden_trigger = {
+							always = yes	
+						}
+					}	
+				}	
+				
+			}
 			research_bonus = {
 				electronics = 0.15
 			}
@@ -1813,15 +1899,139 @@ ideas = {
 			modifier = {
 			}
 		}
+		
+		general_electric_improved = {
+			
+
+			name = general_electric
+			picture = general_electric
+			
+			
+			allowed = {
+				original_tag = USA			
+
+			}
+			
+			visible = {
+				has_completed_focus = USA_War_time_research_funding		
+			}			
+			
+			research_bonus = {
+				electronics = 0.2
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				research_speed_factor = 0.2
+			}
+		}			
+		AST_general_electric_improved = {
+			
+
+			name = general_electric
+			picture = general_electric
+			
+			
+			allowed = {
+				original_tag = AST			
+
+			}
+			
+			visible = {
+				AST = {
+					has_completed_focus = AST_fund_australian_defense_research
+				}	
+			}			
+			
+			research_bonus = {
+				electronics = 0.2
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.07
+				line_change_production_efficiency_factor = 0.07
+			}
+		}		
+		
 		USA_general_motors = {
 			
 			picture = usa_general_motors
 			allowed = {
+				or = {
+					original_tag = USA
+					original_tag = CAN					
+				}	
+			}
+			available = {			
+				if = {
+					limit = {
+						tag = USA
+					}
+					custom_trigger_tooltip = {
+						tooltip = USA_general_motors_tt
+						hidden_trigger = {
+							always = yes	
+						}
+					}	
+				}
+				if = {
+					limit = {
+						tag = CAN
+					}
+					custom_trigger_tooltip = {
+						tooltip = CAN_general_motors_tt
+						hidden_trigger = {
+							always = yes	
+						}
+					}
+				}							
+			}	
+			
+			
+			visible = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					not = {
+						has_completed_focus = USA_War_time_research_funding
+					}
+				}
+				if = {
+					limit = {
+						tag = CAN
+					}
+					not = {
+						has_completed_focus = CAN_war_fueled_economy
+					}
+				}				
+			}				
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+		}
+		
+		USA_general_motors_improved = {
+			name = USA_general_motors			
+			picture = usa_general_motors
+
+			
+			allowed = {
 				original_tag = USA
 			}
-			available = {
-				has_completed_focus = USA_wartime_industry
-			}
+			visible = {
+				has_completed_focus = USA_War_time_research_funding			
+			}	
 			
 
 			
@@ -1832,25 +2042,34 @@ ideas = {
 			traits = { industrial_concern }
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.075
 			}
-		}
-		USA_union_pacific_railway = {
-
-			picture = idea_USA_union_pacific_railway
-
+		}		
+		CAN_general_motors_improved = {
+			
+			picture = usa_general_motors
+			name = USA_general_motors	
+			
 			allowed = {
-				original_tag = USA
+				original_tag = CAN					
 			}
+			visible = {
+				CAN = {
+					has_completed_focus = CAN_war_fueled_economy
+				}				
+			}	
+			
 
-			available = {
-			}
-
+			
 			research_bonus = {
-				industry = 0.05
+				industry = 0.15
 			}
-
-			traits = { railway_company }
-		}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+		}			
 	}
 }

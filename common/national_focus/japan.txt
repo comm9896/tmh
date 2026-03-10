@@ -1030,16 +1030,6 @@ focus_tree = {
 
 			add_to_variable = { JAP_showa_statism_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { JAP_showa_statism_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
-
-			IF = {
-				limit = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = JAP_sea_state_general_mobilization_law_tt
-			}
 			
 		}
 	}
@@ -2818,6 +2808,7 @@ focus_tree = {
 				JAP_is_home_islands_state = yes
 				NOT = {
 					is_fully_controlled_by = ROOT
+					state = 526
 				}
 			}
 		}
@@ -2834,11 +2825,22 @@ focus_tree = {
 
 		completion_reward = {  
 
+			every_core_state = {
+					limit = {
+					and = {
+							JAP_is_home_islands_state = yes
+							not = {state = 526}
+							}
+						}
+					add_dynamic_modifier = { modifier = JAP_gorilla_tactics }
+			}
 			add_ideas = JAP_boeitai_idea
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = JAP_found_the_boeitai_tt
+
+
 
 			hidden_effect = {
 
@@ -4641,71 +4643,38 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
-			671 = { 
-				CONTROLLER = { 
-					NOT = {
-						has_war_with = ROOT
-						is_ally_with = ROOT
-					}
-				} 
-			}
-			OR = {
-				AND = {
-					custom_trigger_tooltip = {
-						tooltip = JAP_demand_tonkinese_bases_tt
-						671 = { 
-							CONTROLLER = { 
-								OR = { 
-									tag = FRA 
-									tag = VIC 
-									is_subject_of = FRA
-									is_subject_of = VIC
-								} 
-							}
-						}
-					}
 					OR = {
 						AND = {
 							has_war_support > 0.9
 						}
 						16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
 					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = JAP_demand_tonkinese_bases_2_tt
-					671 = { 
-						CONTROLLER = { 
-							NOT = {
-								tag = FRA 
-								tag = VIC 
-								is_subject_of = FRA
-								is_subject_of = VIC
-							}
+			591 = { 
+				CONTROLLER = { 
+				or = {
+						is_ally_with = ROOT
+						tag = jap
 						}
-					}
 				}
-			}
+				}
 			1033 = { 
 				CONTROLLER = { 
-					OR = {
-						has_war_with = ROOT
+				or = {
 						is_ally_with = ROOT
-					}
-				} 
-			}
-		}
-
-		bypass = {
-			671 = { 
+						tag = jap
+						}
+				}
+				}
+			594 = { 
 				CONTROLLER = { 
-					OR = {
-						has_war_with = ROOT
+				or = {
 						is_ally_with = ROOT
-					}
+						tag = jap
+						}
 				} 
 			}
-		}
+			}
+			
 
 		will_lead_to_war_with = FRA
 		will_lead_to_war_with = VIN
@@ -5084,6 +5053,8 @@ annex_country = { target = VIN transfer_troops = yes }
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION FOCUS_FILTER_IMPERIAL_INFLUENCE }
 
 		completion_reward = {
+		custom_effect_tooltip = JAP_unlocks_pearl_harbor_raid
+		custom_effect_tooltip = generic_skip_one_line_tt
 	every_country = {
 				limit = {
 					or = {
@@ -5105,15 +5076,165 @@ annex_country = { target = VIN transfer_troops = yes }
 		JAP_add_or_modify_early_industrialization = yes
 
 		add_to_variable = { JAP_industry_consumer_goods_factor = 0.15 tooltip = consumer_goods_factor_tt }
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = JAP_unlocks_pearl_harbor_raid
+
 		}
 	}
+
+	focus = {
+
+	id = JAP_operation_Z
+
+
+		x = 0
+		y = 1
+		relative_position_id = JAP_strike_the_southern_road
+
+		prerequisite = { focus = JAP_strike_the_southern_road }
+
+		cost = 5
+
+		available = {
+		always = no
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+
+			}
+
+	}
+		focus = {
+
+	id = JAP_operation_A
+
+
+		x = 0
+		y = 1
+		relative_position_id = JAP_operation_Z
+
+		prerequisite = { focus = JAP_operation_Z}
+
+		cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+
+			}
+
+	}
+		focus = {
+
+	id = JAP_operation_Se
+
+
+		x = 0
+		y = 1
+		relative_position_id = JAP_operation_A
+
+		prerequisite = { focus = JAP_operation_A }
+
+		cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+
+			}
+
+	}
+	focus = {
+		id = JAP_operation_Se
+
+
+		x = 0
+		y = 1
+		relative_position_id = JAP_operation_A
+
+		prerequisite = { focus = JAP_operation_A }
+
+		cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+
+			}
+
+	}
+
+		focus = {
+		id = JAP_operation_Ten
+
+
+		x = 0
+		y = 1
+		relative_position_id = JAP_operation_Se
+
+		prerequisite = { focus = JAP_operation_Se }
+
+		cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+
+			}
+
+	}
+
+	focus = {
+		id = JAP_operation_Ketsugo_sakusen
+
+
+		x = 0
+		y = 1
+		relative_position_id = JAP_operation_Ten
+
+		prerequisite = { focus = JAP_operation_Ten }
+
+		cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		completion_reward = {
+
+			}
+
+	}
+
 	focus = {
 		id = JAP_occupy_east_timor
 		icon = GFX_focus_generic_attack_timor
 		#mutually_exclusive = { focus = JAP_sea_pressure_siam }
-		x = 0
+		x = -4
 		y = 1
 		relative_position_id = JAP_strike_the_southern_road
 
@@ -6256,7 +6377,6 @@ annex_country = { target = VIN transfer_troops = yes }
 		}
 
 		available = {
-			JAP_civilian_government_faction_is_not_subdued = yes
 		}
 
 		bypass = {
@@ -6280,15 +6400,15 @@ annex_country = { target = VIN transfer_troops = yes }
 					}
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}	
 				prioritize = { 531 532 528 }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}	
@@ -6297,9 +6417,10 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			JAP_add_or_modify_early_industrialization = yes
 
-			add_to_variable = { JAP_industry_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { JAP_industry_production_speed_arms_factory_factor = -0.05 tooltip = production_speed_arms_factory_factor_tt }
-			add_to_variable = { JAP_industry_production_speed_dockyard_factor = -0.05 tooltip = production_speed_dockyard_factor_tt }
+			add_to_variable = { JAP_industry_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_industry_production_speed_industrial_complex_factor = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
+			#add_to_variable = { JAP_industry_production_speed_arms_factory_factor = -0.05 tooltip = production_speed_arms_factory_factor_tt }
+			#add_to_variable = { JAP_industry_production_speed_dockyard_factor = -0.05 tooltip = production_speed_dockyard_factor_tt }
 			
 		}
 
@@ -6359,7 +6480,28 @@ annex_country = { target = VIN transfer_troops = yes }
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					NOT = {
+						has_state_category = small_island
+						has_state_category = tiny_island
+					}
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}	
+				prioritize = { 531 532 528 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -6894,13 +7036,13 @@ annex_country = { target = VIN transfer_troops = yes }
 						has_state_category = pastoral
 					}
 				}
-				add_extra_state_shared_building_slots = 1
-				set_state_flag = JAP_can_upgrade_this_states_level_flag
+				add_extra_state_shared_building_slots = 3
+				#set_state_flag = JAP_can_upgrade_this_states_level_flag
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = JAP_further_rural_investments_tt
+			#custom_effect_tooltip = JAP_further_rural_investments_tt
 			
 		}
 	
@@ -7557,12 +7699,13 @@ annex_country = { target = VIN transfer_troops = yes }
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-
+			add_political_power = 100
 			IF = {
 				limit = {
 					has_subject = MAN
 				}
-				MAN = {				
+				MAN = {	
+
 					add_stability = 0.1
 					add_war_support = 0.1
 					add_political_power = 100
@@ -7570,6 +7713,12 @@ annex_country = { target = VIN transfer_troops = yes }
 						idea = JAP_japanese_investments
 						days = 720
 					}
+				every_controlled_state = {
+					add_dynamic_modifier = {
+					days = 720
+						modifier = JAP_regional_development
+					}
+				}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
@@ -9169,18 +9318,18 @@ annex_country = { target = VIN transfer_troops = yes }
 			}
 
 			army_experience = 15
-			add_mastery_bonus = {
-				bonus = 0.1
-				days = 240
-				track = armor
-				name = JAP_reform_the_army
-			}
-			add_mastery_bonus = {
-				bonus = 0.1
-				days = 240
-				track = infantry
-				name = JAP_reform_the_army
-			}
+			#add_mastery_bonus = {
+			#	bonus = 0.1
+			#	days = 240
+			#	track = armor
+			#	name = JAP_reform_the_army
+			#}
+			#add_mastery_bonus = {
+			#	bonus = 0.1
+			#	days = 240
+			#	track = infantry
+			#	name = JAP_reform_the_army
+			#}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -13307,7 +13456,7 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		completion_reward = {
 			JAP_add_or_modify_imperial_navy = yes
-			add_to_variable = { JAP_navy_repair_speed_factor = 0.1 tooltip = repair_speed_factor_tt }
+			add_to_variable = { JAP_navy_repair_speed_factor = 0.75 tooltip = repair_speed_factor_tt }
 			add_to_variable = { JAP_navy_refit_speed = 0.1 tooltip = refit_speed_tt }
 			add_to_variable = { JAP_navy_naval_ship_recovery_chance = 0.1 tooltip = naval_ship_recovery_chance_tt }
 		}

@@ -921,7 +921,6 @@ add_offsite_building = { type = arms_factory level = 5 }
 		}
 
 		available = {
-		date > 1941.1.1
 		}
 
 		cancel_if_invalid = yes
@@ -929,35 +928,66 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_industrial_modernization
-				ahead_reduction = 2
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-			if = {
-				limit = { has_full_control_of_state = 369 }
-				369 = {
+				random_core_state = {
+				limit = {					
+						free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					}
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 396 }
-				396 = {
+				random_core_state = {
+					limit = {					
+						free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					}
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
+					}
+				random_core_state = {
+					limit = {					
+						free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 4
+					}
+				random_core_state = {
+					limit = {					
+						free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 4
 				}
-			}
 		}
 	}
 	focus = {
@@ -1387,7 +1417,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		id = USA_stroika3
 		icon = GFX_usa2
 		x = 0
-		y = 3
+		y = 4
 		prerequisite = { focus = USA_arsenal_of_democracy  }
 		relative_position_id = USA_wpa
 		cost = 10
@@ -1815,6 +1845,23 @@ add_offsite_building = { type = arms_factory level = 5 }
 		completion_reward = {
 			if = {
 				limit = {
+					has_idea = standard_oil_california
+				}
+				swap_ideas = {
+					remove_idea = standard_oil_california
+					add_idea = standard_oil_california_improved
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = standard_oil_california
+						add_idea = standard_oil_california_improved
+					}
+				}
+			}
+			if = {
+				limit = {
 					not = { has_country_flag = Sapr_only_asia }
 				}
 			add_to_variable = {
@@ -2168,7 +2215,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 			has_war = yes
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = USA_stroika3
 		cost = 5
 
@@ -2220,6 +2267,27 @@ add_offsite_building = { type = arms_factory level = 5 }
 				}
 			}			
 
+		}
+	}
+
+		focus = {
+		id = USA_stroika_ARM7
+		icon = GFX_focus_generic_mining_industry
+		#prerequisite = { focus = USA_stroika_ARM3 }
+		prerequisite = { focus = USA_the_giant_wakes }
+		x = -6
+		y = 1
+		relative_position_id = USA_the_giant_wakes
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available = {
+		}
+		completion_reward = {
+			custom_trigger_tooltip = {tooltip = USA_stroika_ARM7_desc_tt}
 		}
 	}
 	focus = {
@@ -2689,7 +2757,8 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_department_of_defense
+			add_to_variable = {USA_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_tt }
+			add_to_variable = {USA_max_command_power = 30 tooltip = max_command_power_tt }
 			navy_experience = 35
 			army_experience = 35
 			air_experience = 35
@@ -2842,11 +2911,6 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_airborne_divisions
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
 			add_potential_special_forces_tree = yes
 			add_doctrine_cost_reduction = {
 				name = USA_airborne_divisions
@@ -2856,7 +2920,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 				}
 			}
 		}
-	}
+
 	focus = {
 		id = USA_army_of_the_united_states
 		icon = GFX_focus_generic_little_entente
@@ -3127,7 +3191,7 @@ add_offsite_building = { type = arms_factory level = 5 }
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_the_pentagon
+		add_to_variable = {USA_army_planning_speed = 0.15 tooltip = planning_speed_factor_tt }
 		}
 	}
 
@@ -3756,7 +3820,9 @@ add_offsite_building = { type = arms_factory level = 5 }
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = USA_Sea_attack
+		add_to_variable = { USA_navy_naval_invasion_prep_speed = 0.15 tooltip = naval_invasion_prep_speed_tt }
+		add_to_variable = { USA_navy_amphibious_invasion = 0.15 tooltip = amphibious_invasion_tt }
+		add_to_variable = { USA_breakthrough_factor = 0.1 tooltip = breakthrough_factor_tt }
 			add_doctrine_cost_reduction = {
 				name = USA_expand_the_USMC
 				cost_reduction = 0.25

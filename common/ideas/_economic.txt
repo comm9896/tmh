@@ -4,6 +4,7 @@ ideas = {
 		law = yes 
 		use_list_view = yes
 
+
 		USA_nova_kurs = {
 			picture = POL_disjointed_industry
 
@@ -13,13 +14,8 @@ ideas = {
 			}
 			removal_cost = -1
 
-			rule = {
-				can_access_market = no
-				desc = can_not_access_market_closed_economy
-			}
-
 			modifier = {
-
+	
 			}
 
 			allowed_to_remove = {
@@ -110,7 +106,12 @@ ideas = {
 
 		civilian_economy = {
 
-
+		
+			visible = {
+				NOT = {
+					tag = USA 
+				}
+			}	
 			cost = 150
 			removal_cost = -1
 
@@ -144,7 +145,11 @@ ideas = {
 		}
 
 		low_economic_mobilisation = {
-
+					visible = {
+				NOT = {
+					tag = USA 
+				}
+			}	
 			rule = {
 				can_access_market = no
 				desc = can_not_access_market_closed_economy
@@ -290,7 +295,11 @@ ELSE_IF = {
 		}
 
 		partial_economic_mobilisation = {
-
+					visible = {
+				NOT = {
+					tag = USA 
+				}
+			}	
 			rule = {
 				can_access_market = no
 				desc = can_not_access_market_closed_economy
@@ -449,7 +458,11 @@ ELSE_IF = {
 		}
 
 		war_economy = {
-
+					visible = {
+				NOT = {
+					tag = USA 
+				}
+			}	
 			rule = {
 				can_access_market = no
 				desc = can_not_access_market_closed_economy
@@ -585,13 +598,16 @@ ELSE_IF = {
 		}
 
 		tot_economic_mobilisation = {
-
+	
 			rule = {
 				can_access_market = no
 				desc = can_not_access_market_closed_economy
 			}
 
 			visible = {
+				NOT = {
+					tag = USA 
+					}
 				if = {
 					limit = {
 						original_tag = GER

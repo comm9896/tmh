@@ -565,4 +565,150 @@ USA_congress = {
 			USA_calc_stars = yes
 		}
 	}
+
+	USA_CAN_help = {
+			icon = infiltrate_state
+		available = {
+			has_completed_focus = USA_stroika_ARM7
+			NOT = {has_country_flag = help_disscussion}
+		}
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		complete_effect = {
+			set_country_flag = CAN_help
+			set_country_flag = help_disscussion
+				custom_effect_tooltip = CAN_help_tt
+				custom_effect_tooltip = help_disscussion_tt
+		}
+		
+		modifier = {
+
+		}
+		remove_effect = {
+			clr_country_flag = help_disscussion
+			custom_effect_tooltip = remove_help_disscussion_tt 
+			
+		}
+}
+	USA_SOV_help = {
+			icon = infiltrate_state
+		available = {
+			has_completed_focus = USA_stroika_ARM7
+			NOT = {has_country_flag = help_disscussion}
+		}
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		complete_effect = {
+			set_country_flag = SOV_help
+			set_country_flag = help_disscussion
+				custom_effect_tooltip = SOV_help_tt
+				custom_effect_tooltip = help_disscussion_tt
+		}
+		
+		modifier = {
+
+		}
+		remove_effect = {
+			clr_country_flag = help_disscussion
+			custom_effect_tooltip = remove_help_disscussion_tt 
+			
+		}
+}
+	USA_AST_help = {
+			icon = infiltrate_state
+		available = {
+			has_completed_focus = USA_stroika_ARM7
+			NOT = {has_country_flag = help_disscussion}
+		}
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		complete_effect = {
+			set_country_flag = AST_help
+			set_country_flag = help_disscussion
+				custom_effect_tooltip = AST_help_tt
+				custom_effect_tooltip = help_disscussion_tt
+		}
+		
+		modifier = {
+
+		}
+		remove_effect = {
+			clr_country_flag = help_disscussion
+			custom_effect_tooltip = remove_help_disscussion_tt 
+			
+		}
+}
+
+	USA_SAF_help = {
+			icon = infiltrate_state
+		available = {
+			has_completed_focus = USA_stroika_ARM7
+			NOT = {has_country_flag = help_disscussion}
+		}
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		complete_effect = {
+			set_country_flag = SAF_help
+			set_country_flag = help_disscussion
+				custom_effect_tooltip = SAF_help_tt
+				custom_effect_tooltip = help_disscussion_tt
+		}
+		
+		modifier = {
+
+		}
+		remove_effect = {
+			clr_country_flag = help_disscussion
+			custom_effect_tooltip = remove_help_disscussion_tt 
+			
+		}
+}
+	USA_london_help = {
+			icon = infiltrate_state
+		available = {
+			has_completed_focus = USA_stroika_ARM7
+			NOT = {has_country_flag = help_disscussion}
+		}
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+		days_remove = 240
+		cost = 25
+		complete_effect = {
+			set_country_flag = london_help
+			set_country_flag = help_disscussion
+				custom_effect_tooltip = london_help_tt
+				custom_effect_tooltip = help_disscussion_tt
+		}
+		
+		modifier = {
+
+		}
+		remove_effect = {
+			clr_country_flag = help_disscussion
+			custom_effect_tooltip = remove_help_disscussion_tt 
+			
+		}
 }
