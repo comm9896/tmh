@@ -1,0 +1,26 @@
+defined_text = {
+name = combined_bomber_offensive_tt
+	text = {
+		trigger = {
+			has_idea = combined_bomber_offensive
+		}
+		localization_key = idea_desc|combined_bomber_offensive
+	}
+
+defined_text = {
+name = combined_bomber_offensive2_tt
+	text = {
+		trigger = {
+			has_idea = combined_bomber_offensive2
+		}
+		localization_key = idea_desc|combined_bomber_offensive2
+	}
+
+defined_text = {
+name = strategic_bombing_focus_tt
+	text = {
+		trigger = {
+			has_idea = strategic_bombing_focus
+		}
+		localization_key = idea_desc|strategic_bombing_focus
+	}
