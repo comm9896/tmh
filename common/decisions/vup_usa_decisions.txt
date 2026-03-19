@@ -61,7 +61,9 @@ USA_nonavyallies = {
 		allowed = {
 			original_tag = USA
 		}
-
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 		or = {
 			any_core_state = {
@@ -70,15 +72,15 @@ USA_nonavyallies = {
 					is_controlled_by = USA
 				}
 			}
-	#	CAN = {
-	#		any_core_state = {
-	#			}
-	#			NOT = {
-	#				is_controlled_by = CAN
-	#			}
-	#		}
+		CAN = {
+			any_core_state = {
+				NOT = {
+					is_controlled_by = CAN
+				}
+			}
 		}
 	}
+}
 		fire_only_once = yes
 		cost = 0
 		visible = {
@@ -161,6 +163,9 @@ USA_nonavyallies = {
 					}
 					
 					add_to_war = { targeted_alliance = ENG	enemy = GER	}
+					ENG = {
+				add_to_faction = USA
+			}
 			reduce_focus_completion_cost = {
 			  focus = { USA_arsenal_of_democracy USA_stroika3  }
 			  cost = 56

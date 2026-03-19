@@ -7774,6 +7774,9 @@ focus_tree = {
 
 		completion_reward = {
 			GER = {
+				add_to_faction = ITA
+			}
+			GER = {
 				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
 			}
 			hidden_effect = {

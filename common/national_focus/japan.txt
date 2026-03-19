@@ -453,6 +453,9 @@ focus_tree = {
 					has_dlc = "No Compromise, No Surrender"
 				}
 				add_faction_initiative = 10
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes
+				set_faction_rule = joining_rule_non_democratic
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
@@ -1891,10 +1894,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			hidden_effect = {
-				set_rule = { can_create_factions = yes }
-			}
-
 			add_political_power = 75
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1913,37 +1912,13 @@ focus_tree = {
 				create_faction_from_template = faction_template_geacps_faction
 				
 			}
-			ELSE_IF = {
-				limit = {
-					is_faction_leader = yes 
-				}
-				
-				IF = {
-					limit = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-					set_faction_manifest = faction_manifest_strategic_resource_control
-					add_faction_goal_slot = {
-						category  = medium_term 
-						value = 1 
-					}
-					add_faction_goal_slot = {
-						category  = long_term 
-						value = 1 
-					}
-					add_faction_goal = faction_goal_secure_the_oil_supply
-					add_faction_goal = faction_goal_war_on_communism_in_asia
-					set_faction_rule = joining_rule_asia_pacific_ocenania_only
-					set_faction_rule = faction_peace_rule_puppeting_focus
-				}
+
 				set_faction_name = JAP_greater_east_asian_co_prosperity_sphere
-			}
-			ELSE_IF = { # If member of a faction but not faction leader
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 				add_faction_initiative = 10
-			}
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes
+				set_faction_rule = joining_rule_non_democratic
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_tech_sharing_group = jap_geacps_research
 			every_other_country = {

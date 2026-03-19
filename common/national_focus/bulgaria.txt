@@ -313,27 +313,13 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			if = {
-				limit = { has_completed_focus = BUL_attract_foreign_capitals }
-				subtract_from_variable = { BUL_foreign_industry_construction_speed_modifier = -0.05 }
-				subtract_from_variable = { BUL_foreign_industry_production_efficiency_modifier = -0.03 }
-				custom_effect_tooltip = BUL_utmost_optimization_dynamic_modifier_tt
-			}
-			else = {
 				swap_ideas = {
 					remove_idea = BUL_national_industry_03
 					add_idea = BUL_national_industry_04
 				}
-				if = {
-					limit = {
-						NOT = { has_completed_focus = BUL_invigorate_national_industry }
-					}
-					custom_effect_tooltip = BUL_utmost_optimization_tt
-				}
 			}
 			BUL_replace_national_industrial_designer = yes
 		}
-	}
 
 	focus = {
 		id = BUL_national_railway_lines
@@ -2390,7 +2376,9 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-
+			GER = {
+				add_to_faction = BUL
+			}
 			army_experience = 200
 			navy_experience = 200
 			air_experience = 200

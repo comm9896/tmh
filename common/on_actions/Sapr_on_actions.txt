@@ -8,23 +8,61 @@ on_actions = {
 			ENG = {
 				add_faction_initiative = 20	
 				set_faction_research_unlocked = yes
-				set_faction_military_unlocked = yes				
+				set_faction_military_unlocked = yes	
+				set_faction_rule = joining_rule_non_democratic
 			}
 			GER = {
 				add_faction_initiative = 20	
 				set_faction_research_unlocked = yes
-				set_faction_military_unlocked = yes				
+				set_faction_military_unlocked = yes
+				set_faction_rule = joining_rule_non_democratic
 			}
 			SOV = {
 				add_faction_initiative = 20	
 				set_faction_research_unlocked = yes
-				set_faction_military_unlocked = yes		
+				set_faction_military_unlocked = yes
+				set_faction_rule = joining_rule_non_democratic
 			}
 			JAP = {
 				add_faction_initiative = 20	
 				set_faction_research_unlocked = yes
 				set_faction_military_unlocked = yes		
-			}			
+			}
+						CAN = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}	
+						SAF = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}	
+						RAJ = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}	
+						AST = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}
+						HUN = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}	
+						ROM = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}	
+						BUL = {
+				add_faction_initiative = 20	
+				set_faction_research_unlocked = yes
+				set_faction_military_unlocked = yes		
+			}	
 		}
 		
 		effect = {	
