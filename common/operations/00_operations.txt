@@ -255,7 +255,7 @@ operation_fake_intel = { ### 2 1/40
 	desc = operation_fake_intel_desc
 	priority = 2
 
-	days = 60
+	days = 40
 	network_strength = 40
 	operatives = 2
 
@@ -280,7 +280,7 @@ operation_fake_intel = { ### 2 1/40
 			add_to_temp_variable = { num_max_fake_intel_unit = 1 }
 			clamp_temp_variable = {
 				var = num_max_fake_intel_unit
-				min = 24
+				min = 36
 			}
 			multiply_temp_variable = { num_max_fake_intel_unit = 2.5 } 
 			round_temp_variable = num_max_fake_intel_unit
@@ -322,7 +322,14 @@ operation_fake_intel = { ### 2 1/40
 						is_fake_intel_division = yes
 						is_locked = yes
 						regiments = {
-							fake_intel_unit = { x = 0 y = 0 }
+							fake_intel_unit = { x = 1 y = 1 }
+							fake_intel_unit = { x = 1 y = 2 }
+							fake_intel_unit = { x = 1 y = 3 }
+							fake_intel_unit = { x = 1 y = 4 }
+							fake_intel_unit = { x = 0 y = 1 }
+							fake_intel_unit = { x = 0 y = 2 }
+							fake_intel_unit = { x = 0 y = 3 }
+							fake_intel_unit = { x = 0 y = 4 }
 						}
 					}
 					set_country_flag = fake_intel_template_created
@@ -347,21 +354,21 @@ operation_fake_intel = { ### 2 1/40
 				add_to_temp_variable = { num_to_create = 1 }
 				clamp_temp_variable = {
 					var = num_to_create
-					min = 24
+					min = 36
 				}
 				
 				# create actual units
 				capital_scope = {
 					create_unit = {
-						division = "division_template = \"Fake Intel Division\" start_experience_factor = 0.5" 
+						division = "division_template = \"Fake Intel Division\" start_experience_factor = 1" 
 						owner = PREV
 						count = num_to_create
 						id = id_to_set
 					}
 				}
 				
-				# will delete them after 90 days
-				country_event = { id = lar_fake_intel_units.1 days = 90 }
+				# will delete them after 360 days
+				country_event = { id = lar_fake_intel_units.1 days = 360 }
 			}
 		}
 		custom_effect_tooltip = CUSTOM_EFFECT_CREATE_FAKE_ARMIES_RESULT
@@ -419,66 +426,26 @@ operation_capture_cipher = { ### 3 1/55
 		ROOT = {
 			add_decryption = {
 				target = FROM
-				ratio = 0.3
+				ratio = 0.5
 			}
-		}
-	}
-	outcome_extra_execute = { # SCOPE_OPERATION
-		random_list = {
-			33 = {
-				ROOT = {
-					add_decryption = {
-						target = FROM
-						ratio = 0.5
-					}
-					random_list = {
-						25 = {
-							add_intel = {
-								target = FROM
-								civilian_intel = 10
-							}
-						}
-						25 = {
-							add_intel = {
-								target = FROM
-								army_intel = 10
-							}
-						}
-						25 = {
-							add_intel = {
-								target = FROM
-								navy_intel = 10
-							}
-						}
-						25 = {
-							add_intel = {
-								target = FROM
-								airforce_intel = 10
-							}
-						}
-					}
-				}
-			}
-			67 = {
-				ROOT = {
-					add_decryption = {
-						target = FROM
-						ratio = 0.5
-					}
-				}
-			}
-		}	
-	}
-
-	outcome_potential = {
-		ROOT = {
-			add_decryption = {
+			add_intel = {
 				target = FROM
-				ratio = 0.3
+				civilian_intel = 5
+			}
+			add_intel = {
+				target = FROM
+				army_intel = 5
+			}
+			add_intel = {
+				target = FROM
+				navy_intel = 5
+			}
+			add_intel = {
+				target = FROM
+				airforce_intel = 5
 			}
 		}
 	}
-
 	phases = { #infiltration
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }

@@ -191,13 +191,32 @@ NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.05; -- множитель по�
 
 
 
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше сетка не дает бонусов к статам дивизии
 
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.2; -- возвращаем старое доброе заначение ресов с инфры
 
---Agency Upgrade
-NDefines.NOperatives.AGENCY_CREATION_DAYS = 15						-- Number of days needed to create an intelligence agency
-NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 30						-- Number of days needed to upgrade an intelligence agency
-NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0					-- Number of factories used to create an intelligence agency
+--Agency Upgrade and intel
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 15;						-- кол-во дней создания агенства
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0;					-- кол-во фабрик для создания агенства
+NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 90;						-- кол-во дней дня апгрейда агенства
+NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 1;			-- кол-во апгрейдов для доп агента
+NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 0;					-- минимальное кол-во ВП для постановки агента на регион
+NDefines.NOperatives.INTEL_NETWORK_OPERATIVE_GAIN_STACKING_FACTOR = 0.9;			-- 90% штраф за доп агентов на стаке сетке
+NDefines.NOperatives.BOOST_IDEOLOGY_DRIFT_STACKING_FACTOR = 0.9;					-- 90% штраф за доп агентов на идеологии
+NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.9;					-- 90% штраф за доп агентов на пропаганде
+NDefines.NIntel.CAPTURED_OPERATIVE_INTEL_YIELD = {
+		0.1,
+		0.1,
+		0.1,
+		0.1,
+	};																			-- 10% данных за захват агента
+
+NDefines.NAir.RECON_LAND_SPOT_CHANCE = 1;
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше сетка не дает бонусов к статам дивизии
+
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_ATTACK = 1.0 -- multiplier for attack value of intel combat bonus
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_DEFENSE = 1.0 -- multiplier for defense value of intel combat bonus
+ARMY_INTEL_COMBAT_BONUS_MIN_INTEL_FOR_BONUS = 1, -- min intel needed to start applying ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
+ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 100, -- intel needed to fully apply ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
+
 
 NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 200; -- крафтовый советник стоит дорого

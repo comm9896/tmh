@@ -1266,7 +1266,7 @@ political_actions = {
 		}
 	
 		days_remove = 120
-		cost = 50
+		cost = 15
 
 		complete_effect = {
 			add_stability = -0.1
@@ -1306,7 +1306,7 @@ political_actions = {
 		}
 	
 		days_remove = 120
-		cost = 50
+		cost = 15
 
 		complete_effect = {
 			add_stability = -0.1
@@ -1354,11 +1354,11 @@ political_actions = {
 		}
 	
 		modifier = {
-			fascism_drift = -0.05
+			fascism_drift = -0.03
 		}
 	
 		days_remove = -1
-		cost = 100
+		cost = 35
 		
 		complete_effect = {
 			hidden_effect = {
@@ -1424,11 +1424,11 @@ political_actions = {
 		}
 	
 		modifier = {
-			democratic_drift = -0.05
+			democratic_drift = -0.03
 		}
 	
 		days_remove = -1
-		cost = 100
+		cost = 35
 		
 		complete_effect = {
 			hidden_effect = {
@@ -1494,11 +1494,11 @@ political_actions = {
 		}
 	
 		modifier = {
-			communism_drift = -0.05
+			communism_drift = -0.03
 		}
 	
 		days_remove = -1
-		cost = 100
+		cost = 35
 		
 		complete_effect = {
 			hidden_effect = {
@@ -1588,7 +1588,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 	
 		ai_will_do = {
 			factor = 0
@@ -1644,7 +1644,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 	
 		ai_will_do = {
 			factor = 0
@@ -1700,7 +1700,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -1756,7 +1756,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
