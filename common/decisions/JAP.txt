@@ -4701,21 +4701,7 @@ JAP_kwantung_army_decisions = {
 		is_good = no
 
 		timeout_effect = {
-		CHI = {
-			every_core_state = {
-				add_dynamic_modifier = { modifier = anti_japan_mood }
-				}
-			}
-		set_variable = { JAP_resistance_growth = 5 }
-		set_variable = { JAP_resistance_target = 5 }
-		set_variable = { JAP_resistance_decay = 5 }
-				transfer_units_fraction = {
-					target = JAP
-					stockpile_ratio = 0.3
-					army_ratio = 0.3
-				}
-				annex_country = { target = CHI  }
-
+			annex_country = { target = CHI  }
 		}
 	}
 }
