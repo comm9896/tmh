@@ -23,10 +23,6 @@ faction_template_generic = {
 	}
 
 	default_rules = {
-		joining_rule_neighbors_only
-		joining_rule_has_no_offensive_war
-		dismissal_rule_offensive_war
-		change_leader_rule_manpower
 	}
 	
 }
@@ -81,13 +77,6 @@ faction_template_defensive_democratic = {
 	}
 
 	default_rules = {
-		joining_rule_democratic_non_aligned
-		joining_rule_same_continent_only
-		joining_rule_has_no_offensive_war
-		war_declaration_threat_75
-		change_leader_rule_industry
-		dismissal_rule_offensive_war
-		government_in_exile_allowed
 	}
 	
 }
@@ -116,11 +105,6 @@ faction_template_anti_communist = {
 	}
 
 	default_rules = {
-		faction_peace_rule_ideology_focus
-		dismissal_rule_ideology_communist
-		joining_rule_non_communist
-		guarantee_threat_reduction_15
-		change_leader_rule_industry
 	}
 
 	
@@ -156,10 +140,6 @@ faction_template_anti_fascist = {
 	}
 
 	default_rules = {
-		joining_rule_non_fascist
-		generate_wargoal_threat_reduction_20
-		change_leader_rule_manpower
-		change_leader_rule_industry
 	}
 
 	
@@ -196,10 +176,6 @@ faction_template_regional_anti_communist = {
 	}
 
 	default_rules = {
-		joining_rule_non_communist
-		generate_wargoal_threat_reduction_20
-		change_leader_rule_manpower
-		change_leader_rule_industry
 	}
 
 	
@@ -236,8 +212,8 @@ faction_template_regional_anti_democratic = {
 	}
 
 	default_rules = {
-		joining_rule_non_democratic
-		change_leader_rule_manpower
+		
+		
 		change_leader_rule_industry
 	}
 
@@ -262,12 +238,6 @@ faction_template_regional = {
 	}
 
 	default_rules = {
-		joining_rule_has_no_war
-		joining_rule_same_ideology
-		joining_rule_neighbors_only
-		faction_peace_take_claimed_focus
-		change_leader_rule_manpower
-		war_declaration_threat_25
 	}
 	
 	
@@ -298,11 +268,6 @@ faction_template_world_revolution = {
 	}
 
 	default_rules = {
-		faction_peace_rule_ideology_focus
-		joining_rule_communist_only
-		dismissal_rule_ideology_not_communism
-		change_leader_rule_manpower
-		war_declaration_threat_25
 	}
 	
 }
@@ -333,12 +298,6 @@ faction_template_industrial_focus = {
 	}
 
 	default_rules = {
-		joining_rule_same_ideology
-		joining_rule_same_continent_only
-		joining_rule_has_no_war
-		faction_peace_rule_ideology_focus
-		change_leader_rule_industry
-		war_declaration_threat_50
 	}
 	
 }
@@ -366,10 +325,6 @@ faction_template_african_unity = {
 	}
 
 	default_rules = {
-		joining_rule_africa_only
-		faction_peace_rule_liberation_focus
-		generate_wargoal_threat_reduction_20
-		change_leader_rule_industry
 	}
 
 }
@@ -399,10 +354,7 @@ faction_template_pan_american = {
 	}
 
 	default_rules = {
-		joining_rule_americas_only
-		faction_peace_rule_liberation_focus
-		guarantee_threat_reduction_15
-		change_leader_rule_manpower
+		
 	}
 
 }
@@ -449,8 +401,6 @@ faction_template_hipanic_alliance_faction = {
 	}
 
 	default_rules = {
-		joining_rule_hispanic_only
-		change_leader_rule_manpower
 	}
 
 }
@@ -486,10 +436,7 @@ faction_template_european_unity = {
 	}
 
 	default_rules = {
-		joining_rule_same_continent_only
-		faction_peace_rule_liberation_focus
-		guarantee_threat_reduction_15
-		change_leader_rule_manpower
+		
 	}
 
 }
@@ -517,9 +464,6 @@ faction_template_european_dominance = {
 	}
 
 	default_rules = {
-		joining_rule_neighbors_only
-		faction_peace_take_claimed_focus
-		change_leader_rule_manpower
 	}
 
 }
@@ -546,9 +490,6 @@ faction_template_european_dominance_monarchist = {
 	}
 
 	default_rules = {
-		joining_rule_neighbors_only
-		faction_peace_take_claimed_focus
-		change_leader_rule_manpower
 	}
 
 }
@@ -574,10 +515,6 @@ faction_template_asian_dominance = {
 	}
 
 	default_rules = {
-		joining_rule_same_continent_only
-		faction_peace_rule_puppeting_focus
-		generate_wargoal_threat_reduction_20
-		change_leader_rule_manpower
 	}
 
 }
@@ -603,10 +540,6 @@ faction_template_middle_east_dominance = {
 	}
 
 	default_rules = {
-		joining_rule_same_continent_only
-		faction_peace_rule_puppeting_focus
-		generate_wargoal_threat_reduction_20
-		change_leader_rule_manpower
 	}
 
 }

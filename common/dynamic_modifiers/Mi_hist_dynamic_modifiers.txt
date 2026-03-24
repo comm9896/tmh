@@ -83,7 +83,7 @@ Africa_company_industry_dynamic_modifier = {
 	PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR = Africa_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR
 	LOCAL_RESOURCES_FACTOR = Africa_LOCAL_RESOURCES_FACTOR
 	production_speed_fuel_silo_factor = Africa_production_speed_fuel_silo_factor
-	synth_resources = Africa_synth_resources  #0.15
+	#synth_resources = Africa_synth_resources  #0.15
 
 }
 

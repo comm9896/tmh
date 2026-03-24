@@ -1,3 +1,10 @@
+@resistance_growth = JAP_resistance_growth
+@resistance_target = JAP_resistance_target
+@resistance_decay = JAP_resistance_decay
+
+
+
+
 USA_gorilla_tactics = {
 	icon = GFX_unplanned_offensive
 	attacker_modifier = yes
@@ -139,4 +146,26 @@ USA_air_dm = {
 	#navy_carrier_air_attack_factor = USA_airforce_navy_carrier_air_attack_factor
 	#navy_carrier_air_targetting_factor = USA_airforce_navy_carrier_air_targetting_factor
 	air_accidents_factor = USA_airforce_air_accidents_factor
+}
+
+
+anti_japan_mood = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_growth_tt
+	custom_modifier_tooltip = JAP_resistance_target_tt
+	custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	resistance_growth = -0.70
+	resistance_target = 1.5
+	resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+	air_cas_present_factor = -0.50
+	army_attack_factor = -0.85
+	army_speed_factor = -0.5
+	ground_attack_factor = -0.50
 }

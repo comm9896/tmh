@@ -472,8 +472,8 @@ diff_strong_ai_generic = {
 }
 
 naval_mines_effect = {
-	naval_accidents_chance = 0.15
-	naval_speed_factor = -0.8
+	#naval_accidents_chance = 0.15
+	#naval_speed_factor = -0.8
 	naval_invasion_penalty = 0.5
 }
 
@@ -585,6 +585,7 @@ intel_network_state_level_bonus = {
 
 # modifiers applied to enemy divisions in an intel network
 intel_network_state_level_penalty = {
+	amphibious_invasion_defence = -0.2
 	planning_speed = -0.2
 	#max_planning_factor =  0.2
 	max_dig_in = -2

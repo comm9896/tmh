@@ -213,6 +213,35 @@ ideas = {
 	}
 	country = { 
 
+			USA_CAN_TRADE = {
+			picture =  ARG_american_allyship
+			allowed = {
+				original_tag = USA
+			}
+
+			
+			removal_cost = -1
+				targeted_modifier = {
+							tag = CAN
+							extra_trade_to_target_factor = 0.5
+							trade_cost_for_target_factor = -0.75
+		}
+	}
+		CAN_USA_TRADE = {
+			picture =  ARG_american_allyship
+			allowed = {
+				original_tag = CAN
+			}
+
+			
+			removal_cost = -1
+					targeted_modifier = {
+							tag = USA
+							extra_trade_to_target_factor = 0.5
+							trade_cost_for_target_factor = -0.75
+		}
+	}
+
 		USA_war_powers_act = {
 			picture = generic_reserve_divisions
 			allowed = {

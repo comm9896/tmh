@@ -340,7 +340,7 @@ JAP_mitsubishi_heavy_industries_organization = {
 			base = 2
 		}
 	}
-
+}
 
 
 #####################
@@ -697,7 +697,7 @@ JAP_yokosuka_naval_arsenal_organization = {
 			base = 2
 		}
 	}
-
+}
 JAP_maizuru_naval_arsenal_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_maizuru_naval_arsenal

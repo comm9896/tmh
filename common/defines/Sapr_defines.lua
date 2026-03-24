@@ -211,12 +211,54 @@ NDefines.NIntel.CAPTURED_OPERATIVE_INTEL_YIELD = {
 	};																			-- 10% данных за захват агента
 
 NDefines.NAir.RECON_LAND_SPOT_CHANCE = 1;
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше сетка не дает бонусов к статам дивизии
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше лупа не дает бонусов к статам дивизии
 
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_ATTACK = 1.0 -- multiplier for attack value of intel combat bonus
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_DEFENSE = 1.0 -- multiplier for defense value of intel combat bonus
-ARMY_INTEL_COMBAT_BONUS_MIN_INTEL_FOR_BONUS = 1, -- min intel needed to start applying ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
-ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 100, -- intel needed to fully apply ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_ATTACK = 1.0; -- multiplier for attack value of intel combat bonus
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_DEFENSE = 1.0; -- multiplier for defense value of intel combat bonus
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MIN_INTEL_FOR_BONUS = 1; -- min intel needed to start applying ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 100; -- intel needed to fully apply ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
+
+NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { 
+		"head_of_intelligence";
+		"mastermind_code_cracker";
+		"expert_code_cracker";
+		"spymaster";
+		"spymaster_no_lar";
+		"commander_of_the_fetno_derash";
+		"commander_of_the_fetno_derash_no_lar";
+		"SWI_soviet_spy";
+		"SWI_intelligence_officer";
+		"special_envoy";
+		"BRA_soviet_spy";
+		"HUN_military_intelligence_officer";
+		"AUS_secretive_priest";
+		"AUS_veteran_head_of_agency";
+		"BEL_illusive_mastermind";
+		"GER_intelligence_coordinator";
+		"GER_secretary_of_state_security";
+		"GER_reich_security_main_office_director_lar";
+		"GER_reich_security_main_office_director_no_lar";
+		"head_of_the_abwehr";
+		"head_of_the_abwehr_improved";
+		"intelligence_service_deputy";
+		"PRC_multi_talented_diplomat_lar";
+		"PRC_multi_talented_diplomat_no_lar";
+		"PRC_trained_by_the_nkvd";
+		"PRC_spymaster";
+		"PHI_intelligence_bureau_chief";
+		"HUN_stalinist_agent";
+		"JAP_tokko_chief";
+		"CHI_spymaster";
+		"head_of_the_nkvd_yagoda_initial";
+		"head_of_the_nkvd_yezhov_initial";
+		"head_of_the_nkvd_beriya_initial";
 
 
+	};
 NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 200; -- крафтовый советник стоит дорого
+
+
+NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 100;
+NDefines.NResistance.GARRISON_MANPOWER_MIN_DELIVERY_SPEED = 10000;	-- Minimum base delivery speed if the chunk can't be calculated.
+NDefines.NResistance.GARRISON_MANPOWER_REINFORCEMENT_SPEED = 10000.0;	-- Modifier for garrison manpower reinforcement.  This value is the maximum to be delivered which is then modified by distance
+NDefines.NResistance.GARRISON_EQUIPMENT_DELIVERY_SPEED = 100000.0;	-- Modifier for garrison equipment reinforcement speed

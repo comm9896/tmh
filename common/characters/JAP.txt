@@ -1620,9 +1620,9 @@ characters = {
 				}
 			}
 			available = {
-			and {
+			and = {
 			date < 1940.10.01
-			NOT {
+			NOT = {
 			has_country_flag =  JAP_Prince_kitohito_go_out_tt
 			}
 			}

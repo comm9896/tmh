@@ -6397,6 +6397,28 @@ focus_tree = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
+		
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				hidden_effect = {
+					GER_wilhelm_canaris = {
+						remove_trait = {
+							slot = political_advisor
+							trait = head_of_the_abwehr
+						}
+					}
+				}
+				GER_wilhelm_canaris = {
+	 				add_trait = { 
+	 					slot = political_advisor
+	 					trait = head_of_the_abwehr_improved
+	 				}
+	 			}
+
+			}
 			add_ideas = gestapo
 		}
 	}

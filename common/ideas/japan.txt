@@ -52,8 +52,8 @@ hidden_ideas = {
 			}
 				}
 		JAP_TRADE_TO_AXIS_JAP = {
-					icon = GFX_focus_ger_oppose_hitler
-								allowed = {
+					picture = can_wartime_prices_and_trade_board
+			allowed = {
 				always = no
 			}
 					removal_cost = -1
@@ -81,11 +81,11 @@ hidden_ideas = {
 		}
 
 		JAP_TRADE_TO_JAP_AXIS = {
-										allowed = {
+		allowed = {
 				always = no
 			}
 					removal_cost = -1
-			icon = GFX_focus_chi_collaboration_with_the_japanese
+			picture = can_wartime_prices_and_trade_board
 	targeted_modifier = {
 
 				tag = jap
@@ -5474,7 +5474,7 @@ hidden_ideas = {
 			}
 			
 			picture = PLACEHOLDER_idea_icon	
-	1
+
 			modifier = {
 				#The Following Modifiers are Dependent on the Influence difference with the Navy
 				army_fuel_capacity_factor = -0.025
@@ -6398,6 +6398,7 @@ hidden_ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_infrastructure_factor = 0.05
+				production_speed_energy_infrastructure_factor = 0.05
 				#economy_cost_factor = 0.1
 				civilian_intel_to_others = -5
 			}
@@ -6419,6 +6420,7 @@ hidden_ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
+				production_speed_energy_infrastructure_factor = 0.1
 				#economy_cost_factor = 0.2
 				civilian_intel_to_others = -10
 			}
@@ -6440,6 +6442,7 @@ hidden_ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_infrastructure_factor = 0.15
+				production_speed_energy_infrastructure_factor = 0.15
 				#economy_cost_factor = 0.3
 				civilian_intel_to_others = -15
 			}
@@ -6461,6 +6464,7 @@ hidden_ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.2
 				production_speed_infrastructure_factor = 0.2
+				production_speed_energy_infrastructure_factor = 0.2
 				#economy_cost_factor = 0.4
 				civilian_intel_to_others = -20
 			}
@@ -7063,7 +7067,9 @@ hidden_ideas = {
 		
 			traits = { civilian_airway_company } 
 
-			modifier = {
+			modifier = {		
+					#air_maximum_speed_factor = 0.15
+					#air_agility_factor = 0.15
 			}
 		}
 
@@ -7128,6 +7134,7 @@ hidden_ideas = {
 				local_resources_factor = 0.05
 				resistance_target = -0.05
 				production_speed_infrastructure_factor = 0.05
+				production_speed_energy_infrastructure_factor = 0.05
 			}
 		}
 
@@ -7163,6 +7170,7 @@ hidden_ideas = {
 				local_resources_factor = 0.1
 				resistance_target = -0.1
 				production_speed_infrastructure_factor = 0.2
+				production_speed_energy_infrastructure_factor = 0.2
 				consumer_goods_factor = -0.05
 			}
 		}

@@ -1,6 +1,30 @@
 ###DEBUG STUFF
 
 debug_decisions = {
+JAP_CHI_resistance = {
+		priority = 999
+		allowed = {
+			always = yes
+		}
+		 
+		visible = {
+			is_debug = yes
+			original_tag = JAP
+		}
+			complete_effect = {
+				every_state = {
+				limit = {
+					OR = {
+						is_core_of = CHI
+						is_core_of = KOR
+					}
+				}
+				add_resistance_target = {
+					amount = 10
+				}
+			}
+		}
+	}
 JAP_Danne_debugging = {
 		priority = 999
 		allowed = {
@@ -4684,7 +4708,7 @@ JAP_kwantung_army_decisions = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 730 #730
+		days_mission_timeout = 730 
 
 		fire_only_once = yes
 
@@ -4702,7 +4726,18 @@ JAP_kwantung_army_decisions = {
 
 
 		timeout_effect = {
+			#CHI = {
+			#every_core_state = {
+			#	add_dynamic_modifier = { modifier = anti_japan_mood }
+			#	}
+			#	transfer_units_fraction = {
+			#		target = JAP
+			#		stockpile_ratio = 0.3
+			#		army_ratio = 0.3
+			#	}
+			#}
 			annex_country = { target = CHI  }
+
 		}
 	}
 }

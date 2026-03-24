@@ -1,10 +1,11 @@
 ﻿l_russian:
 
-JAP_Prince_kitohito_go_out_tt: "НЕ подал в отставку."
-JAP_TRADE_TO_AXIS_JAP: "Торговое соглашение с Германией"
-JAP_TRADE_TO_JAP_AXIS: "Торговое соглашение с Японией"
-JAP_prepare_to_war: "Подготовка к войне"
-
+JAP_Prince_kitohito_go_out_tt:0 "НЕ подал в отставку."
+JAP_TRADE_TO_AXIS_JAP:0 "Торговое соглашение с Германией"
+JAP_TRADE_TO_JAP_AXIS:0 "Торговое соглашение с Японией"
+JAP_prepare_to_war:0 "Подготовка к войне"
+CAN_USA_TRADE:0 "Второе соглашение о торговли США и Канады"
+USA_CAN_TRADE:0 "Второе соглашение о торговли США и Канады"
 
 USA_allience_help:0 "Закон о помощи союзникам по антигитлеровской коалиции"
 
@@ -85,3 +86,8 @@ JAP_operation_mo:0 "Операция МО"
 
 JAP_modern_escorts_tt:0 "Создаст в производстве 50 почти готовых эсминцев сопровождения"
 
+modifier_production_speed_energy_infrastructure_factor:0 "Скорость строительства §YУсиленной энергосети§!"
+
+JAP_resistance_growth_tt:0 " "
+JAP_resistance_target_tt:0 " "
+JAP_resistance_decay_tt:0 " "

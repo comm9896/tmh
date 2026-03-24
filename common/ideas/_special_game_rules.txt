@@ -50,7 +50,7 @@ ideas = {
 		JAP_nonavyallies = {
 
 			removal_cost = -1
-			icon = GFX_focus_generic_naval_invasion_tank
+			picture = hol_naval_heritage
 			modifier = {
 				navy_max_range_factor = 1
 				production_speed_naval_base_factor = 9.99

@@ -17,6 +17,12 @@ add_command_power = 20
 
 set_country_flag = USA_noman_flag
 
+
+1936.1.1.13 = {
+    set_country_flag = Sapr_no_asia		
+}
+
+
 add_dynamic_modifier = { modifier = USA_plan_civilian_dynamic_modifier }
 #new_deal
 set_variable = { USA_stability_factor = -0.42 }
