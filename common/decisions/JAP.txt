@@ -4700,6 +4700,7 @@ JAP_kwantung_army_decisions = {
 
 		is_good = no
 
+
 		timeout_effect = {
 			annex_country = { target = CHI  }
 		}
