@@ -581,7 +581,7 @@
 				}
 			}
 			
-			swap_great_depression = yes		
+			#swap_great_depression = yes		
 		}
 	}
 	
@@ -632,7 +632,7 @@
 				}
 			}	
 						
-			swap_great_depression = yes
+			#swap_great_depression = yes
 		}
 	}
 	focus = { 
@@ -675,7 +675,7 @@
 				}
 			}
 			
-			swap_great_depression = yes
+			#swap_great_depression = yes
 		}
 	}
 	focus = { 

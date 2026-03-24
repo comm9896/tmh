@@ -14,12 +14,6 @@ faction_template_axis = {
 	}
 
 	default_rules = {
-		call_to_war_rule_independent_only
-		joining_rule_non_communist
-		faction_peace_rule_conquest_focus
-		change_leader_rule_manpower
-		change_leader_rule_manifest_below_35
-		dismissal_rule_offensive_war
 	}
 	
 }
@@ -41,10 +35,6 @@ faction_template_GER_mitteleuropa_alliance = {
 	}
 
 	default_rules = {
-		joining_rule_same_continent_only
-		guarantee_threat_reduction_15
-		change_leader_rule_manpower
-		change_leader_rule_industry
 	}
 	
 }

@@ -14,9 +14,6 @@ faction_template_ITA_italian_league = {
 	}
 
 	default_rules = {
-		joining_rule_non_communist
-		faction_peace_rule_conquest_focus
-		change_leader_rule_manifest_below_35
 	}
 	
 }
@@ -36,10 +33,6 @@ faction_template_italy_empire_faction = {
 	}
 
 	default_rules = {
-		joining_rule_non_communist
-		faction_peace_rule_conquest_focus
-		change_leader_rule_manifest_below_35
-		change_leader_rule_industry
 	}
 	
 }
