@@ -116,5 +116,5 @@ entrenchment_defense:0 "Подготовленные позиции"
 
 JAP_operation_A_flag:0 "Фокус "Операция  Z" выполнен "
 JAP_operation_Se_flag:0 "Фокус "Операция Шо-Го" выполнен "
-JAP_operation_A_focus_days_tt: "В настоящее время: [?JAP_operation_A_flag:days|Y0]"
-JAP_operation_Se_focus_days_tt: "В настоящее время: [?JAP_operation_Se_flag:days|Y0]"
+JAP_operation_A_focus_days_tt:0 "В настоящее время: [?JAP_operation_A_flag:days|Y0]"
+JAP_operation_Se_focus_days_tt:0 "В настоящее время: [?JAP_operation_Se_flag:days|Y0]"

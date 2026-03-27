@@ -262,3 +262,6 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 100;
 NDefines.NResistance.GARRISON_MANPOWER_MIN_DELIVERY_SPEED = 10000;	-- Minimum base delivery speed if the chunk can't be calculated.
 NDefines.NResistance.GARRISON_MANPOWER_REINFORCEMENT_SPEED = 10000.0;	-- Modifier for garrison manpower reinforcement.  This value is the maximum to be delivered which is then modified by distance
 NDefines.NResistance.GARRISON_EQUIPMENT_DELIVERY_SPEED = 100000.0;	-- Modifier for garrison equipment reinforcement speed
+
+NDefines.NIntel.LAND_COMBAT_AIR_INTEL_FACTOR = 0.01;						-- factor applied once all values have been added together
+NDefines.NIntel.RECON_INTEL_BONUS = 0.075;                                      -- each recon gives this bonus to overall gathered land intel in combat

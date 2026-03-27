@@ -1879,7 +1879,41 @@ JAP_kokura_arsenal_organization = {
 		}
 		
 	}
+		add_trait = {
+		token = JAP_mio_trait_military_arsenal_trait
+		name = JAP_mio_trait_military_arsenal_trait
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
 
+		relative_position_id = generic_mio_trait_big_guns
+
+		position = { x = 0 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = JAP }
+		}
+
+		available = {
+			JAP = { has_completed_focus = JAP_JAP_operation_Ketsugo_sakusen}
+			}
+		
+
+		on_complete = {
+			
+		}
+
+		organization_modifier = {
+		    
+		}
+
+		production_bonus = {
+			lack_of_resources = -1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 }
 
 JAP_osaka_army_arsenal_artillery_organization = {

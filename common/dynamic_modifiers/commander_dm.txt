@@ -154,11 +154,11 @@ anti_japan_mood = {
 	enable = { always = yes }
 
 	custom_modifier_tooltip = JAP_resistance_growth_tt
-	custom_modifier_tooltip = JAP_resistance_target_tt
-	custom_modifier_tooltip = JAP_resistance_decay_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
 
-	resistance_growth = -0.70
-	resistance_target = 1.5
+	resistance_growth = -0.5
+	resistance_target = 0.6
 	resistance_decay = 0.2
 	#state_resources_factor = -0.33
 	#disable_strategic_redeployment = 1
@@ -168,4 +168,78 @@ anti_japan_mood = {
 	army_attack_factor = -0.85
 	army_speed_factor = -0.5
 	ground_attack_factor = -0.50
+}
+
+anti_japan_mood_birma = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_growth_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	#resistance_growth = -0.70
+	resistance_target = 0.2
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+
+}
+
+anti_japan_mood_indochina = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_growth_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	#resistance_growth = -0.70
+	resistance_target = 0.2
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+}
+anti_japan_mood_USA_lend_lease = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_growth_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	resistance_growth = 0.2
+	resistance_target = 0.5
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+}
+anti_japan_mood_Soviet_lend_lease = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_growth_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	#resistance_growth = -0.70
+	resistance_target = 0.35
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+}
+entrenchment_defense = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes } 
+	max_dig_in = 10
+	dig_in_speed_factor = 1
+	army_defence_factor = 0.2
 }

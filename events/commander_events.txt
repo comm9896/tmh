@@ -1,0 +1,31 @@
+﻿
+add_namespace = CE
+
+# Выборы премьер министра
+country_event = {
+	id = CE.1
+	title = CE_JAP_war_premier.t
+	desc = CE_JAP_war_premier.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	immediate = {
+		
+	}
+	trigger = {
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_JAP_war_premier.a
+		complete_national_focus = JAP_tojos_premiership
+	}
+		option = {
+		name = CE_JAP_war_premier.b
+		complete_national_focus = JAP_yamamotos_premiership
+	}
+		option = {
+		name = CE_JAP_war_premier.c
+		complete_national_focus = JAP_the_crysanthemum_throne
+	}
+}

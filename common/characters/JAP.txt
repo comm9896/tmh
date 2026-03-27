@@ -1653,6 +1653,31 @@ characters = {
 
 	}
 
+	# Naruhiko Higashikuni
+	JAP_naruhiko_higashikuni = {
+		name = JAP_naruhiko_higashikuni
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAP_naruhiko_higashikuni
+				small = GFX_portrait_JAP_naruhiko_higashikuni_small
+			}
+			army = {
+				large = GFX_portrait_JAP_naruhiko_higashikuni
+				small = GFX_portrait_JAP_naruhiko_higashikuni_small
+			}
+		}
+
+		corps_commander = {
+			traits = { politically_connected JAP_samurai_lineage JAP_royal_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
 	# Prince Nashimoto Morimasa
 	JAP_nashimoto_morimasa = {
 		name = JAP_nashimoto_morimasa

@@ -130,7 +130,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			activate_mission = JAP_kwantung_army_impatience
+			#activate_mission = JAP_kwantung_army_impatience
 				
 			hidden_effect = {
 				IF = {
@@ -1186,8 +1186,8 @@ focus_tree = {
 		relative_position_id = JAP_new_order_movement
 
 		prerequisite = { focus = JAP_new_order_movement }
-
-		cost = 3
+		
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -2430,9 +2430,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-					has_war_support > 0.9
-				}
+available  = { always = no }
 
 		bypass = {
 
@@ -2464,7 +2462,6 @@ focus_tree = {
 				set_cosmetic_tag = JAP_army_dominant
 			}	
 			
-		JAP_big_army_faction_gain = yes
 
 		}
 	}
@@ -2485,11 +2482,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			NOT = {
-				has_country_flag = JAP_yamamoto_shot_down_flag
-			}
-		}
+available  = { always = no }
 
 		bypass = {
 
@@ -2519,7 +2512,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			JAP_big_naval_faction_gain = yes
 			
 			hidden_effect = {
 
@@ -2550,7 +2542,7 @@ focus_tree = {
 		bypass = {
 
 		}
-
+		available  = { always = no }
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -2563,26 +2555,26 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_country_leader_role = {
-				character = JAP_emperor_hirohito
-				promote_leader = yes
-				country_leader = {
-					ideology = emperor_fascism
-					expire = "1952.1.1.1"
-					traits = { emperor_showa_2 }
-				}
+		add_country_leader_role = {
+			character = JAP_naruhiko_higashikuni
+			promote_leader = yes
+			country_leader = {
+				ideology = emperor_fascism
+				expire = "1952.1.1.1"
+				traits = { JAP_noble_prime_minister }
 			}
-			hidden_effect = {
+		}
+		hidden_effect = {
 				add_country_leader_role = {
-					character = JAP_emperor_hirohito
-					promote_leader = yes
-					country_leader = {
-						ideology = despotism
-						expire = "1952.1.1.1"
-						traits = { emperor_showa_2 } 
-					}
-				}
+			character = JAP_naruhiko_higashikuni
+			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+				expire = "1952.1.1.1"
+				traits = { JAP_noble_prime_minister }
 			}
+		}
+	}
 			
 			hidden_effect = {
 
@@ -2603,21 +2595,21 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_ichioku_isshin }
 
-		allow_branch = {
-			has_country_flag = JAP_tohokai_prime_minister_added
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {						
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-		}
+		#allow_branch = {
+		#	has_country_flag = JAP_tohokai_prime_minister_added
+		#	IF = {
+		#		limit = {
+		#			has_game_rule = {
+		#				rule = obsolete_focus_branches_visibility
+		#				option = HIDE
+		#			}
+		#		}
+		#		NOT = {						
+		#			has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+		#			has_completed_focus = JAP_okadas_military_purge_speech
+		#		}
+		#	}
+		#}
 
 		cost = 5
 
@@ -3304,23 +3296,24 @@ focus_tree = {
 			factor = 1
 		}
 
-		allow_branch = {
-			has_country_flag = JAP_tojo_or_yamamoto_resigned_flag
-			IF = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {						
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
-				}
-			}
-		}
+		#allow_branch = {
+		#	has_country_flag = JAP_tojo_or_yamamoto_resigned_flag
+		#	IF = {
+		#		limit = {
+		#			has_game_rule = {
+		#				rule = obsolete_focus_branches_visibility
+		#				option = HIDE
+		#			}
+		#		}
+		#		NOT = {						
+		#			has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+		#			has_completed_focus = JAP_okadas_military_purge_speech
+		#		}
+		#	}
+		#}
 
 		available = {
+		has_idea = JAP_crumbling_military_cabinet_idea
 			is_subject = no
 			has_government = fascism
 			has_war = yes
@@ -5066,6 +5059,8 @@ annex_country = { target = VIN transfer_troops = yes }
 		completion_reward = {
 		custom_effect_tooltip = JAP_unlocks_pearl_harbor_raid
 		custom_effect_tooltip = generic_skip_one_line_tt
+		country_event = { id = CE.1 }
+		custom_effect_tooltip = generic_skip_one_line_tt
 	every_country = {
 				limit = {
 					or = {
@@ -5084,7 +5079,7 @@ annex_country = { target = VIN transfer_troops = yes }
 			  cost = 21
 			  }
 		custom_effect_tooltip = generic_skip_one_line_tt
-		JAP_add_or_modify_early_industrialization = yes
+		custom_effect_tooltip = JAP_modify_early_industrialization_modifier_tt
 
 		add_to_variable = { JAP_industry_consumer_goods_factor = 0.15 tooltip = consumer_goods_factor_tt }
 
@@ -5094,7 +5089,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		focus = {
 
 	id = JAP_operation_A
-
+		icon = GFX_goal_generic_construct_military
 
 		x = 0
 		y = 1
@@ -5102,48 +5097,30 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_operation_Z}
 
-		cost = 5
+		cost = 2
 
 		available = {
-		always = no
+		has_war = yes
+		not = {has_idea = JAP_kantai_kessen_1}
 		}
 
 		bypass = {
 
 		}
 		completion_reward = {
-
+		set_country_flag = JAP_operation_A_flag
+		custom_effect_tooltip = JAP_modify_early_industrialization_modifier_tt
+		add_to_variable = { JAP_production_speed_bunker_factor = 0.5 tooltip = production_speed_bunker_factor_tt }
+		add_to_variable = { JAP_production_speed_coastal_bunker_factor = 0.5 tooltip = production_speed_coastal_bunker_factor_tt }
+		add_to_variable = { JAP_production_speed_anti_air_building_factor = 0.5 tooltip = production_speed_anti_air_building_factor_tt }
 			}
 
 	}
+
 		focus = {
 
 	id = JAP_operation_Se
-
-
-		x = 0
-		y = 1
-		relative_position_id = JAP_operation_A
-
-		prerequisite = { focus = JAP_operation_A }
-
-		cost = 5
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		completion_reward = {
-
-			}
-
-	}
-	focus = {
-		id = JAP_operation_Se
-
+	icon = GFX_goal_generic_defence
 
 		x = 0
 		y = 1
@@ -5151,24 +5128,75 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_operation_A }
 
-		cost = 5
+		cost = 2
 
 		available = {
-
+			has_country_flag = {
+				flag = JAP_operation_A_flag
+				days > 180
+			}
+			custom_trigger_tooltip = {
+				tooltip = JAP_operation_A_focus_days_tt
+				has_country_flag = {
+					flag = JAP_operation_A_flag
+					days > 180
+				}
+			}
 		}
 
 		bypass = {
 
 		}
 		completion_reward = {
+		set_country_flag = JAP_operation_Se_flag
+		JAP = { 						
+		every_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				or = {
+					has_state_category = small_island
+					has_state_category = tiny_island
+					state = 517
+					state = 285
+					state = 521
+					state = 522
+					state = 870
+					state = 871 
+					state = 723
+					state = 669
+					state = 979
+					state = 523
+					state = 672
+					state = 333
+					state = 334
+					state = 335
+					state = 1023
+					state = 1024
+					state = 623 
+					state = 1027
+					state = 327
+					state = 624
+					state = 625
+					state = 628
+					state = 1026
+					state = 627
+					state = 1025
+					state = 524
+					state = 626
+					state = 627
+					state = 
 
+				}
+			}
+				add_dynamic_modifier = { modifier = entrenchment_defense}}}
 			}
 
 	}
+
 
 		focus = {
 		id = JAP_operation_Ten
-
+		icon = GFX_focus_JAP_the_divine_wind
 
 		x = 0
 		y = 1
@@ -5176,24 +5204,40 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_operation_Se }
 
-		cost = 5
+		cost = 2
 
 		available = {
-
+			has_country_flag = {
+				flag = JAP_operation_Se_flag
+				days > 180
+			}
+			custom_trigger_tooltip = {
+				tooltip = JAP_operation_Se_focus_days_tt
+				has_country_flag = {
+					flag = JAP_operation_Se_flag
+					days > 180
+				}
+			}
 		}
 
 		bypass = {
 
 		}
 		completion_reward = {
-
+				set_rule = {
+						can_use_kamikaze_pilots = yes
+					}
+		          set_technology = {
+                    suicide_craft  = 1
+                    popup = yes
+                }
 			}
 
 	}
 
 	focus = {
 		id = JAP_operation_Ketsugo_sakusen
-
+		icon = GFX_focus_generic_total_war
 
 		x = 0
 		y = 1
@@ -5201,17 +5245,18 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_operation_Ten }
 
-		cost = 5
+		cost = 2
 
 		available = {
-
+			has_ideas = JAP_crumbling_military_cabinet_idea
 		}
 
 		bypass = {
 
 		}
 		completion_reward = {
-
+			add_ideas = JAP_total_war
+			unlock_mio_trait_tooltip = JAP_mio_trait_military_arsenal_trait
 			}
 
 	}
@@ -11548,7 +11593,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = { focus = JAP_the_imperial_defense_plan }
 
 		relative_position_id = JAP_the_imperial_defense_plan
-		x = 9
+		x = 7
 		y = 1
 
 		cost = 10
@@ -13215,7 +13260,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = { focus = JAP_rockets_development }
 
 		relative_position_id = JAP_naval_armaments_program
-		x = -4
+		x = -2
 		y = 2
 
 		cost = 5

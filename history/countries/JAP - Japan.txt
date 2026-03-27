@@ -582,7 +582,7 @@ recruit_character = JAP_yoshijiro_umezu
 recruit_character = JAP_otozo_yamada
 recruit_character = JAP_hatazo_adachi
 recruit_character = JAP_iwane_matsui
-
+recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_keisuke_fujie
 recruit_character = JAP_kiichiro_higuchi
 recruit_character = JAP_masaharu_homma

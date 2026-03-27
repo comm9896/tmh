@@ -25,6 +25,7 @@ JAP_CHI_resistance = {
 			}
 		}
 	}
+
 JAP_Danne_debugging = {
 		priority = 999
 		allowed = {
@@ -4708,7 +4709,7 @@ JAP_kwantung_army_decisions = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 730 
+		days_mission_timeout = 496
 
 		fire_only_once = yes
 
@@ -4726,23 +4727,499 @@ JAP_kwantung_army_decisions = {
 
 
 		timeout_effect = {
-			#CHI = {
-			#every_core_state = {
-			#	add_dynamic_modifier = { modifier = anti_japan_mood }
-			#	}
-			#	transfer_units_fraction = {
-			#		target = JAP
-			#		stockpile_ratio = 0.3
-			#		army_ratio = 0.3
-			#	}
-			#}
-			annex_country = { target = CHI  }
+		add_named_threat = { threat = 2 name = JAP_intervene_in_china } # From threat = 1 to 2 due to no escalation tension
+		activate_mission = JAP_first_transfer 
+		JAP = {
+				transfer_state = 608
+				transfer_state = 1039
+			}
+			CHI = {
+				country_event = {
+					id = china.1
+					}
+				every_core_state = {
+					add_dynamic_modifier = { modifier = anti_japan_mood }
+					}
+				}
+			hidden_effect = {
+						annex_country = { target = MAN transfer_troops = yes}
+			if = {limit = {man = { is_ai = yes}}
+			MAN = {
+				transfer_units_fraction= {
+					target = JAP
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+				}
+			}
 
+
+			
+			MAN = {
+			    every_unit_leader = {
+				    set_nationality = JAP
+			    }
+			}
+			reduce_focus_completion_cost = {
+				focus = {JAP_the_ultimate_tank  }
+				cost = 14
+			}
+			reduce_focus_completion_cost = {
+				focus = {JAP_foreign_tank_modernization_cooperation  JAP_domestic_tank_modernization_program JAP_rethink_armor_doctrine}
+				cost = 7
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 1
+			}
+			MAN = {			
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_invite_japanese_settlers}	
+						}
+					}
+					complete_national_focus = MAN_invite_japanese_settlers					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_expand_the_textile_industry}	
+						}
+					}
+					complete_national_focus = MAN_expand_the_textile_industry					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_collective_farms}	
+						}
+					}
+					complete_national_focus = MAN_collective_farms					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_expand_showa_steel_works}	
+						}
+					}
+					complete_national_focus = MAN_expand_showa_steel_works					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_invite_japanese_investors}	
+						}
+					}
+					complete_national_focus = MAN_invite_japanese_investors					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_mukden_arsenal}	
+						}
+					}
+					complete_national_focus = MAN_mukden_arsenal					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_railway_compani}	
+						}
+					}
+					complete_national_focus = MAN_railway_compani					
+				}	
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_China_railway}	
+						}
+					}
+					complete_national_focus = MAN_China_railway					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_China_railway_2}	
+						}
+					}
+					complete_national_focus = MAN_China_railway_2					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_move_capitals}	
+						}
+					}
+					complete_national_focus = MAN_move_capitals					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_collective_farms}	
+						}
+					}
+					complete_national_focus = MAN_collective_farms					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_China_infr}	
+						}
+					}
+					complete_national_focus = MAN_China_infr					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+								if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_development_of_southern_territories }	
+						}
+					}
+					complete_national_focus = MAN_development_of_southern_territories					
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+								if = {
+					limit = {
+						not = {
+							MAN = {has_completed_focus = MAN_development_of_western_territories }	
+						}
+					}
+					complete_national_focus = MAN_development_of_western_territories 					
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+							JAP_add_or_modify_showa_statism = yes
+
+				add_to_variable = { JAP_showa_statism_operative_slot = 1 tooltip = operative_slot_tt }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				JAP_add_or_modify_showa_statism = yes
+
+			add_to_variable = { JAP_showa_statism_political_power_factor = 0.1 tooltip = political_power_factor_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			716 = { 
+			add_core_of = ROOT
+			}
+			610  = { 
+			add_core_of = ROOT
+			}
+			609  = { 
+			add_core_of = ROOT
+			}
+			611  = { 
+			add_core_of = ROOT
+			}
+			612  = { 
+			add_core_of = ROOT
+			}
+			715  = { 
+			add_core_of = ROOT
+			}
+			714  = { 
+			add_core_of = ROOT
+			}
+			761  = { 
+			add_core_of = ROOT
+			}
+			717  = { 
+			add_core_of = ROOT
+			}
+			328  = { 
+			add_core_of = ROOT
+			}
+			328  = { 
+			add_core_of = ROOT
+			}
+			621  = { 
+			add_core_of = ROOT
+			}
+			1043  = { 
+			add_core_of = ROOT
+			}
+		}
+		}
+			}
+		}
+
+
+JAP_first_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_second_transfer
+		JAP = {
+				transfer_state = 614
+				transfer_state = 1038
+				transfer_state = 613
+				transfer_state = 1034
+				transfer_state = 1035
 		}
 	}
 }
+JAP_second_transfer = {
+		priority = 100
 
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
 
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_third_transfer
+		JAP = {
+				transfer_state = 597
+				transfer_state = 598
+				transfer_state = 591
+				transfer_state = 1036
+				transfer_state = 743
+				transfer_state = 606
+		}
+	}
+}
+JAP_third_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_fourth_transfer
+		JAP = {
+				transfer_state = 1033
+				transfer_state = 594
+				transfer_state = 593
+				transfer_state = 595
+		}
+	}
+}
+JAP_fourth_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_fifth_transfer
+		JAP = {
+				transfer_state = 602
+				transfer_state = 599
+				transfer_state = 593
+				transfer_state = 595
+		}
+	}
+}
+JAP_fifth_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_six_transfer
+		JAP = {
+				transfer_state = 607
+				transfer_state = 596
+				transfer_state = 600
+				transfer_state = 749
+				transfer_state = 592
+		}
+	}
+}
+JAP_six_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_annex_CHI
+		JAP = {
+				transfer_state = 615
+				transfer_state = 1043
+				transfer_state = 621
+				transfer_state = 603
+				transfer_state = 592
+		}
+	}
+}
+JAP_annex_CHI = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+			CHI = {
+					transfer_units_fraction = {
+						target = JAP
+						stockpile_ratio = 0.3
+						army_ratio = 0.3
+					}
+				}
+			
+			annex_country = { target = CHI  }
+			all_owned_state = {
+			limit = {is_core_of = chi}
+			add_compliance = 200
+			}
+		}
+	}
+}
 
 # Spiritual Mobilization
 JAP_spiritual_mobilization_decisions = { 
@@ -5273,7 +5750,7 @@ JAP_spiritual_mobilization_decisions = {
 		is_good = no
 
 		timeout_effect = {
-
+		activate_mission = JAP_kwantung_army_impatience
 			country_event = {
 				id = SEA_japan.1
 				hours = 6
