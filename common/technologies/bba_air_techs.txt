@@ -34,6 +34,10 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}		
 		}
 	}
 
@@ -68,6 +72,10 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -97,6 +105,10 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -154,6 +166,10 @@ technologies = {
 				num_of_military_factories < 7
 				factor = 0.1
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -227,6 +243,10 @@ technologies = {
 				factor = 5
 				date > "1940.1.1"
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -311,6 +331,10 @@ technologies = {
 				factor = 5
 				date > "1944.1.1"
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -469,6 +493,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -507,7 +535,12 @@ technologies = {
 			modifier = {
 				num_of_military_factories < 15
 				factor = 0.1
+				
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -567,6 +600,10 @@ technologies = {
 				is_major = yes
 				date > "1940.1.1"
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -630,6 +667,10 @@ technologies = {
 				is_major = yes
 				date > "1944.1.1"
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -687,6 +728,10 @@ technologies = {
 				is_major = yes
 				date > "1945.1.1"
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -730,6 +775,10 @@ technologies = {
 				factor = 4
 			}
 		}
+		modifier = {
+			tag = POL
+			factor = -1000
+		}			
 	}
 
 	iw_large_airframe = {
@@ -778,6 +827,10 @@ technologies = {
 				tag = USA
 				date > 1937.1.1
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -821,6 +874,10 @@ technologies = {
 				factor = 10
 				tag = USA
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -873,6 +930,10 @@ technologies = {
 				factor = 5
 				tag = USA
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -916,6 +977,10 @@ technologies = {
 				factor = 5
 				tag = USA
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 	
@@ -960,6 +1025,10 @@ technologies = {
 				}
 				factor = 4.5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1013,6 +1082,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1062,6 +1135,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1099,6 +1176,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1132,6 +1213,10 @@ technologies = {
 				}
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1175,6 +1260,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1218,6 +1307,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1256,6 +1349,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1312,6 +1409,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1362,6 +1463,10 @@ technologies = {
 				has_War = yes
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1410,6 +1515,10 @@ technologies = {
 				}
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1466,6 +1575,10 @@ technologies = {
 				}
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1515,6 +1628,10 @@ technologies = {
 				}
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1564,6 +1681,10 @@ technologies = {
 				}
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1643,6 +1764,10 @@ technologies = {
 				date > "1939.1.1"
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1709,6 +1834,10 @@ technologies = {
 				date > "1939.1.1"
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1775,6 +1904,10 @@ technologies = {
 				date > "1943.1.1"
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1840,6 +1973,10 @@ technologies = {
 				date > "1945.1.1"
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1902,6 +2039,10 @@ technologies = {
 				}
 				factor = 3
 			}
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 
@@ -1939,6 +2080,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				tag = POL
+				factor = -1000
+			}				
 		}
 	}
 

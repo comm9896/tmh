@@ -127,12 +127,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { POL_sanation_left_leader defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
+			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=8
 			legacy_id=-1
 		}
 		country_leader = {
@@ -378,14 +378,30 @@ characters = {
 				factor = 1.000
 			}
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = edward_rydz_smigly
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		
 		field_marshal = {
-			traits = { old_guard POL_sanation_right_leader thorough_planner politically_connected }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
+			traits = { brilliant_strategist aggressive_assaulter organizer logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader}
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -512,12 +528,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { commando POL_sanation_left_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=4
+			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable }
+			skill=6			
+			attack_skill=5
+			defense_skill=9
+			planning_skill=5
+			logistics_skill=9
 			legacy_id=-1
 		}
 	}
@@ -531,12 +547,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { old_guard infantry_officer POL_sanation_left_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
+			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable }
+			skill=6			
+			attack_skill=5
+			defense_skill=9
+			planning_skill=5
+			logistics_skill=9
 			legacy_id=-1
 		}
 	}
@@ -550,12 +566,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=2
+			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable }
+			skill=6			
+			attack_skill=5
+			defense_skill=9
+			planning_skill=5
+			logistics_skill=9
 			legacy_id=-1
 		}
 	}
@@ -585,12 +601,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			traits={ fortress_buster expert_improviser panzer_expert trickster panzer_leader desert_fox hill_fighter trait_engineer adaptable }
+			skill=6
+			attack_skill=7
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=10
 			legacy_id=-1
 		}
 	}
@@ -604,14 +620,29 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { POL_sanation_right_leader }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
+			traits={ cavalry_leader combined_arms_expert cavalry_expert commando camouflage_expert trickster guerilla_fighter desert_fox ranger adaptable }
+			skill=6
+			attack_skill=6
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=9
 			legacy_id=-1
 		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_roman_abraham
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_CombinedArms_2 
+			}
+			cost = 100
+			ai_will_do = {
+				base = 8
+			}
+		}			
 	}
 
 	POL_wincenty_kowalski = {
@@ -623,14 +654,29 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { POL_sanation_right_leader trickster }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			traits={ infantry_leader infantry_expert  fortress_buster trickster expert_improviser ranger urban_assault_specialist trait_engineer adaptable  }
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
 			legacy_id=-1
 		}
+		advisor={	
+			slot = high_command
+			idea_token = POL_wincenty_kowalski
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
 	}
 
 	POL_kazimierz_sosnkowski = {
@@ -656,14 +702,15 @@ characters = {
 				}
 		}
 		corps_commander = {
-			traits = { defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=2
+			traits={ infantry_leader infantry_expert  fortress_buster trickster expert_improviser ranger urban_assault_specialist trait_engineer adaptable  }
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
 			legacy_id=-1
 		}
+
 	}
 
 
@@ -696,13 +743,13 @@ characters = {
 				small = "GFX_idea_POL_karol_korytowski"
 			}
 		}
-		navy_leader = {
-			traits = { navy_career_officer superior_tactician }
-			skill=4
-			attack_skill=4
+		navy_leader={
+			traits={ blockade_runner concealment_expert superior_tactician destroyer_leader fleet_protector cruiser_captain air_controller flight_deck_manager}
+			skill=5
+			attack_skill=5
 			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=3
+			coordination_skill=4
 			legacy_id=-1
 		}
 	}
@@ -730,13 +777,13 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { war_hero }
-			skill=4
-			attack_skill=3
-			defense_skill=5
-			maneuvering_skill=1
-			coordination_skill=2
+		navy_leader={
+			traits={ navy_career_officer superior_tactician seawolf lancer loading_drill_master torpedo_expert blockade_runner concealment_expert}
+			skill=5
+			attack_skill=6
+			defense_skill=1
+			maneuvering_skill=4
+			coordination_skill=3
 			legacy_id=-1
 		}
 	}
@@ -945,60 +992,7 @@ characters = {
 	}
 
 	### POLITICAL ADVISORS ###
-	
-	POL_wanda_wasilewska = {
-		name=POL_wanda_wasilewska
-		portraits = {
-			army = {
-				small="GFX_idea_POL_wanda_wasilewska"
-			}
-		}
-		gender = female
-		advisor = {
-			cost = 100
-			slot = political_advisor
-			idea_token = POL_wanda_wasilewska
-			ledger = army
-			available = {
-				OR = {
-					has_completed_focus = POL_modus_vivendi
-					has_completed_focus = POL_a_leftist_sejm
-				}
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				leftist_intellectual
-			}
-		}
-	}
 
-	POL_jan_mosdorf={
-		name=POL_jan_mosdorf
-		portraits={
-			army={
-				small="GFX_idea_POL_jan_mosdorf"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jan_mosdorf
-			available = {
-				OR = {
-					has_completed_focus = POL_modus_vivendi
-					has_completed_focus = POL_integrate_the_falanga 
-				}
-			}
-			allowed = {
-				original_tag = POL
-				has_dlc = "No Step Back"
-			}
-			traits = {
-				national_propagandist 
-			}
-		}
-	}
 
 	POL_irena_anders={
 		name=POL_irena_anders
@@ -1026,36 +1020,6 @@ characters = {
 		}
 	}
 
-	POL_mieczyslaw_michalowicz={
-		instance = {
-			allowed = {
-				has_dlc = "No Step Back"
-			}
-			name=POL_mieczyslaw_michalowicz
-			portraits={
-				army={
-					small="GFX_idea_POL_mieczyslaw_michalowicz"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = POL_mieczyslaw_michalowicz
-				allowed = {
-					original_tag = POL
-					has_dlc = "No Step Back"
-				}
-				available = {
-					has_completed_focus = POL_reassemble_the_sejm 
-				}
-				traits = {
-					socdem_reformist 
-				}
-				ai_will_do = {
-					factor = 0.000
-				}
-			}			
-		}
-	}
 
 	POL_henryk_floyar_rajchman={
 		name=POL_henryk_floyar_rajchman
@@ -1076,82 +1040,6 @@ characters = {
 			}
 			traits = {
 				right_industrialist 
-			}
-		}
-	}
-
-	POL_boleslaw_bierut={
-		name=POL_boleslaw_bierut
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1" #No Portrait
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_boleslaw_bierut
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				if = {
-					limit = { has_DLC = "No Step Back" }
-					has_completed_focus = POL_a_leftist_sejm 
-				}
-				if = {
-					limit = { NOT = { has_DLC = "No Step Back" } }
-					has_government = communism 
-				}
-			}
-			traits = {
-				socialist_autocrat 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					NOT = {
-						has_government = communism 
-					}
-				}
-			}
-		}
-	}
-
-	POL_edward_osobka_morawski={
-		name=POL_edward_osobka_morawski
-		portraits={
-			army={
-				small="GFX_idea_POL_edward_osobka_morawski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_edward_osobka_morawski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				if = {
-					limit = { has_DLC = "No Step Back" }
-					has_completed_focus = POL_a_leftist_sejm 
-				}
-				if = {
-					limit = { NOT = { has_DLC = "No Step Back" } }
-					has_government = communism 
-				}
-			}
-			traits = {
-				patriotic_socialist 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					NOT = {
-						has_government = communism 
-					}
-				}
 			}
 		}
 	}
@@ -1235,33 +1123,6 @@ characters = {
 		}		
 	}
 
-	POL_tadeusz_bielecki={
-		name=POL_tadeusz_bielecki
-		portraits={
-			army={
-				small="GFX_portrait_POL_tadeusz_bielecki_small"
-				large = "GFX_portrait_POL_tadeusz_bielecki" #Country Leader role not implemented
-			}
-			civilian = {
-				large = "GFX_portrait_POL_tadeusz_bielecki"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_tadeusz_bielecki
-			available = {
-				has_completed_focus = POL_integrate_the_endecja 
-			}
-			allowed = {
-				original_tag = POL
-				has_dlc = "No Step Back"
-			}
-			traits = {
-				nationalist_journalist 
-			}
-		}		
-	}
-
 	POL_joachim_stefan_bartoszewicz={
 		name=POL_joachim_stefan_bartoszewicz
 		portraits={
@@ -1273,11 +1134,7 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_joachim_stefan_bartoszewicz
 			available = {
-				OR = {
-					has_completed_focus = POL_modus_vivendi 
-					has_completed_focus = POL_reassemble_the_sejm 
-					has_completed_focus = POL_integrate_the_endecja 
-				}
+				has_completed_focus = POL_modus_vivendi 
 			}
 			allowed = {
 				original_tag = POL
@@ -1290,41 +1147,6 @@ characters = {
 				national_determinist 
 			}
 		}
-	}
-
-	POL_aleksander_kakowski={
-		name=POL_aleksander_kakowski
-		portraits={
-			army={
-				small="GFX_idea_POL_aleksander_kakowski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_aleksander_kakowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				has_completed_focus = POL_assemble_the_regency_council
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			traits = {
-				autocratic_archbishop 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					NOT = {
-						has_government = neutrality 
-					}
-				}
-			}
-		}		
 	}
 
 	POL_stanislaw_radkiewicz={
@@ -1367,11 +1189,7 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_stanislaw_wojciechowski
 			available = {
-				OR = {
-					has_completed_focus = POL_modus_vivendi 
-					has_completed_focus = POL_reassemble_the_sejm 
-					has_completed_focus = POL_assemble_the_regency_council 
-				}
+				has_completed_focus = POL_modus_vivendi 
 			}
 			allowed = {
 				original_tag = POL
@@ -1386,39 +1204,6 @@ characters = {
 		}
 	}
 
-	POL_jerzy_rutkowski={
-		name=POL_jerzy_rutkowski
-		portraits={
-			army={
-				small="GFX_idea_POL_jerzy_rutkowski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jerzy_rutkowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				OR = {
-					has_completed_focus = POL_support_right_paramilitaries 
-					has_completed_focus = POL_integrate_the_falanga 
-				}
-			}
-			traits = {
-				falangist_militarist 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					NOT = {
-						has_government = fascism 
-					}
-				}
-			}
-		}		
-	}
 
 	POL_marian_rejewski={
 		name=POL_marian_rejewski

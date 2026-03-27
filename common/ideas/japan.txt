@@ -1,26 +1,6 @@
 ideas = {
 hidden_ideas = {
 
-JAP_in_war = {
-			allowed = {
-				always = no
-			}
-
-			picture = FRA_scw_intervention_republicans_focus
-
-			allowed_civil_war = {
-			}
-			available = {
-				has_war = no
-			}
-			removal_cost = -1
-			modifier = {
-				stability = -0.2
-				war_support = -0.2
-			}
-
-
-}
 	JAP_TRADE_TO_MAN_SIA = {
 	targeted_modifier = {
 				tag = man
@@ -4417,6 +4397,7 @@ JAP_in_war = {
 				shore_bombardment_bonus = 0.25
 				naval_invasion_plan_cap = 35	
 				amphibious_invasion = 1
+				amphibious_invasion_defence = 1
 				naval_invasion_prep_speed = 1
 				naval_invasion_planning_bonus_speed = 1
 				floating_harbor_supply = 1

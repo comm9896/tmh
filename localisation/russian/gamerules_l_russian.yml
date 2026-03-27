@@ -18,11 +18,12 @@ Sapr_41_no_fleat:0 "Играем без флота"
 Sapr_Alias_suck_in_norce_africa:0 "Нарушение цепочек поставок"
 Sapr_Alias_suck_in_norce_africa_desc:0 "Только с началом активных боевых действий на востоке мы востановить нашу экономику"
 JAP_no_trade:0 "Торговля с США"
-                    
+MON_no_plane:0 "Низкий интерес к развитию ВВС"
+  
 Sapr_photo_reconnaisance:0 "Самолет разведчик"
 
 modifier_production_speed_energy_infrastructure_factor:0 "Скорость строительства §YУсиленной энергосети§!"
-
+modifier_production_speed_stronghold_network_factor:0 "Скорость строительства §YЦепи укреплений§!"
 
 pacifist_nation:0 "Миролюбивая нация"
 Sapr_supporting_the_losing_alliance:0 "Мобилизация тыла"

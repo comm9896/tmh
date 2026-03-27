@@ -62,6 +62,10 @@ German_historical = {
 		GER_instill_auftragstaktik
 		GER_panzergrenadier
 		
+		GER_integrate_war_economies
+		GER_Secretly_Support_Mussolini
+		GER_Economic_Assistance_To_Italy
+		
 		GER_accelerate_the_rearmament_program
 		GER_concentrated_armament_program
 		GER_establish_production_targets
@@ -88,9 +92,9 @@ German_historical = {
 		GER_form_the_jagdwaffe
 		
 		GER_demands_to_sweden
+		GER_Expand_The_Gestapo
 		GER_the_swiss_gold
 		GER_reintegrate_luxemburg_and_alsace_lorraine
-		GER_alliance_with_spain
 		
 		GER_anti_comintern_pact
 		GER_war_with_the_ussr

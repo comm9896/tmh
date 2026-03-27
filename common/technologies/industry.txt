@@ -101,8 +101,8 @@ technologies = {
 			factor = 15
 						
 			modifier = {
-				factor = 10
-				date > "1939.1.1"
+				factor = 100
+				date > "1938.1.1"
 			}
 		}
 		
@@ -139,8 +139,8 @@ technologies = {
 			factor = 15
 			
 			modifier = {
-				factor = 10
-				date > "1941.1.1"
+				factor = 100
+				date > "1940.1.1"
 			}			
 		}
 		
@@ -394,8 +394,8 @@ technologies = {
 			factor = 15
 			
 			modifier = {
-				factor = 10
-				date > "1939.1.1"
+				factor = 100
+				date > "1938.1.1"
 			}			
 		}
 		
@@ -431,8 +431,8 @@ technologies = {
 			factor = 15
 						
 			modifier = {
-				factor = 10
-				date > "1941.1.1"
+				factor = 100
+				date > "1940.1.1"
 			}
 		}
 		
@@ -571,8 +571,8 @@ technologies = {
 			factor = 15
 						
 			modifier = {
-				factor = 10
-				date > "1939.1.1"
+				factor = 100
+				date > "1938.1.1"
 			}			
 		}
 		
@@ -607,8 +607,8 @@ technologies = {
 			factor = 15
 						
 			modifier = {
-				factor = 10
-				date > "1941.1.1"
+				factor = 100
+				date > "1940.1.1"
 			}
 		}
 		
@@ -640,8 +640,8 @@ technologies = {
 			
 			
 			modifier = {
-				factor = 10
-				date > "1943.1.1"
+				factor = 100
+				date > "1942.1.1"
 			}
 		}
 		

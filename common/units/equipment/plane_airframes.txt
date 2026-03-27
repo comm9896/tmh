@@ -4,11 +4,11 @@ equipments = {
 		year = 1933
 
 		can_be_produced = {
-
 			NOT = {
 				or = {
 					has_idea = BUL_army_restrictions
 					has_idea = NOR_anti_communist_sentiment_ns
+					tag = POL
 				}
 			}
 		}
@@ -854,6 +854,7 @@ equipments = {
 				or = {
 					has_idea = BUL_army_restrictions
 					has_idea = NOR_anti_communist_sentiment_ns					
+					tag = POL				
 				}
 			}
 		}
@@ -1543,6 +1544,7 @@ equipments = {
 				or = {
 					has_idea = BUL_army_restrictions
 					has_idea = NOR_anti_communist_sentiment_ns					
+					tag = POL				
 				}
 			}
 		}
@@ -2448,6 +2450,7 @@ equipments = {
 				or = {
 					has_idea = BUL_army_restrictions
 					has_idea = NOR_anti_communist_sentiment_ns					
+					tag = POL				
 				}
 			}
 		}

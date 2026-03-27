@@ -4,17 +4,16 @@ state = {
 	manpower = 295467
 
 	resources = {
-		coal = 10 
+		coal = 2 
 	}
 	
-	state_category = phi
+	state_category = pastoral
 
 	history = {
 
         1936.1.1.12 = {	    
-		owner = PHI
-		add_core_of = PHI	
-		add_core_of = TIB
+		    owner = USA
+		    add_core_of = TIB	
 		}			
 		1936.1.1.13 = {
 			owner = TIB
@@ -25,9 +24,8 @@ state = {
 			add_core_of = TIB
 		}			
 		1936.1.1.15 = {
-		owner = PHI
-		add_core_of = PHI	
-		add_core_of = TIB
+		    owner = USA
+		    add_core_of = TIB
 		}
 		1941.1.1.14 = {
 			owner = TIB

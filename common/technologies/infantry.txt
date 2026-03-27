@@ -205,7 +205,7 @@ technologies = {
 
 			modifier = {
 				factor = 10
-				date > "1939.1.1"
+				date > "1938.1.1"
 			}
 			modifier = {
 				num_of_military_factories < 50

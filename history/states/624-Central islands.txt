@@ -2,15 +2,14 @@ state={
 	id=624
 	name="STATE_624"
 	manpower = 1290672
-	state_category = phi
+	state_category = town
 	
 	history={
 		
 		1936.1.1.12 = {	    
-		owner = PHI
-		add_core_of = PHI	
-		add_core_of = TIB
-		}
+		    owner = USA
+		    add_core_of = TIB	
+		}			
 		1936.1.1.13 = {
 			owner = TIB
 			add_core_of = TIB
@@ -20,9 +19,8 @@ state={
 			add_core_of = TIB
 		}	
 		1936.1.1.15 = {
-		owner = PHI
-		add_core_of = PHI	
-		add_core_of = TIB
+		    owner = USA
+		    add_core_of = TIB	
 		}	
 		1941.1.1.14 = {
 			owner = TIB

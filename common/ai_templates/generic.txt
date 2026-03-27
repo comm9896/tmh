@@ -317,13 +317,13 @@ infantry_generic = {
 	role = infantry
 	
 	upgrade_prio = {
-		base = 5
+		base = 100
 	}
 	
 	infantry_early = {
 	
 		upgrade_prio = {
-			base = 1
+			base = 100
 
 			modifier = {
 				factor = 2
@@ -338,39 +338,6 @@ infantry_generic = {
 				anti_air = 1
 				anti_tank = 1
 				recon = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				artillery_brigade = 2
-			}
-		}
-
-		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
-		replace_with = infantry_improved
-		target_min_match = 0.9
-	}
-
-	infantry_mid = {
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 3
-				date > 1940.1.1
-			}
-		}
-		
-		target_template = {
-			
-			
-			support = {
-				engineer = 1
-				artillery = 1
-				anti_air = 1
-				anti_tank = 1
-				recon = 1				
 			}
 			
 			regiments = {

@@ -28,12 +28,12 @@ british_help_against_germany = {
 	ai_strategy = {
 		type = befriend
 		id = "ENG"
-		value = 200
+		value = 1000
 	}
 	ai_strategy = {
 		type = alliance
 		id = "ENG"
-		value = 200
+		value = 1000
 	}
 }
 
@@ -79,60 +79,6 @@ POL_trade_with_sweden = {
 	}
 }
 
-POL_template_design = {
-	allowed = {
-		original_tag = POL
-	}
-	enable = {
-		date < 1940.1.1
-	}
-	abort = {
-		date > 1940.1.1
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = motorized
-		value = -10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 40
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = -10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = infantry
-		value = 75
-	}
-}
-
 POL_dont_ally_germany_pls = {
 	allowed = {
 		original_tag = POL
@@ -151,4 +97,72 @@ POL_dont_ally_germany_pls = {
 		id = "GER"
 		value = -5000
 	}
+}
+
+POL_you_should_be_prepared_for_war = {
+
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER	
+		value = 1000
+	}		
+	ai_strategy = {
+		type = prepare_for_war
+		id = ROM	
+		value = 1000
+	}	
+	ai_strategy = {
+		type = prepare_for_war
+		id = HUN	
+		value = 1000
+	}		
+	ai_strategy = {
+		type = ignore
+		id = "SOV"
+		value = 1000
+	}	
+	ai_strategy = {
+		type = befriend
+		id = "SOV"
+		value = 1000
+	}		
+	
+	ai_strategy = {
+		type = conquer
+		id = "ROM"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "GER"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = conquer
+		id = "HUN"
+		value = -1000
+	}		
+	ai_strategy = {
+		type = antagonize
+		id = "GER"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = "HUN"
+		value = -1000
+	}	
+	ai_strategy = {
+		type = antagonize
+		id = "ROM"
+		value = -1000
+	}		
 }

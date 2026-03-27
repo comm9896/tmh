@@ -226,7 +226,36 @@ SOV_agitprop_dynamic_modifier = {
 	
 	factory_energy_consumption  = SOV_agitprop_factory_energy_consumption
 	local_resources_coal_factor  = SOV_agitprop_local_resources_coal_factor
+	
 }
+
+POL_gray_import_of_resources = {
+	enable = { always = yes }
+	
+	icon = GFX_focus_GER_factories_for_resources
+	
+	country_resource_chromium  = POL_resources_country_resource_chromium
+	country_resource_steel  = POL_resources_country_resource_steel
+	country_resource_tungsten  = POL_resources_country_resource_tungsten
+	country_resource_aluminium  = POL_resources_country_resource_aluminium
+	country_resource_coal  = POL_resources_country_resource_coal		
+	country_resource_oil  = POL_resources_country_resource_oil
+	consumer_goods_factor  = POL_resources_consumer_goods_factor
+	
+	industrial_capacity_factory  = POL_resources_industrial_capacity_factory
+	industrial_capacity_dockyard  = POL_resources_industrial_capacity_dockyard
+	
+	production_factory_max_efficiency_factor  = POL_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor  = POL_resources_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor  = POL_resources_production_factory_start_efficiency_factor
+	production_lack_of_resource_penalty_factor  = POL_resources_production_lack_of_resource_penalty_factor
+	
+	local_resources_factor  = POL_resources_local_resources_factor
+	
+	resource_trade_cost_bonus_per_factory  = POL_resources_resource_trade_cost_bonus_per_factory
+	
+}
+
 
 
 USA_War_time_industry_dynamic_modifier = {

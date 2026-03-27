@@ -5050,21 +5050,13 @@ add_ideas = {
 
 
 		timeout_effect = {
-		add_idea = JAP_in_war
-	if = {limit = {has_country_flag = Sapr_only_asia}
-		add_threat = 15
-		}
-
 		add_named_threat = { threat = 2 name = JAP_intervene_in_china } # From threat = 1 to 2 due to no escalation tension
-		if = {limit = {not = {has_country_flag = Sapr_no_asia}}
-			activate_mission = JAP_first_transfer 
-			
+		activate_mission = JAP_first_transfer 
 		JAP = {
 				transfer_state = 608
 				transfer_state = 1039
 				set_occupation_law_where_available = local_police_force_garrison
 			}
-		}
 			hidden_effect = {
 						annex_country = { target = MAN transfer_troops = yes}
 			if = {limit = {MAN = { is_ai = yes}}
@@ -5533,9 +5525,6 @@ JAP_annex_CHI = {
 		is_good = no
 		
 		timeout_effect = {
-		if = {limit = {has_country_flag = Sapr_only_asia}
-			add_threat = 15
-		}
 					transfer_units_fraction = {
 						target = JAP
 						size = 1

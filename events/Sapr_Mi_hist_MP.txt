@@ -13,6 +13,19 @@ country_event = {
 
 	option = {
 		name = startup.institut.1.a
+		
+		ai_chance = {
+			base = 1	
+			modifier = {
+				factor = 1000								
+				or = {
+					tag = HUN
+					tag = EST					
+				}	
+			}
+			
+		}
+		
 		IF = {
 			random_owned_controlled_state = {
 				limit = {
@@ -29,6 +42,26 @@ country_event = {
 	}
 	option = {
 		name = startup.institut.1.b
+		
+
+		ai_chance = {
+			base = 1	
+			modifier = {
+				factor = 1000									
+				or = {
+					tag = CAN
+					tag = SAF	
+					tag = RAJ
+					tag = MON
+					tag = FIN
+					tag = ROM
+					tag = BUL	
+					tag = FRA				
+				}	
+			}
+		}		
+		
+		
 		IF = {
 			random_owned_controlled_state = {
 				limit = {
@@ -45,6 +78,18 @@ country_event = {
 	}
 	option = {
 		name = startup.institut.1.c
+
+		ai_chance = {
+			base = 1	
+			modifier = {
+				factor = 1000									
+				or = {
+					tag = POL				
+				}	
+			}
+		}
+		
+		
 		IF = {
 			random_owned_controlled_state = {
 				limit = {

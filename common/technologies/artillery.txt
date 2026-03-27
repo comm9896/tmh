@@ -223,13 +223,13 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 2
-				date > "1938.1.9"
+				factor = 5
+				date > "1937.1.9"
 			}
 
 			modifier = {
-				factor = 2
-				date > "1939.1.1"
+				factor = 10
+				date > "1938.1.1"
 			}
 
 			modifier = {
@@ -303,17 +303,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1940.1.6"
+				date > "1938.1.6"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1941.1.1"
+				date > "1939.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1942.1.1"
+				date > "1940.1.1"
 			}
 		}
 	}

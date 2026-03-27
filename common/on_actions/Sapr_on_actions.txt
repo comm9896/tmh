@@ -1,6 +1,54 @@
 on_actions = {
 
 	on_startup = {
+				#KOREA/JAPAN - Set up the resistance DMs 
+		effect = {
+
+			IF = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = asia_colonization_status
+							option = ASIA_DECOLONIZED
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 1031
+							state = 1030
+							state = 1029
+							state = 1028
+							state = 527
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = KOR_resistance_against_colonial_rule_dm
+					}
+				}
+			}
+			
+		}
+
+		effect = {
+			every_state = {
+				limit = {
+					not = {
+						GER = {
+							or = {
+								has_country_flag = Sapr_duelmiy_mode
+							}
+						}
+					}
+					or = {
+						is_core_of = FRA
+						is_core_of = POL					
+					}
+				}
+				add_dynamic_modifier = { modifier = FRA_fabriki days = 1322 }	
+			}		
+		}	
 
 		effect = {	
 			#анлочим фракции без ебли
@@ -113,7 +161,7 @@ on_actions = {
 						tag = CHI
 						tag = MAN
 						tag = JAP
-						tag = MAN						
+						tag = POL						
 					}
 				}
 				country_event = { id = startup.institut.1 }
@@ -815,6 +863,127 @@ on_actions = {
 					}
 				}
 				FRA = {
+					
+					delete_unit = {
+					}					
+					set_country_flag = Sapr_FRA_capitulation 
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_2
+						amount = -50000
+					}	
+					add_equipment_to_stockpile = {
+						type = small_plane_cas_airframe_2
+						amount = -50000
+					}	
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = -50000
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = -50000
+					}			
+					add_equipment_to_stockpile = {
+						type = heavy_tank_chassis
+						amount = -50000
+					}	
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = -50000
+					}
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = -1000000
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -100000000
+					}	
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = -1000000
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment
+						amount = -1000000
+					}
+					add_equipment_to_stockpile = {
+						type = mechanized_equipment
+						amount = -50000
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_chassis
+						amount = -50000
+					}		
+					add_equipment_to_stockpile = {
+						type = medium_tank_chassis
+						amount = -50000
+					}	
+					add_equipment_to_stockpile = {
+						type = medium_tank_aa_chassis_3
+						amount = -50000
+					}
+					add_equipment_to_stockpile = {
+						type = medium_tank_destroyer_chassis_3
+						amount = -50000
+					}
+					add_equipment_to_stockpile = {
+						type = heavy_tank_destroyer_chassis_3
+						amount = -50000
+					}		
+					add_equipment_to_stockpile = {
+						type = medium_tank_artillery_chassis_3
+						amount = -50000
+					}			
+					add_equipment_to_stockpile = {
+						type = medium_tank_flame_chassis_3
+						amount = -50000
+					}	
+					add_equipment_to_stockpile = {
+						type = armored_support_vehicle_1
+						amount = -50000
+					}					
+				}
+				every_state = {
+					limit = {
+						or = {
+							is_core_of = FRA
+							is_core_of = BEL
+							is_core_of = HOL
+							is_core_of = LUX
+							is_core_of = POL							
+						}
+					}
+					add_compliance = 100
+				}
+				
+			}
+		}
+		
+	}
+	on_capitulation = {
+		effect = {
+			if = { # кап франции, удаляем молотки
+				limit = {
+					original_tag = POL
+					FROM = { 
+						or = {
+							tag = GER 
+							tag = HUN	
+							tag = ROM
+							tag = BUL							
+						}
+					}
+					POL = {
+						not = {
+							has_country_flag = Sapr_FRA_capitulation
+						}
+					}
+				}
+				POL = {
+
+					delete_unit = {
+					}					
 					set_country_flag = Sapr_FRA_capitulation 
 					add_equipment_to_stockpile = {
 						type = small_plane_airframe_2
@@ -896,5 +1065,29 @@ on_actions = {
 			}
 		}
 		
+	}	
+	
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					POL = {
+						has_war_with = GER
+						not = {
+							has_country_flag = Sapr_pol_has_war
+						}						
+					}
+					
+				}
+				POL = {
+					set_country_flag = Sapr_pol_has_war
+					set_variable = { POL_resources_consumer_goods_factor = 0}
+					set_variable = { POL_resources_industrial_capacity_factory = 0 }	
+					set_variable = { POL_resources_production_lack_of_resource_penalty_factor = 0 }	
+					set_variable = { POL_resources_industrial_capacity_dockyard = 0 }	
+					set_variable = { POL_resources_resource_trade_cost_bonus_per_factory = 0}	
+				}
+			}	
+		}
 	}
 }

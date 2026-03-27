@@ -180,14 +180,7 @@ USA_allience_help = {
 develop_london_aluminium_deposits = { #126
 
 		icon = aluminium
-		visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		allowed = {
 
 		}
@@ -264,14 +257,7 @@ develop_london_aluminium_deposits = { #126
 		}
 	}
 develop_london_steel_deposits = { #126
-visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = steel
 
 		allowed = {
@@ -511,14 +497,7 @@ develop_AST_steel_deposits = { #285
 	}
 
 	develop_SOV_aluminium_deposits = { #408
-visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = aluminium
 
 		allowed = {
@@ -600,14 +579,7 @@ visible = {
 
 
 develop_SOV_steel_deposits = { #408
-visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = steel
 
 		allowed = {
@@ -689,14 +661,7 @@ visible = {
 
 
 	develop_SAF_aluminium_deposits = { #275
-	visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = aluminium
 
 		allowed = {
@@ -777,14 +742,7 @@ visible = {
 
 
 develop_SAF_steel_deposits = { #275
-visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = steel
 
 		allowed = {
@@ -865,14 +823,7 @@ visible = {
 
 
 		develop_CAN_aluminium_deposits = { #276
-		visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = aluminium
 
 		allowed = {
@@ -953,14 +904,7 @@ visible = {
 
 
 develop_CAN_steel_deposits = { #276
-visible = {				
-		if = { 
-				limit = {
-					has_country_flag = Sapr_only_asia
-						}
-							always = no
-						}
-						}
+
 		icon = steel
 
 		allowed = {

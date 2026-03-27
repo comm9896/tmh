@@ -6910,6 +6910,92 @@ focus_tree = {
 				}					
 				
 				ENG = {add_to_faction = POL}
+				
+				
+				63 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				68 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}	
+				66 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				67 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				75 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				74 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}
+				70 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				71 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				73 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				76 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				80 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}				
+				78 = {
+					add_dynamic_modifier = {
+						modifier = Kefir_delat_plaki_plaki
+						scope = POL
+						days = 200
+					}
+				}							
 			}
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
@@ -7007,6 +7093,26 @@ focus_tree = {
 				NOT = { BEL = { is_in_faction_with = GER } }
 				NOT = { LUX = { is_in_faction_with = GER } }
 			}
+			10 = {
+				controller = {
+					OR = {
+						is_in_faction_with = ROOT
+						original_tag = GER
+					}
+				}
+			}
+			85 = {
+				controller = {
+					OR = {
+						is_in_faction_with = ROOT
+						original_tag = GER
+					}
+				}
+			}
+			OR = { 
+				has_war_with = ENG
+				NOT = {country_exists = ENG}
+			}			
 		}
 
 		historical_ai = {
@@ -7146,18 +7252,8 @@ focus_tree = {
 		completion_reward = {
 
 			
-			if = {
-				limit = {
-					NOR = { is_ai = yes }
-				}
-				annex_country = { target = NOR 	 }						
-			}
-			if = {
-				limit = {
-					NOR = { is_ai = no }
-				}
-				declare_war_on = { target = NOR    type = take_state_focus } 						
-			}			
+
+			annex_country = { target = NOR 	 }									
 			annex_country = { target = DEN 	 }	
 
 			
@@ -7169,7 +7265,74 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
-			}				
+			
+			
+				110 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 6115					
+					}
+				}	
+				922 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 9296					
+					}
+				}
+				142 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 53					
+					}
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 122					
+					}					
+				}
+				143 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 3022					
+					}
+				}	
+				144 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 192					
+					}
+				}			
+				924 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 11050					
+					}
+				}
+				925 = {
+					create_unit = {
+						division = "name = \"Егерская пехота\" division_template = \"Егерская пехота\" start_experience_factor = 0.3" 
+						owner = GER
+						count = 3
+						prioritize_location = 9116					
+					}
+				}				
+			}	
+
+
+			
 			ENG = {
 				transfer_state = 337				
 				337 = { add_core_of = ENG }

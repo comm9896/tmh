@@ -63,7 +63,6 @@ ideas = {
 				}
 			}
 			modifier = {
-				army_leader_cost_factor = -0.5
 				party_popularity_stability_factor = 0.15
 			}
 			ai_will_do = {
@@ -180,31 +179,7 @@ ideas = {
 				factor = 1
 
 			}
-		}
-		cult_of_heroism_army_spirit = {
-			ledger = army
-			visible = { has_dlc = "No Compromise, No Surrender" }
-			available = { 
-					has_doctrine = grand_battleplan
-			}
-
-			modifier = {
-				automatic_grant_medal_chance = 0.50
-				unit_medal_effectiveness = -0.25    		  			    			    			 			    			 				
-			}
-
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Compromise, No Surrender" }
-				}
-				modifier = {
-					factor = 2
-					has_doctrine = commandos					
-				}
-			}
-		}
+		}		
 	}
 
 	army_spirit = {
@@ -314,7 +289,7 @@ ideas = {
 
 		grand_battleplan_army_spirit = {
 			ledger = army
-			#available = { has_doctrine = grand_battleplan }
+			available = { has_doctrine = grand_battleplan }
 			modifier = {
 				naval_invasion_capacity = 20
 				extra_paratrooper_supply_grace = 48

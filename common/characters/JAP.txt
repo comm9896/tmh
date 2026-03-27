@@ -1974,11 +1974,11 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = GFX_portrait_Naruhiko_Higashikuni
+				large = GFX_portrait_JAP_naruhiko_higashikuni
 				small = GFX_portrait_JAP_naruhiko_higashikuni_small
 			}
 			army = {
-				large = GFX_portrait_Naruhiko_Higashikuni
+				large = GFX_portrait_JAP_naruhiko_higashikuni
 				small = GFX_portrait_JAP_naruhiko_higashikuni_small
 			}
 		}

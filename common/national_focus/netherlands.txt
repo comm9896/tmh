@@ -1176,7 +1176,7 @@ focus_tree = {
 	focus = {
 		id = HOL_abandon_the_gold_standard
 		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 10
+		x = 13
 		y = 0
 		relative_position_id = HOL_obtain_foreign_colonial_investments
 		cost = 10
@@ -1212,7 +1212,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_abandon_the_gold_standard }
 		icon = GFX_goal_generic_construction
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10
@@ -1648,7 +1648,7 @@ focus_tree = {
 		id = HOL_overturn_military_budget_cuts
 		prerequisite = { focus = HOL_abandon_the_gold_standard }
 		icon = GFX_goal_generic_army_doctrines
-		x = 2
+		x = 6
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10
@@ -1674,7 +1674,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_focus_hol_war_on_pacifism
-		x = -2
+		x = -6
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
 		
@@ -2275,7 +2275,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_goal_generic_air_doctrine
-		x = 3
+		x = 5
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 5
@@ -2557,7 +2557,7 @@ focus_tree = {
 		available = {
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 6
+		x = 9
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 10
@@ -2755,7 +2755,7 @@ focus_tree = {
 			has_capitulated = yes
 		}
 		icon = GFX_goal_generic_improve_relations
-		x = 12
+		x = 22
 		y = 0
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10

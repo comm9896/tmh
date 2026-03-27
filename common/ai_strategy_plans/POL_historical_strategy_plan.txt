@@ -34,7 +34,6 @@ POL_historical_plan = {
 		
 		POL_the_four_year_plan
 		POL_fill_the_railways_gaps
-		POL_agrarian_reform
 		POL_national_defence_fund
 
 		POL_complete_april_constitution
@@ -49,6 +48,8 @@ POL_historical_plan = {
 		POL_camp_of_national_unity
 		
 		POL_additional_research_slot1
+		POL_central_defence_of_poland
+		POL_develop_upper_silesia
 		POL_invest_in_eastern_poland
 		POL_central_region_strategy
 		POL_invest_in_the_old_polish_region
@@ -58,18 +59,29 @@ POL_historical_plan = {
 		POL_expand_central_industrial_region
 		POL_expand_katowice_mines
 		POL_additional_research_slot2
-		POL_abolish_segregated_seating
+		POL_ideological_fanaticism
 		
+		POL_prepare_for_the_next_war
+		POL_plan_west
+		POL_the_prusya_line
+		POL_expand_poznan_forts
+		POL_hel_fortified_area
+		POL_local_western_plans
+		POL_silesia_fortified_area
 		
 		POL_prepare_for_the_inevitable
 		POL_resistance_industries
 		POL_exile_industries
 		POL_foreign_air_support
 		POL_foreign_army_support
-		POL_aces_in_exile
 		POL_foreign_naval_support
+		POL_foreign_naval_support_2		
+		POL_Gray_imports
+		POL_Gray_imports_oil
+		POL_exile_industries_2
 		POL_expand_polish_intelligence
 		POL_niech_zyje_opor
+		POL_sabotage_polish_industry
 		
 
 	}

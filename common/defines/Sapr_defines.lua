@@ -214,9 +214,9 @@ NDefines.NNavy.OUT_OF_FUEL_TORPEDO_FACTOR = -0.8; --атака торпед
 NDefines.NNavy.DAILY_MANPOWER_GAIN_RATIO = 0.5;--0,1								-- скорость пополнения менпавера в кораблях
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0;--100							-- стоимость снятие гордости флота
 
-NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1;--60								-- базовое кол-во дней для подготовки высадки
-NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- базовый  кап высадок
-NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- базовый кап дивизий для 1 стрелочки
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1;--60								-- кол-во дней для подготовки высадки
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- кап высадок
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- кап дивизий для 1 стрелочки
 
 --эффективность конвоев
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.5;--1,25							-- как сильно падает эффективность в зависимости от потери конвоев. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
@@ -231,39 +231,15 @@ NDefines.NNavy.TRAINING_ORG = 0.9; --0.2;												-- максимальная
 
 
 
---NProduction
---NProduction
---NProduction
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- Минимальный % фабрик уходящих в ТНП 
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	-- Можно развернуть миллиардную армию
+--NIndustrialOrganisation
+--NIndustrialOrganisation
+--NIndustrialOrganisation
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0;    --через сколько дней можно будет изменить политику в кб
 
-NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
-NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
-NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0 
-NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
-
-	
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0 ;
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0 ;
-NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 0;
-NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1; 
-
-NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.01; -- Масштабирует стоимость энергии в зависимости от общего количества заводов, ванила  0.0225
-
-NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4;	
-
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
-NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
-NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
-
-NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 150; --верфей на плавучие гавани
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300; -- милок на линию
-NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 150; -- милок на жд орудие
-
-NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 0.99;			-- максимальный % рефита после которого отмена приведёт к исчезновению корабля
-
-
-
+--NIndustrialOrganisation
+--NIndustrialOrganisation
+--NIndustrialOrganisation
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0;    --через сколько дней можно будет изменить политику в кб
 
 --NCountry
 --NCountry
@@ -412,9 +388,9 @@ NDefines.NProject.MINIMUM_PROJECT_SPEED_FACTOR_FROM_SUPPLY = 1;--0.2	-- мини
 NDefines.NProject.FACILITY_SUPPLY_WARNING_RED_RATIO = 0;--0.66,		-- % саплая когда начнёт отображаться бочка в комплексе
 NDefines.NProject.RECRUIT_SCIENTIST_COST = {						-- кол-во пп для найма учёного
 		0,			-- pp cost if no available scientist
-		5,			-- pp cost if 1 available scientist
-		10,			-- pp cost if 2 available scientist
-		15			-- pp cost if more than 2 available scientist
+		0,			-- pp cost if 1 available scientist
+		75,			-- pp cost if 2 available scientist
+		100			-- pp cost if more than 2 available scientist
 	};
 NDefines.NProject.PROJECT_LOSS_FACTOR_ON_CAPTURE = 0; --0.2             -- сколько % теряется при захвате комплекса в котором делается проект
 NDefines.NProject.PROJECT_CAPTURE_GAIN_RATIO = 0;--0.2                  -- % от того сколько будет получено % проекта который был изучен в этом комплекса 

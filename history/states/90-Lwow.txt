@@ -14,6 +14,11 @@ state={
 		1936.1.1.12 = {	    
 			add_core_of = POL	
 			owner = POL
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 3
+				arms_factory = 4		
+			}		
 		}	
 		1936.1.1.13 = {	    
 			add_core_of = POL		
@@ -51,9 +56,7 @@ state={
 		victory_points = {
 			3458 5
 		}
-		buildings = {
-			infrastructure = 3
-		}
+
 	}
 
 	provinces={
