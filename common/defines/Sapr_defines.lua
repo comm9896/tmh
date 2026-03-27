@@ -114,6 +114,11 @@ NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.05; -- множитель по�
 NDefines.NAir.RECON_LAND_SPOT_CHANCE = 1; --шанс спота разведичков
 
 
+--NProduction
+--NProduction
+--NProduction
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- Минимальный % фабрик уходящих в ТНП 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	-- Можно развернуть миллиардную армию
 
 --NNavy
 --NNavy
@@ -226,14 +231,17 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150; -- тепе�
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
 
-NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 150; --верфей на плавучие гавани
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300; -- милок на линию
-NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 150; -- милок на жд орудие
+NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 150;
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300;
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 150;
 
 NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 0.99;			-- максимальный % рефита после которого отмена приведёт к исчезновению корабля
 
 
-
+--NIndustrialOrganisation
+--NIndustrialOrganisation
+--NIndustrialOrganisation
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0;    --через сколько дней можно будет изменить политику в кб
 
 --NIndustrialOrganisation
 --NIndustrialOrganisation
@@ -383,11 +391,19 @@ NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { --советн
 NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_SPY_SLOT_GAIN = 0;		--кол-во агентов за каждое занятое место в агенстве альянса
 	
 
+
+
+};
+--NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_BONUS = 0.25;      -- % бонуса который шарит каждый член альянса другому
+NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_SPY_SLOT_GAIN = 0;		--кол-во агентов за каждое занятое место в агенстве альянса
+	
+
 --NCharacter
 --NCharacter
 --NCharacter
-		"CHI_spymaster";
-		"head_of_the_nkvd_yagoda_initial";
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 200; -- крафтовый советник стоит дорого
+
+
 --NResistance
 --NResistance
 --NResistance

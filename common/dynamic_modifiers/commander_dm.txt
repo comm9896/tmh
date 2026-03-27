@@ -294,7 +294,7 @@ anti_japan_mood_AST = { #STATE MODIFIER
 		}
 	}
 	icon = GFX_modifiers_generic_resistance
-
+	resistance_growth = 2
 	local_factory_sabotage = 0.25
 	local_resources = -0.2
 	resistance_target = 1.2
@@ -314,6 +314,7 @@ anti_japan_mood_RAJ = { #STATE MODIFIER
 			OWNER = { original_tag = JAP } 
 		}
 	}
+	resistance_growth = 2
 	local_factory_sabotage = 0.25
 	local_resources = -0.2
 	resistance_target = 1.2
@@ -333,6 +334,7 @@ anti_japan_mood_PHI = { #STATE MODIFIER
 			OWNER = { original_tag = JAP } 
 		}
 	}
+	resistance_growth = 2
 	local_factory_sabotage = 0.25
 	local_resources = -0.2
 	resistance_target = 1.2
@@ -352,6 +354,7 @@ anti_japan_mood_INS = { #STATE MODIFIER
 			OWNER = { original_tag = JAP } 
 		}
 	}
+	resistance_growth = 2
 	local_factory_sabotage = 0.25
 	local_resources = -0.2
 	resistance_target = 1.2
@@ -365,7 +368,19 @@ foreigh_factory = { #STATE MODIFIER
 		remove_trigger = {
 		NOT = { 
 			OWNER = { original_tag = JAP } 
+				}
 	}
-		local_factories = -0.75
+	local_factories = -0.75
+}
+foreigh_resourses = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { original_tag = JAP } 
+				}
+	
 	}
+		local_resources = -1
 }

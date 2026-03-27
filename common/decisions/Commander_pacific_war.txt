@@ -208,7 +208,19 @@ Pacific_war = {
 		
 			timeout_effect = {
 				JAP = { set_country_flag = RAJ_has_capitulated}
-				RAJ = {every_core_state = { add_dynamic_modifier = { modifier = anti_japan_mood_RAJ} add_dynamic_modifier = { modifier = foreigh_factory}}}}
+
+				every_state = {
+							limit = {
+								is_core_of = RAJ
+							}
+							add_dynamic_modifier = {
+								modifier = anti_japan_mood_RAJ
+							}
+							add_dynamic_modifier = { 
+							modifier = foreigh_factory
+						}
+					}
+				}
 			}
 	JAP_AST_has_capitulated = {
 
@@ -237,7 +249,17 @@ Pacific_war = {
 		
 			timeout_effect = {
 				JAP = { set_country_flag = AST_has_capitulated}
-				AST = {every_core_state = { add_dynamic_modifier = { modifier = anti_japan_mood_AST} add_dynamic_modifier = { modifier = foreigh_factory }}}
+						every_state = {
+							limit = {
+								is_core_of = AST
+							}
+							add_dynamic_modifier = {
+								modifier = anti_japan_mood_AST
+							}
+							add_dynamic_modifier = { 
+							modifier = foreigh_factory
+						}
+					}
 			}
 		}
 	JAP_PHI_has_capitulated = {
@@ -267,7 +289,14 @@ Pacific_war = {
 		
 			timeout_effect = {
 				JAP = {set_country_flag = PHI_has_capitulated}
-				PHI = {every_core_state = {add_dynamic_modifier = { modifier = anti_japan_mood_PHI } add_dynamic_modifier = {  modifier = foreigh_factory }}}
+						every_state = {
+							limit = {
+								is_core_of = PHI
+							}
+							add_dynamic_modifier = {
+								modifier = anti_japan_mood_PHI
+							}
+					}
 			}
 		}
 	JAP_INS_has_capitulated = {
@@ -297,7 +326,17 @@ Pacific_war = {
 		
 			timeout_effect = {
 				JAP = {set_country_flag = INS_has_capitulated}
-				INS = {every_core_state = {add_dynamic_modifier = { modifier = anti_japan_mood_INS } add_dynamic_modifier = {  modifier = foreigh_factory }}}
+				every_state = {
+							limit = {
+								is_core_of = INS
+							}
+							add_dynamic_modifier = {
+								modifier = anti_japan_mood_INS
+							}
+						add_dynamic_modifier = {
+								modifier = foreigh_resourses
+							}
+					}
 			}
 
 		}

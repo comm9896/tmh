@@ -1596,7 +1596,7 @@ hidden_ideas = {
 				intelligence_agency_defense = 0.5
 				drift_defence_factor = 0.25
 				stability_factor = 0.05
-				root_out_resistance_effectiveness_factor = 0.35
+				root_out_resistance_effectiveness_factor = 0.25
 			}
 
 		}
@@ -1651,7 +1651,7 @@ hidden_ideas = {
 				intelligence_agency_defense = 1
 				drift_defence_factor = 0.5
 				stability_factor = 0.1
-				root_out_resistance_effectiveness_factor = 0.7
+				root_out_resistance_effectiveness_factor = 0.5
 			}
 
 		}
