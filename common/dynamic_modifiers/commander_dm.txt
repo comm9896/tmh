@@ -149,16 +149,16 @@ USA_air_dm = {
 }
 
 
-anti_japan_mood = {
+anti_japan_mood = {#STATE MODIFIER
 	icon = GFX_unplanned_offensive
 	enable = { always = yes }
 
 	custom_modifier_tooltip = JAP_resistance_growth_tt
-	custom_modifier_tooltip = JAP_resistance_target_tt
-	custom_modifier_tooltip = JAP_resistance_decay_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
 
-	resistance_growth = -0.70
-	resistance_target = 1.5
+	resistance_growth = -0.5
+	resistance_target = 0.6
 	resistance_decay = 0.2
 	#state_resources_factor = -0.33
 	#disable_strategic_redeployment = 1
@@ -168,4 +168,219 @@ anti_japan_mood = {
 	army_attack_factor = -0.85
 	army_speed_factor = -0.5
 	ground_attack_factor = -0.50
+}
+
+anti_japan_mood_birma = {#STATE MODIFIER
+	icon = GFX_modifiers_generic_resistance
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_raj_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	#resistance_growth = -0.70
+	resistance_target = 0.35
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+
+}
+
+anti_japan_mood_indochina = {#STATE MODIFIER
+	icon = GFX_modifiers_generic_resistance
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_france_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	#resistance_growth = -0.70
+	resistance_target = 0.15
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+}
+anti_japan_mood_USA_lend_lease = {#STATE MODIFIER
+	icon = GFX_modifiers_generic_resistance
+	enable = { always = yes }
+
+	custom_modifier_tooltip = JAP_resistance_USA_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	resistance_growth = 0.2
+	resistance_target = 1
+	#resistance_decay = 0.2
+	state_resources_factor = -0.1
+	disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+	local_factory_sabotage = 0.25
+}
+anti_japan_mood_Soviet_lend_lease = {#STATE MODIFIER
+	icon = GFX_modifiers_generic_resistance
+	enable = { always = yes }
+	availible = {
+		not = {has_war = sov}
+		}
+	custom_modifier_tooltip = JAP_resistance_Soviet_tt
+	#custom_modifier_tooltip = JAP_resistance_target_tt
+	#custom_modifier_tooltip = JAP_resistance_decay_tt
+
+	#resistance_growth = -0.70
+	resistance_target = 0.35
+	#resistance_decay = 0.2
+	#state_resources_factor = -0.33
+	#disable_strategic_redeployment = 1
+	#army_speed_factor_for_controller = -0.25
+	#local_non_core_supply_impact_factor = 0.15 
+}
+entrenchment_defense = {
+	icon = GFX_unplanned_offensive
+	enable = { always = yes } 
+	max_dig_in = 10
+	dig_in_speed_factor = 1
+	army_defence_factor = 0.2
+}
+KOR_resistance_against_colonial_rule_dm = { #STATE MODIFIER
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = KOR 
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+
+	icon = GFX_modifiers_generic_resistance
+
+	#local_factory_sabotage = 0.05
+	local_resources = -0.2
+	#local_factories = -0.05
+	#state_production_speed_buildings_factor = -0.1
+	resistance_target = 1
+	resistance_growth = -0.70
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+
+JAP_no_recruit = {#STATE MODIFIER
+	enable = { always = yes }
+
+	remove_trigger = {
+	}
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	recruitable_population_factor = -1
+
+}
+anti_japan_mood_AST = { #STATE MODIFIER
+	enable = { always = yes }
+		remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = AST 
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	icon = GFX_modifiers_generic_resistance
+	resistance_growth = 2
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+anti_japan_mood_RAJ = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = RAJ
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	resistance_growth = 2
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+anti_japan_mood_PHI = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+	remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = PHI
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	resistance_growth = 2
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+anti_japan_mood_INS = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = INS
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	resistance_growth = 2
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+foreigh_factory = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { original_tag = JAP } 
+				}
+	}
+	local_factories = -0.75
+}
+foreigh_resourses = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { original_tag = JAP } 
+				}
+	
+	}
+		local_resources = -1
 }

@@ -1,0 +1,21 @@
+Pacific_war = {
+
+
+	icon = GFX_decision_category_jap_southern_expansion
+
+	picture = GFX_decision_cat_generic_majapahit_empire
+
+	allowed = {
+			or = {
+				original_tag = ENG
+				is_in_faction_with = ENG
+				original_tag = JAP
+				is_in_faction_with = JAP
+				}
+	}
+	visible = {
+		JAP = {has_completed_focus = JAP_operation_Z }
+	}
+	priority = 999
+		visible_when_empty = yes
+}

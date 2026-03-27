@@ -1,0 +1,72 @@
+﻿
+add_namespace = CE
+
+# Выборы премьер министра
+country_event = {
+	id = CE.1
+	title = CE_JAP_war_premier.t
+	desc = CE_JAP_war_premier.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	immediate = {
+		
+	}
+	trigger = {
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_JAP_war_premier.a
+		complete_national_focus = JAP_tojos_premiership
+	}
+		option = {
+		name = CE_JAP_war_premier.b
+		complete_national_focus = JAP_yamamotos_premiership
+	}
+		option = {
+		name = CE_JAP_war_premier.c
+		complete_national_focus = JAP_the_crysanthemum_throne
+	}
+}
+
+news_event = {
+	id = CE.birma_road_close
+	title = CE.birma_road_close.t
+	desc = CE.birma_road_close.d
+	picture = GFX_news_event_japanese_parade
+
+	immediate = {
+		
+	}
+	trigger = {
+		has_global_flag = JAP_close_birma_road_flag
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = CE.birma_road_close.а
+	}
+
+}
+news_event = {
+	id = CE.birma_road_open
+	title = CE.birma_road_open.t
+	desc = CE.birma_road_open.d
+	picture = GFX_news_event_ENG_middle_eastern_conflict
+
+	immediate = {
+		
+	}
+	trigger = {
+		has_global_flag = JAP_open_birma_road_flag
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = CE.birma_road_open.a
+	}
+
+}

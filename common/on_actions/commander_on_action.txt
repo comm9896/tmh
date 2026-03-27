@@ -1,0 +1,93 @@
+	on_actions = {
+		on_declare_war = {
+			effect = {
+				if = {
+					limit = {AND = {tag = GER FROM = { tag = SOV }}}
+					JAP = { every_owned_state = { remove_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }}}										
+		}
+	}
+}
+		on_declare_war = {
+			effect = {
+				if = {
+					limit = {AND = {tag = JAP FROM = { tag = USA }}}
+					JAP = { 					
+					every_owned_state = { 
+						limit = { or = {state = 670 state = 747 state = 869 state = 289 state = 724}}
+						add_dynamic_modifier = {modifier = entrenchment_defense days = 270}
+										}
+						}										
+			}
+		}
+	}
+	on_declare_war = {
+			effect = {
+				if = {
+					limit = {AND = {tag = JAP FROM = { tag = USA } JAP = {has_completed_focus = JAP_operation_e_d_m }}}
+					JAP = { 					
+						every_state = {
+										limit = {
+											OR = {
+												state = 738
+												state = 667
+												state = 668
+												state = 979
+												state = 523
+												state = 737
+												state = 634
+												state = 669
+												state = 734
+												state = 635
+												state = 1024
+												state = 1023
+												state = 333
+												state = 334
+												state = 672
+												state = 335
+												state = 673
+												state = 626
+												state = 623
+												state = 1027
+												state = 327 
+												state = 624 
+												state = 625
+												state = 628
+												state = 1025
+												state = 1026
+												state = 627
+												state = 336
+											}
+										}
+										add_dynamic_modifier = {
+											modifier = JAP_operation_MO_military_offensive
+											days = 180
+											scope = JAP
+										}
+									}
+								}
+							}
+						}
+					}
+	on_declare_war = {
+			effect = {
+				if = {
+					limit = {AND = {tag = JAP FROM = { tag = USA } JAP = {has_completed_focus = JAP_operation_mo }}}
+					JAP = { 					
+						every_state = {
+										limit = {
+										is_on_continent = australia
+										}
+										add_dynamic_modifier = {
+											modifier = JAP_operation_MO_military_offensive
+											days = 180
+											scope = JAP
+										}
+									}
+								}
+							}
+						}
+					}
+
+
+				
+}

@@ -47,8 +47,7 @@ faction_template_generic_dominance = {
 	}
 
 	default_rules = {
-		joining_rule_same_continent_only
-		generate_wargoal_threat_reduction_20
+
 	}
 
 }
@@ -212,9 +211,6 @@ faction_template_regional_anti_democratic = {
 	}
 
 	default_rules = {
-		
-		
-		change_leader_rule_industry
 	}
 
 	

@@ -1,11 +1,12 @@
 ﻿l_russian:
 
-JAP_Prince_kitohito_go_out_tt:0 "НЕ подал в отставку."
+JAP_Prince_kitohito_go_out_tt:0 " подал в отставку."
 JAP_TRADE_TO_AXIS_JAP:0 "Торговое соглашение с Германией"
 JAP_TRADE_TO_JAP_AXIS:0 "Торговое соглашение с Японией"
 JAP_prepare_to_war:0 "Подготовка к войне"
 CAN_USA_TRADE:0 "Второе соглашение о торговли США и Канады"
 USA_CAN_TRADE:0 "Второе соглашение о торговли США и Канады"
+
 
 USA_allience_help:0 "Закон о помощи союзникам по антигитлеровской коалиции"
 
@@ -23,18 +24,23 @@ USA_allience_help:0 "Закон о помощи союзникам по анти
 
 	develop_CAN_aluminium_deposits:0 "Увеличение производства алюминия в §YЮжном Онтарио§!"
 	develop_CAN_steel_deposits:0 "Увеличение производства стали в §YЮжном Онтарио§!"
-
+	USA_CHI_help:0 "Обсудить срочную помощь §YКитаю§!"
 	USA_CAN_help:0 "Обсудить помощь §YКанаде§!"
 	USA_SOV_help:0 "Обсудить помощь §YСоветскому Союзу§!"
 	USA_AST_help:0 "Обсудить помощь §YАвстралии§!"
 	USA_SAF_help:0 "Обсудить помощь §YЮжной Африки§!"
 	USA_london_help:0 "Обсудить помощь §YВеликобритании§!"
+	USA_lend_lease_CHI:0" Срочная помощь §YКитаю§!"
+	USA_ledo_road_CHI:0 "Воздушные поставки по дороги Ледо"
 
 	CAN_help_tt:0 "Конгресс разрешит помощь §YКанаде§!"
 	SOV_help_tt:0 "Конгресс разрешит помощь §YСоветскому Союзу§!"
 	AST_help_tt:0 "Конгресс разрешит помощь §YАвстралии§!"
 	SAF_help_tt:0 "Конгресс разрешит помощь §YЮжной Африки§!"
 	london_help_tt:0 "Конгресс разрешит помощь §YВеликобритании§!"
+	china_help:0 "Конгресс разширил ленд-лиз на Китай"
+	china_help_tt:0 ""Конгресс разрешит срочную помощь §Китаю§!" "
+
 
 	help_disscussion:0 "Идёт обсуждение решения о помощи другой стране"
 	help_disscussion_tt:0 "Начнётся обсуждение помощи для другой страны"
@@ -88,10 +94,33 @@ JAP_modern_escorts_tt:0 "Создаст в производстве 50 почт�
 
 modifier_production_speed_energy_infrastructure_factor:0 "Скорость строительства §YУсиленной энергосети§!"
 
+
+JAP_CHI_anti_japan_mood:0 "Активизация партизанских действий"
+JAP_CHI_anti_japan_mood_Soviet_lend_lease:0 "Одобрение советских кредитов объединённому фронту"
+JAP_CHI_anti_japan_mood_indochina:0 "Соглашение о транзите через индокитайскую железную дорогу"
+JAP_CHI_anti_japan_mood_birma:0 "Китайско-британское соглашение"
+
+
 anti_japan_mood:0 "Партизанские действия Гоминьдана и Коммунистов"
-JAP_resistance_growth_tt:0 "Сопротивление зависит от поставок вооружения по §Yбирманской дороге§!, §Yтонкинскому шоссе§!, §Yтрассе "Z"§! из Советского Союза и §Yрасширенному Ленд-лизу США§! через Филиппины. "
+anti_japan_mood_Soviet_lend_lease:0 "Советская помощь§!"
+anti_japan_mood_birma:0 "Помощь союзников через §Yбирму§!"
+anti_japan_mood_indochina:0 "Помощь союзников через §Yиндокитай§!"
+anti_japan_mood_USA_lend_lease:0 "Расширенный ленд-лиз §YСША§!"
+anti_japan_mood_ledo_road:0 "Помощь союзников через §Yдорогу Ледо§!"
+JAP_no_recruit:0 "Сопротивление японской оккупации"
+
+
+JAP_anti_guarilla_operation_coastal:0 "Искоренить партизан в регионе [FROM.GetName]"
+JAP_anti_guarilla_operation:0 "Искоренить партизан в регионе [FROM.GetName]"
+JAP_resistance_growth_tt:0 "Сопротивление зависит от поставок вооружения по §Yбирманской дороге§!, §Yтонкинскому шоссе§!, §Yтрассе "Z"§! из Советского Союза и §Yрасширенному Ленд-лизу США§!. "
 JAP_resistance_target_tt:0 " "
 JAP_resistance_decay_tt:0 " "
+JAP_resistance_raj_tt:0 "Будет снято после захвата §Yбирмы§! "
+JAP_resistance_france_tt:0 "Будет снято после захвата §Yиндокитая§! "
+JAP_resistance_USA_tt:0 "Будет снято после захвата §Yфиллипин§!"
+JAP_resistance_Soviet_tt:0 "Будет снято после объявления §YГерманией§! войны §YСССР§!"
+
+
 
 JAP_first_transfer:0 "Шанхайское наступлени"
 JAP_second_transfer:0 "Уханское наступление"
@@ -101,11 +130,21 @@ JAP_fifth_transfer:0 "Этап "Ко-Го" "
 JAP_six_transfer:0 "Этап "Фу-Го" "
 JAP_annex_CHI:0 "Ити-го"
 
-JAP_operation_A:0 "Операция  Z"
-JAP_operation_Se:0 "Операция Шо-Го"
-JAP_operation_Ten:0 "Операция Кикусуи"
-JAP_operation_Ketsugo_sakusen:0 "Операция Кетсуго Сакусен"
+JAP_operation_A:0 "Операция  "Z" "
+	JAP_operation_A_desc:0 ""
+JAP_operation_Se:0 "Операция "Шо-Го" "
+	JAP_operation_Se_desc:0 " "
+	JAP_operation_Se_tt:0 " Модификатор будет добавлен во всех регионах океании и тихого океана."
+JAP_operation_Ten:0 "Операция "Кикусуи""
+	JAP_operation_Ten_desc:0 ""
+JAP_operation_Ketsugo_sakusen:0 "Операция "Кетсуго Сакусен" "
+	JAP_operation_Ketsugo_sakusen_desc:0" "
 
+JAP_exploit_raj:0 "Эксплуатация Индии"
+JAP_exploit_ast:0 "Эксплуатация Австралии"
+JAP_exploit_ins:0 "Эксплуатация ресурсов индонезии"
+
+CE_JAP_war_premiership_tt:0 "Выборы произойдут после решения о подготовке к войне с США"
 CE_JAP_war_premier.t:0 "Дзюсин Кайги"
 CE_JAP_war_premier.d:0 "Кабинет Коноэ не выдержал давления армейских военных связанного с политикой относительно США и подал в отставку. Теперь нам нужно выбрать нового премьер министра который сформирует новое правительство. "
 CE_JAP_war_premier.a:0 " Выбрать Хидэки Тодзё"
@@ -113,8 +152,45 @@ CE_JAP_war_premier.b:0 " Выбрать Исороку Ямамото"
 CE_JAP_war_premier.c:0 " Выбрать принца Нарухико"
 
 entrenchment_defense:0 "Подготовленные позиции"
+foreigh_factory:0 "Подорванное производство"
+foreigh_resourses:0 "Подорванные базы добычи ресурсов"
+
 
 JAP_operation_A_flag:0 "Фокус "Операция  Z" выполнен "
-JAP_operation_Se_flag:0 "Фокус "Операция Шо-Го" выполнен "
-JAP_operation_A_focus_days_tt: "В настоящее время: [?JAP_operation_A_flag:days|Y0]"
-JAP_operation_Se_focus_days_tt: "В настоящее время: [?JAP_operation_Se_flag:days|Y0]"
+JAP_operation_Se_flag:0 "Фокус "Операция "Шо-Го" выполнен "
+JAP_operation_A_focus_days_tt:0 "В настоящее время: "[?JAP_operation_A_flag:days|Y0] "
+JAP_operation_Se_focus_days_tt:0 "В настоящее время: "[?JAP_operation_Se_flag:days|Y0] "
+JAP_total_war:0 "Операция "Кетсуго Сакусен" "
+JAP_war_council_tt:0 "Усиляющие фокусы отмечены знаком Тории."
+JAP_war_council_bonus_tt:0 "При выборе фокуса добавляет бонусы связанные с этим типом бонуса фокусу §YВысший военный совет§! и блокирует соответствующего советника."
+JAP_war_council_char_flag:0 "выбран в высший военный совет."
+
+JAP_war_council_char_armor_flag:0 "выбран в высший военный совет."
+JAP_war_council_char_artillery_flag:0 "выбран в высший военный совет."
+JAP_war_council_char_infantry_flag:0 "выбран в высший военный совет."
+JAP_war_council_char_sortie_flag:0 "выбран в высший военный совет."
+JAP_war_council_balance_sortie_flag:0 "выбран в высший военный совет."
+JAP_war_council_battleship_sortie_flag:0 "выбран в высший военный совет."
+army_armor_defence_factor_tt:0 "Оборона бронетанковых дивизий "
+
+army_artillery_defence_factor_tt:0 "Оборона артилерии "
+army_infantry_defence_factor_tt:0 "Оборона пехотных дивизий "
+navy_capital_ship_attack_factor_tt:0 "Атака крупных кораблей "
+navy_capital_ship_defence_factor_tt:0 "Оборона крупных кораблей "
+
+JAP_mio_trait_military_arsenal_ketsugo_sakusen_trait:0 "Операция "Кетсуго Сакусен" "
+
+JAP_faction_bug:0 "Нажать если появились §R2 идеи ОДНОЙ§! фракции, §Rесли фракция от нажатия кнопки не повышается§! то сначала нажмите на кнопку понижения"
+
+JAP_operation_Z_tt:0 "В начале войны будет добавлен модификатор  §YПодготовленные позиции§! в пограничные с индией регионы"
+JAP_operation_e_d_m_tt:0 "В начале §Rвойны§! будет добавлен §Gмодификатор§! "
+JAP_operation_e_d_m_tt_2:0 " в следующие §Yрегионы§! "
+Pacific_war:0 "Война в азии"
+JAP_birma_remove:0 "Закрытие бирманской §Yдороги§!"
+JAP_birma_add:0 "Восстановление поставок по §Yбирманской дороги§!"
+JAP_USA_lend_lease_remove:0 "Прекращение ленд-лиза в §YКитай§!"
+JAP_USA_lend_lease_add:0 " Восстановление поставок по ленд-лизу в §YКитай§!"
+JAP_RAJ_has_capitulated:0 "Активизация партизанского движения в §YИндии§!"
+JAP_AST_has_capitulated:0 "Активизация партизанского движения в §YАвстралии§!"
+JAP_PHI_has_capitulated:0 "Активизация партизанского движения на §YФилиппинах§!"
+JAP_INS_has_capitulated:0 "Активизация партизанского движения в §YИндонезии§!"
