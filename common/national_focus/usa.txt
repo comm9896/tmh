@@ -181,9 +181,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_dynamic_modifier = { modifier = USA_plan_civilian_dynamic_modifier }
-			has_dynamic_modifier = { modifier = USA_selixoz_offensive }
-
 		}
 
 		cancel_if_invalid = no

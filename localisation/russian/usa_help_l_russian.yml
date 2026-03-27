@@ -74,13 +74,13 @@ USA_nonavyallies:0 "Восстановить баланс"
 JAP_gorilla_tactics:0 "Партизанские методы"
 USA_gorilla_tactics:0" Городские бои"
 JAP_operation_MO_military_offensive:0 "Операция"
-JAP_operation_Z:0 "Операция "Z" "
+JAP_operation_Z:0 "Гавайская операция"
  JAP_operation_Z_desc:0 "Пришло время привести наш план в действие. Мы нанесем удар в южном направлении и установим контроль над богатыми западными колониями. Благодаря быстрой и стремительной атаке мы лишим врага возможности сражаться еще до начала настоящего сражения. Тэннохэйка бандзай!"
 
 JAP_operation_e_d_m:0 "Операции "E D M" "
  JAP_operation_e_d_m_desc:0 "Наше верховное командование сочло невозможным высадиться и оккупировать [AST.GetNameRuAcc] и [NZL.GetNameRuAcc] и предложило лучшее решение в отношении этих враждебных стран. Мы должны занять менее защищенные острова вокруг них и отрезать их от союзников, чтобы тем самым постепенно лишить их желания воевать с нами."
 
-JAP_operation_mo:0 "Операция МО"
+JAP_operation_mo:0 "Операция "МО" "
  JAP_operation_mo_desc:0 "[AST.GetNameDef] в изоляции, теперь пришло время битвы за небеса над континентом. Если мы сумеем взять их под контроль, то, возможно, оккупация Океании перестанет казаться безумием."
 
 
@@ -88,6 +88,33 @@ JAP_modern_escorts_tt:0 "Создаст в производстве 50 почт�
 
 modifier_production_speed_energy_infrastructure_factor:0 "Скорость строительства §YУсиленной энергосети§!"
 
-JAP_resistance_growth_tt:0 " "
+anti_japan_mood:0 "Партизанские действия Гоминьдана и Коммунистов"
+JAP_resistance_growth_tt:0 "Сопротивление зависит от поставок вооружения по §Yбирманской дороге§!, §Yтонкинскому шоссе§!, §Yтрассе "Z"§! из Советского Союза и §Yрасширенному Ленд-лизу США§! через Филиппины. "
 JAP_resistance_target_tt:0 " "
 JAP_resistance_decay_tt:0 " "
+
+JAP_first_transfer:0 "Шанхайское наступлени"
+JAP_second_transfer:0 "Уханское наступление"
+JAP_third_transfer:0 "Операции в южном китае "
+JAP_fourth_transfer:0 "Операция "А" "
+JAP_fifth_transfer:0 "Этап "Ко-Го" "
+JAP_six_transfer:0 "Этап "Фу-Го" "
+JAP_annex_CHI:0 "Ити-го"
+
+JAP_operation_A:0 "Операция  Z"
+JAP_operation_Se:0 "Операция Шо-Го"
+JAP_operation_Ten:0 "Операция Кикусуи"
+JAP_operation_Ketsugo_sakusen:0 "Операция Кетсуго Сакусен"
+
+CE_JAP_war_premier.t:0 "Дзюсин Кайги"
+CE_JAP_war_premier.d:0 "Кабинет Коноэ не выдержал давления армейских военных связанного с политикой относительно США и подал в отставку. Теперь нам нужно выбрать нового премьер министра который сформирует новое правительство. "
+CE_JAP_war_premier.a:0 " Выбрать Хидэки Тодзё"
+CE_JAP_war_premier.b:0 " Выбрать Исороку Ямамото"
+CE_JAP_war_premier.c:0 " Выбрать принца Нарухико"
+
+entrenchment_defense:0 "Подготовленные позиции"
+
+JAP_operation_A_flag:0 "Фокус "Операция  Z" выполнен "
+JAP_operation_Se_flag:0 "Фокус "Операция Шо-Го" выполнен "
+JAP_operation_A_focus_days_tt: "В настоящее время: [?JAP_operation_A_flag:days|Y0]"
+JAP_operation_Se_focus_days_tt: "В настоящее время: [?JAP_operation_Se_flag:days|Y0]"
