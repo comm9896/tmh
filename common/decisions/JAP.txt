@@ -4695,7 +4695,79 @@ prospect_for_resources = {
 
 # The Kwantung Army
 JAP_kwantung_army_decisions = {
+		JAP_anti_guarilla_operation_coastal = { 
 	
+		icon = GFX_decision_jap_conquer_china
+
+		highlight_states = {
+			highlight_state_targets = {
+				is_coastal = yes
+				state = FROM     
+			}
+		}
+
+		visible = {	FROM = { is_fully_controlled_by = JAP  is_coastal = yes has_dynamic_modifier = { modifier = anti_japan_mood }}}
+		available = {
+			has_completed_focus = JAP_intensify_anti_guerilla_operation
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		state_target = yes
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+				
+				is_fully_controlled_by = JAP
+				has_dynamic_modifier = { modifier = anti_japan_mood }
+			}
+		}
+		cost = 25 
+		days_remove = 30
+
+		remove_Effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = anti_japan_mood }
+			}
+		}
+        
+	}
+	JAP_anti_guarilla_operation = { 
+	
+		icon = GFX_decision_jap_conquer_china
+
+		highlight_states = {
+			highlight_state_targets = {	
+				is_coastal = no
+				state = FROM     
+			}
+		}
+
+		visible = {	FROM = { is_fully_controlled_by = JAP  is_coastal = no has_dynamic_modifier = { modifier = anti_japan_mood }}}
+		available = {
+			has_completed_focus = JAP_intensify_anti_guerilla_operation
+		}
+		on_map_mode = map_only
+		fire_only_once = yes
+		state_target = yes
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = JAP
+				has_dynamic_modifier = { modifier = anti_japan_mood }
+			}
+		}
+		cost = 200
+		days_remove = 30
+
+		remove_Effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = anti_japan_mood }
+			}
+		}
+        
+	}
 	### MISSIONS ###
 	
 	# Kwantung Army Growing Impatient
@@ -4958,6 +5030,268 @@ JAP_kwantung_army_decisions = {
 
 JAP_first_transfer = {
 		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_second_transfer
+		JAP = {
+				transfer_state = 614
+				transfer_state = 1038
+				transfer_state = 613
+				transfer_state = 1034
+				transfer_state = 1035
+		}
+	}
+}
+JAP_second_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_third_transfer
+		JAP = {
+				transfer_state = 597
+				transfer_state = 598
+				transfer_state = 591
+				transfer_state = 1036
+				transfer_state = 743
+				transfer_state = 606
+		}
+	}
+}
+JAP_third_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_fourth_transfer
+		JAP = {
+				transfer_state = 1033
+				transfer_state = 594
+				transfer_state = 593
+				transfer_state = 595
+		}
+	}
+}
+JAP_fourth_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_fifth_transfer
+		JAP = {
+				transfer_state = 602
+				transfer_state = 599
+				transfer_state = 593
+				transfer_state = 595
+		}
+	}
+}
+JAP_fifth_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_six_transfer
+		JAP = {
+				transfer_state = 607
+				transfer_state = 596
+				transfer_state = 600
+				transfer_state = 749
+				transfer_state = 592
+		}
+	}
+}
+JAP_six_transfer = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+		activate_mission = JAP_annex_CHI
+		JAP = {
+				transfer_state = 615
+				transfer_state = 1043
+				transfer_state = 621
+				transfer_state = 603
+				transfer_state = 592
+		}
+	}
+}
+JAP_annex_CHI = {
+		priority = 100
+
+		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 33
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		
+		timeout_effect = {
+			CHI = {
+					transfer_units_fraction = {
+						target = JAP
+						stockpile_ratio = 0.3
+						army_ratio = 0.3
+					}
+				}
+			
+			annex_country = { target = CHI  }
+			all_owned_state = {
+			limit = {is_core_of = chi}
+			add_compliance = 200
+			}
+		}
+	}
+}
 
 		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
 
@@ -9842,6 +10176,968 @@ JAP_the_co_prosperity_sphere_decisions = {
 
 		}
 
+	}
+}
+	# Establish the State of Burma
+	JAP_establish_the_state_of_burma_decision = {
+	
+		priority = 50
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 993
+				state = 999
+				state = 998
+				state = 288
+				state = 640
+				state = 997
+				state = 996
+				state = 995
+				state = 994
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			NOT = { has_country_flag = JAP_created_state_of_burma_flag }
+		} 
+	
+		available = {
+			is_subject = no
+			OR = {
+				BRM = {
+					exists = no
+				}
+				BRM = {
+					is_subject = yes
+					has_war_with = ROOT
+					has_civil_war = no
+				}
+			}
+			BRM = {
+				any_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					BRM = {
+						exists = no
+					}
+				}
+				BRM = {
+					every_core_state = {
+						limit = {
+							is_controlled_by_ROOT_or_subject = yes
+						}
+						transfer_state_to = BRM
+					}
+				}
+				set_autonomy = {
+					target = BRM
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				BRM = {
+					country_event = {
+						id = SEA_japan_foreign_policy.59
+						hours = 2
+					}	
+				}
+			}
+			ELSE = {
+				BRM = {
+					country_event = {
+						id = SEA_japan_foreign_policy.60
+						hours = 1
+					}	
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = JAP_created_state_of_burma_flag 
+			}
+		}
+	
+	}
+
+	# Establish the Provisional Government of Free India
+	JAP_establish_the_provisional_government_of_free_india_decision = {
+	
+		priority = 45
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			NOT = { has_country_flag = JAP_created_provisional_government_of_free_india_flag }
+		} 
+	
+		available = {
+			is_subject = no
+			OR = {
+				RAJ = {
+					exists = no
+				}
+				RAJ = {
+					is_subject = yes
+					has_war_with = ROOT
+					has_civil_war = no
+				}
+			}
+			RAJ = {
+				any_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					RAJ = {
+						exists = no
+					}
+				}
+				RAJ = {
+					every_core_state = {
+						limit = {
+							is_controlled_by_ROOT_or_subject = yes
+						}
+						transfer_state_to = RAJ
+					}
+				}
+				set_autonomy = {
+					target = RAJ
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				RAJ = {
+					country_event = {
+						id = SEA_japan_foreign_policy.66
+						hours = 2
+					}	
+				}
+			}
+			ELSE = {
+				RAJ = {
+					country_event = {
+						id = SEA_japan_foreign_policy.67
+						hours = 1
+					}	
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = JAP_created_provisional_government_of_free_india_flag 
+			}
+		}
+	
+	}
+
+	# Establish the Second Philippine Republic
+	JAP_establish_the_second_philippine_republic_decision = {
+	
+		priority = 40
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 623
+				state = 1027
+				state = 327
+				state = 626
+				state = 624
+				state = 625
+				state = 628
+				state = 1026
+				state = 627
+				state = 1025
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			NOT = { has_country_flag = JAP_created_second_philippine_republic_flag }
+		} 
+	
+		available = {
+			is_subject = no
+			OR = {
+				PHI = {
+					exists = no
+				}
+				PHI = {
+					is_subject = yes
+					has_war_with = ROOT
+					has_civil_war = no
+				}
+			}
+			PHI = {
+				any_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					PHI = {
+						exists = no
+					}
+				}
+				PHI = {
+					every_core_state = {
+						limit = {
+							is_controlled_by_ROOT_or_subject = yes
+						}
+						transfer_state_to = PHI
+					}
+				}
+				set_autonomy = {
+					target = PHI
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				PHI = {
+					country_event = {
+						id = SEA_japan_foreign_policy.68
+						hours = 2
+					}	
+				}
+			}
+			ELSE = {
+				random_state = {
+					limit = {
+						is_core_of = PHI
+						is_controlled_by = ROOT
+					}
+					transfer_state_to = PSR
+					add_core_of = PSR
+				}
+				PHI = {
+					every_core_state = {
+						add_claim_by = PSR
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PHI
+						is_controlled_by = ROOT
+					}
+					set_state_controller_to = PSR
+				}
+
+				custom_effect_tooltip =  generic_skip_one_line_tt
+
+				set_autonomy = {
+					target = PSR
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+
+				IF = {
+					limit = {
+						PHI = {
+							NOT = {
+								has_country_leader = {
+									ruling_only = yes
+									character = PHI_jose_laurel
+								}	
+							}
+						}
+					}
+				    PHI = {  
+			            PHI_jose_laurel = {
+			                set_nationality = PSR
+			                # Transfers to breakaway
+			            }
+		        	}
+				}
+				ELSE = {
+				    PHI = {  
+			            PHI_artemio_ricarte = {
+			                set_nationality = PSR
+			                # Transfers to breakaway
+			            }
+		        	}
+				}
+
+				PSR = {
+					country_event = {
+						id = SEA_japan_foreign_policy.135
+						hours = 1
+					}
+				}
+
+				#PHI = {
+				#	country_event = {
+				#		id = SEA_japan_foreign_policy.69
+				#		hours = 1
+				#	}	
+				#}
+			}
+
+			hidden_effect = {
+				set_country_flag = JAP_created_second_philippine_republic_flag 
+			}
+		}
+	
+	}
+
+	JAP_establish_kingdoms_of_annam_and_cambodia_decision = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 671
+				state = 1017
+				state = 670
+				state = 741
+				state = 286
+			}
+		}
+
+		priority = 30
+
+		fire_only_once = yes
+
+		cost = 30
+
+		visible = {
+			has_completed_focus = JAP_sea_greater_east_asian_co_properity_sphere
+			VIN = {
+				exists = no
+			}
+			CAM = {
+				exists = no
+			}
+			NOT = {
+				has_country_flag = JAP_disposed_of_initial_indochina_land_disposal_plan_flag
+			}
+		}
+
+		available = {
+			
+			671 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			1017 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			670 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			741 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			286 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = kingdoms_of_annam_and_cambodia_tt
+
+			hidden_effect = {
+
+				# Vietnamese+ States
+				every_state = {
+					limit = {
+						OR = {
+							state = 671
+							state = 1017
+							state = 670
+						}
+					}
+					transfer_state_to = VIN
+					add_core_of = VIN
+				}
+
+				# Cambodian States
+				every_state = {
+					limit = {
+						OR = {
+							state = 741
+							state = 286
+						}
+					}
+					transfer_state_to = CAM
+					add_core_of = CAM
+				}
+
+				set_autonomy = {
+					target = VIN
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+
+				set_autonomy = {
+					target = CAM
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+
+				VIN = {
+					set_cosmetic_tag = VIN_kingdom_of_annam_tag
+					JAP_setup_faction_wide_aoe_effects_root_this = yes
+					set_capital = {
+						state = 1017
+						remember_old_capital = yes
+					}
+				}
+
+				CAM = {
+					set_cosmetic_tag = CAM_kingdom_of_cambodia_tag
+					JAP_setup_faction_wide_aoe_effects_root_this = yes
+				}
+
+				set_country_flag = JAP_went_with_initial_sea_land_disposition_plan_flag
+				
+			}
+		}
+
+		ai_will_do = {
+			base = 500 
+			modifier = {
+				add = -500
+				is_historical_focus_on = yes # This was the initial but discarded plan for division
+			}
+		}
+	}
+}
+	# Establish the State of Burma
+	JAP_establish_the_state_of_burma_decision = {
+	
+		priority = 50
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 993
+				state = 999
+				state = 998
+				state = 288
+				state = 640
+				state = 997
+				state = 996
+				state = 995
+				state = 994
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			NOT = { has_country_flag = JAP_created_state_of_burma_flag }
+		} 
+	
+		available = {
+			is_subject = no
+			OR = {
+				BRM = {
+					exists = no
+				}
+				BRM = {
+					is_subject = yes
+					has_war_with = ROOT
+					has_civil_war = no
+				}
+			}
+			BRM = {
+				any_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					BRM = {
+						exists = no
+					}
+				}
+				BRM = {
+					every_core_state = {
+						limit = {
+							is_controlled_by_ROOT_or_subject = yes
+						}
+						transfer_state_to = BRM
+					}
+				}
+				set_autonomy = {
+					target = BRM
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				BRM = {
+					country_event = {
+						id = SEA_japan_foreign_policy.59
+						hours = 2
+					}	
+				}
+			}
+			ELSE = {
+				BRM = {
+					country_event = {
+						id = SEA_japan_foreign_policy.60
+						hours = 1
+					}	
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = JAP_created_state_of_burma_flag 
+			}
+		}
+	
+	}
+
+	# Establish the Provisional Government of Free India
+	JAP_establish_the_provisional_government_of_free_india_decision = {
+	
+		priority = 45
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			NOT = { has_country_flag = JAP_created_provisional_government_of_free_india_flag }
+		} 
+	
+		available = {
+			is_subject = no
+			OR = {
+				RAJ = {
+					exists = no
+				}
+				RAJ = {
+					is_subject = yes
+					has_war_with = ROOT
+					has_civil_war = no
+				}
+			}
+			RAJ = {
+				any_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					RAJ = {
+						exists = no
+					}
+				}
+				RAJ = {
+					every_core_state = {
+						limit = {
+							is_controlled_by_ROOT_or_subject = yes
+						}
+						transfer_state_to = RAJ
+					}
+				}
+				set_autonomy = {
+					target = RAJ
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				RAJ = {
+					country_event = {
+						id = SEA_japan_foreign_policy.66
+						hours = 2
+					}	
+				}
+			}
+			ELSE = {
+				RAJ = {
+					country_event = {
+						id = SEA_japan_foreign_policy.67
+						hours = 1
+					}	
+				}
+			}
+
+			hidden_effect = {
+				set_country_flag = JAP_created_provisional_government_of_free_india_flag 
+			}
+		}
+	
+	}
+
+	# Establish the Second Philippine Republic
+	JAP_establish_the_second_philippine_republic_decision = {
+	
+		priority = 40
+	
+		icon = GFX_decision_generic_nationalism
+	
+		ai_will_do = {
+			base = 800
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 623
+				state = 1027
+				state = 327
+				state = 626
+				state = 624
+				state = 625
+				state = 628
+				state = 1026
+				state = 627
+				state = 1025
+			}
+		}
+	
+		allowed = {  
+			original_tag = JAP
+		}
+	
+		visible = { 
+			has_completed_focus = JAP_strike_the_southern_road
+			NOT = { has_country_flag = JAP_created_second_philippine_republic_flag }
+		} 
+	
+		available = {
+			is_subject = no
+			OR = {
+				PHI = {
+					exists = no
+				}
+				PHI = {
+					is_subject = yes
+					has_war_with = ROOT
+					has_civil_war = no
+				}
+			}
+			PHI = {
+				any_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	
+		cost = 25
+
+		complete_effect = {
+
+			IF = {
+				limit = {
+					PHI = {
+						exists = no
+					}
+				}
+				PHI = {
+					every_core_state = {
+						limit = {
+							is_controlled_by_ROOT_or_subject = yes
+						}
+						transfer_state_to = PHI
+					}
+				}
+				set_autonomy = {
+					target = PHI
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+				PHI = {
+					country_event = {
+						id = SEA_japan_foreign_policy.68
+						hours = 2
+					}	
+				}
+			}
+			ELSE = {
+				random_state = {
+					limit = {
+						is_core_of = PHI
+						is_controlled_by = ROOT
+					}
+					transfer_state_to = PSR
+					add_core_of = PSR
+				}
+				PHI = {
+					every_core_state = {
+						add_claim_by = PSR
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = PHI
+						is_controlled_by = ROOT
+					}
+					set_state_controller_to = PSR
+				}
+
+				custom_effect_tooltip =  generic_skip_one_line_tt
+
+				set_autonomy = {
+					target = PSR
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+
+				IF = {
+					limit = {
+						PHI = {
+							NOT = {
+								has_country_leader = {
+									ruling_only = yes
+									character = PHI_jose_laurel
+								}	
+							}
+						}
+					}
+				    PHI = {  
+			            PHI_jose_laurel = {
+			                set_nationality = PSR
+			                # Transfers to breakaway
+			            }
+		        	}
+				}
+				ELSE = {
+				    PHI = {  
+			            PHI_artemio_ricarte = {
+			                set_nationality = PSR
+			                # Transfers to breakaway
+			            }
+		        	}
+				}
+
+				PSR = {
+					country_event = {
+						id = SEA_japan_foreign_policy.135
+						hours = 1
+					}
+				}
+
+				#PHI = {
+				#	country_event = {
+				#		id = SEA_japan_foreign_policy.69
+				#		hours = 1
+				#	}	
+				#}
+			}
+
+			hidden_effect = {
+				set_country_flag = JAP_created_second_philippine_republic_flag 
+			}
+		}
+	
+	}
+
+	JAP_establish_kingdoms_of_annam_and_cambodia_decision = {
+
+		icon = GFX_decision_generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 671
+				state = 1017
+				state = 670
+				state = 741
+				state = 286
+			}
+		}
+
+		priority = 30
+
+		fire_only_once = yes
+
+		cost = 30
+
+		visible = {
+			has_completed_focus = JAP_sea_greater_east_asian_co_properity_sphere
+			VIN = {
+				exists = no
+			}
+			CAM = {
+				exists = no
+			}
+			NOT = {
+				has_country_flag = JAP_disposed_of_initial_indochina_land_disposal_plan_flag
+			}
+		}
+
+		available = {
+			
+			671 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			1017 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			670 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			741 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			286 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+
+		}
+
+		complete_effect = {
+
+			custom_effect_tooltip = kingdoms_of_annam_and_cambodia_tt
+
+			hidden_effect = {
+
+				# Vietnamese+ States
+				every_state = {
+					limit = {
+						OR = {
+							state = 671
+							state = 1017
+							state = 670
+						}
+					}
+					transfer_state_to = VIN
+					add_core_of = VIN
+				}
+
+				# Cambodian States
+				every_state = {
+					limit = {
+						OR = {
+							state = 741
+							state = 286
+						}
+					}
+					transfer_state_to = CAM
+					add_core_of = CAM
+				}
+
+				set_autonomy = {
+					target = VIN
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+
+				set_autonomy = {
+					target = CAM
+					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars = no
+					end_civil_wars = no
+				}
+
+				VIN = {
+					set_cosmetic_tag = VIN_kingdom_of_annam_tag
+					JAP_setup_faction_wide_aoe_effects_root_this = yes
+					set_capital = {
+						state = 1017
+						remember_old_capital = yes
+					}
+				}
+
+				CAM = {
+					set_cosmetic_tag = CAM_kingdom_of_cambodia_tag
+					JAP_setup_faction_wide_aoe_effects_root_this = yes
+				}
+
+				set_country_flag = JAP_went_with_initial_sea_land_disposition_plan_flag
+				
+			}
+		}
+
+		ai_will_do = {
+			base = 500 
+			modifier = {
+				add = -500
+				is_historical_focus_on = yes # This was the initial but discarded plan for division
+			}
+		}
 	}
 }
 # PROPAGANDA EFFORTS

@@ -3458,7 +3458,7 @@ characters = {
 			}
 
 			available = {
-				has_completed_focus = JAP_danganressha
+
 			}
 
 			traits = {

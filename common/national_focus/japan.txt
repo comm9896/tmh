@@ -122,10 +122,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			JAP_small_army_faction_gain = yes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			custom_effect_tooltip = JAP_sea_purge_the_kodoha_faction_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -275,8 +271,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			JAP_small_naval_faction_gain = yes
-			
 		}
 	}
 
@@ -1980,8 +1974,6 @@ focus_tree = {
 				
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			JAP_small_zaibatsu_faction_gain = yes
-
 		}
 	}
 
@@ -2646,8 +2638,6 @@ available  = { always = no }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			JAP_big_government_faction_gain = yes
-			
 		}
 	}
 
@@ -3099,8 +3089,6 @@ available  = { always = no }
 				custom_effect_tooltip = JAP_fund_propaganda_films_2_tt
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
-
-			JAP_small_naval_faction_gain = yes
 
 		}
 	}
@@ -3746,10 +3734,10 @@ available  = { always = no }
 			}			
 		}
 	}
-
+	
 	focus = {
-		id = JAP_strategic_offensives
-		icon = GFX_goal_generic_position_armies
+		id = JAP_intensify_anti_guerilla_operations
+		icon = GFX_focus_generic_attack_chinese_soviets
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
@@ -3757,28 +3745,18 @@ available  = { always = no }
 
 		prerequisite = { focus = JAP_reinforce_the_beijing_garrison }
 
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			any_enemy_country = {
-				is_literally_china = yes
-			}
-			NOT = {
-				has_idea = JAP_surprise_invasion_idea
-			}
+			not = {country_exists = CHI}
 		}
 
 		bypass = {
-			OR = {
-				owns_state = 613
-				CHI = {
-					is_subject_of = ROOT
-				}
-			}
+			
 		}
 
 		cancel_if_invalid = yes
@@ -3789,18 +3767,6 @@ available  = { always = no }
 
 		completion_reward = {
 
-			custom_effect_tooltip = JAP_strategic_offensives_tt
-
-			IF = {
-				limit = {
-					USA = {
-						has_war = no
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				USA = { add_war_support = 0.05 }
-			}
-				
 			
 		}
 	}
@@ -4053,8 +4019,6 @@ available  = { always = no }
 				JAP_create_patrick_heenan_operative = yes
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
-
-			JAP_small_naval_faction_gain = yes
 
 			hidden_effect = {
 				set_country_flag = JAP_nanshin_ron_started_flag # Used to temporarily block the Hokushin-ron focuses
@@ -6581,10 +6545,6 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		completion_reward = {
 
-			JAP_small_zaibatsu_faction_gain = yes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -6684,10 +6644,6 @@ annex_country = { target = VIN transfer_troops = yes }
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			JAP_small_zaibatsu_faction_gain = yes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -6775,10 +6731,6 @@ annex_country = { target = VIN transfer_troops = yes }
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_IMPERIAL_INFLUENCE FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-
-			JAP_small_zaibatsu_faction_gain = yes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
 				limit = {
@@ -6868,10 +6820,6 @@ annex_country = { target = VIN transfer_troops = yes }
 		search_filters = { FOCUS_FILTER_IMPERIAL_INFLUENCE FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-
-			JAP_small_zaibatsu_faction_gain = yes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
 				limit = {
@@ -9451,10 +9399,6 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			} 
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			JAP_small_army_faction_gain = yes
-
 		}
 
 	}
@@ -9687,8 +9631,6 @@ annex_country = { target = VIN transfer_troops = yes }
 				add_to_variable = { JAP_advanced_weapons_sp_tag_tank_speed_factor = 0.15 tooltip = sp_tag_tank_speed_factor_tt }
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
-					custom_effect_tooltip = generic_skip_one_line_tt
-			JAP_small_army_faction_gain = yes
 		}
 	
 
@@ -9827,8 +9769,6 @@ annex_country = { target = VIN transfer_troops = yes }
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			JAP_small_army_faction_gain = yes
 
 		}
 
@@ -10031,8 +9971,6 @@ annex_country = { target = VIN transfer_troops = yes }
 				JAP_add_or_modify_advanced_weapon_projects = yes
 				add_to_variable = { JAP_advanced_weapons_sp_tag_artillery_speed_factor = 0.15 tooltip = sp_tag_artillery_speed_factor_tt }
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			JAP_small_army_faction_gain = yes
 		}
 
 	}
@@ -10107,10 +10045,6 @@ annex_country = { target = VIN transfer_troops = yes }
 					path = { 4506 1588 12618 7832 }
 				}
 			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			JAP_small_army_faction_gain = yes
 
 		}
 
@@ -10439,9 +10373,6 @@ annex_country = { target = VIN transfer_troops = yes }
 					custom_effect_tooltip = generic_skip_one_line_tt
 				}
 			}
-
-			JAP_small_army_faction_gain = yes
-
 		}
 
 	}
@@ -11776,17 +11707,6 @@ annex_country = { target = VIN transfer_troops = yes }
 				advanced_ship_torpedo_launcher = 1
 				}	
 				custom_effect_tooltip = generic_skip_one_line_tt
-			JAP_small_naval_faction_gain = yes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-
-
-
-
-
-
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
 				limit = {
@@ -11911,8 +11831,6 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = JAP_toyoaki_horiuchi
-			custom_effect_tooltip = generic_skip_one_line_tt
-			JAP_small_naval_faction_gain = yes
 			
 		}
 
