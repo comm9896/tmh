@@ -6516,7 +6516,7 @@ hidden_ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				political_power_gain = 0.05
+				political_power_gain = 0.1
 				stability_factor = 0.05
 				war_support_factor = -0.1
 				conscription_factor = -0.05
@@ -6540,7 +6540,7 @@ hidden_ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				political_power_gain = 0.1
+				political_power_gain = 0.15
 				stability_factor = 0.1
 				war_support_factor = -0.15
 				conscription_factor = -0.075
@@ -6567,7 +6567,7 @@ hidden_ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				political_power_gain = 0.15
+				political_power_gain = 0.20
 				stability_factor = 0.15
 				war_support_factor = -0.2
 				conscription_factor = -0.1

@@ -1880,12 +1880,10 @@ JAP_kokura_arsenal_organization = {
 		
 	}
 		add_trait = {
-		token = JAP_mio_trait_military_arsenal_trait
-		name = JAP_mio_trait_military_arsenal_trait
+		token = JAP_mio_trait_military_arsenal_ketsugo_sakusen_trait
+		name = JAP_mio_trait_military_arsenal_ketsugo_sakusen_trait
 		icon = GFX_generic_mio_trait_icon_production_capacity
 		special_trait_background = yes
-
-		relative_position_id = generic_mio_trait_big_guns
 
 		position = { x = 0 y = 0 }  
 		
@@ -1894,20 +1892,18 @@ JAP_kokura_arsenal_organization = {
 		}
 
 		available = {
-			JAP = { has_completed_focus = JAP_JAP_operation_Ketsugo_sakusen}
+			JAP = { has_completed_focus = JAP_operation_Ketsugo_sakusen}
 			}
 		
 
 		on_complete = {
-			
 		}
 
 		organization_modifier = {
-		    
 		}
 
 		production_bonus = {
-			lack_of_resources = -1
+			production_resource_penalty_factor = -1
 		}
 
 		ai_will_do = {

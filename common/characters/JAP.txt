@@ -615,6 +615,13 @@ characters = {
 			slot = high_command
 			idea_token = yasuji_okamura
 			ledger = army
+			available = {
+			custom_effect_tooltip = JAP_war_council_char_infantry_tt
+				NOT = {
+					has_country_flag = JAP_war_council_char_infantry_tt
+				}
+				
+			}
 			allowed = {
 				original_tag = JAP
 			}
@@ -651,6 +658,13 @@ characters = {
 			slot = high_command
 			idea_token = yasuji_okamura
 			ledger = army
+			available = {
+			custom_effect_tooltip = JAP_war_council_char_tt
+				NOT = {
+					has_country_flag = JAP_war_council_char_infantry_tt
+				}
+				
+			}
 			allowed = {
 				original_tag = JAP
 			}
@@ -806,6 +820,13 @@ characters = {
 			slot = high_command
 			idea_token = kenkichi_ueda
 			ledger = army
+			available = {
+			custom_effect_tooltip = JAP_war_council_char_tt
+				NOT = {
+					has_country_flag = JAP_war_council_char_armor_tt
+				}
+				
+			}
 			allowed = {
 				original_tag = JAP
 			}
@@ -1429,6 +1450,13 @@ characters = {
 			slot = high_command
 			idea_token = soemu_toyoda
 			ledger = navy
+			available = {
+			custom_effect_tooltip = JAP_war_council_char_tt
+				NOT = { 
+					has_country_flag = JAP_war_council_battleship_sortie_tt
+				}
+				
+			}
 			allowed = {
 				original_tag = JAP
 			}
@@ -1620,12 +1648,12 @@ characters = {
 				}
 			}
 			available = {
-			and = {
-			date < 1940.10.01
-			NOT = {
-			has_country_flag =  JAP_Prince_kitohito_go_out_tt
-			}
-			}
+				and = {
+					date < 1940.10.01
+						NOT = {
+								has_country_flag =  JAP_Prince_kitohito_go_out_tt
+								}
+								}
 			custom_effect_tooltip = JAP_Prince_kitohito_go_out_tt
 			}
 			traits = {
@@ -2104,8 +2132,12 @@ characters = {
 			slot = high_command
 			idea_token = chuichi_nagumo
 			ledger = air
-			allowed = {
-				original_tag = JAP
+			available = {
+			custom_effect_tooltip = JAP_war_council_char_tt
+				NOT = {
+					has_country_flag = JAP_war_council_char_sortie_tt
+				}
+				
 			}
 			traits = {
 				navy_carrier_2
@@ -3497,9 +3529,11 @@ characters = {
 			}
 
 			available = {
+			custom_effect_tooltip = JAP_war_council_char_tt
 				NOT = {
-					has_country_flag = JAP_jotaro_watanabe_was_killed
+					has_country_flag = JAP_war_council_char_artillery_tt
 				}
+				
 			}
 
 			traits = {

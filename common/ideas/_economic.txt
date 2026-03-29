@@ -871,30 +871,7 @@ ELSE_IF = {
 			}
 			cancel_if_invalid = no
 		}
-				JAP_total_war = { 
 
-			picture = GFX_idea_totaler_krieg_economy
-
-			visible = {
-				original_tag = JAP
-			}
-
-			available = {
-				has_completed_focus = JAP_operation_Ketsugo_sakusen
-			}
-
-			cost = 150
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_expected_value = 0.05
-				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				factory_energy_consumption = 0.45
-			}
-			cancel_if_invalid = no
-		}
 	}
 
 	trade_laws = {

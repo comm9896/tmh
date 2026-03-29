@@ -137,10 +137,10 @@ set_variable = { USA_airforce_air_accidents_factor = 0 }
 #set_variable = { USA_airforce_navy_carrier_air_attack_factor = 0 }
 #set_variable = { USA_airforce_navy_carrier_air_targetting_factor = 0 }
 
-USA = {
-	country_event = { id = usa.50 days = 2 }
-	country_event = { id = usa.51 days = 2 }
-}
+#USA = {
+#	country_event = { id = usa.50 days = 2 }
+#	country_event = { id = usa.51 days = 2 }
+#}
 
 # Starting tech
 set_technology = {

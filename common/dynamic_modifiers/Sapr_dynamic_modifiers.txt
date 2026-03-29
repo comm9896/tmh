@@ -96,6 +96,17 @@ Sapr_defense_Moscow = { #STATE MODIFIER Отстоим москву!
 
 }
 
+Sapr_GER_plan_na_42 = { #STATE MODIFIER план блау
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.1
+	army_attack_factor = 0.1
+	breakthrough_factor = 0.1
+
+}
+
 Sapr_defense_warshava = { #STATE MODIFIER Отстоим москву!
 	enable = { always = yes }
 

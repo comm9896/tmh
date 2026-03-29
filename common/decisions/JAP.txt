@@ -1634,6 +1634,11 @@ foreign_politics = {
 		}
 
 		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = KOR_resistance_against_colonial_rule_dm
+				}	
+			}
 			#hidden_effect = {
 			#	clr_country_flag = JAP_coring_KOR_state_in_progress_flag
 			#}
@@ -1664,6 +1669,7 @@ foreign_politics = {
 		}
 
 		cancel_effect = {
+		remove KOR_resistance_against_colonial_rule_dm
 			#hidden_effect = {
 			#	clr_country_flag = JAP_coring_KOR_state_in_progress_flag
 			#}
@@ -4492,11 +4498,12 @@ prospect_for_resources = {
 		available = {
 			597 = { is_controlled_by_ROOT_or_subject = yes }
 			has_tech = excavation3
+			has_completed_focus = JAP_develop_the_chinese_resources		
 		}
 
 		visible = {
 
-			#has_completed_focus = JAP_develop_the_chinese_resources			
+				
 			597 = {
 				NOT = {
 					has_state_flag = shandong_aluminium_developed
@@ -4549,11 +4556,12 @@ prospect_for_resources = {
 		available = {
 			621 = { is_controlled_by_ROOT_or_subject = yes }
 			has_tech = excavation2
+			has_completed_focus = JAP_develop_the_chinese_resources
 		}
 
 		visible = {
 
-			#has_completed_focus = JAP_develop_the_chinese_resources
+			
 			621 = {
 				NOT = {
 					has_state_flag = suiyuan_steel_developed
@@ -4600,11 +4608,12 @@ prospect_for_resources = {
 		available = {
 			325 = { is_controlled_by_ROOT_or_subject = yes }
 			has_tech = excavation3
+			has_completed_focus = JAP_develop_the_chinese_resources
 		}
 
 		visible = {
 
-			#has_completed_focus = JAP_develop_the_chinese_resources
+			
 			325 = {
 				NOT = {
 					has_state_flag = yunnan_aluminium_developed
@@ -4651,11 +4660,12 @@ prospect_for_resources = {
 		available = {
 			605 = { is_controlled_by_ROOT_or_subject = yes }
 			has_tech = excavation3
+			has_completed_focus = JAP_develop_the_chinese_resources
 		}
 
 		visible = {
 
-			#has_completed_focus = JAP_develop_the_chinese_resources
+			
 			605 = {
 				NOT = {
 					has_state_flag = sichuan_aluminium_developed
@@ -4708,7 +4718,8 @@ JAP_kwantung_army_decisions = {
 
 		visible = {	FROM = { is_fully_controlled_by = JAP  is_coastal = yes has_dynamic_modifier = { modifier = anti_japan_mood }}}
 		available = {
-			has_completed_focus = JAP_intensify_anti_guerilla_operation
+			has_completed_focus = JAP_intensify_anti_guerilla_operations
+			has_political_power >24
 		}
 		on_map_mode = map_only
 		fire_only_once = yes
@@ -4728,6 +4739,10 @@ JAP_kwantung_army_decisions = {
 		remove_Effect = {
 			FROM = {
 				remove_dynamic_modifier = { modifier = anti_japan_mood }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_birma  }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_indochina }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_USA_lend_lease }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }
 			}
 		}
         
@@ -4745,7 +4760,8 @@ JAP_kwantung_army_decisions = {
 
 		visible = {	FROM = { is_fully_controlled_by = JAP  is_coastal = no has_dynamic_modifier = { modifier = anti_japan_mood }}}
 		available = {
-			has_completed_focus = JAP_intensify_anti_guerilla_operation
+			has_completed_focus = JAP_intensify_anti_guerilla_operations
+			has_political_power >199
 		}
 		on_map_mode = map_only
 		fire_only_once = yes
@@ -4764,6 +4780,10 @@ JAP_kwantung_army_decisions = {
 		remove_Effect = {
 			FROM = {
 				remove_dynamic_modifier = { modifier = anti_japan_mood }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_birma  }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_indochina }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_USA_lend_lease }
+				remove_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }
 			}
 		}
         
@@ -5037,7 +5057,7 @@ JAP_first_transfer = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 33
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -5074,7 +5094,7 @@ JAP_second_transfer = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 30
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -5131,6 +5151,12 @@ JAP_third_transfer = {
 		
 		timeout_effect = {
 		activate_mission = JAP_fourth_transfer
+			CHI = {
+				every_core_state = {
+					limit = {is_fully_controlled_by = CHI}
+					add_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }
+					}
+				}
 		JAP = {
 				transfer_state = 1033
 				transfer_state = 594
@@ -5148,7 +5174,7 @@ JAP_fourth_transfer = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 30
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -5184,7 +5210,7 @@ JAP_fifth_transfer = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 33
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -5203,6 +5229,12 @@ JAP_fifth_transfer = {
 		
 		timeout_effect = {
 		activate_mission = JAP_six_transfer
+			CHI = {
+				every_core_state = {
+					limit = {is_fully_controlled_by = CHI}
+					add_dynamic_modifier = { modifier = anti_japan_mood_indochina }
+					}
+				}
 		JAP = {
 				transfer_state = 607
 				transfer_state = 596
@@ -5221,7 +5253,7 @@ JAP_six_transfer = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 33
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -5258,7 +5290,7 @@ JAP_annex_CHI = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 33
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -5273,10 +5305,13 @@ JAP_annex_CHI = {
 		cancel_if_not_visible = yes
 
 		is_good = no
-
 		
 		timeout_effect = {
 			CHI = {
+				every_core_state = {
+					limit = {is_fully_controlled_by = CHI}
+					add_dynamic_modifier = { modifier = anti_japan_mood_birma }
+					}
 					transfer_units_fraction = {
 						target = JAP
 						stockpile_ratio = 0.3
