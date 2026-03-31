@@ -52,10 +52,41 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
+		instantTextBoxType = {
+			name = "energy_infrastructure_building_speed"   
+			position = { x = 540 y = -68 }
+			font = "cg_16b"              
+			text = "[?modifier_production_speed_energy_infrastructure_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "synthetic_refinery_speed"   
+			position = { x = 396 y = -28 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_synthetic_refinery_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
 		
 		instantTextBoxType = {
+			name = "fuel_silo_speed"   
+			position = { x = 442 y = -28  } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
 			name = "radar_station_speed"   
-			position = { x = 442 y = -28 } 
+			position = { x = 496 y = -28 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_radar_station_factor|%0=+]"	   
 			maxWidth = 50  
@@ -97,27 +128,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		instantTextBoxType = {
-			name = "synthetic_refinery_speed"   
-			position = { x = 540 y = -68 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_synthetic_refinery_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-		
-		instantTextBoxType = {
-			name = "fuel_silo_speed"   
-			position = { x = 396 y = -28  } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
 
 		instantTextBoxType = {
 			name = "rocket_site_speed"   
@@ -129,12 +139,31 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
-		
+		instantTextBoxType = {
+			name = "mil_to_civ_factory_conversation_speed"   
+			position = { x = 420 y = 110 } 
+			font = "cg_16b"              
+			text = "[?modifier@CONVERSION_COST_CIV_TO_MIL_FACTOR|%0=-]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "civ_to_mil_conversation_speed"  
+			position = { x = 370 y = 110 } 
+			font = "cg_16b"              
+			text = "[?modifier@CONVERSION_COST_MIL_TO_CIV_FACTOR|%0=-]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
 		instantTextBoxType = {
 			name = "supply_node_speed"   
 			position = { x = 396 y = 205 } 
 			font = "cg_16b"              
-			text = "[?modifier@production_speed_supply_node_factor|%0=+]"	   
+			text = "[?modifier@production_speed_supply_node_factor|%0=+]"	  
 			maxWidth = 50  
 			maxHeight = 20
 			format = right
@@ -184,7 +213,26 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
-
+		instantTextBoxType = {
+			name = "production_speed_naval_supply_hub_speed"   
+			position = { x = 442 y = 250 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_naval_supply_hub_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "production_speed_naval_headquarters_factor_speed"   
+			position = { x = 488 y = 250 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_naval_headquarters_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
 		instantTextBoxType = {
 			name = "naval_facility_speed"   
 			position = { x = 396 y = 345 } 
