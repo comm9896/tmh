@@ -12,5 +12,8 @@ spriteTypes = {
 		name = "GFX_portrait_ITA_arturo_riccardi"
 		texturefile = "gfx/leaders/Admiraal_Arturo_Riccardi.dds"
 	}	
-
+		SpriteType = { 
+		name = "GFX_portrait_Naruhiko_Higashikuni"
+		texturefile = "gfx/leaders/Naruhiko_Higashikuni.dds"
+	}	
 }
