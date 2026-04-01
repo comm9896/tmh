@@ -51,7 +51,49 @@ characters = {
 
 		}
 	}
+	JAP_kuniaki_koiso = {
+		name = JAP_kuniaki_koiso
 
+		portraits = {
+			army = {
+				large = GFX_portrait_JAP_kuniaki_koiso
+				small = GFX_portrait_JAP_kuniaki_koiso_small
+			}
+		}
+
+		corps_commander = {
+			traits = { old_guard politically_connected JAP_samurai_lineage }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 0
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = JAP_kuniaki_koiso
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			visible = {
+				has_completed_focus = JAP_contact_former_sakurakai_members
+			}
+			available = {
+				has_completed_focus = JAP_contact_former_sakurakai_members
+			}
+			traits = {
+				army_chief_planning_1
+			}
+			cost =  50
+			ai_will_do = {
+				base = 1
+			}
+		}
+
+	}
 	# Empress Nagako
 	JAP_empress_nagako = {
 		name = JAP_empress_nagako
@@ -88,6 +130,19 @@ characters = {
 		}
 
 
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = JAP_emperor_yasuhito
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+
+				traits = {
+					army_chief_entrenchment_2
+				}
+			}
 		field_marshal={
 			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader }
 			skill=6
@@ -616,9 +671,8 @@ characters = {
 			idea_token = yasuji_okamura
 			ledger = army
 			available = {
-			custom_effect_tooltip = JAP_war_council_char_infantry_tt
 				NOT = {
-					has_country_flag = JAP_war_council_char_infantry_tt
+					has_country_flag = JAP_war_council_char_infantry_flag
 				}
 				
 			}
@@ -659,9 +713,8 @@ characters = {
 			idea_token = yasuji_okamura
 			ledger = army
 			available = {
-			custom_effect_tooltip = JAP_war_council_char_tt
 				NOT = {
-					has_country_flag = JAP_war_council_char_infantry_tt
+					has_country_flag = JAP_war_council_char_infantry_flag
 				}
 				
 			}
@@ -697,7 +750,19 @@ characters = {
 				small = GFX_portrait_JAP_toshizo_nishio_small
 			}
 		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = JAP_toshizo_nishio
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
 
+				traits = {
+					army_chief_reform_3
+				}
+			}
 		field_marshal={
 			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader }
 			skill=6
@@ -731,7 +796,22 @@ characters = {
 			logistics_skill=8
 			legacy_id=0
 		}
-
+		advisor = {
+		cost = 100
+			slot = army_chief
+			idea_token = JAP_seishiro_itagaki
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost =  50
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 	# Takashi Sakai
@@ -754,6 +834,22 @@ characters = {
 			logistics_skill=9
 			legacy_id=0
 		}
+		advisor = {
+		cost = 100
+			slot = army_chief
+			idea_token = JAP_takashi_sakai
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost =  50
+			ai_will_do = {
+				base = 1
+			}
+		}
 
 	}
 
@@ -769,6 +865,7 @@ characters = {
 		}
 
 		advisor = {
+
 			slot = air_chief
 			idea_token = kenji_doihara
 			allowed = {
@@ -821,9 +918,8 @@ characters = {
 			idea_token = kenkichi_ueda
 			ledger = army
 			available = {
-			custom_effect_tooltip = JAP_war_council_char_tt
 				NOT = {
-					has_country_flag = JAP_war_council_char_armor_tt
+					has_country_flag = JAP_war_council_char_armor_flag
 				}
 				
 			}
@@ -871,13 +967,7 @@ characters = {
 			}
 			ai_will_do = {
 				base = 3.000
-			}
-			on_add = {
-				JAP_small_army_faction_gain = yes
-			}
-			on_remove = {
-				JAP_small_army_faction_loss = yes
-			}			
+			}		
 			
 			modifier = {
 
@@ -942,7 +1032,22 @@ characters = {
 			logistics_skill=9
 			legacy_id = 0
 		}
-
+		advisor = {
+		cost = 100
+			slot = army_chief
+			idea_token = JAP_otozo_yamada
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+		
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 	# Hatazō Adachi
@@ -965,7 +1070,21 @@ characters = {
 			logistics_skill=6
 			legacy_id=0
 		}
-
+		advisor = {
+			slot = army_chief
+			idea_token = JAP_hatazo_adachi
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+		cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 	# Iwane Matsui
@@ -988,7 +1107,21 @@ characters = {
 			logistics_skill=6
 			legacy_id = 0
 		}
-
+		advisor = {
+			slot = army_chief
+			idea_token = JAP_hatazo_adachi
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_morale_2
+			}
+		cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 
@@ -1019,7 +1152,21 @@ characters = {
 			logistics_skill=9
 			legacy_id=0
 		}
-
+		advisor = {
+			slot = high_command
+			idea_token = JAP_keisuke_fujie
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 	# Kiichirō Higuchi
@@ -1042,7 +1189,21 @@ characters = {
 			logistics_skill=9
 			legacy_id = 0
 		}
-
+		advisor = {
+			slot = high_command
+			idea_token = JAP_kiichiro_higuchi
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_entrenchment_2
+			}
+		cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 	# Masaharu Homma
@@ -1065,7 +1226,21 @@ characters = {
 			logistics_skill=9
 			legacy_id = 0
 		}
-
+		advisor = {
+			slot = high_command
+			idea_token = JAP_kiichiro_higuchi
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				navy_amphibious_assault_2
+			}
+		cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
 	}
 
 
@@ -1451,9 +1626,8 @@ characters = {
 			idea_token = soemu_toyoda
 			ledger = navy
 			available = {
-			custom_effect_tooltip = JAP_war_council_char_tt
 				NOT = { 
-					has_country_flag = JAP_war_council_battleship_sortie_tt
+					has_country_flag = JAP_war_council_battleship_sortie_flag
 				}
 				
 			}
@@ -2133,9 +2307,8 @@ characters = {
 			idea_token = chuichi_nagumo
 			ledger = air
 			available = {
-			custom_effect_tooltip = JAP_war_council_char_tt
 				NOT = {
-					has_country_flag = JAP_war_council_char_sortie_tt
+					has_country_flag = JAP_war_council_char_sortie_flag
 				}
 				
 			}
@@ -3529,9 +3702,8 @@ characters = {
 			}
 
 			available = {
-			custom_effect_tooltip = JAP_war_council_char_tt
 				NOT = {
-					has_country_flag = JAP_war_council_char_artillery_tt
+					has_country_flag = JAP_war_council_char_artillery_flag
 				}
 				
 			}
