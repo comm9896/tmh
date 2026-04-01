@@ -536,9 +536,9 @@ set_convoys = 1200
 # We should start with a lot of trains
 add_equipment_to_stockpile = { 
 	type = train_equipment_1
-			amount = 400
+			amount = 150
 			producer = JAP
-						}
+				}
 
 ### SETUP PUPPETS ###
 
@@ -587,7 +587,7 @@ recruit_character = JAP_keisuke_fujie
 recruit_character = JAP_kiichiro_higuchi
 recruit_character = JAP_masaharu_homma
 recruit_character = JAP_hitoshi_imamura
-
+recruit_character = JAP_kuniaki_koiso
 recruit_character = JAP_isoroku_yamamoto
 recruit_character = JAP_mineichi_koga
 recruit_character = JAP_kiyoshi_hasegawa

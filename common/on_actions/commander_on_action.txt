@@ -1,0 +1,38 @@
+	on_actions = {
+		on_declare_war = {
+			effect = {
+				if = {
+					limit = {AND = {tag = GER FROM = { tag = SOV }}}
+					JAP = { every_owned_state = { remove_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }}}										
+		}
+	}
+}
+	# Закрытие бирманской дороги
+    on_state_control_changed = {
+        effect = {
+				if = {
+				 limit = { tag = JAP
+							FROM = { or = {tag = ENG is_in_faction_with = ENG}} 
+							FROM.FROM = {state = 640}
+						}
+					JAP = { every_owned_state = { remove_dynamic_modifier = { modifier = anti_japan_mood_birma }}}	
+					set_global_flag = JAP_close_birma_road_flag
+					clr_global_flag = JAP_open_birma_road_flag			
+			}
+		 }
+	 }
+	# Открытие бирманской дороги
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = { or = { tag = ENG is_in_faction_with = ENG	}		
+							FROM = { tag = JAP}
+							FROM.FROM = {state = 640}
+						}
+				JAP = { every_owned_state = { limit = {is_core_of = CHI} add_dynamic_modifier = { modifier = anti_japan_mood_birma }}}	
+				set_global_flag = JAP_open_birma_road_flag
+				clr_global_flag = JAP_close_birma_road_flag
+			}
+		}
+	}
+}

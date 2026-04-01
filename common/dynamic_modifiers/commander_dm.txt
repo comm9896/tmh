@@ -174,12 +174,12 @@ anti_japan_mood_birma = {#STATE MODIFIER
 	icon = GFX_unplanned_offensive
 	enable = { always = yes }
 
-	custom_modifier_tooltip = JAP_resistance_growth_tt
+	custom_modifier_tooltip = JAP_resistance_raj_tt
 	#custom_modifier_tooltip = JAP_resistance_target_tt
 	#custom_modifier_tooltip = JAP_resistance_decay_tt
 
 	#resistance_growth = -0.70
-	resistance_target = 0.15
+	resistance_target = 0.35
 	#resistance_decay = 0.2
 	#state_resources_factor = -0.33
 	#disable_strategic_redeployment = 1
@@ -192,7 +192,7 @@ anti_japan_mood_indochina = {#STATE MODIFIER
 	icon = GFX_modifiers_generic_resistance
 	enable = { always = yes }
 
-	custom_modifier_tooltip = JAP_resistance_growth_tt
+	custom_modifier_tooltip = JAP_resistance_france_tt
 	#custom_modifier_tooltip = JAP_resistance_target_tt
 	#custom_modifier_tooltip = JAP_resistance_decay_tt
 
@@ -208,17 +208,18 @@ anti_japan_mood_USA_lend_lease = {#STATE MODIFIER
 	icon = GFX_modifiers_generic_resistance
 	enable = { always = yes }
 
-	custom_modifier_tooltip = JAP_resistance_growth_tt
+	custom_modifier_tooltip = JAP_resistance_USA_tt
 	#custom_modifier_tooltip = JAP_resistance_target_tt
 	#custom_modifier_tooltip = JAP_resistance_decay_tt
 
 	resistance_growth = 0.2
-	resistance_target = 0.5
+	resistance_target = 1
 	#resistance_decay = 0.2
-	#state_resources_factor = -0.33
+	state_resources_factor = -0.1
 	disable_strategic_redeployment = 1
 	#army_speed_factor_for_controller = -0.25
 	#local_non_core_supply_impact_factor = 0.15 
+	local_factory_sabotage = 0.25
 }
 anti_japan_mood_Soviet_lend_lease = {#STATE MODIFIER
 	icon = GFX_modifiers_generic_resistance
@@ -226,12 +227,12 @@ anti_japan_mood_Soviet_lend_lease = {#STATE MODIFIER
 	availible = {
 		not = {has_war = sov}
 		}
-	custom_modifier_tooltip = JAP_resistance_growth_tt
+	custom_modifier_tooltip = JAP_resistance_Soviet_tt
 	#custom_modifier_tooltip = JAP_resistance_target_tt
 	#custom_modifier_tooltip = JAP_resistance_decay_tt
 
 	#resistance_growth = -0.70
-	resistance_target = 0.5
+	resistance_target = 0.35
 	#resistance_decay = 0.2
 	#state_resources_factor = -0.33
 	#disable_strategic_redeployment = 1
@@ -261,10 +262,23 @@ KOR_resistance_against_colonial_rule_dm = { #STATE MODIFIER
 	icon = GFX_modifiers_generic_resistance
 
 	#local_factory_sabotage = 0.05
-	local_resources = -0.05
-	local_factories = -0.05
-	state_production_speed_buildings_factor = -0.1
+	local_resources = -0.2
+	#local_factories = -0.05
+	#state_production_speed_buildings_factor = -0.1
 	resistance_target = 1
 	resistance_growth = -0.70
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+
+JAP_no_recruit = {#STATE MODIFIER
+	enable = { always = yes }
+
+	remove_trigger = {
+	}
+
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	recruitable_population_factor = -1
 
 }

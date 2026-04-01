@@ -1,3 +1,6 @@
+--NGame
+--NGame
+--NGame
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.34, 0.20, 0.075, 0.0 }; -- чем меньше число, тем быстрее (левый символ - 1 скорость, правый 5 скорость)
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100;
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30;
@@ -6,11 +9,12 @@ NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14 -- WAS 60 	| less messages lying around
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3 -- Default days before a mission is removed from the interface after having failed or completed
 
 
+
+--NMilitary
+--NMilitary
+--NMilitary
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5	-- анлок 5 ячейки в столбце шаблона дивизии 
 	
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- Минемальный % фабрик уходящих в ТНП 
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	-- Можно развернуть милиардную армию
-
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 ;
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0 ;
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0;
@@ -39,22 +43,41 @@ NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1.0; -- ген�
 
 NDefines.NMilitary.FUEL_PENALTY_START_RATIO_BUFFER = 0.0;		-- больше не какого мемного штрафа за нехватку топляка
 
-NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05;  				-- 0.01 ванила, в идеале, 0.01 дает 1 припас.
-NDefines.NCountry.AIR_SUPPLY_DROP_EXPIRATION_HOURS = 48; 			-- интервал между дропом суплая, 168 ванила
-NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.30;	-- Старые добрые колабы 30%
-
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.01; -- урон касов по прочке 0.05 ванила
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.02; -- бафф касых по дамагу по организации
 
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.60;  -- снижаем потери эквипы от прочки ванила 0.7
+
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02;              --  шанс попадания ПВО по штурму
+
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.45;    -- Бонус от штурмов во время боя
+
+
+NDefines.NMilitary.TRAINING_MAX_LEVEL = 10 -- многоуровневый опыт дивизий
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10
+NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3,	0.39,	0.48,	0.57,	0.66,	0.75,	0.78,	0.81,	0.84,	0.87,	0.9}		-- Experience needed to progress to the next level
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
+NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
+
+
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0	-- теперь черты генов не стоят ком рес
+
+
+-- больше дивок под 1 гена
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 1000;
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 1000;
+
+
+--NAir
+--NAir
+--NAir
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_NO_TRUCK_DISRUPTION_FACTOR = 0.2;  --урон по грузовикам (ванила 0,2)
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.3; -- урон по грузовикам (ванила 0,5)
 
 NDefines.NAir.DISRUPTION_FACTOR = 6;  -- терь штурмы будут лучше влитать при желтом воздухе
 NDefines.NAir.ESCORT_FACTOR = 3;
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 100;
-
-NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.60;  -- снижаем потери эквипы от прочки ванила 0.7
 
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
@@ -82,58 +105,15 @@ NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER  = 5; -- урон по грузо�
 NDefines.NAir.ACE_DEATH_CHANCE_BASE  = 0.0; -- Асы больше не будут дохнуть.
 NDefines.NAir.ACE_DEATH_CHANCE_PLANES_MULT  = 0.0; -- Асы больше не будут дохнуть.
 NDefines.NAir.ACE_DEATH_BY_OTHER_ACE_CHANCE  = 0.0; -- Асы больше не будут дохнуть.				
+NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.05; -- множитель потерь самолетов во время воздушных боев
 
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02;              --  шанс попадания ПВО по штурму
-
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.45;    -- Бонус от штурмов во время боя
-
-
-NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
-NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
-NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0 
-NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
-
-	
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0 ;
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0 ;
-NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 0;
-NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1; 
-
-NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.01; -- Масштабирует стоимость энергии в зависимости от общего количества заводов, ванила  0.0225
-
-NDefines.NAI.MAX_VOLUNTEER_ARMY_FRACTION  = 0;	-- теперь размер числа добровольцев не зависит от размера армии
-NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0;
-NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0;-- теперь размер числа добровольцев не зависит от размера армии
-
-NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0;				-- Ratio for volunteer planes available for sending in relation to sender air force
-NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 1;	-- Ratio for volunteer planes available for sending in relation to receiver air base capacity
-	
-NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED  = 5;
-NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 4;
-NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 4;
-
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0; 	-- теперь люди будут мгновнно затикать в дивизии
-
-NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4;	
-
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
-NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
-NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
+NDefines.NAir.RECON_LAND_SPOT_CHANCE = 1;
 
 
 
-NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100;
-NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0;
-NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0;
-
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25;					-- кост аташе в политке
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0.0;				-- кост аташе в ЦПшке
-
-
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0;
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0;
-
-
+--NNavy
+--NNavy
+--NNavy
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35; -- Максимальный бонус за бомбордировку с моря
 
  -- Дебаф на размещение в зависимости от соотношения флотов
@@ -166,35 +146,96 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- Меткость атак флота
 		120.0,	-- torpedoes
 		45.0,	-- small guns
 };
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0;    -- If an accident happens, how likely it is to be a critical hit (caused by naval mines)
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0;   -- Scale the value below in case of critical hit (caused by naval mines)
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0;      -- Amount of strength loss when hit by naval mine
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0;
+NDefines.NNavy.NAVAL_MINES_INTEL_DIFF_FACTOR = 0.4;       -- Better our decryption over enemy encryption will reduce the penalties from the enemy mines in the region. This value is a factor to be used for balancing.
+NDefines.NNavy.NAVAL_MINES_NAVAL_SUPREMACY_FACTOR = 0.2;
 
+
+
+--NProduction
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- Минемальный % фабрик уходящих в ТНП 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	-- Можно развернуть милиардную армию
+
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0 
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
+
+	
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0 ;
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0 ;
+NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 0;
+NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1; 
+
+NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.01; -- Масштабирует стоимость энергии в зависимости от общего количества заводов, ванила  0.0225
+
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4;	
+
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
+
+
+--NCountry
+--NCountry
+--NCountry
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.05;  				-- 0.01 ванила, в идеале, 0.01 дает 1 припас.
+NDefines.NCountry.AIR_SUPPLY_DROP_EXPIRATION_HOURS = 48; 			-- интервал между дропом суплая, 168 ванила
+NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.30;	-- Старые добрые колабы 30%
+
+NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0;				-- Ratio for volunteer planes available for sending in relation to sender air force
+NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 1;	-- Ratio for volunteer planes available for sending in relation to receiver air base capacity
+	
+
+NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 4;
+NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 4;
+
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0; 	-- теперь люди будут мгновнно затикать в дивизии
 
 NDefines.NCountry.MIN_MAJOR_COUNTRIES = 1000 -- Минимальное число можоров
 NDefines.NCountry.ADDITIONAL_MAJOR_COUNTRIES_IC_RATIO = 0.0001 -- Слабые миноры тоже будут крупными странами 
 
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000; -- Минимальный лимит спец войск
 
-NDefines.NMilitary.TRAINING_MAX_LEVEL = 10 -- многоуровневый опыт дивизий
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10
-NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3,	0.39,	0.48,	0.57,	0.66,	0.75,	0.78,	0.81,	0.84,	0.87,	0.9}		-- Experience needed to progress to the next level
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
-NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
+--NDiplomacy
+--NDiplomacy
+--NDiplomacy
+
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0;
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0;-- теперь размер числа добровольцев не зависит от размера армии
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED  = 5;
+
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25;					-- кост аташе в политке
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0.0;				-- кост аташе в ЦПшке
 
 
-NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0	-- теперь черты генов не стоят ком рес
+--NAI
+--NAI
+--NAI
+NDefines.NAI.MAX_VOLUNTEER_ARMY_FRACTION  = 0;	-- теперь размер числа добровольцев не зависит от размера армии
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0;
+NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0;
+
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100;
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0;
+NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0;
 
 
--- больше дивок под 1 гена
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 1000;
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 1000;
-
-NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.05; -- множитель потерь самолетов во время воздушных боев
 
 
 
 
+--NBuildings
+--NBuildings
+--NBuildings
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.2; -- возвращаем старое доброе заначение ресов с инфры
 
---Agency Upgrade and intel
+
+
+--NOperatives
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 15;						-- кол-во дней создания агенства
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0;					-- кол-во фабрик для создания агенства
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 90;						-- кол-во дней дня апгрейда агенства
@@ -203,6 +244,11 @@ NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 0;					-- минималь
 NDefines.NOperatives.INTEL_NETWORK_OPERATIVE_GAIN_STACKING_FACTOR = 0.9;			-- 90% штраф за доп агентов на стаке сетке
 NDefines.NOperatives.BOOST_IDEOLOGY_DRIFT_STACKING_FACTOR = 0.9;					-- 90% штраф за доп агентов на идеологии
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.9;					-- 90% штраф за доп агентов на пропаганде
+
+
+--NIntel
+--NIntel
+--NIntel
 NDefines.NIntel.CAPTURED_OPERATIVE_INTEL_YIELD = {
 		0.1,
 		0.1,
@@ -210,7 +256,6 @@ NDefines.NIntel.CAPTURED_OPERATIVE_INTEL_YIELD = {
 		0.1,
 	};																			-- 10% данных за захват агента
 
-NDefines.NAir.RECON_LAND_SPOT_CHANCE = 1;
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше лупа не дает бонусов к статам дивизии
 
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_ATTACK = 1.0; -- multiplier for attack value of intel combat bonus
@@ -218,6 +263,12 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_DEFENSE = 1.0; -- multiplier for 
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MIN_INTEL_FOR_BONUS = 1; -- min intel needed to start applying ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 100; -- intel needed to fully apply ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
 
+NDefines.NIntel.LAND_COMBAT_AIR_INTEL_FACTOR = 0.01;						-- factor applied once all values have been added together
+NDefines.NIntel.RECON_INTEL_BONUS = 0.075;                                      -- each recon gives this bonus to overall gathered land intel in combat
+
+--NFactions
+--NFactions
+--NFactions
 NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { 
 		"head_of_intelligence";
 		"mastermind_code_cracker";
@@ -255,13 +306,15 @@ NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = {
 
 
 	};
+--NCharacter
+--NCharacter
+--NCharacter
 NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 200; -- крафтовый советник стоит дорого
 
-
+--NResistance
+--NResistance
+--NResistance
 NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 100;
 NDefines.NResistance.GARRISON_MANPOWER_MIN_DELIVERY_SPEED = 10000;	-- Minimum base delivery speed if the chunk can't be calculated.
 NDefines.NResistance.GARRISON_MANPOWER_REINFORCEMENT_SPEED = 10000.0;	-- Modifier for garrison manpower reinforcement.  This value is the maximum to be delivered which is then modified by distance
 NDefines.NResistance.GARRISON_EQUIPMENT_DELIVERY_SPEED = 100000.0;	-- Modifier for garrison equipment reinforcement speed
-
-NDefines.NIntel.LAND_COMBAT_AIR_INTEL_FACTOR = 0.01;						-- factor applied once all values have been added together
-NDefines.NIntel.RECON_INTEL_BONUS = 0.075;                                      -- each recon gives this bonus to overall gathered land intel in combat
