@@ -1,0 +1,311 @@
+Pacific_war = {
+	JAP_birma_remove = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 5
+
+			fire_only_once = no
+
+			activation = {
+			JAP = {
+					has_full_control_of_state = 640
+					not = {has_country_flag = JAP_birma_remove}
+				}
+			}
+
+			visible = {
+				JAP = {
+					has_full_control_of_state = 640
+					}
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+			JAP = {set_country_flag = JAP_birma_remove}
+			CHI = {
+				every_core_state = {
+					limit = { not = {is_owned_by = MAN }}
+					remove_dynamic_modifier = { modifier = anti_japan_mood_birma  }}}
+			}
+		}
+
+	JAP_birma_add = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+				hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 5
+
+			fire_only_once = no
+
+			activation = {
+			JAP = {
+				not = {has_full_control_of_state = 640}
+				has_country_flag = JAP_birma_remove
+				}
+			}
+
+			visible = {
+			JAP = {
+				not = {has_full_control_of_state = 640}
+				}
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+			JAP = {clr_country_flag = JAP_birma_remove}
+			CHI = {
+				every_core_state = {
+					limit = { not = {is_owned_by = MAN }}
+					add_dynamic_modifier = { modifier = anti_japan_mood_birma  }}}
+			}
+		}
+
+	JAP_USA_lend_lease_remove = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+				hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 5
+
+			fire_only_once = no
+
+			activation = {
+			not = {has_country_flag = JAP_USA_lend_lease_remove}
+			 JAP = { any_owned_state = { has_dynamic_modifier = { modifier = anti_japan_mood_USA_lend_lease}}}
+				JAP = {
+					and = {
+						has_full_control_of_state = 327
+						has_full_control_of_state = 627
+						has_full_control_of_state = 623
+						has_full_control_of_state = 1027
+						}
+					}
+			}
+
+			visible = {
+					JAP = {
+						and = {
+							has_full_control_of_state = 327
+							has_full_control_of_state = 627
+							has_full_control_of_state = 623
+							has_full_control_of_state = 1027
+							}
+						}
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+
+			timeout_effect = {
+			JAP = {set_country_flag = JAP_USA_lend_lease_remove}
+			CHI = {
+				every_core_state = {
+					limit = { not = {is_owned_by = MAN }}
+					remove_dynamic_modifier = { modifier = anti_japan_mood_USA_lend_lease}}
+			}
+		}
+	}
+	JAP_USA_lend_lease_add = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+				hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 5
+
+			fire_only_once = no
+
+			activation = {
+			JAP = {has_country_flag = JAP_USA_lend_lease_remove}
+			USA = {
+				and = {
+					has_full_control_of_state = 327
+					has_full_control_of_state = 627
+					has_full_control_of_state = 623
+					has_full_control_of_state = 1027
+					}
+				}
+			}
+
+			visible = {
+					USA = {
+						and = {
+							has_full_control_of_state = 327
+							has_full_control_of_state = 627
+							has_full_control_of_state = 623
+							has_full_control_of_state = 1027
+							}
+						}
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+
+			timeout_effect = {
+			JAP = {clr_country_flag = JAP_USA_lend_lease_remove}
+			CHI = {
+				every_core_state = {
+					limit = { not = {is_owned_by = MAN }}
+					add_dynamic_modifier = { modifier = anti_japan_mood_USA_lend_lease }}
+			}
+		}
+	}
+
+		JAP_RAJ_has_capitulated = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 5
+
+			fire_only_once = no
+
+			activation = {
+				RAJ = { has_capitulated = yes }
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+				JAP = { set_country_flag = RAJ_has_capitulated}
+				RAJ = {every_core_state = { add_dynamic_modifier = { modifier = anti_japan_mood_RAJ} add_dynamic_modifier = { modifier = foreigh_factory}}}}
+			}
+	JAP_AST_has_capitulated = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 5
+
+			fire_only_once = no
+
+			activation = {
+				AST = { has_capitulated = yes }
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+				JAP = { set_country_flag = AST_has_capitulated}
+				AST = {every_core_state = { add_dynamic_modifier = { modifier = anti_japan_mood_AST} add_dynamic_modifier = { modifier = foreigh_factory }}}
+			}
+		}
+	JAP_PHI_has_capitulated = {
+
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 15
+
+			fire_only_once = yes
+
+			activation = {
+				PHI = { has_capitulated = yes }
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+				JAP = {set_country_flag = PHI_has_capitulated}
+				PHI = {every_core_state = {add_dynamic_modifier = { modifier = anti_japan_mood_PHI } add_dynamic_modifier = {  modifier = foreigh_factory }}}
+			}
+		}
+	JAP_INS_has_capitulated = {
+	
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 15
+
+			fire_only_once = yes
+
+			activation = {
+				INS = { has_capitulated = yes }
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+				JAP = {set_country_flag = INS_has_capitulated}
+				INS = {every_core_state = {add_dynamic_modifier = { modifier = anti_japan_mood_INS } add_dynamic_modifier = {  modifier = foreigh_factory }}}
+			}
+
+		}
+
+
+
+
+
+
+
+}

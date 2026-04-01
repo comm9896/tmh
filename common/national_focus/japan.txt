@@ -65,14 +65,14 @@ focus_tree = {
 	inlay_window = {
 		id = jap_imperial_influence_inlay_window
 		
-		position = { X = 1250 y = 1250 }
+		position = { X = 1750 y = 720 }
 
 
 	}
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = {  X = 300 y = 2300}
 
 
 	################################
@@ -83,7 +83,7 @@ focus_tree = {
 		id = JAP_sea_purge_the_kodoha_faction
 		icon = GFX_focus_JAP_purge_the_kodoha_faction
 
-		x = 30
+		x = 15
 		y = 0
 		
 		relative_position_id = JAP_okadas_military_purge_speech
@@ -537,11 +537,11 @@ focus_tree = {
 		id = JAP_form_cabinet_intelligence_bureau
 		icon = GFX_focus_generic_secret_service_agency
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 3
+		x = -2
 		y = 1
-		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
+		relative_position_id = JAP_promulgate_the_military_ministers_system
 
-		prerequisite = { focus = JAP_sea_national_spiritual_mobliization_movement }
+		prerequisite = { focus = JAP_promulgate_the_military_ministers_system }
 
 		cost = 2
 
@@ -995,7 +995,7 @@ focus_tree = {
 		id = JAP_sea_state_general_mobilization_law
 		icon = GFX_focus_ITA_generic_fascist_workers
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
 
@@ -1032,53 +1032,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_issue_the_ten_commandments_for_marriage
-		icon = GFX_focus_generic_population_growth
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 1
-		y = 1
-		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
-
-		prerequisite = { focus = JAP_sea_national_spiritual_mobliization_movement }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			
-			JAP_add_or_modify_showa_statism = yes
-
-			add_to_variable = { JAP_showa_statism_monthly_population = 0.1 tooltip = monthly_population_tt }
-			
-		}
-	}
-
-	focus = {
 		id = JAP_enact_religious_organizations_law
 		icon = GFX_focus_jap_spiritual_mobilization
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = JAP_issue_the_ten_commandments_for_marriage
+		relative_position_id = JAP_sea_state_general_mobilization_law
 
-		prerequisite = { focus = JAP_issue_the_ten_commandments_for_marriage focus = JAP_sea_state_general_mobilization_law }
+		prerequisite = {  focus = JAP_sea_state_general_mobilization_law }
 
 		cost = 5
 
@@ -1657,7 +1618,7 @@ focus_tree = {
 		id = JAP_formalize_the_tonarigumi
 		icon = GFX_focus_generic_whispers
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 2
+		x = -4
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
 
@@ -1714,11 +1675,11 @@ focus_tree = {
 		id = JAP_ichioku_isshin
 		icon = GFX_goal_generic_national_unity
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = JAP_formalize_the_tonarigumi
+		relative_position_id = JAP_sea_national_defense_state
 
-		prerequisite = { focus = JAP_formalize_the_tonarigumi focus = JAP_sea_national_defense_state focus = JAP_form_the_yokusan_sonendan }
+		prerequisite = { focus = JAP_sea_national_defense_state}
 
 		cost = 5
 
@@ -1768,7 +1729,7 @@ focus_tree = {
 		id = JAP_issue_the_senjinkun_military_code
 		icon = GFX_focus_SOV_mobilization_plan
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
 
@@ -1853,7 +1814,7 @@ focus_tree = {
 		id = JAP_sea_greater_east_asian_co_properity_sphere
 		icon = GFX_focus_JAP_greater_east_asian_co_properity_sphere
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 8
+		x = -6
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
 
@@ -2454,7 +2415,6 @@ available  = {
 				add_to_variable = { JAP_showa_statism_political_power_factor = -0.1 tooltip = political_power_factor_tt}
 				add_to_variable = { JAP_showa_statism_fascism_drift = 0.05 tooltip = fascism_drift_tt}
 			add_war_support = 0.05
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_country_leader_role = {
@@ -2960,11 +2920,11 @@ always = no }
 		id = JAP_the_eternal_kingdom
 		icon = GFX_focus_JAP_the_eternal_kingdom
 		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
-		x = 0
+		x = 3
 		y = 1
-		relative_position_id = JAP_fund_propaganda_films
+		relative_position_id = JAP_the_crysanthemum_throne
 
-		prerequisite = { focus = JAP_fund_propaganda_films }
+	prerequisite = { focus = JAP_tojos_premiership focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne focus = JAP_solidify_tohokai_rule }
 
 		cost = 10
 
@@ -4714,6 +4674,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		cost = 2
 
 		available = {
+		or = {
 				naval_strength_comparison = {
 					other = USA
 					ratio < 0.5
@@ -4723,6 +4684,17 @@ annex_country = { target = VIN transfer_troops = yes }
 						battle_cruiser = 0.8
 						heavy_cruiser = 0.5
 					}
+				}
+					naval_strength_comparison = {
+					other = ENG
+					ratio < 0.5
+					sub_unit_def_weights = {
+						carrier = 0.25
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
 				}
 			has_country_flag = {
 				flag = JAP_operation_Se_flag
@@ -4783,8 +4755,8 @@ annex_country = { target = VIN transfer_troops = yes }
 			add_ideas = JAP_total_war
 			add_ideas = scraping_the_barrel
 			JAP_add_or_modify_imperial_army = yes
-			add_to_variable = { JAP_army_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt}
-			add_to_variable = { JAP_army_army_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt}
+			#add_to_variable = { JAP_army_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt}
+			#add_to_variable = { JAP_army_army_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt}
 							mio:JAP_kokura_arsenal_organization = {
 							add_mio_size = 1
 							unlock_mio_trait_tooltip = { trait = JAP_mio_trait_military_arsenal_ketsugo_sakusen_trait
@@ -4805,7 +4777,7 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_operation_Ketsugo_sakusen}
 
-		cost = 1
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -4890,11 +4862,11 @@ annex_country = { target = VIN transfer_troops = yes }
 		id = JAP_advance_one_hundred_million_fireballs
 		icon = GFX_focus_JAP_advance_one_hundred_million_fireballs
 		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
-		x = 0
+		x = -2
 		y = 1
-		relative_position_id = JAP_found_the_boeitai
+		relative_position_id = JAP_operation_Ketsugo_sakusen
 
-		prerequisite = { focus = JAP_found_the_boeitai }
+		prerequisite = { focus = JAP_operation_Ketsugo_sakusen }
 
 		cost = 1
 
@@ -4941,9 +4913,9 @@ annex_country = { target = VIN transfer_troops = yes }
 		id = JAP_the_koiso_cabinet
 		icon = GFX_focus_JAP_the_koiso_administration
 		
-		x = 0
-		y = 1
-		relative_position_id = JAP_advance_one_hundred_million_fireballs
+		x = -11
+		y = 4
+		relative_position_id = JAP_new_order_movement
 
 		cost = 5
 
@@ -5330,158 +5302,6 @@ annex_country = { target = VIN transfer_troops = yes }
 	}
 
 	focus = {
-		id = JAP_strenghten_manchukuo_imperial_army
-		icon = GFX_focus_JAP_strenghten_manchukuo_imperial_army
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -2
-		y = 1
-		relative_position_id = JAP_hokushin_ron
-
-		prerequisite = { focus = JAP_hokushin_ron }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			MAN = {
-				exists = yes
-				is_ally_with = ROOT
-			}
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-
-		completion_reward = {
-
-			MAN = {
-				army_experience = 50
-				add_manpower = 20000
-				custom_effect_tooltip = generic_skip_one_line_tt
-				add_equipment_to_stockpile = { 
-					type = infantry_equipment
-					amount = 500
-					producer = JAP
-				}
-				add_equipment_to_stockpile = { 
-					type = support_equipment
-					amount = 150
-					producer = JAP
-				}	
-				custom_effect_tooltip = generic_skip_one_line_tt
-				add_doctrine_cost_reduction = {
-					name = JAP_build_up_the_manchurian_army
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine	
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				add_autonomy_ratio = {
-					value = -0.08333
-					localization = JAP_build_up_the_manchurian_army
-				}
-			}
-				
-			
-		}
-	}
-
-	focus = {
-		id = JAP_strenghten_manchukuo_imperial_airforce
-		icon = GFX_focus_JAP_strenghten_manchukuo_imperial_airforce
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 0
-		y = 1
-		relative_position_id = JAP_strenghten_manchukuo_imperial_army
-
-		prerequisite = { focus = JAP_strenghten_manchukuo_imperial_army }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			MAN = {
-				exists = yes
-				is_ally_with = ROOT
-			}
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = {  }
-
-		completion_reward = {
-			
-			MAN = {
-				air_experience = 25
-				add_breakthrough_progress = {
-					specialization = specialization_air
-					value = 0.5
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				add_tech_bonus = {
-					name = JAP_create_a_manchurian_imperial_air_force
-					bonus = 1.0
-					uses = 1
-					category = tactical_bomber
-					category = cat_strategic_bomber
-					category = naval_bomber
-					category = cas_bomber
-				}
-				add_tech_bonus = {
-					name = JAP_create_a_manchurian_imperial_air_force
-					bonus = 1.0
-					uses = 1
-					category = light_fighter
-					category = cat_heavy_fighter
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				every_owned_state = {
-					limit = {
-						is_fully_controlled_by = MAN
-						is_owned_by = MAN
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				add_autonomy_ratio = {
-					value = -0.08333
-					localization = JAP_build_up_the_manchurian_army
-				}
-			}
-			
-		}
-	}
-
-	focus = {
 		id = JAP_utilize_ainu_expertise
 		icon = GFX_focus_JAP_utilize_ainu_expertise
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
@@ -5491,7 +5311,7 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_hokushin_ron }
 
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -5663,17 +5483,145 @@ annex_country = { target = VIN transfer_troops = yes }
 			
 		}
 	}
+	
+	focus = {
+		id = JAP_prepare_the_northern_front
+		icon = GFX_goal_generic_position_armies
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_kantokuen }
+
+		relative_position_id = JAP_kantokuen
+		x = 0
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			714 = { 
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}	
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			761 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						}
+
+					}
+			717 = {
+				IF = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								id = 6811
+							}
+							building = supply_node
+							level < 1
+						}
+					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6811
+						instant_build = yes
+					}
+				}
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						}
+
+			}
+			714 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				IF = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								id = 7832
+							}
+							building = supply_node
+							level < 1
+						}
+					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 7832
+						instant_build = yes
+					}
+				}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
+				build_railway = {
+				level = 2
+					path = { 4745 4852 1776 12537 7848 7851 }
+				}
+				build_railway = {
+				level = 2
+					path = { 6811 1571 10519 12342 10215 10521 12189}
+				}
+				build_railway = {
+				level = 2
+					path = { 4506 1588 12618 7832 }
+				}
+				build_railway = {#From Southern to Northern Supply Hub in Heilungkiang
+				level = 2
+					path = { 898 6944 9897 973 9766 6811 810  }
+				}
+			}
+
+		}
+
 
 	focus = {
 		id = JAP_the_persimmon_has_ripened
 		icon = GFX_focus_JAP_the_persimmon_has_ripened
 		x = 0
 		y = 1
-		relative_position_id = JAP_kantokuen
+		relative_position_id = JAP_prepare_the_northern_front
 
-		prerequisite = { focus = JAP_kantokuen }
+		prerequisite = { focus = JAP_prepare_the_northern_front }
 
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -6240,7 +6188,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		}
 		
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
-		x = 16
+		x = 18
 		y = 0
 
 
@@ -9042,8 +8990,8 @@ annex_country = { target = VIN transfer_troops = yes }
 		}
 		
 		relative_position_id = JAP_ministry_of_commerce_and_industry
-		x = 23
-		y = 0
+		x = 0
+		y = 8
 
 		cost = 3 #This times perfect with the Kodoha Coup event
 
@@ -9088,7 +9036,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = { focus = JAP_the_imperial_defense_plan }
 
 		relative_position_id = JAP_the_imperial_defense_plan
-		x = -9
+		x = -7
 		y = 1
 
 		cost = 5
@@ -9250,7 +9198,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = { focus = JAP_reform_the_army }
 
 		relative_position_id = JAP_reform_the_army
-		x = -3
+		x = -2
 		y = 1
 
 		cost = 3
@@ -9298,28 +9246,12 @@ annex_country = { target = VIN transfer_troops = yes }
 				uses = 1
 				category = armor
 			}
-			add_doctrine_cost_reduction = {
-				name = JAP_rethink_armor_doctrine
-				cost_reduction = 0.25
-				uses = 2
-				category = land_doctrine
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			JAP_add_or_modify_imperial_army = yes
 			add_to_variable = { JAP_army_motorized_attack_factor = 0.05 tooltip = motorized_attack_factor_tt }
 
-			IF = {
-				limit = {
-					has_character = JAP_hisaichi_terauchi
-					JAP_hisaichi_terauchi = {
-						is_field_marshal = no
-					}
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-			} 
 
 		}
 
@@ -9378,10 +9310,10 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			swap_ideas = {
-				remove_idea = JAP_japanese_armor_doctrine
-				add_idea = JAP_japanese_armor_doctrine_2
-			}
+			#swap_ideas = {
+			#	remove_idea = JAP_japanese_armor_doctrine
+			#	add_idea = JAP_japanese_armor_doctrine_2
+			#}
 		}
 	}
 
@@ -9447,10 +9379,10 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
-			swap_ideas = {
-				remove_idea = JAP_japanese_armor_doctrine
-				add_idea = JAP_japanese_armor_doctrine_2
-			}
+			#swap_ideas = {
+			#	remove_idea = JAP_japanese_armor_doctrine
+			#	add_idea = JAP_japanese_armor_doctrine_2
+			#}
 		}
 	}
 
@@ -9521,26 +9453,26 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			IF = {
-				limit = {
-					has_idea = JAP_japanese_armor_doctrine
-				}
-				swap_ideas = {
-					remove_idea = JAP_japanese_armor_doctrine
-					add_idea = JAP_japanese_armor_doctrine_3
-				}	
-				#custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			ELSE_IF = {
-				limit = {
-					has_idea = JAP_japanese_armor_doctrine_2
-				}
-				swap_ideas = {
-					remove_idea = JAP_japanese_armor_doctrine_2
-					add_idea = JAP_japanese_armor_doctrine_3
-				}	
-				#custom_effect_tooltip = generic_skip_one_line_tt
-			}
+			#IF = {
+			#	limit = {
+			#		has_idea = JAP_japanese_armor_doctrine
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = JAP_japanese_armor_doctrine
+			#		add_idea = JAP_japanese_armor_doctrine_3
+			#	}	
+			#	#custom_effect_tooltip = generic_skip_one_line_tt
+			#}
+			#ELSE_IF = {
+			#	limit = {
+			#		has_idea = JAP_japanese_armor_doctrine_2
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = JAP_japanese_armor_doctrine_2
+			#		add_idea = JAP_japanese_armor_doctrine_3
+			#	}	
+			#	#custom_effect_tooltip = generic_skip_one_line_tt
+			#}
 
 
 			JAP_add_or_modify_imperial_army = yes
@@ -9560,7 +9492,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		}
 	
 
-	}
+}
 
 	focus = {
 		id = JAP_rely_on_supremacy_of_the_will
@@ -9639,7 +9571,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = { focus = JAP_rely_on_supremacy_of_the_will }
 
 		relative_position_id = JAP_rely_on_supremacy_of_the_will
-		x = 3
+		x = 2
 		y = 1
 
 		cost = 3
@@ -9677,21 +9609,15 @@ annex_country = { target = VIN transfer_troops = yes }
 
 			add_tech_bonus = {
 				name = JAP_adopt_new_assault_doctrine
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
 			add_tech_bonus = {
 				name = JAP_adopt_new_assault_doctrine
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
-			}
-			add_doctrine_cost_reduction = {
-				name = JAP_adopt_new_assault_doctrine
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -9905,134 +9831,6 @@ annex_country = { target = VIN transfer_troops = yes }
 	}
 
 	focus = {
-		id = JAP_prepare_the_northern_front
-		icon = GFX_goal_generic_position_armies
-		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
-
-		prerequisite = { focus = JAP_reform_the_army focus = JAP_rely_on_supremacy_of_the_will }
-
-		relative_position_id = JAP_reform_the_army
-		x = 0
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-			714 = { 
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}	
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_IMPERIAL_INFLUENCE }
-
-		completion_reward = {
-			761 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 4
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 4
-						}
-
-					}
-			717 = {
-				IF = {
-					limit = {
-						any_province_building_level = {
-							province = {
-								id = 6811
-							}
-							building = supply_node
-							level < 1
-						}
-					}
-					add_building_construction = {
-						type = supply_node
-						level = 1
-						province = 6811
-						instant_build = yes
-					}
-				}
-					add_building_construction = {
-						type = infrastructure
-						level = 4
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 4
-						}
-
-			}
-			714 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 4
-						instant_build = yes
-					}
-				IF = {
-					limit = {
-						any_province_building_level = {
-							province = {
-								id = 7832
-							}
-							building = supply_node
-							level < 1
-						}
-					}
-					add_building_construction = {
-						type = supply_node
-						level = 1
-						province = 7832
-						instant_build = yes
-					}
-				}
-					add_building_construction = {
-						type = air_base
-						level = 4
-						instant_build = yes
-					}
-				}
-				build_railway = {
-				level = 2
-					path = { 4745 4852 1776 12537 7848 7851 }
-				}
-				build_railway = {
-				level = 2
-					path = { 6811 1571 10519 12342 10215 10521 12189}
-				}
-				build_railway = {
-				level = 2
-					path = { 4506 1588 12618 7832 }
-				}
-				build_railway = {#From Southern to Northern Supply Hub in Heilungkiang
-				level = 2
-					path = { 898 6944 9897 973 9766 6811 810  }
-				}
-			}
-
-		}
-
-
-	focus = {
 		id = JAP_enact_the_national_conscription_law
 		icon = GFX_focus_generic_limited_social_mobilization
 		
@@ -10043,7 +9841,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = { focus = JAP_reform_the_army focus = JAP_rely_on_supremacy_of_the_will }
 
 		relative_position_id = JAP_rely_on_supremacy_of_the_will
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 5
@@ -10089,10 +9887,10 @@ annex_country = { target = VIN transfer_troops = yes }
 		#	focus = 
 		#}
 
-		prerequisite = { focus = JAP_prepare_the_northern_front focus = JAP_enact_the_national_conscription_law }
+		prerequisite = { focus = JAP_enact_the_national_conscription_law  }
 
-		relative_position_id = JAP_prepare_the_northern_front
-		x = 1
+		relative_position_id = JAP_enact_the_national_conscription_law
+		x = 0
 		y = 1
 
 		cost = 5
@@ -10307,7 +10105,7 @@ annex_country = { target = VIN transfer_troops = yes }
 			focus = JAP_pivot_towards_defensive_measures
 		}
 
-		prerequisite = { focus = focus = JAP_jungle_adaptation focus = JAP_sea_mountaineers }
+		prerequisite = { focus = JAP_jungle_adaptation focus = JAP_sea_mountaineers }
 
 		relative_position_id = JAP_instill_the_spirit_of_bushido
 		x = 1
@@ -13338,8 +13136,8 @@ annex_country = { target = VIN transfer_troops = yes }
 		prerequisite = {focus = JAP_fix_flawed_naval_designs focus = JAP_secure_the_sea_lanes }
 
 		relative_position_id = JAP_pivot_towards_defensive_measures
-		x = 10
-		y = 2
+		x = 8
+		y = 1
 
 		cost = 10
 
@@ -13350,81 +13148,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		available = {
 		and = {
 			JAP_naval_faction_is_same_as_army = yes
-
-			and = {		
-				336 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}
-				430 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}
-				423 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}
-				439 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}
-				444 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}	
-				672 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}				
-				333 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}
-				334 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}
-				335 = {
-					controller = {
-						OR ={
-							tag = JAP
-							is_in_faction_with = JAP
-						}
-					}
-				}				
-			}
+			Japans_resource_security_has_been_achieved = yes
 		}
 	}
 	
@@ -13442,7 +13166,6 @@ annex_country = { target = VIN transfer_troops = yes }
 		completion_reward = {
 
 			add_war_support = 0.1
-			add_command_power = 50
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

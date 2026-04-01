@@ -12,6 +12,12 @@ JAP_CHI_resistance = {
 			original_tag = JAP
 		}
 			complete_effect = {
+			CHI = {
+				every_core_state = {
+					limit = { not = {is_owned_by = MAN }}
+					add_dynamic_modifier = { modifier = anti_japan_mood_USA_lend_lease  }
+			}
+		}
 				every_state = {
 				limit = {
 					OR = {
@@ -4697,7 +4703,6 @@ prospect_for_resources = {
 
 # The Kwantung Army
 JAP_kwantung_army_decisions = {
-
 		JAP_faction_bug = {
 		
 		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
@@ -4706,28 +4711,24 @@ JAP_kwantung_army_decisions = {
 			original_tag = JAP
 		}
 		available = {
-
+			original_tag = JAP
 		}
 
 		visible = {
-
+			original_tag = JAP
 		}
 
 		fire_only_once = no
 
 		cancel_trigger = {
-
+	
 		}
+
 		cost = 0
 		days_remove = -1
 
 		modifier = {
 		}
-
-		ai_will_do = {
-			base = 1
-		}
-
 
 		complete_effect = {
 remove_ideas = {
@@ -4805,7 +4806,6 @@ add_ideas = {
 
 		target_trigger = {
 			FROM = {
-				
 				is_fully_controlled_by = JAP
 				has_dynamic_modifier = { modifier = anti_japan_mood }
 			}
@@ -4815,6 +4815,7 @@ add_ideas = {
 
 		remove_Effect = {
 			FROM = {
+				set_state_flag = JAP_anti_guarilla_operation
 				remove_dynamic_modifier = { modifier = anti_japan_mood }
 				remove_dynamic_modifier = { modifier = anti_japan_mood_birma  }
 				remove_dynamic_modifier = { modifier = anti_japan_mood_indochina }
@@ -4856,6 +4857,7 @@ add_ideas = {
 
 		remove_Effect = {
 			FROM = {
+				set_state_flag = JAP_anti_guarilla_operation
 				remove_dynamic_modifier = { modifier = anti_japan_mood }
 				remove_dynamic_modifier = { modifier = anti_japan_mood_birma  }
 				remove_dynamic_modifier = { modifier = anti_japan_mood_indochina }

@@ -1541,7 +1541,7 @@ hidden_ideas = {
 				enemy_operative_detection_chance_factor = 0.1
 				enemy_operative_intel_extraction_rate = 0.05
 				enemy_operative_capture_chance_factor = 0.05
-				intelligence_agency_defense = 0.05
+				intelligence_agency_defense = 0.1
 				drift_defence_factor = 0.15
 			}
 
@@ -1593,10 +1593,10 @@ hidden_ideas = {
 				enemy_operative_detection_chance_factor = 0.15
 				enemy_operative_intel_extraction_rate = 0.1
 				enemy_operative_capture_chance_factor = 0.05
-				intelligence_agency_defense = 0.1
-				drift_defence_factor = 0.2
+				intelligence_agency_defense = 0.5
+				drift_defence_factor = 0.25
 				stability_factor = 0.05
-				root_out_resistance_effectiveness_factor = 0.1
+				root_out_resistance_effectiveness_factor = 0.35
 			}
 
 		}
@@ -1648,10 +1648,10 @@ hidden_ideas = {
 				enemy_operative_detection_chance_factor = 0.15
 				enemy_operative_intel_extraction_rate = 0.1
 				enemy_operative_capture_chance_factor = 0.05
-				intelligence_agency_defense = 0.1
-				drift_defence_factor = 0.3
+				intelligence_agency_defense = 1
+				drift_defence_factor = 0.5
 				stability_factor = 0.1
-				root_out_resistance_effectiveness_factor = 0.15
+				root_out_resistance_effectiveness_factor = 0.7
 			}
 
 		}

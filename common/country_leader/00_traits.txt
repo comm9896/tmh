@@ -461,7 +461,7 @@ leader_traits = {
 	head_of_intelligence = {
 		random = no
 		sprite = 15
-		operative_slot = 1
+		#operative_slot = 1
 		agency_upgrade_time = -0.15
 	}
 
@@ -3370,7 +3370,7 @@ leader_traits = {
 		agency_upgrade_time = -0.1
 		intel_network_gain_factor = 0.1
 		resistance_growth_on_our_occupied_states = 0.1
-		operative_slot = 1
+		#operative_slot = 1
 	}
 	commander_of_the_fetno_derash_no_lar = {
 		random = no
@@ -5473,7 +5473,7 @@ leader_traits = {
 	special_envoy = {
 		random = no
 		sprite = 15
-		operative_slot = 1
+		#operative_slot = 1
 		agency_upgrade_time = -0.2
 		civilian_intel_factor = 0.2
 		stability_factor = 0.05
@@ -8869,7 +8869,7 @@ leader_traits = {
 	HUN_military_intelligence_officer = {
 		random = no
 		sprite = 15
-		operative_slot = 1
+		#operative_slot = 1
 		army_intel_to_others = -10.0
 		army_intel_factor = 0.15
 	}
@@ -11744,7 +11744,7 @@ leader_traits = {
 		random = no
 		sprite = 15
 
-		operative_slot = 1
+		#operative_slot = 1
 		agency_upgrade_time = -0.2
 	}
 
@@ -11752,7 +11752,7 @@ leader_traits = {
 		random = no
 		sprite = 15
 
-		operative_slot = 1
+		#operative_slot = 1
 		agency_upgrade_time = -0.2
 		resistance_damage_to_garrison = -0.2
 		foreign_subversive_activites = -0.3
@@ -11763,9 +11763,9 @@ leader_traits = {
 		sprite = 15
 		random = no
 		resistance_growth = -0.05
-		civilian_intel_to_others = -0.2
-		army_intel_to_others = -0.2
-		operative_slot = 1
+		civilian_intel_to_others = 10
+		army_intel_to_others = 10
+		#operative_slot = 1
 	}
 
 	GER_reich_security_main_office_director_no_lar = { #Heydrich
@@ -11779,17 +11779,17 @@ leader_traits = {
 	head_of_the_abwehr = { # Canaris
 		random = no
 		sprite = 15
-		operative_slot = 1
+		#operative_slot = 1
 		agency_upgrade_time = -0.2
 	}
 
 	head_of_the_abwehr_improved = { # Canaris
 		random = no
 		sprite = 15
-		operative_slot = 2
+		#operative_slot = 2
 		agency_upgrade_time = -0.2
-		resistance_damage_to_garrison = -0.2
-		foreign_subversive_activites = -0.2
+		resistance_damage_to_garrison = -0.05
+		#foreign_subversive_activites = -0.2
 		subversive_activites_upkeep = -0.2
 	}
 

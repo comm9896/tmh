@@ -171,7 +171,7 @@ anti_japan_mood = {#STATE MODIFIER
 }
 
 anti_japan_mood_birma = {#STATE MODIFIER
-	icon = GFX_unplanned_offensive
+	icon = GFX_modifiers_generic_resistance
 	enable = { always = yes }
 
 	custom_modifier_tooltip = JAP_resistance_raj_tt
@@ -281,4 +281,91 @@ JAP_no_recruit = {#STATE MODIFIER
 
 	recruitable_population_factor = -1
 
+}
+anti_japan_mood_AST = { #STATE MODIFIER
+	enable = { always = yes }
+		remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = AST 
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	icon = GFX_modifiers_generic_resistance
+
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+anti_japan_mood_RAJ = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = RAJ
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+anti_japan_mood_PHI = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+	remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = PHI
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+anti_japan_mood_INS = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { 
+				original_tag = INS
+				is_subject_of = JAP
+			} 
+			OWNER = { original_tag = JAP } 
+		}
+	}
+	local_factory_sabotage = 0.25
+	local_resources = -0.2
+	resistance_target = 1.2
+	resistance_damage_to_garrison = 0.5
+	resistance_garrison_penetration_chance = 0.5
+}
+foreigh_factory = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance
+		remove_trigger = {
+		NOT = { 
+			OWNER = { original_tag = JAP } 
+	}
+		local_factories = -0.75
+	}
 }
