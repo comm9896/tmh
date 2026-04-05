@@ -9,7 +9,7 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 5
+			days_mission_timeout = 30
 
 			fire_only_once = no
 
@@ -49,7 +49,7 @@ Pacific_war = {
 				hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 5
+			days_mission_timeout = 30
 
 			fire_only_once = no
 
@@ -89,7 +89,7 @@ Pacific_war = {
 				hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 5
+			days_mission_timeout = 30
 
 			fire_only_once = no
 
@@ -140,7 +140,7 @@ Pacific_war = {
 				hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 5
+			days_mission_timeout = 30
 
 			fire_only_once = no
 
@@ -191,15 +191,18 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 5
+			days_mission_timeout = 30
 
-			fire_only_once = no
+			fire_only_once = yes
 
 			activation = {
+			and  = {
 				RAJ = { has_capitulated = yes }
+				}
 			}
 
 			visible = {
+				RAJ = {has_country_flag = Sapr_only_asia}
 			}
 
 			cancel_if_not_visible = yes
@@ -232,15 +235,17 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 5
+			days_mission_timeout = 30
 
-			fire_only_once = no
+			fire_only_once = yes
 
 			activation = {
 				AST = { has_capitulated = yes }
+		
 			}
 
 			visible = {
+				RAJ = {has_country_flag = Sapr_only_asia}
 			}
 
 			cancel_if_not_visible = yes
@@ -277,7 +282,10 @@ Pacific_war = {
 			fire_only_once = yes
 
 			activation = {
+			and  = {
 				PHI = { has_capitulated = yes }
+				PHI = { not = {has_country_flag = Sapr_only_asia}}
+				}
 			}
 
 			visible = {
@@ -314,7 +322,10 @@ Pacific_war = {
 			fire_only_once = yes
 
 			activation = {
+			and  = {
 				INS = { has_capitulated = yes }
+				INS = { not = {has_country_flag = Sapr_only_asia}}
+				}
 			}
 
 			visible = {

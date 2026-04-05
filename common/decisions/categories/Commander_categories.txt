@@ -14,6 +14,7 @@ Pacific_war = {
 				}
 	}
 	visible = {
+		GER = {has_country_flag = Sapr_only_asia}
 		JAP = {has_completed_focus = JAP_operation_Z }
 	}
 	priority = 999

@@ -110,6 +110,7 @@ anti_japan_mood_ledo_road:0 "Помощь союзников через §Yдо�
 JAP_no_recruit:0 "Сопротивление японской оккупации"
 
 
+
 JAP_anti_guarilla_operation_coastal:0 "Искоренить партизан в регионе [FROM.GetName]"
 JAP_anti_guarilla_operation:0 "Искоренить партизан в регионе [FROM.GetName]"
 JAP_resistance_growth_tt:0 "Сопротивление зависит от поставок вооружения по §Yбирманской дороге§!, §Yтонкинскому шоссе§!, §Yтрассе "Z"§! из Советского Союза и §Yрасширенному Ленд-лизу США§!. "
@@ -154,7 +155,10 @@ CE_JAP_war_premier.c:0 " Выбрать принца Нарухико"
 entrenchment_defense:0 "Подготовленные позиции"
 foreigh_factory:0 "Подорванное производство"
 foreigh_resourses:0 "Подорванные базы добычи ресурсов"
-
+anti_japan_mood_INS:0 "Антияпонские настроения"
+anti_japan_mood_PHI:0 "Антияпонские настроения"
+anti_japan_mood_RAJ:0 "Антияпонские настроения"
+anti_japan_mood_AST:0 "Антияпонские настроения"
 
 JAP_operation_A_flag:0 "Фокус "Операция  Z" выполнен "
 JAP_operation_Se_flag:0 "Фокус "Операция "Шо-Го" выполнен "
@@ -194,3 +198,5 @@ JAP_RAJ_has_capitulated:0 "Активизация партизанского д�
 JAP_AST_has_capitulated:0 "Активизация партизанского движения в §YАвстралии§!"
 JAP_PHI_has_capitulated:0 "Активизация партизанского движения на §YФилиппинах§!"
 JAP_INS_has_capitulated:0 "Активизация партизанского движения в §YИндонезии§!"
+
+
