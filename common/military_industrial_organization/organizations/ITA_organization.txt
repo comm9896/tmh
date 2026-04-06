@@ -34,9 +34,6 @@ ITA_fiat_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 158 #PIEMONT (Torino)
-			}
 			ITA_is_northern_designer = yes
 		}
 
@@ -346,9 +343,6 @@ ITA_macchi_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA
-			}
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -387,9 +381,6 @@ ITA_savoia_marchetti_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 159 #LOMBARDIA
-		}
 		ITA_is_northern_designer = yes
 	}
 
@@ -496,9 +487,6 @@ ITA_caproni_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA
-			}
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -537,9 +525,6 @@ ITA_piaggio_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 158 #PIEMONTE
-		}
 		ITA_is_northern_designer = yes
 	}
 
@@ -588,9 +573,6 @@ ITA_imam_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 117 #CAMPANIA (Napoli)
-			}
 			ITA_is_southern_designer = yes
 		}
 	}
@@ -629,9 +611,6 @@ ITA_crda_cant_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 736 #LITORALE (Trieste)
-		}
 		ITA_is_southern_designer = yes
 	}
 
@@ -680,9 +659,6 @@ ITA_fiat_aviazione_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 158 #PIEMONT (Torino)
-			}
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -785,9 +761,6 @@ ITA_beretta_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA	
-			}
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -837,7 +810,6 @@ ITA_lancia_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = { controls_state = 159 } #LOMBARDIA
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -892,9 +864,6 @@ ITA_breda_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA
-			}
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -933,9 +902,6 @@ ITA_brescia_arsenal_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 159 #LOMBARDIA
-		}
 		ITA_is_northern_designer = yes
 	}
 

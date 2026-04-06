@@ -331,23 +331,7 @@ on_actions = {
 
 	#ROOT is winner #FROM is loser
 	on_peaceconference_ended = {
-		effect = {
-			IF = {
-				limit = {
-					OR = {
-						check_variable = { ETH.host_nation = ROOT }
-						ROOT = {
-							OR = {
-								tag = ETH
-								is_in_faction_with = ETH
-								ETH = { is_subject_of = ROOT }
-							}
-						}
-					}
-				}
-				ETH_transfer_promised_states = yes
-			}
-		}
+
 		# Drop AOI cosmetic tag to set correct flag
 		effect = {
 			IF = {
@@ -488,33 +472,6 @@ on_actions = {
 			}
 		}
 
-		effect = {
-			#Italy defends Austria from Germany
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = GER
-					}
-					FROM = {
-						original_tag = AUS
-					}
-					ITA = {
-						has_completed_focus = ITA_guarantee_austrian_independence
-					}
-				}
-
-				AUS = {
-					give_military_access = ITA
-				}
-
-				ITA = {
-					add_timed_idea = {
-						idea = ITA_alpine_defense
-						days = 360
-					}
-				}
-			}
-		}
 		effect = {
 			if = {
 				limit = {
@@ -681,82 +638,7 @@ on_actions = {
 			}
 		}
 
-		#Cooperatives for Intensive Exploitation
-		effect = {
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = ITA
-						has_completed_focus = ITA_cooperatives_for_intensive_exploitation
-					}
-					FROM.FROM = {
-						is_on_continent = africa
-						state_has_any_resource = yes
-						NOT = { has_dynamic_modifier = { modifier = ITA_cooperatives_for_intensive_exploitation_dm } }
-					}
-				}
-				FROM.FROM = {
-					add_dynamic_modifier = { modifier = ITA_cooperatives_for_intensive_exploitation_dm }
-				}
-			}
-		}
 
-		#Mafia State modifiers
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						original_tag = ITA
-						has_completed_focus = ITA_cooperate_with_the_mafia
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					add_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-					add_dynamic_modifier = { modifier = ITA_established_mafia }
-				}
-			}
-			else_if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						NOT = { original_tag = ITA }
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_established_mafia }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-				}
-			}
-		}
-
-		#RENAME STATES/VPs
-		effect = {
-			if = {
-				limit = {
-					ITA_state_or_vp_name_should_change = yes
-				}
-				ITA_change_name_of_state_or_vp = yes
-			}
-		}
 		effect = {
 			if = {
 				limit = { #SWI loses a state
@@ -811,12 +693,6 @@ on_actions = {
 						tag = ITA
 						tag = ETH
 					}
-					NOT = {
-						AND = {
-							ETH = { has_completed_focus = ETH_declare_for_italy }
-							has_civil_war = yes
-						}
-					}
 				}
 				ITA_end_the_italo_ethiopian_war = yes
 			}
@@ -834,33 +710,6 @@ on_actions = {
 
 
 	on_puppet = { #ROOT = nation being puppeted, FROM = overlord
-		effect = {
-			IF = {
-				limit = {
-					has_dlc = "By Blood Alone"
-					original_tag = ETH
-					has_completed_focus = ETH_rally_around_the_emperor
-					FROM = {
-						original_tag = ITA
-						OR = {
-							has_government = fascism
-							has_government = neutrality
-						}
-					}
-				}
-				ROOT = {
-					uncomplete_national_focus = {
-						focus = ETH_rally_around_the_emperor
-						uncomplete_children = yes
-						refund_political_power = no
-					}
-
-					unlock_national_focus = ETH_reach_out_to_the_italians
-					unlock_national_focus = ETH_sway_the_warlords
-					unlock_national_focus = ETH_declare_for_italy
-				}
-			}
-		}
 
 
 		# In case of historical split of N and S Korea try to locate the correct leaders
@@ -928,86 +777,6 @@ on_actions = {
 
 			}
 		}
-
-		#Italian Confederation -> Add NS to new subjects
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						original_tag = ITA
-						has_completed_focus = ITA_the_italian_confederation
-					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							has_completed_focus = ITA_planned_economy
-						}
-						NOT = { has_idea = ITA_italian_confederation_member_improved }
-					}
-					if = {
-						limit = {
-							has_idea = ITA_italian_confederation_member
-						}
-						swap_ideas = {
-							remove_idea = ITA_italian_confederation_member
-							add_idea = ITA_italian_confederation_member_improved
-						}
-					}
-					else = {
-						add_ideas = ITA_italian_confederation_member_improved
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = { has_idea = ITA_italian_confederation_member }
-					}
-					add_ideas = ITA_italian_confederation_member
-				}
-			}
-		}
-	}
-
-	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
-	#ROOT = nation being released, FROM = overlord
-	on_release_as_puppet = {
-		#Italian Confederation -> Add NS to new subjects
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						original_tag = ITA
-						has_completed_focus = ITA_the_italian_confederation
-					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							has_completed_focus = ITA_planned_economy
-						}
-						NOT = { has_idea = ITA_italian_confederation_member_improved }
-					}
-					if = {
-						limit = {
-							has_idea = ITA_italian_confederation_member
-						}
-						swap_ideas = {
-							remove_idea = ITA_italian_confederation_member
-							add_idea = ITA_italian_confederation_member_improved
-						}
-					}
-					else = {
-						add_ideas = ITA_italian_confederation_member_improved
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = { has_idea = ITA_italian_confederation_member }
-					}
-					add_ideas = ITA_italian_confederation_member
-				}
-			}
-		}
 	}
 
 	on_ruling_party_change = {
@@ -1024,53 +793,6 @@ on_actions = {
 		}
 	}
 
-	on_government_change = {
-		effect = {
-			#Change BoP when changing gov
-			IF = {
-				limit = {
-					original_tag = ETH
-					has_government = communism
-				}
-				set_power_balance = {
-					id = ETH_centralization_balance
-					left_side = ETH_decentralization_anarchist
-					right_side = ETH_communist_side
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					original_tag = ETH
-					NOT = { has_government = communism }
-				}
-				set_power_balance = {
-					id = ETH_centralization_balance
-					left_side = ETH_mesafint_side
-					right_side = ETH_mekwanint_side
-				}
-			}
-		}
-	}
-	#on_unit_leader_promote_from_ranks_green
-	on_unit_leader_promote_from_ranks_green = { # This uses the UNIT LEADER sub scope of a character, FROM == country
-		effect = {
-			IF = {
-				limit = {
-					OWNER = {
-						original_tag = ETH
-						has_completed_focus = ETH_expand_the_officer_corps
-					}
-				}
-				if = {
-					limit = {
-						is_army_leader = yes
-					}
-					add_defense = 1
-					add_attack= 1
-				}
-			}
-		}
-	}
 
 	#Root is exile
 	#From is old host
@@ -1094,15 +816,6 @@ on_actions = {
 			}
 		}
 
-		# Give promised states to Ethiopia
-		effect = {
-			IF = {
-				limit = {
-					ROOT = { tag = ETH }
-				}
-				ETH_transfer_promised_states = yes
-			}
-		}
 	}
 
 	#FROM is country getting invited. ROOT is the faction leader

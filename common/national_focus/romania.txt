@@ -324,7 +324,6 @@ focus_tree = {
 					free_building_slots = {
 						building = synthetic_refinery
 						size > 2
-						include_locked = yes
 					}
 				}
 				prioritize = { 46 }

@@ -58,6 +58,9 @@ state = {
 		    add_core_of = GER
 		    add_core_of = SOV			
 		}	
+		victory_points = {
+			11670 5 
+		}		
 	}
 
 	provinces = {

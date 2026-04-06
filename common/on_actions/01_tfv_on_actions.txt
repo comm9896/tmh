@@ -4,27 +4,6 @@ on_actions = {
 			if = {
 				limit = {
 					ROOT = {
-						original_tag = INS
-						NOT = { has_government = fascism }
-					}
-					FROM = {
-						original_tag = INS
-						has_government = fascism
-					}
-					AST = {
-						has_completed_focus = AST_support_indonesian_uprising
-					}
-				}
-				AST = {
-					country_event = { 
-						id = tfv_australia.41 
-						hours = 12
-					}
-				}
-			}
-			if = {
-				limit = {
-					ROOT = {
 						original_tag = FRA
 						has_government = democratic
 					}

@@ -18,12 +18,11 @@ state= {
 			owner = TIB
 			add_core_of = TIB
 		}		
-		
-		set_variable = { ETH_state_development_production_speed = -0.1 }
-		set_variable = { ETH_state_development_local_building_slots_factor = -0.1 }
-		#set_variable = { ETH_state_decentralization_defence = 0.2 }
-		#set_variable = { ETH_state_decentralization_infrastructure = -0.3 }
-		#set_variable = { ETH_state_decentralization_resources = -0.3 }
+		1945.1.1.10 = {
+		    owner = ENG
+		    add_core_of = ENG		
+		    add_core_of = ITA					
+		}
 
 
 		buildings = {

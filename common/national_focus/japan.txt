@@ -240,12 +240,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_government = neutrality
-				has_government = fascism
-			}
-			JAP_naval_faction_is_not_subdued = yes
-			JAP_army_faction_is_not_subdued = yes
 		}
 
 		bypass = {
@@ -533,6 +527,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = JAP_form_cabinet_intelligence_bureau
 		icon = GFX_focus_generic_secret_service_agency
@@ -564,7 +559,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
+					add_tech_bonus = {
+						name = GER_all_terrain_military_motorcycle
+						uses = 1
+						bonus = 2
+						technology = sp_armored_motorized_military_police_tech
+					}
+					custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -649,7 +650,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = GER_all_terrain_military_motorcycle
+				uses = 1
+				bonus = 2
+				category = military_police_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -716,7 +723,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
-
+		add_tech_bonus = {
+				name = GER_all_terrain_military_motorcycle
+				uses = 1
+				bonus = 2
+				category = military_police_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -1481,7 +1494,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_imperial_rule_assistance_association }
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1522,7 +1535,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_form_the_yokusan_sonendan }
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1896,7 +1909,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_sea_greater_east_asian_co_properity_sphere }
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -1948,7 +1961,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_expand_japan_manchukuo_economic_bloc }
 
-		cost = 1
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -1958,8 +1971,13 @@ focus_tree = {
 			is_faction_leader = yes
 		}
 
+	
 		bypass = {
-
+			NOT = {
+				MAN = {
+					is_ally_with = ROOT
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2017,7 +2035,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_sea_greater_east_asian_co_properity_sphere }
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -2278,7 +2296,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_east_asia_development_board }
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -2359,12 +2377,6 @@ focus_tree = {
 			JAP_add_or_modify_east_asia_co_prosperity_sphere = yes
 
 			add_to_variable = { JAP_east_asia_co_prosperity_sphere_non_core_manpower = 0.03 tooltip = non_core_manpower_tt }
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = JAP_promote_pan_asianism_tt
-
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = JAP_shumei_okawa
@@ -3169,29 +3181,7 @@ always = no }
 		}
 
 		available = {
-			is_subject = no 
-			NOT = { 
-				has_war_with = CHI 
-				is_ally_with = CHI
-			}
-			OR = {
-				NOT = {
-					has_completed_focus = JAP_ensure_temporary_peace_with_china
-				}
-				AND = {
-					has_country_flag = {
-					 	flag = JAP_chinese_japanese_neutrality_pact_flag
-					 	days > 365
-					} 
-					custom_trigger_tooltip = {
-						tooltip = JAG_chinese_neutality_pact_focus_days_tt
-						has_country_flag = {
-							flag = JAP_chinese_japanese_neutrality_pact_flag
-							days > 365
-						}
-					}
-				}
-			}
+
 		}
 
 		bypass = {
@@ -3866,8 +3856,6 @@ always = no }
 		}
 
 		available = {
-			JAP_naval_faction_is_not_subdued = yes
-			date > 1941.3.1
 		}
 
 		bypass = {
@@ -3887,7 +3875,7 @@ always = no }
 			add_to_variable = { JAP_navy_navy_max_range_factor = 0.05 tooltip = navy_max_range_factor_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
+		if = { limit = {has_war = yes}
 			every_state = {
 				limit = {
 					OR = {
@@ -3927,10 +3915,47 @@ always = no }
 					scope = JAP
 				}
 			}
-
+		}
+else_if = {	custom_effect_tooltip = JAP_operation_e_d_m_tt 
+			effect_tooltip = { add_dynamic_modifier {modifier = JAP_operation_MO_military_offensive}} 
+			custom_effect_tooltip = JAP_operation_e_d_m_tt_2
+			 every_state = {
+							limit = {
+					OR = {
+						state = 738
+						state = 667
+						state = 668
+						state = 979
+						state = 523
+						state = 737
+						state = 634
+						state = 669
+						state = 734
+						state = 635
+						state = 1024
+						state = 1023
+						state = 333
+						state = 334
+						state = 672
+						state = 335
+						state = 673
+						state = 626
+						state = 623
+						state = 1027
+						state = 327 
+						state = 624 
+						state = 625
+						state = 628
+						state = 1025
+						state = 1026
+						state = 627
+						state = 336
+					}
+				}
+			}
 		}
 	}
-
+}
 	focus = {
 		id = JAP_operation_mo
 		icon = GFX_focus_generic_air_carrier
@@ -3966,7 +3991,7 @@ always = no }
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
+		if = { limit = {has_war = yes}
 			every_state = {
 				limit = { is_on_continent = australia }
 				add_dynamic_modifier = {
@@ -3978,9 +4003,14 @@ always = no }
 			}
 			
 		}
-	}
 
-
+		else_if = {	custom_effect_tooltip = JAP_operation_e_d_m_tt 
+			effect_tooltip = { add_dynamic_modifier {modifier = JAP_operation_MO_military_offensive}} 
+			custom_effect_tooltip = JAP_operation_e_d_m_tt_2
+			 every_state = {limit = {is_on_continent = australia }}
+				}
+			}
+		}
 	focus = {
 		id = JAP_sea_exploit_southern_resource_area
 		icon = GFX_focus_GER_south_east_asian_natural_wealth
@@ -4088,7 +4118,106 @@ always = no }
 			}
 		}
 	}
+	focus = {
+		id = JAP_exploit_raj
+		icon = GFX_focus_RAJ_pruna_swaraj
+		x = 0
+		y = 1
+		relative_position_id = JAP_sea_exploit_southern_resource_area
 
+		prerequisite = { focus = JAP_sea_exploit_southern_resource_area }
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		RAJ = {has_capitulated = yes}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {  }
+
+		completion_reward = {
+			RAJ = {every_core_state = { remove_dynamic_modifier = {modifier = foreigh_factory }}}
+		}
+	}
+	focus = {
+			id = JAP_exploit_ast
+			icon = GFX_focus_AST_never_gallipoli
+			x = -2
+			y = 1
+			relative_position_id = JAP_sea_exploit_southern_resource_area
+
+			prerequisite = { focus = JAP_sea_exploit_southern_resource_area }
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+			AST = {has_capitulated = yes}
+			}
+
+			bypass = {
+
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			search_filters = {  }
+
+			completion_reward = {
+			AST = {every_core_state = { remove_dynamic_modifier = {modifier = foreigh_factory }}}
+	}
+}
+	focus = {
+				id = JAP_exploit_ins
+				icon = GFX_focus_hol_oranje_boven
+
+				x = -4
+				y = 1
+				relative_position_id = JAP_sea_exploit_southern_resource_area
+
+				prerequisite = { focus = JAP_sea_exploit_southern_resource_area }
+
+				cost = 3
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				available = {
+				INS = {has_capitulated = yes}
+				}
+
+				bypass = {
+
+				}
+
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+
+				search_filters = {  }
+
+				completion_reward = {
+					INS = {every_core_state = { remove_dynamic_modifier = {modifier = foreigh_resourses }}}
+		}
+	}
 	focus = {
 		id = JAP_demand_tonkinese_bases
 		icon = GFX_focus_generic_attack_indochina
@@ -4522,12 +4651,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		custom_effect_tooltip = generic_skip_one_line_tt
 		country_event = { id = CE.1 }
 		custom_effect_tooltip = generic_skip_one_line_tt
-		
-					every_owned_state = { 
-						limit = { or = {state = 670 state = 747 state = 869 state = 289 state = 724}}
-						add_dynamic_modifier = {modifier = entrenchment_defense days = 270}
-						}
-					
+		custom_effect_tooltip =	JAP_operation_Z_tt
 	every_country = {
 				limit = {
 					or = {
@@ -5409,15 +5533,6 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		completion_reward = {
 
-			add_doctrine_cost_reduction = {
-				name = JAP_prepare_for_war_with_the_soviet_union
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine	
-			}
-
-			army_experience = 25
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = FIN_winter_warfare_battalion_tt
@@ -5476,14 +5591,240 @@ annex_country = { target = VIN transfer_troops = yes }
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
+				add_building_construction = {
+						type = air_base
+						level = 2
 			}
-			
 		}
 	}
+}
 	
+	focus = {
+		id = JAP_prepare_the_northern_front
+		icon = GFX_goal_generic_position_armies
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_kantokuen }
+
+		relative_position_id = JAP_kantokuen
+		x = 0
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			714 = { 
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}	
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			717 = {
+				IF = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								id = 6811
+							}
+							building = supply_node
+							level < 1
+						}
+					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6811
+						instant_build = yes
+					}
+				}
+			}
+			714 = {
+				IF = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								id = 7832
+							}
+							building = supply_node
+							level < 1
+						}
+					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 7832
+						instant_build = yes
+					}
+				}
+				}
+				build_railway = {
+				level = 2
+					path = { 4745 4852 1776 12537 7848 7851 }
+				}
+				build_railway = {
+				level = 2
+					path = { 6811 1571 10519 12342 10215 10521 12189}
+				}
+				build_railway = {
+				level = 2
+					path = { 4506 1588 12618 7832 }
+				}
+				build_railway = {#From Southern to Northern Supply Hub in Heilungkiang
+				level = 2
+					path = { 898 6944 9897 973 9766 6811 810  }
+				}
+			}
+		}
+
+
+	focus = {
+		id = JAP_prepare_the_northern_front
+		icon = GFX_goal_generic_position_armies
+		
+		#mutually_exclusive = {
+		#	focus = 
+		#}
+
+		prerequisite = { focus = JAP_kantokuen }
+
+		relative_position_id = JAP_kantokuen
+		x = 0
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			714 = { 
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}	
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_IMPERIAL_INFLUENCE }
+
+		completion_reward = {
+			761 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						}
+
+					}
+			717 = {
+				IF = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								id = 6811
+							}
+							building = supply_node
+							level < 1
+						}
+					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 6811
+						instant_build = yes
+					}
+				}
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						}
+
+			}
+			714 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				IF = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								id = 7832
+							}
+							building = supply_node
+							level < 1
+						}
+					}
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						province = 7832
+						instant_build = yes
+					}
+				}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
+				build_railway = {
+				level = 2
+					path = { 4745 4852 1776 12537 7848 7851 }
+				}
+				build_railway = {
+				level = 2
+					path = { 6811 1571 10519 12342 10215 10521 12189}
+				}
+				build_railway = {
+				level = 2
+					path = { 4506 1588 12618 7832 }
+				}
+				build_railway = {#From Southern to Northern Supply Hub in Heilungkiang
+				level = 2
+					path = { 898 6944 9897 973 9766 6811 810  }
+				}
+			}
+
+		}
+
+
 	focus = {
 		id = JAP_prepare_the_northern_front
 		icon = GFX_goal_generic_position_armies
@@ -6173,7 +6514,7 @@ annex_country = { target = VIN transfer_troops = yes }
 			}			
 		}
 	}
-	}
+}
 
 
 	###############################
@@ -6192,7 +6533,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		y = 0
 
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 3
@@ -8056,7 +8397,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 3
@@ -8126,7 +8467,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 3
@@ -8174,7 +8515,7 @@ annex_country = { target = VIN transfer_troops = yes }
 
 		prerequisite = { focus = JAP_improve_agricultural_output }
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -8420,7 +8761,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = 4
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 3
@@ -8526,7 +8867,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 3
@@ -8600,7 +8941,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 3
@@ -8666,7 +9007,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = 0
 		y = 3
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 2
@@ -8826,7 +9167,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 2
@@ -8859,6 +9200,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		custom_effect_tooltip = generic_skip_one_line_tt
 				add_manpower = 300000
 				custom_effect_tooltip = generic_skip_one_line_tt
+
 
 
 			IF = {
@@ -8896,7 +9238,7 @@ annex_country = { target = VIN transfer_troops = yes }
 		relative_position_id = JAP_build_up_korean_industries
 		
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -9982,8 +10324,8 @@ annex_country = { target = VIN transfer_troops = yes }
 				}
 				add_doctrine_cost_reduction = {
 					name = JAP_sea_mountaineers
-					cost_reduction = 0.5
-					uses = 6
+					cost_reduction = 1
+					uses = 9
 					category = cat_mountaineers_doctrine
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -10040,8 +10382,8 @@ annex_country = { target = VIN transfer_troops = yes }
 				}
 				add_doctrine_cost_reduction = {
 					name = JAP_jungle_adaptation
-					cost_reduction = 0.5
-					uses = 6
+					cost_reduction = 1
+					uses = 9
 					category = cat_rangers_doctrine
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt

@@ -1,0 +1,2254 @@
+Sapr_duelniy_preset = {
+
+	ger_duelniy_preset_st_pt_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 16
+					id = 2101					
+				}							
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			
+			Sapr_duelniy_mod_equipments = yes
+						
+		}
+	}	
+
+	ger_duelniy_preset_st_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 16
+					id = 2101					
+				}						
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			
+			Sapr_duelniy_mod_equipments = yes
+						
+		}
+	}	
+	
+	ger_duelniy_preset_st_pt = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 8
+					id = 2101					
+				}
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 2
+					id = 2101					
+				}							
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 12
+					id = 2101					
+				}				
+			}
+			
+			Sapr_duelniy_mod_equipments = yes
+						
+		}
+	}	
+	
+	ger_duelniy_preset_st = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 8
+					id = 2101					
+				}
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 2
+					id = 2101					
+				}				
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 12
+					id = 2101					
+				}				
+			}
+
+
+			Sapr_duelniy_mod_equipments = yes		
+		}		
+	}
+	
+	ger_duelniy_preset_tt = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 6
+					id = 2101					
+				}				
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 16
+					id = 2101					
+				}				
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+		}		
+	}	
+	
+	ger_duelniy_preset_st_pt_mech = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 8
+					id = 2101					
+				}			
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 22
+					id = 2101					
+				}			
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+		}			
+	}
+	ger_duelniy_preset_st_mech = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 8
+					id = 2101					
+				}			
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 22
+					id = 2101					
+				}			
+			}
+			
+			Sapr_duelniy_mod_equipments = yes
+		}			
+	}	
+
+	ger_duelniy_preset_VDV = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 250
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 30
+					id = 2101					
+				}			
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+		}			
+	}		
+
+	ger_duelniy_preset_Ranger = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 250
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Лесники\" division_template = \"Лесники\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 30
+					id = 2101					
+				}			
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+		}			
+	}		
+
+	ger_duelniy_preset_mech = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 250
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 34
+					id = 2101					
+				}			
+			}
+
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}			
+	}		
+		
+	ger_duelniy_preset_arta_speshal = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Штурмовой арт полк\" division_template = \"Штурмовой арт полк\" start_experience_factor = 0.3" 
+					owner = GER			
+					count = 12
+					id = 2101					
+				}				
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = GER
+					count = 12
+					id = 2101					
+				}				
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}		
+	}
+
+
+
+
+			
+	SOV_duelniy_preset_st_pt = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 8
+					id = 2102					
+				}	
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 2
+					id = 2102					
+				}		
+			}
+			
+			
+			205 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 12
+					id = 2102					
+				}			
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+			
+	SOV_duelniy_preset_st_pt_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 16
+					id = 2102					
+				}			
+			}
+			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+	
+	SOV_duelniy_preset_st = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 8
+					id = 2102					
+				}	
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 2
+					id = 2102					
+				}		
+			}
+			
+			
+			205 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 12
+					id = 2102					
+				}				
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}		
+	SOV_duelniy_preset_st_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 16
+					id = 2102					
+				}		
+			}		
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}		
+
+	SOV_duelniy_preset_tt = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 6
+					id = 2102					
+				}			
+			}
+			
+			
+			205 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 16
+					id = 2102					
+				}				
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+	SOV_duelniy_preset_st_pt_mech = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 8
+					id = 2102					
+				}			
+			}
+			
+			
+			205 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 22
+					id = 2102					
+				}				
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	 
+	SOV_duelniy_preset_st_mech = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			219 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 6
+					id = 2102					
+				}			
+			}
+			
+			
+			205 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 22
+					id = 2102					
+				}				
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2102					
+				}
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+	SOV_duelniy_preset_VDV = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no					
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			
+			205 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 30
+					id = 2102					
+				}				
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 240
+					id = 2102					
+				}
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+	
+	SOV_duelniy_preset_Ranger = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 250
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Лесники\" division_template = \"Лесники\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 30
+					id = 2101					
+				}			
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+		}			
+	}		
+	
+	SOV_duelniy_preset_mech = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			
+			205 = {
+				create_unit = {
+					division = "name = \"Мотострелки\" division_template = \"Мотострелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 30
+					id = 2102					
+				}				
+			}			
+			223 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 250
+					id = 2102					
+				}
+			}
+			
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}
+		
+	SOV_duelniy_preset_arta_speshal = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = SOV
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+
+		cost = 0
+		
+		complete_effect = {	
+
+			delete_unit = {
+			}
+
+			64 = {
+				create_unit = {
+					division = "name = \"Штурмовой арт полк\" division_template = \"Штурмовой арт полк\" start_experience_factor = 0.3" 
+					owner = SOV			
+					count = 12
+					id = 2101					
+				}				
+			}
+			
+			86 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 120
+					id = 2101					
+				}
+			}
+			65 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = SOV
+					count = 12
+					id = 2101					
+				}				
+			}
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}		
+	}
+		
+
+
+
+	
+	ENG_duelniy_preset_st_pt_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ENG
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			447 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = ENG			
+					count = 8
+					id = 2102					
+				}	
+		
+			}
+			
+			452 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 80
+					id = 2102					
+				}
+			}
+			447 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 10
+					id = 2101					
+				}			
+			}
+			447 = {
+				create_unit = {
+					division = "name = \"Горняки\" division_template = \"Горняки\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 10
+					id = 2101					
+				}			
+			}			
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+	
+	ENG_duelniy_preset_st_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ENG
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			447 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = ENG			
+					count = 16
+					id = 2102					
+				}		
+			}		
+			452 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 80
+					id = 2102					
+				}
+			}
+			447 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 10
+					id = 2101					
+				}			
+			}
+			447 = {
+				create_unit = {
+					division = "name = \"Горняки\" division_template = \"Горняки\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 10
+					id = 2101					
+				}			
+			}	
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}		
+
+	ENG_duelniy_preset_tt = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ENG
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			447 = {
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = ENG			
+					count = 6
+					id = 2102					
+				}			
+			}
+			
+			
+			447 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 6
+					id = 2102					
+				}				
+			}			
+			452 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 80
+					id = 2102					
+				}
+			}
+			447 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 10
+					id = 2101					
+				}			
+			}
+			447 = {
+				create_unit = {
+					division = "name = \"Горняки\" division_template = \"Горняки\" start_experience_factor = 0.3" 
+					owner = ENG
+					count = 10
+					id = 2101					
+				}			
+			}	
+			
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}
+		
+
+
+
+	
+	ITA_duelniy_preset_st_pt_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ITA
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			450 = {
+				create_unit = {
+					division = "name = \"Средние танки с ПТ\" division_template = \"Средние танки с ПТ\" start_experience_factor = 0.3" 
+					owner = ITA			
+					count = 8
+					id = 2102					
+				}	
+		
+			}
+			
+			1048 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 80
+					id = 2102					
+				}
+			}
+			450 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 10
+					id = 2101					
+				}			
+			}
+			450 = {
+				create_unit = {
+					division = "name = \"Горняки\" division_template = \"Горняки\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 10
+					id = 2101					
+				}			
+			}			
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+	
+	ITA_duelniy_preset_st_only = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ITA
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			450 = {
+				create_unit = {
+					division = "name = \"Средние танки\" division_template = \"Средние танки\" start_experience_factor = 0.3" 
+					owner = ITA			
+					count = 16
+					id = 2102					
+				}		
+			}		
+			1048 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 80
+					id = 2102					
+				}
+			}
+			450 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 10
+					id = 2101					
+				}			
+			}
+			450 = {
+				create_unit = {
+					division = "name = \"Горняки\" division_template = \"Горняки\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 10
+					id = 2101					
+				}			
+			}	
+
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}		
+
+	ITA_duelniy_preset_tt = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ITA
+		}		
+		
+		available = {
+			has_war = no				
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			delete_unit = {
+			}			
+
+			450 = {
+				create_unit = {
+					division = "name = \"Тяжелые танки\" division_template = \"Тяжелые танки\" start_experience_factor = 0.3" 
+					owner = ITA			
+					count = 6
+					id = 2102					
+				}			
+			}
+			
+			
+			450 = {
+				create_unit = {
+					division = "name = \"Мотосрелки\" division_template = \"Мотосрелки\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 6
+					id = 2102					
+				}				
+			}			
+			1048 = {
+
+				create_unit = {
+					division = "name = \"Пехота\" division_template = \"Пехота\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 80
+					id = 2102					
+				}
+			}
+			450 = {
+				create_unit = {
+					division = "name = \"ВДВ\" division_template = \"ВДВ\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 10
+					id = 2101					
+				}			
+			}
+			450 = {
+				create_unit = {
+					division = "name = \"Горняки\" division_template = \"Горняки\" start_experience_factor = 0.3" 
+					owner = ITA
+					count = 10
+					id = 2101					
+				}			
+			}	
+			
+			Sapr_duelniy_mod_equipments = yes
+			
+		}
+	}	
+
+	
+}
+
+Sapr_duelniy_war = {
+
+	
+	Sapr_duelniy_pravila = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+		}
+
+		
+		available = {
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			country_event = { 
+				id = Sapr_pravila.1
+			} 	
+		}
+
+	}	
+
+	Sapr_duelniy_rerol_country_GER_1 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = SOV
+		cosmetic_ideology = communism		
+		
+        visible = {
+			tag = GER
+		}
+		available = {
+			has_war = no
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = AXIS_rerol_country_tt_1
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = BRA
+			        }
+                    change_tag_from = GER						
+			    }
+			}
+			GER = {
+				set_country_flag = Sapr_GER_is_AI
+			}
+		}
+
+	}	
+	Sapr_duelniy_rerol_country_GER_2 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = SOV
+		cosmetic_ideology = communism		
+		
+        visible = {
+			tag = BRA
+		}
+		available = {
+			SOV = {
+				has_country_flag = Sapr_SOV_is_AI	
+			}	
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = AXIS_rerol_country_tt_2
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = SOV
+			        }
+                    change_tag_from = BRA						
+			    }
+			}
+			SOV = {
+				clr_country_flag = Sapr_SOV_is_AI	
+			}	
+		}
+
+	}	
+		
+	Sapr_duelniy_rerol_country_SOV_1 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+		
+		available = {
+		}
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = GER
+		cosmetic_ideology = fascism		
+		
+        visible = {
+			tag = SOV
+		}
+		available = {			
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SOV_rerol_country_tt_1
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = TIB
+			        }
+                    change_tag_from = SOV						
+			    }
+			}
+			SOV = {
+				set_country_flag = Sapr_SOV_is_AI
+			}
+		}
+
+	}	
+	Sapr_duelniy_rerol_country_SOV_2 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+		
+		available = {
+		}
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = GER
+		cosmetic_ideology = fascism		
+		
+        visible = {
+			tag = TIB
+		}
+		available = {	
+			GER = {
+				has_country_flag = Sapr_GER_is_AI
+			}		
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = SOV_rerol_country_tt_2
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = GER
+			        }
+                    change_tag_from = TIB						
+			    }
+			}
+			GER = {
+				clr_country_flag = Sapr_GER_is_AI
+			}
+		}
+
+	}	
+	
+	Sapr_GER_duelniy_war_start = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		
+		available = {
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			declare_war_on = { target = SOV    type = take_state_focus } 		
+		}
+	}
+	
+	Sapr_ITA_duelniy_war_start = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = ITA
+		}
+
+		
+		available = {
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			declare_war_on = { target = ENG    type = take_state_focus } 		
+		}
+	}
+	
+	Sapr_ITA_duelniy_war_reset = {
+	
+		icon = ger_reichskommissariats
+
+
+		allowed = {
+			or = {
+				TAG = ITA
+				TAG = ENG			
+			}
+		}
+		
+		available = {
+			has_war = yes
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			ITA = {
+				delete_unit = {	
+				}
+			}
+			ENG = {
+				delete_unit = {	
+				}
+			}
+			if = {
+				limit = {
+					tag = ITA
+				}
+				white_peace = {
+					tag = ENG
+				}
+			}
+			if = {
+				limit = {
+					tag = ENG
+				}
+				white_peace = {
+					tag = ITA
+				}
+			}			
+		}
+	}
+		
+	
+	Sapr_GER_duelniy_war_reset = {
+	
+		icon = ger_reichskommissariats
+
+
+		allowed = {
+			or = {
+				TAG = GER
+				TAG = SOV			
+			}
+		}
+		
+		available = {
+			has_war = yes
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			GER = {
+				delete_unit = {	
+				}
+			}
+			SOV = {
+				delete_unit = {	
+				}
+			}
+			if = {
+				limit = {
+					tag = GER
+				}
+				white_peace = {
+					tag = SOV
+				}
+			}
+			if = {
+				limit = {
+					tag = SOV
+				}
+				white_peace = {
+					tag = GER
+				}
+			}			
+		}
+	}
+
+	Sapr_GER_duelniy_war_on_South = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}	
+
+		available = {
+		
+			has_war = no
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = Sapr_duelniy_war_on_in_the_north
+					}
+					clr_country_flag = Sapr_duelniy_war_on_in_the_north
+					
+					SOV = {					
+						transfer_state = 93	
+						transfer_state = 91		
+						transfer_state = 193						
+						transfer_state = 225						
+						transfer_state = 89	
+						transfer_state = 78	
+						transfer_state = 80	
+						transfer_state = 766						
+						transfer_state = 192
+						transfer_state = 834
+						transfer_state = 199
+						transfer_state = 201
+						transfer_state = 198
+						transfer_state = 202
+						transfer_state = 203
+						transfer_state = 197
+						transfer_state = 196
+						transfer_state = 200
+						transfer_state = 226
+						transfer_state = 259
+						transfer_state = 221
+						transfer_state = 227
+						transfer_state = 218
+						transfer_state = 228
+						transfer_state = 240
+						transfer_state = 220		
+					}
+					
+					GER = {
+
+						transfer_state = 70				
+						transfer_state = 71
+						transfer_state = 43					
+						transfer_state = 155				
+						transfer_state = 664
+						transfer_state = 73
+						transfer_state = 154
+						transfer_state = 76
+						transfer_state = 83	
+						transfer_state = 46
+						transfer_state = 77
+						transfer_state = 79
+						transfer_state = 84					
+						transfer_state = 82	
+						transfer_state = 45
+						transfer_state = 764
+						transfer_state = 81									
+					}
+				}			
+			
+				set_country_flag = Sapr_duelniy_war_on_South_flag
+				TIB = {
+					transfer_state = 985
+					transfer_state = 94
+					transfer_state = 194
+					transfer_state = 241			
+					transfer_state = 97
+					transfer_state = 95
+					transfer_state = 204
+					transfer_state = 206	
+					transfer_state = 207
+					transfer_state = 814
+					transfer_state = 243
+					transfer_state = 242
+					transfer_state = 189
+					transfer_state = 190
+					transfer_state = 11
+					transfer_state = 784
+					transfer_state = 96
+					transfer_state = 809
+					transfer_state = 808
+					transfer_state = 810
+					transfer_state = 12
+					transfer_state = 191
+					transfer_state = 13
+					transfer_state = 811
+					transfer_state = 812
+					transfer_state = 813
+					transfer_state = 815
+					transfer_state = 210
+					transfer_state = 246
+					transfer_state = 247
+					transfer_state = 264
+					transfer_state = 244
+					transfer_state = 263
+					transfer_state = 208
+					transfer_state = 209
+					transfer_state = 195				
+					
+
+					transfer_state = 1047
+					transfer_state = 1050
+					transfer_state = 92
+					transfer_state = 90
+					transfer_state = 1054
+					transfer_state = 10
+					transfer_state = 762
+					transfer_state = 67
+					transfer_state = 87
+					transfer_state = 10
+					transfer_state = 98
+					transfer_state = 5
+					transfer_state = 763
+					transfer_state = 188
+					transfer_state = 807
+					transfer_state = 85	
+					
+				}
+			}
+		}
+	}
+
+	Sapr_GER_duelniy_war_on_in_the_north = {
+	
+		icon = ger_reichskommissariats
+
+		allowed = {
+			TAG = GER
+		}
+
+		available = {
+			has_war = no		
+		}
+
+
+		cost = 0
+		
+		complete_effect = {	
+			
+			hidden_effect = {
+				set_country_flag = Sapr_duelniy_war_on_in_the_north
+				
+				if = {
+					limit = {
+						has_country_flag = Sapr_duelniy_war_on_South_flag
+					}
+					clr_country_flag = Sapr_duelniy_war_on_South_flag
+					
+					SOV = {
+
+						transfer_state = 985
+						transfer_state = 94
+						transfer_state = 194
+						transfer_state = 241			
+						transfer_state = 97
+						transfer_state = 95
+						transfer_state = 204
+						transfer_state = 206	
+						transfer_state = 207
+						transfer_state = 814
+						transfer_state = 243
+						transfer_state = 242
+						transfer_state = 189
+						transfer_state = 190
+						transfer_state = 11
+						transfer_state = 784
+						transfer_state = 96
+						transfer_state = 809
+						transfer_state = 808
+						transfer_state = 810
+						transfer_state = 12
+						transfer_state = 191
+						transfer_state = 13
+						transfer_state = 811
+						transfer_state = 812
+						transfer_state = 813
+						transfer_state = 815
+						transfer_state = 210
+						transfer_state = 246
+						transfer_state = 247
+						transfer_state = 264
+						transfer_state = 244
+						transfer_state = 263
+						transfer_state = 208
+						transfer_state = 209
+						transfer_state = 195				
+						transfer_state = 1047
+						transfer_state = 1050							
+						
+					}
+					
+					GER = {
+					
+						transfer_state = 92
+						transfer_state = 90
+						transfer_state = 10
+						transfer_state = 762
+						transfer_state = 67
+						transfer_state = 87
+						transfer_state = 10
+						transfer_state = 1054
+						transfer_state = 98
+						transfer_state = 5
+						transfer_state = 763
+						transfer_state = 188
+						transfer_state = 807
+						transfer_state = 85						
+					}
+					
+				}
+
+				TIB = {	
+					transfer_state = 91		
+					transfer_state = 193						
+					transfer_state = 225						
+					transfer_state = 89	
+					transfer_state = 78	
+					transfer_state = 80	
+					transfer_state = 766						
+					transfer_state = 192
+					transfer_state = 834
+					transfer_state = 199
+					transfer_state = 201
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 203
+					transfer_state = 197
+					transfer_state = 196
+					transfer_state = 200
+					transfer_state = 226
+					transfer_state = 259
+					transfer_state = 221
+					transfer_state = 227
+					transfer_state = 218
+					transfer_state = 228
+					transfer_state = 240
+					transfer_state = 220
+					transfer_state = 974
+					transfer_state = 973					
+					transfer_state = 971
+
+					transfer_state = 70					
+					transfer_state = 71
+					transfer_state = 43					
+					transfer_state = 155				
+					transfer_state = 664
+					transfer_state = 73
+					transfer_state = 154
+					transfer_state = 76
+					transfer_state = 83	
+					transfer_state = 46
+					transfer_state = 77
+					transfer_state = 79
+					transfer_state = 84					
+					transfer_state = 82	
+					transfer_state = 45
+					transfer_state = 764
+					transfer_state = 81								
+				}
+				
+				
+				
+			}
+		}
+	}
+	
+	
+	Sapr_duelniy_rerol_country_ITA_1 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ITA
+		cosmetic_ideology = fascism		
+		
+        visible = {
+			tag = ITA
+		}
+		available = {
+			has_war = no
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = ITA_rerol_country_tt_1
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = BRA
+			        }
+                    change_tag_from = ITA						
+			    }
+			}
+			ITA = {
+				set_country_flag = Sapr_ITA_is_AI
+			}
+		}
+
+	}	
+	Sapr_duelniy_rerol_country_ITA_2 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ENG
+		cosmetic_ideology = democratic		
+		
+        visible = {
+			tag = BRA
+		}
+		available = {
+			ENG = {
+				has_country_flag = Sapr_SOV_is_AI	
+			}	
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = ITA_rerol_country_tt_2
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = ENG
+			        }
+                    change_tag_from = BRA						
+			    }
+			}
+			ENG = {
+				clr_country_flag = Sapr_ENG_is_AI	
+			}	
+		}
+
+	}	
+		
+	Sapr_duelniy_rerol_country_ENG_1 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+		
+		available = {
+		}
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ITA
+		cosmetic_ideology = fascism		
+		
+        visible = {
+			tag = ENG
+		}
+		available = {			
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = ENG_rerol_country_tt_1
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = TIB
+			        }
+                    change_tag_from = ENG						
+			    }
+			}
+			ENG = {
+				set_country_flag = Sapr_ENG_is_AI
+			}
+		}
+
+	}	
+	Sapr_duelniy_rerol_country_ENG_2 = {
+	
+		icon = generic_army_support
+
+		allowed = {
+		}
+
+		
+		available = {
+		}
+
+	
+		icon = generic_army_support
+		
+	    cosmetic_tag = ITA
+		cosmetic_ideology = fascism		
+		
+        visible = {
+			tag = TIB
+		}
+		available = {	
+			ITA = {
+				has_country_flag = Sapr_ITA_is_AI
+			}		
+		}
+
+		days_remove    = -1
+		
+		complete_effect = {
+		    custom_effect_tooltip = ENG_rerol_country_tt_2
+			hidden_effect = {
+		        random_country = {
+			        limit = {
+					    tag = ITA
+			        }
+                    change_tag_from = TIB						
+			    }
+			}
+			ITA = {
+				clr_country_flag = Sapr_ITA_is_AI
+			}
+		}
+
+	}	
+		
+	
+}

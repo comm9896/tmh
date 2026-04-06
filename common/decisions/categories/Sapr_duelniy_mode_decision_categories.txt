@@ -1,0 +1,38 @@
+Sapr_duelniy_preset = {
+	
+	icon = generic_army_support
+
+	allowed = {
+		and = {
+			has_country_flag = Sapr_duelmiy_mode
+			or = {
+				tag = GER
+				tag = SOV	
+				tag = ENG
+				tag = ITA					
+			}
+		}
+	}
+}
+
+
+Sapr_duelniy_war = {
+	
+	icon = generic_army_support
+
+	allowed = {
+		and = {
+			has_country_flag = Sapr_duelmiy_mode
+			or = {
+				tag = BRA
+				tag = TIB					
+				tag = GER
+				tag = SOV
+				tag = ENG
+				tag = ITA	
+				
+			}
+		}	
+	}
+}
+

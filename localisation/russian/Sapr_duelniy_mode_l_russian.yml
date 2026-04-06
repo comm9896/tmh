@@ -1,0 +1,90 @@
+﻿l_russian:
+
+### Новая зеландия, смена страны
+Sapr_duel_mod_idea:0 "Дуэльный мод"
+Sapr_duelmiy_mode:0 "Дуэльный режим игры"
+
+Sapr_duelniy_preset:0 "Пресеты дуэльного режима"
+
+ger_duelniy_preset_st_pt_only:0 "Билд 16 СТ-ПТ и 120 пехоты"
+SOV_duelniy_preset_st_pt_only:0 "Билд 16 СТ-ПТ и 120 пехоты"
+
+ger_duelniy_preset_st_only:0 "Билд 16 СТ и 120 пехоты"
+SOV_duelniy_preset_st_only:0 "Билд 16 СТ и 120 пехоты"
+
+ger_duelniy_preset_st_pt:0 "Билд 8 СТ-ПТ, 2 ТТ, 12 моторок и 120 пехоты"
+SOV_duelniy_preset_st_pt:0 "Билд 8 СТ-ПТ, 2 ТТ, 12 моторок и 120 пехоты"
+
+ger_duelniy_preset_st:0 "Билд 8 СТ, 2 ТТ, 12 моторок и 120 пехоты"
+SOV_duelniy_preset_st:0 "Билд 8 СТ, 2 ТТ, 12 моторок и 120 пехоты"
+
+ger_duelniy_preset_tt:0 "Билд 6 ТТ, 16 моторок и 120 пехоты"
+SOV_duelniy_preset_tt:0 "Билд 6 ТТ, 16 моторок и 120 пехоты"
+
+ger_duelniy_preset_st_pt_mech:0 "Билд 8 СТ-ПТ, 22 моторок и 120 пехоты"
+SOV_duelniy_preset_st_pt_mech:0 "Билд 8 СТ-ПТ, 22 моторок и 120 пехоты"
+
+ger_duelniy_preset_st_mech:0 "Билд 8 СТ, 22 моторок и 120 пехоты"
+SOV_duelniy_preset_st_mech:0 "Билд 8 СТ, 22 моторок и 120 пехоты"
+
+
+ger_duelniy_preset_VDV:0 "Билд 30 ВДВ и 250 пехоты"
+SOV_duelniy_preset_VDV:0 "Билд 30 ВДВ и 250 пехоты"
+
+ger_duelniy_preset_Ranger:0 "Билд 30 Лесников и 250 пехоты"
+SOV_duelniy_preset_Ranger:0 "Билд 30 Лесников и 250 пехоты"
+
+ger_duelniy_preset_mech:0 "Билд 33 моторки и 250 пехоты"
+SOV_duelniy_preset_mech:0 "Билд 33 моторки и 250 пехоты"
+
+ger_duelniy_preset_arta_speshal:0 "Билд 12 САУшек, 12 моторок и 120 пехоты"
+SOV_duelniy_preset_arta_speshal:0 "Билд 12 САУшек, 12 моторок и 120 пехоты"
+
+
+ENG_duelniy_preset_st_pt_only:0 "Билд 8 СТ-ПТ, 20 ВДВ с Горняками и 80 пехи"
+ITA_duelniy_preset_st_pt_only:0 "Билд 8 СТ-ПТ, 20 ВДВ с Горняками и 80 пехи"
+
+ENG_duelniy_preset_st_only:0 "Билд 8 СТ, 20 ВДВ с Горняками и 80 пехи"
+ITA_duelniy_preset_st_only:0 "Билд 8 СТ, 20 ВДВ с Горняками и 80 пехи"
+
+ENG_duelniy_preset_tt:0 "Билд 6 ТТ, 6 моторок, 20 ВДВ с Горняками и 80 пехи"
+ITA_duelniy_preset_tt:0 "Билд 6 ТТ, 6 моторок, 20 ВДВ с Горняками и 80 пехи"
+
+
+Sapr_duelniy_war:0 "Поединок"
+Sapr_GER_duelniy_war_start:0 "Начать войну"
+Sapr_GER_duelniy_war_reset:0 "Рестарт"
+Sapr_GER_duelniy_war_on_South:0 "Южный фронт"
+Sapr_GER_duelniy_war_on_in_the_north:0 "Северный фронт"
+
+Sapr_ITA_duelniy_war_start:0 "Начать войну"
+Sapr_ITA_duelniy_war_reset:0 "Рестарт"
+
+
+Sapr_duelniy_pravila:0 "Прочитать правила игры"
+
+Sapr_pravila.1.b:0 "Правила игры для дуэльного режима"
+Sapr_pravila.1.c:0 "1. Во время дуэли запрещено создавать новые дивизии \n\n 2. Перед началом дуэли можно выбрать любую сухопутную доктрину, назначить любого советника и любого генерала. Запрещено перекликивать воздушную доктрину, назначать советников на авиацию и назначать духи авиации. \n\n 3. Количество истребителей на авиа рег – 4000  \n\n 4. Количество штурмовиков на авиа рег – 1000  \n\n 4. Авиация расклинивается со старта на все авиа регги. Запрещено перекрикивать авиацию во время дуэли.\n\n 5. Перед началом Дуэли необходимо выбрать билд сухопутной армии в решениях"
+Sapr_pravila.1.d:0 "ок!"
+
+
+Sapr_duelniy_rerol_country_GER_1:0 "Пересесть на §Yнейтральную страну§!"
+Sapr_duelniy_rerol_country_GER_2:0 "Пересесть на §YСССР§!"
+AXIS_rerol_country_tt_1:0 "Вы пересядите на §YБразилию§!"
+AXIS_rerol_country_tt_2:0 "Вы пересядите на §YСССР§!"
+
+Sapr_duelniy_rerol_country_SOV_1:0 "Пересесть на §Yнейтральную страну§!"
+Sapr_duelniy_rerol_country_SOV_2:0 "Пересесть на §YРейх§!"
+SOV_rerol_country_tt_1:0 "Вы пересядите на §YТибет§!"
+SOV_rerol_country_tt_2:0 "Вы пересядите на §YРейх§!"
+
+
+Sapr_duelniy_rerol_country_ITA_1:0 "Пересесть на §Yнейтральную страну§!"
+Sapr_duelniy_rerol_country_ITA_2:0 "Пересесть на §YВеликабританию§!"
+ITA_rerol_country_tt_1:0 "Вы пересядите на §YБразилию§!"
+ITA_rerol_country_tt_2:0 "Вы пересядите на §YВеликабританию§!"
+
+Sapr_duelniy_rerol_country_ENG_1:0 "Пересесть на §Yнейтральную страну§!"
+Sapr_duelniy_rerol_country_ENG_2:0 "Пересесть на §YИталию§!"
+ENG_rerol_country_tt_1:0 "Вы пересядите на §YТибет§!"
+ENG_rerol_country_tt_2:0 "Вы пересядите на §YИталию§!"

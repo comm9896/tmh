@@ -505,51 +505,6 @@ on_actions = {
 				}
 			}
 		}
-		effect = { # Iceland declaring independence
-			if = {
-				limit = { 
-					FROM = { original_tag = DEN }
-					ICE = {
-						NOT = { has_country_flag = declared_independence_flag }
-						is_subject_of = FROM
-						has_completed_focus = ICE_declare_absolute_neutrality
-					}
-				}
-				set_variable = { ICE.overlord_attacker = ROOT}
-				ICE = {
-					set_country_flag = declared_independence_flag
-					country_event = {
-						id = iceland_events.1
-						hours = 1
-						#random_hours = 4 
-					}
-				}
-			}
-		}
-
-		effect = { #manpower gain from train the sheltered focus
-			if = { 
-				limit = {
-					SWE = { 
-						has_completed_focus =  SWE_train_the_sheltered
-						NOT = { has_country_flag = SWE_has_activated_train_the_sheltered }
-						is_eligible_for_train_the_sheltered = yes
-					}
-					OR = { 
-						FROM = {
-							tag = SWE
-						}
-						ROOT = {
-							tag = SWE
-						}
-					}
-				}
-				SWE = {
-					set_country_flag = SWE_has_activated_train_the_sheltered
-					add_manpower = var:SWE_train_the_sheltered_manpower_current_manpower
-				}
-			}
-		}
 
 		effect = { # Something about Swedish Ball Bearings? 
 			if = {
@@ -695,7 +650,6 @@ on_actions = {
 						limit = {
 							NOR = {	 
 								has_completed_focus = NOR_continue_nygaardsvold_government 
-								NOT = { has_completed_focus = NOR_arrest_quisling }
 								is_subject = no
 							}
 						}
@@ -814,23 +768,6 @@ on_actions = {
 	on_peaceconference_ended = {
 
 
-		effect = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-					DEN = {
-						has_country_flag = DEN_has_occupation_flag
-						is_subject = no
-					}
-					OR = {
-						FROM = { original_tag = DEN }
-						FROM = { original_tag = DEN.DEN_overlord_nation }
-					}
-				}
-				DEN_puppet_on_action_effects = yes
-				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
-			}
-		}
 		effect = { #Effect so Norway can update countries in its focus tree. 
 			if = {
 				limit = {
@@ -855,18 +792,6 @@ on_actions = {
 			}
 		}
 
-		effect = { # Effect to reset the variables and flags associated with the prep system so they can do it all again afterwards 
-			if = {
-				limit = {
-					original_tag = NOR
-					OR = {
-						has_country_flag = NOR_going_dem_historical 
-						has_country_flag = NOR_going_dem_allied
-					}
-				}
-				NOR_reset_prep_system = yes 
-			}
-		}
 
 		# FIN - Remove winter war flag if over
 		effect = {
@@ -915,16 +840,6 @@ on_actions = {
 						subtract_from_variable = { FIN_motti_decision_cost_for_trigger = 1 } 
 					}
 				}
-			}
-		}
-
-		#RENAME STATES/VPs
-		effect = {
-			IF = {
-				limit = {
-					FIN_state_or_vp_name_should_change = yes
-				}
-				FIN_change_name_of_state_or_vp = yes
 			}
 		}
 

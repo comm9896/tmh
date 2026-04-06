@@ -18,7 +18,12 @@ state = {
 			owner = TIB
 			add_core_of = TIB
 		}	
-
+		1945.1.1.10 = {
+		    owner = ENG
+		    add_core_of = ENG		
+		    add_core_of = ITA					
+		}
+		
 		buildings = {
 			industrial_complex = 1
 			air_base = 5
@@ -34,9 +39,7 @@ state = {
 		victory_points = { 
 			12812 1
 		}
-		
-		owner = ETH
-		add_core_of = ETH
+
 
 	}
 

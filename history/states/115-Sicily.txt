@@ -12,7 +12,7 @@ state = {
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1
-				air_base = 10
+				air_base = 5
 				dockyard = 1
 				10074 = {
 					naval_base = 2
@@ -53,7 +53,7 @@ state = {
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1
-				air_base = 10
+				air_base = 5
 				dockyard = 1
 				10074 = {
 					naval_base = 2
@@ -76,8 +76,9 @@ state = {
 		}	
 		
 		1945.1.1.10 = {	    
-			owner = TIB
-			add_core_of = TIB				
+			owner = ITA			
+			add_core_of = ITA	
+			add_core_of = ENG				
 		}
 
 		victory_points = {

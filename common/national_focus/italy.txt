@@ -77,6 +77,9 @@ focus_tree = {
 				controls_state = 162
 				controls_state = 158
 			}
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2722,6 +2725,9 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}		
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
@@ -3613,6 +3619,9 @@ focus_tree = {
 		relative_position_id = ITA_army_primacy_bba
 		cost = 5
 		available = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}		
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
@@ -4207,6 +4216,9 @@ focus_tree = {
 		relative_position_id = ITA_air_innovations_bba
 		cost = 5
 		available = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}		
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
@@ -5677,6 +5689,9 @@ focus_tree = {
 
 		cost = 4
 		available = {
+			not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}		
 		}
 
 		search_filters = {}

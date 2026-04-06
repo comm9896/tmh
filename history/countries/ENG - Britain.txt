@@ -153,6 +153,13 @@ set_technology = {
 
 }
 
+
+complete_special_project = {
+	project = sp:sp_land_stronghold_network
+	scientist = FRA_emile_rimailho
+}
+
+
 add_breakthrough_progress = {
 	specialization = specialization_naval
 	value = 0.6
@@ -864,5 +871,1105 @@ create_equipment_variant = {
 	design_team = mio:ENG_de_havilland_organization
 	
 	icon = "GFX_ENG_heavy_fighter1_medium"
+}
+
+
+
+
+
+1945.1.1.10 = {	
+
+
+	remove_ideas = closed_economy
+	remove_ideas = pacifist_nation
+	
+    clr_country_flag = Sapr_only_erope
+    clr_country_flag = Sapr_no_asia
+	clr_country_flag = Sapr_only_asia	
+    clr_country_flag = Sapr_only_erope_1941	
+    set_country_flag = Sapr_duelmiy_mode
+
+
+	
+	add_war_support = 1
+	add_stability = 1
+
+	add_political_power = 1000
+	army_experience = 999
+	add_command_power = 200
+
+	add_ideas = Sapr_duel_mod_idea
+
+	complete_national_focus =	uk_amphibious_focus
+	complete_national_focus =	ENG_chiefs_of_staff_committee
+
+	complete_special_project = {
+		project = sp:sp_land_stronghold_network
+		scientist = ENG_Henry_Edward_Merritt
+	}		
+	complete_special_project = {
+		project = sp:sp_land_flamethrower_tank
+		scientist = ENG_Henry_Edward_Merritt
+	}				
+	complete_special_project = {
+		project = sp:sp_land_military_engineering_vehicles
+		scientist = ENG_Henry_Edward_Merritt
+	}	
+	complete_special_project = {
+		project = sp:sp_land_super_heavy_howitzer
+		scientist = ENG_Henry_Edward_Merritt
+	}	
+
+	add_ideas = {
+		limited_exports
+		limited_conscription
+		partial_economic_mobilisation
+	}
+
+	add_offsite_building = { type = industrial_complex level = 30 }
+	add_offsite_building = { type = arms_factory level = 30 }	
+
+	
+	create_intelligence_agency = yes
+	
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_economy_civilian	
+	
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_army_department
+	
+	upgrade_intelligence_agency = upgrade_naval_department
+	upgrade_intelligence_agency = upgrade_naval_department
+	upgrade_intelligence_agency = upgrade_naval_department
+	upgrade_intelligence_agency = upgrade_naval_department
+	upgrade_intelligence_agency = upgrade_naval_department
+	upgrade_intelligence_agency = upgrade_naval_department
+	
+	upgrade_intelligence_agency = upgrade_airforce_department
+	upgrade_intelligence_agency = upgrade_airforce_department
+	upgrade_intelligence_agency = upgrade_airforce_department
+	upgrade_intelligence_agency = upgrade_airforce_department
+	upgrade_intelligence_agency = upgrade_airforce_department
+				
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_passive_defense
+	
+	upgrade_intelligence_agency = upgrade_anti_partisan
+	upgrade_intelligence_agency = upgrade_anti_partisan
+	
+	upgrade_intelligence_agency = upgrade_training_centers		
+	upgrade_intelligence_agency = upgrade_blueprint_stealing
+	upgrade_intelligence_agency = upgrade_invisible_ink
+	upgrade_intelligence_agency = upgrade_plastic_explosives
+	upgrade_intelligence_agency = upgrade_commando_training
+	upgrade_intelligence_agency = upgrade_suicide_pills
+	upgrade_intelligence_agency = upgrade_interrogation_techniques
+	upgrade_intelligence_agency = upgrade_psycho_warfare
+	
+	upgrade_intelligence_agency = upgrade_form_department
+	upgrade_intelligence_agency = upgrade_decryption_boost
+	upgrade_intelligence_agency = upgrade_decryption_boost	
+	
+
+
+	
+	#пехотное снаряжение
+	set_technology = { infantry_weapons = 1 }	
+	set_technology = { infantry_weapons1 = 1 }	
+	set_technology = { infantry_weapons2 = 1 }				
+	set_technology = { improved_infantry_weapons = 1 }	
+	set_technology = { improved_infantry_weapons_2 = 1 }	
+	set_technology = { infantry_at = 1 }	
+	set_technology = { infantry_at2 = 1 }
+	set_technology = { advanced_infantry_weapons = 1 }	
+	set_technology = { advanced_infantry_weapons2 = 1 }	
+	set_technology = { paratroopers = 1 }	
+	set_technology = { paratroopers2 = 1 }	
+	set_technology = { paratroopers3 = 1 }
+	set_technology = { marines = 1 }	
+	set_technology = { marines2 = 1 }	
+	set_technology = { marines3 = 1 }	
+	set_technology = { tech_mountaineers = 1 }	
+	set_technology = { tech_mountaineers2 = 1 }
+	set_technology = { tech_mountaineers3 = 1 }	
+	set_technology = { night_vision = 1 }	
+	set_technology = { support_weapons = 1 }	
+	set_technology = { support_weapons2 = 1 }	
+	set_technology = { support_weapons3 = 1 }
+	set_technology = { support_weapons4 = 1 }	
+	set_technology = { tech_trucks = 1 }	
+	set_technology = { motorised_infantry = 1 }	
+	set_technology = { motorized_rocket_unit = 1 }
+	set_technology = { armored_car1 = 1 }		
+	set_technology = { mechanised_infantry = 1 }
+	set_technology = { mechanised_infantry2 = 1 }
+	
+	#Танки
+	set_technology = { gwtank_chassis = 1 }				
+	set_technology = { basic_light_tank_chassis = 1 }	
+	set_technology = { improved_light_tank_chassis = 1 }				
+	set_technology = { amphibious_tank_chassis = 1 }	
+	set_technology = { amphibious_drive = 1 }				
+	set_technology = { advanced_light_tank_chassis = 1 }	
+	set_technology = { basic_medium_tank_chassis = 1 }				
+	set_technology = { improved_medium_tank_chassis = 1 }
+	set_technology = { advanced_medium_tank_chassis = 1 }				
+	set_technology = { basic_heavy_tank_chassis = 1 }
+	set_technology = { improved_heavy_tank_chassis = 1 }				
+	set_technology = { advanced_heavy_tank_chassis = 1 }				
+	set_technology = { armor_tech_1 = 1 }	
+	set_technology = { armor_tech_2 = 1 }	
+	set_technology = { armor_tech_3 = 1 }	
+	set_technology = { engine_tech_1 = 1 }	
+	set_technology = { engine_tech_2 = 1 }	
+	set_technology = { engine_tech_3 = 1 }	
+	
+	#Доп Роты		
+	set_technology = { tech_support = 1 }				
+	set_technology = { tech_engineers = 1 }	
+	set_technology = { tech_engineers2 = 1 }	
+	set_technology = { tech_engineers3 = 1 }	
+	set_technology = { tech_recon = 1 }	
+	set_technology = { tech_recon2 = 1 }	
+	set_technology = { tech_recon3 = 1 }	
+	set_technology = { tech_military_police = 1 }	
+	set_technology = { tech_military_police2 = 1 }	
+	set_technology = { tech_military_police3 = 1 }	
+	set_technology = { tech_maintenance_company = 1 }	
+	set_technology = { tech_maintenance_company2 = 1 }	
+	set_technology = { tech_maintenance_company3 = 1 }			
+	set_technology = { tech_field_hospital = 1 }	
+	set_technology = { tech_field_hospital2 = 1 }	
+	set_technology = { tech_field_hospital3 = 1 }	
+	set_technology = { tech_logistics_company = 1 }	
+	set_technology = { tech_logistics_company2 = 1 }	
+	set_technology = { tech_logistics_company3 = 1 }	
+	set_technology = { tech_signal_company = 1 }	
+	set_technology = { tech_signal_company2 = 1 }	
+	set_technology = { tech_signal_company3 = 1 }
+
+	set_technology = { sp_armored_signal_tech = 1 }	
+	set_technology = { sp_armored_engineer_tech = 1 }
+	set_technology = { sp_armored_maintenance_tech = 1 }
+	
+	#Электрика				
+	set_technology = { electronic_mechanical_engineering = 1 }	
+	set_technology = { radio = 1 }	
+	set_technology = { radio_detection = 1 }	
+	set_technology = { decimetric_radar = 1 }	
+	set_technology = { improved_decimetric_radar = 1 }	
+	set_technology = { centimetric_radar = 1 }	
+	set_technology = { improved_centimetric_radar = 1 }	
+	set_technology = { advanced_centimetric_radar = 1 }	
+	set_technology = { mechanical_computing = 1 }	
+	set_technology = { computing_machine = 1 }			
+	set_technology = { improved_computing_machine = 1 }			
+	set_technology = { advanced_computing_machine = 1 }
+	set_technology = { improved_computing_machine = 1 }			
+
+	#Промышленность	
+	set_technology = { basic_machine_tools = 1 }
+	set_technology = { improved_machine_tools = 1 }			
+	set_technology = { advanced_machine_tools = 1 }			
+	set_technology = { assembly_line_production = 1 }			
+	set_technology = { flexible_line = 1 }			
+	set_technology = { concentrated_industry = 1 }			
+	set_technology = { concentrated_industry2 = 1 }			
+	set_technology = { concentrated_industry3 = 1 }			
+	set_technology = { concentrated_industry4 = 1 }			
+	set_technology = { concentrated_industry5 = 1 }			
+	set_technology = { fuel_silos = 1 }			
+	set_technology = { fuel_refining = 1 }			
+	set_technology = { fuel_refining2 = 1 }			
+	set_technology = { fuel_refining3 = 1 }			
+	set_technology = { fuel_refining4 = 1 }			
+	set_technology = { fuel_refining5 = 1 }			
+	set_technology = { synth_oil_experiments = 1 }			
+	set_technology = { oil_processing = 1 }			
+	set_technology = { improved_oil_processing = 1 }			
+	set_technology = { advanced_oil_processing = 1 }			
+	set_technology = { modern_oil_processing = 1 }						
+	set_technology = { rubber_processing = 1 }			
+	set_technology = { improved_rubber_processing = 1 }			
+	set_technology = { advanced_rubber_processing = 1 }	
+	set_technology = { modern_rubber_processing = 1 }
+	set_technology = { construction1 = 1 }			
+	set_technology = { construction2 = 1 }	
+	set_technology = { construction3 = 1 }
+	set_technology = { construction4 = 1 }			
+	set_technology = { construction5 = 1 }	
+	set_technology = { excavation1 = 1 }			
+	set_technology = { excavation2 = 1 }	
+	set_technology = { excavation3 = 1 }
+	set_technology = { excavation4 = 1 }			
+	set_technology = { excavation5 = 1 }		
+
+	#Артилерия		
+	set_technology = { gw_artillery = 1 }	
+	set_technology = { interwar_artillery = 1 }	
+	set_technology = { artillery1 = 1 }
+	set_technology = { artillery2 = 1 }			
+	set_technology = { artillery3 = 1 }	
+	set_technology = { artillery4 = 1 }	
+	set_technology = { artillery5 = 1 }
+	set_technology = { interwar_antiair = 1 }	
+	set_technology = { antiair1 = 1 }	
+	set_technology = { antiair2 = 1 }	
+	set_technology = { antiair3 = 1 }
+	set_technology = { antiair4 = 1 }	
+	set_technology = { antiair5 = 1 }				
+	set_technology = { interwar_antitank = 1 }				
+	set_technology = { antitank1 = 1 }				
+	set_technology = { antitank2 = 1 }				
+	set_technology = { antitank3 = 1 }				
+	set_technology = { antitank4 = 1 }				
+	set_technology = { antitank5 = 1 }				
+	set_technology = { rocket_artillery = 1 }				
+	set_technology = { rocket_artillery2 = 1 }				
+	set_technology = { rocket_artillery3 = 1 }	
+	set_technology = { rocket_artillery4 = 1 }	
+			
+	#Авиация		
+	set_technology = { iw_small_airframe = 1 }	
+	set_technology = { basic_small_airframe = 1 }	
+	set_technology = { improved_small_airframe = 1 }
+	set_technology = { advanced_small_airframe = 1 }			
+	set_technology = { iw_medium_airframe = 1 }	
+	set_technology = { basic_medium_airframe = 1 }	
+	set_technology = { improved_medium_airframe = 1 }
+	set_technology = { advanced_medium_airframe = 1 }	
+	set_technology = { iw_large_airframe = 1 }	
+	set_technology = { basic_large_airframe = 1 }	
+	set_technology = { improved_large_airframe = 1 }
+	set_technology = { advanced_large_airframe = 1 }	
+	set_technology = { early_bombs = 1 }				
+	set_technology = { heavy_bombs = 1 }				
+	set_technology = { armor_piercing_bombs = 1 }				
+	set_technology = { photo_reconnaisance = 1 }				
+	set_technology = { air_torpedoe_1 = 1 }				
+	set_technology = { air_torpedoe_2 = 1 }				
+	set_technology = { aa_lmg = 1 }				
+	set_technology = { survivability_studies = 1 }				
+	set_technology = { aa_hmg = 1 }				
+	set_technology = { aa_cannon_1 = 1 }	
+	set_technology = { engines_1 = 1 }	
+	set_technology = { engines_2 = 1 }	
+	set_technology = { engines_3 = 1 }	
+	set_technology = { engines_4 = 1 }				
+	set_technology = { range_improvements = 1 }	
+	set_technology = { aircraft_construction = 1 }
+
+
+	#Спецура
+	set_technology = { special_forces_mountaineers = 1 }
+	set_technology = { ski_troops = 1 }	
+	set_technology = { rangers = 1 }	
+	set_technology = { special_forces_recon = 1 }		
+	set_technology = { mountaineers_combat_1 = 1 }			
+	set_technology = { mountaineers_combat_2 = 1 }		
+	set_technology = { mountaineers_combat_3 = 1 }	
+	set_technology = { mountaineers_keystone_1 = 1 }		
+	set_technology = { mountaineers_keystone_2 = 1 }				
+
+	set_technology = { special_forces_marines = 1 }
+	set_technology = { marines_jungle_troops = 1 }	
+	set_technology = { marines_shore_parties = 1 }	
+	set_technology = { marines_recon = 1 }		
+	set_technology = { marines_commandoes = 1 }			
+	set_technology = { marines_expeditionary = 1 }		
+	set_technology = { marines_commandos_demolition = 1 }	
+	set_technology = { marines_expeditionary_blowtorch = 1 }		
+	set_technology = { marines_commandoes_mechanised = 1 }			
+	set_technology = { marines_expeditionary_support = 1 }		
+
+	set_technology = { special_forces_paratroopers = 1 }
+	set_technology = { paras_dispersed_drop = 1 }	
+	set_technology = { paras_combat_drop = 1 }	
+	set_technology = { paras_airborne_light_armor = 1 }		
+	set_technology = { paras_combat_1 = 1 }			
+	set_technology = { paras_combat_2 = 1 }		
+	set_technology = { paras_bonus_1 = 1 }	
+	set_technology = { paras_bonus_2 = 1 }		
+	set_technology = { paras_keystone_1 = 1 }			
+	set_technology = { paras_keystone_2 = 1 }		
+
+	set_technology = { special_forces_rangers = 1 }
+	set_technology = { rangers_jaegers_training = 1 }	
+	set_technology = { rangers_jungle_training = 1 }	
+	set_technology = { rangers_guerilla_doctrine = 1 }		
+	set_technology = { rangers_recon_terrain_training = 1 }			
+	set_technology = { rangers_fire_support_integration = 1 }		
+	set_technology = { rangers_urban_combat = 1 }	
+	set_technology = { elite_rangers_doctrine = 1 }		
+	set_technology = { rangers_backbone_doctrine = 1 }			
+	
+	
+	
+	
+	
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_vickers_armstrong_eng_organization
+		}
+		complete_mio_trait = generic_mio_trait_improved_boogies
+		complete_mio_trait = generic_mio_engine_optimization			
+		complete_mio_trait = generic_mio_reduced_fuel_usage			
+		complete_mio_trait = generic_mio_improved_ventilation			
+		complete_mio_trait = generic_mio_improved_tracks_and_suspension			
+		complete_mio_trait = generic_mio_sloping_armor			
+		complete_mio_trait = generic_mio_lighter_materials	
+		complete_mio_trait = generic_mio_armor_hardening_process
+		complete_mio_trait = generic_mio_enlarged_breech
+		complete_mio_trait = generic_mio_enlarged_breech	
+		complete_mio_trait = generic_mio_gunner_sight_improvements	
+		complete_mio_trait = generic_mio_quality_assurance_routines	
+		complete_mio_trait = generic_mio_streamlined_production				
+	}	
+
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_royal_arsenal_organization
+		}
+		complete_mio_trait = generic_mio_trait_stable_platforms
+		complete_mio_trait = generic_mio_trait_improved_hydraulic_recoil_system		
+		complete_mio_trait = generic_mio_trait_improved_direct_fire_targeting			
+		complete_mio_trait = generic_mio_trait_sliding_breech_block			
+		complete_mio_trait = generic_mio_trait_rapid_fire			
+		complete_mio_trait = generic_mio_trait_advanced_barrel_forging		
+		complete_mio_trait = generic_mio_trait_big_guns
+		complete_mio_trait = generic_mio_trait_gun_mass_production
+		complete_mio_trait = generic_mio_trait_super_charges
+		complete_mio_trait = generic_mio_trait_light_weight_barrels				
+	}
+
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_rsaf_enfield_organization
+		}
+		complete_mio_trait = generic_mio_trait_drum_pattern_sights
+		complete_mio_trait = generic_mio_trait_reinforced_stocks		
+		complete_mio_trait = generic_mio_trait_semi_auto			
+		complete_mio_trait = generic_mio_trait_advanced_barrel_forging			
+		complete_mio_trait = generic_mio_trait_mass_rifle_production			
+		complete_mio_trait = generic_mio_trait_quality_materials		
+		complete_mio_trait = generic_mio_trait_armor_piercing_rounds
+		complete_mio_trait = generic_mio_trait_heavy_anti_armor_ammunition	
+		complete_mio_trait = generic_mio_trait_rubber_cushioned_buttpad				
+	}		
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_vauxhall_automotive_organization
+		}
+		complete_mio_trait = generic_mio_trait_composite_cargo_bed
+		complete_mio_trait = generic_mio_trait_all_wheel_drive		
+		complete_mio_trait = generic_mio_trait_high_powered_engine			
+		complete_mio_trait = generic_mio_trait_medium_machinegun_mounts			
+		complete_mio_trait = generic_mio_trait_armored_pulpit_mount			
+		complete_mio_trait = generic_mio_trait_open_chassi		
+		complete_mio_trait = generic_mio_trait_bulletproof_panels
+		complete_mio_trait = generic_mio_trait_land_mine_racks				
+	}
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_vauxhall_organization
+		}
+		complete_mio_trait = generic_mio_trait_single_engine
+		complete_mio_trait = generic_mio_engine_optimization			
+		complete_mio_trait = generic_mio_trait_interleaved_track_wheels			
+		complete_mio_trait = generic_mio_trait_battle_tank_specifications			
+		complete_mio_trait = generic_mio_trait_adaptable_turret_ring			
+		complete_mio_trait = generic_mio_trait_turret_sights			
+		complete_mio_trait = generic_mio_trait_anti_tank_role	
+		complete_mio_trait = generic_mio_trait_thick_armor
+		complete_mio_trait = generic_mio_trait_even_thicker_armor			
+	}
+	
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_supermarine_organization
+		}
+		complete_mio_trait = generic_mio_trait_fabric_skin
+		complete_mio_trait = generic_mio_trait_metal_skin		
+		complete_mio_trait = generic_mio_trait_bigger_engines			
+		complete_mio_trait = generic_mio_trait_high_octane_fuels			
+		complete_mio_trait = generic_mio_trait_fuel_injection_engines			
+		complete_mio_trait = generic_mio_trait_subsidiary_suppliers
+		complete_mio_trait = generic_mio_trait_cantilever_wing_structure
+		complete_mio_trait = generic_mio_trait_minimum_weapon_requirements		
+		complete_mio_trait = generic_mio_trait_shortened_wings
+		complete_mio_trait = generic_mio_trait_interceptor
+		complete_mio_trait = generic_mio_trait_gunboat	
+		complete_mio_trait = generic_mio_trait_stiffened_wings	
+		complete_mio_trait = generic_mio_trait_fighter_interceptors			
+	}
+
+	every_military_industrial_organization = {
+		limit = {
+			is_military_industrial_organization = ENG_hawker_organization
+		}
+		complete_mio_trait = generic_mio_trait_expanded_production_facilities
+		complete_mio_trait = generic_mio_trait_fixed_tailwheels		
+		complete_mio_trait = generic_mio_trait_removable_wings			
+		complete_mio_trait = generic_mio_trait_liquid_cooled_engines			
+		complete_mio_trait = generic_mio_trait_maritime_duties			
+		complete_mio_trait = generic_mio_trait_advanced_aerodynamics
+		complete_mio_trait = generic_mio_trait_fuselage_ordinance_rack
+		complete_mio_trait = generic_mio_trait_ongoing_developmental_upgrades		
+		complete_mio_trait = generic_mio_trait_heavier_airframe
+		complete_mio_trait = generic_mio_trait_fighter_specialization
+		complete_mio_trait = generic_mio_trait_fighter_expertise	
+	}
+
+	create_equipment_variant = {
+		name = "Стерлинг"
+		type = infantry_equipment_3	
+		design_team = mio:ENG_rsaf_enfield_organization				
+	}
+
+	create_equipment_variant = {
+		name = "17 фунтовка"
+		type = anti_tank_equipment_3	
+		design_team = mio:ENG_royal_arsenal_organization				
+	}
+	create_equipment_variant = {
+		name = "3.7 дюйма автомат"
+		type = anti_air_equipment_3	
+		design_team = mio:ENG_royal_arsenal_organization				
+	}	
+	create_equipment_variant = {
+		name = "5.5 дюйма гаубица"
+		type = artillery_equipment_3	
+		design_team = mio:ENG_royal_arsenal_organization				
+	}		
+
+	
+	create_equipment_variant = {
+		name = "Комет"
+		type = medium_tank_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon
+			special_type_slot_4 = auto_loader				
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 17
+			medium_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_medium_tank_medium"		
+		design_team = mio:ENG_vauxhall_organization			
+	}
+	
+	create_equipment_variant = {
+		name = "Валентайн"
+		type = light_tank_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = additional_machine_guns
+			special_type_slot_4 = auto_loader			
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 17
+			light_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_light_tank_medium"		
+		design_team = mio:ENG_vauxhall_organization
+	}
+			
+	create_equipment_variant = {
+		name = "ЗСУ"
+		type = medium_tank_aa_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_anti_air_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = easy_maintenance
+			special_type_slot_3 = armor_skirts
+			special_type_slot_4 = additional_machine_guns		
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 17
+			medium_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_medium_tank_medium"		
+		design_team = mio:ENG_vauxhall_organization			
+	}
+	
+	create_equipment_variant = {
+		name = "Огнемет"
+		type = medium_tank_flame_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = flamethrower
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = easy_maintenance
+			special_type_slot_3 = armor_skirts
+			special_type_slot_4 = additional_machine_guns				
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 17
+			medium_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_medium_tank_medium"		
+		design_team = mio:ENG_vauxhall_organization			
+	}
+
+	create_equipment_variant = {
+		name = "Контеншенс"
+		type = medium_tank_destroyer_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_3
+			turret_type_slot = tank_medium_fixed_superstructure_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon
+			special_type_slot_4 = auto_loader								
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 17
+			medium_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_medium_td_medium"		
+		design_team = mio:ENG_vauxhall_organization			
+	}
+
+	
+	create_equipment_variant = {
+		name = "блэк Принс"
+		type = heavy_tank_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_3
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon
+			special_type_slot_4 = auto_loader							
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 16
+			havey_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_heavy_tank_medium"		
+		design_team = mio:ENG_vauxhall_organization			
+	}
+	
+	create_equipment_variant = {
+		name = "Гектор"
+		type = heavy_tank_destroyer_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_3
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = sloped_armor
+			special_type_slot_3 = armor_skirts
+			special_type_slot_4 = secondary_turret_small_cannon				
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 16
+			havey_tank_nsb_armor_upgrade = 17
+		}
+		icon = "GFX_ENG_advanced_heavy_td_medium"		
+		design_team = mio:ENG_vauxhall_organization			
+	}
+
+	
+	create_equipment_variant = {
+		name = "Супермарин"
+		type = small_plane_airframe_3
+		parent_version = 0
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = armor_plate_small
+			special_type_slot_2 = air_air_radar_2
+			special_type_slot_3 = fuel_tanks_small
+			special_type_slot_4 = self_sealing_fuel_tanks_small				
+		}
+		icon = "GFX_ENG_fighter4_medium"			
+		design_team = mio:ENG_supermarine_organization			
+	}
+	
+	create_equipment_variant = {
+		name = "Корсар"
+		type = small_plane_cas_airframe_3
+		parent_version = 0
+		modules = {
+			fixed_main_weapon_slot = tank_buster_2
+			fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+			fixed_auxiliary_weapon_slot_3 = heavy_bomb_locks			
+			engine_type_slot = engine_4_2x
+			special_type_slot_1 = dive_brakes_small
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = fuel_tanks_small			
+		}
+		icon = "GFX_ENG_CAS4_medium"			
+		design_team = mio:ENG_hawker_organization		
+	}
+	
+	division_template = {
+		name = "Тяжелые танки"	
+		division_names_group = ENG_MEC_01
+		
+		regiments = {
+			heavy_armor = { x = 0 y = 0 }
+			heavy_armor = { x = 0 y = 1 }
+			heavy_armor = { x = 0 y = 2 }
+			heavy_armor = { x = 0 y = 3 }
+			heavy_armor = { x = 0 y = 4 }
+			
+			heavy_armor = { x = 1 y = 0 }
+			heavy_armor = { x = 1 y = 1 }
+			heavy_armor = { x = 1 y = 2 }
+			heavy_armor = { x = 1 y = 3 }
+			heavy_armor = { x = 1 y = 4 }	
+			
+			heavy_tank_destroyer_brigade = { x = 2 y = 0 }	
+			heavy_tank_destroyer_brigade = { x = 2 y = 1 }
+			medium_sp_anti_air_brigade = { x = 2 y = 2 }	
+			
+			mechanized = { x = 3 y = 0 }
+			mechanized = { x = 3 y = 1 }
+			mechanized = { x = 3 y = 2 }
+			mechanized = { x = 3 y = 3 }
+			
+			mechanized = { x = 4 y = 0 }
+			mechanized = { x = 4 y = 1 }
+			mechanized = { x = 4 y = 2 }
+			mechanized = { x = 4 y = 3 }			
+
+		}
+		support = {
+			armored_engineer = { x = 0 y = 0 } 
+			medium_flame_tank  = { x = 0 y = 1 }  
+			armored_signal = { x = 0 y = 2 } 
+			light_tank_recon  = { x = 0 y = 3 }
+			armored_maintenance  = { x = 0 y = 4 }	
+		}
+		is_locked = yes						
+	}
+	
+	division_template = {
+		name = "Средние танки с ПТ"
+
+		division_names_group = ENG_Arm_01
+
+		regiments = {
+			medium_armor = { x = 0 y = 0 }
+			medium_armor = { x = 0 y = 1 }
+			medium_armor = { x = 0 y = 2 }
+			medium_armor = { x = 0 y = 3 }
+			medium_armor = { x = 0 y = 4 }
+			
+			medium_tank_destroyer_brigade = { x = 1 y = 0 }
+			medium_tank_destroyer_brigade = { x = 1 y = 1 }
+			medium_tank_destroyer_brigade = { x = 1 y = 2 }
+			medium_tank_destroyer_brigade = { x = 1 y = 3 }
+			medium_tank_destroyer_brigade = { x = 1 y = 4 }		
+
+			medium_armor = { x = 2 y = 0 }
+			heavy_tank_destroyer_brigade = { x = 2 y = 1 }
+			medium_sp_anti_air_brigade = { x = 2 y = 2 }					
+			
+			mechanized = { x = 3 y = 0 }
+			mechanized = { x = 3 y = 1 }
+			mechanized = { x = 3 y = 2 }
+			mechanized = { x = 3 y = 3 }
+
+			mechanized = { x = 4 y = 0 }
+			mechanized = { x = 4 y = 1 }
+			mechanized = { x = 4 y = 2 }
+			mechanized = { x = 4 y = 3 }
+			
+
+		}
+		support = {
+			armored_engineer = { x = 0 y = 0 } 
+			medium_flame_tank  = { x = 0 y = 1 }  
+			armored_signal = { x = 0 y = 2 } 
+			light_tank_recon  = { x = 0 y = 3 }
+			armored_maintenance  = { x = 0 y = 4 }	
+		}
+		is_locked = yes					
+		
+	}
+
+	division_template = {
+		name = "ВДВ"
+
+		division_names_group = ENG_Arm_01
+
+		regiments = {
+			paratrooper = { x = 0 y = 0 }
+			paratrooper = { x = 0 y = 1 }
+			paratrooper = { x = 0 y = 2 }
+			paratrooper = { x = 0 y = 3 }
+			paratrooper = { x = 0 y = 4 }
+			
+			paratrooper = { x = 1 y = 0 }
+			paratrooper = { x = 1 y = 1 }
+			paratrooper = { x = 1 y = 2 }
+			paratrooper = { x = 1 y = 3 }
+			paratrooper = { x = 1 y = 4 }
+						
+			paratrooper = { x = 2 y = 0 }
+			paratrooper = { x = 2 y = 1 }
+			
+	
+			anti_tank_brigade = { x = 3 y = 0 }
+			anti_tank_brigade = { x = 3 y = 1 }	
+			anti_tank_brigade = { x = 3 y = 2 }	
+			anti_tank_brigade = { x = 3 y = 3 }	
+			anti_tank_brigade = { x = 3 y = 4 }	
+			
+			medium_armor = { x = 4 y = 0 }
+			medium_armor = { x = 4 y = 1 }			
+			heavy_tank_destroyer_brigade = { x = 4 y = 2 }
+			medium_sp_anti_air_brigade = { x = 4 y = 3 }					
+
+		}
+		support = {
+			armored_engineer = { x = 0 y = 0 } 
+			medium_flame_tank  = { x = 0 y = 1 }  
+			armored_signal = { x = 0 y = 2 } 
+			rangers_support  = { x = 0 y = 3 }
+			armored_maintenance  = { x = 0 y = 4 }
+	
+		}
+		is_locked = yes					
+		
+	}			
+
+	division_template = {
+		name = "Горняки"
+
+		division_names_group = ENG_Arm_01
+
+		regiments = {
+			mountaineers = { x = 0 y = 0 }
+			mountaineers = { x = 0 y = 1 }
+			mountaineers = { x = 0 y = 2 }
+			mountaineers = { x = 0 y = 3 }
+			mountaineers = { x = 0 y = 4 }
+			
+			mountaineers = { x = 1 y = 0 }
+			mountaineers = { x = 1 y = 1 }
+			mountaineers = { x = 1 y = 2 }
+			mountaineers = { x = 1 y = 3 }
+			mountaineers = { x = 1 y = 4 }
+						
+			mountaineers = { x = 2 y = 0 }
+			mountaineers = { x = 2 y = 1 }
+			
+	
+			anti_tank_brigade = { x = 3 y = 0 }
+			anti_tank_brigade = { x = 3 y = 1 }	
+			anti_tank_brigade = { x = 3 y = 2 }	
+			anti_tank_brigade = { x = 3 y = 3 }	
+			anti_tank_brigade = { x = 3 y = 4 }	
+			
+			medium_armor = { x = 4 y = 0 }
+			medium_armor = { x = 4 y = 1 }			
+			heavy_tank_destroyer_brigade = { x = 4 y = 2 }
+			medium_sp_anti_air_brigade = { x = 4 y = 3 }					
+
+		}
+		support = {
+			armored_engineer = { x = 0 y = 0 } 
+			medium_flame_tank  = { x = 0 y = 1 }  
+			armored_signal = { x = 0 y = 2 } 
+			rangers_support  = { x = 0 y = 3 }
+			armored_maintenance  = { x = 0 y = 4 }
+	
+		}
+		is_locked = yes					
+		
+	}			
+		
+	division_template = {
+		name = "Мотосрелки"	
+		division_names_group = ENG_MOT_01
+		
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+			
+			mot_anti_tank_brigade = { x = 2 y = 0 }
+			mot_anti_tank_brigade = { x = 2 y = 1 }
+			mot_anti_tank_brigade = { x = 2 y = 2 }
+			mot_anti_air_brigade = { x = 2 y = 3 }
+			
+			heavy_tank_destroyer_brigade = { x = 3 y = 0 }			
+		}
+		support = {
+			armored_engineer = { x = 0 y = 0 } 
+			medium_flame_tank = { x = 0 y = 1 } 
+			armored_signal = { x = 0 y = 2 } 
+			light_tank_recon  = { x = 0 y = 3 }
+			field_hospital  = { x = 0 y = 4 }	
+		}
+		is_locked = yes	
+	}
+	division_template = {
+		name = "Средние танки"
+
+		division_names_group = ENG_Arm_01
+
+		regiments = {
+			medium_armor = { x = 0 y = 0 }
+			medium_armor = { x = 0 y = 1 }
+			medium_armor = { x = 0 y = 2 }
+			medium_armor = { x = 0 y = 3 }
+			medium_armor = { x = 0 y = 4 }
+			
+			medium_armor = { x = 1 y = 0 }
+			medium_armor = { x = 1 y = 1 }
+			medium_armor = { x = 1 y = 2 }
+			medium_armor = { x = 1 y = 3 }
+			medium_armor = { x = 1 y = 4 }		
+
+			medium_armor = { x = 2 y = 0 }
+			heavy_tank_destroyer_brigade = { x = 2 y = 1 }
+			medium_sp_anti_air_brigade = { x = 2 y = 2 }					
+			
+			mechanized = { x = 3 y = 0 }
+			mechanized = { x = 3 y = 1 }
+			mechanized = { x = 3 y = 2 }
+			mechanized = { x = 3 y = 3 }
+
+			mechanized = { x = 4 y = 0 }
+			mechanized = { x = 4 y = 1 }
+			mechanized = { x = 4 y = 2 }
+			mechanized = { x = 4 y = 3 }
+			
+
+		}
+		support = {
+			armored_engineer = { x = 0 y = 0 } 
+			medium_flame_tank  = { x = 0 y = 1 }  
+			armored_signal = { x = 0 y = 2 } 
+			light_tank_recon  = { x = 0 y = 3 }
+			armored_maintenance  = { x = 0 y = 4 }	
+		
+		}
+		is_locked = yes					
+		
+	}	
+	division_template = {
+		name = "Пехота"
+
+		division_names_group = ENG_Inf_01
+
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+		}
+		
+		support = {
+			engineer = { x = 0 y = 0 }
+			artillery = { x = 0 y = 1 }
+			anti_air = { x = 0 y = 2 } 
+			anti_tank = { x = 0 y = 3 } 
+		}
+		is_locked = yes					
+	}
+
+	every_owned_state = {
+		add_building_construction = {
+			type = air_base
+			level = 10
+			instant_build = yes
+		}	
+	}		
+	build_railway = {
+		level = 5
+		path = {12764 13389 13396 13394 }
+	}
+	build_railway = {
+		level = 5
+		path = {9989 7079 10120 }
+	}	
+	build_railway = {
+		level = 5
+		path = {12764 12033 9989 }
+	}
+	build_railway = {
+		level = 5
+		path = {9989 11967 10061 11910 1071}
+	}
+	build_railway = {
+		level = 5
+		path = {13394 7148 1071}
+	}
+	build_railway = {
+		level = 5
+		path = {1071 992 7117}
+	}
+	build_railway = {
+		level = 5
+		path = {7117 13401 10031}
+	}
+	build_railway = {
+		level = 5
+		path = {1071 4145 4076}
+	}	
+	build_railway = {
+		level = 5
+		path = {13394 13392 10127 7117}
+	}	
+	build_railway = {
+		level = 5
+		path = {4076 7164 10073 7011}
+	}	
+	build_railway = {
+		level = 5
+		path = {7011 10005 11964}
+	}	
+	build_railway = {
+		level = 5
+		path = {7011 4073}
+	}	
+	build_railway = {
+		level = 5
+		path = {4073 12049}
+	}	
+	build_railway = {
+		level = 5
+		path = {10031 7144 11974 12044}
+	}	
+	build_railway = {
+		level = 5
+		path = {12044 1151 12002 9957}
+	}
+	build_railway = {
+		level = 5
+		path = {1151 12071 1064 11999}
+	}	
+	build_railway = {
+		level = 5
+		path = {11999 10844 8105}
+	}		
+	build_railway = {
+		level = 5
+		path = {8105 10745 7989 2046}
+	}	
+	build_railway = {
+		level = 5
+		path = {2046 2003 12725}
+	}
+	build_railway = {
+		level = 5
+		path = {2046 12881 12806}
+	}	
+	build_railway = {
+		level = 5
+		path = {8105 12771 13415}
+	}		
+	build_railway = {
+		level = 5
+		path = {13415 12099 13413 13410 12044}
+	}	
+	build_railway = {
+		level = 5
+		path = {10031 1068 4055 3996 7164}
+	}
+	build_railway = {
+		level = 5
+		path = {7011 3996}
+	}	
+	build_railway = {
+		level = 5
+		path = {12049 1155 11979 4161}
+	}	
+	build_railway = {
+		level = 5
+		path = {4161 10002 12073 10099}
+	}
+	build_railway = {
+		level = 5
+		path = {4161 4088 4206}
+	}
+	build_railway = {
+		level = 5
+		path = {4206 1086}
+	}	
+	build_railway = {
+		level = 5
+		path = {4206 1201 1065}
+	}
+	build_railway = {
+		level = 5
+		path = {1065 7170 7151}
+	}	
+	build_railway = {
+		level = 5
+		path = {7151 4574 4591 11976}
+	}	
+	build_railway = {
+		level = 5
+		path = {7170 1074 4111 }
+	}	
+	build_railway = {
+		level = 5
+		path = {4111 792}
+	}	
+	build_railway = {
+		level = 5
+		path = {4111 4550 1056 7140 12473}
+	}		
 }
 

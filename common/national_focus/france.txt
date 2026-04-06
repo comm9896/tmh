@@ -1392,6 +1392,10 @@
 		
 		completion_reward = {
 			add_ideas = { special_forces }
+		
+			add_potential_special_forces_tree = yes
+			
+			custom_effect_tooltip = generic_skip_one_line_tt		
 		}
 	}
 	focus = {
@@ -1431,6 +1435,9 @@
 				uses = 2
 				bonus = 1
 			}
+			add_potential_special_forces_tree = yes
+			
+			custom_effect_tooltip = generic_skip_one_line_tt			
 		}
 	}
 
@@ -1776,18 +1783,57 @@
 			add_country_leader_trait = tenacious_negotiator
 		}
 	}	
-	
 	focus = {
-		id = FRA_laissez_faire
-		icon = GFX_goal_generic_consumer_goods
-		x = -1
+		id = FRA_economic_devolution
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 1
 		y = 1
 
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 		}
-
 		relative_position_id = FRA_revive_the_national_bloc
+		cost = 10
+		
+        available_if_capitulated = yes		
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {	
+			OR = {
+				GER = {has_completed_focus = GER_anschluss}	
+				JAP = {has_war_with = CHI}	
+				date > 1938.01.01
+			}	
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_inefficient_economy_2
+				add_idea = FRA_inefficient_economy_1
+			}	
+		}
+	}	
+	focus = {
+		id = FRA_laissez_faire
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = FRA_economic_devolution
+		}
+
+		relative_position_id = FRA_economic_devolution
 		cost = 10
 
 		ai_will_do = {
@@ -1836,9 +1882,8 @@
 			}		
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			hidden_effect = { country_event = { id = lar_fra_inefficient_economy.1 days = 630 } }
-			custom_effect_tooltip = FRA_laissez_faire_tt
+			remove_ideas =  FRA_inefficient_economy_1
+			add_timed_idea  = { idea = FRA_inefficient_economy_1 days = 400}
 		}
 	}
 	focus = {
@@ -1848,10 +1893,9 @@
 		y = 1
 
 		prerequisite = {
-			focus = FRA_laissez_faire
 			focus = FRA_agricultural_protectionism
 		}
-		relative_position_id = FRA_laissez_faire
+		relative_position_id = FRA_agricultural_protectionism
 		cost = 5
 
 		ai_will_do = {
@@ -1873,7 +1917,7 @@
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -1905,22 +1949,22 @@
 
 
 		completion_reward = {
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.2
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.2
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.2
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = -0.2
-				}				
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.2
+			}				
 		}
 	}	
 	
@@ -2319,7 +2363,7 @@
 	focus = {
 		id = FRA_agricultural_protectionism
 		icon = GFX_goal_generic_defence
-		x = 1
+		x = -1
 		y = 1
 
 		prerequisite = {
@@ -2350,59 +2394,7 @@
 			add_ideas = { FRA_agricultural_protectionism }
 		}
 	}
-	focus = {
-		id = FRA_economic_devolution
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 0
-		y = 1
 
-		prerequisite = {
-			focus = FRA_agricultural_protectionism
-			focus = FRA_laissez_faire
-		}
-		relative_position_id = FRA_agricultural_protectionism
-		cost = 10
-		
-        available_if_capitulated = yes		
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {	
-			OR = {
-				GER = {has_completed_focus = GER_anschluss}	
-				JAP = {has_war_with = CHI}	
-				date > 1938.01.01
-			}	
-		}
-		
-		bypass = {
-			NOT = {
-				FRA_has_inefficient_economy = yes
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			if = {
-				limit = { has_idea = FRA_inefficient_economy_2 }
-				swap_ideas = {
-					remove_idea = FRA_inefficient_economy_2
-					add_idea = FRA_inefficient_economy_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = FRA_inefficient_economy_1
-				}
-				remove_ideas = FRA_inefficient_economy_1
-			}
-		}
-	}
 	focus = {
 		id = FRA_promote_entrepeneurship
 		icon = GFX_goal_generic_propaganda
@@ -2410,9 +2402,9 @@
 		y = 1
 
 		prerequisite = {
-			focus = FRA_economic_devolution
+			focus = FRA_laissez_faire
 		}
-		relative_position_id = FRA_economic_devolution
+		relative_position_id = FRA_laissez_faire
 		cost = 10
         
 		available_if_capitulated = yes		

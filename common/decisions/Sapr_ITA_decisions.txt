@@ -20,6 +20,7 @@ ITA_time_to_war = {
 		visible = {
 			not = {
 				ITA = { has_war_with = ENG }
+				has_country_flag = Sapr_duelmiy_mode
 			}
 		}
 

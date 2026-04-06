@@ -21,6 +21,10 @@ state = {
 				}
 				11846 = {
 					naval_base = 10
+					naval_headquarters = {
+						level = 1
+					}
+					naval_supply_hub = 1							
 				}
 				9904 = {
 					landmark_colosseum = {
@@ -68,7 +72,7 @@ state = {
 		}	
 		
 		1945.1.1.10 = {
-		    owner = TIB
+		    owner = ITA
 		    add_core_of = TIB			
 		}
 			

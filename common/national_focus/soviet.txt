@@ -61,19 +61,12 @@ focus_tree = {
 		}
 
 		available = {
-
+			not = {	
+				has_country_flag = Sapr_duelmiy_mode
+			}
 		}
 
 		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 2
-					}
-				}
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -119,6 +112,12 @@ focus_tree = {
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
+
+		available = {
+			not = {	
+				has_country_flag = Sapr_duelmiy_mode
+			}		
+		}
 
 		completion_reward = { #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
 			IF = {
@@ -1568,7 +1567,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			not = {	
+				has_country_flag = Sapr_duelmiy_mode
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -2047,7 +2048,12 @@ focus_tree = {
 		relative_position_id = SOV_expand_the_red_fleet
 		cost = 5
 		
-
+		available = {
+			not = {	
+				has_country_flag = Sapr_duelmiy_mode
+			}
+		}
+		
 		completion_reward = {
 
 			IF = {
@@ -2959,6 +2965,12 @@ focus_tree = {
 		relative_position_id = SOV_found_the_pcdi
 		cost = 5
 
+		available = {
+			not = {	
+				has_country_flag = Sapr_duelmiy_mode
+			}		
+		}
+
 		completion_reward = {
 			army_experience = 300
 			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.15 }
@@ -3176,8 +3188,6 @@ focus_tree = {
 	
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			unlock_decision_category_tooltip = SOV_industry_relocation
-			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = SOV_Disarganization
 		}
 	}
@@ -3541,7 +3551,9 @@ focus_tree = {
 		y = 0
 		cost = 5
 		available = {
-
+			not = {	
+				has_country_flag = Sapr_duelmiy_mode
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}

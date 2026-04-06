@@ -11,15 +11,16 @@
 #
 # The 'name' property is how you refer to the rule in adjacencies.csv
 
-#Мессинский пролив
+
+#Корсиканский пролив
 adjacency_rule = {
-	name = "MESSINA_STRAIT_PROLIV"
+	name = "CORSIC_STRAIT_PROLIV"
 
 	contested = {
-		army = no
-		navy = no
+		army = yes
+		navy = yes
 		submarine = yes
-		trade = no
+		trade = yes
 	}
 	enemy = {
 		army = no
@@ -40,14 +41,17 @@ adjacency_rule = {
 		trade = yes
 	}
 	
-	required_provinces = { 4159 9990  }
+	required_provinces = { 11804 9851 11891 3772 6788}
 
 	is_disabled = {
 	}
 	
-	icon = 4159
-	offset = { 10 0 -10 }	
+	icon = 11804
+	offset = { -10 0 10 }	
 }
+
+
+
 
 #пролив Туниский
 adjacency_rule = {
@@ -78,22 +82,24 @@ adjacency_rule = {
 		trade = yes
 	}
 	
-	required_provinces = { 11969 10091 7059 }
+	required_provinces = { 11969 11773 9994 4163 11874 902}
 
 	is_disabled = {
 	}
 	
-	icon = 11969
-	offset = { 20 0 -20 }	
+	icon = 11773
+	offset = { 0 0 -20 }	
 }
+
+#пролив Бонифачо
 adjacency_rule = {
-	name = "TUNIS_STRAIT_PROLIV_1"
+	name = "BONIFACIO_STRAIT_PROLIV"
 
 	contested = {
-		army = yes
-		navy = yes
+		army = no
+		navy = no
 		submarine = yes
-		trade = yes
+		trade = no
 	}
 	enemy = {
 		army = no
@@ -114,14 +120,15 @@ adjacency_rule = {
 		trade = yes
 	}
 	
-	required_provinces = { 11969 10091 7059 }
+	required_provinces = { 6891 3838 }
 
 	is_disabled = {
 	}
 	
-	icon = 11969
-	offset = { 20 0 -20 }	
+	icon = 6891
+	offset = { -15 0 5 }	
 }
+
 
 #Лаперуза пролив
 adjacency_rule = {

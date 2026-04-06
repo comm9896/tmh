@@ -62,9 +62,8 @@ country_event = {
 		}
 		
 		
-		
 		add_equipment_to_stockpile = {
-			type = mech_chassis
+			type = mechanized_equipment
 			amount = 10000
 		}
 		add_equipment_to_stockpile = {
@@ -86,11 +85,7 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = heavy_tank_destroyer_chassis_2
 			amount = 1100
-		}
-		add_equipment_to_stockpile = {
-			type = armored_car_chassis
-			amount = 500
-		}			
+		}	
 		add_equipment_to_stockpile = {
 			type = medium_tank_flame_chassis_2
 			amount = 1000
@@ -222,7 +217,7 @@ country_event = {
 		
 		
 		add_equipment_to_stockpile = {
-			type = mech_chassis
+			type = mechanized_equipment
 			amount = 10000
 		}
 		add_equipment_to_stockpile = {
@@ -240,11 +235,7 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = heavy_tank_destroyer_chassis_2
 			amount = 1100
-		}
-		add_equipment_to_stockpile = {
-			type = armored_car_chassis
-			amount = 500
-		}			
+		}		
 		add_equipment_to_stockpile = {
 			type = medium_tank_flame_chassis_2
 			amount = 1000
@@ -375,7 +366,7 @@ country_event = {
 		
 		
 		add_equipment_to_stockpile = {
-			type = mech_chassis
+			type = mechanized_equipment
 			amount = 10000
 		}
 		add_equipment_to_stockpile = {
@@ -393,10 +384,6 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = heavy_tank_destroyer_chassis_2
 			amount = 1100
-		}
-		add_equipment_to_stockpile = {
-			type = armored_car_chassis
-			amount = 500
 		}			
 		add_equipment_to_stockpile = {
 			type = medium_tank_flame_chassis_2
@@ -537,11 +524,7 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = heavy_tank_destroyer_chassis_2
 			amount = 2000
-		}
-		add_equipment_to_stockpile = {
-			type = armored_car_chassis
-			amount = 500
-		}			
+		}		
 		add_equipment_to_stockpile = {
 			type = medium_tank_flame_chassis_2
 			amount = 1000
@@ -662,7 +645,7 @@ add_namespace = Ger_Fuhrers_order_to_start_building_fortifications_event
  
 #скрытый пре эвент срабатывает при начале войны в африке
 country_event = {
-	id = Ger_Fuhrers_order_to_start_building_fortifications_event.1
+	id = Ger_Fuhrers_order_to_start_building_fortifications_event.1 
 	title = Ger_Fuhrers_order_to_start_building_fortifications_event.1.b
 	desc = Ger_Fuhrers_order_to_start_building_fortifications_event.1.c
 	picture = GFX_portrait_GER_adolf_hitler
@@ -1399,6 +1382,711 @@ country_event = {
 			set_country_flag = Sapr_Fuhrers_order_to_hold_Courland_sucsess1
 		}			
 
+	}
+	
+}
+
+
+add_namespace = Sapr_event_GER_plan_na_42
+
+country_event = {
+	id = Sapr_event_GER_plan_na_42.1 
+	title = Sapr_event_GER_plan_na_42.1.b
+	desc = Sapr_event_GER_plan_na_42.1.c
+	picture = GFX_portrait_GER_adolf_hitler
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1942.05.01
+	}
+
+	option = {
+	    name = Sapr_event_GER_plan_na_42.1.d
+		
+		custom_effect_tooltip = Sapr_event_GER_plan_na_42_tt_1
+		
+		effect_tooltip = {
+			add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 days = 180 }
+		}
+		
+		hidden_effect = {
+			# Прибалтика
+			189 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			814 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			11 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			815 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			784 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			190 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			809 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}			
+			96 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			808 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			810 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			12 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			191 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			13 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			811 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			812 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			813 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}				
+			
+			### Новгород
+
+			210 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			246 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			264 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			263 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			1047 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			244 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			208 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			209 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			195 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}			
+		}
+	}
+
+	option = {
+	    name = Sapr_event_GER_plan_na_42.1.e
+		
+		custom_effect_tooltip = Sapr_event_GER_plan_na_42_tt_2
+		
+		effect_tooltip = {
+			add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 days = 180 }
+		}
+		
+		hidden_effect = {
+			# Восточная Польша
+			89 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			91 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			93 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			92 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			94 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			1050 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			97 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			95 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			96 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			784 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}			
+			
+			### Беларусь
+
+			194 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			204 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			206 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			207 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			242 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}		
+			241 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			224 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}		
+			205 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			194 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+
+			### Центральная Россия
+			247 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			248 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			253 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			219 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			223 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			222 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			258 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			257 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			247 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			254 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}				
+		}
+	}
+
+	
+	option = {
+	    name = Sapr_event_GER_plan_na_42.1.f
+		
+		custom_effect_tooltip = Sapr_event_GER_plan_na_42_tt_1
+		
+		effect_tooltip = {
+			add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 days = 180 }
+		}
+		
+		hidden_effect = {
+			# западная укроха
+			199 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			201 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}			
+			198 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			834 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			192 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			201 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			202 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			203 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			197 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			226 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+
+			#восточная укроха
+			
+			193 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			225 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			259 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			220 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			240 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			221 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			200 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			196 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			137 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			227 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			218 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			228 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			193 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+
+			### кубань
+
+			234 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			235 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			1058 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			237 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			236 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			1052 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			238 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			217 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}
+			265 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			260 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}		
+			245 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			1053 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+			1051 = {
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = GER days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = BUL days = 180 }	
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ROM days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = HUN days = 180 }
+				add_dynamic_modifier = { modifier = Sapr_GER_plan_na_42 scope = ITA days = 180 }			
+			}	
+		}
 	}
 	
 }

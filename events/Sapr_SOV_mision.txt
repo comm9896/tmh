@@ -24,7 +24,15 @@ country_event = {
 			limit = {
 				or = {
 					is_core_of = SOV
-					is_core_of = FIN					
+					is_core_of = FIN
+					is_core_of = POL
+					is_core_of = HUN
+					and = {
+						is_core_of = ROM					
+						not = {
+							is_core_of = BUL
+						}
+					}
 				}
 			}
 			add_dynamic_modifier = {
@@ -37,6 +45,55 @@ country_event = {
 		}
 	}		
 }
+
+add_namespace = Sapr_SOV_winter_42
+
+country_event = {
+	id = Sapr_SOV_winter_42.1
+	title = Sapr_SOV_winter_42.1.b
+	desc = Sapr_SOV_winter_42.1.c
+	picture = GFX_report_event_german_troops
+
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {			
+		date > 1942.12.01
+		not = {
+			GER = {
+				has_country_flag = Sapr_duelmiy_mode
+			}
+		}
+	}	
+
+	immediate = {	
+		every_state = {
+			limit = {
+				or = {
+					is_core_of = SOV
+					is_core_of = FIN
+					is_core_of = POL
+					is_core_of = HUN
+					and = {
+						is_core_of = ROM					
+						not = {
+							is_core_of = BUL
+						}
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = Sapr_winter_41
+				days = 90				
+			}				
+		}
+		hidden_effect = {
+			set_global_flag = Sapr_winter_42_news
+		}
+	}		
+}
+
+
 
 add_namespace = SOV_Siege_of_Sevastopol
 

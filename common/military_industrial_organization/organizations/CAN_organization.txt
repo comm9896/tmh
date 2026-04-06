@@ -79,10 +79,8 @@ CAN_fairchild_aircraft_ltd_organization = {
 	icon = GFX_idea_generic_air_manufacturer_2
 	allowed = {
 		original_TAG = CAN
-		has_dlc = "Together for Victory"
 	}
 	available = {
-		owner = { has_completed_focus = CAN_fund_fairchilds_development }
 	}
 }
 
@@ -92,10 +90,8 @@ CAN_handley_page_organization = {
 	icon = GFX_idea_generic_air_manufacturer_3
 	allowed = {
 		original_TAG = CAN
-		has_dlc = "Together for Victory"
 	}
 	available = {
-		owner = { has_completed_focus = CAN_cookie_carriers }
 	}
 }
 

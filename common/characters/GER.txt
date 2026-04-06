@@ -1622,7 +1622,10 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_instill_auftragstaktik
+				or = {
+					has_completed_focus = GER_instill_auftragstaktik
+					has_country_flag = Sapr_duelmiy_mode
+				}
 			}
 			traits = {
 				army_chief_offensive_2
@@ -2640,73 +2643,28 @@ characters = {
 	}
 
 	GER_reinhard_heydrich = {
-		instance = {
-			allowed = {
-				has_dlc = "La Resistance"
-			}
 
-			name = GER_reinhard_heydrich
-			portraits = {
-				army = {
-					small = GFX_portrait_GER_reinhard_heydrich_small
-				}
+		name = GER_reinhard_heydrich
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_reinhard_heydrich_small
 			}
-			advisor = {
-				slot = political_advisor
-				idea_token = GER_reinhard_heydrich
-				allowed = {
-					original_tag = GER
-				}
-				visible = {
-					OR = {
-						has_government = fascism
-						has_country_flag = GER_reinstated_nazi_leadership
-					}
-				}
-				available = {
-					OR = {
-						has_country_flag = GER_reinstated_nazi_leadership
-						has_government = fascism
-					}
-				}
-				traits = {
-					GER_reich_security_main_office_director_lar
-				}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GER_reinhard_heydrich
+			allowed = {
+				original_tag = GER
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				GER_reich_security_main_office_director_lar
 			}
 		}
 
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "La Resistance"
-				}
-			}
-
-			name = GER_reinhard_heydrich
-			portraits = {
-				army = {
-					small = GFX_portrait_GER_reinhard_heydrich_small
-				}
-			}
-			advisor = {
-				slot = political_advisor
-				idea_token = GER_reinhard_heydrich
-				allowed = {
-					original_tag = GER
-				}
-				visible = {
-					NOT = {
-						has_completed_focus = GER_oppose_hitler_ww
-					}
-				}
-				available = {
-					has_government = fascism
-				}
-				traits = {
-					GER_reich_security_main_office_director_no_lar
-				}
-			}
-		}
 	}
 
 	GER_wilhelm_canaris = {

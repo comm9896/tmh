@@ -23,7 +23,12 @@ state={
 			owner = TIB
 			add_core_of = TIB
 		}
-
+		1945.1.1.10 = {
+		    owner = ENG
+		    add_core_of = ENG
+		    add_core_of = ITA			
+		}
+		
 		victory_points = {
 			12413 1 
 		}

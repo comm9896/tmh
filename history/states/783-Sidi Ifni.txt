@@ -9,21 +9,26 @@ state={
 	history={
 	
 		1936.1.1.12 = {	    
-			owner = SPR			
-			add_core_of = TIB
+			owner = POR			
+			add_core_of = POR
 		}	
 		1936.1.1.13 = {	    
-			owner = SPR			
-			add_core_of = TIB
+			owner = POR			
+			add_core_of = POR
 		}			
 		1936.1.1.14 = {
-			owner = SPR			
-			add_core_of = TIB			
+			owner = POR			
+			add_core_of = POR			
 		}
 		1936.1.1.15 = {
-			owner = SPR			
-			add_core_of = TIB			
-		}
+			owner = POR			
+			add_core_of = POR			
+		}		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}		
 		
 		victory_points = {
 			12857 1
