@@ -422,12 +422,12 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gentlemanly spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=1
+			traits={ blockade_runner concealment_expert superior_tactician destroyer_leader fleet_protector cruiser_captain air_controller flight_deck_manager}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
 			legacy_id=-1
 		}
 	}

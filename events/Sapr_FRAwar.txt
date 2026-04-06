@@ -12,10 +12,10 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	
+	 
 	option = {
 	    name = Sapr_FRA_army_posle_capa.1.e		
-		
+	
 		if = {
 			limit = {
 				not = {
@@ -24,6 +24,7 @@ country_event = {
 			}
 			set_technology = { basic_medium_tank_chassis = 1 }	
 		}
+	
 		create_equipment_variant = {
 			name = "AMC 35"
 			type = medium_tank_chassis_1
@@ -133,9 +134,9 @@ country_event = {
 			}
 			support = {
 				engineer = { x = 0 y = 0 } 
-				mot_recon  = { x = 0 y = 1 }	
+				light_tank_recon  = { x = 0 y = 1 }	
 				field_hospital = { x = 0 y = 2 } 
-				logistics_company = { x = 0 y = 3 } 
+				light_flame_tank = { x = 0 y = 3 } 
 				signal_company = { x = 0 y = 4 }		
 			}			
 			
@@ -210,6 +211,185 @@ country_event = {
 			is_locked = no
 		}		
 	}	
+	
+	option = {
+	    name = Sapr_FRA_army_posle_capa.1.f	
+		
+		if = {
+			limit = {
+				not = {
+					has_tech = basic_medium_tank_chassis
+				}				
+			}
+			set_technology = { basic_medium_tank_chassis = 1 }	
+		}
+		create_equipment_variant = {
+			name = "Char B1"
+			type = heavy_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = stabilizer
+				special_type_slot_4 = auto_loader				
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				havey_tank_nsb_armor_upgrade = 4
+			}
+			icon = "GFX_FRA_basic_heavy_tank_medium"		
+			design_team = mio:FRA_renault_organization		
+		}
+	
+		create_equipment_variant = {
+			name = "ЗСУ"
+			type = light_tank_aa_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_anti_air_cannon
+				turret_type_slot = tank_light_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = extra_ammo_storage
+				
+			}
+			upgrades = {  
+				tank_nsb_engine_upgrade = 9
+				light_tank_nsb_armor_upgrade = 4
+			}
+			icon = "GFX_FRA_improved_light_tank_medium"		
+			design_team = mio:FRA_renault_organization				
+		}
+		
+		if = {
+			limit = {
+				not = {
+					has_tech = mechanised_infantry
+				}				
+			}
+			set_technology = { mechanised_infantry = 1 }	
+		}
+			
+		division_template = {
+			name = "Танки"
+			division_names_group = FRA_Arm_01
+			
+			regiments = {
+				heavy_armor = { x = 0 y = 0 }
+				heavy_armor = { x = 0 y = 1 }
+				heavy_armor = { x = 0 y = 2 }
+				heavy_armor = { x = 0 y = 3 }
+				heavy_armor = { x = 0 y = 4 }
+				
+				heavy_armor = { x = 1 y = 0 }
+				heavy_armor = { x = 1 y = 1 }
+				heavy_armor = { x = 1 y = 2 }
+				heavy_armor = { x = 1 y = 3 }
+				heavy_armor = { x = 1 y = 4 }		
+
+				heavy_armor = { x = 2 y = 0 }
+				heavy_armor = { x = 2 y = 1 }
+				light_sp_anti_air_brigade = { x = 2 y = 2 }					
+				
+				mechanized = { x = 3 y = 0 }
+				mechanized = { x = 3 y = 1 }
+				mechanized = { x = 3 y = 2 }
+				mechanized = { x = 3 y = 3 }
+
+				mechanized = { x = 4 y = 0 }
+				mechanized = { x = 4 y = 1 }
+				mechanized = { x = 4 y = 2 }
+				mechanized = { x = 4 y = 3 }
+				
+
+			}
+			support = {
+				engineer = { x = 0 y = 0 } 
+				light_tank_recon  = { x = 0 y = 1 }	
+				field_hospital = { x = 0 y = 2 } 
+				light_flame_tank = { x = 0 y = 3 } 
+				signal_company = { x = 0 y = 4 }		
+			}			
+			
+		}		
+		
+		
+		130 = {
+			create_unit = {
+				division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 24	
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}
+		132 = {
+			create_unit = {
+				division = "name = \"Танки\" division_template = \"Танки\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 3	
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}	
+		553 = {
+			create_unit = {
+				division = "name = \"Танки\" division_template = \"Танки\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 3
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}				
+		677 = {
+			create_unit = {
+				division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+				owner = FRA
+				count = 12
+				allow_spawning_on_enemy_provs  = yes
+			}	
+		}	
+		set_division_template_lock = {
+			division_template = "Пехотинцы"
+			is_locked = no
+		}			
+		if = {
+			limit = {
+				date > 1940.03.01
+			}
+			677 = {
+				create_unit = {
+					division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+					owner = FRA
+					count = 12
+					allow_spawning_on_enemy_provs  = yes
+				}	
+			}				
+		}
+		if = {
+			limit = {
+				date > 1940.06.01
+			}
+			677 = {
+				create_unit = {
+					division = "name = \"Пехотинцы\" division_template = \"Пехотинцы\" start_experience_factor = 0.6" 
+					owner = FRA
+					count = 12
+					allow_spawning_on_enemy_provs  = yes
+				}	
+			}				
+		}
+
+		set_division_template_lock = {
+			division_template = "Пехотинцы"
+			is_locked = no
+		}		
+	}		
 }
 
 

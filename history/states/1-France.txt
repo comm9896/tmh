@@ -49,20 +49,12 @@ state={
 				}
 			}
 		}	
-		1941.1.1.2 = {	    
+		
+		1945.1.1.10 = {	    
 			owner = ITA			
 			add_core_of = ITA	
-		}		
-		1941.1.1.3 = {
-			owner = ITA			
-			add_core_of = ITA	
+			add_core_of = ENG				
 		}
-		1941.1.1.4 = {	    
-		    owner = TIB
-			add_core_of = TIB
-		}		
-		
-		
 
 		
 		victory_points = { 3838 1 }

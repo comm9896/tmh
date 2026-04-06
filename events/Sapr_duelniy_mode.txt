@@ -1,0 +1,18 @@
+
+add_namespace = Sapr_pravila
+
+country_event = {
+	id = Sapr_pravila.1
+	title = Sapr_pravila.1.b
+	desc = Sapr_pravila.1.c
+	picture = GFX_report_event_yugoslavia_partisans
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = Sapr_pravila.1.d
+			
+	}
+}
+

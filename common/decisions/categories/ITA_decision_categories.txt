@@ -119,21 +119,6 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 	}
 }
 
-ITA_italian_mafia_dec_cat = {
-	icon = GFX_decision_category_eng_organize_the_blackshirts
-	
-	allowed = {
-		has_dlc = "By Blood Alone"
-	}
-	
-	priority = 17
-	
-	visible = {
-		any_controlled_state = {
-			ITA_state_has_any_version_of_mafia_rising_modifier = yes
-		}
-	}
-}
 
 #icon = GFX_decision_category_ITA_reggianes_exports
 #picture = GFX_decision_cat_picture_ITA_reggianes_exports

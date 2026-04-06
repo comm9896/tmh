@@ -4,19 +4,19 @@
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.34, 0.20, 0.075, 0.0 }; -- чем меньше число, тем быстрее (левый символ - 1 скорость, правый 5 скорость)
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100;
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30;
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
-NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14 -- WAS 60 	| less messages lying around at the top of your screen
-NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3 -- Default days before a mission is removed from the interface after having failed or completed
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12; -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
+NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14; -- WAS 60 	| less messages lying around at the top of your screen
+NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3; -- Default days before a mission is removed from the interface after having failed or completed
 
 
 
 --NMilitary
 --NMilitary
 --NMilitary
-NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5	-- анлок 5 ячейки в столбце шаблона дивизии 
+NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5;	-- анлок 5 ячейки в столбце шаблона дивизии 
 	
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 ;
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0 ;
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0;
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0;
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0;
 
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999;
@@ -24,7 +24,7 @@ NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999;
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999;
 
 
-NDefines.NMilitary.BASE_CHANCE_TO_AVOID_HIT = 95;               --  Шанс на промох 1 единицы атаки о защиту
+NDefines.NMilitary.BASE_CHANCE_TO_AVOID_HIT = 96;               --  Шанс на промох 1 единицы атаки о защиту
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 50;           --  Шанс на промох 1 единицы атаки если нет защиты
 
 NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR = 1;   -- было --  бонус % к шансу прока контр тактики за 1 единицу разведки 
@@ -54,14 +54,14 @@ NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02;              --  шан
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.45;    -- Бонус от штурмов во время боя
 
 
-NDefines.NMilitary.TRAINING_MAX_LEVEL = 10 -- многоуровневый опыт дивизий
+NDefines.NMilitary.TRAINING_MAX_LEVEL = 10; -- многоуровневый опыт дивизий
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3,	0.39,	0.48,	0.57,	0.66,	0.75,	0.78,	0.81,	0.84,	0.87,	0.9}		-- Experience needed to progress to the next level
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 
 
-NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0	-- теперь черты генов не стоят ком рес
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0;	-- теперь черты генов не стоят ком рес
 
 
 -- больше дивок под 1 гена
@@ -120,6 +120,31 @@ NDefines.NAir.RECON_LAND_SPOT_CHANCE = 1; --шанс спота разведич
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- Минимальный % фабрик уходящих в ТНП 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	-- Можно развернуть миллиардную армию
 
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0 
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
+
+	
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0 ;
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0 ;
+NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 0;
+NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1; 
+
+NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.01; -- Масштабирует стоимость энергии в зависимости от общего количества заводов, ванила  0.0225
+
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4;	
+
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
+
+NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 150;
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300;
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 150;
+
+NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 0.99;			-- максимальный % рефита после которого отмена приведёт к исчезновению корабля
+
 --NNavy
 --NNavy
 --NNavy
@@ -153,38 +178,38 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- Меткость атак флота
 		45.0,	-- small guns
 };
 --MINES
-	NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0;    -- шанс крита мин
-	NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0;   -- урон крита мин
-	NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0;      -- урон мин по прочности
-	NDefines.NNavy.NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0;	--урон мин по орге
-	NDefines.NNavy.NAVAL_MINES_INTEL_DIFF_FACTOR = 0.15;       -- уменьшение штрафа от мин взависимости от разницы в разведданных
-	NDefines.NNavy.NAVAL_MINES_NAVAL_SUPREMACY_FACTOR = 0.1;	--суприм от мин
-	NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000;							-- максимальное кол-во мин
-	NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.01;							-- скорость установки мин
-	NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.015;--0.009						-- скорость траления мин
-	NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 100;--0,25							-- скорость уничтожения мин в мирное время
-	NDefines.NNavy.NAVAL_MINES_SWEEPERS_REDUCTION_ON_PENALTY_EFFECT = 3.3;			-- уменьшение штрафа от мин во время траления
-	
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0;    -- шанс крита мин
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0;   -- урон крита мин
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0;      -- урон мин по прочности
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0;	--урон мин по орге
+NDefines.NNavy.NAVAL_MINES_INTEL_DIFF_FACTOR = 0.15;       -- уменьшение штрафа от мин взависимости от разницы в разведданных
+NDefines.NNavy.NAVAL_MINES_NAVAL_SUPREMACY_FACTOR = 0.1;	--суприм от мин
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000;							-- максимальное кол-во мин
+NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.01;							-- скорость установки мин
+NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.015;--0.009						-- скорость траления мин
+NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 100;--0,25							-- скорость уничтожения мин в мирное время
+NDefines.NNavy.NAVAL_MINES_SWEEPERS_REDUCTION_ON_PENALTY_EFFECT = 3.3;			-- уменьшение штрафа от мин во время траления
+
 
 -- Convoy Priorities START
-	NDefines.NNavyNAVAL_INVASION_PRIORITY = 9;--1									-- приоритет конвоев для морской высадки 
-	NDefines.NNavyNAVAL_TRANSFER_PRIORITY = 2;--1									-- приоритет конвоев для морских перевозок дивизий
-	NDefines.NNavySUPPLY_PRIORITY = 8;--2											-- приоритет конвоев для морского саплая дивизий
-	NDefines.NNavyRESOURCE_LENDLEASE_PRIORITY = 1;--3								-- приоритет конвоев для ленд лиза
-	NDefines.NNavyRESOURCE_EXPORT_PRIORITY = 4;--4									-- приоритет конвоев для трейда
-	NDefines.NNavyRESOURCE_ORIGIN_PRIORITY = 5;--5									-- приоритет конвоев для перемещения ресурсов внутри 
-	NDefines.NNavyRESOURCE_PURCHASE_PRIORITY = 7;--6								-- приоритет конвоев для покупки через рынок
-	NDefines.NNavyUNDERWAY_REPLENISHMENT_PRIORITY = 1;--7							-- приоритет конвоев для пополнения на ходу
-	-- Convoy Priorities END
-	--приоритет для вторжения и саплая самый большой, для ленд лиза самый маленький, пополнения на ходу и передислокации дивизий по морю
+NDefines.NNavyNAVAL_INVASION_PRIORITY = 9;--1									-- приоритет конвоев для морской высадки 
+NDefines.NNavyNAVAL_TRANSFER_PRIORITY = 2;--1									-- приоритет конвоев для морских перевозок дивизий
+NDefines.NNavySUPPLY_PRIORITY = 8;--2											-- приоритет конвоев для морского саплая дивизий
+NDefines.NNavyRESOURCE_LENDLEASE_PRIORITY = 1;--3								-- приоритет конвоев для ленд лиза
+NDefines.NNavyRESOURCE_EXPORT_PRIORITY = 4;--4									-- приоритет конвоев для трейда
+NDefines.NNavyRESOURCE_ORIGIN_PRIORITY = 5;--5									-- приоритет конвоев для перемещения ресурсов внутри 
+NDefines.NNavyRESOURCE_PURCHASE_PRIORITY = 7;--6								-- приоритет конвоев для покупки через рынок
+NDefines.NNavyUNDERWAY_REPLENISHMENT_PRIORITY = 1;--7							-- приоритет конвоев для пополнения на ходу
+-- Convoy Priorities END
+--приоритет для вторжения и саплая самый большой, для ленд лиза самый маленький, пополнения на ходу и передислокации дивизий по морю
 
 
 
 --штраф за отсутствие топлива на флоте
-	NDefines.NNavy.OUT_OF_FUEL_SPEED_FACTOR = 0;--скорость
-	NDefines.NNavy.OUT_OF_FUEL_RANGE_FACTOR = 0;--дальность плавания
-	NDefines.NNavy.OUT_OF_FUEL_ATTACK_FACTOR = -0.75;--0.5 -- атака
-	NDefines.NNavy.OUT_OF_FUEL_TORPEDO_FACTOR = -0.8; --атака торпед
+NDefines.NNavy.OUT_OF_FUEL_SPEED_FACTOR = 0;--скорость
+NDefines.NNavy.OUT_OF_FUEL_RANGE_FACTOR = 0;--дальность плавания
+NDefines.NNavy.OUT_OF_FUEL_ATTACK_FACTOR = -0.75;--0.5 -- атака
+NDefines.NNavy.OUT_OF_FUEL_TORPEDO_FACTOR = -0.8; --атака торпед
 
 NDefines.NNavy.DAILY_MANPOWER_GAIN_RATIO = 0.5;--0,1								-- скорость пополнения менпавера в кораблях
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0;--100							-- стоимость снятие гордости флота
@@ -194,10 +219,10 @@ NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- кап высадок
 NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- кап дивизий для 1 стрелочки
 
 --эффективность конвоев
-	NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.5;--1,25							-- как сильно падает эффективность в зависимости от потери конвоев. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
-	NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 1;--7						-- через сколько дней начнёт восстанавливаться эффективность ковоев
-	NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.1;--0,04						-- сколько эффективности восстанавливается каждый день
-	NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.15;--0.05								-- минимальная эффективность ковоев
+NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.5;--1,25							-- как сильно падает эффективность в зависимости от потери конвоев. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 1;--7						-- через сколько дней начнёт восстанавливаться эффективность ковоев
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.1;--0,04						-- сколько эффективности восстанавливается каждый день
+NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.15;--0.05								-- минимальная эффективность ковоев
 
 NDefines.NNavy.MINIMUM_SHIP_SPEED = 10.0;--1										-- самая медленная скорость корабля
 
@@ -231,17 +256,14 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150; -- тепе�
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150; -- теперь на линкор можно кидать 150 верфей	
 
-NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 150;
-NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300;
-NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 150;
+NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 150; --верфей на плавучие гавани
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300; -- милок на линию
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 150; -- милок на жд орудие
 
 NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 0.99;			-- максимальный % рефита после которого отмена приведёт к исчезновению корабля
 
 
---NIndustrialOrganisation
---NIndustrialOrganisation
---NIndustrialOrganisation
-NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0;    --через сколько дней можно будет изменить политику в кб
+
 
 --NIndustrialOrganisation
 --NIndustrialOrganisation
@@ -262,19 +284,8 @@ NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 1;	-- Ratio for volunteer
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 4;
 NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 4;
 
-
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0;
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0;
-
-
-NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.35; -- Максимальный бонус за бомбордировку с моря
-
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0; 	-- теперь люди будут мгновнно затикать в дивизии
-
-NDefines.NCountry.MIN_MAJOR_COUNTRIES = 1000 -- Минимальное число можоров
-NDefines.NCountry.ADDITIONAL_MAJOR_COUNTRIES_IC_RATIO = 0.0001 -- Слабые миноры тоже будут крупными странами 
-
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000; -- Минимальный лимит спец войск
+
 
 --NDiplomacy
 --NDiplomacy
@@ -288,25 +299,17 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0.0;				-- кост аташе �
 --NAI
 --NAI
 NDefines.NAI.MAX_VOLUNTEER_ARMY_FRACTION  = 0;	-- теперь размер числа добровольцев не зависит от размера армии
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0;
-NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0;
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0;
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0;
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100;
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0;
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0;
-
-
 
 --NBuildings
 --NBuildings
 --NBuildings
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.2; -- возвращаем старое доброе заначение ресов с инфры
-NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100;
-NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 0;
-NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0;
---NOperatives
 
 
 
@@ -347,6 +350,7 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше луп�
 	NDefines.NIntel.RECON_INTEL_BONUS = 0.075;                                      -- бонус от разведчиков для лупы
 
 --Конец
+
 
 
 NDefines.NIntel.LAND_COMBAT_AIR_INTEL_FACTOR = 0.01;						-- кол-во разведданых получаемые от воздуха для наземного боя
@@ -390,14 +394,7 @@ NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { --советн
 --NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_BONUS = 0.25;      -- % бонуса который шарит каждый член альянса другому
 NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_SPY_SLOT_GAIN = 0;		--кол-во агентов за каждое занятое место в агенстве альянса
 	
-
-
-
-};
---NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_BONUS = 0.25;      -- % бонуса который шарит каждый член альянса другому
-NDefines.NFactions.FACTION_INTELLIGENCE_SHARING_SPY_SLOT_GAIN = 0;		--кол-во агентов за каждое занятое место в агенстве альянса
 	
-
 --NCharacter
 --NCharacter
 --NCharacter
@@ -411,7 +408,6 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 12;
 NDefines.NResistance.GARRISON_MANPOWER_MIN_DELIVERY_SPEED = 10000;	-- минимальное пополнение менпавером гарнизонов
 NDefines.NResistance.GARRISON_MANPOWER_REINFORCEMENT_SPEED = 10000.0;	-- модификатор скорости пополнения гарнизонов, уменьшается по мере отдаления территории от столицы
 NDefines.NResistance.GARRISON_EQUIPMENT_DELIVERY_SPEED = 100000.0;	-- скорость пополнения эквипмента гарнизона
-
 
 --NProject
 --NProject

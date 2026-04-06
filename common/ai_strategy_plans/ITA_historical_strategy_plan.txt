@@ -116,7 +116,6 @@ ITA_historical_plan = {
 		ITA_defy_the_duce = 0
 		ITA_liberate_gramsci = 0
 		ITA_undermine_the_duce = 0
-		ITA_guarantee_austrian_independence = 0 #Italy First is okay to take if Pact of Steel is unavailable
 	}			
 
 	research = {

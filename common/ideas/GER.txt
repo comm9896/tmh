@@ -11,7 +11,7 @@ ideas = {
 
 			modifier = {			
 				mobilization_speed = 0.3			
-				conscription = 0.06		
+				conscription = 0.02	
 				
 			}	
 			
@@ -73,10 +73,8 @@ ideas = {
 			picture = generic_stockpile_fuel
 
 			modifier = {			
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
 				local_resources_factor = 0.05
-				
+				country_resource_oil = 8						
 				fuel_gain_factor = 0.1
 				fuel_gain_factor_from_states = 0.05				
 			}
@@ -94,10 +92,8 @@ ideas = {
 			picture = generic_stockpile_fuel
 
 			modifier = {			
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
 				local_resources_factor = 0.1
-				
+				country_resource_oil = 16					
 				fuel_gain_factor = 0.2
 				fuel_gain_factor_from_states = 0.1					
 			}
@@ -115,10 +111,8 @@ ideas = {
 			picture = generic_stockpile_fuel
 
 			modifier = {			
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
 				local_resources_factor = 0.15
-				
+				country_resource_oil = 24					
 				fuel_gain_factor = 0.3
 				fuel_gain_factor_from_states = 0.15					
 			}
@@ -136,10 +130,8 @@ ideas = {
 			picture = generic_stockpile_fuel
 
 			modifier = {			
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
 				local_resources_factor = 0.2
-				
+				country_resource_oil = 40					
 				fuel_gain_factor = 0.4
 				fuel_gain_factor_from_states = 0.2					
 			}
@@ -157,10 +149,8 @@ ideas = {
 			picture = generic_stockpile_fuel
 
 			modifier = {			
-				industrial_capacity_factory = 0.25
-				industrial_capacity_dockyard = 0.25
 				local_resources_factor = 0.25
-				
+				country_resource_oil = 48					
 				fuel_gain_factor = 0.5
 				fuel_gain_factor_from_states = 0.25					
 			}
@@ -6187,6 +6177,7 @@ ideas = {
 
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
+				production_speed_energy_infrastructure_factor = 0.1				
 				production_speed_rail_way_factor = 0.1
 			}
 		}
@@ -6207,6 +6198,7 @@ ideas = {
 
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
+				production_speed_energy_infrastructure_factor = 0.1				
 				production_speed_rail_way_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1

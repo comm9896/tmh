@@ -20,7 +20,12 @@ state={
 		}
 		1936.1.1.15 = {	    
 		    owner = TIB
-		}
+		}		
+		1945.1.1.10 = {	    
+		    owner = ITA
+			add_core_of = ITA
+			add_core_of = ENG			
+		}		
 		
 		
 		victory_points = {

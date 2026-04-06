@@ -1,0 +1,32 @@
+spriteTypes = {
+	
+### o x x
+###   o 
+### o x o
+
+	SpriteType = {
+  		name = "GFX_duelniy"
+  		texturefile = "gfx/interface/scenariy/duelniy.dds"
+	}	
+
+	SpriteType = {
+  		name = "GFX_evroppa_1941"
+  		texturefile = "gfx/interface/scenariy/evroppa_1941.dds"
+	}		
+
+	SpriteType = {
+  		name = "GFX_only_ost_front"
+  		texturefile = "gfx/interface/scenariy/only_ost_front.dds"
+	}		
+
+	SpriteType = {
+  		name = "GFX_No_Asia"
+  		texturefile = "gfx/interface/scenariy/No_Asia.dds"
+	}		
+
+	SpriteType = {
+  		name = "GFX_Only_Asia"
+  		texturefile = "gfx/interface/scenariy/Only_Asia.dds"
+	}	
+	
+}

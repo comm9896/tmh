@@ -592,12 +592,12 @@ characters={
 		}
 
 		navy_leader={
-			traits={ bold naval_lineage superior_tactician }
-			skill=3
-			attack_skill=2
-			defense_skill=2
+			traits={ ironside ground_pounder big_guns_expert safety_first crisis_magician blockade_runner concealment_expert bold}
+			skill=5
+			attack_skill=5
+			defense_skill=4
 			maneuvering_skill=3
-			coordination_skill=3
+			coordination_skill=4
 			legacy_id=102
 		}
 	}
@@ -611,12 +611,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ chief_engineer superior_tactician }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=2
+			traits={ navy_career_officer superior_tactician seawolf lancer loading_drill_master torpedo_expert blockade_runner concealment_expert}
+			skill=5
+			attack_skill=6
+			defense_skill=1
+			maneuvering_skill=4
+			coordination_skill=3
 			legacy_id=0
 		}
 	}
@@ -668,12 +668,12 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ old_guard_navy gentlemanly battleship_adherent spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
+			traits={ blockade_runner concealment_expert superior_tactician destroyer_leader fleet_protector cruiser_captain air_controller flight_deck_manager}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
 			legacy_id=0
 		}
 	}
@@ -696,7 +696,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				navy_capital_ship_1
+				navy_capital_ship_2
 			}
 			cost =  50
 			ai_will_do = {
@@ -705,12 +705,12 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ aviation_enthusiast naval_lineage }
-			skill=1
-			attack_skill=1
+			traits={ navy_career_officer superior_tactician seawolf lancer loading_drill_master torpedo_expert blockade_runner concealment_expert}
+			skill=5
+			attack_skill=6
 			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=4
+			coordination_skill=3
 			legacy_id=0
 		}
 	}

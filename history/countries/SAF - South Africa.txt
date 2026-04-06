@@ -3,6 +3,8 @@ army_experience = 10
 navy_experience = 10
 air_experience = 10
 
+set_convoys = 200
+
 1936.1.1.12 = {
 	add_offsite_building = { type = industrial_complex level = 5 }
 }

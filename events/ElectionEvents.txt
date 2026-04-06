@@ -18,61 +18,6 @@ country_event = {
 	}
 }
 
-# Public Opposes Rearmament
-country_event = {
-	id = election.2
-	title = election.2.t
-	desc = election.2.d
-	picture = GFX_report_event_airplane_factory
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-		}
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
-		NOT = {
-			OR = {
-				has_war = yes
-				any_neighbor_country = {
-					has_war = yes
-				}
-				any_allied_country = {
-					has_war = yes
-				}
-			}
-		}
-		has_idea = partial_economic_mobilisation
-	}
-
-	option = {
-		ai_chance = { 
-			base = 1
-		}
-		name = election.2.a
-		add_ideas = low_economic_mobilisation
-	}
-
-	option = {
-		name = election.2.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				can_lose_unity = yes
-			}
-		}
-		add_stability = -0.05
-		add_war_support = -0.05
-	}
-}
-
-
 # Public Demands Rearmament
 country_event = {
 	id = election.3
@@ -144,7 +89,7 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_stability = -0.05
+		add_stability = 0.1
 	}
 }
 
@@ -191,6 +136,7 @@ country_event = {
 			ideology = fascism
 			popularity = 0.1
 		}
+		add_stability = 0.05		
 		set_country_flag = coalition_with_fascists
 	}
 
@@ -206,7 +152,7 @@ country_event = {
 		add_stability = -0.05
 		add_popularity = {
 			ideology = democratic
-			popularity = 0.03
+			popularity = 0.2
 		}
 		set_country_flag = government_declined_fascists
 	}
@@ -266,6 +212,7 @@ country_event = {
 			ideology = communism
 			popularity = 0.1
 		}
+		add_stability = 0.05		
 		set_country_flag = coalition_with_communists
 	}
 
@@ -292,7 +239,7 @@ country_event = {
 		add_stability = -0.05
 		add_popularity = {
 			ideology = democratic
-			popularity = 0.03
+			popularity = 0.2
 		}
 		set_country_flag = government_declined_communists
 	}
@@ -368,7 +315,7 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = democratic
-			popularity = 0.05
+			popularity = 0.15
 		}
 		add_political_power = -80
 	}
@@ -526,163 +473,6 @@ country_event = {
 			ideology = democratic
 			popularity = 0.03
 		}
-	}
-}
-
-# Fascist Majority
-country_event = {
-	id = election.11
-	title = election.11.t
-	desc = election.11.d
-	picture = GFX_report_event_fascist_gathering
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_government = democratic
-		fascism > 0.5
-		is_puppet = no
-		NOT = {
-			AND = {
-				original_tag = SPR
-				has_dlc = "La Resistance"
-			}
-			AND = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				original_tag = SWI
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
-	
-	option = {	
-		name = election.11.a
-		ai_chance = {
-			base = 75			
-		}
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
-		}
-	}
-
-	option = {
-		name = election.11.b
-		ai_chance = {
-			base = 35
-		}
-		start_civil_war = {
-			ideology = fascism
-			size = 0.5
-		}
-	}
-}
-
-# Communist Majority
-country_event = {
-	id = election.12
-	title = election.12.t
-	desc = election.12.d
-	picture = GFX_report_event_gathering_protest
-	
-	is_triggered_only = yes
-
-	trigger = {
-
-		has_government = democratic
-		communism > 0.5
-		is_puppet = no
-		NOT = {
-			AND = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
-	}
-	
-	option = {
-		name = election.12.a
-		ai_chance = {
-			base = 75
-		}
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
-	}
-
-	option = {
-		name = election.12.b
-		ai_chance = {
-			base = 35			
-		}
-		start_civil_war = {
-			ideology = communism
-			size = 0.5
-		}
-	}
-}
-
-# Magnate Favors Fascism
-country_event = {
-	id = election.13
-	title = election.13.t
-	desc = election.13.d
-	picture = GFX_report_event_fascist_gathering
-	
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { 
-			AND = {
-				Tag = USA
-				date < 1949.1.1
-			}
-		}
-		has_government = democratic
-		has_idea_with_trait = motorized_equipment_manufacturer
-	}
-	
-	option = {
-		name = election.13.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 1
-				can_lose_democracy_support = yes
-			}
-		}
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.10
-		}
-	}
-
-	option = {
-		name = election.13.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 1
-				can_lose_democracy_support = no
-			}
-		}
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.05
-		}
-		remove_ideas_with_trait = motorized_equipment_manufacturer
 	}
 }
 

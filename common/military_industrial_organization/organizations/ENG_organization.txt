@@ -407,7 +407,10 @@ ENG_Blackburn_Aircraft_Plant = {
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_DEN_flyvemaskinevaerksted_organization
 	allowed = {	
-		original_tag = ENG
+		or = {
+			tag = ENG
+			tag = SAF	
+		}
 	}
 
 }
@@ -418,7 +421,8 @@ ENG_hawker_organization = {
 	allowed = {	
 		or = {
 			tag = ENG
-			tag = NZL			
+			tag = NZL	
+			tag = SAF				
 		}	
 	}
 	
@@ -632,7 +636,8 @@ ENG_royal_arsenal_organization = {
 		OR = {
 			tag = ENG
 			tag = SAF
-			tag = AST			
+			tag = AST
+			tag = CAN			
 		}
 	}
 
@@ -656,5 +661,11 @@ ENG_royal_arsenal_organization = {
 			}
 			FROM = { NOT = { has_war_with = AST } }
 		}		
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = CAN } }
+			}
+			FROM = { NOT = { has_war_with = CAN } }
+		}			
 	}
 }

@@ -50,7 +50,7 @@ state={
 		
 		1945.1.1.10 = {
 		    owner = TIB
-		    add_core_of = TIB		
+		    add_core_of = TIB
 		}	
 
 

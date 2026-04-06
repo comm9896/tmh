@@ -297,12 +297,6 @@ on_actions = {
 							has_cosmetic_tag = BUL_zveno_bulgaria
 						}
 					}
-					if = {
-						limit = {
-							NOT = { has_completed_focus = BUL_dissolve_the_military_union }
-						}
-						unlock_national_focus = BUL_dissolve_the_military_union
-					}
 					set_country_flag = BUL_zveno_destroyed_flag
 					set_country_flag = BUL_factions_unlocked_flag
 					clr_country_flag = BUL_zveno_coup_flag
@@ -341,10 +335,6 @@ on_actions = {
 						}
 						set_country_flag = BUL_zveno_integrated_flag
 						unlock_national_focus = BUL_cooperate_with_the_zveno
-					}
-					else = {
-						set_country_flag = BUL_zveno_destroyed_flag
-						unlock_national_focus = BUL_dissolve_the_military_union
 					}
 					if = {
 						limit = {
@@ -545,24 +535,9 @@ on_actions = {
 						}
 						#DO NOTHING
 					}
-					else_if = {
-						limit = {
-							has_government = democratic
-							has_completed_focus = BUL_abolish_the_monarchy
-						}
-						if = {
-							limit = {
-								has_cosmetic_tag = BUL_ff_bulgaria #Remove FF cosmetic
-							}
-							drop_cosmetic_tag = yes
-						}
-						set_cosmetic_tag = BUL_democratic
-						set_country_leader_ideology = socialism
-					}
 					else_if = { #Cosmetic tag with a non-republican name, so it is to be applied as long as monarchy has not been abolished
 						limit = {
 							has_government = democratic
-							NOT = { has_completed_focus = BUL_abolish_the_monarchy }
 						}
 						set_cosmetic_tag = BUL_constitutional_monarchy
 					}
@@ -1483,7 +1458,6 @@ on_actions = {
 			if = { #Force Boris's death in historical
 				limit = {
 					is_historical_focus_on = yes
-					NOT = { has_completed_focus	= BUL_strengthen_the_royal_dictatorship }
 					BUL_has_abolished_monarchy = no
 					date > 1943.7.30 #Historical date of death is 1943.8.28
 					NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }
@@ -1494,7 +1468,6 @@ on_actions = {
 			else_if = { #Attempt to make Boris die if not historical
 				limit = {
 					is_historical_focus_on = no
-					NOT = { has_completed_focus	= BUL_strengthen_the_royal_dictatorship }
 					BUL_has_abolished_monarchy = no
 					date > 1943.1.1 #Historical date of death is 1943.8.28
 					NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }

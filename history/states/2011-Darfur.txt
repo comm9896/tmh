@@ -20,7 +20,13 @@ state={
 		1936.1.1.15 = {
 		    owner = TIB
 			add_core_of = TIB
-		}
+		}		
+		1945.1.1.10 = {	    
+		    owner = ENG
+			add_core_of = ITA
+			add_core_of = ENG			
+		}		
+
 		
 		buildings = {
 			infrastructure = 1

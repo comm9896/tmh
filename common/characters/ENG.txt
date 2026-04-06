@@ -2100,23 +2100,6 @@ ai_will_do  = {
 		#}		
 	}
 
-	ENG_frank_whittle = {
-		name = ENG_frank_whittle
-		portraits = {
-			army = {
-				large = GFX_portrait_ENG_frank_whittle
-				small = GFX_idea_frank_whittle
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_jet_expert scientist_trait_bright }
-			skills = {
-				specialization_air = 2
-			}
-		}		
-	}
-
 	ENG_john_cockcroft = {
 		name = ENG_john_cockcroft
 		portraits = {

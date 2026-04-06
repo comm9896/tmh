@@ -21,6 +21,8 @@ JAP_no_trade:0 "Торговля с США"
                     
 Sapr_photo_reconnaisance:0 "Самолет разведчик"
 
+modifier_production_speed_energy_infrastructure_factor:0 "Скорость строительства §YУсиленной энергосети§!"
+
 
 pacifist_nation:0 "Миролюбивая нация"
 Sapr_supporting_the_losing_alliance:0 "Мобилизация тыла"

@@ -44,7 +44,9 @@ ideas = {
 				original_tag = FRA
 				always = no
 			}
-
+			available = {
+				date < 1940.01.01
+			}
 			allowed_civil_war = {
 				tag = FRA
 			}

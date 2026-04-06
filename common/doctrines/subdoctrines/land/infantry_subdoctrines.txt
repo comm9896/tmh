@@ -422,66 +422,100 @@ assault_infantry = { #штурмовая пехота
 
     rewards = {
         low_echelon_fire_support = {
-			category_all_infantry = { 
-				max_organisation = 10
+			planning_speed = 0.2
+	
+			category_light_infantry = {
+				default_morale = 0.1					
+			}	
+			cavalry = {
+				default_morale = 0.1		
+			}		
+			camelry = {	
+				default_morale = 0.1	
 			}
+			elephantry = {
+				default_morale = 0.1		
+			}				
         }
         organic_battalion_fire_support = {
 			category_light_infantry = {
 				breakthrough = 0.2
+				defense = 0.2				
 			}
+			cavalry = {
+				breakthrough = 0.2
+				defense = 0.2
+			}		
+			camelry = {	
+				breakthrough = 0.2
+				defense = 0.2
+			}
+			elephantry = {
+				breakthrough = 0.2
+				defense = 0.2
+			}			
         }
 
         integrated_support_batteries = {
-			marine = {
+			category_light_infantry = {
 				breakthrough = 0.2
-				soft_attack = 0.2
-				hard_attack = 0.2
+				defense = 0.2					
+				soft_attack = 0.25
+				hard_attack = 0.25
 			}
-			marine_commando = {
+			cavalry = {
+				soft_attack = 0.25
 				breakthrough = 0.2
-				soft_attack = 0.2
-				hard_attack = 0.2				
-			}
-			mountaineers = {
+				defense = 0.2					
+				soft_attack = 0.25
+				hard_attack = 0.25
+			}		
+			camelry = {	
 				breakthrough = 0.2
-				soft_attack = 0.2
-				hard_attack = 0.2				
+				defense = 0.2					
+				soft_attack = 0.25
+				hard_attack = 0.25
 			}
-			paratrooper = {
+			elephantry = {
 				breakthrough = 0.2
-				soft_attack = 0.2
-				hard_attack = 0.2				
-			}
-			ranger_battalion = {
-				breakthrough = 0.2
-				soft_attack = 0.2
-				hard_attack = 0.2				
-			}
+				defense = 0.2					
+				soft_attack = 0.25
+				hard_attack = 0.25
+			}			
         }
         breakthrough_fireteams = {
-        #4
-			category_all_infantry = { 
-				max_organisation = 10
+			category_light_infantry = {
+				soft_attack = 0.25
+				hard_attack = 0.25
+			}	
+			cavalry = {
+				soft_attack = 0.25
+				hard_attack = 0.25
+			}		
+			camelry = {	
+				soft_attack = 0.25
+				hard_attack = 0.25
 			}
-
+			elephantry = {
+				soft_attack = 0.25
+				hard_attack = 0.25
+			}			
 
         }
         assault_detachments = {
         #5
 			category_light_infantry = {
-				max_strength = 2
+				default_morale = 0.2	
 			}
 			cavalry = {
-				max_strength = 2
+				default_morale = 0.2	
 			}		
 			camelry = {	
-				max_strength = 2
+				default_morale = 0.2	
 			}
 			elephantry = {
-				max_organisation = 5
-			}
-
+				default_morale = 0.2
+			}	
         }
     }
 }

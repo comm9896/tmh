@@ -154,9 +154,9 @@ ability = {
 		
 		
 		unit_modifiers = {
-			river_crossing_factor = -0.4
+			river_crossing_factor = -0.3
 			river = {
-				attack = 0.3
+				attack = 0.2
 			}
 		}
 		

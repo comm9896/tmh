@@ -183,6 +183,7 @@ SOV_time_to_war = {
 			not = {
 				SOV = { has_war_with = FIN }	
 				has_country_flag = Sapr_only_erope_1941
+				has_country_flag = Sapr_duelmiy_mode				
 			}
 		}
 		visible = {
@@ -232,7 +233,7 @@ SOV_war_with_FIN = {
 		icon = generic_prepare_civil_war		
 		
 		available = {
-			hidden_trigger = { always = no }		
+			FIN = { surrender_progress > 0.30 }				
 		}
 		
 		days_mission_timeout = 160	
@@ -250,7 +251,7 @@ SOV_war_with_FIN = {
 			    has_war = yes
 				country_exists = FIN
 				not = {is_subject_of = SOV}
-				FIN = { surrender_progress < 0.30 }				
+			
 			}	
 		}
 
@@ -259,10 +260,45 @@ SOV_war_with_FIN = {
 		cancel_if_not_visible = yes
 	
 		timeout_effect = {
-			FIN = { 
-				set_country_flag = FIN_time_to_surrender
+
+			transfer_state = 146
+			transfer_state = 147					
+
+
+			if = {
+				limit = {
+					722 = {
+						is_claimed_by = SOV
+					}
+				}
+				SOV = { remove_state_claim = 722 }
 			}
+			SOV = { 
+				white_peace = {
+					tag = FIN 
+				} 
+			}			
 		}
+		complete_effect = {	
+			
+			transfer_state = 146
+			transfer_state = 147					
+
+
+			if = {
+				limit = {
+					722 = {
+						is_claimed_by = SOV
+					}
+				}
+				SOV = { remove_state_claim = 722 }
+			}
+			SOV = { 
+				white_peace = {
+					tag = FIN 
+				} 
+			}			
+		}			
 	}	
 	
 	FIN_time_to_The_USSR_surrenders = {
@@ -320,7 +356,33 @@ SOV_war_with_FIN = {
 		cancel_if_not_visible = yes
 	
 		timeout_effect = {
-			country_event = { id = FIN_war_with_SOV_shameful_world.1 }				
+			if = {
+				limit = {
+					or = {
+						213 = {
+							controller = {
+								tag = FIN
+							}
+						}	
+						215 = {
+							controller = {
+								tag = FIN
+							}
+						}
+						216 = {
+							controller = {
+								tag = FIN
+							}
+						}	
+						195 = {
+							controller = {
+								tag = FIN
+							}
+						}				
+					}
+				}
+				country_event = { id = FIN_war_with_SOV_shameful_world.1 }				
+			}
 		}
 	}		
 	

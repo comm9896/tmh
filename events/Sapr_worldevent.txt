@@ -23,6 +23,30 @@ news_event  = {
 	}
 }
 
+add_namespace = Sapr_winter_42_news
+news_event  = {
+	id = Sapr_winter_42_news.1
+	title = Sapr_winter_42_news.1.a
+	desc = Sapr_winter_42_news.1.b
+	picture = GFX_news_event_011
+	
+	major = yes
+
+
+	trigger = {
+		has_global_flag = Sapr_winter_42_news		
+		not = {
+			has_global_flag = Sapr_winter_42_end_news
+		}
+	}
+	immediate = {
+		set_global_flag = Sapr_winter_42_end_news	
+	}
+	option = {
+		name = Sapr_winter_42_news.1.c
+	}
+}
+
 
 add_namespace = Sapr_vahta_na_Reine_news
 news_event  = {

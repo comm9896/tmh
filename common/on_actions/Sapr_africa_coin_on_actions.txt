@@ -9,6 +9,9 @@ on_actions = {
 						not = {
 							has_country_flag = Sapr_coin_for_africa
 						}
+						not = {
+							has_country_flag = Sapr_duelmiy_mode
+						}						
 					}
 					
 				}

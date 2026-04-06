@@ -1594,7 +1594,8 @@ GER_time_to_war = {
 			not = {
 				GER = { has_war_with = POL }
 				has_country_flag = Sapr_only_asia
-				has_country_flag = Sapr_only_erope_1941				
+				has_country_flag = Sapr_only_erope_1941	
+				has_country_flag = Sapr_duelmiy_mode				
 			}
 			
 		}
@@ -1647,6 +1648,7 @@ GER_time_to_war = {
 				GER = { has_war_with = SOV }
 				has_country_flag = Sapr_only_asia
 				has_country_flag = Sapr_only_erope_1941
+				has_country_flag = Sapr_duelmiy_mode						
 			}
 		}
 

@@ -2,11 +2,11 @@
 Sapr_duelniy_mod_equipments = {
 
 	add_equipment_to_stockpile = {
-		type = small_plane_airframe_2
+		type = small_plane_airframe_3
 		amount = 50000
 	}	
 	add_equipment_to_stockpile = {
-		type = small_plane_cas_airframe_2
+		type = small_plane_cas_airframe_3
 		amount = 50000
 	}	
 	add_equipment_to_stockpile = {

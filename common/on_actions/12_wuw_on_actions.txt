@@ -347,39 +347,7 @@ on_actions = {
 			}
 		}
 
-		effect = { # Adding the correct stuff for puppets for German Mitteleuropa stuff
-
-
-		effect = {
-			IF = {
-				limit = {
-					FROM = {
-						original_tag = BEL
-						has_completed_focus = BEL_interpreters
-					}
-				}
-				ROOT = {
-					add_ideas = BEL_interpreters_ns
-				}
-			}
-		}
-
 	}
-
-	
-	# ROOT Tag FROM Project
-	# Triggered when a project is completed
-	on_project_completion = {
-		effect = { #achievement check
-			IF = { 
-				limit = {
-					ROOT = { original_tag = BEL }
-				}
-				add_to_variable = { BEL.special_projects_completed = 1 }
-			}
-		}
-	}
-
 
 
 	on_join_allies = { # ROOT is the country which joined, FROM is the country whose war was joined
@@ -474,84 +442,4 @@ on_actions = {
 
 	}
 
-	on_startup = {
-		effect = {
-			# European States Array
-			every_country = {
-				limit = {
-					capital_scope = { is_on_continent = europe }
-				}
-				add_to_array = { 
-					array = GER.GER_european_targets_array 
-					value = THIS
-				}
-			}  
-		}
-
-		# Creates the Colonial Template Divisions for Belgium
-		effect = {
-			IF = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				295 = {
-					create_unit = {
-					    division = "name = \"1. Groupes de Force Publique du Congo Belge\" division_template = \"Force Publique\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
-					    owner = BEL
-					    prioritize_location = 5117 # Leopoldville
-					}
-					create_unit = {
-					    division = "name = \"2. Groupes de Force Publique du Congo Belge\" division_template = \"Force Publique\" start_experience_factor = 0.1 start_equipment_factor = 0.4"
-					    owner = BEL
-					    prioritize_location = 10968 # Fort de Shinakasa
-					}
-				}
-			}
-			
-		}
-
-		effect = {
-			IF = {
-				limit = { has_dlc = "Gotterdammerung" }
-				random_list = {
-					999 = {
-						BEL = { set_country_flag = BEL_serious_waffle_flag }
-					}
-					1 = {
-						BEL = { set_country_flag = BEL_wunder_waffle_flag }
-					}
-				}
-			}
-			
-		}
-
-		effect = {
-			IF = {
-				limit = { has_dlc = "Gotterdammerung" }
-				set_variable = { global.deployed_manpower_ratio_needed_for_anschluss = 24 }
-				set_variable = { global.deployed_manpower_ratio_needed_for_anschluss_incrementor = 1 } #if this is changed, please update loc AUS_anschluss_ratio_lowered and AUS_anschluss_ratio_raised
-
-				set_variable = { global.low_anschluss_risk = global.deployed_manpower_ratio_needed_for_anschluss }
-
-				set_variable = { global.medium_anschluss_risk = global.deployed_manpower_ratio_needed_for_anschluss }
-
-				set_variable = { global.high_anschluss_risk = global.deployed_manpower_ratio_needed_for_anschluss }
-
-				multiply_variable = {
-					var = global.low_anschluss_risk
-					value = 0.5
-				}
-
-				multiply_variable = {
-					var = global.medium_anschluss_risk
-					value = 0.75
-				}
-
-				multiply_variable = {
-					var = global.high_anschluss_risk
-					value = 0.90
-				}
-			}
-		}
-	}
 }

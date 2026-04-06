@@ -8,7 +8,7 @@ state={
 		coal = 2
 	}
 	
-	state_category = large_town
+	state_category = town_1k_Air
 	history={
 
 		1936.1.1.12 = {

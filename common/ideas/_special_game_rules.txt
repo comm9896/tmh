@@ -336,7 +336,13 @@ ideas = {
 		    	land_doctrine_cost_factor = -0.95
 				air_range_factor = 10
 				fuel_gain_factor = 500
+				army_intel_to_others = 100.0
+				civilian_intel_to_others = 100.0
+				navy_intel_to_others = 100.0
+				airforce_intel_to_others = 100.0	
+				weekly_manpower = 10000
 		    }
+			
 			
 		}
 		Sapr_CHI_surrender = {

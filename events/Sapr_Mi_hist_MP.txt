@@ -60,3 +60,42 @@ country_event = {
 		}
 	}
 }
+
+add_namespace = Sapr_joining_a_faction
+
+country_event = {
+	id = Sapr_joining_a_faction.2
+	title = Sapr_joining_a_faction.2.b
+	desc = Sapr_joining_a_faction.2.c
+	picture = GFX_portrait_BEL_mcl_keyaerts
+
+	hidden = yes
+
+	trigger = {
+		not = {
+			has_country_flag = Sapr_joining_a_faction_goal
+		}
+		not = {
+			tag = ENG					
+			tag = GER
+			tag = SOV
+			tag = JAP
+			tag = FRA					
+		}
+		or = {
+			is_in_faction_with = GER
+			is_in_faction_with = ENG					
+			is_in_faction_with = SOV
+			is_in_faction_with = JAP
+			is_in_faction_with = FRA
+			is_in_faction_with = USA
+		}
+	}
+	
+	option = {
+	    name = Sapr_joining_a_faction.2.d
+		add_faction_initiative = 5	
+		set_country_flag = Sapr_joining_a_faction_goal
+	}	
+	
+}

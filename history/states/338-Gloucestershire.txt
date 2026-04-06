@@ -14,6 +14,19 @@ state={
 		1936.1.1.12 = {	    
 			owner = ENG
 			add_core_of = ENG
+			buildings = {
+				infrastructure = 4 #was: 7
+				arms_factory = 1
+				industrial_complex = 1
+				air_base = 2
+				3369 = {
+					naval_base = 10
+					naval_headquarters = {
+						level = 1
+					}
+					naval_supply_hub = 1				
+				}			
+			}			
 		}			
 		1936.1.1.13 = {	    
 			owner = ENG
@@ -30,15 +43,6 @@ state={
 
 		victory_points = {
 			3369 5 
-		}
-		buildings = {
-			infrastructure = 4 #was: 7
-			arms_factory = 1
-			industrial_complex = 1
-			air_base = 2
-			3369 = {
-				naval_base = 2
-			}
 		}
 
 	}
