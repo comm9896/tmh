@@ -28,9 +28,9 @@ state={
 			owner = ENG
 		}	
 		1936.1.1.15 = {
-			add_core_of = BRA				
+			add_core_of = HOL			
 			add_core_of = HOL
-			owner = ENG
+			owner = HOL
 		}	
 		1941.1.1.14 = {
 			owner = TIB

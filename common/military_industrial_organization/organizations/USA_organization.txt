@@ -34,7 +34,15 @@ USA_chrysler_organization = {
 	icon = GFX_idea_chrysler
 	
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			AND = {
+				tag = MEX 
+				has_dlc = "Man the Guns"
+			}
+			NOR_AAT = yes 
+			PHI_SEA = yes
+		}
 	}
 
 	available = {
@@ -59,7 +67,99 @@ USA_chrysler_organization = {
 			defense = -0.15
 		}
 	}
+		add_trait = {
+		token = PHI_mio_trait_ethanol_fuel_adaptations
+		name = PHI_mio_trait_ethanol_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
 
+		position = { x = 0 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_coconut_fuel_adaptations
+		name = PHI_mio_trait_coconut_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+			FROM = {
+				PHI_vicente_lava = {
+					is_hired_as_advisor = yes
+				}
+			}
+		}
+
+		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.10
+			reliability = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_ad_hoc_armor_reinforcement
+		name = PHI_mio_trait_ad_hoc_armor_reinforcement
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		special_trait_background = yes
+
+		position = { x = 5 y = 3 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		any_parent = { generic_mio_trait_spaced_armor generic_mio_trait_crew_survival_layout generic_mio_trait_sloped_side_armor }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			hardness = 0.05
+			armor_value = 0.03
+			maximum_speed = -0.03
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 	add_trait = { 
 		token = USA_mio_trait_strict_design_specifications
 		name = USA_mio_trait_strict_design_specifications
@@ -146,11 +246,25 @@ USA_detroit_arsenal_organization = {
 	name = detroit_arsenal
 	include = generic_tank_organization
 	icon = GFX_idea_generic_industrial_concern_1
-	allowed = {	
-		tag = USA
-	}
+		allowed = {	
+				OR = {
+					tag = USA
+					PHI_SEA = yes
+				}
+			}
 	available = {
-		FROM = { has_completed_focus = USA_main_battle_tanks }
+			IF = {
+			limit = {
+				FROM = { original_tag = USA } 
+			}
+			FROM = { has_completed_focus = USA_main_battle_tanks }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = PHI } 
+			}
+			USA = { has_completed_focus = USA_main_battle_tanks }
+		}
 	}
 
 	initial_trait = {
@@ -167,7 +281,100 @@ USA_detroit_arsenal_organization = {
 			production_efficiency_gain_factor = 0.1
 		}
 	}
+	
+	add_trait = {
+		token = PHI_mio_trait_ethanol_fuel_adaptations
+		name = PHI_mio_trait_ethanol_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
 
+		position = { x = 9 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_coconut_fuel_adaptations
+		name = PHI_mio_trait_coconut_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+			FROM = {
+				PHI_vicente_lava = {
+					is_hired_as_advisor = yes
+				}
+			}
+		}
+
+		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.10
+			reliability = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_widened_tracks
+		name = PHI_mio_trait_widened_tracks
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		relative_position_id = generic_mio_trait_improved_tracks
+		any_parent = { generic_mio_trait_improved_tracks }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			reliability = 0.07
+			maximum_speed = 0.03
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 	add_trait = { 
 		token = USA_mio_trait_arsenal_of_democracy
 		name = USA_mio_trait_arsenal_of_democracy
@@ -272,9 +479,11 @@ USA_electric_boat_company_organization = {
 	include = generic_submarine_organization
 	icon = GFX_idea_electric_boat_company
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			PHI_SEA = yes
+		}
 	}
-
 	add_trait = { 
 		token = USA_mio_trait_gould_centrifugal_pump
 		name = USA_mio_trait_gould_centrifugal_pump
@@ -290,7 +499,68 @@ USA_electric_boat_company_organization = {
 			sub_visibility = -0.03
 		}
 	}
+		add_trait = {
+		token = PHI_mio_trait_ethanol_fuel_adaptations
+		name = PHI_mio_trait_ethanol_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
 
+		position = { x = 9 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_coconut_fuel_adaptations
+		name = PHI_mio_trait_coconut_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+			FROM = {
+				PHI_vicente_lava = {
+					is_hired_as_advisor = yes
+				}
+			}
+		}
+
+		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.10
+			reliability = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 	add_trait = { 
 		token = USA_mio_trait_radar_experimentation
 		name = USA_mio_trait_radar_experimentation
@@ -428,7 +698,14 @@ USA_north_american_aviation_organization = {
 	icon = GFX_idea_north_american_aviation
 	
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+			PHI_SEA = yes
+		}
 	}
 
 	available = {
@@ -443,7 +720,32 @@ USA_north_american_aviation_organization = {
 	initial_trait = {
 		name = USA_mio_trait_light_long_range_aircraft
 	}
-	
+		add_trait = {
+		token = PHI_mio_trait_engine_filters
+		name = PHI_mio_trait_engine_filters
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x = 1 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			reliability = 0.10
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 	add_trait = {
 		token = USA_mio_trait_outsourced_engines
 		name = USA_mio_trait_outsourced_engines
@@ -493,7 +795,10 @@ USA_Grummana_Corporation_Aircraft_Plant = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_norfolk_naval_yard
 	allowed = {	
-		original_tag = USA
+		OR = {
+			tag = USA 
+			PHI_SEA = yes
+		}
 	}
 
 
@@ -530,7 +835,10 @@ USA_lockheed_organization = {
 	icon = GFX_idea_lockheed
 	
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			PHI_SEA = yes
+		}
 	}
 	
 	equipment_type = {
@@ -548,7 +856,42 @@ USA_lockheed_organization = {
 			air_attack = 0.05
 		}
 	}
-	
+		add_trait = {
+		token = PHI_mio_trait_improvised_bombs
+		name = PHI_mio_trait_improvised_bombs
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
+		special_trait_background = yes
+
+		position = { x = -1 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		relative_position_id = generic_mio_trait_skip_bombing
+		any_parent = { generic_mio_trait_skip_bombing  generic_mio_trait_reinforced_wing_braces }
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			naval_strike_attack = -0.05
+			air_ground_attack = -0.05
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
 	add_trait = {
 		token = USA_mio_trait_mechanized_production
 		name = USA_mio_trait_mechanized_production
@@ -567,15 +910,15 @@ USA_lockheed_organization = {
 		} 
 	}
 	
-	override_trait = {
-		token = generic_mio_trait_heavy_fighter_specialization
-		equipment_bonus = {
-			air_range = 0.1
-			air_attack = 0.05
+		override_trait = {
+			token = generic_mio_trait_heavy_fighter_specialization
+			equipment_bonus = {
+				air_range = 0.1
+				air_attack = 0.05
+			}
 		}
 	}
 }
-
 USA_douglas_aircraft_company_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_douglas_aircraft_company
@@ -740,7 +1083,52 @@ USA_springfield_armory_organization = {
 	icon = GFX_idea_springfield_armory
 	
 	allowed = {	 
-		tag = USA 
+		OR = {
+			tag = USA 
+			AND = {
+				original_tag = PHI 
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
+	}
+		add_trait = { 
+		token = PHI_mio_trait_rugged_construction
+		name = PHI_mio_trait_rugged_construction
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x=0 y=0 }  
+
+		visible = {
+			FROM = {
+				original_tag = PHI
+			}
+		}
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = PHI_mio_trait_use_local_materials
+		name = PHI_mio_trait_use_local_materials
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=0 y=1 }  
+
+		visible = {
+			FROM = {
+				original_tag = PHI
+			}
+		}
+
+		any_parent = { PHI_mio_trait_rugged_construction }
+
+		production_bonus = { 
+			production_cost_factor = -0.05 
+		}
 	}
 }
 
@@ -749,7 +1137,13 @@ USA_ford_motor_company_organization = {
 	icon = GFX_idea_ford_motor_company
 	
 	allowed = {	 
-		tag = USA 
+		OR = {
+			tag = USA 
+			AND = {
+				original_tag = PHI 
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
 	}
 	
 	visible = {
@@ -770,6 +1164,68 @@ USA_ford_motor_company_organization = {
 			build_cost_ic = -0.05
 		}
 	}
+		add_trait = {
+		token = PHI_mio_trait_ethanol_fuel_adaptations
+		name = PHI_mio_trait_ethanol_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 9 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = PHI_mio_trait_coconut_fuel_adaptations
+		name = PHI_mio_trait_coconut_fuel_adaptations
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }  
+		
+		visible = {
+			FROM = { original_tag = PHI }
+		}
+
+		available = {
+			FROM = {
+				PHI_vicente_lava = {
+					is_hired_as_advisor = yes
+				}
+			}
+		}
+
+		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			fuel_consumption = -0.10
+			reliability = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 }
 
 
@@ -779,7 +1235,38 @@ USA_rock_island_arsenal_organization = {
 	icon = GFX_idea_rock_island_arsenal
 	
 	allowed = {	 
-		tag = USA 
+		OR = {
+			tag = USA 
+			AND = {
+				original_tag = PHI 
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
+	}
+		add_trait = { 
+		token = PHI_mio_trait_naval_caliber_artillery
+		name = PHI_mio_trait_naval_caliber_artillery
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		special_trait_background = yes
 
+		position = { x=7 y=1 }  
+
+		visible = {
+			FROM = {
+				original_tag = PHI
+			}
+		}
+
+		available = {
+			FROM = {
+				has_completed_focus = PHI_coastal_artillery
+			}
+		}
+
+		any_parent = { generic_mio_trait_big_guns }
+
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
 	}
 }

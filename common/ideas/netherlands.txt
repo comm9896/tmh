@@ -40,7 +40,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = -0.9
+				conscription_factor = -0.5
 			}
 		}
 		
@@ -68,7 +68,7 @@ ideas = {
 			}
 			
 			removal_cost = -1
-			
+			modifier = {political_power_factor = 0.1}
 			traits = { popular_figurehead }
 		}
 
@@ -473,7 +473,7 @@ ideas = {
 						
 			equipment_bonus = {
 				convoy = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.5 instant = yes
 				}
 			}
 		}
@@ -1230,6 +1230,7 @@ ideas = {
 				neutrality_drift = -0.02
 				democratic_drift = 0.05
 				stability_weekly = 0.001
+				political_power_factor = 0.1
 			}
 		}
 
@@ -1933,6 +1934,53 @@ ideas = {
 		}
 
 	}
+	
+	industrial_concern = {
+	
+		HOL_royal_dutch_shell = {
 
+			available = {
+				has_completed_focus = HOL_expand_curacao_oil_refineries
+			}
+			
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+
+			cost = 75
+
+			picture = HOL_royal_dutch_shell
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		HOL_philips = {
+
+			available = {
+				has_completed_focus = HOL_philips_focus
+			}
+			
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+
+			cost = 75
+
+			picture = HOL_philips
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
 
 }

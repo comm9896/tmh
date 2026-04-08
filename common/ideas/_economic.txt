@@ -1126,7 +1126,19 @@ ELSE_IF = {
 			}		
 		
 			available = {
+				if = {
+					limit = {
+						original_tag = PHI
+					}
+				has_completed_focus = PHI_pearl_of_the_orient_seas
+				}
 				OR = {
+				if = {
+					limit = {
+						original_tag = PHI
+					}
+				has_completed_focus = PHI_pearl_of_the_orient_seas
+				}
 					AND = {
 						has_government = democratic
 						has_war = yes
@@ -1331,15 +1343,35 @@ ELSE_IF = {
 
 
 			available = {
+			or = {
+				if = {
+					limit = {
+						original_tag = PHI
+					}
+				has_completed_focus = PHI_pearl_of_the_orient_seas
+				}
 				has_war = yes
+				}
 				OR = {
+				if = {
+					limit = {
+						original_tag = PHI
+					}
+				has_completed_focus = PHI_pearl_of_the_orient_seas
+				}
 					has_government = fascism
 					has_government = communism
 				}
 				OR = {
+					if = {
+					limit = {
+						original_tag = PHI
+					}
+				has_completed_focus = PHI_pearl_of_the_orient_seas
+				}
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
-if = {
+				if = {
 						limit = {
 							original_tag = GER
 						}
@@ -1361,6 +1393,7 @@ if = {
 					}
 					NOT = { has_idea = CHI_nine_power_treaty }
 				}
+
 			}
 
 			rule = {

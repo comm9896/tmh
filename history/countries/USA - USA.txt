@@ -21,6 +21,12 @@ set_country_flag = USA_noman_flag
 1936.1.1.13 = {
     set_country_flag = Sapr_no_asia		
 }
+1936.1.1.15 = {
+ENG = { add_to_faction = USA }
+	clr_country_flag = Sapr_no_asia	
+    set_country_flag = Sapr_only_asia	
+	
+}
 
 
 add_dynamic_modifier = { modifier = USA_plan_civilian_dynamic_modifier }
@@ -385,7 +391,7 @@ add_timed_idea = { idea = USA_no_trade days = 1460 }
 
 add_ideas = bureau_of_ordnance_spirit
 add_ideas = MTG_naval_treaty_adherent
-
+add_ideas = Diplomatic_isolation_USA
 
 set_convoys = 1200
 

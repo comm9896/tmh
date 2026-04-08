@@ -214,9 +214,9 @@ NDefines.NNavy.OUT_OF_FUEL_TORPEDO_FACTOR = -0.8; --атака торпед
 NDefines.NNavy.DAILY_MANPOWER_GAIN_RATIO = 0.5;--0,1								-- скорость пополнения менпавера в кораблях
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0;--100							-- стоимость снятие гордости флота
 
-NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1;--60								-- кол-во дней для подготовки высадки
-NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- кап высадок
-NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- кап дивизий для 1 стрелочки
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1;--60								-- базовое кол-во дней для подготовки высадки
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- базовый  кап высадок
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- базовый кап дивизий для 1 стрелочки
 
 --эффективность конвоев
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.5;--1,25							-- как сильно падает эффективность в зависимости от потери конвоев. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
@@ -230,11 +230,6 @@ NDefines.NNavy.MINIMUM_SHIP_SPEED = 10.0;--1										-- самая медлен
 NDefines.NNavy.TRAINING_ORG = 0.9; --0.2;												-- максимальная организация при обучении
 
 
-
---NIndustrialOrganisation
---NIndustrialOrganisation
---NIndustrialOrganisation
-NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0;    --через сколько дней можно будет изменить политику в кб
 
 --NIndustrialOrganisation
 --NIndustrialOrganisation
@@ -389,8 +384,8 @@ NDefines.NProject.FACILITY_SUPPLY_WARNING_RED_RATIO = 0;--0.66,		-- % сапла
 NDefines.NProject.RECRUIT_SCIENTIST_COST = {						-- кол-во пп для найма учёного
 		0,			-- pp cost if no available scientist
 		0,			-- pp cost if 1 available scientist
-		75,			-- pp cost if 2 available scientist
-		100			-- pp cost if more than 2 available scientist
+		30,			-- pp cost if 2 available scientist
+		50			-- pp cost if more than 2 available scientist
 	};
 NDefines.NProject.PROJECT_LOSS_FACTOR_ON_CAPTURE = 0; --0.2             -- сколько % теряется при захвате комплекса в котором делается проект
 NDefines.NProject.PROJECT_CAPTURE_GAIN_RATIO = 0;--0.2                  -- % от того сколько будет получено % проекта который был изучен в этом комплекса 

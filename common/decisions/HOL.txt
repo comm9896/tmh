@@ -355,7 +355,7 @@ HOL_obtain_foreign_colonial_investments = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { var = east_indies_oil value = 1 compare = greater_than_or_equals } }
+					check_variable = { var = east_indies_oil value = 9 compare = equals } 
 				}
 				set_variable = { var = east_indies_oil value = 0 }
 			}
@@ -563,72 +563,13 @@ HOL_prepare_the_inundation_lines = {
 }
 
 HOL_war_on_pacifism = {
-	
-	HOL_crack_down_on_pacifist_movements = {
-
-		icon = hol_war_on_pacifism
-
-		allowed = {
-			tag = HOL
-		}
-
-		available = {
-			NOT = { has_country_flag = hol_war_on_pacifism_in_progress }
-			OR = {
-				has_idea = HOL_shell_shocked_spectator_1
-				hidden_trigger = {
-					has_idea = HOL_shell_shocked_spectator_2
-				}
-				hidden_trigger = {
-					has_idea = HOL_shell_shocked_spectator_3
-				}				
-				hidden_trigger = {
-					has_idea = HOL_shell_shocked_spectator_4 
-				}
-				hidden_trigger = {
-					has_idea = HOL_shell_shocked_spectator_5
-				}
-			}
-		}
-
-		cost = 25
-
-		fire_only_once = no
-
-		days_remove = 60
-
-		modifier = {
-			war_support_weekly = 0.005
-			stability_weekly = -0.005
-		}
-
-		visible = {
-			tag = HOL
-			has_completed_focus = HOL_war_on_pacifism
-		}
-
-		remove_effect = {
-			add_popularity = {
-			    ideology = democratic
-			    popularity = -0.05
-			}
-			add_stability = -0.03
-			HOL_shell_shocked_spectator_level_down = yes
-			clr_country_flag = hol_war_on_pacifism_in_progress
-		}
-
-		complete_effect = {
-			set_country_flag = hol_war_on_pacifism_in_progress
-		}
-	}
-
 
 	HOL_establish_pro_war_labor_indoctrination = {
 
 		icon = hol_war_on_pacifism
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
@@ -688,7 +629,7 @@ HOL_war_on_pacifism = {
 		icon = hol_war_on_pacifism
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
@@ -747,13 +688,11 @@ HOL_request_allied_favors = {
 		icon = hol_radio_oranje
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
-			NOT = { controls_state = 7 }
-			NOT = { controls_state = 35 }
-			NOT = { controls_state = 36 }
+		has_war = yes
 		}
 
 		days_remove = 90
@@ -763,8 +702,10 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
+			or = {
+			has_completed_focus = PHI_i_shall_return
 			has_completed_focus = HOL_request_allied_favors
+				}
 		}
 
 		modifier = {
@@ -785,91 +726,35 @@ HOL_request_allied_favors = {
 		icon = generic_naval
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
+			has_war = yes
 		}
 
 		days_remove = 30
 
 		cost = 75
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		visible = {
-			tag = HOL
+		or = {
+			has_completed_focus = PHI_i_shall_return
 			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
+			political_power_factor = -0.1
 		}
 
 		complete_effect = {
+					add_offsite_building = { type = dockyard level = 1 }
 		}
 
 		remove_effect = {
-			add_offsite_building = { type = dockyard level = 2 }
-			if = {
-				limit = {
-					NOT = { check_variable = { var = obtain_dockyard_counter value = 0 compare = greater_than } }
-				}
-				set_variable = { var = obtain_dockyard_counter value = 0 }
-			}
-			add_to_variable = { var = obtain_dockyard_counter value = 1 }
-		}
-
-	}
-
-	HOL_assemble_air_squadron = {
-
-		icon = generic_air
-
-		allowed = {
-			tag = HOL
-		}
-
-		available = {
-		}
-
-		days_remove = 45
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			tag = HOL
-			has_completed_focus = HOL_request_allied_favors
-		}
-
-		modifier = {
-		}
-
-		complete_effect = {
-		}
-
-		remove_effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				add_equipment_to_stockpile = {
-				    type = fighter_equipment_1
-				    amount = 100
-				    producer = ENG
-				}
-			}
-			else = {
-				add_equipment_to_stockpile = {
-				    type = small_plane_airframe_0
-				    amount = 100
-				    producer = ENG
-				    variant_name = "Gloster Gladiator"
-				}	
-			}
 		}
 
 	}
@@ -879,7 +764,7 @@ HOL_request_allied_favors = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
@@ -889,20 +774,20 @@ HOL_request_allied_favors = {
 
 		cost = 50
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		visible = {
-			tag = HOL
+		or = {
+			has_completed_focus = PHI_i_shall_return
 			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
+		political_power_factor = -0.1
 		}
 
 		complete_effect = {
-		}
-
-		remove_effect = {
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
 			    amount = 3000
@@ -917,6 +802,10 @@ HOL_request_allied_favors = {
 			}
 		}
 
+		remove_effect = {
+
+		}
+
 	}
 
 	HOL_pull_strings_with_british_industrialists = {
@@ -924,10 +813,11 @@ HOL_request_allied_favors = {
 		icon = generic_industry
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
+		has_war = yes
 		}
 		
 		ai_will_do = {
@@ -941,26 +831,23 @@ HOL_request_allied_favors = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
+		or = {
+			has_completed_focus = PHI_i_shall_return
 			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
+		political_power_factor = -0.1
 		}
 
 		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 
 		remove_effect = {
-			add_offsite_building = { type = arms_factory level = 1 }
-			add_offsite_building = { type = industrial_complex level = 1 }
-			if = {
-				limit = {
-					NOT = { check_variable = { var = british_industrialists_counter value = 0 compare = greater_than } }
-				}
-				set_variable = { var = british_industrialists_counter value = 0 }
-			}
-			add_to_variable = { var = british_industrialists_counter value = 1 }
+
 		}
 
 	}
@@ -970,7 +857,7 @@ HOL_request_allied_favors = {
 		icon = hol_engelandvaarders
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
@@ -983,8 +870,10 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
+		or = {
+			has_completed_focus = PHI_i_shall_return
 			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
@@ -992,6 +881,7 @@ HOL_request_allied_favors = {
 		}
 
 		complete_effect = {
+		political_power_factor = -0.1
 		}
 
 		remove_effect = {
@@ -1008,7 +898,7 @@ HOL_bernhard = {
 		icon = generic_army_support
 
 		allowed = {
-			tag = HOL
+
 		}
 
 		available = {
@@ -1080,66 +970,6 @@ HOL_bernhard = {
 }
 
 political_actions = {
-	HOL_relocate_government_to_batavia = {
-
-		icon = eng_trade_unions_support
-
-		allowed = {
-			original_tag = HOL
-		}
-
-		available = {
-			has_capitulated = yes
-			has_completed_focus = HOL_continue_the_war_in_batavia
-			OR = {
-				has_government = democratic
-				has_government = fascism
-			}
-			OR = {
-				INS = {
-					is_subject_of = HOL
-					has_autonomy_state = autonomy_integrated_puppet
-					compare_autonomy_progress_ratio < 0.6
-					has_full_control_of_state = 335
-				}
-				has_full_control_of_state = 335
-			}
-		}
-
-		cost = 0
-
-		fire_only_once = yes
-
-		visible = {
-			original_tag = HOL
-		}
-
-		complete_effect = {
-			remove_ideas = HOL_curtail_colonial_autonomy_overlord
-			INS = {
-				hidden_effect = {
-					country_event = { id = mtg_netherlands.22 }
-				}
-			}
-			INS = {
-				every_unit_leader = {
-					set_nationality = HOL
-				}
-			}
-			annex_country = {
-			    target = INS
-			    transfer_troops = yes
-			}
-			every_state = {
-				limit = {
-					is_core_of = INS
-				}
-				add_compliance = 70
-			}
-			set_capital = { state = 335 }
-			hidden_effect = { news_event = { id = mtg_news.46 days = 1 } }
-		}
-	}
 
 	HOL_propose_benelux_unification = {
 

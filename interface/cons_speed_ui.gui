@@ -44,7 +44,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "anti_air_building_speed"   
-			position = { x = 488 y = -68 } # 369
+			position = { x = 488 y = -68 }
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_anti_air_building_factor|%0=+]"	   
 			maxWidth = 50  
@@ -56,7 +56,7 @@ guiTypes = {
 			name = "energy_infrastructure_building_speed"   
 			position = { x = 540 y = -68 }
 			font = "cg_16b"              
-			text = "[?modifier_production_speed_energy_infrastructure_factor|%0=+]"	   
+			text = "[?modifier@production_speed_energy_infrastructure_factor|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
 			format = right

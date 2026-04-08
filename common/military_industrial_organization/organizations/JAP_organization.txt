@@ -188,14 +188,9 @@ JAP_mitsubishi_heavy_industries_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_JAP_mitsubishi_tanks
 	allowed = {	
-		OR ={
-			AND = {
 					original_tag = JAP
 					has_dlc = "Arms Against Tyranny"
-			}
-			PHI_SEA = yes
 		}
-	}
 
 	available = {
 		IF = {
@@ -1032,13 +1027,8 @@ JAP_mitsubishi_kobe_shipyard_organization = {
 	icon = GFX_idea_JAP_kobe_shipyard
 
 	allowed = {	
-		OR = {
-			AND = {
 				original_tag = JAP 
 				has_dlc = "Arms Against Tyranny"
-			}
-			PHI_SEA = yes
-		}
 	}
 
 	available = {
@@ -1165,15 +1155,7 @@ JAP_mitsubishi_organization = {
 	icon = GFX_idea_JAP_mitsubishi_airplanes
 	
 	allowed = {	 
-		OR = {
 			original_tag = JAP 
-			AND = {
-				original_tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-			PHI_SEA = yes
-		}
-		has_dlc = "Arms Against Tyranny"
 	}
 	
 	visible = {
@@ -1264,8 +1246,6 @@ JAP_mitsubishi_organization = {
 			base = 2
 		}
 	}
-
-
 } 
 
 JAP_aichi_organization = {

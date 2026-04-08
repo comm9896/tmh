@@ -345,12 +345,14 @@ on_actions = {
 					has_dlc = "No Compromise, No Surrender"
 					FROM.FROM = {
 						state = 327
+						state = 627
 					}
 					FROM = {
 						original_tag = PHI
 						has_war = yes
 						has_civil_war = no
 
+						owns_state = 627
 						owns_state = 327
 					}
 				}

@@ -121,6 +121,7 @@ idea_RAJ_indian_railways = {
 	production_speed_infrastructure_factor = RAJ_indian_railway_production_speed_infrastructure_factor 
 	industrial_capacity_factory = RAJ_indian_railway_industrial_capacity_factory
 	stability_factor = RAJ_indian_railway_stability_factor
+	production_speed_energy_infrastructure_factor = RAJ_indian_railway_production_speed_energy_infrastructure_factor
 }
 
 idea_RAJ_funded_by_princely_states = {

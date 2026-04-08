@@ -1,4 +1,36 @@
 Pacific_war = {
+JAP_GER_SOV_WAR = {
+
+			priority = 110
+
+			icon = GFX_decision_generic_GER_flag
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 35
+
+			fire_only_once = no
+
+			activation = {
+			and = {
+				JAP = {has_country_flag = Sapr_only_asia}
+				date > 1941.5.1
+				}
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+			timeout_effect = {
+					JAP = { every_owned_state = { remove_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }}}										
+		}
+	}
 	JAP_birma_remove = {
 
 			priority = 110
@@ -197,15 +229,16 @@ Pacific_war = {
 
 			activation = {
 			and  = {
+				JAP = {not = {has_country_flag = Sapr_no_asia}}
 				RAJ = { has_capitulated = yes }
 				}
 			}
 
 			visible = {
-				RAJ = {has_country_flag = Sapr_only_asia}
+				#RAJ = {has_country_flag = Sapr_only_asia}
 			}
 
-			cancel_if_not_visible = yes
+			cancel_if_not_visible = no
 
 			is_good = no
 		
@@ -240,15 +273,16 @@ Pacific_war = {
 			fire_only_once = yes
 
 			activation = {
+			and = {
 				AST = { has_capitulated = yes }
-		
+				JAP = {not = {has_country_flag = Sapr_no_asia}}
 			}
 
 			visible = {
-				RAJ = {has_country_flag = Sapr_only_asia}
+				#RAJ = {has_country_flag = Sapr_only_asia}
 			}
 
-			cancel_if_not_visible = yes
+			cancel_if_not_visible = no
 
 			is_good = no
 		
@@ -267,6 +301,7 @@ Pacific_war = {
 					}
 			}
 		}
+	}
 	JAP_PHI_has_capitulated = {
 
 			priority = 110
@@ -277,7 +312,7 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 15
+			days_mission_timeout = 30
 
 			fire_only_once = yes
 
@@ -291,7 +326,7 @@ Pacific_war = {
 			visible = {
 			}
 
-			cancel_if_not_visible = yes
+			cancel_if_not_visible = no
 
 			is_good = no
 		
@@ -317,21 +352,21 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 15
+			days_mission_timeout = 30
 
 			fire_only_once = yes
 
 			activation = {
 			and  = {
 				INS = { has_capitulated = yes }
-				INS = { not = {has_country_flag = Sapr_only_asia}}
+				INS = { not = {has_country_flag = Sapr_no_asia}}
 				}
 			}
 
 			visible = {
 			}
 
-			cancel_if_not_visible = yes
+			cancel_if_not_visible = no
 
 			is_good = no
 		
@@ -352,10 +387,311 @@ Pacific_war = {
 
 		}
 
+PHI_evacuation_army_davao = {
+			priority = 110
+
+			icon = GFX_decision_generic_USA_flag
+
+			available = {
+				hidden_trigger = { always = no }
+			}
 
 
+			days_mission_timeout = 30
 
+			fire_only_once = yes
 
+			activation = {
+				PHI = { has_war_with = JAP}
+			}
 
+		highlight_states = {
+			highlight_state_targets = {
+				state = 627
+				state = 1025
+			}
 
+			highlight_provinces = {
+				4241
+				1421
+			}
+		}
+		remove_trigger = {
+			not = {
+				controls_province = 1421
+				controls_province = 4241
+			}
+		}
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+			timeout_effect = {
+			custom_effect_tooltip = PHI_evacuation_army_tt
+				627 = {
+					teleport_armies = { 
+						to_state = 285
+						to_province = 12406
+						limit = { 
+							tag = PHI
+					}
+				}
+			}
+
+			1025 = {
+					teleport_armies = { 
+						limit = { 
+							tag = PHI
+							}
+						to_state = 285
+						to_province = 12406
+				}
+			}
+		}
+	}
+
+	PHI_evacuation_army_manila = {
+			priority = 110
+
+			icon = GFX_decision_generic_USA_flag
+
+			available = {
+				hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 30
+
+			fire_only_once = yes
+
+			activation = {
+				PHI = { has_war_with = JAP}
+			}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 327
+			}
+			highlight_provinces = {
+				10265
+			}
+		}
+			visible = {
+			}
+		remove_trigger = {
+		}
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+			timeout_effect = {
+			custom_effect_tooltip = PHI_evacuation_army_tt
+				327 = {
+					teleport_armies = { 
+						limit = { 
+							tag = PHI
+								}
+						to_state = 285
+						to_province = 12406
+
+				}
+			}
+		}
+	}
+
+PHI_evacuate_industry = {
+
+			priority = 110
+
+			icon = generic_construction
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 7
+
+			fire_only_once = no
+
+			activation = {
+				has_war = yes
+				has_capitulated = no
+			}
+			allowed = { original_tag = PHI}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+	timeout_effect = {
+	PHI = {
+		random_owned_state = {
+			if = {
+				limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 5
+							include_locked = yes
+						}
+				}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+					add_offsite_building = { type = industrial_complex level = 1 }
+		random_owned_state = {
+			if = {
+				limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 5
+							include_locked = yes
+						}
+				}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				
+				}
+			}
+				add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+}
+
+PHI_convoy_sabotage = {
+
+			priority = 110
+
+			icon = GFX_decision_jap_conquer_china
+
+			available = {
+				has_war = yes
+						}
+
+			days_mission_timeout = 365
+
+			fire_only_once = no
+
+			activation = {
+				JAP = { has_completed_focus = JAP_operation_Z }
+			}
+			allowed = { original_tag = PHI}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+
+		complete_effect = {
+		custom_effect_tooltip = PHI_convoy_sabotage_tt
+
+				PHI = {
+					custom_effect_tooltip = generic_skip_one_line_tt
+					hidden_effect = {
+						add_equipment_to_stockpile = {
+								type = convoy_1
+								amount = -100000
+							}
+							}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 30
+							}
+						custom_effect_tooltip = PHI_island_nation_dynamic_modifier_tt
+						add_to_variable = { PHI_island_nation_industrial_capacity_dockyard = -10 tooltip = industrial_capacity_dockyard_tt }
+						}
+					}
+			timeout_effect = {
+			custom_effect_tooltip = PHI_convoy_sabotage_tt
+
+			PHI = {
+				custom_effect_tooltip = generic_skip_one_line_tt
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+							type = convoy_1
+							amount = -100000
+						}
+						}
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = 50
+						}
+					#custom_effect_tooltip = PHI_island_nation_dynamic_modifier_tt
+					#add_to_variable = { PHI_island_nation_industrial_capacity_dockyard = -10 tooltip = industrial_capacity_dockyard_tt }
+				}
+			}
+		}
+	PHI_join_to_allies = {
+
+			priority = 110
+
+			icon = GFX_decision_generic_USA_flag
+
+			available = {
+				hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 3
+
+			fire_only_once = yes
+
+			activation = {
+				has_war = yes
+			}
+			allowed = { original_tag = PHI}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+	timeout_effect = {
+	ENG = { add_to_faction = PHI }
+		}
+	}
+
+	PHI_collaborations = {
+
+			priority = 110
+
+			icon = GFX_decision_revolt
+
+			available = {
+				hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 40
+
+			fire_only_once = yes
+
+			activation = {
+				has_war = yes
+			}
+
+			allowed = {}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+	timeout_effect = {
+	custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
+		PHI = {add_to_variable = { PHI_surrender_limit = -1.49 tooltip = surrender_limit_tt}}
+		}
+	}
 }

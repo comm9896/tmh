@@ -88,13 +88,15 @@ characters={
 				large="GFX_portrait_HOL_wilhelmina"
 			}
 		}
-		corps_commander={
-			skill = 6
-			attack_skill = 4
-			defense_skill = 1
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id=-1
+		corps_commander = {
+			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable }
+			skill=6			
+			attack_skill=5
+			defense_skill=9
+			planning_skill=5
+			logistics_skill=9
+			legacy_id=1
+		}
 			
 			visible = {
 				if = {
@@ -106,7 +108,6 @@ characters={
 			}			
 		}		
 		
-	}
 	
 	HOL_willem_schermerhorn={
 		advisor={
@@ -158,14 +159,14 @@ characters={
 				small="GFX_idea_HOL_izaak_reijnders"
 			}
 		}
-		corps_commander={
-			traits={ hill_fighter }
+		field_marshal={
+			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader }
 			skill=6
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=980
+			attack_skill=5
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=8
+			legacy_id = -1
 		}
 		advisor={
 			slot = army_chief
@@ -182,6 +183,7 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+
 		}
 	}
 	HOL_petrus_wilhelmus_best={
@@ -192,14 +194,14 @@ characters={
 				small="GFX_idea_HOL_petrus_wilhelmus_best"
 			}
 		}
-		corps_commander={
-			traits={ desert_fox }
+		corps_commander = {
+			traits={ infantry_leader infantry_expert  fortress_buster trickster expert_improviser ranger urban_assault_specialist trait_engineer adaptable  }
 			skill=6
-			attack_skill=1
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id=1
 		}
 		advisor={
 			slot = air_chief
@@ -224,16 +226,14 @@ characters={
 				small="GFX_idea_HOL_godfried_van_voorst_tot_voorst"
 			}
 		}
-		field_marshal={
-		
-			traits = {	offensive_doctrine }
-			
+		field_marshal = {
+			traits = { brilliant_strategist aggressive_assaulter organizer logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader}
 			skill=6
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id = -1
 		}
 		advisor={
 			cost = 100
@@ -525,18 +525,15 @@ characters={
 			}
 		}
 		
-		field_marshal = {
-			traits = { skilled_staffer defensive_doctrine}
-			skill = 6
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 4
-			
-			visible = {
-				has_completed_focus = HOL_appoint_new_supreme_commander
-			}
-		}	
+		corps_commander = {
+			traits={ fortress_buster expert_improviser panzer_expert trickster panzer_leader desert_fox hill_fighter trait_engineer adaptable }
+			skill=6
+			attack_skill=7
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=10
+			legacy_id=1
+		}
 		
 	}
 	HOL_maarten_belzer={

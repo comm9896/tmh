@@ -4892,7 +4892,7 @@ add_ideas = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -4929,7 +4929,7 @@ add_ideas = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -4967,7 +4967,7 @@ add_ideas = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5005,7 +5005,7 @@ add_ideas = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5044,19 +5044,27 @@ add_ideas = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
 
 		timeout_effect = {
+		add_idea = JAP_in_war
+	if = {limit = {has_country_flag = Sapr_only_asia}
+		add_threat = 15
+		}
+
 		add_named_threat = { threat = 2 name = JAP_intervene_in_china } # From threat = 1 to 2 due to no escalation tension
-		activate_mission = JAP_first_transfer 
+		if = {limit = {not = {has_country_flag = Sapr_no_asia}}
+			activate_mission = JAP_first_transfer 
+			
 		JAP = {
 				transfer_state = 608
 				transfer_state = 1039
 				set_occupation_law_where_available = local_police_force_garrison
 			}
+		}
 			hidden_effect = {
 						annex_country = { target = MAN transfer_troops = yes}
 			if = {limit = {MAN = { is_ai = yes}}
@@ -5297,7 +5305,7 @@ JAP_first_transfer = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5334,7 +5342,7 @@ JAP_second_transfer = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5372,7 +5380,7 @@ JAP_third_transfer = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5409,7 +5417,7 @@ JAP_fourth_transfer = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5445,7 +5453,7 @@ JAP_fifth_transfer = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5483,7 +5491,7 @@ JAP_six_transfer = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 
@@ -5520,11 +5528,14 @@ JAP_annex_CHI = {
 			original_tag = JAP
 		}
 
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = no
 
 		is_good = no
 		
 		timeout_effect = {
+		if = {limit = {has_country_flag = Sapr_only_asia}
+			add_threat = 15
+		}
 					transfer_units_fraction = {
 						target = JAP
 						size = 1

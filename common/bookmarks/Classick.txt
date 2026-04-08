@@ -78,9 +78,9 @@ bookmarks = {
 				JAP_militarism
 			}	
 			focuses = {
-				JAP_end_the_interservice_rivalry
-				JAP_strike_the_southern_road
-				JAP_the_five_great_cities
+				JAP_tojos_premiership
+				JAP_yamamotos_premiership
+				JAP_the_crysanthemum_throne
 			}		
 		}
 		"SOV"={
@@ -179,36 +179,20 @@ bookmarks = {
 			}
 		}
 
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_claim_the_mandate_of_heaven
-			}
-		}
-
-		"HOL"={
-			minor = yes
-			history = "NETHERLANDS_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				HOL_wilhelmina
-				HOL_shell_shocked_spectator_5
-				HOL_de_crisisjaren_5
-			}
-			focuses = {
-				HOL_continue_the_war_in_batavia
-				HOL_liberation
-				HOL_prepare_the_inundation_lines
-			}
-		}
+		#"MAN"={
+		#	minor = yes
+		#	history = "MAN_GATHERING_STORM_DESC"
+		#	ideology = fascism
+		#	ideas = {
+		#		MAN_banditry
+		#		MAN_kwantung_veto
+		#		MAN_low_legitimacy_5
+		#	}
+		#	focuses = {
+		#		MAN_obedience
+		#		MAN_claim_the_mandate_of_heaven
+		#	}
+		#}
 
 		"BUL"={
 			minor = yes
@@ -224,20 +208,21 @@ bookmarks = {
 				BUL_prussia_of_the_balkans
 			}
 		}
-		"DEN"={
+				"POL"={
 			minor = yes
-			history = DEN_BLITZKRIEG_DESC
-			ideology = democratic
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				DEN_fake_industrial_capability_2_ns
-				DEN_declaration_of_neutrality
-				DEN_danish_produce_improved 
+				uncontrolled_exports
+				POL_april_constitution_1
+				POL_looming_peasants_strike
 			}
 			focuses = {
-				DEN_full_employment
+				POL_complete_april_constitution
+				POL_clamp_down_on_danzig
+				POL_the_between_the_seas_concept
 			}
 		}
-		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

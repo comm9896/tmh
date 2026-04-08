@@ -58,12 +58,83 @@ guiTypes = {
 
 
 		buttonType = {
-			name = "change_host_nation" 
+			name = "change_host_nation"  
 			position = {x=18 y=471}       
 			spriteType = "GFX_change_host_nation"
             scale = 0.75
 			pdx_tooltip = "CHANGE_HOST_NATION_TT"
 			#pdx_tooltip_delayed = "CHANGE_HOST_NATION_TT_DELAYED"
+		}
+		containerWindowType = {
+			buttonType = {
+				name = "Debuffing_open" 
+				quadTextureSprite = "GFX_generic_box_96"
+				position = { x = 25 y = 195 }
+				scale=1
+				pdx_tooltip = "[Debuffing_TOOLTIP]" 
+				clicksound = click_ok
+				oversound = ui_menu_over
+			}
+			instantTextboxType = {
+				name = "title_Debuffing"
+				position = {x=0 y = 200}
+				font = "hoi_18mbs"
+				text = "[Debuffing_tooltip]"
+				maxWidth = 150
+				maxHeight = 13
+				format = centre
+			}
+		}
+
+		instantTextboxType = { 
+		name = "Debuffing_enable_text"  
+			position = {x=30 y=160}       
+			font = "hoi_18mbs"
+			text = "Debuffing_enable_text"     
+			maxWidth = 200
+			maxHeight = 23
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = { 
+		name = "Debuffing_enable_text2"  
+			position = {x=30 y=160}     
+			font = "hoi_18mbs"
+			text = "Debuffing_enable_text2"    
+			maxWidth = 200
+			maxHeight = 23
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = { 
+		name = "event_translet" 
+			position = {x=385 y=150}     
+			font = "hoi_18mbs"
+			text = "event_translet"    
+			maxWidth = 200
+			maxHeight = 23
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			buttonType = { 
+				name = "event_translet_horst_open" 
+				quadTextureSprite = "GFX_generic_box_96"
+				position = { x = 370 y = 170 }
+				scale=1
+				pdx_tooltip = "[event_translet_horst_TOOLTIP]" 
+				clicksound = click_ok
+				oversound = ui_menu_over
+			}
+			instantTextboxType = {
+				name = "title_event_translet_horst"
+				position = {x=380 y = 173} 
+				font = "hoi_18mbs"
+				text = "[event_translet_horst_tooltip]"
+				maxWidth = 150
+				maxHeight = 13
+				format = left
+			}
 		}
 
 		buttonType = {
@@ -125,10 +196,19 @@ guiTypes = {
 			pdx_tooltip = "States_resursed_chromium_TT"
 			#pdx_tooltip_delayed = "States_resursed_chromium_TT_DELAYED"
 		}
+		buttonType = {
+			name = "States_resursed_coal" 
+			position = {x=320 y=130}       
+			spriteType = "GFX_resources_strip"
+			frame = 7
+            scale = 1.25
+			pdx_tooltip = "States_resursed_coal_TT"
+			#pdx_tooltip_delayed = "States_resursed_coal_TT_DELAYED"
+		}
 
 		buttonType = {
 			name = "States_resursed_steel1"  
-			position = {x=20 y=180}       
+			position = {x=20 y=130}       
 			spriteType = "GFX_resources_strip"
 			frame = 5
             scale = 1.25
@@ -138,7 +218,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "States_resursed_rubber1" 
-			position = {x=70 y=180}       
+			position = {x=70 y=130}       
 			spriteType = "GFX_resources_strip"
 			frame = 3
             scale = 1.25
@@ -148,7 +228,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "States_resursed_oil1" 
-			position = {x=120 y=180}       
+			position = {x=120 y=130}       
 			spriteType = "GFX_resources_strip"
 			frame = 1
             scale = 1.25
@@ -158,7 +238,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "States_resursed_alu1" 
-			position = {x=170 y=180}       
+			position = {x=170 y=130}       
 			spriteType = "GFX_resources_strip"
 			frame = 2
             scale = 1.25
@@ -168,7 +248,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "States_resursed_tungsten1" 
-			position = {x=220 y=180}       
+			position = {x=220 y=130}       
 			spriteType = "GFX_resources_strip"
 			frame = 4
             scale = 1.25
@@ -178,12 +258,21 @@ guiTypes = {
 
 		buttonType = {
 			name = "States_resursed_chromium1" 
-			position = {x=270 y=180}       
+			position = {x=270 y=130}       
 			spriteType = "GFX_resources_strip"
 			frame = 6
             scale = 1.25
 			pdx_tooltip = "States_resursed_chromium1_TT"
 			#pdx_tooltip_delayed = "States_resursed_chromium_TT_DELAYED"
+		}
+		buttonType = {
+			name = "States_resursed_coal1" 
+			position = {x=320 y=130}       
+			spriteType = "GFX_resources_strip"
+			frame = 7
+            scale = 1.25
+			pdx_tooltip = "States_resursed_coal1_TT"
+			#pdx_tooltip_delayed = "States_resursed_coal_TT_DELAYED"
 		}
 
 		buttonType = {
@@ -195,6 +284,22 @@ guiTypes = {
 			pdx_tooltip_delayed = "ADD_CHEAT_DELAYED"
 		}
 		buttonType = {
+			name = "add_dynamic_Hort_tool" 
+			position = {x=200 y=85}       
+			spriteType = "GFX_focus_focus_fra_liberte_egalite_solidarite"
+            scale = 0.4
+			pdx_tooltip = "add_dynamic_Hort_tool_TT"
+			#pdx_tooltip_delayed = "add_dynamic_Hort_tool_TT_DELAYED"
+		}
+		buttonType = {
+			name = "add_dynamic_Hort_tool1" 
+			position = {x=160 y=85}       
+			spriteType = "GFX_focus_focus_fra_liberte_egalite_solidarite"
+            scale = 0.4
+			pdx_tooltip = "add_dynamic_Hort_tool1_TT"
+			#pdx_tooltip_delayed = "add_dynamic_Hort_tool1_TT_DELAYED"
+		}
+		buttonType = {
 			name = "add_debuff" 
 			position = {x=235 y=90 }
 			spriteType = "GFX_horst_addcheat"
@@ -204,12 +309,13 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "remove_debuff" 
-			position = {x=425 y=90 }
+			position = {x=400 y=90 }
 			spriteType = "GFX_horst_addcheat"
             scale = 0.3
 			pdx_tooltip = "REMOVE_DEBUFF"
 			pdx_tooltip_delayed = "ADD_REMOVE_DELAYED"
 		}
+
 		buttonType = {
 			name = "whitepeace"	
 			position = {x=70 y=420}
@@ -353,7 +459,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "remove_fix_xp"         
-			position = {x=401 y=425} 	    
+			position = {x=401 y=380} 	    
 			spriteType = "GFX_remove_endgame_army_button"
 			scale = 0.85
             		#frame = 2    
@@ -362,7 +468,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "remove_fix_xp2"         
-			position = {x=350 y=425} 	    
+			position = {x=350 y=380} 	    
 			spriteType = "GFX_remove_endgame_navy_button"
 			scale = 0.85
             		#frame = 2    
@@ -371,7 +477,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "remove_fix_xp3"         
-			position = {x=300 y=425} 	    
+			position = {x=300 y=380} 	    
 			spriteType = "GFX_remove_endgame_air_button"
 			scale = 0.85
             		#frame = 2    
@@ -380,7 +486,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "remove_convoy48"         
-			position = {x=250 y=425} 	    
+			position = {x=250 y=380} 	    
 			spriteType = "GFX_remove_endgame_convoys_button"
 			scale = 0.85
             		#frame = 2    
@@ -398,7 +504,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "manpower_NO_add"         
-			position = {x=70 y=280} 	    
+			position = {x=20 y=280} 	    
 			spriteType = "GFX_remove_endgame_manpower_button"
 			scale = 0.9
             		#frame = 2    
@@ -416,7 +522,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "add_NO_autonomy_ratio"         
-			position = {x=70 y=230} 	    
+			position = {x=20 y=230} 	    
 			spriteType = "GFX_remove_endgame_score_button"
 			scale = 0.9
             		#frame = 2    
@@ -425,7 +531,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "add_autonomy_free"         
-			position = {x=115 y=230} 	    
+			position = {x=65 y=230} 	    
 			spriteType = "GFX_goal_continuous_boost_freedom"
 			scale = 0.55
             		#frame = 2    
@@ -434,7 +540,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "mill_add"	
-			position = {x=120 y=275}
+			position = {x=70 y=275}
 			spriteType = "GFX_horst_civ_plus"
 			pdx_tooltip = "MILADD"
 			pdx_tooltip_delayed = "MILADD_DELAYED"
@@ -442,7 +548,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "civ_add"	
-			position = {x=120 y=325}
+			position = {x=70 y=325}
 			spriteType = "GFX_horst_civ_pluss"
 			pdx_tooltip = "CIVADD"
 			pdx_tooltip_delayed = "CIVADD_DELAYED"
@@ -451,7 +557,7 @@ guiTypes = {
 
 		buttonType = {
 		name = "pingtool"	
-			position = {x=120 y=370}
+			position = {x=70 y=370}
 			spriteType = "GFX_horst_naval_pluss"
 		scale = 0.9
 			pdx_tooltip = "PINGTOOL"
@@ -461,7 +567,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "remove_mill_add"	
-			position = {x=170 y=275}
+			position = {x=70 y=275}
 			spriteType = "GFX_horst_remove_civ_plus"
 			pdx_tooltip = "remove_MILADD"
 			pdx_tooltip_delayed = "remove_MILADD_DELAYED"
@@ -469,7 +575,7 @@ guiTypes = {
 		}
 		buttonType = { 
 			name = "remove_civ_add"	
-			position = {x=170 y=325}
+			position = {x=70 y=325}
 			spriteType = "GFX_horst_remove_civ_pluss"
 			pdx_tooltip = "remove_CIVADD"
 			pdx_tooltip_delayed = "remove_CIVADD_DELAYED"
@@ -478,7 +584,7 @@ guiTypes = {
 
 		buttonType = {
 		name = "remove_pingtool"	
-			position = {x=170 y=370}
+			position = {x=70 y=370}
 			spriteType = "GFX_horst_remove_naval_pluss"
 		scale = 0.9
 			pdx_tooltip = "remove_PINGTOOL"
@@ -487,7 +593,7 @@ guiTypes = {
 		
 		buttonType = { 
 			name = "wt_add"	
-			position = {x=73 y=330}
+			position = {x=20 y=330}
 			spriteType = "GFX_horst_increase_wt"
 			pdx_tooltip = "WTADD"
 			pdx_tooltip_delayed = "WTADD_DELAYED"
@@ -496,7 +602,7 @@ guiTypes = {
 
 		buttonType = { 
 			name = "wt_remove"	
-			position = {x=25 y=330}
+			position = {x=20 y=330}
 			spriteType = "GFX_horst_decrease_wt"
 			pdx_tooltip = "WTREMOVE"
 			pdx_tooltip_delayed = "WTREMOVE_DELAYED"
@@ -504,7 +610,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "addpp"	
-			position = {x=15 y=365}
+			position = {x=12 y=365}
 			spriteType = "GFX_horst_addpp"
             scale=0.95
 			pdx_tooltip = "ADDPP"
@@ -512,7 +618,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "remove_addpp"	
-			position = {x=65 y=365} 
+			position = {x=12 y=365} 
 			spriteType = "GFX_horst_remove_addpp"
             scale=0.95
 			pdx_tooltip = "remove_ADDPP"
@@ -606,6 +712,48 @@ guiTypes = {
 		buttonType = {
 			name = "debuff2"
 			position = {x=270 y=116}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff3"
+			position = {x=270 y=143}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff4"
+			position = {x=270 y=170}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff5"
+			position = {x=270 y=196}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff6"
+			position = {x=393 y=90}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff7"
+			position = {x=393 y=116}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff8"
+			position = {x=393 y=143}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+		}
+		buttonType = {
+			name = "debuff9"
+			position = {x=393 y=170}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 		}
@@ -780,12 +928,11 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-
 		instantTextboxType = {
-		name = "resorser"
-			position = {x=320 y=135}
+		name = "debufff"
+			position = {x=275 y=70}    
 			font = "hoi_18mbs"
-			text = "resorser12"   
+			text = "debufff1"   
 			maxWidth = 200
 			maxHeight = 23
 			alwaystransparent = yes
@@ -950,6 +1097,76 @@ guiTypes = {
 			position = {x=270 y=121}
 			font = "hoi_18mbs"
 			text = "DEBUFF2"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff3_text"
+			position = {x=270 y=143}
+			font = "hoi_18mbs"
+			text = "DEBUFF3"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff4_text"
+			position = {x=270 y=170}
+			font = "hoi_18mbs"
+			text = "DEBUFF4"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff5_text"
+			position = {x=270 y=196}
+			font = "hoi_18mbs"
+			text = "DEBUFF5"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff6_text"
+			position = {x=393 y=90}
+			font = "hoi_18mbs"
+			text = "DEBUFF6"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff7_text"
+			position = {x=393 y=116}
+			font = "hoi_18mbs"
+			text = "DEBUFF7"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff8_text"
+			position = {x=393 y=143}
+			font = "hoi_18mbs"
+			text = "DEBUFF8"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "debuff9_text"
+			position = {x=393 y=170}
+			font = "hoi_18mbs"
+			text = "DEBUFF9"
 			maxWidth = 340
 			maxHeight = 23
 			format = left

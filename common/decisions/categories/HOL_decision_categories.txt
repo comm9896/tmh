@@ -33,14 +33,14 @@ HOL_prepare_the_inundation_lines = {
 HOL_war_on_pacifism = {
 
 	icon = hol_war_on_pacifism
-	
+
 	allowed = {
 		original_tag = HOL
 		has_dlc = "Man the Guns"
-	}
+		}
 
 	visible = {
-		has_completed_focus = HOL_war_on_pacifism
+has_completed_focus = HOL_war_on_pacifism
 	}
 }
 
@@ -50,12 +50,17 @@ HOL_request_allied_favors = {
 	icon = generic_political_actions
 	
 	allowed = {
+	or = {
+		original_tag = PHI
 		original_tag = HOL
-		has_dlc = "Man the Guns"
+		}
 	}
 
 	visible = {
-		has_completed_focus = HOL_request_allied_favors
+	or = {
+		has_completed_focus = HOL_war_on_pacifism
+		has_completed_focus = PHI_i_shall_return
+		}
 	}
 }
 

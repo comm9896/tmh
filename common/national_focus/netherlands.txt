@@ -1079,49 +1079,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			335 = {
-				if = {
-					limit = {
-						335 = {
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-					}
-				}
-			}
-			672 = {
-				if = {
-					limit = {
-						672 = {
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-					}
-				}
-			}
+		add_offsite_building = { type = dockyard level = 2 }
 			add_ideas = HOL_prepare_for_our_return
 			add_tech_bonus = {
 				name = HOL_prepare_for_our_return
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = marine_tech
 			}
 		}
@@ -1144,18 +1107,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			set_capital = { state = 7 }
+		if = {limit = {has_country_flag = Sapr_only_asia}
+			687 = { set_state_category = megalopolis }
+			309 = { set_state_category = megalopolis }		
+			310 = { set_state_category = megalopolis }
+			set_capital = { state = 687 }
+			}
+			else_if = {set_capital = { state = 7 } }
+		
 			add_stability = 0.1
-			add_war_support = 0.05
+			add_war_support = 0.1
 			add_manpower = 150000
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = 10000
+			    amount = 21000
 			    producer = HOL
 			}
 			add_equipment_to_stockpile = {
 			    type = support_equipment
-			    amount = 500
+			    amount = 1000
 			    producer = HOL
 			}
 			add_ideas = HOL_liberation
@@ -1164,8 +1134,7 @@ focus_tree = {
 			remove_ideas = HOL_segrigation		
 		}
 
-		
-	}
+}
 
  ##  ###   ##  #  # ###   ##  #  #     ### #  # ###      ##   ##  #   ###       ## ###  ##  #  # ###   ##  ###  ###  
 #  # #  # #  # ## # #  # #  # ## #      #  #  # #       #    #  # #   #  #     #    #  #  # ## # #  # #  # #  # #  # 
@@ -1176,7 +1145,7 @@ focus_tree = {
 	focus = {
 		id = HOL_abandon_the_gold_standard
 		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 13
+		x = 10
 		y = 0
 		relative_position_id = HOL_obtain_foreign_colonial_investments
 		cost = 10
@@ -1212,7 +1181,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_abandon_the_gold_standard }
 		icon = GFX_goal_generic_construction
-		x = -5
+		x = -3
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10
@@ -1648,7 +1617,7 @@ focus_tree = {
 		id = HOL_overturn_military_budget_cuts
 		prerequisite = { focus = HOL_abandon_the_gold_standard }
 		icon = GFX_goal_generic_army_doctrines
-		x = 6
+		x = 2
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10
@@ -1674,7 +1643,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_focus_hol_war_on_pacifism
-		x = -6
+		x = -2
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
 		
@@ -2275,7 +2244,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
 		icon = GFX_goal_generic_air_doctrine
-		x = 5
+		x = 3
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 5
@@ -2557,7 +2526,7 @@ focus_tree = {
 		available = {
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 9
+		x = 6
 		y = 2
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 10
@@ -2755,7 +2724,7 @@ focus_tree = {
 			has_capitulated = yes
 		}
 		icon = GFX_goal_generic_improve_relations
-		x = 22
+		x = 12
 		y = 0
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10

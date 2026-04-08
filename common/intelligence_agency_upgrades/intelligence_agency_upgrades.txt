@@ -6,7 +6,7 @@ branch_intelligence = {
 	upgrade_economy_civilian = {
 	
 		picture = GFX_agency_economy_department
-		#frame = GFX_upgrade_frame_economy
+		frame = GFX_upgrade_frame_economy
 		sound = Spy_Agency_Intel_Upgrades_Confirm
 		
 		ai_will_do = {
