@@ -56,18 +56,16 @@ add_timed_idea = { idea = JAP_no_trade days = 1825 }
 	}		
 }
 1936.1.1.14 = {
-    set_country_flag = Sapr_only_erope
-	clr_country_flag = Sapr_no_asia		
-	add_ideas = {
-		pacifist_nation 
-		isolation
-		closed_economy	
-	}
 
+
+	add_ideas = {
+		JAP_The_Closed_Trade_Policy_of_the_East_Asian_Co_Prosperity_Sphere
+		limited_conscription
+		partial_economic_mobilisation
+	}	
+	
 }
 1936.1.1.15 = {
-
-	#add_offsite_building = { type = industrial_complex level = -15 }
 
 	set_country_flag = Sapr_only_asia
 	clr_country_flag = Sapr_only_erope	

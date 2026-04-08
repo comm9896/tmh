@@ -2716,17 +2716,17 @@
 			
 			if = {
 				limit = {
-					has_idea = general_electric
+					has_idea = AST_general_electric
 				}
 				swap_ideas = {
-					remove_idea = general_electric
+					remove_idea = AST_general_electric
 					add_idea = AST_general_electric_improved
 				}
 			}
 			else = {
 				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = general_electric
+						remove_idea = AST_general_electric
 						add_idea = AST_general_electric_improved
 					}
 				}

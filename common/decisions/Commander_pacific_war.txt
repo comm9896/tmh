@@ -1,4 +1,38 @@
 Pacific_war = {
+JAP_GER_SOV_WAR = {
+
+			priority = 110
+
+			icon = GFX_decision_generic_GER_flag
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 35
+
+			fire_only_once = no
+
+			activation = {
+			and = {
+				JAP = {has_country_flag = Sapr_only_asia}
+				date > 1941.5.1
+				}
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = yes
+
+			is_good = no
+		
+			timeout_effect = {
+				if = {
+					JAP = { every_owned_state = { remove_dynamic_modifier = { modifier = anti_japan_mood_Soviet_lend_lease }}}										
+		}
+	}
+}
 	JAP_birma_remove = {
 
 			priority = 110
@@ -197,12 +231,13 @@ Pacific_war = {
 
 			activation = {
 			and  = {
+				JAP = {not = {has_country_flag = Sapr_no_asia}}
 				RAJ = { has_capitulated = yes }
 				}
 			}
 
 			visible = {
-				RAJ = {has_country_flag = Sapr_only_asia}
+				#RAJ = {has_country_flag = Sapr_only_asia}
 			}
 
 			cancel_if_not_visible = yes
@@ -240,12 +275,13 @@ Pacific_war = {
 			fire_only_once = yes
 
 			activation = {
+			and = {
 				AST = { has_capitulated = yes }
-		
+				JAP = {not = {has_country_flag = Sapr_no_asia}}
 			}
 
 			visible = {
-				RAJ = {has_country_flag = Sapr_only_asia}
+				#RAJ = {has_country_flag = Sapr_only_asia}
 			}
 
 			cancel_if_not_visible = yes
@@ -277,7 +313,7 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 15
+			days_mission_timeout = 30
 
 			fire_only_once = yes
 
@@ -317,14 +353,14 @@ Pacific_war = {
 					hidden_trigger = { always = no }
 			}
 
-			days_mission_timeout = 15
+			days_mission_timeout = 30
 
 			fire_only_once = yes
 
 			activation = {
 			and  = {
 				INS = { has_capitulated = yes }
-				INS = { not = {has_country_flag = Sapr_only_asia}}
+				INS = { not = {has_country_flag = Sapr_no_asia}}
 				}
 			}
 

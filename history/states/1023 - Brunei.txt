@@ -14,8 +14,9 @@ state = {
 	history = {
 
         1936.1.1.12 = {	    
-		    owner = ENG
-			add_core_of = TIB
+		owner = PHI
+		add_core_of = PHI	
+		add_core_of = TIB
 		}			
 		1936.1.1.13 = {
 			owner = TIB
@@ -26,8 +27,9 @@ state = {
 			add_core_of = TIB
 		}	
 		1936.1.1.15 = {
-			owner = HOL
-			add_core_of = HOL
+		owner = PHI
+		add_core_of = PHI	
+		add_core_of = TIB
 		}
 		
 		1941.1.1.14 = {

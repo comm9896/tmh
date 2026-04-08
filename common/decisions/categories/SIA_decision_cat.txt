@@ -1,0 +1,32 @@
+
+	
+	SIA_Cultural_Mandates = {
+	
+		allowed = {
+			original_tag = SIA
+		}
+		
+		visible = {
+			has_completed_focus = Sia_Military_public7
+		}
+		
+		available = {
+			
+		}
+		
+		priority = 50
+	}
+	
+	SIA_propaganda_campaigns = {
+
+		allowed = {
+			original_tag = SIA
+		}
+		
+		visible = {
+			has_completed_focus = Sia_Military_public8
+		}
+		
+		priority = 49
+
+	}

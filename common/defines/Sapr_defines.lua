@@ -265,11 +265,6 @@ NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 0.99;			-- максим
 
 
 
---NIndustrialOrganisation
---NIndustrialOrganisation
---NIndustrialOrganisation
-NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0;    --через сколько дней можно будет изменить политику в кб
-
 --NCountry
 --NCountry
 --NCountry
@@ -417,9 +412,9 @@ NDefines.NProject.MINIMUM_PROJECT_SPEED_FACTOR_FROM_SUPPLY = 1;--0.2	-- мини
 NDefines.NProject.FACILITY_SUPPLY_WARNING_RED_RATIO = 0;--0.66,		-- % саплая когда начнёт отображаться бочка в комплексе
 NDefines.NProject.RECRUIT_SCIENTIST_COST = {						-- кол-во пп для найма учёного
 		0,			-- pp cost if no available scientist
-		0,			-- pp cost if 1 available scientist
-		75,			-- pp cost if 2 available scientist
-		100			-- pp cost if more than 2 available scientist
+		5,			-- pp cost if 1 available scientist
+		10,			-- pp cost if 2 available scientist
+		15			-- pp cost if more than 2 available scientist
 	};
 NDefines.NProject.PROJECT_LOSS_FACTOR_ON_CAPTURE = 0; --0.2             -- сколько % теряется при захвате комплекса в котором делается проект
 NDefines.NProject.PROJECT_CAPTURE_GAIN_RATIO = 0;--0.2                  -- % от того сколько будет получено % проекта который был изучен в этом комплекса 

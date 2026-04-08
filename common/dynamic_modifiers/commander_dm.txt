@@ -384,3 +384,14 @@ foreigh_resourses = { #STATE MODIFIER
 	}
 		local_resources = -1
 }
+no_mines_before_war = {
+
+	remove_trigger = {
+
+	}
+	enable = { always = yes }
+
+mines_planting = -5000
+
+
+}

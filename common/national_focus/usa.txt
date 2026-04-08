@@ -647,12 +647,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-				available = {
+			available = {
+				if = { limit = {has_country_flag = Sapr_only_asia}
+					or = {
+						date > 1939.5.1
+						has_war = yes
+					}
+				}
+				else_if = {
 					or = {
 						date > 1940.6.1
 						has_war = yes
 						}	
 					}
+				}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 15 }
@@ -700,6 +708,9 @@ focus_tree = {
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
 				custom_effect_tooltip = USA_plan_civilian_dynamic_modifier_info 
+				if = { limit = {has_country_flag = Sapr_only_asia}
+				add_to_variable = { USA_production_speed_arms_factory_factor = 0.65 tooltip = USA_production_speed_arms_factory_factor_tt }
+				}
 				add_to_variable = { USA_political_power_cost = -0.1 tooltip = USA_political_power_cost_tt }
 				add_to_variable = { USA_industrial_capacity_factory = 0.1 tooltip = USA_industrial_capacity_factory_tt }
 				add_to_variable = { USA_production_speed_dockyard_factor = 0.3 tooltip = USA_production_speed_dockyard_factor_tt }
@@ -1695,7 +1706,13 @@ add_offsite_building = { type = arms_factory level = 5 }
 		}
 
 		available = {
-			GER = {has_war_with = ENG}
+		if = { limit = {has_country_flag = Sapr_only_asia}
+					or = {
+						date > 1939.9.1
+						has_war = yes
+					}
+				}
+			else_if = {GER = {has_war_with = ENG}}
 		}
 
 		cancel_if_invalid = yes
@@ -2240,11 +2257,12 @@ add_offsite_building = { type = arms_factory level = 5 }
 			add_to_variable = { USA_production_speed_infrastructure_factor = 0.30 tooltip = USA_production_speed_infrastructure_factor_tt }
 			add_to_variable = { USA_energy_infrastructure_factor = 0.30 tooltip = USA_production_speed_energy_infrastructure_factor_tt }
 			add_to_variable = { USA_production_speed_arms_factory_factor = 0.65 tooltip = USA_production_speed_arms_factory_factor_tt }
+			add_to_variable = { USA_industrial_capacity_factory = 0.1 tooltip = USA_industrial_capacity_factory_tt }
 			#add_to_variable = { USA_fyp_production_speed_industrial_complex_factor = -1 tooltip = USA_fyp_production_speed_industrial_complex_factor_tt }
 			add_to_variable = { USA_consumer_goods_expected_value = -0.25 tooltip = USA_consumer_goods_expected_value_tt }
 			add_to_variable = { USA_conversion_cost_mil_to_civ_factor = -0.3 tooltip = USA_conversion_cost_mil_to_civ_factor_tt }
 			add_to_variable = { USA_conversion_cost_civ_to_mil_factor = -0.9 tooltip = USA_conversion_cost_civ_to_mil_factor_tt }
-			add_to_variable = { USA_industrial_capacity_factory = 0.1 tooltip = USA_industrial_capacity_factory_tt }
+			
 			custom_effect_tooltip = USA_army_dm_info
 			add_to_variable = { USA_mobilization_speed_factor = 0.1 tooltip = USA_mobilization_speed_factor_tt }
 			if = {

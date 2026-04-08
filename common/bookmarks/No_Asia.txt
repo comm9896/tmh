@@ -131,20 +131,7 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-		"CHI"={
-			minor = yes
-			history = "CHI_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_2
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_invite_the_flying_tigers
-				CHI_war_of_resistance
-			}
-		}					
+				
 		"BUL"={
 			minor = yes
 			history = "BUL_BLITZKRIEG_DESC"
@@ -158,17 +145,19 @@ bookmarks = {
 				BUL_the_third_bulgarian_empire
 			}
 		}
-		"DEN"={
+		"POL"={
 			minor = yes
-			history = DEN_BLITZKRIEG_DESC
-			ideology = democratic
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				DEN_fake_industrial_capability_2_ns
-				DEN_declaration_of_neutrality
-				DEN_danish_produce_improved 
+				uncontrolled_exports
+				POL_april_constitution_1
+				POL_looming_peasants_strike
 			}
 			focuses = {
-				DEN_full_employment
+				POL_complete_april_constitution
+				POL_clamp_down_on_danzig
+				POL_the_between_the_seas_concept
 			}
 		}		
 		effect = {

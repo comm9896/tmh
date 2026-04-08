@@ -598,9 +598,14 @@ USA_congress = {
 			has_completed_focus = USA_stroika_ARM7
 			NOT = {has_country_flag = help_disscussion}
 		}
-		visible = {
-			
-		}
+visible = {				
+		if = { 
+				limit = {
+					has_country_flag = Sapr_only_asia
+						}
+							always = no
+						}
+						}
 
 		fire_only_once = yes
 		days_remove = 240
@@ -627,9 +632,14 @@ USA_congress = {
 			has_completed_focus = USA_stroika_ARM7
 			NOT = {has_country_flag = help_disscussion}
 		}
-		visible = {
-			
-		}
+visible = {				
+		if = { 
+				limit = {
+					has_country_flag = Sapr_only_asia
+						}
+							always = no
+						}
+						}
 
 		fire_only_once = yes
 		days_remove = 240
@@ -686,9 +696,14 @@ USA_congress = {
 			has_completed_focus = USA_stroika_ARM7
 			NOT = {has_country_flag = help_disscussion}
 		}
-		visible = {
-			
-		}
+visible = {				
+		if = { 
+				limit = {
+					has_country_flag = Sapr_only_asia
+						}
+							always = no
+						}
+						}
 
 		fire_only_once = yes
 		days_remove = 240
@@ -715,9 +730,14 @@ USA_congress = {
 			has_completed_focus = USA_stroika_ARM7
 			NOT = {has_country_flag = help_disscussion}
 		}
-		visible = {
-			
-		}
+visible = {				
+		if = { 
+				limit = {
+					has_country_flag = Sapr_only_asia
+						}
+							always = no
+						}
+						}
 
 		fire_only_once = yes
 		days_remove = 240

@@ -1917,10 +1917,7 @@ ideas = {
 			
 			
 			allowed = {
-				or = {
 					original_tag = USA
-					original_tag = AST			
-				}	
 			}
 			
 			visible = {
@@ -1981,7 +1978,7 @@ ideas = {
 				research_speed_factor = 0.2
 			}
 		}			
-		AST_general_electric_improved = {
+		AST_general_electric = {
 			
 
 			name = general_electric
@@ -1990,12 +1987,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = AST			
-
 			}
 			
 			visible = {
 				AST = {
-					has_completed_focus = AST_fund_australian_defense_research
+					not = {has_completed_focus = AST_fund_australian_defense_research}
 				}	
 			}			
 			
@@ -2005,10 +2001,6 @@ ideas = {
 			
 			traits = { electronics_concern }
 			
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.07
-				line_change_production_efficiency_factor = 0.07
-			}
 		}
 		
 		general_electric_improved = {

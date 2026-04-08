@@ -82,7 +82,8 @@
 		}
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 50
+			air_experience = 50
 		}
 	}
 
@@ -551,7 +552,12 @@
 				}
 			}
 						
-			
+		JAP = {
+				country_event = {
+					id = tsr_manchukuo.13
+					hours = 4
+				}
+			}	
 		}
 	}
 
@@ -729,6 +735,7 @@
 				}
 			}
 			unlock_decision_tooltip = MAN_develop_liaotung_iron_ore_deposits
+			unlock_decision_tooltip = MAN_establish_the_erdaojiang_special_steel_experimental_plant
 		}
 	}
 
@@ -767,14 +774,108 @@
 			add_research_slot = 1
 		}
 	}
+	
+	focus = {
+		id = MAN_mangyo
+		icon = GFX_focus_generic_industrialists
+		prerequisite = { focus = MAN_second_five_year_plan}
 
+		x = 0
+		y = 5
+		relative_position_id = MAN_first_five_year_plan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+
+			add_political_power = 50
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = MAN_tsr_mangyo_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = MAN_mangyo
+
+			hidden_effect = {
+				IF = {
+					limit = {
+						has_idea = MAN_showa_steel_works_improved
+					}
+					swap_ideas = {
+						remove_idea = MAN_showa_steel_works
+						add_idea = MAN_mangyo
+					}
+				}
+				ELSE_IF = {
+					limit = {
+						has_idea = MAN_south_manchuria_railway_company_improved
+					}
+					swap_ideas = {
+						remove_idea = MAN_south_manchuria_railway_company
+						add_idea = MAN_mangyo
+					}
+				}
+			}
+
+		}
+	}
 	focus = {
 		id = MAN_second_five_year_plan
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MAN_social_research_unit }
 		prerequisite = { focus = MAN_expand_showa_steel_works }
 		prerequisite = { focus = MAN_China_railway_2 }	
-		prerequisite = { focus = MAN_development_of_western_territories }			
+		prerequisite = { focus = MAN_development_of_western_territories }
 
 		x = 0
 		y = 4
@@ -830,9 +931,9 @@
 	focus = {
 		id = MAN_national_defense_state
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = MAN_second_five_year_plan }
+		prerequisite = { focus = MAN_mangyo }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = MAN_second_five_year_plan
 
 		cost = 10
@@ -948,7 +1049,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			608 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -961,7 +1062,7 @@
 				}				
 			}
 			614 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -974,7 +1075,7 @@
 				}				
 			}
 			597 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1007,12 +1108,10 @@
 			621 = { is_fully_controlled_by = ROOT }
 			615 = { is_fully_controlled_by = ROOT }			
 			622 = { is_fully_controlled_by = ROOT }	
-			746 = { is_fully_controlled_by = ROOT }
-			756 = { is_fully_controlled_by = ROOT }			
+			746 = { is_fully_controlled_by = ROOT }		
 			616 = { is_fully_controlled_by = ROOT }	
 			283 = { is_fully_controlled_by = ROOT }	
 			754 = { is_fully_controlled_by = ROOT }
-			755 = { is_fully_controlled_by = ROOT }
 		}
 
 		bypass = {
@@ -1030,6 +1129,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			621 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1037,6 +1137,7 @@
 				}				
 			}
 			615 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1044,6 +1145,7 @@
 				}				
 			}
 			622 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1052,13 +1154,7 @@
 			}	
 
 			746 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}				
-			}
-			756 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1066,6 +1162,7 @@
 				}				
 			}
 			616 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1073,6 +1170,7 @@
 				}				
 			}
 			283 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1080,13 +1178,7 @@
 				}				
 			}
 			754 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}				
-			}
-			755 = {
+			add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1492,7 +1584,7 @@
 		y = 1
 		relative_position_id = MAN_chinese_leadership
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1541,18 +1633,26 @@
 		y = 2
 		relative_position_id = MAN_chinese_leadership
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
 		}
 
 		available = {
-            MAN = {
+		or = { 
+				AND = {
+					has_war_with = CHI
+					JAP = {
+					has_full_control_of_state = 608	
+					}
+				}
+			
+			MAN = {
 				has_full_control_of_state = 608	
+					}
 			}
-		}
-
+				}
 		bypass = {
 			is_subject = no
 		}
@@ -1563,8 +1663,20 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			country_event = {
+				id = tsr_manchukuo.1
+			}
 			add_stability = 0.1		
             add_ideas = tot_economic_mobilisation	
+			add_dynamic_modifier = {
+			 	modifier = MAN_state_shintoism_dm
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = MAN_tsr_embrace_state_shintoism_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = {
+				MAN_aisin_gioro_puyi
+			}
 		}
 
 	}
@@ -1627,46 +1739,37 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			MAN_low_legitimacy_clear_all = yes	
 			set_cosmetic_tag = MAN_restored
-			hidden_effect = {
+			#hidden_effect = {
 				news_event = { id = wtt_news.44 days = 2 }
-				kill_country_leader = yes 
 				if = {
 					limit = {
-						has_government = fascism
+						not = {has_country_leader = {character = MAN_aisin_gioro_puyi}}
 					}
-					create_country_leader = {
-						name = "Xuantong"
-						picture = "GFX_portrait_man_henry_pu_yi_emperor"
-						expire = "1960.1.1"
-						ideology = rexism
-						traits = {
-						}
+						add_ideas = Great_Emperor_of_China_Aisingyoro_Puyi	
 					}
-				}
 				else_if = {
 					limit = {
-						has_government = neutrality
+						has_country_leader = {character = MAN_aisin_gioro_puyi}
 					}
-					create_country_leader = {
-						name = "Xuantong"
-						picture = "GFX_portrait_man_henry_pu_yi_emperor"
-						expire = "1960.1.1"
-						ideology = despotism
-						traits = {
+				MAN_aisin_gioro_puyi = {
+					set_portraits = {
+						civilian = {
+							large = "GFX_portrait_man_henry_pu_yi_emperor" 
 						}
 					}
+					set_character_name = {
+						name = MAN_aisin_gioro_puyi_xuantong_name
+					}
 				}
-			}
 		    add_country_leader_trait = Great_Emperor_of_China_Aisingyoro_Puyi	
 		}
-	}
-
+#}
+}
+}
 	focus = {
 		id = MAN_United_Army_of_China
 		icon = GFX_focus_chi_army_reform
@@ -1733,12 +1836,154 @@
 		}
 	}
 
+	
+	focus = {
+		id = MAN_new_rifles
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		prerequisite = {
+			focus = MAN_closer_ties_with_germany focus = MAN_rapprochement_with_soviet_union
+		}
+		x = 1
+		y = 1
+		relative_position_id = MAN_closer_ties_with_germany
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+			
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+
+	}
+
+	focus = {
+		id = Man_cheap_weapons
+		icon = GFX_focus_focus_fra_maquis
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_train_marine focus = MAN_jungle_training focus = MAN_elite_mountaineers}
+		relative_position_id = MAN_new_rifles
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SIA_Siam_Rifle_Model
+		}
+	}
+
+	focus = {
+		id = MAN_jungle_training
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 5
+		prerequisite = {
+			focus = MAN_new_rifles
+		}
+		x = -2
+		y = 1
+		relative_position_id = MAN_new_rifles
+		completion_reward = {
+			custom_effect_tooltip = RAJ_jungle_training_effect			
+			hidden_effect = {
+				set_technology = {
+					jungle_warfare = 1
+				}
+			}		
+			add_tech_bonus = {
+				name = SIA_jungle_training
+				bonus = 3.0
+				uses = 2
+				technology = rangers_tech2
+				technology = rangers_tech3
+			}		
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	
+	focus = {
+		id = MAN_train_marine
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = MAN_new_rifles }
+		#prerequisite = { focus = MAN_Help_from_Japanese_specialists }		
+		relative_position_id = MAN_new_rifles	
+		x = 0
+		y = 1
+
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CHI_train_marines
+			add_tech_bonus = {
+				name = MAN_train_marines
+				bonus = 3.0
+				uses = 2
+				category = marine_tech
+			}
+			navy_experience = 100					
+		}
+	}
+		focus = {
+		id = MAN_elite_mountaineers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = MAN_new_rifles }
+		x = 2
+		y = 1
+		relative_position_id = MAN_new_rifles
+
+		cost = 5
+
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {		
+			add_ideas = CHI_elite_mountaineers
+			add_tech_bonus = {
+				name = CHI_elite_mountaineers
+				bonus = 3.0
+				uses = 2
+				category = mountaineers_tech
+			}
+			army_experience = 50			
+		}
+	}	
 	focus = {
 		id = MAN_closer_ties_with_germany
 		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = MAN_invite_foreign_investors }
 
-		x = -8
+		x = -6
 		y = 1
 		relative_position_id = MAN_invite_foreign_investors
 
@@ -1777,6 +2022,10 @@
 						province = 11771 # North of Rome
 					}
 				}
+				add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 1
+			}
 			}				
 			
 			add_offsite_building = { type = arms_factory level = 2 }
@@ -1788,7 +2037,7 @@
 		id = MAN_give_falkenhausen_citizenship
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MAN_closer_ties_with_germany }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = MAN_closer_ties_with_germany
 
@@ -1821,10 +2070,10 @@
 	focus = {
 		id = MAN_wargaming_division
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = MAN_give_falkenhausen_citizenship }
-		x = 0
+		prerequisite = { focus = MAN_combined_arms_warfare focus = MAN_heavy_weapons}
+		x = 1
 		y = 1
-		relative_position_id = MAN_give_falkenhausen_citizenship
+		relative_position_id = MAN_combined_arms_warfare
 
 		cost = 5
 
@@ -1860,8 +2109,8 @@
 		id = MAN_chinese_panzers
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = MAN_closer_ties_with_germany }
-		x = 0
-		y = 1
+		x = -2
+		y = 3
 		relative_position_id = MAN_closer_ties_with_germany
 
 		cost = 10
@@ -1906,7 +2155,7 @@
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = MAN_chinese_panzers }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = MAN_chinese_panzers
 
 		cost = 10
@@ -1932,7 +2181,7 @@
 					is_fully_controlled_by = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
@@ -1993,6 +2242,10 @@
 						province = 11771 # North of Rome
 					}
 				}
+				add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 1
+			}
 			}				
 			
 			add_offsite_building = { type = industrial_complex level = 2 }
@@ -2003,7 +2256,7 @@
 		id = MAN_invite_soviet_advisers
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = MAN_rapprochement_with_soviet_union }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = MAN_rapprochement_with_soviet_union
 
@@ -2039,46 +2292,14 @@
 			army_experience = 50			
 		}
 	}	
-	focus = {
-		id = MAN_elite_mountaineers
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = MAN_invite_soviet_advisers }
-		x = 0
-		y = 1
-		relative_position_id = MAN_invite_soviet_advisers
 
-		cost = 5
-
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {		
-			add_ideas = CHI_elite_mountaineers
-			add_tech_bonus = {
-				name = CHI_elite_mountaineers
-				bonus = 3.0
-				uses = 2
-				category = mountaineers_tech
-			}
-			army_experience = 50			
-		}
-	}	
  
 	focus = {
 		id = MAN_hire_soviet_designer
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = MAN_rapprochement_with_soviet_union }
-		x = 0
-		y = 1
+		x = 2
+		y = 3
 		relative_position_id = MAN_rapprochement_with_soviet_union
 
 		cost = 10
@@ -2117,7 +2338,7 @@
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = MAN_hire_soviet_designer }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = MAN_hire_soviet_designer
 
 		cost = 10
@@ -2160,12 +2381,11 @@
 	focus = {
 		id = MAN_combined_arms_warfare
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = MAN_chinese_panzers }
-		prerequisite = { focus = MAN_hire_soviet_designer }
+	prerequisite = { focus = MAN_chinese_panzers focus = Man_cheap_weapons focus = MAN_hire_soviet_designer}
 		
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = MAN_chinese_panzers
+		relative_position_id = Man_cheap_weapons
 
 		cost = 10
 
@@ -2202,9 +2422,9 @@
 	focus = {
 		id = MAN_heavy_weapons
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = MAN_combined_arms_warfare }
-		x = 0
-		y = 2
+		prerequisite = { focus = MAN_chinese_panzers focus = Man_cheap_weapons focus = MAN_hire_soviet_designer}
+		x = 2
+		y = 0
 		relative_position_id = MAN_combined_arms_warfare
 		
 		cost = 10
@@ -2284,6 +2504,10 @@
 						province = 4572 # North of Rome
 					}
 				}
+				add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
+			}
 			}
 			add_offsite_building = { type = industrial_complex level = 1 }	
 			add_offsite_building = { type = arms_factory level = 1 }				
@@ -2447,7 +2671,7 @@
 		id = MAN_mission_to_germany
 		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = MAN_invite_foreign_investors }
-		x = 6
+		x = 5
 		y = 1
 		relative_position_id = MAN_invite_foreign_investors
 		cost = 5
@@ -2486,6 +2710,10 @@
 						province = 3900 # North of Rome
 					}
 				}
+				add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 1
+			}
 			}				
 			
 			navy_experience = 100
@@ -2666,7 +2894,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MAN_support_German_specialists  }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = MAN_support_German_specialists
 
 		cost = 10
@@ -2741,6 +2969,10 @@
 						province = 3900 # North of Rome
 					}
 				}
+				add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 1
+			}
 			}
 			
 			navy_experience = 100
@@ -2978,7 +3210,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MAN_Help_from_Japanese_specialists  }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = MAN_Help_from_Japanese_specialists
 
 		cost = 10
@@ -3005,51 +3237,13 @@
 	}
 
 	focus = {
-		id = MAN_train_marine
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = MAN_support_German_specialists }
-		prerequisite = { focus = MAN_Help_from_Japanese_specialists }		
-		relative_position_id = MAN_support_German_specialists		
-		x = 1
-		y = 1
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = CHI_train_marines
-			add_tech_bonus = {
-				name = MAN_train_marines
-				bonus = 3.0
-				uses = 2
-				category = marine_tech
-			}
-			navy_experience = 100					
-		}
-	}
-
-	focus = {
 		id = MAN_Modernization_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = MAN_train_marine }	
-		x = 0
-		y = 2
-		relative_position_id = MAN_train_marine
+		prerequisite = { focus = MAN_investment_into_shipbuilding }	
+		prerequisite = { focus = MAN_Construction_of_skerries }
+		x = -1
+		y = 1
+		relative_position_id = MAN_investment_into_shipbuilding
 
 		cost = 10
 

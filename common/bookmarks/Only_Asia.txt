@@ -1,0 +1,137 @@
+bookmarks = {
+	bookmark = {
+		name = "Only_ASIA"
+		desc = "Only_ASIA_DESC"
+		date = 1936.1.1.15
+		picture = "GFX_Only_Asia"
+		default_country = "USA"
+	
+		USA = {
+			history = "USA_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression_3
+				air_war_plans_division_focus
+				USA_war_department
+				new_deal
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_arsenal_of_democracy
+				USA_selective_training_act
+			}
+		}
+		JAP = {
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			override_leader_portrait = JAP_emperor_hirohito
+			ideas={
+				JAP_1936_fake_state_shintoism_idea
+				JAP_1936_fake_industrial_idea
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_tojos_premiership
+				JAP_yamamotos_premiership
+				JAP_the_crysanthemum_throne
+			}		
+		}		
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+				
+		"AST"={
+			minor = yes
+			history = "AST_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+			AST_fight_work_or_perish
+			AST_fund_australian_defense_research
+			AST_infrastructure_Papua_Neuguinea
+			}
+		}	
+	
+		"RAJ"={
+			minor = yes
+			history = "RAJ_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_princely_states
+				RAJ_agrarian_society
+				RAJ_great_depression_1
+			}
+			focuses = {
+				RAJ_smiling_buddah
+				RAJ_provincial_autonomy
+				RAJ_to_shake_the_world
+			}
+		}
+		#"MAN"={
+		#	minor = yes
+		#	history = "MAN_BLITZKRIEG_DESC"
+		#	ideology = fascism
+		#	ideas = {
+		#		MAN_kwantung_veto
+		#		MAN_five_year_plan_industry
+		#		MAN_low_legitimacy_4
+		#	}
+		#	focuses = {
+		#		MAN_alliance_with_the_kwantung_army
+		#		MAN_develop_aluminum_sources
+		#		MAN_the_two_emperors
+		#	}
+		#}
+		#"SIA"={
+		#	minor = yes
+		#	history = "SIA_BLITZKRIEG_DESC"
+		#	ideology = neutrality
+		#	ideas = {
+		#		SIA_Bowring_Treaty_1925
+		#		SIA_Economic_Depression
+		#		SIA_Inflation_Problems			
+		#	}
+		#	focuses = {
+		#		SIA_thailandgreatness
+		#		SIA_the_royal_cult
+		#		SIA_exportrice
+		#	}
+		#}
+		
+		"HOL"={
+			minor = yes
+			history = "NETHERLANDS_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				HOL_wilhelmina
+				HOL_shell_shocked_spectator_5
+				HOL_de_crisisjaren_1
+			}
+			focuses = {
+				HOL_continue_the_war_in_batavia
+				HOL_liberation
+				HOL_prepare_the_inundation_lines
+			}
+		}
+		"PHI"={
+			minor = yes
+			history = "NETHERLANDS_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

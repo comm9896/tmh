@@ -1,4 +1,35 @@
 	on_actions = {
+		on_startup = {
+			#KOREA/JAPAN - Set up the resistance DMs 
+			effect = {
+
+				IF = {
+					limit = {
+						NOT = {
+							has_game_rule = {
+								rule = asia_colonization_status
+								option = ASIA_DECOLONIZED
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								state = 1031
+								state = 1030
+								state = 1029
+								state = 1028
+								state = 527
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = KOR_resistance_against_colonial_rule_dm
+						}
+					}
+				}
+			
+			}
+
 		on_declare_war = {
 			effect = {
 				if = {
@@ -87,7 +118,16 @@
 							}
 						}
 					}
-
-
 				
+on_startup = {
+		effect = { 
+			every_state = {
+					limit = {
+							region = 104
+							}
+	add_dynamic_modifier = { modifier = no_mines_before_war  }
+
+
+		}		
+	}
 }
