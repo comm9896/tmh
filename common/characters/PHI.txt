@@ -437,7 +437,7 @@ characters={
 				has_dlc = "No Compromise, No Surrender"
 			}
 			available = {
-				has_completed_focus = PHI_align_with_japan
+				
 			}
 			idea_token = PHI_benigno_ramos
 
@@ -605,7 +605,7 @@ characters={
 				has_dlc = "No Compromise, No Surrender"
 			}
 			available = {
-				has_completed_focus = PHI_legalize_the_communist_party
+				
 			}
 			idea_token = PHI_vicente_lava
 			traits  = {
@@ -654,7 +654,7 @@ characters={
 				has_dlc = "La Resistance"
 			}
 			available = {
-				has_completed_focus = PHI_return_of_the_exiles
+				
 			}
 			idea_token = PHI_tan_malaka
 			traits  = {

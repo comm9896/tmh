@@ -1605,26 +1605,6 @@ PHI_integration_category = {
 }
 
 PHI_department_of_foreign_affairs_category = {	#sanity checks are already in the decision category checks
-	PHI_create_faction = {
-		cost = 50
-		remove_effect = {
-			set_rule = {
-				can_create_factions = yes
-			}
-			create_faction = PHI_asia_treaty_faction
-		}
-		visible = {
-			is_faction_leader = no
-		}
-		available = {
-			is_in_faction = no
-		}
-		fire_only_once = yes
-		icon = GFX_decision_generic_form_nation
-		ai_will_do = {
-			base = 0
-		}
-	}
 	PHI_decrease_japanese_ideological_influence = {
 		cost = 75
 		remove_effect = {
@@ -1658,69 +1638,6 @@ PHI_department_of_foreign_affairs_category = {	#sanity checks are already in the
 					has_government = JAP
 				}
 				add = 1000
-			}
-		}
-	}
-	PHI_join_other_faction = {
-		cost = 10
-		fire_only_once = yes
-		target_root_trigger = {
-			is_in_faction = no
-		}
-		target_trigger = {
-			FROM = {
-				is_faction_leader = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-		remove_effect = {
-			FROM = {
-				country_event = generic.2
-			}
-		}
-		ai_will_do = {
-			base = 50
-			modifier = {
-				factor = 2
-				FROM = {
-					has_government = ROOT
-				}
-			}
-			modifier = {
-				factor = 1.5
-				FROM = {
-					capital_scope = {
-						is_on_continent = asia
-					}
-				}
-			}
-			modifier = {
-				factor = 4
-				FROM = {
-					has_war_together_with = ROOT
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					has_government = communism
-					has_war_together_with = FROM
-				}
-				FROM = {
-					has_government = communism
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					has_government = fascism
-					has_war_together_with = FROM
-				}
-				FROM = {
-					has_government = fascism
-				}
 			}
 		}
 	}

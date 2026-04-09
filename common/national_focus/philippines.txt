@@ -260,7 +260,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_national_fiscal_policy
 		icon = GFX_focus_generic_currency_reforms
-		overlay = GFX_focus_fast_overlay_japan_clock
+		 
 
 		prerequisite = { focus = PHI_peg_the_peso_to_the_dollar focus = PHI_leverage_the_peso }						
 
@@ -298,7 +298,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T1_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T1 = yes
@@ -412,7 +412,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_reduce_unneccessary_expenditure
 		icon = GFX_focus_generic_reduce_unneccessary_expenditure
-		overlay = GFX_focus_fast_overlay_japan_clock
+		 
 
 		prerequisite = { focus = PHI_national_fiscal_policy }
 
@@ -443,7 +443,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T1_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T1 = yes
@@ -455,7 +455,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_subsidies
 		icon = GFX_focus_mex_privatisation
-		overlay = GFX_focus_fast_overlay_japan_clock	
+		 
 
 		prerequisite = { focus = PHI_national_fiscal_policy }
 
@@ -481,7 +481,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T1_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T1 = yes
@@ -493,7 +493,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_basic_welfare
 		icon = GFX_focus_generic_welfare
-		overlay = GFX_focus_fast_overlay_japan_clock	
+		 
 
 		prerequisite = { focus = PHI_national_fiscal_policy }
 
@@ -525,7 +525,7 @@ initial_show_position = {
 			add_stability = 0.05
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T1_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T1 = yes
@@ -831,7 +831,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_luzon_transport
 		icon = GFX_focus_PHI_luzon_transport
-		overlay = GFX_focus_fast_overlay_japan_clock
+		 
 
 		prerequisite = { focus = PHI_pro_hacendados focus = PHI_anti_hacendados }
 
@@ -878,7 +878,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T2_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T2 = yes
@@ -939,7 +939,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_mindanao_transport
 		icon = GFX_focus_PHI_mindanao_transport
-		overlay = GFX_focus_fast_overlay_japan_clock
+		 
 
 		prerequisite = { focus = PHI_pro_hacendados focus = PHI_anti_hacendados }
 
@@ -988,7 +988,7 @@ initial_show_position = {
 			custom_effect_tooltip = PHI_mindanao_transport_decision_unlock_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T2_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T2 = yes
@@ -1000,7 +1000,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_land_reform
 		icon = GFX_focus_generic_farmland
-		overlay = GFX_focus_fast_overlay_japan_clock	
+		 
 
 		prerequisite = { focus = PHI_pro_hacendados focus = PHI_anti_hacendados }
 
@@ -1052,7 +1052,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T2_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T2 = yes
@@ -1272,7 +1272,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_bill_of_rights
 		icon = GFX_focus_generic_treaty
-		overlay = GFX_focus_fast_overlay_japan_clock		
+		 	
 
 		prerequisite = { focus = PHI_land_reform }
 
@@ -1311,7 +1311,7 @@ initial_show_position = {
 			add_stability = 0.05
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T2_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T2 = yes
@@ -1645,7 +1645,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_increase_sugar_exports
 		icon = GFX_focus_AFG_sugar_factory
-		overlay = GFX_focus_fast_overlay_japan_clock		
+		 	
 
 		prerequisite = { focus = PHI_nationality_act focus = PHI_open_borders }
 
@@ -1680,7 +1680,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T3_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T3 = yes
@@ -1766,7 +1766,7 @@ initial_show_position = {
 	focus = {
 		id = PHI_encourage_chinese_immigration
 		icon = GFX_focus_PHI_encourage_chinese_immigration
-		overlay = GFX_focus_fast_overlay_japan_clock		
+		 	
 
 		prerequisite = { focus = PHI_nationality_act focus = PHI_open_borders }
 
@@ -1818,7 +1818,7 @@ initial_show_position = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_focus_time_reduced_T3_tt
+			 
 
 			hidden_effect = {
 				PHI_central_focuses_done_T3 = yes
@@ -1869,26 +1869,6 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = {
-				limit = {
-					is_subject = yes
-				}
-				country_event = SEA_PHI_political_events.55
-			}
-			random_other_country = {
-				limit = {
-					has_subject = PHI
-				}
-				set_autonomy = {
-					target = PHI
-					autonomy_state = autonomy_free
-					freedom_level = 1
-					end_wars  = no
-					end_civil_wars = no
-				}
-				country_event = SEA_PHI_political_events.55
-			}
-
 			if = {
 				limit = {
 					NOT = {
@@ -2243,12 +2223,6 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			USA = {
-				has_opinion = {
-					target = ROOT
-					value > 29
-				}
-			}
 		}
 
 		bypass = {
@@ -2429,7 +2403,7 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			is_ally_with = USA
+			
 		}
 
 		bypass = {
@@ -2441,8 +2415,7 @@ initial_show_position = {
 		completion_reward = {
 			custom_effect_tooltip = PHI_american_interference_dynamic_modifier_tt
 			add_to_variable = { PHI_american_interference_command_power_gain = 0.05 tooltip = command_power_gain_tt }
-			add_to_variable = { PHI_american_interference_license_subject_master_purchase_cost = -0.4 tooltip = license_subject_master_purchase_cost_tt }
-			add_to_variable = { PHI_american_interference_license_production_speed = 0.2 tooltip = license_production_speed_tt }
+			add_to_variable = { PHI_american_interference_license_production_speed = 0.25 tooltip = license_production_speed_tt }
 		}
 	}
 
@@ -2460,7 +2433,7 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			is_ally_with = USA
+			 
 		}
 
 		bypass = {
@@ -2505,7 +2478,7 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			is_ally_with = USA
+			 
 		}
 
 		ai_will_do = {
@@ -2577,7 +2550,7 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			is_ally_with = USA
+			 
 		}
 
 		bypass = {
@@ -2609,7 +2582,7 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			is_ally_with = USA
+			 
 		}
 
 		ai_will_do = {
@@ -2677,7 +2650,7 @@ initial_show_position = {
 		cost = 5
 
 		available = {
-			is_ally_with = USA
+			 
 		}
 
 		bypass = {
@@ -2756,10 +2729,10 @@ initial_show_position = {
 		x = 0
 		y = 1
 	
-		cost = 3
+		cost = 2
 
 		available = {
-			is_ally_with = USA
+			 has_war = yes
 		}
 
 		bypass = {
@@ -2768,26 +2741,11 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_equipment_subsidy = {
-					cic = 5000
-					equipment_type = infantry_equipment
-					seller_tags = { USA } 
-				}
-			}
-			else = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 5000
-					producer = USA
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
+					add_equipment_to_stockpile = { 
+						type = infantry_equipment
+						amount = 10000
+						producer = ROOT
+						}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = PHI_wendell_fertig
 		}
@@ -2805,11 +2763,10 @@ initial_show_position = {
 		x = -2
 		y = 1
 	
-		cost = 3
+		cost = 2
 
 		available = {
-			is_ally_with = USA
-			PHI_usa_focus_done_T1 = yes
+
 		}
 
 		bypass = {
@@ -2818,39 +2775,10 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_equipment_subsidy = {
-					cic = 2500
-					equipment_type = infantry_equipment
-					seller_tags = { USA } 
-				}
-				add_equipment_subsidy = {
-					cic = 2500
-					equipment_type = artillery_equipment
-					seller_tags = { USA } 
-				}
-			}
-			else = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2500
-					producer = USA
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment
-					amount = 500
-					producer = USA
-				}
-			}
-
-			#Moved out of the non-DLC block since the subsidy can be useless if you get unlucky
-			custom_effect_tooltip = generic_skip_one_line_tt
-			set_country_flag = FRA_arms_purchases_permitted
-			
-			unlock_decision_category_tooltip = FRA_weapons_purchases_category
+			custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
+				add_to_variable = { PHI_army_attack = 0.075 tooltip = army_attack_factor_tt}
+				add_to_variable = { PHI_army_defence = 0.075 tooltip = army_defence_factor_tt}
+				add_to_variable = { PHI_philippine_army_army_org_factor = 0.2 tooltip = army_org_factor_tt}
 		}
 	}
 
@@ -2865,11 +2793,10 @@ initial_show_position = {
 		x = 0
 		y = 2
 	
-		cost = 3
+		cost = 2
 
 		available = {
-			is_ally_with = USA
-			PHI_usa_focus_done_T2 = yes
+			 
 		}
 
 		bypass = {
@@ -2878,71 +2805,23 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_equipment_subsidy = {
-					cic = 2500
-					equipment_type = motorized_equipment
-					seller_tags = { USA } 
-				}
-				add_equipment_subsidy = {
-					cic = 500
-					equipment_type = train_equipment
-					seller_tags = { USA } 
-				}
-			}
-			else = {
+
 				add_equipment_to_stockpile = {
 					type = motorized_equipment
-					amount = 100
+					amount = 500
 					producer = USA
 				}
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = 10
+					amount = 50
 					producer = USA
 				}
 
 				custom_effect_tooltip = generic_skip_one_line_tt
-
-				if = {
-					limit = {
-						NOT = {
-							has_tech = basic_train
-						}
-					}
-					USA = {
-						create_production_license = {
-							target = ROOT
-							equipment = {
-								type = train_equipment_1
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_tech = motorised_infantry
-						}
-					}
-					USA = {
-						create_production_license = {
-							target = ROOT
-							equipment = {
-								type = motorized_equipment_1
-							}
-							cost_factor = 0
-						}
-					}
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_theorist
+			custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
+				add_to_variable = { PHI_army_attack = 0.075 tooltip = army_attack_factor_tt}
+				add_to_variable = { PHI_army_defence = 0.075 tooltip = army_defence_factor_tt}
+				add_to_variable = { PHI_philippine_army_army_org_factor = 0.2 tooltip = army_org_factor_tt}
 			show_ideas_tooltip = PHI_russell_volckmann_theorist
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2964,11 +2843,10 @@ initial_show_position = {
 		x = 2
 		y = 1
 	
-		cost = 3
+		cost = 2
 
 		available = {
-			is_ally_with = USA
-			PHI_usa_focus_done_T1 = yes
+			has_completed_focus = PHI_philippine_air_force
 		}
 
 		bypass = {
@@ -2977,36 +2855,7 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_equipment_subsidy = {
-					cic = 1000
-					equipment_type = small_plane_airframe
-					seller_tags = { USA } 
-				}
-			}
-			else = {
-				if = {
-					limit = {
-						NOT = { has_dlc = "By Blood Alone" }
-					}
-					add_equipment_to_stockpile = {
-						type = fighter_equipment_1
-						amount = 100
-						producer = USA
-					}
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_1
-						amount = 100
-						producer = USA
-						variant_name = "P-36A"
-					}	
-				}
-			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = PHI_american_interference_dynamic_modifier_tt
@@ -3025,11 +2874,10 @@ initial_show_position = {
 		x = 0
 		y = 2
 			
-		cost = 3
+		cost = 2
 
 		available = {
-			is_ally_with = USA
-			PHI_usa_focus_done_T2 = yes
+
 		}
 
 		bypass = {
@@ -3038,42 +2886,27 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
+			create_equipment_variant = {
+				name = "A-36 Apache"
+				type = small_plane_cas_airframe_2
+				parent_version = 0
+				modules = {
+					fixed_main_weapon_slot = tank_buster_2
+					fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+					fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+		
+					engine_type_slot = engine_3_2x
+					special_type_slot_1 = dive_brakes_small
+					special_type_slot_2 = armor_plate_small
+					special_type_slot_3 = fuel_tanks_small			
 				}
-				add_equipment_subsidy = {
-					cic = 2500
-					equipment_type = small_plane_airframe
-					seller_tags = { USA } 
-				}
+				icon = "GFX_ENG_CAS3_medium"			
+				design_team = mio:AST_com_aircraft_corporation_organization			
 			}
-			else = {
-				if = {
-					limit = {
-						NOT = { has_dlc = "By Blood Alone" }
-					}
-					add_equipment_to_stockpile = {
-						type = fighter_equipment_1
-						amount = 100
-						producer = USA
-					}
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_1
-						amount = 100
-						producer = USA
-						variant_name = "P-36A"
-					}	
-				}
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe
+				amount = 200
 			}
-
-			#Moved out of the non-DLC block since the subsidy can be useless if you get unlucky
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			unlock_decision_tooltip = FRA_order_fighters_in_USA
-			unlock_decision_tooltip = FRA_order_bombers_in_USA
 		}
 	}
 
@@ -3088,10 +2921,10 @@ initial_show_position = {
 		x = 0
 		y = 3
 	
-		cost = 5
+		cost = 2
 
 		available = {
-			PHI_usa_focus_done_T2 = yes
+			has_capitulated = yes
 		}
 
 		bypass = {
@@ -3111,7 +2944,7 @@ initial_show_position = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 1027 } #Bataan 
+				prioritize = { 627 } #Bataan 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -3135,14 +2968,13 @@ initial_show_position = {
 		x = 0
 		y = 1
 			
-		cost = 5
+		cost = 2
 
 		available = {
-			is_ally_with = USA
-			PHI_usa_focus_done_T2 = yes
 		}
 
 		bypass = {
+			has_capitulated = yes
 		}
 
 		available_if_capitulated = no
@@ -3228,11 +3060,10 @@ initial_show_position = {
 		x = 0
 		y = 2
 	
-		cost = 5
+		cost = 2
 
 		available = {
-			is_ally_with = USA
-			PHI_usa_focus_done_T3 = yes
+
 		}
 
 		bypass = {
@@ -3243,38 +3074,6 @@ initial_show_position = {
 		completion_reward = {
 			show_unit_leaders_tooltip = PHI_thomas_hart
 			show_unit_leaders_tooltip = PHI_john_wilkes
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			USA = {
-				if = {
-					limit = {
-						has_navy_size = {
-							size > 24
-						}
-					}
-					country_event = SEA_PHI_political_events.56
-				}
-				custom_effect_tooltip = if_they_accept_newline_tt
-				custom_effect_tooltip = PHI_send_a_share_of_THIS_navy_to_ROOT_tt
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			set_country_flag = PHI_permanent_usa_naval_bases
-			custom_effect_tooltip = {
-				localization_key = DIPLO_FORBID_REVOKE_ACCESS
-				TYPE = DIPLOMACY_DOCKING_RIGHTS
-				TARGET = "[USA.GetAdjective]"
-			}
-			hidden_effect = {
-				USA = {
-					diplomatic_relation = {
-						country = ROOT
-						relation = docking_rights
-						active = yes
-					}
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	}
@@ -3291,7 +3090,7 @@ initial_show_position = {
 		x = -1
 		y = 1
 	
-		cost = 5
+		cost = 2
 
 		available = {
 		}
@@ -3318,7 +3117,7 @@ initial_show_position = {
 		x = 1
 		y = 1
 			
-		cost = 5
+		cost = 2
 
 		available = {
 			is_in_faction_with = USA
@@ -4218,6 +4017,10 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {
+		custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
+				add_to_variable = { PHI_army_attack = 0.05 tooltip = army_attack_factor_tt}
+				add_to_variable = { PHI_army_defence = 0.05 tooltip = army_defence_factor_tt}
+				add_to_variable = { PHI_philippine_army_army_org_factor = 0.1 tooltip = army_org_factor_tt}
 			add_dynamic_modifier = {
     			modifier = PHI_philippine_resistance_movement_dynamic_modifier
 			}
@@ -5196,7 +4999,7 @@ initial_show_position = {
 			modifier = {
 				factor = 0
 				OR = {
-					is_ally_with = USA
+					 
 					country_exists = PLU	#AI is never gonna get that naval invasion
 				}
 			}
@@ -5710,277 +5513,6 @@ initial_show_position = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
-	focus = {
-		id = PHI_bastion_bataan
-		icon = GFX_goal_fortify_the_westwall
-		
-		prerequisite = { focus = PHI_coastal_artillery }	
-		relative_position_id = PHI_coastal_artillery
-
-		x = 0
-		y = 1
-	
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-			OR = {
-				NOT = { 
-					controls_state = 1027
-
-				}
-				custom_trigger_tooltip = {
-					tooltip = PHI_bastion_bataan_bypass_tt
-					AND = {
-						1027 = { #Bataan
-							free_building_slots = {
-								building = bunker
-								size < 1
-								province = 7351
-							}
-							free_building_slots = {
-								building = bunker
-								size < 1
-								province = 10165
-							}
-							free_building_slots = {
-								building = bunker
-								size < 1
-								province = 4423
-							}
-							free_building_slots = {
-								building = bunker
-								size < 1
-								province = 12253
-							}
-							free_building_slots = {
-								building = coastal_bunker
-								size < 1
-								province = 1415
-							}
-							free_building_slots = {
-								building = coastal_bunker
-								size < 1
-								province = 7351
-							}
-						}
-					}
-				}
-			}
-		}
-		enable_automatic_bypass = no
-
-		available_if_capitulated = no
-	
-		completion_reward = {
-			IF = {
-				limit = {
-					1027 = { #Bataan
-						free_building_slots = {
-							building = bunker
-							size > 1
-							province = 7351
-						}
-					}
-					1027 = { #Bataan
-						free_building_slots = {
-							building = bunker
-							size > 0
-							province = 10165
-						}
-					}
-				}
-
-				1027 = { #Bataan
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province =  7351
-					}
-				}	
-			}
-			IF = {
-				limit = {
-					1027 = { #Bataan
-						free_building_slots = {
-							building = bunker
-							size > 0
-							province = 10165
-						}
-					}
-				}
-
-				1027 = { #Bataan
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province =  10165
-					}
-				}	
-			}
-			IF = {
-				limit = {
-					1027 = { #Bataan
-						free_building_slots = {
-							building = bunker
-							size > 0
-							province = 4423
-						}
-					}
-				}
-
-				1027 = { #Bataan
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province =  4423
-					}
-				}	
-			}
-			IF = {
-				limit = {
-					1027 = { #Bataan
-						free_building_slots = {
-							building = bunker
-							size > 0
-							province = 12253
-						}
-					}
-				}
-
-				1027 = { #Bataan
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province =  12253
-					}
-				}	
-			}
-			IF = {
-				limit = {
-					1027 = { #Bataan
-						free_building_slots = {
-							building = coastal_bunker
-							size > 0
-							province = 1415
-						}
-					}
-				}
-
-				1027 = { #Bataan
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province =  1415
-					}
-				}	
-			}
-			IF = {
-				limit = {
-					1027 = { #Bataan
-						free_building_slots = {
-							building = coastal_bunker
-							size > 0
-							province = 7351
-						}
-					}
-				}
-
-				1027 = { #Bataan
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						instant_build = yes
-						province =  7351
-					}
-				}	
-			}
-		}
-	}
-
-	focus = {
-		id = PHI_the_concrete_battleship
-		icon = GFX_focus_PHI_the_concrete_battleship
-		
-		prerequisite = { focus = PHI_bastion_bataan }	
-		relative_position_id = PHI_bastion_bataan	
-
-		x = 0
-		y = 1
-	
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-		}
-
-		available_if_capitulated = no
-	
-		completion_reward = {
-
-			IF = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-
-				IF = {
-					limit = {
-						NOT = { is_special_project_completed = sp:sp_land_stronghold_network }
-					}
-					complete_special_project = sp:sp_land_stronghold_network
-				}
-				IF = {
-					limit = {
-						1027 = { #Bataan
-							is_fully_controlled_by = ROOT
-							stronghold_network < 1
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-					1027 = { #Bataan
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = stronghold_network
-							level = 1
-							instant_build = yes
-						}
-					}	
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-			}
-			ELSE = {
-
-				1027 = {
-					add_dynamic_modifier = {
-						modifier = PHI_no_gtd_concrete_battleship
-						scope = PHI 
-					}
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-			}
-			
-			PHI_add_or_modify_defense_strategy = yes
-			add_to_variable = { PHI_defense_strategy_land_bunker_effectiveness_factor = 0.1 tooltip = land_bunker_effectiveness_factor_tt }
-
-		}
-	}
 
 
 ###############################
@@ -6386,14 +5918,37 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			add_tech_bonus = {
-				name = PHI_army_air_corps
-				bonus = 0.5
-				uses = 2
-				category = air_equipment
+			air_experience = 50
+
+			add_doctrine_cost_reduction = {
+				name = AST_expand_the_raaf
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
 			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = { modifier = PHI_philippine_army_air_corps_dynamic_modifier }
+			IF = {
+				limit = { 
+					random_owned_controlled_state = {
+						is_fully_controlled_by = ROOT
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					}
+				}
+
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+						province = 10265
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
 	}
@@ -6411,9 +5966,10 @@ focus = {
 		x = -1
 		y = 1
 	
-		cost = 5
+		cost = 10
 
 		available = {
+				date > 1939.06.01
 		}
 
 		bypass = {
@@ -6422,11 +5978,40 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			air_experience = 25
+
+			set_technology = { improved_small_airframe = 1}
+			set_technology ={ engines_3 = 1}
+			set_technology = {aa_cannon_1 = 1}	
+			set_technology = {aa_hmg = 1}						
+			set_technology = {survivability_studies = 1}						
+
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = PHI_philippine_army_air_corps_dynamic_modifier_tt
-			add_to_variable = { PHI_philippine_army_air_corps_air_mission_efficiency = 0.05 tooltip = air_mission_efficiency_tt }
-			add_to_variable = { PHI_philippine_army_air_corps_experience_gain_air_factor = 0.05 tooltip = experience_gain_air_factor_tt }
+			air_experience = 100
+
+			add_doctrine_cost_reduction = {
+				name = AST_expand_northern_presence
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_AIR_XP }
 	}
@@ -6444,9 +6029,10 @@ focus = {
 		x = -1
 		y = 1
 	
-		cost = 5
+		cost = 10
 
 		available = {
+			
 		}
 
 		bypass = {
@@ -6455,18 +6041,56 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			custom_effect_tooltip = PHI_philippine_army_air_corps_dynamic_modifier_tt
-			add_to_variable = { PHI_philippine_army_air_corps_air_nav_efficiency = 0.15 tooltip = air_nav_efficiency_tt }
-			add_to_variable = { PHI_philippine_army_air_corps_air_range_factor = 0.10 tooltip = air_range_factor_tt }
+			set_technology ={ engines_3 = 1}
+			set_technology = { improved_medium_airframe = 1 } 	
+			set_technology = { bba_improved_transport_plane = 1 } 
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_tech_bonus = {
-				name = PHI_off_shore_patrol
-				bonus = 0.5
-				uses = 2
-				category = cat_air_bombs
-				category = naval_bomber
+			
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+						set_technology = { air_torpedoe_1 = 1 }					
+			set_technology = { air_torpedoe_2 = 1 }		
+			set_technology = { armor_piercing_bombs = 1 }				
+			
+			
+			create_equipment_variant = {
+				name = "Catalina"
+				type = medium_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_2 = torpedo_mounting_2
+					fixed_auxiliary_weapon_slot_3 = torpedo_mounting_2
+					engine_type_slot = engine_3_2x
+					special_type_slot_1 = flying_boat_medium
+					special_type_slot_2 = fuel_tanks_medium
+				}
+				icon = "GFX_ENG_tactical_bomber2_medium"
+				design_team = mio:AST_com_aircraft_corporation_organization_2						
+			}
+			
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_2
+				amount = 120
+				variant_name = "Catalina"
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6484,7 +6108,7 @@ focus = {
 		x = 1
 		y = 1
 	
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -6537,6 +6161,23 @@ focus = {
 				uses = 2
 				category = air_equipment
 			}
+			add_tech_bonus = {
+				name = AST_volunteer_air_observers_corps
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 	}
@@ -6555,7 +6196,7 @@ focus = {
 		x = 1
 		y = 1
 	
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -6586,65 +6227,100 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				if = {
-					limit = {
-						has_completed_focus = PHI_align_with_japan
-						NOT = {
-							has_completed_focus = PHI_declare_military_emergency
-						}
-					}
-					every_military_industrial_organization = {
-						limit = {
-							is_military_industrial_organization = JAP_mitsubishi_organization
-						}
-						add_mio_size = 1
-					}
-				}
-				else_if = {
-					limit = {
-						OR = {
-							has_completed_focus = PHI_align_with_the_usa
-							has_completed_focus = PHI_declare_military_emergency
-						}
-					}
-					every_military_industrial_organization = {
-						limit = {
-							OR = {
-								is_military_industrial_organization = USA_north_american_aviation_organization
-								is_military_industrial_organization = USA_lockheed_organization
-							}
-						}
-						add_mio_size = 1
-					}
-				}
-				else = {
-					effect_tooltip = {
-						custom_effect_tooltip = PHI_if_align_with_japan_tt
-						every_military_industrial_organization = {
-							limit = {
-								is_military_industrial_organization = JAP_mitsubishi_organization
-							}
-							add_mio_size = 1
-						}
-						custom_effect_tooltip = generic_skip_one_line_tt
-						custom_effect_tooltip = PHI_if_align_with_the_usa_tt
-						every_military_industrial_organization = {
-							limit = {
-								OR = {
-									is_military_industrial_organization = USA_north_american_aviation_organization
-									is_military_industrial_organization = USA_lockheed_organization
-								}
-							}
-							add_mio_size = 1
-						}
-					}
-				}
+			air_experience = 50
+
+			add_doctrine_cost_reduction = {
+				name = AST_death_from_down_under
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
 			}
+			add_tech_bonus = {
+				name = AST_death_from_down_under
+				bonus = 1
+				uses = 2
+				category = cat_anti_air
+			}	
+			
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					NOT = { state = 674 }
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AB
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+					NOT = { state = 674 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AA1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+					NOT = { state = 674 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AA2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+					NOT = { state = 674 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AA3
+			}	
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}				
 		}
+		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
@@ -6661,7 +6337,7 @@ focus = {
 		x = 2
 		y = 1
 	
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -6672,10 +6348,59 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			custom_effect_tooltip = PHI_philippine_army_air_corps_dynamic_modifier_tt
-			add_to_variable = { PHI_philippine_army_air_corps_air_mission_efficiency = 0.05 tooltip = air_mission_efficiency_tt }
-			add_to_variable = { PHI_philippine_army_air_corps_air_range_factor = 0.10 tooltip = air_range_factor_tt }
+			custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
+			add_to_variable = { PHI_philippine_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { PHI_philippine_army_conscription_factor = 0.10 tooltip = conscription_factor_tt }
+			set_technology = { heavy_bombs = 1 }				
+			set_technology = { rocket_artillery = 1 }				
+			set_technology = { antitank2 = 1 }					
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			create_equipment_variant = {
+				name = "A-36 Apache"
+				type = small_plane_cas_airframe_2
+				parent_version = 0
+				modules = {
+					fixed_main_weapon_slot = tank_buster_2
+					fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+					fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+		
+					engine_type_slot = engine_3_2x
+					special_type_slot_1 = dive_brakes_small
+					special_type_slot_2 = armor_plate_small
+					special_type_slot_3 = fuel_tanks_small			
+				}
+				icon = "GFX_ENG_CAS3_medium"			
+				design_team = mio:AST_com_aircraft_corporation_organization			
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe
+				amount = 200
+			}	
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				name = AST_expand_the_raaf
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}				
 		}
+
 	}
 
 

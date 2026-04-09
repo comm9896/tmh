@@ -1,5 +1,11 @@
 ﻿capital = 327
 
+1936.1.1.15 = {
+ENG = { add_to_faction = PHI }
+	clr_country_flag = Sapr_no_asia	
+    set_country_flag = Sapr_only_asia		
+}
+
 IF = {
 	limit = { 
 		has_dlc = "No Compromise, No Surrender"
@@ -36,15 +42,89 @@ set_war_support = 0.15
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	air_torpedoe_1 = 1
 	tech_trucks = 1
-	tech_support = 1		
-	tech_recon = 1
-	tech_engineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	tech_support = 1
+	tech_engineers = 1	
+	tech_recon = 1		
+	tech_field_hospital = 1	
+	tech_logistics_company = 1	
+	tech_military_police = 1	
+	tech_signal_company = 1	
+	tech_maintenance_company = 1
+	
+	
+	motorised_infantry = 1
 	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+
+	
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1		
+	paratroopers = 1
+	tech_mountaineers = 1	
+	rangers_tech = 1	
+	photo_reconnaisance = 1
+	gwtank_chassis = 1	
+	interwar_antitank = 1	
+	basic_heavy_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	basic_light_tank_chassis = 1	
+	armored_car1 = 1
+	armored_train = 1
+	
+	aa_lmg = 1
+	engines_1 = 1
+	engines_2 = 1
+	early_bombs = 1
+	aircraft_construction = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	basic_large_airframe = 1	
+	range_improvements = 1	
+	basic_medium_airframe = 1
+	basic_small_airframe = 1
+	bba_early_transport_plane = 1
+	
+	
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
 	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1	
+	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
 	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	improved_depth_charges = 1
+	improved_ship_torpedo_launcher = 1
+	
+	
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	basic_ship_hull_submarine = 1	
+		
+	sonar = 1
+	improved_sonar = 1
+	smoke_generator = 1
 	basic_depth_charges = 1
+	basic_dp_light_battery = 1
+	basic_fire_control_system = 1		
 }
 
 if = {
@@ -114,7 +194,7 @@ set_convoys = 50
 
 ## Island Nation - Currently only positive effects, so even if non-DLC players cant upgrade it, can still give for a little flavor
 add_dynamic_modifier = { modifier = PHI_island_nation_dynamic_modifier }
-set_variable = { PHI_island_nation_convoy_retreat_speed = 0.15 }
+set_variable = { PHI_island_nation_convoy_retreat_speed = 5 }
 set_variable = { PHI_island_nation_navy_visibility = -0.05 }
 set_variable = { PHI_island_nation_industrial_capacity_dockyard = 0 }
 set_variable = { PHI_island_nation_repair_speed_factor = 0 }
@@ -126,7 +206,7 @@ set_variable = { PHI_island_nation_special_forces_cap = 0 }
 set_variable = { PHI_island_nation_amphibious_invasion = 0 }
 set_variable = { PHI_island_nation_naval_invasion_capacity = 0 }
 set_variable = { PHI_island_nation_invasion_preparation = 0 }
-set_variable = { PHI_island_nation_convoy_raiding_efficiency_factor = 0 }
+set_variable = { PHI_island_nation_convoy_raiding_efficiency_factor = -1 }
 set_variable = { PHI_island_nation_naval_light_gun_hit_chance_factor = 0 }
 set_variable = { PHI_island_nation_naval_speed_factor = 0 }
 set_variable = { PHI_island_nation_naval_torpedo_hit_chance_factor = 0 }
@@ -165,9 +245,12 @@ IF = {
 	set_variable = { PHI_philippine_army_experience_gain_army_factor = -0.8}
 	set_variable = { PHI_philippine_army_command_power_gain_mult = -0.2 }
 	set_variable = { PHI_philippine_army_heat_attrition_factor = 0 }
-	set_variable = { PHI_philippine_army_army_org_factor = 0 }
+	set_variable = { PHI_philippine_army_army_org_factor = -0.5 }
 	set_variable = { PHI_philippine_army_max_planning_factor = 0 }
 	set_variable = { PHI_philippine_army_conscription = 0 }
+	set_variable = { PHI_army_attack = -0.2}
+	set_variable = { PHI_army_defence = -0.2}
+
 
 	## American Interference
 	add_dynamic_modifier = { modifier = PHI_american_interference_dynamic_modifier }

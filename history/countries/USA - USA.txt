@@ -22,6 +22,7 @@ set_country_flag = USA_noman_flag
     set_country_flag = Sapr_no_asia		
 }
 1936.1.1.15 = {
+ENG = { add_to_faction = USA }
 	clr_country_flag = Sapr_no_asia	
     set_country_flag = Sapr_only_asia		
 }

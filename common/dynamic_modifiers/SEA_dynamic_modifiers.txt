@@ -888,6 +888,10 @@ PHI_philippine_army_dynamic_modifier = {
 	enable = { always = yes }
 	icon = GFX_idea_PHI_army_of_the_philippines
 
+	army_attack_factor = PHI_army_attack
+	army_defence_factor = PHI_army_defence
+	max_dig_in = PHI_army_max_dig_in
+	dig_in_speed_factor = PHI_army_dig_in_speed_factor
 	conscription_factor = PHI_philippine_army_conscription_factor
 	training_time_factor = PHI_philippine_army_training_time_factor
 	experience_gain_army_factor = PHI_philippine_army_experience_gain_army_factor
