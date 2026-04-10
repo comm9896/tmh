@@ -36,7 +36,7 @@ if = {
 		}
 	}
 }
-
+add_ideas = Diplomatic_isolation_phi
 set_stability = 0.50
 set_war_support = 0.15 
 
@@ -205,7 +205,7 @@ set_variable = { PHI_island_nation_experience_gain_navy = 0 }
 set_variable = { PHI_island_nation_special_forces_cap = 0 }
 set_variable = { PHI_island_nation_amphibious_invasion = 0 }
 set_variable = { PHI_island_nation_naval_invasion_capacity = 0 }
-set_variable = { PHI_island_nation_invasion_preparation = 0 }
+set_variable = { PHI_island_nation_invasion_preparation = 100 }
 set_variable = { PHI_island_nation_convoy_raiding_efficiency_factor = -1 }
 set_variable = { PHI_island_nation_naval_light_gun_hit_chance_factor = 0 }
 set_variable = { PHI_island_nation_naval_speed_factor = 0 }
@@ -248,8 +248,10 @@ IF = {
 	set_variable = { PHI_philippine_army_army_org_factor = -0.5 }
 	set_variable = { PHI_philippine_army_max_planning_factor = 0 }
 	set_variable = { PHI_philippine_army_conscription = 0 }
-	set_variable = { PHI_army_attack = -0.2}
-	set_variable = { PHI_army_defence = -0.2}
+	set_variable = { PHI_army_attack = -0.5}
+	set_variable = { PHI_army_defence = -0.5}
+	set_variable = { PHI_army_morale_factor = 0}
+	set_variable = { PHI_surrender_limit = 0.3}
 
 
 	## American Interference
@@ -293,8 +295,9 @@ IF = {
 	set_variable = { PHI_american_intervention_value_to_add = 0 }
 
 	## Army Air Corps
+	add_dynamic_modifier = { modifier = PHI_philippine_army_air_corps_dynamic_modifier }
 	set_variable = { PHI_philippine_army_air_corps_experience_gain_air_factor = 0.05 }
-	set_variable = { PHI_philippine_army_air_corps_air_mission_efficiency = 0 }
+	set_variable = { PHI_philippine_army_air_corps_air_mission_efficiency = -0.2 }
 	set_variable = { PHI_philippine_army_air_corps_air_nav_efficiency = 0 }
 	set_variable = { PHI_philippine_army_air_corps_air_range_factor = 0 }
 

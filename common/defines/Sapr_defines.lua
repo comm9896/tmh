@@ -214,9 +214,9 @@ NDefines.NNavy.OUT_OF_FUEL_TORPEDO_FACTOR = -0.8; --атака торпед
 NDefines.NNavy.DAILY_MANPOWER_GAIN_RATIO = 0.5;--0,1								-- скорость пополнения менпавера в кораблях
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0;--100							-- стоимость снятие гордости флота
 
-NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1;--60								-- кол-во дней для подготовки высадки
-NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- кап высадок
-NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- кап дивизий для 1 стрелочки
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1;--60								-- базовое кол-во дней для подготовки высадки
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 1;									-- базовый  кап высадок
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 4;							-- базовый кап дивизий для 1 стрелочки
 
 --эффективность конвоев
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.5;--1,25							-- как сильно падает эффективность в зависимости от потери конвоев. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.

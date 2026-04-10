@@ -202,7 +202,7 @@ initial_show_position = {
 		completion_reward = {
 			327 = { #Manila
 				
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2766,7 +2766,7 @@ initial_show_position = {
 		cost = 2
 
 		available = {
-
+		has_completed_focus = PHI_army_of_the_philippines
 		}
 
 		bypass = {
@@ -2776,9 +2776,10 @@ initial_show_position = {
 	
 		completion_reward = {
 			custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
-				add_to_variable = { PHI_army_attack = 0.075 tooltip = army_attack_factor_tt}
-				add_to_variable = { PHI_army_defence = 0.075 tooltip = army_defence_factor_tt}
+				add_to_variable = { PHI_army_attack = 0.175 tooltip = army_attack_factor_tt}
+				add_to_variable = { PHI_army_defence = 0.175 tooltip = army_defence_factor_tt}
 				add_to_variable = { PHI_philippine_army_army_org_factor = 0.2 tooltip = army_org_factor_tt}
+				add_to_variable = { PHI_army_morale_factor = -0.25 tooltip = army_morale_factor_tt }
 		}
 	}
 
@@ -2819,9 +2820,10 @@ initial_show_position = {
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
-				add_to_variable = { PHI_army_attack = 0.075 tooltip = army_attack_factor_tt}
-				add_to_variable = { PHI_army_defence = 0.075 tooltip = army_defence_factor_tt}
+				add_to_variable = { PHI_army_attack = 0.175 tooltip = army_attack_factor_tt}
+				add_to_variable = { PHI_army_defence = 0.175 tooltip = army_defence_factor_tt}
 				add_to_variable = { PHI_philippine_army_army_org_factor = 0.2 tooltip = army_org_factor_tt}
+				add_to_variable = { PHI_army_morale_factor = -0.25 tooltip = army_morale_factor_tt }
 			show_ideas_tooltip = PHI_russell_volckmann_theorist
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4021,10 +4023,15 @@ initial_show_position = {
 				add_to_variable = { PHI_army_attack = 0.05 tooltip = army_attack_factor_tt}
 				add_to_variable = { PHI_army_defence = 0.05 tooltip = army_defence_factor_tt}
 				add_to_variable = { PHI_philippine_army_army_org_factor = 0.1 tooltip = army_org_factor_tt}
+		custom_effect_tooltip = PHI_island_nation_dynamic_modifier_tt
+				add_to_variable = { PHI_island_nation_convoy_retreat_speed = -5 tooltip = convoy_retreat_speed_tt}
+				add_to_variable = { PHI_island_nation_invasion_preparation = 10 tooltip =  naval_invasion_prep_speed_tt}
+				add_to_variable = { PHI_island_nation_convoy_raiding_efficiency_factor = 1 tooltip = convoy_raiding_efficiency_factor_tt }
 			add_dynamic_modifier = {
     			modifier = PHI_philippine_resistance_movement_dynamic_modifier
 			}
-			
+				add_offsite_building = { type = industrial_complex level = 20 }
+				add_offsite_building = { type = arms_factory level = 20 }
 			if = {
 				limit = {
 					has_character = USA_douglas_macarthur
@@ -5624,7 +5631,7 @@ focus = {
 	
 		completion_reward = {
 			custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
-			add_to_variable = { PHI_philippine_army_army_org_factor = 0.15 tooltip = army_org_factor_tt }
+			add_to_variable = { PHI_army_morale_factor = 0.5 tooltip = army_morale_factor_tt }
 		}
 	}
 

@@ -241,6 +241,7 @@ anti_japan_mood_Soviet_lend_lease = {#STATE MODIFIER
 }
 entrenchment_defense = {
 	icon = GFX_unplanned_offensive
+		attacker_modifier = yes
 	enable = { always = yes } 
 	max_dig_in = 10
 	dig_in_speed_factor = 1
@@ -392,6 +393,16 @@ no_mines_before_war = {
 	enable = { always = yes }
 
 mines_planting = -5000
+
+
+}
+
+phi_no_sea_drop = {
+icon = GFX_modifiers_generic_resistance
+	attacker_modifier = yes
+
+	amphibious_invasion_defence = 100
+	naval_invasion_prep_speed = -100
 
 
 }

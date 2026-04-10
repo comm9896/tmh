@@ -4417,7 +4417,6 @@ JAP_in_war = {
 				shore_bombardment_bonus = 0.25
 				naval_invasion_plan_cap = 35	
 				amphibious_invasion = 1
-				amphibious_invasion_defence = 1
 				naval_invasion_prep_speed = 1
 				naval_invasion_planning_bonus_speed = 1
 				floating_harbor_supply = 1

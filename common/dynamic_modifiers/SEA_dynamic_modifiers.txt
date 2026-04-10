@@ -902,6 +902,8 @@ PHI_philippine_army_dynamic_modifier = {
 	max_planning_factor = PHI_philippine_army_max_planning_factor
 	conscription = PHI_philippine_army_conscription
 	command_power_gain_mult = PHI_philippine_army_command_power_gain_mult
+	army_morale_factor = PHI_army_morale_factor
+	surrender_limit	= PHI_surrender_limit
 }
 
 PHI_philippine_army_air_corps_dynamic_modifier = {

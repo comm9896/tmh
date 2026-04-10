@@ -1,0 +1,12 @@
+state_categories={
+	phi = {
+		local_building_slots = 4
+	    
+	    buildings_max_level = {
+			bunker = 1
+			coastal_bunker = 1
+        	air_base = 3
+    	}
+		color = { 200 160 0 }
+	}
+}

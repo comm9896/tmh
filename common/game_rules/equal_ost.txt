@@ -1,0 +1,15 @@
+Equal_ost = {
+	name = "Equal_ost"
+	group = "Equal_ost"
+	icon = "GFX_wargoals"
+	option = {
+		name = "Equal_ost_1v1"
+		text = Equal_ost_tt
+		desc = "Equal_ost_desc"
+	}
+	default = {
+		name = "BLOCKED"
+		text = "RULE_OPTION_BLOCKED"
+		desc = "Equal_ost_1v1_not"
+	}
+}

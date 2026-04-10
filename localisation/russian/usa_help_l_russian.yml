@@ -99,7 +99,7 @@ JAP_CHI_anti_japan_mood:0 "Активизация партизанских де�
 JAP_CHI_anti_japan_mood_Soviet_lend_lease:0 "Одобрение советских кредитов объединённому фронту"
 JAP_CHI_anti_japan_mood_indochina:0 "Соглашение о транзите через индокитайскую железную дорогу"
 JAP_CHI_anti_japan_mood_birma:0 "Китайско-британское соглашение"
-
+JAP_in_war:0 "В войне"
 
 JAP_anti_guarilla_operation_coastal:0 "Искоренить партизан в регионе [FROM.GetName]"
 JAP_anti_guarilla_operation:0 "Искоренить партизан в регионе [FROM.GetName]"
@@ -195,3 +195,25 @@ anti_japan_mood_USA_lend_lease:0 "Расширенный ленд-лиз §YСШ
 anti_japan_mood_ledo_road:0 "Помощь союзников через §Yдорогу Ледо§!"
 JAP_no_recruit:0 "Сопротивление японской оккупации"
 
+
+
+
+
+Diplomatic_isolation:0 "Дипломатическая изоляция"
+Diplomatic_isolation_desc:0 "Не позволяет отправлять экспедиционные войска и ленд-лиз"
+Diplomatic_isolation_phi:0 "Дипломатическая изоляция Филиппин"
+Diplomatic_isolation_phi_desc:0 "Не позволяет отправлять экспедиционные войска и ленд-лиз"
+Diplomatic_isolation_axies:0 "Дипломатическая изоляция союзников Германии"
+Diplomatic_isolation_axies_desc:0 "Не позволяет отправлять экспедиционные войска и ленд-лиз Германии, не позволяет держать авиацию над СССР"
+Diplomatic_isolation_ger:0 "Дипломатическая изоляция Германии"
+Diplomatic_isolation_ger_desc:0 "Не позволяет отправлять экспедиционные войска и ленд-лиз Италии, Венгрии, Болгарии, Румынии"
+
+
+
+Equal_ost:0 "Ост фронт 1к1 "
+Equal_ost_desc:0 "Запрещает ленд-лизать и отправлять экспедиционные корпуса италии и минорам. Авиацию над СССР только от Германии "
+
+Equal_ost_1v1:0 "Ост фронт 1к1 "
+Equal_ost_tt:0 "Запрещает ленд-лизать и отправлять экспедиционные корпуса италии и минорам. Авиацию над СССР только от Германии "
+
+Equal_ost_1v1_not:0 "Как обычно"

@@ -1081,6 +1081,25 @@ DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 }
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
+			NOT = {
+					and = {
+						has_idea = Diplomatic_isolation_axies
+						FROM = { tag = GER }
+					}
+					
+				}
+			}
+	if = {
+			NOT = {
+					has_idea = Diplomatic_isolation
+			}
+		}
+	if = {
+			NOT = {
+					has_idea = Diplomatic_isolation_phi
+				}
+			}
+	if = {
 		limit = {
 			has_game_rule = {
 				rule = allow_lend_lease
@@ -1136,6 +1155,25 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+			NOT = {
+					has_idea = Diplomatic_isolation_ger
+				}
+			}
+	if = {
+			NOT = {
+				AND = {
+					FROM = { tag = PHI }
+					FROM = { tag = GER }
+					has_idea = Diplomatic_isolation
+				}
+			}
+		}
+	if = {
+			NOT = {
+					has_idea = Diplomatic_isolation_phi
+				}
+			}
 	if = {
 		limit = {
 			has_game_rule = {
@@ -2129,3 +2167,25 @@ dismantle_faction = {
 
 	}
 }
+DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
+	if = {
+			NOT = {
+				AND = {
+					FROM = { tag = PHI }
+					has_idea = Diplomatic_isolation
+				}
+			}
+		}
+	if = {
+			NOT = {
+					has_idea = Diplomatic_isolation_phi
+				}
+			}
+	if = {
+			NOT = {
+					has_idea = Diplomatic_isolation_axies
+				}
+			}
+			
+}
+
