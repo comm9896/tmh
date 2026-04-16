@@ -568,6 +568,11 @@ focus_tree = {
 
 			add_threat = 1			
 			
+			GER = {
+				add_to_faction = HUN
+			}
+			custom_effect_tooltip = wuw_HUN_seek_german_contracts_tt			
+			
 			IF = {
 				limit = {
 					FRA = {
@@ -930,6 +935,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
+			
+			GER = {
+				add_to_faction = HUN
+			}
+			custom_effect_tooltip = wuw_HUN_seek_german_contracts_tt			
 
 			IF = {
 				limit = {
@@ -1720,10 +1730,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
+			has_war = yes
 			OR = {
 				owns_state = 664
 				owns_state = 73
@@ -1823,10 +1830,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			GER = {
-				add_to_faction = HUN
-			}
-			custom_effect_tooltip = wuw_HUN_seek_german_contracts_tt
+
 			IF = {
 				limit = {
 					GER = {

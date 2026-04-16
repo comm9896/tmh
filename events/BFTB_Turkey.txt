@@ -170,10 +170,6 @@ country_event = {
 		name = bftb_turkey.8.a #we need to stand by Turkey
 		ai_chance = {
 			factor = 30
-			modifier = {
-				has_completed_focus = ENG_global_defense
-				factor = 80
-			}
 		}
 		add_stability = -0.05
 		custom_effect_tooltip = TUR_britain_stands_up_for_turkey_tt

@@ -856,7 +856,7 @@ USA_lockheed_organization = {
 			air_attack = 0.05
 		}
 	}
-		add_trait = {
+	add_trait = {
 		token = PHI_mio_trait_improvised_bombs
 		name = PHI_mio_trait_improvised_bombs
 		icon = GFX_generic_mio_trait_icon_air_ground_attack
@@ -892,6 +892,8 @@ USA_lockheed_organization = {
 		ai_will_do = {
 			base = 2
 		}
+	}
+	
 	add_trait = {
 		token = USA_mio_trait_mechanized_production
 		name = USA_mio_trait_mechanized_production
@@ -910,15 +912,15 @@ USA_lockheed_organization = {
 		} 
 	}
 	
-		override_trait = {
-			token = generic_mio_trait_heavy_fighter_specialization
-			equipment_bonus = {
-				air_range = 0.1
-				air_attack = 0.05
-			}
+	override_trait = {
+		token = generic_mio_trait_heavy_fighter_specialization
+		equipment_bonus = {
+			air_range = 0.1
+			air_attack = 0.05
 		}
 	}
 }
+
 USA_douglas_aircraft_company_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_douglas_aircraft_company

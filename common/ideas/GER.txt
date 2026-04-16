@@ -6260,6 +6260,9 @@ ideas = {
 				#production_lack_of_resource_penalty_factor = -0.05?
 				#industry_free_repair_factor = 0.15?
 			}
+			research_bonus = {
+				construction_tech = 0.1
+			}			
 		}
 
 		GER_goring_four_year_plan_plenipotentiary = { # Should match country leader trait GER_goring_fuhrer
@@ -6285,6 +6288,9 @@ ideas = {
 				country_resource_aluminium = 32
 				country_resource_coal = 32				
 			}
+			research_bonus = {
+				construction_tech = 0.2
+			}				
 		}
 
 		GER_himmler_chief_of_german_police = {

@@ -322,7 +322,6 @@ country_event = {
 		
 		FRA = { 
 			set_cosmetic_tag = FRA_FREE 
-			country_event =  Sapr_FRA_army_posle_capa.1
 			if = {
 				limit = {
 					capital_scope = {

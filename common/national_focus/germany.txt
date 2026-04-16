@@ -1208,7 +1208,7 @@ focus_tree = {
 						}
 					}					
 				}
-				date > 1942.01.01
+				date > 1941.04.01
 			}
 		}
 
@@ -1635,6 +1635,12 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = GER_fortify_the_vaterland_unlock_decision_tt
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_special_project = {
+				project = sp:sp_land_stronghold_network
+				scientist = GER_karl_heinrich_emil_becker
+			}				
 		}
 	}
 
@@ -6408,7 +6414,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_develop_heraeus_facilities
-		cost = 10
+		cost = 5
 		available = {
 			has_war_with_major = yes
 			has_tech = advanced_machine_tools
@@ -7747,7 +7753,7 @@ focus_tree = {
 		cost = 5
 		available = {
 
-			has_tech = centimetric_radar
+			date > 1941.01.01
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
 				OR = {
@@ -7985,7 +7991,17 @@ focus_tree = {
 				expire = 0
 			}
 
-
+			
+			every_state = {
+				limit = {
+					is_core_of = FIN
+					is_fully_controlled_by = FIN
+				}
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+					days = 180				
+				}				
+			}
 		}
 	}
 
@@ -8081,6 +8097,63 @@ focus_tree = {
 			custom_effect_tooltip = GER_uplift_the_rosenberg_office_tt
 		}
 	}
+	focus = {
+		id = GER_war_production
+		icon = GFX_focus_generic_mass_production
+		prerequisite = { focus = GER_uplift_the_rosenberg_office }
+		prerequisite = { focus = GER_improve_the_logistics_system }
+		prerequisite = { focus = GER_expand_ss_recruitment }
+
+		x = -1
+		y = 1
+		relative_position_id = GER_uplift_the_rosenberg_office
+		cost = 5
+		available = {
+
+		}
+
+		continue_if_invalid = yes
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			
+			every_country = {
+				limit = {
+					or = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+				add_tech_bonus = {
+					name = GER_war_production
+					bonus = 1
+					uses = 2
+					category = industry
+				}			
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_conversion_cost_civ_to_mil_factor = -0.2
+				tooltip = conversion_cost_civ_to_mil_factor_tt
+			}
+			add_to_variable = { 
+				GER_industrial_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = { 
+				GER_industrial_production_factory_start_efficiency_factor = 0.05
+				tooltip = production_factory_start_efficiency_factor_tt
+			}
+			add_to_variable = { 
+				GER_industrial_line_change_production_efficiency_factor = 0.05
+				tooltip = line_change_production_efficiency_factor_tt
+			}
+
+		}
+	}
 		
 	focus = {
 		id = GER_defend_the_vaterland
@@ -8089,7 +8162,7 @@ focus_tree = {
 		prerequisite = { focus = GER_improve_the_logistics_system }
 		prerequisite = { focus = GER_expand_ss_recruitment }
 
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GER_uplift_the_rosenberg_office
 		cost = 5
@@ -8107,7 +8180,8 @@ focus_tree = {
 			add_to_variable = { 
 				GER_military_max_dig_in_factor = 0.2
 				tooltip = max_dig_in_factor_tt
-			}			
+			}	
+			
 
 		}
 	}
@@ -8116,10 +8190,12 @@ focus_tree = {
 		id = GER_totaler_krieg
 		icon = GFX_GER_total_war
 		prerequisite = { focus = GER_defend_the_vaterland }
+		prerequisite = { focus = GER_war_production }		
+
 		
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = GER_defend_the_vaterland
+		relative_position_id = GER_war_production
 		cost = 5
 		available = {
 			date > 1942.01.01
@@ -9547,12 +9623,29 @@ focus_tree = {
 				CATEGORY = GER_integration_of_puppet_economies_dec_cat
 				DESC = GER_integration_of_puppet_economies_decisions_tt
 			}
-			add_tech_bonus = {
-				name = GER_plenipotentiary_of_the_four_year_plan
-				uses = 2
-				bonus = 1
-				category = excavation_tech
-			}			
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			every_country = {
+				limit = {
+					or = {
+						tag = GER
+						is_in_faction_with = GER
+					}
+				}
+				add_tech_bonus = {
+					name = GER_plenipotentiary_of_the_four_year_plan
+					uses = 2
+					bonus = 1
+					category = excavation_tech
+				}	
+				add_tech_bonus = {
+					name = GER_plenipotentiary_of_the_four_year_plan
+					uses = 1
+					bonus = 1
+					category = construction_tech
+				}				
+			}	
 		}
 	}
 

@@ -75,6 +75,8 @@ last_stand = { #отчаяная оборона
 
     available = { 
 		NOT = {has_country_flag = USA_noman_flag}
+		has_war = yes
+		date > 1942.01.01
 	}
     visible = {
     }

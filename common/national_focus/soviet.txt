@@ -879,7 +879,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes						
 				}
 				hidden_effect = {
@@ -896,28 +896,6 @@ focus_tree = {
 					}
 				}
 				custom_effect_tooltip = SOV_oil_production_silo_tt
-			}
-			#Build Railways in Caucasus
-			if = {
-				limit = {
-					has_full_control_of_state = 229 #BAKU
-					has_full_control_of_state = 230 #ARMENIA
-					has_full_control_of_state = 231 #GEORGIA
-				}
-				# Baku - Tbilisi
-				build_railway = {
-					path = { 7661 1536 4614 4477 11645 11674 1539 11708 1599 }
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 232 #DAGESTAN
-					has_full_control_of_state = 821 #CHECHNYA-INGUSHETIA
-				}
-				# Makhachkala (Hub province) - Grozny
-				build_railway = {
-					path = { 3668 3682 3672 }
-				}
 			}
 		}
 	}
@@ -2917,43 +2895,52 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			if = {
+
+			every_military_industrial_organization = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					has_mio_trait = SOV_mio_trait_merge_plant_no_174 #All Tank MIOs have this trait
 				}
-				#TANKS
-				every_military_industrial_organization = {
-					limit = {
-						has_mio_trait = SOV_mio_trait_merge_plant_no_174 #All Tank MIOs have this trait
-					}
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_174
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_112
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_ural_heavy_machine_building_plant
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				#MATERIEL
-				every_military_industrial_organization = {
-					limit = {
-						has_mio_trait = SOV_mio_trait_merge_nkmz_plant #All Materiel MIOs have this trait
-					}
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_nkmz_plant
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
-				}
-				mio:SOV_grabin_design_bureau_organization = {
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_172
-				}
-				mio:SOV_tula_arms_plant_organization = {
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_622
-				}
-				mio:SOV_gaz_organization = {
-					unlock_mio_trait_tooltip = SOV_mio_trait_merge_automobile_tool_plant
-				}
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_174
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_112
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_ural_heavy_machine_building_plant
 			}
-			else = {
-				custom_effect_tooltip = SOV_merge_tank_and_materiel_plants_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			#MATERIEL
+			every_military_industrial_organization = {
+				limit = {
+					has_mio_trait = SOV_mio_trait_merge_nkmz_plant #All Materiel MIOs have this trait
+				}
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_nkmz_plant
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
 			}
+			mio:SOV_grabin_design_bureau_organization = {
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_172
+			}
+			mio:SOV_tula_arms_plant_organization = {
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_622
+			}
+			mio:SOV_gaz_organization = {
+				unlock_mio_trait_tooltip = SOV_mio_trait_merge_automobile_tool_plant
+			}
+			
+			mio:SOV_nevskoye_design_bureau_organization = {
+				add_mio_size = 4
+				add_mio_funds_gain_factor = 0.25
+			}
+			mio:SOV_rubin_design_bureau_organization = {
+				add_mio_size = 4
+				add_mio_funds_gain_factor = 0.25
+			}
+			mio:SOV_black_sea_shipyard_organization = {
+				add_mio_size = 4
+				add_mio_funds_gain_factor = 0.25
+			}
+			mio:SOV_sevastopol_marine_plant_organization = {
+				add_mio_size = 4
+				add_mio_funds_gain_factor = 0.25
+			}			
 		}
 	}
 
@@ -3185,12 +3172,94 @@ focus_tree = {
 				set_state_category = megalopolis 			
 			}
 
-	
-			custom_effect_tooltip = generic_skip_one_line_tt
 
-			remove_ideas = SOV_Disarganization
 		}
 	}
+
+	focus = {
+		id = SOV_military_reorganization
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SOV_desperate_measures }
+
+		x = 1
+		y = 1
+		relative_position_id = SOV_desperate_measures
+		cost = 15
+
+		select_effect = {
+			add_ideas = SOV_military_reorganization_ns
+		}
+
+		available = {
+		    not = {
+				has_country_flag = Sapr_duelmiy_mode
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			#Tooltip purposes (Select Effect)
+			custom_effect_tooltip = SOV_focus_select_effect_tt
+			effect_tooltip = {
+				add_ideas = SOV_military_reorganization_ns
+			}
+
+			#(Complete Effect)
+			custom_effect_tooltip = SOV_focus_complete_effect_tt
+			hidden_effect = {
+				remove_ideas = SOV_military_reorganization_ns
+			}
+			
+			remove_ideas = {
+				SOV_less_XP
+			}
+			MON = {
+				remove_ideas = {
+					MON_less_XP
+				}			
+			}
+			
+			
+			
+			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
+			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
+			custom_effect_tooltip = SOV_military_reorganization_ns_tt
+			
+
+			
+			army_experience = 100
+			add_command_power = 25
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_idea = dmitry_lelyushenko
+				}
+				deactivate_advisor = dmitry_lelyushenko
+				activate_advisor =  leonid_govorov
+				add_political_power = 50				
+			}
+			else = {
+				add_political_power = 150			
+			}
+
+
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			565 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}				
+		}
+	}
+
+
 
 	focus = {
 		id = SOV_an_adaptable_army
@@ -3217,10 +3286,10 @@ focus_tree = {
 	focus = {
 		id = SOV_lessons_of_war
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SOV_desperate_measures }
-		x = 3
+		prerequisite = { focus = SOV_military_reorganization }
+		x = 1
 		y = 1
-		relative_position_id = SOV_desperate_measures
+		relative_position_id = SOV_military_reorganization
 		cost = 5
 
 		available = {
@@ -3255,57 +3324,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_penal_battalions
-		icon = GFX_focus_SOV_penal_battalions
-		prerequisite = { focus = SOV_barrier_troops }
-		x = 0
-		y = 1
-		relative_position_id = SOV_barrier_troops
-		cost = 5
-
-		available = {
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			#Spawn Penal divisions
-			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
-			hidden_effect = {
-				division_template = {
-					name = "Shtrafnaya Chast"
-					division_names_group = SOV_PEN_01
-					is_locked = yes
-
-					regiments = {
-						penal_battalion = { x = 0 y = 0 }
-						penal_battalion = { x = 0 y = 1 }
-						penal_battalion = { x = 0 y = 2 }
-						penal_battalion = { x = 1 y = 0 }
-						penal_battalion = { x = 1 y = 1 }
-						penal_battalion = { x = 1 y = 2 }
-						penal_battalion = { x = 2 y = 0 }
-						penal_battalion = { x = 2 y = 1 }
-						penal_battalion = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
-				}
-
-				SOV_spawn_penal_divisions_effect = yes
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_organization_of_the_partisans
 		icon = GFX_focus_focus_fra_maquis
-		prerequisite = { focus = SOV_desperate_measures }
+		prerequisite = { focus = SOV_military_reorganization }
 		
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = SOV_desperate_measures
+		relative_position_id = SOV_military_reorganization
 		cost = 5
 		
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
@@ -3410,10 +3435,10 @@ focus_tree = {
 	focus = {
 		id = SOV_barrier_troops
 		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = SOV_desperate_measures }
-		x = 5
+		prerequisite = { focus = SOV_military_reorganization }
+		x = 3
 		y = 1
-		relative_position_id = SOV_desperate_measures
+		relative_position_id = SOV_military_reorganization
 		cost = 5
 
 		available = {
@@ -3427,6 +3452,55 @@ focus_tree = {
 			custom_effect_tooltip = SOV_barrier_troops_ns_tt
 		}
 	}
+
+	focus = {
+		id = SOV_penal_battalions
+		icon = GFX_focus_SOV_penal_battalions
+		prerequisite = { focus = SOV_barrier_troops }
+		x = 0
+		y = 1
+		relative_position_id = SOV_barrier_troops
+		cost = 5
+
+		available = {
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			#Spawn Penal divisions
+			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
+			hidden_effect = {
+				division_template = {
+					name = "Shtrafnaya Chast"
+					division_names_group = SOV_PEN_01
+					is_locked = yes
+
+					regiments = {
+						penal_battalion = { x = 0 y = 0 }
+						penal_battalion = { x = 0 y = 1 }
+						penal_battalion = { x = 0 y = 2 }
+						penal_battalion = { x = 1 y = 0 }
+						penal_battalion = { x = 1 y = 1 }
+						penal_battalion = { x = 1 y = 2 }
+						penal_battalion = { x = 2 y = 0 }
+						penal_battalion = { x = 2 y = 1 }
+						penal_battalion = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery  = { x = 0 y = 1 }  
+						anti_air = { x = 0 y = 2 } 
+						recon  = { x = 0 y = 3 }
+						anti_tank  = { x = 0 y = 4 }	
+					}
+				}
+
+				SOV_spawn_penal_divisions_effect = yes
+			}
+		}
+	}
+
 
 	focus = {
 		id = SOV_experts_in_camouflage

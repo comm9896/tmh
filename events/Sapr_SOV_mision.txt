@@ -94,6 +94,77 @@ country_event = {
 }
 
 
+add_namespace = SOV_SOV_krasnaya_gorka_battery_destroy
+
+country_event = {
+	id = SOV_SOV_krasnaya_gorka_battery_destroy.1
+	title = SOV_SOV_krasnaya_gorka_battery_destroy.1.b
+	desc = SOV_SOV_krasnaya_gorka_battery_destroy.1.c
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {	
+		name = SOV_SOV_krasnaya_gorka_battery_destroy.1.d	
+		195 = {
+			remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = SOV }
+			remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = GER }
+			remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ROM }
+			remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ITA }
+			remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = HUN }
+			remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = BUL }	
+		}
+	}		
+}
+
+add_namespace = SOV_SOV_seraya_loshad_battery_destroy
+  
+
+country_event = {
+	id = SOV_SOV_seraya_loshad_battery_destroy.1
+	title = SOV_SOV_seraya_loshad_battery_destroy.1.b
+	desc = SOV_SOV_seraya_loshad_battery_destroy.1.c
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {	
+		name = SOV_SOV_seraya_loshad_battery_destroy.1.d	
+		208 = {
+			remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = SOV }
+			remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = GER }
+			remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = ROM }
+			remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = ITA }
+			remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = HUN }
+			remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = BUL }	
+		}
+	}		
+}
+
+add_namespace = SOV_SOV_armored_battery_35_destroy
+  
+
+country_event = {
+	id = SOV_SOV_armored_battery_35_destroy.1
+	title = SOV_SOV_armored_battery_35_destroy.1.b
+	desc = SOV_SOV_armored_battery_35_destroy.1.c
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {	
+		name = SOV_SOV_armored_battery_35_destroy.1.d	
+		137 = {
+			remove_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = SOV }
+			remove_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = GER }
+			remove_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = ROM }
+			remove_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = ITA }
+			remove_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = HUN }
+			remove_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = BUL }	
+		}
+	}		
+}
+
 
 add_namespace = SOV_Siege_of_Sevastopol
 

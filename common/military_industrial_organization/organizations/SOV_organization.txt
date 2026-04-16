@@ -701,7 +701,7 @@ SOV_nevskoye_design_bureau_organization = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 		}
 
@@ -734,7 +734,7 @@ SOV_nevskoye_design_bureau_organization = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			#Only exists in this MIO
 		}
@@ -785,7 +785,7 @@ SOV_rubin_design_bureau_organization = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 		}
 
@@ -815,8 +815,7 @@ SOV_rubin_design_bureau_organization = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-				has_completed_focus = SOV_surface_warfare
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			#Only exists in this MIO
 		}
@@ -847,8 +846,7 @@ SOV_rubin_design_bureau_organization = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-				has_completed_focus = SOV_submarine_warfare
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			#Only exists in this MIO
 		}
@@ -886,7 +884,7 @@ SOV_black_sea_shipyard_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 		}
 
@@ -922,8 +920,7 @@ SOV_black_sea_shipyard_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
-				has_completed_focus = SOV_submarine_warfare
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			#Only exists in this MIO
 		}
@@ -961,7 +958,7 @@ SOV_sevastopol_marine_plant_organization = {
 				has_full_control_of_state = 227 #STALINO
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 		}
 
@@ -992,7 +989,7 @@ SOV_sevastopol_marine_plant_organization = {
 				has_full_control_of_state = 197 #MYKOLAIV
 			}
 			FROM = {
-				has_completed_focus = SOV_merge_naval_plants
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			#Only exists in this MIO
 		}
