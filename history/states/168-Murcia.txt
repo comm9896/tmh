@@ -1,18 +1,22 @@
 state={
 	id=168
 	name="STATE_168"
-
-	history={
-		1936.1.1.12 = {	    
-			owner = POR
-			add_core_of = POR
+	
+		history={
+		1936.1.1.12 = {	  
 			buildings = {
 				infrastructure = 3
-			}				
+				industrial_complex = 2
+				}
+			owner = SPR
+			add_core_of = SPR
+			add_core_of = TIB
+			
 		}
 		1936.1.1.13 = {	    
-			owner = POR
-			add_core_of = POR
+			owner = SPR
+			add_core_of = SPR
+			add_core_of = TIB
 		}		
 		1936.1.1.14 = {
 			owner = POR

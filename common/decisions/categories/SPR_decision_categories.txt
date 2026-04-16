@@ -2,15 +2,6 @@
 ##### SPR ######
 ################
 
-SPR_rerol_country = {
-	allowed = {
-		original_tag = SPR
-	}	
-}
-
-
-
-
 SPR_opposition_civil_war_preparations = {
 	priority = 9
 	icon = spr_the_inevitable_civil_war
@@ -68,49 +59,14 @@ SPR_the_inevitable_civil_war = {
 	}
 }
 
-SPR_civil_war_offensives = {
-	priority = 8
-	icon = spr_civil_war_offensives
+SPR_foreign_arms_purchases = {
 
-	picture = GFX_decision_cat_picture_spr_civil_war_offensives
-
-	on_map_area = {
-		state = 41
-		name = SPR_civil_war_offensives_map_category_name
-		zoom = 250
-	}
-
-	visible_when_empty = yes
-	
-	allowed = {
-		original_tag = SPR
-		has_dlc = "La Resistance"
-	}
+	icon = generic_economy
 
 	visible = {
-		SPR_scw_in_progress = yes
-		any_owned_state = {
-			has_state_flag = SPR_unplanned_offensive_flag
-		}
+		has_completed_focus = SPA_equipment_shipments
 	}
-}
 
-SPA_reassert_american_dominance = {
-
-	icon = spr_reassert_american_dominance
-	
-	allowed = {
-		original_tag = SPR
-		has_dlc = "La Resistance"
-	}
-}
-
-
-
-SPR_the_seeds_of_revolution = {
-
-	icon = spr_the_seeds_of_revolution
-	
 	allowed = {
 		original_tag = SPR
 		has_dlc = "La Resistance"
@@ -134,7 +90,10 @@ SPR_recovering_from_civil_war = {
 	icon = generic_industry
 	
 	allowed = {
-		original_tag = SPR
+		OR = {
+			original_tag = SPR
+			original_tag = PHI
+		}
 		has_dlc = "La Resistance"
 	}
 }

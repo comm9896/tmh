@@ -2,16 +2,6 @@
 		on_startup = {
 			#KOREA/JAPAN - Set up the resistance DMs 
 			effect = {
-
-				IF = {
-					limit = {
-						NOT = {
-							has_game_rule = {
-								rule = asia_colonization_status
-								option = ASIA_DECOLONIZED
-							}
-						}
-					}
 					every_state = {
 						limit = {
 							OR = {
@@ -129,12 +119,17 @@
 				}
 			HUN = {add_ideas = Diplomatic_isolation_axies}
 			ROM = {add_ideas = Diplomatic_isolation_axies}
-			ITA = {add_ideas = Diplomatic_isolation_axies}
+			ITA = {add_ideas = Diplomatic_isolation_ita}
 			BUL = {add_ideas = Diplomatic_isolation_axies}
 			GER = {add_ideas = Diplomatic_isolation_ger}
+			SPR = {add_ideas = Diplomatic_isolation_axies}
 			}
 		}
 	}
+
+
+
+
 }
 
 				

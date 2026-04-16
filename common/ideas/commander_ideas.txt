@@ -1,0 +1,37 @@
+ideas = {
+
+	country = {
+
+		SPR_civil_war = {
+
+					picture = SPA_crusade_against_democracy
+
+					allowed = {
+						original_tag = SPR
+					}
+					remove_cost = -1
+
+				modifier = {
+						stability_factor = -0.2
+						war_support_factor = -0.2
+						weekly_manpower = -5 650
+						consumer_goods_factor = 0.5	
+						production_speed_buildings_factor = -0.3
+						industrial_capacity_factory = -0.90
+						production_speed_industrial_complex_factor = -0.5
+						conversion_cost_mil_to_civ_factor = -1
+						conversion_cost_civ_to_mil_factor = 1
+				}
+
+
+
+		}		
+
+
+
+
+	}
+
+
+
+}

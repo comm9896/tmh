@@ -34,7 +34,7 @@ ideas = {
 		
 			modifier = {
 				resistance_target = -0.2
-				consumer_goods_factor = 0.30
+				consumer_goods_expected_value = 0.15
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
@@ -46,6 +46,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.2
 				production_factory_max_efficiency_factor = -0.2
 				line_change_production_efficiency_factor = 0.1
+				factory_energy_consumption = 0.45
 			}
 			
 			allowed_to_remove = {
@@ -503,7 +504,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -527,7 +528,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -551,7 +552,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -574,7 +575,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -598,7 +599,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -622,7 +623,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -645,7 +646,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 				conscription = 0.03
 			}
 		}
@@ -669,7 +670,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 				industrial_capacity_factory = 0.05
 				conscription = 0.03
 			}
@@ -694,7 +695,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 				conscription = 0.03
 			}
 		}
@@ -718,7 +719,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.05
 				conscription = 0.03
 			}
@@ -743,7 +744,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 				industrial_capacity_factory = 0.1
 				conscription = 0.03
 			}
@@ -768,7 +769,7 @@ ideas = {
 				stability_weekly = -0.01
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.1
 				conscription = 0.03
 			}
@@ -794,7 +795,7 @@ ideas = {
 				stability_weekly = -0.02
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.09
+				consumer_goods_factor = -0.10
 				industrial_capacity_factory = 0.1
 				conscription = 0.08
 			}
@@ -820,7 +821,7 @@ ideas = {
 				stability_weekly = -0.02
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.18
+				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.1
 				conscription = 0.08
 			}
@@ -846,7 +847,7 @@ ideas = {
 				stability_weekly = -0.02
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.3
+				consumer_goods_factor = -0.25
 				industrial_capacity_factory = 0.1
 				conscription = 0.08
 			}
@@ -1625,7 +1626,7 @@ ideas = {
 			}
 
 			modifier = {
-				offence = 0.1
+				army_attack_factor = 0.1
 			}
 		}
 
@@ -1682,7 +1683,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.20
 			}
 		}
 
@@ -1939,10 +1940,25 @@ ideas = {
 			picture = SPR_hispano_aviacion
 
 			
-			allowed = {					
+			allowed = {
+				OR = {
+					AND = {
+						has_dlc = "La Resistance"
+						original_tag = SPR
+					}
+					SWI_bba_lar = yes
+				}						
+									
 			}
 
 			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 169
+				}
 			}
 			
 			research_bonus = {
@@ -1957,6 +1973,11 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
+				modifier = {
+					factor = 0
+					SWI_bba_lar = yes
+					NOT = { has_global_flag = scw_over } 
+				}
 			}
 		}
 	}
@@ -2057,9 +2078,23 @@ ideas = {
 			picture = SPR_hispano_suiza
 			
 			allowed = {
+				OR = {
+					AND = {
+						has_dlc = "La Resistance"
+						original_tag = SPR						
+					}
+					SWI_bba_lar = yes 
+				}
 			}
 
 			available = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = SPR_scw_not_in_progress_tt
+						NOT = { SPR_scw_in_progress = yes }
+					}
+					controls_state = 165
+				}
 			}
 			
 			research_bonus = {
@@ -2073,6 +2108,11 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
+				modifier = {
+					factor = 0
+					SWI_bba_lar = yes
+					NOT = { has_global_flag = scw_over } 
+				}
 			}
 		}
 
@@ -2177,6 +2217,7 @@ ideas = {
 			}
 
 			available = {
+			has_completed_focus = SPA_autarky 
 				OR = {
 					custom_trigger_tooltip = {
 						tooltip = SPR_scw_not_in_progress_tt
@@ -2187,15 +2228,16 @@ ideas = {
 			}
 			
 			research_bonus = {
-				synth_resources = 0.1
-				industry = 0.05
+				synth_resources = 0.30
 			}
 			
 			traits = { refinery_concern }
 			
 			modifier = {
+				fuel_gain_factor_from_states = 1
 			}
 		}
+
 
 	}
 }

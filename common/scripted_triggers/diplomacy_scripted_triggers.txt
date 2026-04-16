@@ -1083,7 +1083,37 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 			NOT = {
 					and = {
+						has_idea = Diplomatic_isolation_spr
+						FROM = { tag = GER }
+						FROM = { tag = ITA }
+						FROM = { tag = HUN }
+						FROM = { tag = ROM }
+						FROM = { tag = BUL }
+					}
+					
+				}
+			}
+	if = {
+			NOT = {
+					and = {
+						has_idea = Diplomatic_isolation_spr
+					}
+					
+				}
+			}
+	if = {
+			NOT = {
+					and = {
 						has_idea = Diplomatic_isolation_axies
+						FROM = { tag = GER }
+					}
+					
+				}
+			}
+	if = {
+			NOT = {
+					and = {
+						has_idea = Diplomatic_isolation_ita
 						FROM = { tag = GER }
 					}
 					
@@ -1157,13 +1187,18 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 			NOT = {
+						has_idea = Diplomatic_isolation_spr
+					}
+					
+			}
+			IF = {
+				NOT = {
 					and = {
 						has_idea = Diplomatic_isolation_USA
 						FROM = { tag = PHI }
 					}
-					
 				}
-			}
+				}
 	if = {
 			NOT = {
 					has_idea = Diplomatic_isolation_ger
@@ -1171,10 +1206,8 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 			}
 	if = {
 			NOT = {
-				AND = {
-					FROM = { tag = PHI }
-					FROM = { tag = GER }
-					has_idea = Diplomatic_isolation
+					has_idea = Diplomatic_isolation_ger
+					}
 				}
 			}
 		}
@@ -2177,6 +2210,12 @@ dismantle_faction = {
 	}
 }
 DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
+	if = {
+			NOT = {
+						has_idea = Diplomatic_isolation_ita
+
+				}
+			}
 	if = {
 			NOT = {
 				AND = {

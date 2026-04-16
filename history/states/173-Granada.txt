@@ -3,16 +3,25 @@ state={
 	name="STATE_173"
 	resources={
 		steel=8.000
+		oil = 4.000
 	}
 
 	history={
-		1936.1.1.12 = {	    
-			owner = POR
-			add_core_of = POR
+		1936.1.1.12 = {
+		buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				industrial_complex = 2
+				dockyard = 1
+				}
+			owner = SPR
+			add_core_of = SPR
+			add_core_of = TIB
 		}
 		1936.1.1.13 = {	    
-			owner = POR
-			add_core_of = POR
+			owner = SPR
+			add_core_of = SPR
+			add_core_of = TIB
 		}		
 		1936.1.1.14 = {
 			owner = POR

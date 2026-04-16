@@ -87,6 +87,26 @@ ideas = {
 				air_mission_efficiency = -1
 			}
 		}
+	Diplomatic_isolation_ita = {
+
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+			}
+			targeted_modifier = {
+			tag = SOV
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+		}
+	Diplomatic_isolation_spr = {
+
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+			}
+			targeted_modifier = {
+		}
 	Diplomatic_isolation_ger = {
 
 			removal_cost = -1

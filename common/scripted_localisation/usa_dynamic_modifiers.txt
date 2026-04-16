@@ -76,3 +76,39 @@ name = USA_unrestricted_submarine_warfare_tt
 		localization_key = idea_desc|USA_unrestricted_submarine_warfare
 	}
 }
+defined_text = {
+name = SPA_la_division_azul
+	text = {
+		trigger = {
+			has_idea = SPA_la_division_azul
+		}
+		localization_key = idea_desc|SPA_la_division_azul_1
+	}
+}
+defined_text = {
+name = SPA_la_division_azul_tt
+	text = {
+		trigger = {
+			has_idea = SPA_la_division_azul
+		}
+		localization_key = idea_desc|SPA_la_division_azul_2
+	}
+}
+defined_text = {
+name = SPA_la_division_azul
+	text = {
+		trigger = {
+			has_idea = SPA_la_division_azul
+		}
+		localization_key = idea_desc|SPA_la_division_azul
+	}
+}
+defined_text = {
+name = FRA_anti_bolshevist_volunteers_tt
+	text = {
+		trigger = {
+			has_idea = FRA_anti_bolshevist_volunteers
+		}
+		localization_key = idea_desc|FRA_anti_bolshevist_volunteers
+	}
+}

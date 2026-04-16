@@ -875,28 +875,7 @@ ideas = {
 				resistance_growth = -0.2
 			}
 		}
-		FRA_anti_bolshevist_volunteers = {
-			picture = generic_manpower_bonus
-			allowed = {
-				original_tag = FRA #should probably be VIC
-				always = no
-			}
 
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				send_volunteer_size = 3
-			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-		}
 		FRA_rebuild_the_military = {
 			picture = generic_infantry_bonus
 			allowed = {
