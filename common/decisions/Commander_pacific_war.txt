@@ -386,6 +386,50 @@ JAP_GER_SOV_WAR = {
 			}
 
 		}
+	JAP_HOL_has_capitulated = {
+	
+			priority = 110
+
+			icon = GFX_modifiers_generic_resistance #GFX_decision_generic_ignite_civil_war
+
+			available = {
+					hidden_trigger = { always = no }
+			}
+
+			days_mission_timeout = 30
+
+			fire_only_once = yes
+
+			activation = {
+			AND  = {
+				HOL = { has_capitulated = yes }
+				HOL = { not = {has_country_flag = Sapr_no_asia}}
+				}
+			}
+
+			visible = {
+			}
+
+			cancel_if_not_visible = no
+
+			is_good = no
+		
+			timeout_effect = {
+				JAP = {set_country_flag = HOL_has_capitulated}
+				every_state = {
+							limit = {
+								is_core_of = HOL
+							}
+							add_dynamic_modifier = {
+								modifier = anti_japan_mood_INS
+							}
+						add_dynamic_modifier = {
+								modifier = foreigh_resourses
+							}
+					}
+			}
+
+		}
 
 PHI_evacuation_army_davao = {
 			priority = 110
@@ -558,7 +602,6 @@ PHI_evacuate_industry = {
 						type = arms_factory
 						level = 1
 					}
-				
 				}
 			}
 				add_offsite_building = { type = arms_factory level = 1 }
@@ -594,9 +637,7 @@ PHI_convoy_sabotage = {
 
 		complete_effect = {
 		custom_effect_tooltip = PHI_convoy_sabotage_tt
-
 				PHI = {
-					custom_effect_tooltip = generic_skip_one_line_tt
 					hidden_effect = {
 						add_equipment_to_stockpile = {
 								type = convoy_1
@@ -646,7 +687,7 @@ PHI_convoy_sabotage = {
 			fire_only_once = yes
 
 			activation = {
-				has_war = yes
+				PHI = {has_war = yes}
 			}
 			allowed = { original_tag = PHI}
 
@@ -660,6 +701,7 @@ PHI_convoy_sabotage = {
 	timeout_effect = {
 	ENG = { add_to_faction = PHI }
 		}
+
 	}
 
 	PHI_collaborations = {
@@ -677,7 +719,7 @@ PHI_convoy_sabotage = {
 			fire_only_once = yes
 
 			activation = {
-				has_war = yes
+				PHI = {has_war = yes}
 			}
 
 			allowed = {}

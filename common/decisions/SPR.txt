@@ -1604,7 +1604,7 @@ political_actions = {
 		}
 
 		days_remove = 45
-
+		allowed = {tag = SPR}
 		complete_effect = {
 			army_experience = -199
 		}
@@ -1642,9 +1642,7 @@ political_actions = {
 
 		cancel_if_not_visible = yes
 
-		activation = {
-			always = no
-		}
+	SPA_fascist_crackdown_mission = {
 
 		visible = {
 		}
@@ -1671,7 +1669,7 @@ political_actions = {
 		icon = generic_ignite_civil_war
 
 		allowed = {
-			tag = SPR
+			tag = SPA
 		}
 
 		available = {

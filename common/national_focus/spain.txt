@@ -1900,13 +1900,13 @@ focus_tree = {
 			focus = SPA_la_division_azul
 		}
 		relative_position_id = SPA_la_division_azul
-		
+		mutually_exclusive = { focus = SPR_anti_democratic_volunteers }
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 
-					allow_branch = {
+			allow_branch = {
 			has_game_rule = {
 						rule = Equal_ost
 						option = DEFAULT
@@ -1943,9 +1943,9 @@ focus_tree = {
 	focus = {
 		id = SPR_anti_democratic_volunteers
 		icon = GFX_focus_attack_britain
-		x = 0
+		x = 2
 		y = 1
-
+		mutually_exclusive = { focus = VIC_anti_bolshevist_volunteers }
 		prerequisite = { 
 			focus = SPA_la_division_azul
 		}
@@ -1955,20 +1955,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-				allow_branch = {
-			has_game_rule = {
-						rule = Equal_ost
-						option = Equal_ost_1v1
-					}
-			}
+			#allow_branch = {
+			#has_game_rule = {
+			#			rule = Equal_ost
+			#			option = Equal_ost_1v1
+			#		}
+			#}
 		available = {
+
 		GER = {		
 			focus_progress = {
 				focus = GER_war_with_the_ussr
 				progress > 0.5
 							}
 			}
-			#GER = {has_completed_focus = }
 		}
 		
 		bypass = {
@@ -1997,7 +1997,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_stamp_out_the_maquis }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = SPA_la_division_azul
 		cost = 10
