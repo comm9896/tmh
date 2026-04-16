@@ -20,7 +20,7 @@ scripted_gui = {
 				always = yes
 			}
 		}
-	}
+	} 
 	
 	
 	st_country_powers = {	
@@ -32,10 +32,37 @@ scripted_gui = {
 				has_country_flag = transfer_enabled
 			}
 		}	
-		effects = {
+		effects = { 
+
+			Debuffing_open_click = {
+				owner = {
+					if = {
+						limit = { ROOT = { NOT = { has_country_flag = enabled_debuffing } } }
+						ROOT = { set_country_flag = enabled_debuffing }
+					}
+					else_if = {
+						ROOT = { clr_country_flag = enabled_debuffing }
+					}
+				} 
+			}
+
+			event_translet_horst_open_click = {
+				owner = {
+					if = {
+						limit = { ROOT = { NOT = { has_country_flag = enabled_event_translet_horst } } }
+						news_event = { id = news.4300 }
+						ROOT = { set_country_flag = enabled_event_translet_horst }
+					}
+					else_if = {
+						news_event = { id = news.4301 }
+						ROOT = { clr_country_flag = enabled_event_translet_horst } 
+					}
+				} 
+			}
 
 			States_resursed_steel_click = { 
 				owner={
+					news_event = { id = news.4200 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -56,9 +83,9 @@ scripted_gui = {
 					}
 				}
 			}
-
 			States_resursed_rubber_click = {
 				owner={
+					news_event = { id = news.4201 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -81,6 +108,7 @@ scripted_gui = {
 			}
 			States_resursed_oil_click = {
 				owner={
+					news_event = { id = news.4202 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -103,6 +131,7 @@ scripted_gui = {
 			}
 			States_resursed_alu_click = {
 				owner={
+					news_event = { id = news.4203 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -125,6 +154,7 @@ scripted_gui = {
 			}
 			States_resursed_tungsten_click = {
 				owner={
+					news_event = { id = news.4204 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -147,6 +177,7 @@ scripted_gui = {
 			}
 			States_resursed_chromium_click = {
 				owner={
+					news_event = { id = news.4205 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -167,8 +198,32 @@ scripted_gui = {
 					}
 				}
 			}
+			States_resursed_coal_click = {
+				owner={
+					news_event = { id = news.4206 }
+					set_temp_variable = { ROOT.taker = this}
+					for_each_loop={
+						array=ROOT.marked_states
+						value=state
+						var:state={ add_resource = {
+							type = coal
+							amount = 5
+						}
+					}
+					}
+					ROOT = {
+						for_each_scope_loop={
+							array=marked_states
+							clear_variable=mark_status
+						}
+						clear_array=marked_states
+						clear_variable=first_marked_state
+					}
+				}
+			}
 			States_resursed_steel1_click = {
 				owner={
+					news_event = { id = news.4207 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -189,9 +244,9 @@ scripted_gui = {
 					}
 				}
 			}
-
 			States_resursed_rubber1_click = {
 				owner={
+					news_event = { id = news.4208 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -214,6 +269,7 @@ scripted_gui = {
 			}
 			States_resursed_oil1_click = {
 				owner={
+					news_event = { id = news.4209 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -236,6 +292,7 @@ scripted_gui = {
 			}
 			States_resursed_alu1_click = {
 				owner={
+					news_event = { id = news.4210 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -258,6 +315,7 @@ scripted_gui = {
 			}
 			States_resursed_tungsten1_click = {
 				owner={
+					news_event = { id = news.4211 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -280,6 +338,7 @@ scripted_gui = {
 			}
 			States_resursed_chromium1_click = {
 				owner={
+					news_event = { id = news.4212 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -287,6 +346,29 @@ scripted_gui = {
 						var:state={ add_resource = {
 							type = chromium
 							amount = -5
+						}
+					}
+					}
+					ROOT = {
+						for_each_scope_loop={
+							array=marked_states
+							clear_variable=mark_status
+						}
+						clear_array=marked_states
+						clear_variable=first_marked_state
+					}
+				}
+			}
+			States_resursed_coal1_click = {
+				owner={
+					news_event = { id = news.4213 }
+					set_temp_variable = { ROOT.taker = this}
+					for_each_loop={
+						array=ROOT.marked_states
+						value=state
+						var:state={ add_resource = {
+							type = coal
+							amount = 5
 						}
 					}
 					}
@@ -374,6 +456,7 @@ scripted_gui = {
 			
 			add_cores_click = {
 				owner={
+					news_event = { id = news.4131 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -392,6 +475,7 @@ scripted_gui = {
 			}
 			add_compliance_click = { 
 				owner={
+					news_event = { id = news.4130 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -410,6 +494,7 @@ scripted_gui = {
 			}
 			add_compliance1_click = { 
 				owner={
+					news_event = { id = news.4129 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -428,6 +513,7 @@ scripted_gui = {
 			}
 			add_cover_click = { 
 				owner={
+					news_event = { id = news.4132 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -446,6 +532,7 @@ scripted_gui = {
 			}
 			add_cover1_click = { 
 				owner={
+					news_event = { id = news.4128 }
 					set_temp_variable = { ROOT.taker = this}
 					for_each_loop={
 						array=ROOT.marked_states
@@ -462,6 +549,31 @@ scripted_gui = {
 					}
 				}
 			}
+			annex_country_click = {
+				
+				owner={ set_variable = { ROOT.taker = this}}
+				var:ROOT.marked_states^0={owner={set_variable={ROOT.target=this   } news_event = { id = news.4007 }  }}
+				if={	limit={check_variable={ROOT.target=ROOT.taker}}	}
+				else={
+					var:ROOT.target={
+						var:ROOT.taker={
+							annex_country={	target=PREV	transfer_troops=yes	}
+							add_to_variable = { paratrooper_div_cap = PREV.paratrooper_div_cap }
+							}
+						}
+					}
+					
+				ROOT = {
+					for_each_scope_loop={
+						array=marked_states
+						clear_variable=mark_status
+					}
+					clear_array=marked_states
+					clear_variable=target
+					clear_variable=taker
+					clear_variable=first_marked_state
+				}
+			}	
 
 			fix_production_click = { owner = { news_event = { id = news.4003 } add_timed_idea = { idea = fix_production_idea days = 1 }}  }
 			fix_xp_click = { owner = { news_event = { id = news.4113 } army_experience = 25 }  }
@@ -476,6 +588,8 @@ scripted_gui = {
 			remove_fix_xp2_click = { owner = { news_event = { id = news.4122 } navy_experience = -25 }  }
 			remove_fix_xp3_click = { owner = { news_event = { id = news.4123 } air_experience = -25 }  }
 			remove_convoy48_click = { owner = { news_event = { id = news.4124 } add_equipment_to_stockpile = { type = convoy_1 amount = -50 } }  }
+			add_dynamic_Hort_tool_click = { owner = { news_event = { id = news.4126 } add_dynamic_modifier = { modifier = Horst_tool_modifiers } }  }
+			add_dynamic_Hort_tool1_click = { owner = { news_event = { id = news.4127 } remove_dynamic_modifier = { modifier = Horst_tool_modifiers } }  }
 
 
             add_autonomy_free_click = {
@@ -561,6 +675,13 @@ scripted_gui = {
 					   set_variable={Root.target_country = this}
 					   if={owner={ news_event = { id = horsttool.14 days = 0}}limit={check_variable={Root.selected_debuff=1}} generic_debuff_1 = yes }
 					   if={owner={ news_event = { id = horsttool.15 days = 0}}limit={check_variable={Root.selected_debuff=2}} generic_debuff_2 = yes }
+					   if={owner={ news_event = { id = horsttool.40 days = 0}}limit={check_variable={Root.selected_debuff=3}} generic_debuff_3 = yes }
+					   if={owner={ news_event = { id = horsttool.41 days = 0}}limit={check_variable={Root.selected_debuff=4}} generic_debuff_4 = yes }
+					   if={owner={ news_event = { id = horsttool.42 days = 0}}limit={check_variable={Root.selected_debuff=5}} generic_debuff_5 = yes }
+					   if={owner={ news_event = { id = horsttool.43 days = 0}}limit={check_variable={Root.selected_debuff=6}} generic_debuff_6 = yes }
+					   if={owner={ news_event = { id = horsttool.44 days = 0}}limit={check_variable={Root.selected_debuff=7}} generic_debuff_7 = yes }
+					   if={owner={ news_event = { id = horsttool.45 days = 0}}limit={check_variable={Root.selected_debuff=8}} generic_debuff_8 = yes }
+					   if={owner={ news_event = { id = horsttool.46 days = 0}}limit={check_variable={Root.selected_debuff=9}} generic_debuff_9 = yes }
 				   }
 				}
 				GER={
@@ -569,32 +690,6 @@ scripted_gui = {
 				}
 				clear_variable = ROOT.taker
 			}
-		
-			annex_country_click = {
-				
-				owner={ set_variable = { ROOT.taker = this}}
-				var:ROOT.marked_states^0={owner={set_variable={ROOT.target=this   } news_event = { id = news.4007 }  }}
-				if={	limit={check_variable={ROOT.target=ROOT.taker}}	}
-				else={
-					var:ROOT.target={
-						var:ROOT.taker={
-							annex_country={	target=PREV	transfer_troops=yes	}
-							add_to_variable = { paratrooper_div_cap = PREV.paratrooper_div_cap }
-							}
-						}
-					}
-					
-				ROOT = {
-					for_each_scope_loop={
-						array=marked_states
-						clear_variable=mark_status
-					}
-					clear_array=marked_states
-					clear_variable=target
-					clear_variable=taker
-					clear_variable=first_marked_state
-				}
-			}	
 			
 			
 			toogle_mark_click = {
@@ -607,9 +702,6 @@ scripted_gui = {
 					remove_from_array={ROOT.marked_states=THIS}}
 				set_variable={ROOT.first_marked_state=ROOT.marked_states^0}
 			}
-
-
-
 
 			pingtool_click = {  owner={ news_event = { id = horsttool.13 days = 0} add_offsite_building = { type = dockyard level = 1 }}}
 			mill_add_click = { owner={ news_event = { id = horsttool.11 days = 0} add_offsite_building = { type = arms_factory level = 1 }}} 
@@ -691,6 +783,13 @@ scripted_gui = {
 				
 			debuff1_click={if={limit={Root={has_country_flag=debuffing}} set_variable={Root.selected_debuff=1} ROOT={clr_country_flag=debuffing}} else={ROOT={set_country_flag=debuffing}}	}
 			debuff2_click={set_variable={Root.selected_debuff=2} ROOT={clr_country_flag=debuffing}}
+			debuff3_click={set_variable={Root.selected_debuff=3} ROOT={clr_country_flag=debuffing}}
+			debuff4_click={set_variable={Root.selected_debuff=4} ROOT={clr_country_flag=debuffing}}
+			debuff5_click={set_variable={Root.selected_debuff=5} ROOT={clr_country_flag=debuffing}}
+			debuff6_click={set_variable={Root.selected_debuff=6} ROOT={clr_country_flag=debuffing}}
+			debuff7_click={set_variable={Root.selected_debuff=7} ROOT={clr_country_flag=debuffing}}
+			debuff8_click={set_variable={Root.selected_debuff=8} ROOT={clr_country_flag=debuffing}}
+			debuff9_click={set_variable={Root.selected_debuff=9} ROOT={clr_country_flag=debuffing}}
 		}
 			
 			
@@ -699,6 +798,13 @@ scripted_gui = {
 		}
 		
 		triggers = {
+
+			Debuffing_open_click_enable = {
+				always = yes
+			}
+			event_translet_horst_open_click_enabled = {
+				always = yes
+			}
 
 			observer_click_enabled = { }	
 			observer_visible = {	}	
@@ -773,6 +879,7 @@ scripted_gui = {
 			fix_production_click_enabled ={  }
 
 			fix_xp_click_enabled ={  }
+			add_dynamic_Hort_tool_click_enabled = {  }
 
 			clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }	
 
@@ -784,12 +891,15 @@ scripted_gui = {
 			States_resursed_alu_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_tungsten_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_chromium_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
+			States_resursed_coal_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
+
 			States_resursed_steel1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_rubber1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_oil1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_alu1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_tungsten1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 			States_resursed_chromium1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
+			States_resursed_coal1_click_enabled = { check_variable = { ROOT.marked_states^num > 0 }	}
 
 			add_compliance_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 			add_cover_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
@@ -803,8 +913,69 @@ scripted_gui = {
 			debuff2_visible={ROOT={has_country_flag=debuffing}}
 			debuff1_text_visible={}
 			debuff2_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff3_visible={ROOT={has_country_flag=debuffing}}
+			debuff3_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff4_visible={ROOT={has_country_flag=debuffing}}
+			debuff4_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff5_visible={ROOT={has_country_flag=debuffing}}
+			debuff5_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff6_visible={ROOT={has_country_flag=debuffing}}
+			debuff6_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff7_visible={ROOT={has_country_flag=debuffing}}
+			debuff7_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff8_visible={ROOT={has_country_flag=debuffing}}
+			debuff8_text_visible={ROOT={has_country_flag=debuffing}}
+			debuff9_visible={ROOT={has_country_flag=debuffing}}
+			debuff9_text_visible={ROOT={has_country_flag=debuffing}}
+
+			fix_xp_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			fix_xp2_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			fix_xp3_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			convoy48_visible= {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			manpower_add_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			add_autonomy_ratio_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+
+			manpower_NO_add_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			add_NO_autonomy_ratio_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			remove_fix_xp_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			remove_fix_xp2_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			remove_fix_xp3_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			remove_convoy48_visible = {ROOT={has_country_flag=enabled_debuffing}}
+
+			pingtool_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			mill_add_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			civ_add_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+
+			remove_pingtool_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			remove_mill_add_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			remove_civ_add_visible = {ROOT={has_country_flag=enabled_debuffing}}
+
+			addpp_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			remove_addpp_visible = {ROOT={has_country_flag=enabled_debuffing}}
 
 			remove_debuff_click_enabled = {}
+
+			States_resursed_steel_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			States_resursed_rubber_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			States_resursed_oil_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			States_resursed_alu_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			States_resursed_tungsten_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			States_resursed_chromium_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+			States_resursed_coal_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+
+			States_resursed_steel1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			States_resursed_rubber1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			States_resursed_oil1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			States_resursed_alu1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			States_resursed_tungsten1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			States_resursed_chromium1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			States_resursed_coal1_visible = {ROOT={has_country_flag=enabled_debuffing}}
+
+			Debuffing_enable_text_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			Debuffing_enable_text2_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
+
+			wt_add_visible = {ROOT={has_country_flag=enabled_debuffing}}
+			wt_remove_visible = {ROOT={NOT={has_country_flag=enabled_debuffing}}}
 		}
 	}
 		
