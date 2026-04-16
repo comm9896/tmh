@@ -5,14 +5,6 @@
 
 
 
-GER_Additional_tasks = {
-	icon = GFX_decision_category_GER_war_planning
-	allowed = {
-		original_tag = GER
-	}
-	priority = 15	
-}
-
 GER_time_to_war = {
 
 	icon = generic_fascism

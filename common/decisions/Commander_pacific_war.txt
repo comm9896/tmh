@@ -273,13 +273,14 @@ JAP_GER_SOV_WAR = {
 			fire_only_once = yes
 
 			activation = {
-			and = {
-				AST = { has_capitulated = yes }
-				JAP = {not = {has_country_flag = Sapr_no_asia}}
-			}
+						and = {
+							AST = { has_capitulated = yes }
+							JAP = {not = {has_country_flag = Sapr_no_asia}}
+							}		
+						}
 
 			visible = {
-				#RAJ = {has_country_flag = Sapr_only_asia}
+				#AST = {has_country_flag = Sapr_only_asia}
 			}
 
 			cancel_if_not_visible = no
@@ -301,7 +302,6 @@ JAP_GER_SOV_WAR = {
 					}
 			}
 		}
-	}
 	JAP_PHI_has_capitulated = {
 
 			priority = 110
@@ -691,7 +691,11 @@ PHI_convoy_sabotage = {
 		
 	timeout_effect = {
 	custom_effect_tooltip = PHI_philippine_army_dynamic_modifier_tt
-		PHI = {add_to_variable = { PHI_surrender_limit = -1.49 tooltip = surrender_limit_tt}}
+		PHI = {set_variable = { PHI_surrender_limit = -1.49 tooltip = surrender_limit_tt}}
+		#PHI = {add_to_variable = { PHI_surrender_limit = -1.49 tooltip = surrender_limit_tt}}
+		remove_ideas = Diplomatic_isolation_phi
+		USA = {remove_ideas = Diplomatic_isolation_USA}
+		USA = { set_autonomy = { target = PHI autonomy_state = autonomy_dominion } }
 		}
 	}
 }

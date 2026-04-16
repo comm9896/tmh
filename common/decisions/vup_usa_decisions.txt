@@ -97,8 +97,7 @@ else_if = {
 }
 		fire_only_once = yes
 		cost = 0
-		visible = {
-		}
+			visible = {not = {has_country_flag = Sapr_only_asia}}
 
 		complete_effect = {
 					set_war_support = 0.9
@@ -148,6 +147,10 @@ else_if = {
 }
 	USA_join_the_war = {
 	 	available = { 
+		if = { 		
+				limit = {
+					has_country_flag = Sapr_only_asia
+					}
 			OR = {
 				has_war_with = JAP
 				ENG = { 
@@ -203,6 +206,9 @@ else_if = {
 						}
 					}
 				}
+		else_if = {always =no}
+				}
+				visible = {not = {has_country_flag = Sapr_only_asia}}
 				allowed = {	original_tag = USA }
 				fire_only_once = yes
 				cost = 0	

@@ -1344,26 +1344,9 @@ focus_tree = {
 			add_ideas = JAP_german_tech_exchange
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
 			JAP = {
-				add_to_tech_sharing_group = JAP_german_rocketry
+				add_to_tech_sharing_group = axis_research
 			}
-			GER = {
-				add_to_tech_sharing_group = JAP_german_rocketry
-			}
-			ITA = {
-				add_to_tech_sharing_group = JAP_german_rocketry
-			}
-			HUN = {
-				add_to_tech_sharing_group = JAP_german_rocketry
-			}
-			ROM = {
-				add_to_tech_sharing_group = JAP_german_rocketry
-			}
-			BUL = {
-				add_to_tech_sharing_group = JAP_german_rocketry
-			}
-
 		}
 	}
 

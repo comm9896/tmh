@@ -200,9 +200,6 @@ ideas = {
 
 			allowed = { always = no }
 
-			modifier = {
-				sp_naval_fleet_submarine_speed_factor = 1
-			}
 			equipment_bonus = {
 				ship_hull_fleet_submarine = {
 					instant = yes

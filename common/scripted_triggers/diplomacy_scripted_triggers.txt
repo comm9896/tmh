@@ -1209,8 +1209,6 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 					has_idea = Diplomatic_isolation_ger
 					}
 				}
-			}
-		}
 	if = {
 			NOT = {
 					has_idea = Diplomatic_isolation_phi

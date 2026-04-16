@@ -1807,16 +1807,7 @@ focus_tree = {
 
 
 		available = {
-			GER = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
+
 		}
 
 		bypass = {
@@ -1830,52 +1821,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
-			IF = {
-				limit = {
-					GER = {
-						has_opinion = {
-							target = ROOT
-							value > 25
-						}
-						has_opinion = {
-							target = ROOT
-							value < 50
-						}
-					}
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
+			GER = {
+				add_to_faction = HUN
 			}
-			ELSE_IF = {
-				limit = {
-					GER = {
-						has_opinion = {
-							target = ROOT
-							value > 50
-						}
-						has_opinion = {
-							target = ROOT
-							value < 75
-						}
-					}
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 2
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					GER = {
-						has_opinion = {
-							target = ROOT
-							value > 75
-						}
-					}
-				}
+				add_to_tech_sharing_group = axis_research
 				add_offsite_building = {
 					type = industrial_complex
 					level = 1
@@ -1884,14 +1833,9 @@ focus_tree = {
 					type = arms_factory
 					level = 2
 				}
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
 
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = HUN_henschel_organization
@@ -1900,18 +1844,7 @@ focus_tree = {
 					add_mio_size = 2
 				}
 
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = HUN_henschel
-			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
 
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = GER_rheinmetall_organization
@@ -1919,12 +1852,6 @@ focus_tree = {
 				mio:GER_rheinmetall_organization = {
 					add_mio_size = 2
 				}
-
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = HUN_rheinmetall
-			}
 
 		}
 	}

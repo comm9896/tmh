@@ -64,8 +64,6 @@ initial_show_position = {
 		available_if_capitulated = no
 	
 		completion_reward = {	
-		USA = { set_autonomy = { target = PHI autonomy_state = autonomy_dominion } }
-		custom_effect_tooltip = generic_skip_one_line_tt
 		add_to_tech_sharing_group = commonwealth_research
 		custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = PHI_modify_economy_dynamic_modifier_tt

@@ -192,20 +192,8 @@ ideas = {
 				automatic_grant_medal_chance = 0.50
 				unit_medal_effectiveness = -0.25    		  			    			    			 			    			 				
 			}
-
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Compromise, No Surrender" }
-				}
-				modifier = {
-					factor = 2
-					has_doctrine = commandos					
-				}
 			}
 		}
-	}
 
 	army_spirit = {
 		professional_officer_corps_spirit = {

@@ -977,19 +977,15 @@ ELSE_IF = {
 			available = {
 				if = {
 					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
 						original_tag = GER
 					}
 					NOT = { has_completed_focus = GER_autarky_efforts }
 				}
 			}
-
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 			cost = 150
 			removal_cost = -1
 
@@ -1040,25 +1036,10 @@ ELSE_IF = {
 				}
    			}
 		}
-
 		export_focus = {
 
 			available = {
 
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
 				if = {
 					limit = {
 						original_tag = GER
@@ -1066,7 +1047,10 @@ ELSE_IF = {
 					NOT = { has_completed_focus = GER_autarky_efforts }
 				}
 			}
-
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -1125,73 +1109,9 @@ ELSE_IF = {
 				}
 			}		
 		
-			available = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-				has_completed_focus = PHI_pearl_of_the_orient_seas
-				}
-				OR = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-				has_completed_focus = PHI_pearl_of_the_orient_seas
-				}
-					AND = {
-						has_government = democratic
-						has_war = yes
-						any_enemy_country = {
-							ic_ratio = {
-								tag = ROOT
-								ratio > 0.2
-							}
-						}
-					}
-					AND = {
-						NOT = { has_government = democratic }
-						OR = {
-							has_idea = partial_economic_mobilisation
-							has_idea = war_economy
-							has_idea = tot_economic_mobilisation
-						if = {
-								limit = {
-									original_tag = GER
-								}
-								has_idea = totaler_krieg_economy
-							}
-							else = {
-								hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
-							}
-						}
-					}
-					if = {
-						limit = {
-							original_tag = RAJ
-							has_dlc = "Graveyard of Empires"
-						}
-						has_completed_focus = RAJ_raise_import_duties
-					}
-					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
-					}
-				}
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 
 			cost = 150
@@ -1341,61 +1261,6 @@ ELSE_IF = {
 
 		closed_economy = {
 
-
-			available = {
-			or = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-				has_completed_focus = PHI_pearl_of_the_orient_seas
-				}
-				has_war = yes
-				}
-				OR = {
-				if = {
-					limit = {
-						original_tag = PHI
-					}
-				has_completed_focus = PHI_pearl_of_the_orient_seas
-				}
-					has_government = fascism
-					has_government = communism
-				}
-				OR = {
-					if = {
-					limit = {
-						original_tag = PHI
-					}
-				has_completed_focus = PHI_pearl_of_the_orient_seas
-				}
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
-				if = {
-						limit = {
-							original_tag = GER
-						}
-						has_idea = totaler_krieg_economy
-					}
-					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
-					}
-				}
-				OR = {
-					NOT = {	tag = SOV }
-					NOT = { has_opinion_modifier = MR_pact }
-				}
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
-
-			}
-
 			rule = {
 				can_access_market = no
 				desc = can_not_access_market_closed_economy
@@ -1490,6 +1355,7 @@ ELSE_IF = {
 
 			rule = {
 				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 			
 			modifier = {
@@ -1517,6 +1383,7 @@ ELSE_IF = {
 
 			rule = {
 				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 			
 			modifier = {
@@ -1544,6 +1411,7 @@ ELSE_IF = {
 			
 			rule = {
 				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 			
 			modifier = {
