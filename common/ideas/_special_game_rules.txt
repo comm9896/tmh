@@ -103,14 +103,9 @@ ideas = {
 			modifier = {
 			army_core_attack_factor = 1
 			army_core_defence_factor = 1
+			resource_trade_cost_bonus_per_factory = -8
 			}
 			targeted_modifier = {
-			tag = SOV
-				air_strategic_bomber_bombing_factor = -1
-				ground_attack_factor= -1
-				attack_bonus_against = -1
-				defense_bonus_against = -1
-				air_mission_efficiency = -1
 			}
 		}
 	Diplomatic_isolation_ger = {

@@ -239,7 +239,7 @@ SPR_army_dm:0 "Ejército de Tierra"
 SPR_air_dm:0 "Ejército del Aire"
 
 
-stability_weekly_tt:0 "$MODIFIER_STABILITY_WEEKLY$ $RIGHT|R=%1$""
+stability_weekly_tt:0 "$MODIFIER_STABILITY_WEEKLY$: $RIGHT|G=%1$"
 
 
 SPR_civilian_dm_info:0 "§Y$SPR_civilian_dm$§! изменится на:"

@@ -124,9 +124,9 @@ set_technology = {
 
 	add_dynamic_modifier = {modifier = SPR_air_dm}
 		set_variable = { SPR_airforce_air_mission_efficiency = -0.2 }
-		set_variable = { SPR_airforce_air_cas_efficiency = -0.5 }
+		set_variable = { SPR_airforce_air_cas_efficiency = 0.3 }
 		set_variable = { SPR_airforce_port_strike = -0.5 }
-		set_variable = { SPR_airforce_air_accidents_factor = 0.5 }
+		#set_variable = { SPR_airforce_air_accidents_factor = 0.5 }
 
 
 

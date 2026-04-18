@@ -926,7 +926,6 @@ focus_tree = {
 	focus = {
 		id = SPA_expand_the_axis_gold_trade
 		available = {
-			NOT = { has_completed_focus = SPA_the_stabilization_plan }
 		}
 		bypass = {
 		}
@@ -1612,7 +1611,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-		add_to_variable = { SPR_stability_weekly = 0.02 tooltip = STABILITY_WEEKLY_TOTAL_CHANGE}
+		custom_effect_tooltip = SPR_army_dm_info
+		add_to_variable = { SPR_stability_weekly = 0.002 tooltip = stability_weekly_tt}
 		}
 	}
 
@@ -1629,7 +1629,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_foment_a_carlist_split
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -1780,10 +1780,6 @@ focus_tree = {
 		id = SPA_dictator_for_life
 
 		available = {
-			has_country_leader = {
-				character = SPA_francisco_franco
-				ruling_only = yes
-			}
 		}
 
 		bypass = {
@@ -1994,7 +1990,6 @@ focus_tree = {
 	focus = {
 		id = SPA_the_tangiers_enclave
 		available = {
-			has_full_control_of_state = 290
 		}
 		bypass = {
 		}
@@ -2025,10 +2020,7 @@ focus_tree = {
 		id = SPA_restore_the_monarchy
 
 		available = {
-			OR = {
-				has_government = neutrality
-				has_government = fascism
-			}
+
 		}
 
 		prerequisite = { focus = SPA_adopt_the_26_points focus = SPA_settle_the_succession_question }
@@ -2050,23 +2042,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = SPA_supremacy_of_the_communion
-				}
-				custom_effect_tooltip = SPA_restore_the_monarchy_tt
-				hidden_effect = {
-					drop_cosmetic_tag = yes
-					set_cosmetic_tag = SPB_kingdom
-				}
-				news_event = { id = lar_news.17 hours = 3 }
-			}
-			if = {
-				limit = {
-					NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
-				}
 				news_event = { id = lar_news.18 hours = 6 }
-			}
 		}
 	}
 

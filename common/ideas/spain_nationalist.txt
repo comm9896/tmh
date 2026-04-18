@@ -31,6 +31,7 @@ ideas = {
 			}
 
 			modifier = {
+				air_volunteer_cap = 1
 				send_volunteer_size = 4
 				send_volunteer_divisions_required = -1
 				send_volunteers_tension = -1
@@ -63,6 +64,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				air_volunteer_cap = 2
 				send_volunteer_size = 10
 				send_volunteer_divisions_required = -1
 				send_volunteers_tension = -1
@@ -82,6 +84,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				air_volunteer_cap = 2
 				send_volunteer_size = 10
 				send_volunteer_divisions_required = -1
 				send_volunteers_tension = -1

@@ -51,3 +51,136 @@ news_event = {
 		}
 	}
 }
+
+# News event - Francoist Spanish monarchy restoration
+news_event = {
+	id = lar_news.18
+	title = lar_news.17.t
+	desc = lar_news.18.desc
+	picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = SPR
+				}
+				if = {
+					limit = {
+						has_country_flag = SPB_xavier_king
+					}
+					create_country_leader = {
+						name = "Javier I"
+						desc = "POLITICS_JAVIER_I_DESC"
+						picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							the_sacred_king
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = SPB_xavier_king }
+						NOT = { has_global_flag = SPB_alfonso_xiii_dead }
+					}
+					create_country_leader = {
+						name = "Alfonso XIII"
+						desc = "POLITICS_ALFONSO_XIII_DESC"
+						picture = "GFX_portrait_SPA_alfonso_xiii"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							disgraced_monarch
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = SPB_xavier_king }
+						has_global_flag = SPB_alfonso_xiii_dead
+					}
+					create_country_leader = {
+						name = "Jaime IV"
+						desc = "POLITICS_JAIME_IV_DESC"
+						picture = "GFX_portrait_fra_infante_jaime"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							the_legitimist
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = lar_news.18.a # Spain
+		trigger = {
+			original_tag = SPR
+		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					has_country_flag = SPB_xavier_king
+				}
+				create_country_leader = {
+					name = "Javier I"
+					desc = "POLITICS_JAVIER_I_DESC"
+					picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						the_sacred_king
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = SPB_xavier_king }
+					NOT = { has_global_flag = SPB_alfonso_xiii_dead }
+				}
+				create_country_leader = {
+					name = "Alfonso XIII"
+					desc = "POLITICS_ALFONSO_XIII_DESC"
+					picture = "GFX_portrait_SPA_alfonso_xiii"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						disgraced_monarch
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = SPB_xavier_king }
+					has_global_flag = SPB_alfonso_xiii_dead
+				}
+				create_country_leader = {
+					name = "Jaime IV"
+					desc = "POLITICS_JAIME_IV_DESC"
+					picture = "GFX_portrait_fra_infante_jaime"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						the_legitimist
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = lar_news.18.b # Everyone else
+		trigger = {
+			NOT = {
+				original_tag = SPR
+			}
+		}
+	}
+}

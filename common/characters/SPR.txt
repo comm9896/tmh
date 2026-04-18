@@ -208,6 +208,15 @@ characters={
 				logistics_skill=3
 				legacy_id=1102
 			}
+		field_marshal = {
+			traits = { brilliant_strategist aggressive_assaulter organizer logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader trait_SPA_nationalist_sympathies}
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id = 1201
+		}
 		}
 		instance = {
 			allowed = {
@@ -230,14 +239,10 @@ characters={
 					original_tag = SPR
 				}
 				visible = {
-					NOT = {
-						has_government = fascism
-					}
+
 				}
 				available = {
-					NOT = {
-						has_government = fascism
-					}
+
 				}
 				traits = {
 					army_chief_maneuver_2
@@ -281,6 +286,15 @@ characters={
 				logistics_skill=1
 				legacy_id=1103
 			}
+		field_marshal={
+			traits={  organizer logistics_wizard defensive_doctrine unyielding_defender inflexible_strategist thorough_planner inspirational_leader organisational_leader inspirational_leader trait_SPA_nationalist_sympathies}
+			skill=6
+			attack_skill=5
+			defense_skill=8
+			planning_skill=5
+			logistics_skill=8
+			legacy_id = 1211
+		}
 		}
 		instance = {
 			allowed = {
@@ -304,14 +318,10 @@ characters={
 					original_tag = SPR
 				}
 				visible = {
-					NOT = {
-						has_government = fascism
-					}
+
 				}
 				available = {
-					NOT = {
-						has_government = fascism
-					}
+
 				}
 				traits = {
 					army_infantry_2
@@ -368,13 +378,13 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ career_officer infantry_leader }
-				skill=2
-				attack_skill=1
-				defense_skill=3
-				planning_skill=2
-				logistics_skill=1
-				legacy_id=1101
+				traits={ cavalry_leader combined_arms_expert cavalry_expert commando camouflage_expert trickster guerilla_fighter desert_fox ranger adaptable trait_SPA_nationalist_sympathies}
+				skill=6
+				attack_skill=6
+				defense_skill=8
+				planning_skill=5
+				logistics_skill=9
+				legacy_id = 0
 			}
 		}
 		instance = {
@@ -408,14 +418,14 @@ characters={
 				small=GFX_portrait_SPR_valentin_gonzalez_small
 			}
 		}
-		corps_commander={
-			traits={ harsh_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=1104
+		corps_commander = {
+			traits={ fortress_buster expert_improviser panzer_expert trickster panzer_leader ranger urban_assault_specialist trait_engineer adaptable trait_SPA_nationalist_sympathies}
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id = 1205
 		}
 	}
 
@@ -427,14 +437,14 @@ characters={
 				small = GFX_portrait_SPR_enrique_lister_small
 			}
 		}
-		corps_commander={
-			traits={ politically_connected infantry_leader trickster }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=1119
+		corps_commander = {
+			traits = { trait_cautious trait_SPA_nationalist_sympathies }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 1209
 		}
 	}
 
@@ -446,14 +456,14 @@ characters={
 				small=GFX_portrait_SPR_juan_modesto_small
 			}
 		}
-		corps_commander={
-			traits={ trait_mountaineer }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1105
+		corps_commander = {
+			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable trait_SPA_nationalist_sympathies}
+			skill=6			
+			attack_skill=5
+			defense_skill=9
+			planning_skill=5
+			logistics_skill=9
+			legacy_id = 1210
 		}
 	}
 
@@ -465,14 +475,14 @@ characters={
 				small=GFX_portrait_SPR_antonio_cordon_garcia_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=1106
+		corps_commander = {
+			traits={ infantry_leader infantry_expert  fortress_buster trickster expert_improviser ranger urban_assault_specialist trait_engineer adaptable  trait_SPA_nationalist_sympathies}
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id = 1208
 		}
 	}
 
@@ -493,46 +503,23 @@ characters={
 				original_tag = SPR
 			}
 			visible = {
-				NOT = {
-					tag = SPA
-					tag = SPB
-				}
+
 			}
 			available = {
-
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = { tag = SPA }
-				}
 			}
-			traits = { army_logistics_1 }
+			traits = { army_logistics_3 }
 			cost =  50
 		}
 		
-		corps_commander={
-			traits={ trait_reckless }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=1107
-			visible = {
-				OR = {
-					NOT = { has_global_flag = spanish_civil_war }
-					AND = {
-						tag = SPD
-						has_global_flag = spanish_civil_war
-						NOT = { has_global_flag = SPR_anarchist_uprising_flag }
-					}
-					AND = {
-						tag = SPC
-						has_global_flag = spanish_civil_war
-						has_global_flag = SPR_anarchist_uprising_flag
-					}
-				}
+			corps_commander = {
+				traits={ fortress_buster expert_improviser panzer_expert trickster panzer_leader desert_fox hill_fighter trait_engineer adaptable trait_SPA_nationalist_sympathies}
+				skill=6
+				attack_skill=7
+				defense_skill=6
+				planning_skill=5
+				logistics_skill=10
+				legacy_id = 0
 			}
-		}
 	}
 
 	SPA_francisco_franco={
@@ -548,14 +535,14 @@ characters={
 				}
 			}
 
-			field_marshal={
-				traits={ logistics_wizard organisational_leader expert_delegator }
-				skill=3
-				attack_skill=3
-				defense_skill=2
-				planning_skill=3
-				logistics_skill=2
-				legacy_id=1108
+		field_marshal = {
+			traits = { brilliant_strategist aggressive_assaulter organizer logistics_wizard offensive_doctrine thorough_planner organisational_leader inspirational_leader trait_SPA_nationalist_sympathies}
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=6
+			legacy_id = 1201
 				visible = {
 					OR = {
 						NOT = { has_global_flag = spanish_civil_war }
@@ -1445,23 +1432,9 @@ characters={
 			available = {
 				if = {
 					limit = {
-						NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
-					}
-					NOT = {
-						has_completed_focus = SPA_eliminate_the_carlists
-					}
-				}
-				if = {
-					limit = {
 						has_completed_focus = SPA_unify_the_nationalist_front
 					}
-					NOT = {
-						has_global_flag = SPR_carlist_uprising_flag
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
+
 				}
 			}
 			traits = {
@@ -1493,13 +1466,7 @@ characters={
 				}
 			}
 			available = {
-				NOT = {
-					has_completed_focus = SPA_no_compromise_on_carlist_ideals
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
+
 			}
 			traits = {
 				army_chief_drill_2
@@ -1534,13 +1501,7 @@ characters={
 					}
 				}
 				available = {
-					NOT = {
-						has_completed_focus = SPA_no_compromise_on_carlist_ideals
-					}
-					custom_trigger_tooltip = {
-						tooltip = SPA_not_republican_spain_tt
-						NOT = { tag = SPD }
-					}
+
 				}
 				traits = {
 					air_chief_ground_support_2
@@ -1608,13 +1569,7 @@ characters={
 				}
 			}
 			available = {
-				NOT = {
-					has_completed_focus = SPA_eliminate_the_carlists
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
+
 			}
 			traits = {
 				air_chief_reform_2
@@ -1646,10 +1601,6 @@ characters={
 			}
 			available = {
 				has_completed_focus = SPA_the_condor_legion
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
 			}
 			traits = {
 				army_armored_2
@@ -1680,13 +1631,7 @@ characters={
 				}
 			}
 			available = {
-				NOT = {
-					has_completed_focus = SPR_masters_of_our_own_fate
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
+
 			}
 			traits = {
 				army_logistics_2
@@ -1713,14 +1658,10 @@ characters={
 				original_tag = SPR
 			}
 			visible = {
-				NOT = {
-					has_government = fascism
-				}
+
 			}
 			available = {
-				NOT = {
-					has_government = fascism
-				}
+
 			}
 			traits = {
 				army_chief_defensive_2
@@ -1752,19 +1693,10 @@ characters={
 					original_tag = SPR
 				}
 				visible = {
-					NOT = {
-						tag = SPD
-						tag = SPC
-					}
+
 				}
 				available = {
-					NOT = {
-						has_completed_focus = SPA_eliminate_the_carlists
-					}
-					custom_trigger_tooltip = {
-						tooltip = SPA_not_republican_spain_tt
-						NOT = { tag = SPD }
-					}
+
 				}
 				traits = {
 					army_entrenchment_2
@@ -1804,84 +1736,6 @@ characters={
 				cost = 100
 				ai_will_do = {
 					factor = 1.000
-				}
-			}
-		}
-	}
-
-	SPR_nicolas_molero = { # Democratic
-		instance = {
-			allowed = {
-				has_dlc = "La Resistance"
-			}
-			name=SPR_nicolas_molero
-			portraits={
-				army={
-					small="GFX_idea_SPR_nicolas_molero"
-				}
-			}
-			advisor={
-				cost = 100
-				slot = theorist
-				idea_token = SPR_nicolas_molero
-				ledger = army
-				allowed = {
-					has_dlc = "La Resistance"
-					original_tag = SPR
-				}
-				visible = {
-					NOT = {
-						tag = SPA
-						tag = SPB
-					}
-				}
-				available = {
-					NOT = {
-						has_completed_focus = SPR_masters_of_our_own_fate
-						has_completed_focus = SPR_communists_in_the_government
-					}
-					custom_trigger_tooltip = {
-						tooltip = SPR_not_nationalist_spain_tt
-						NOT = { tag = SPA }
-					}
-				}
-				traits = { military_theorist }
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-			name=SPR_nicolas_molero
-			portraits={
-				army={
-					small="GFX_idea_generic_army_europe_3"
-				}
-			}
-			advisor={
-				cost = 100
-				slot = theorist
-				idea_token = SPR_nicolas_molero
-				ledger = army
-				name = SPR_nicolas_molero
-				allowed = {
-					NOT = {
-						has_dlc = "La Resistance"
-					}
-					original_tag = SPR
-				}
-				visible = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-				available = {
-					NOT = {
-						has_government = fascism
-					}
-				}
-				traits = {
-					military_theorist
 				}
 			}
 		}
@@ -1950,75 +1804,6 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-		}
-	}
-
-	SPR_andres_saborit_colomer={
-		name=SPR_andres_saborit_colomer
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_1"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SPR_andres_saborit_colomer
-			ledger = military
-			name = SPR_andres_saborit_colomer
-			allowed = {
-				NOT = {
-					has_dlc = "La Resistance"
-				}
-				original_tag = SPR
-			}
-			visible = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			available = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			traits = {
-				naval_theorist
-			}
-		}
-	}
-
-	SPR_felipe_diaz_sandino = { # SPD
-		name=SPR_felipe_diaz_sandino
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_2"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = SPR_felipe_diaz_sandino
-			ledger = air
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			visible = {
-				NOT = {
-					tag = SPA
-					tag = SPB
-				}
-			}
-			available = {
-				NOT = { has_completed_focus = SPR_masters_of_our_own_fate }
-				custom_trigger_tooltip = {
-					tooltip = SPR_not_nationalist_spain_tt
-					NOT = { tag = SPA }
-				}
-			}
-			traits = { air_warfare_theorist }
 		}
 	}
 

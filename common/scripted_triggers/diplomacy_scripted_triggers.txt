@@ -1185,11 +1185,18 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
-	if = {
+if = {
 			NOT = {
+					and = {
 						has_idea = Diplomatic_isolation_spr
+						FROM = { tag = GER }
+						FROM = { tag = ITA }
+						FROM = { tag = HUN }
+						FROM = { tag = ROM }
+						FROM = { tag = BUL }
 					}
 					
+				}
 			}
 			IF = {
 				NOT = {
@@ -1204,11 +1211,6 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 					has_idea = Diplomatic_isolation_ger
 				}
 			}
-	if = {
-			NOT = {
-					has_idea = Diplomatic_isolation_ger
-					}
-				}
 	if = {
 			NOT = {
 					has_idea = Diplomatic_isolation_phi
