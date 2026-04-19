@@ -660,7 +660,7 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05			
+				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = 0.15
 			}
 		}
@@ -684,8 +684,6 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				global_building_slots_factor = 0.2
 				consumer_goods_factor = -0.06
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05					
 			}
 		}
 
@@ -1802,8 +1800,6 @@ ideas = {
 				trade_laws_cost_factor = 0.5
 				min_export = -0.15
 				local_resources_factor = 0.15
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05						
 			} 
 		}
 

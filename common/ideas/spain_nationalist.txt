@@ -18,118 +18,12 @@ ideas = {
 				max_surrender_limit_offset = 1
 			}
 		}
-		SPA_la_division_azul = {
-
-			picture = SPA_la_division_azul
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				air_volunteer_cap = 1
-				send_volunteer_size = 4
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
-			}
-		}
-				SPA_la_division_azul_2 = {
-
-			picture = SPA_la_division_azul
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				send_volunteer_size = 10
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
-			}
-		}
-		FRA_anti_bolshevist_volunteers = {
-			picture = generic_manpower_bonus
-			allowed = {
-				original_tag = SPR
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				air_volunteer_cap = 2
-				send_volunteer_size = 10
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
-			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-		}
-		SPR_anti_democratic_volunteers = {
-			picture = generic_manpower_bonus
-			allowed = {
-				original_tag = SPR
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				air_volunteer_cap = 2
-				send_volunteer_size = 10
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-		}
-
 	}
 
 	country = {
+	    
 
+	
 		SPA_death_before_surrender = {
 
 			name = SPR_death_before_surrender
@@ -228,11 +122,11 @@ ideas = {
 			modifier = {
 				ai_get_ally_desire_factor = -300
 				ai_join_ally_desire_factor = -300
-				join_faction_tension = 3
+				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.1
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -258,13 +152,13 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -300
-				ai_join_ally_desire_factor = -300
-				join_faction_tension = 3
+				ai_get_ally_desire_factor = -200
+				ai_join_ally_desire_factor = -200
+				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.14
 				industrial_capacity_dockyard = -0.14
 				production_speed_buildings_factor = -0.07
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.07
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -290,13 +184,10 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -300
-				ai_join_ally_desire_factor = -300
-				join_faction_tension = 3
 				industrial_capacity_factory = -0.07
 				industrial_capacity_dockyard = -0.07
 				production_speed_buildings_factor = -0.04
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.04
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -484,9 +375,9 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 3
-				send_volunteer_divisions_required = -1
+				send_volunteer_size = 6
 				lend_lease_tension = -0.30
+				air_volunteer_cap = 400
 			}
 		}
 
@@ -575,7 +466,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -593,7 +484,7 @@ ideas = {
 
 			modifier = {
 				mobilization_speed = 0.2
-				army_attack_factor = 0.05
+				offence = 0.05
 			}
 		}
 
@@ -705,7 +596,7 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -725,7 +616,7 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.002
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -745,7 +636,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -765,7 +656,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -786,7 +677,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -807,7 +698,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -830,7 +721,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -891,6 +782,22 @@ ideas = {
 			}
 		}
 
+		SPA_la_division_azul = {
+
+			picture = SPA_la_division_azul
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    send_volunteer_size = 4
+			}
+		}
 
 		SPA_disjointed_carlist_juntas = {
 
@@ -926,8 +833,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.05
 			}
 		}
@@ -947,8 +854,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				conscription = 0.03
 			}
@@ -969,8 +876,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				training_time_factor = -0.2
 				conscription = 0.05
@@ -992,8 +899,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.05
 				army_morale_factor = 0.1
 				political_power_factor = 0.1
@@ -1015,8 +922,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				defence = 0.1
+				offence = 0.1
 				army_org_factor = 0.05
 				army_morale_factor = 0.15
 				political_power_factor = 0.1
@@ -1038,8 +945,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				conscription = 0.03
 				army_morale_factor = 0.1
@@ -1062,8 +969,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				defence = 0.05
+				offence = 0.05
 				army_org_factor = 0.1
 				training_time_factor = -0.2
 				conscription = 0.05
@@ -1087,8 +994,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				defence = 0.1
+				offence = 0.1
 				army_org_factor = 0.1
 				conscription = 0.03
 				army_morale_factor = 0.15
@@ -1111,8 +1018,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				defence = 0.1
+				offence = 0.1
 				army_org_factor = 0.1
 				training_time_factor = -0.2
 				conscription = 0.05
@@ -1136,8 +1043,8 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.15
+				defence = 0.1
+				offence = 0.15
 				army_org_factor = 0.1
 				army_speed_factor = 0.05
 				training_time_factor = -0.2

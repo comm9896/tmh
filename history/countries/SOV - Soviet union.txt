@@ -20,7 +20,7 @@
 		home_of_revolution
 		trotskyite_plot_nsb
 		SOV_politicized_military
-		#SOV_industry
+		SOV_industry
 		SOV_The_Closed_Trade
 		SOV_Disarganization
 		SOV_Disorganized_industry		
@@ -949,7 +949,7 @@ create_equipment_variant = {
 		special_type_slot_3 = additional_machine_guns		
 	}
 	upgrades = {
-		tank_nsb_engine_upgrade = 9
+		tank_nsb_engine_upgrade = 4
 		light_tank_nsb_armor_upgrade = 9
 	}
 	icon = "GFX_SOV_improved_light_tank_medium"		

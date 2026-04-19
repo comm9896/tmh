@@ -693,10 +693,6 @@ HOL_request_allied_favors = {
 
 		available = {
 		has_war = yes
-			or = {
-			has_completed_focus = PHI_i_shall_return
-			has_completed_focus = HOL_request_allied_favors
-				}
 		}
 
 		days_remove = 90
@@ -706,11 +702,13 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-
+			or = {
+			has_completed_focus = PHI_i_shall_return
+			has_completed_focus = HOL_request_allied_favors
+				}
 		}
 
 		modifier = {
-		political_power_factor = -0.1
 			war_support_weekly = 0.01
 			resistance_growth_on_our_occupied_states = 0.5 
 		}
@@ -733,10 +731,6 @@ HOL_request_allied_favors = {
 
 		available = {
 			has_war = yes
-						or = {
-			has_completed_focus = PHI_i_shall_return
-			has_completed_focus = HOL_request_allied_favors
-				}
 		}
 
 		days_remove = 30
@@ -746,7 +740,10 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-
+		or = {
+			has_completed_focus = PHI_i_shall_return
+			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
@@ -771,10 +768,6 @@ HOL_request_allied_favors = {
 		}
 
 		available = {
-			or = {
-			has_completed_focus = PHI_i_shall_return
-			has_completed_focus = HOL_request_allied_favors
-				}
 		}
 
 		days_remove = 60
@@ -784,7 +777,10 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-
+		or = {
+			has_completed_focus = PHI_i_shall_return
+			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
@@ -822,10 +818,6 @@ HOL_request_allied_favors = {
 
 		available = {
 		has_war = yes
-					or = {
-			has_completed_focus = PHI_i_shall_return
-			has_completed_focus = HOL_request_allied_favors
-				}
 		}
 		
 		ai_will_do = {
@@ -839,6 +831,10 @@ HOL_request_allied_favors = {
 		fire_only_once = yes
 
 		visible = {
+		or = {
+			has_completed_focus = PHI_i_shall_return
+			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
@@ -865,10 +861,6 @@ HOL_request_allied_favors = {
 		}
 
 		available = {
-					or = {
-			has_completed_focus = PHI_i_shall_return
-			has_completed_focus = HOL_request_allied_favors
-				}
 		}
 
 		days_remove = 60
@@ -878,16 +870,18 @@ HOL_request_allied_favors = {
 		fire_only_once = no
 
 		visible = {
-
+		or = {
+			has_completed_focus = PHI_i_shall_return
+			has_completed_focus = HOL_request_allied_favors
+			}
 		}
 
 		modifier = {
-		political_power_factor = -0.1
 			weekly_manpower = 5000
 		}
 
 		complete_effect = {
-
+		political_power_factor = -0.1
 		}
 
 		remove_effect = {

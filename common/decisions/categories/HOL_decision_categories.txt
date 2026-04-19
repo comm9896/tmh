@@ -51,12 +51,16 @@ HOL_request_allied_favors = {
 	
 	allowed = {
 	or = {
-		original_tag = HOL
 		original_tag = PHI
+		original_tag = HOL
 		}
 	}
 
 	visible = {
+	or = {
+		has_completed_focus = HOL_war_on_pacifism
+		has_completed_focus = PHI_i_shall_return
+		}
 	}
 }
 

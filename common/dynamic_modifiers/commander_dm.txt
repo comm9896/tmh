@@ -1,3 +1,29 @@
+@resistance_growth = JAP_resistance_growth
+@resistance_target = JAP_resistance_target
+@resistance_decay = JAP_resistance_decay
+
+
+
+
+USA_gorilla_tactics = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.85
+	army_attack_factor = -0.75
+	army_speed_factor = -0.35
+	ground_attack_factor = -0.85
+}
+
+JAP_gorilla_tactics = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.50
+	army_attack_factor = -0.85
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.50
+}
 
 USA_plan_civilian_dynamic_modifier = { 
 	enable = { always = yes }
@@ -122,128 +148,6 @@ USA_air_dm = {
 	air_accidents_factor = USA_airforce_air_accidents_factor
 }
 
-
-SPR_civilian_dm = { 
-	enable = { always = yes }
-
-	icon = GFX_idea_SPA_national_recovery 
-
-	production_speed_buildings_factor = SPR_production_speed_buildings_factor 
-	consumer_goods_factor = SPR_fyp_consumer_goods_factor
-	production_speed_industrial_complex_factor = SPR_fyp_production_speed_industrial_complex_factor
-	local_resources_factor = SPR_fyp_local_resources_factor
-	industrial_capacity_factory = SPR_industrial_capacity_factory
-	political_power_cost = SPR_political_power_cost
-	join_faction_tension = SPR_join_faction_tension
-	production_speed_arms_factory_factor = SPR_production_speed_arms_factory_factor
-    production_speed_dockyard_factor = SPR_production_speed_dockyard_factor
-    conversion_cost_civ_to_mil_factor = SPR_conversion_cost_civ_to_mil_factor
-	production_speed_infrastructure_factor = SPR_production_speed_infrastructure_factor
-	production_speed_energy_infrastructure_factor = SPR_energy_infrastructure_factor
-	#1941
-	production_factory_max_efficiency_factor = SPR_production_factory_max_efficiency_factor 
-	production_factory_start_efficiency_factor = SPR_production_factory_start_efficiency_factor 
-	production_factory_efficiency_gain_factor = SPR_production_factory_efficiency_gain_factor 
-    industrial_capacity_dockyard = SPR_industrial_capacity_dockyard 
-	stability_factor = SPR_stability_factor
-	global_building_slots_factor = SPR_global_building_slots_factor_factor
-	consumer_goods_expected_value = SPR_consumer_goods_expected_value 
-	conversion_cost_mil_to_civ_factor = SPR_conversion_cost_mil_to_civ_factor 
-	production_speed_synthetic_refinery_factor = SPR_production_speed_synthetic_refinery_factor 
-	#production_speed_synthetic_refinery_factor = SPR_new_deal_production_speed_synthetic_refinery_factor
-
-} 
-
-SPR_army_dm = {
-	icon = GFX_idea_SPA_carlism
-	enable = { always = yes }
-
-	custom_modifier_tooltip = SPR_army_dm_tt
-
-
-	weekly_manpower = SPR_weekly_manpower
-	stability_weekly = SPR_stability_weekly
-	conscription_factor = SPR_conscription_factor
-	mobilization_speed = SPR_mobilization_speed_factor
-	army_infantry_attack_factor = SPR_army_army_infantry_attack_factor
-	army_infantry_defence_factor = SPR_army_army_defence_attack_factor
-	army_morale_factor = SPR_army_army_morale_factor
-	army_attack_factor = SPR_army_army_attack_factor
-	army_defence_factor = SPR_army_army_defence_factor
-	initiative_factor = SPR_army_initiative_factor
-	army_artillery_attack_factor = SPR_army_army_army_artillery_attack_factor
-	supply_consumption_factor = SPR_army_supply_consumption_factor
-	acclimatization_cold_climate_gain_factor = SPR_army_acclimatization_cold_climate_gain_factor
-	acclimatization_hot_climate_gain_factor = SPR_army_acclimatization_hot_climate_gain_factor
-	army_core_attack_factor = SPR_army_army_core_attack_factor
-	army_core_defence_factor = SPR_army_army_core_defence_factor
-	planning_speed = SPR_army_planning_speed
-	army_armor_attack_factor = SPR_army_army_armor_attack_factor
-	army_armor_speed_factor = SPR_army_army_armor_speed_factor
-	motorized_attack_factor = SPR_army_motorized_attack_factor
-	mechanized_attack_factor = SPR_army_mechanized_attack_factor
-	org_loss_when_moving = SPR_army_org_loss_when_moving
-	army_org_factor = SPR_army_army_org_factor
-	attrition = SPR_army_attrition
-	air_superiority_bonus_in_combat = SPR_army_air_superiority_bonus_in_combat
-	coordination_bonus = SPR_army_coordination_bonus
-	conscription = SPR_army_conscription
-	training_time_factor = SPR_army_training_time_factor
-	experience_loss_factor = SPR_army_experience_loss_factor
-	max_planning_factor = SPR_army_max_planning_factor
-	max_dig_in = SPR_army_max_dig_in
-	dig_in_speed_factor = SPR_army_dig_in_speed_factor
-	command_power_gain_mult = SPR_command_power_gain_mult
-	max_command_power = SPR_max_command_power
-	experience_gain_factor = SPR_experience_gain_factor
-	breakthrough_factor = SPR_breakthrough_factor
-	send_volunteer_size = SPR_send_volunteer_size
-	send_volunteer_divisions_required = SPR_send_volunteer_divisions_required
-	send_volunteers_tension = SPR_send_volunteers_tension
-
-}
-
-SPR_air_dm = {
-	icon = GFX_focus_BEL_legacy_of_the_belgian_airforce
-	enable = { always = yes }
-
-	air_nav_efficiency = SPR_airforce_air_nav_efficiency
-	air_wing_xp_loss_when_killed_factor = SPR_airforce_air_wing_xp_loss_when_killed_factor
-	air_untrained_pilots_penalty_factor = SPR_airforce_air_untrained_pilots_penalty_factor
-	air_cas_efficiency = SPR_airforce_air_cas_efficiency
-	sortie_efficiency = SPR_airforce_sortie_efficiency
-	air_escort_efficiency = SPR_airforce_air_escort_efficiency
-	air_range_factor = SPR_airforce_air_range_factor
-	air_defence_factor = SPR_airforce_air_defence_factor
-	mines_planting_by_air_factor = SPR_airforce_mines_planting_by_air_factor
-	port_strike = SPR_airforce_port_strike
-	air_mission_efficiency = SPR_airforce_air_mission_efficiency
-	#navy_carrier_air_attack_factor = SPR_airforce_navy_carrier_air_attack_factor
-	#navy_carrier_air_targetting_factor = SPR_airforce_navy_carrier_air_targetting_factor
-	air_accidents_factor = SPR_airforce_air_accidents_factor
-}
-
-
-
-USA_gorilla_tactics = {
-	icon = GFX_unplanned_offensive
-	attacker_modifier = yes
-
-	air_cas_present_factor = -0.85
-	army_attack_factor = -0.75
-	army_speed_factor = -0.35
-	ground_attack_factor = -0.85
-}
-
-JAP_gorilla_tactics = {
-	icon = GFX_unplanned_offensive
-	attacker_modifier = yes
-
-	air_cas_present_factor = -0.50
-	army_attack_factor = -0.85
-	army_speed_factor = -0.75
-	ground_attack_factor = -0.50
-}
 
 anti_japan_mood = {#STATE MODIFIER
 	icon = GFX_unplanned_offensive

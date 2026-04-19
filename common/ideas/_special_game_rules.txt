@@ -62,6 +62,9 @@ ideas = {
 			}
 		}
 		Diplomatic_isolation_phi = {
+		remove_trigger = {
+			has_capitulated = yes
+        }
 			removal_cost = -1
 			picture = generic_victors_of_ww1
 			modifier = {
@@ -82,30 +85,6 @@ ideas = {
 				attack_bonus_against = -1
 				defense_bonus_against = -1
 				air_mission_efficiency = -1
-			}
-		}
-	Diplomatic_isolation_ita = {
-
-			removal_cost = -1
-			picture = generic_victors_of_ww1
-			modifier = {
-			}
-			targeted_modifier = {
-			tag = SOV
-				attack_bonus_against = -0.2
-				defense_bonus_against = -0.2
-			}
-		}
-	Diplomatic_isolation_spr = {
-
-			removal_cost = -1
-			picture = generic_victors_of_ww1
-			modifier = {
-			army_core_attack_factor = 1
-			army_core_defence_factor = 1
-			resource_trade_cost_bonus_per_factory = -8
-			}
-			targeted_modifier = {
 			}
 		}
 	Diplomatic_isolation_ger = {
@@ -906,7 +885,7 @@ ideas = {
 				conscription = 0.05
 				conversion_cost_civ_to_mil_factor= -0.4
 				special_forces_cap = 0.2
-				}
-			}		
-		}
+			}
+        }		
 	}
+}

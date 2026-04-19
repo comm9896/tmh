@@ -89,9 +89,6 @@ characters={
 			}
 		}
 		corps_commander = {
-		visible = {
-					has_completed_focus = HOL_the_only_man_in_the_dutch_government			
-			}
 			traits = { infantry_leader ambusher commando camouflage_expert trickster guerilla_fighter ranger hill_fighter adaptable }
 			skill=6			
 			attack_skill=5
@@ -100,7 +97,16 @@ characters={
 			logistics_skill=9
 			legacy_id=1
 		}
-	}		
+			
+			visible = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = HOL_the_only_man_in_the_dutch_government
+				}				
+			}			
+		}		
 		
 	
 	HOL_willem_schermerhorn={

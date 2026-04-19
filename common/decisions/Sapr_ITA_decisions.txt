@@ -29,7 +29,6 @@ ITA_time_to_war = {
 		cancel_if_not_visible = yes
 	
 		timeout_effect = {
-		complete_national_focus = ITA_pact_of_steel
 			declare_war_on = { target = ENG    type = take_state_focus }	
 			declare_war_on = { target = CAN    type = take_state_focus }
 			declare_war_on = { target = SAF    type = take_state_focus }	

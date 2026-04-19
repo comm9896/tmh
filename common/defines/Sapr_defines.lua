@@ -258,7 +258,6 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000; -- Минимальный л�
 --NDiplomacy
 
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0.0;				-- кост аташе в ЦПшке
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25;					-- кост аташе в Политке
 
 
 
@@ -310,13 +309,11 @@ NDefines.NIntel.CAPTURED_OPERATIVE_INTEL_YIELD = {
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0; -- больше лупа не дает бонусов к статам дивизии
 
 --Дефайны для баланса лупы
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_ATTACK = 1.0; -- мультиплаер для атаки
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_DEFENSE = 1.0; -- мультиплаер для обороны/прорыва
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MIN_INTEL_FOR_BONUS = 1; -- минимальное значение для того что бы лупа появилась
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 100; -- максимальное значение разницы разведданных для 100% бонуса от лупы
-NDefines.NIntel.RECON_INTEL_BONUS = 0.075;                                      -- бонус от разведчиков для лупы
-
-
+	NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_ATTACK = 1.0; -- мультиплаер для атаки
+	NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_FACTOR_DEFENSE = 1.0; -- мультиплаер для обороны/прорыва
+	NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MIN_INTEL_FOR_BONUS = 1; -- минимальное значение для того что бы лупа появилась
+	NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 100; -- максимальное значение разницы разведданных для 100% бонуса от лупы
+	NDefines.NIntel.RECON_INTEL_BONUS = 0.075;                                      -- бонус от разведчиков для лупы
 
 --Конец
 

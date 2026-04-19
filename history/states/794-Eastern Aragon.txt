@@ -3,18 +3,13 @@ state={
 	name="STATE_794"
 
 	history={
-		1936.1.1.12 = {	 
-							buildings = {
-				infrastructure = 2
-				}
-			owner = SPR
-			add_core_of = SPR
-			add_core_of = TIB
+		1936.1.1.12 = {	    
+			owner = POR
+			add_core_of = POR
 		}
 		1936.1.1.13 = {	    
-			owner = SPR
-			add_core_of = SPR
-			add_core_of = TIB
+			owner = POR
+			add_core_of = POR
 		}		
 		1936.1.1.14 = {
 			owner = POR

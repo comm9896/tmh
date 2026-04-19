@@ -3,29 +3,23 @@ state={
 	name="STATE_41"
 	resources={
 		aluminium=1.000
-		chromium = 12.000
 	}
-	
+
 	history={  
-		1936.1.1.12 = {
+		1936.1.1.12 = {	    
+			owner = POR
+			add_core_of = POR
 			buildings = {
 				infrastructure = 3
-				arms_factory = 2
-				industrial_complex = 2
-			}
-			owner = SPR
-			add_core_of = SPR
-			add_core_of = TIB	
-				}
+			}			
+		}
 		1936.1.1.13 = {	    
-			owner = SPR
-			add_core_of = SPR
-			add_core_of = TIB	
+			owner = POR
+			add_core_of = POR
 		}		
 		1936.1.1.14 = {
 			owner = POR
-			add_core_of = POR
-			add_core_of = TIB	
+			add_core_of = POR	
 		}		
 		1936.1.1.15 = {
 			owner = TIB

@@ -836,10 +836,7 @@ on_actions = {
 				FRA = {
 					
 					delete_unit = {
-					}	
-					add_timed_idea = { idea = Sapr_base_prodaktion_line days = 30}
-					add_timed_idea = { idea = Sapr_supporting_the_losing_alliance days = 180}					
-					
+					}					
 					set_country_flag = Sapr_FRA_capitulation 
 					add_equipment_to_stockpile = {
 						type = small_plane_airframe_2
@@ -937,7 +934,7 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
-			if = { # кап Польши, удаляем молотки
+			if = { # кап франции, удаляем молотки
 				limit = {
 					original_tag = POL
 					FROM = { 
@@ -955,7 +952,7 @@ on_actions = {
 					}
 				}
 				POL = {
-					add_timed_idea = { idea = Sapr_base_prodaktion_line days = 30}
+
 					delete_unit = {
 					}					
 					set_country_flag = Sapr_FRA_capitulation 

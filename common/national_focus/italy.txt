@@ -5733,6 +5733,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
+			has_full_control_of_state = 271 
+            has_full_control_of_state = 839 
+		    has_full_control_of_state = 839 
+			has_full_control_of_state = 837
+			has_full_control_of_state = 835
+			has_full_control_of_state = 908 
+		    has_full_control_of_state = 842 
 		}
 		relative_position_id = ITA_servizio_informazione_militare
 		cost = 5
@@ -5740,12 +5747,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			GER = {
-				add_to_faction = ITA
-			}		
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
 			every_state = {
 				limit = {
 					is_core_of = ETH
@@ -7772,16 +7773,35 @@ focus_tree = {
 		}
 
 		available = {
+			NOT = { has_war_with = GER }
+			custom_trigger_tooltip = {
+				tooltip = ITA_germ_italy_same_tt
+				GER = { has_government = ROOT }
+			}
+			GER = {
+				is_faction_leader = yes
+				is_subject = no
+			}
+			is_subject = no
+			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-					GER = {
+			GER = {
 				add_to_faction = ITA
 			}
-			add_to_tech_sharing_group = axis_research
-			add_ideas = ITA_pact_of_steel
+			GER = {
+				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
+			}
+			hidden_effect = {
+				news_event = { hours = 6 id = news.184 }
+			}
+			add_timed_idea = {
+				idea = ITA_pact_of_steel
+				days = 365
+			}
 		}
 	}
 

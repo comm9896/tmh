@@ -1203,31 +1203,6 @@ characters = {
 			}
 		}
 	}
-	
-	POL_jerzy_rutkowski={
-		name=POL_jerzy_rutkowski
-		portraits={
-			army={
-				small="GFX_idea_POL_jerzy_rutkowski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jerzy_rutkowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				has_completed_focus = POL_support_right_paramilitaries 
-			}
-			traits = {
-				falangist_militarist 
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
 
 
 	POL_marian_rejewski={

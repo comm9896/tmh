@@ -774,13 +774,12 @@ technologies = {
 				is_major = yes
 				factor = 4
 			}
-
+		}
 		modifier = {
 			tag = POL
 			factor = -1000
-				}	
-			}
-		}
+		}			
+	}
 
 	iw_large_airframe = {
 

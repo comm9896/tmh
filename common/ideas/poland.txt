@@ -86,7 +86,6 @@ country = {
 			production_speed_buildings_factor = 0.1
 			production_speed_bunker_factor = 0.1
 			production_speed_stronghold_network_factor = 0.1
-			surrender_limit = 0.25
 		}
 	}
 

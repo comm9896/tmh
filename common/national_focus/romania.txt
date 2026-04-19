@@ -2234,7 +2234,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_special_project_completed = sp:sp_naval_torpedo_cruiser
+			is_special_project_completed = sp_naval_torpedo_cruiser 
 		}
 
 		bypass = {
