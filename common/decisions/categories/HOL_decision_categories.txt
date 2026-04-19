@@ -57,10 +57,6 @@ HOL_request_allied_favors = {
 	}
 
 	visible = {
-	or = {
-		has_completed_focus = HOL_war_on_pacifism
-		has_completed_focus = PHI_i_shall_return
-		}
 	}
 }
 
